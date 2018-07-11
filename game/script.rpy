@@ -43,62 +43,52 @@ label start:
     # interpolate it into the next line.
     $ version = renpy.version()
     
-    call dayOneCard
+    call dayOneCard from _call_dayOneCard
     call day1 from _call_day1
     
-    call dayTwoCard    
+    call dayTwoCard from _call_dayTwoCard    
     call day2 from _call_day2
     call day2Night from _call_day2Night
     
-    call dayThreeCard
+    call dayThreeCard from _call_dayThreeCard
     call day3 from _call_day3
     
-    call dayFourCard
+    call dayFourCard from _call_dayFourCard
     call day4 from _call_day4
     call day4Night from _call_day4Night
     
-    call dayFiveCard
+    call dayFiveCard from _call_dayFiveCard
     call day5 from _call_day5
     
-    call daySixCard
+    call daySixCard from _call_daySixCard
     call day6 from _call_day6
-    call day6Night
+    call day6Night from _call_day6Night
     
-    call daySevenCard
+    call daySevenCard from _call_daySevenCard
     call day7 from _call_day7
     
-    call dayEightCard
+    call dayEightCard from _call_dayEightCard
     call day8 from _call_day8
     
-    call dayNineCard
+    call dayNineCard from _call_dayNineCard
     call day9 from _call_day9    
-    call day9Night
+    call day9Night from _call_day9Night
     
     call day10 from _call_day10
     
-    call day10Night
+    call day10Night from _call_day10Night
     
-    call day11
+    call day11 from _call_day11
     
-    call day11Night
+    call day11Night from _call_day11Night
     
-    call day12
+    call day12 from _call_day12
     
-    call day13
+    call day13 from _call_day13
     
-    call day14
+    call day14 from _call_day14
     
-    call day15
-    
-    call day16
-    
-    call day17
-    
-    call day18
-    
-    call day19
-    
-    call day20
+    call day15 from _call_day15
     
     
     #call endings

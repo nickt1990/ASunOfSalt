@@ -12,6 +12,7 @@ e "..."
 play sound "sounds/DoorOpen2.mp3"
 
 e "There's a sound from the hallway that sounds like a door opening."
+play sound "sounds/Knock.mp3"
 
 e "The clock show's it's about 3AM."
 
@@ -33,9 +34,9 @@ e "There's a girl standing a few feet away in the hall."
 
 show p su
 
-p su "Oh! S-sorry captain... "
+p su "Oh!{w=0.15} S-{w=0.15}sorry captain... "
 
-p su "I didn't mean to disturb you. Please excuse me, sir."
+p su "I didn't mean to disturb you. {w=0.15}Please excuse me, sir."
 
 hide p su
 
@@ -49,7 +50,7 @@ e "Not a moment goes by before the door nearest to you slides open."
 
 play sound "sounds/DoorOpen2.mp3"
 
-e "A girl dressed in green walks out. She seems surprised to see you there."
+e "A girl dressed in green walks out.{w=0.15} She seems surprised to see you there."
 
 play music "music/SpaceSunday.mp3" fadein 3.0
 
@@ -68,34 +69,34 @@ menu:
 
 y h "Wasn't sure it was you."
 
-y "Only saw you in pictures and stuff, you know."
+y "Only saw you in pictures and stuff,{w=0.15} you know."
 
 y m "Pretty crazy they didn't even let us meet before sticking us on this thing and launching us off."
 
-y m "I've been dying to talk to everybody, and they're just sitting in their rooms. "
+y m "I've been dying to talk to everybody,{w=0.15} and they're just sitting in their rooms. "
 
 y m "Buncha nerds."
 
-y h "But, the big honcho finally shows his face!"
+y h "But,{w=0.15} the big honcho finally shows his face!"
 
 y "Baby steps. Right?"
 
 menu:
     "It's... Haruka, right?":
-        y h "That's right, you remembered. Consider me flattered."
+        y h "That's right,{w=0.15} you remembered. Consider me flattered."
         pass
 
     "Right.":
-        y "Well, my name is Haruka."
+        y "Well, {w=0.15}my name is Haruka."
         pass
 
 y "You can just call me Haru though. "
 
-y "I'm sure ya've read my file or something, so you already know I'm the engineer."
+y "I'm sure ya've read my file or something,{w=0.15} so you already know I'm the engineer."
 
-y "Little did you know, I'm also a terrible chef."
+y "Little did you know,{w=0.15} I can also juggle."
 
-y h "And you thought you had me figured out, huh?"
+y h "And you thought you had me figured out,{w=0.15} huh?"
 
 y "You're allowed to be impressed. "
 
@@ -118,7 +119,7 @@ e "Haruka winks playfully."
 
 show y
 
-y "But hey, if you get on my good side, I'll make you a dry cake."
+y "But hey,{w=0.15} if you get on my good side, I'll toss a few bowling pins for ya."
 
 y "Would you like that?"
 
@@ -128,10 +129,10 @@ menu:
         pass
 
     "Delightful.":
-        y h "Alright, it's a date."
+        y h "Alright,{w=0.15} it's a date."
         pass
         
-y "So... you can expect that from me."
+y "So.{w=0.15}.{w=0.15}.{w=0.15} you can expect that from me."
 
 y "But really? This mission is everything to me."
 
@@ -150,7 +151,7 @@ menu:
         y m "What? I hope you do more than try."
         pass
 
-y "I made the ship, you gotta make the choices to keep it running."
+y "I made the ship,{w=0.15} you gotta make the choices to keep it running."
 
 y h "Right?"
 
@@ -164,7 +165,7 @@ e "Haruka smiles."
 
 show y
 
-y "But... this is sort of heavy for introductions."
+y "But.{w=0.15}.{w=0.15}.{w=0.15} this is sort of heavy for introductions."
 
 y "How about we have a drink? Celebrate our first night."
 
@@ -205,7 +206,7 @@ menu:
         pass
 
     "None for me, thanks.":
-        y "Alright, water it is."
+        y "Alright,{w=0.15} water it is."
         pass
 
 y "So..."
@@ -217,7 +218,7 @@ menu:
       pass
 
     "Then don't say it.":
-        y h "Hah, that's not an option."
+        y h "Hah,{w=0.15} that's not an option."
         show y
         y "Just wonderin'..."
         pass
@@ -248,7 +249,7 @@ menu:
         pass
 
     "This is a job, not a bar.":
-        y h "Lighten up! C'mon."
+        y h "Lighten up! {w=0.15}C'mon."
         pass
 
 y "We'll start simple. Ease you in. "
@@ -284,7 +285,7 @@ show p su at left
 p su "H-hello?"
 
 show p su: 
-    linear 0.5 xalign 0.1
+    linear 0 xalign 0.1
     
 show y h
 
@@ -301,25 +302,25 @@ menu:
 
 show p su
 
-p su "S-sir! I'm sorry to intrude, I'd hoped to maybe grab some water, but I didn't realize you would be up at this hour..."
+p su "S-{w=0.15}sir! I'm sorry to intrude,{w=0.15} I'd hoped to maybe grab some water, {w=0.15}but I didn't realize you would be up at this hour..."
 
 y "Your name is Nemo right?"
 
-p h "Hello Nichi Haruka. That's close, but my name is Nematsu Hi."
+p h "Hello Nichi Haruka.{w=0.15} That's close, {w=0.15}but my name is Nematsu Hi."
 
 y "My name is Haru, and you then, will be Nema. Sound good?"
 
 show p s
 
-p s "Oh, o-of course, if that's what y-you'd like."
+p s "Oh, o-{w=0.15}of course, {w=0.15}if that's what y-you'd like."
 
-p s "Captain, you may f-feel free to refer to me as N-Nema as well."
+p s "Captain,{w=0.15} you may f-{w=0.15}feel free to refer to me as N-Nema as well."
 
 e "Nema looks nervous."
 
-p s "Anyways, I'm once again, s-so sorry to intrude on y-you."
+p s "Anyways,{w=0.15} I'm once again, s-{w=0.15}so sorry to intrude on y-{w=0.15}you."
 
-y h "Damn, calm down Nemo, we're crewmates. Don't be so terrified."
+y h "Damn, {w=0.15}calm down Nemo, we're crewmates. Don't be so terrified."
 
 show y
 
@@ -329,7 +330,7 @@ y h "Loosen up, yeah?"
 
 show p s
 
-p s "Oh, s-sure..."
+p s "Oh, s-{w=0.15}sure.{w=0.15}.{w=0.15}."
 
 show y
 
@@ -337,11 +338,11 @@ y "That's the spirit, what a loose cannon."
 
 menu:
     "It's OK Nema, take your time.":
-        p h "T-thank you, Captain..."
+        p h "T-{w=0.15}thank you, Captain.{w=0.15}.{w=0.15}."
         pass
 
     "You feeling alright Nema?":
-        p s "I'm f-fine."
+        p s "I'm f-{w=0.15}fine."
         pass
 
 show p h
@@ -352,7 +353,7 @@ show y
 
 show p
 
-y "You know, we only need Mr. Weapons and we'll have our first crew meeting."
+y "You know, {w=0.15}we only need Mr. Weapons and we'll have our first crew meeting."
 
 menu:
     "Somebody should get him.":
@@ -367,16 +368,16 @@ play sound "sounds/DoorOpen2.mp3"
 e "Haruka leaves."
 
 menu:
-    "She's energetic, isn't she?":
+    "She's energetic,{w=0.15} isn't she?":
       pass
 
 show p
 
-p "Y-yes sir, she is."
+p "Y-{w=0.15}yes sir, {w=0.15}she is."
 
 e "Nema smiles."
 
-e "..."
+e ".{w=0.25}.{w=0.25}."
 
 e "A few moments pass in silence..."
 
@@ -398,25 +399,25 @@ menu:
     "Alright.":
       pass
 
-y su "Yeah... I don't know if I should repeat what I saw."
+y su "Yeah... {w=0.15}I don't know if I should repeat what I saw."
 
 show p su
 
-p su "Oh my..."
+p su "Oh my.{w=0.15}.{w=0.15}."
 
 show y
 
 y "Yep."
 
-y "But, while we wait, Nemo, tell us what you do?"
+y "But,{w=0.15} while we wait,{w=0.15} Nemo, tell us what you do?"
 
 show p h
 
-p h "Oh, uhm, absolutely."
+p h "Oh, {w=0.15}uhm, {w=0.15}absolutely."
 
-p s "My n-name is... uh, Nematsu Hi. "
+p s "My n-{w=0.15}name is... {w=0.15}uh,{w=0.15} Nematsu Hi. "
 
-p "My role on this m-mission is as a scientific historian, so I'll be ta-"
+p "My role on this m-{w=0.15}mission is as a scientific historian, so I'll be ta-"
 
 show y su
 
@@ -432,13 +433,13 @@ y "That doesn't make sense. Scientist I understand, a historian I get... Well sh
 
 y m "Why would we need a historian at all?"
 
-y "Oh hey Cap, we're in danger. Quick, who was the birthmother of Andrew Jackson?"
+y "Oh hey Cap,{w=0.15} we're in danger.{w=0.15} Quick, who was the birthmother of Andrew Jackson?"
 
 y h "Is that sorta what ya do?"
 
 show p s
 
-p s "Not quite Haruka, I'll be taking l-"
+p s "Not quite Haruka,{w=0.15} I'll be taking l-"
 
 show y
 
@@ -448,7 +449,7 @@ show p s
 
 p s "Oh, of course."
 
-p "As I was saying, I'll b-"
+p "As I was saying,{w=0.15} I'll b-"
 
 show p su
 
@@ -476,7 +477,7 @@ r h "Ladies."
 
 e "He nods again."
 
-r "The name's Hei. Hei Babe. "
+r "The name's Hei.{w=0.15} Hei Babe. "
 
 e "Hei winks seductively at Haru."
 
@@ -520,17 +521,17 @@ menu:
 
 p "I was just try-"
 
-y "She was telling us about her job, she's a librarian or something?"
+y "She was telling us about her job, {w=0.15}she's a librarian or something?"
 
 e "Nema looks unbothered by the frequent interruptions."
 
-r h "Oh, great. What's your job Haru?"
+r h "Oh, great.{w=0.15} What's your job Haru?"
 
 y "I do whatever Cap needs."
 
 e "She smiles at you."
 
-r su "Oh really cool, like a second in command right?"
+r su "Oh really cool, {w=0.15}like a second in command right?"
 
 y h "Exactly like that."
 
@@ -550,19 +551,19 @@ show y
 
 y "I don't see why not."
 
-p s "So I'm f-fourth in line..."
+p s "So I'm f-{w=0.15}fourth in line..."
 
 e "Hei smiles"
 
 show r h
 
-r h "Don't worry, I'll save the worst jobs for you Nema."
+r h "Don't worry, {w=0.15}I'll save the worst jobs for you Nema."
 
 e "Nema smiles."
 
 show p h
 
-p s "T-there actually is no second in command... is there?"
+p s "T-{w=0.15}there actually is no second in command...{w=0.15} is there?"
 
 menu:
     "No. ":
@@ -577,13 +578,13 @@ e "Nema looks relieved."
 
 show y
 
-y "Hey Cap, speaking of being in command, I just remembered something. Someone needs ta pull an all nighter tomorrow to monitor the engine through the first milestone. "
+y "Hey Cap,{w=0.15} speaking of being in command,{w=0.15} I just remembered something. {w=0.15}Someone needs ta pull an all nighter tomorrow to monitor the engine through the first milestone. "
 
 y "Who do ya want on that?"
 
 show r su
 
-r su "Wait, are you talking about like, work?"
+r su "Wait,{w=0.15} are you talking about like, work?"
 
 e "Hei groans."
 
@@ -596,10 +597,10 @@ menu:
 
     "Haruka, you seem to understand it best.":
         y "No problem!"
-        y s "But, actually..."
+        y s "But,{w=0.15} actually..."
         show y
         y "Would you mind staying up with me just this once?"
-        y h "Since you're the captain and all, you should probably know the process, right?"
+        y h "Since you're the captain and all,{w=0.15} you should probably know the process, right?"
         menu:
             "Makes sense":
                 y h "Great!"
@@ -618,11 +619,11 @@ p s "I wouldn't have minded doing it."
 
 show y
 
-y "But now you don't have to. Everyone wins."
+y "But now you don't have to. {w=0.15}Everyone wins."
 
 show r
 
-r "Seriously, get some sleep and enjoy it."
+r "Seriously,{w=0.15} get some sleep and enjoy it."
 
 show p s
 
@@ -640,7 +641,7 @@ e "There is a moment of silence"
 
 show y
 
-y "Well... I'm going to bed."
+y "Well...{w=0.15} I'm going to bed."
 
 show r
 
@@ -657,13 +658,13 @@ y "Later."
 hide y
 
 show p s:
-    linear .5 xalign 0.5
+    linear 0 xalign 0.5
 
 play sound "sounds/DoorClose2.mp3"
 
-p s "Oh, Okay."
+p s "Oh, {w=0.15}Okay."
 
-p "I guess it is pretty late, isn't it?"
+p "I guess it is pretty late,{w=0.15} isn't it?"
 
 e "Nema seems hesitant to leave."
 
@@ -693,7 +694,7 @@ p "I'm the scientific historian for our journey. "
 
 p "It's not a core role to the mission, but I will provide quite a lot of value to our home station by charting out new space, and conducting various experiments. "
 
-p "It's my task to take any information with an ounce of value, and get that information back to our station."
+p "It's my task to take any information with an ounce of value,{w=0.15} and get that information back to our station."
 
 menu:
     "Sounds valuable to me!":
@@ -712,7 +713,7 @@ p "I... look forward to getting to know them."
 
 p "I'm a little aprehensive about..."
 
-p "No, I'm excited to see what comes of our close proximity."
+p "No,{w=0.15} I'm excited to see what comes of our close proximity."
 
 p "It will be an interesting experience to say the least."
 
@@ -728,15 +729,15 @@ menu:
     "Well, we'll see how things go.":
         p "Yes, surely we will."
         pass
-e "..."      
+e ".{w=0.15}.{w=0.15}."      
 
 show p
 
-p "Well..."
+p "Well.{w=0.15}.{w=0.15}."
 
 p "I think I'm going to begin preparing for sleep as well."
 
-p h "I look forward to working together, Sir."
+p h "I look forward to working together,{w=0.15} Sir."
 
 menu:
     "It will be interesting.":
@@ -752,7 +753,7 @@ p "Well..."
 
 label day1End:
 
-p "Goodnight, Captain."
+p "Goodnight,{w=0.15} Captain."
 
 stop music fadeout 5
 

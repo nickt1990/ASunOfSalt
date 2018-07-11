@@ -1,6 +1,6 @@
 ﻿label day9Night:
     
-call kitchen
+call kitchen from _call_kitchen_11
 
 e "You meet Haruka in the Kitchen"
 
@@ -15,7 +15,7 @@ menu:
     "How are you?":
         pass
 
-y s "I've never been good with this shit,{w=0.2} so I'm just going to say what's on my mind, alright?"
+y s "I've never been good with this shit,{w=0.2} so I'm just going to say what's on my mind, {w=0.15}alright?"
 
 menu:
     "Sure.":
@@ -30,7 +30,7 @@ y s "I hate that I let myself go like that."
 
 y n "I told you I expected great things out of you and that you could expect great things out of me."
 
-y s "I don't think I've held up my end of things, and I'm sorry."
+y s "I don't think I've held up my end of things, {w=0.15}and I'm sorry."
 
 menu:
     "It's not me you should be apologizing to.":
@@ -57,7 +57,7 @@ menu:
     "You don't mean that.":
         pass
 
-y n "I'm not sorry for how I treated them.{w=0.2} I'm sorry that I promised you better than I'm giving you, that's all."
+y n "I'm not sorry for how I treated them.{w=0.2} I'm sorry that I promised you better than I'm giving you, {w=0.15}that's all."
 
 y m "Why bother putting any effort into them if all they're gonna do is sit around screwing?"
 
@@ -65,7 +65,7 @@ menu:
     "Why does that bother you so much?":
         pass
 
-    "They can do whatever they want, this ship is their life now.":
+    "They can do whatever they want, {w=0.15}this ship is their life now.":
         pass
 
 y m "That's just not stuff I take lightly."
@@ -91,7 +91,7 @@ y h "Shots it is."
 
 e "Haruka grabs you both drinks."
 
-y n "You know what the chance is on average for a girl to get pregnant, {w=0.2}even with birth control?"
+y n "You know what the chance is on average for a girl to get pregnant, {w=0.15}{w=0.2}even with birth control?"
 
 menu:
     "Really low.":
@@ -104,9 +104,9 @@ y n "Really goddamn low."
 
 y n "Like point zero eight percent."
 
-y n "When I was growing up, I was working with this scientist, the one that taught me everything I know."
+y n "When I was growing up, {w=0.15}I was working with this scientist, {w=0.15}the one that taught me everything I know."
 
-y n "I think I told you about him, Dr. Motokami?"
+y n "I think I told you about him, {w=0.15}Dr. Motokami?"
 
 y n "He knew the kind of place I was from."
 
@@ -118,17 +118,17 @@ y n "One hundred and thirty two."
 
 y su "That's point zero zero one percent of the 95 thousand people who worked there."
 
-y n "You'd think that would discourage a kid, but it did the opposite."
+y n "You'd think that would discourage a kid, {w=0.15}but it did the opposite."
 
 y s "I stopped having fun."
 
 y s "I stopped taking chances."
 
-y n "I realized that I had to be the best I could, and I couldn't afford to dick things up. Every decision became a balancing act."
+y n "I realized that I had to be the best I could, {w=0.15}and I couldn't afford to dick things up. Every decision became a balancing act."
 
 y n "Does this add or take away from my chances?"
 
-y n "When I looked at guys, I saw a negative point zero eight percent chance of getting off my shit station and into a real life."
+y n "When I looked at guys, {w=0.15}I saw a negative point zero eight percent chance of getting off my shit station and into a real life."
 
 y n "There are plenty of losers to pump out kids."
 
@@ -154,9 +154,9 @@ menu:
 
 y s "I suppose,{w=0.2} they did make it this far..."
 
-y n "But I think for me, this was the only way I could have done it."
+y n "But I think for me, {w=0.15}this was the only way I could have done it."
 
-y s "If I gave myself an inch into temptation, I would have gone a mile."
+y s "If I gave myself an inch into temptation, {w=0.15}I would have gone a mile."
 
 y n "That's the kind of person I am."
 
@@ -172,22 +172,22 @@ menu:
     "Maybe you've been unfair to them?":
         pass
 
-y m "Ugh, c'mon. I didn't ask you here for this."
+y m "Ugh, {w=0.15}c'mon. I didn't ask you here for this."
 
-y s "I wanted to talk about us, not them."
+y s "I wanted to talk about us, {w=0.15}not them."
 
 menu:
     "We are a group and I am the captain.":
         pass
 
-y s "Yeah yeah, I get it."
+y s "Yeah yeah, {w=0.15}I get it."
 
 y n ".{w=0.2}.{w=0.2}."
 
 y s "I think I made a mistake."
 
 menu:
-    "Yeah, you were rude as hell.":
+    "Yeah, {w=0.15}you were rude as hell.":
         pass
 
     "What do you mean?":
@@ -199,19 +199,19 @@ menu:
     "But it could be revolutionary.":
         pass
 
-y n "It could be, but then what?"
+y n "It could be, {w=0.15}but then what?"
 
 y m "The idiots back at the space station can fly farther faster?"
 
 y m "So we can find more empty planets further away?"
 
-y s "Why even bother exploring when we have dozens of safe sustainable places to live now, y'know?"
+y s "Why even bother exploring when we have dozens of safe sustainable places to live now, {w=0.15}y'know?"
 
 menu:
     "You never know what you'll find out here.":
         pass
 
-    "I agree, why not just be happy with what we have?":
+    "I agree, {w=0.15}why not just be happy with what we have?":
         pass
 
 y s "But why strive for something better when what you have is good enough?"
@@ -224,7 +224,7 @@ menu:
     "What's so bad about that?":
         pass
 
-y m "God,{w=0.2} nothing,{w=0.2} I know, that's how life goes."
+y m "God,{w=0.2} nothing,{w=0.2} I know, {w=0.15}that's how life goes."
 
 y n "You pass on what you've accomplished.{w=0.2} I get it."
 
@@ -299,13 +299,13 @@ r s "The...{w=0.15} uh..."
 
 show y m
 
-call hall
+call hall from _call_hall_36
 
 hide r
 
 y m "Get out of my way!"
 
-call navRoom
+call navRoom from _call_navRoom_4
 
 y su "Nema what's going on?!"
 
@@ -334,7 +334,7 @@ e "Haruka types some commands into the computer."
 
 y s "I set it to restructure but it should take a few minutes."
 
-y n "Cap, can ya watch this screen and let me know if anything gets out of place?"
+y n "Cap, {w=0.15}can ya watch this screen and let me know if anything gets out of place?"
 
 menu:
     "Sure.":
@@ -388,11 +388,11 @@ r s "Have our guns ready."
 
 show p s
 
-p s "Can the engine h-{w=0.1}handle the compounding process right now, Haruka?"
+p s "Can the engine h-{w=0.1}handle the compounding process right now, {w=0.15}Haruka?"
 
 show y n
 
-y n "I don't know, {w=0.15}but what else can we do?"
+y n "I don't know, {w=0.15}{w=0.15}but what else can we do?"
 
 show p s
 
@@ -400,7 +400,7 @@ p s "R-right..."
 
 show y m
 
-y m "Cap,{w=0.15} it's up to you, {w=0.1}but you have to pick {b}now{/b}."
+y m "Cap,{w=0.15} it's up to you, {w=0.15}{w=0.1}but you have to pick {b}now{/b}."
 
 menu:
     "Compound!":

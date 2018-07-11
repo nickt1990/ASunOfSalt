@@ -12,7 +12,7 @@ menu:
     "Is Nema up to something again?":
         pass
 
-call hall
+call hall from _call_hall_2
 
 e "You walk into the hallway."
 
@@ -27,7 +27,7 @@ menu:
     "What's that sound?":
         pass
         
-p n "No sir, this time it's not me."
+p n "No sir, {w=0.15}this time it's not me."
 
 e "Haruka emerges from her room."
 
@@ -42,11 +42,11 @@ p s "N-no Haruka. I'll go check the radar."
 
 e "The three of you walk into the navigation room."
 
-call navRoom
+call navRoom from _call_navRoom
 
 play sound "sounds/DoorOpen2.mp3"
 
-p n "Ok, let's see..."
+p n "Ok, {w=0.15}let's see..."
 
 e "After a moment Hei walks groggily into the room."
 
@@ -55,7 +55,7 @@ play sound "sounds/DoorClose2.mp3"
 show r s:
     linear 0 xalign 0.1 yalign 1.0
 
-r s "Hey guys, what's that sound?"
+r s "Hey guys, {w=0.15}what's that sound?"
 
 show y n
 
@@ -63,7 +63,7 @@ y n "Nemo's checkin'."
 
 show r s
 
-r s "Nibbler, what's going on?"
+r s "Nibbler, {w=0.15}what's going on?"
 
 show p n
 
@@ -77,11 +77,11 @@ show r su
 
 r su "Wha-on top of us?!"
 
-r su "Oh shit, oh god. Nope."
+r su "Oh shit, {w=0.15}oh god. Nope."
 
-r su "Captain, do something!"
+r su "Captain, {w=0.15}do something!"
 
-r su "Oh god, did they already capture us?"
+r su "Oh god, {w=0.15}did they already capture us?"
 
 menu:
     "Calm down.":
@@ -90,13 +90,13 @@ menu:
     "I don't know.":
         pass
 
-r s "Oh god, oh no."
+r s "Oh god, {w=0.15}oh no."
 
 show y m
 
 y m "I'm turning on the heavy external floods. Maybe we can light up whatever it is we're smackin' up against."
 
-e "Haruka turns on the light, and you see a sea of blood and body parts floating around you."
+e "Haruka turns on the light, {w=0.15}and you see a sea of blood and body parts floating around you."
 
 y su "Oh my god..."
 
@@ -119,15 +119,15 @@ e "Hei runs out of the room into the bathroom."
 hide r
 
 menu:
-    "Nema, what can we do?":
+    "Nema, {w=0.15}what can we do?":
         pass
 
-    "Haruka, what can we do?":
+    "Haruka, {w=0.15}what can we do?":
         pass
 
 show p su
 
-p su "W-we, u-uh- w-oh... w-ell we-"
+p su "W-we, {w=0.15}u-uh- w-oh... w-ell we-"
 
 e "There is a loud thud."
 
@@ -137,7 +137,7 @@ y n "Nema what's that."
 
 show p su
 
-p su "W-well, it's, a- it's-"
+p su "W-well, {w=0.15}it's, {w=0.15}a- it's-"
 
 show y m
 
@@ -145,14 +145,14 @@ y m "Move."
 
 y su "There's a ship here. It's moving up from below us... I think the blood is a trap."
 
-y m "Captain, turn power to the shields, Nema, watch the radar for potential collision."
+y m "Captain, {w=0.15}turn power to the shields, {w=0.15}Nema, {w=0.15}watch the radar for potential collision."
 
-y m "HEI, WE NEED YOUR HELP."
+y m "HEI, {w=0.15}WE NEED YOUR HELP."
 
 show r su:
     linear 0 xalign 0.1 yalign 1.0
 
-r su "I, but I can't..."
+r su "I, {w=0.15}but I can't..."
 
 show y m #todo deal with hei being not in room
 
@@ -174,13 +174,13 @@ r s "Jump on lasers. Hold your fire until I say."
 
 show y n
 
-y n "Captain, stay on the main controls. When I say, you need to jump into full boost."
+y n "Captain, {w=0.15}stay on the main controls. When I say, {w=0.15}you need to jump into full boost."
 
-y n "Nema, I really need you to watch for collisions, are you ok over there?"
+y n "Nema, {w=0.15}I really need you to watch for collisions, {w=0.15}are you ok over there?"
 
 show p s
 
-p s "W-yeah, yes."
+p s "W-yeah, {w=0.15}yes."
 
 show y n
 
@@ -188,7 +188,7 @@ y n "Are you sure? You need to pay attention or we're dead."
 
 show p n
 
-p n "Yes, I'm alright, I'll be alright."
+p n "Yes, {w=0.15}I'm alright, {w=0.15}I'll be alright."
 
 e "Haruka turns her attention to her computer."
 
@@ -196,7 +196,7 @@ e "She focuses for a long moment."
 
 show y n
 
-y n "OK, Captain, we can get a shot off on where the main ship shows on our radar, but I still advise that we get out of here immediately after. Our lack of visibility will give us huge issues if we don't. Do you want to fire a shot or just go?"
+y n "OK, {w=0.15}Captain, {w=0.15}we can get a shot off on where the main ship shows on our radar, {w=0.15}but I still advise that we get out of here immediately after. Our lack of visibility will give us huge issues if we don't. Do you want to fire a shot or just go?"
 
 y m "What do you want to do?"
 
@@ -204,10 +204,10 @@ menu:
     "Fire whatever's necessary then get out of here.":
         pass
 
-    "Just go, we shouldn't risk it.":
+    "Just go, {w=0.15}we shouldn't risk it.":
         pass
 
-y n "OK, Hei, can you get a lock?"
+y n "OK, {w=0.15}Hei, {w=0.15}can you get a lock?"
 
 show r s
 
@@ -215,7 +215,7 @@ r s "I think I have one."
 
 show y m
 
-y m "You need to know, there's no second chances."
+y m "You need to know, {w=0.15}there's no second chances."
 
 show r s
 
@@ -223,7 +223,7 @@ r s "I'm pretty sure."
 
 show y n
 
-y n "God, Nema, are we clear?"
+y n "God, {w=0.15}Nema, {w=0.15}are we clear?"
 
 show p n
 
@@ -239,7 +239,7 @@ p n "What? Yes. We're c-clear."
 
 show y n
 
-y n "Hei, if you're ready, fire on my mark. Captain, wait two seconds then get us the hell away from here."
+y n "Hei, {w=0.15}if you're ready, {w=0.15}fire on my mark. Captain, {w=0.15}wait two seconds then get us the hell away from here."
 
 y n "Everyone ready?"
 
@@ -266,13 +266,13 @@ y su "Captain!"
 #todo one more option here
 e "There is a timed prompt with two options. The easier of which will flahs you away. The other option leads to a bad end of everyone just dying here slowly."
 
-e "The ship lurches forward and for a moment, you feel an intense force pushing you back."
+e "The ship lurches forward and for a moment, {w=0.15}you feel an intense force pushing you back."
 
 menu:
     "We're going full speed.":
         pass
 
-y h "Alright, then we should be goo-"
+y h "Alright, {w=0.15}then we should be goo-"
 
 e "There is a loud crash."
 

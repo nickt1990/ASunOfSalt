@@ -2,7 +2,7 @@
 
 e "You've spent the morning monitoring system reports on your computer in silence."
 
-e "Suddenly, there's a loud knocking on your door."
+e "Suddenly, {w=0.15}there's a loud knocking on your door."
 
 show r m
 
@@ -17,7 +17,7 @@ menu:
 
 r m "Face me like a man."
 
-r m "I know you're in there, and you know why I'm here."
+r m "I know you're in there, {w=0.15}and you know why I'm here."
 
 r n "Just come out here and we can get it over with."
 
@@ -27,11 +27,11 @@ menu:
 
 e "You walk over to the door."
 
-e "As it slides open, you see Hei standing before you."
+e "As it slides open, {w=0.15}you see Hei standing before you."
 
-r h "Finally, there you are."
+r h "Finally, {w=0.15}there you are."
 
-r n "Let's get to it, I'm gonna kick your ass."
+r n "Let's get to it, {w=0.15}I'm gonna kick your ass."
 
 menu:
     "Let's do it.":
@@ -42,7 +42,7 @@ menu:
 
 r m "Soft and Moist Vegetables: 2 Turbo Vegetable Edition REMATCH."
 
-r n "My room, 10 minutes."
+r n "My room, {w=0.15}10 minutes."
 
 r m "Warm your thumbs. {w=1.0}{size=-6}Bitch{/size}."
 
@@ -50,7 +50,7 @@ hide r m
 
 play sound "sounds/DoorClose2.mp3"
 
-e "Just as Hei walks away and into his room, Nema walks out of hers."
+e "Just as Hei walks away and into his room, {w=0.15}Nema walks out of hers."
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -70,14 +70,14 @@ hide p su
 
 menu:
     "Follow Nema into the kitchen.":
-        call hall
+        call hall from _call_hall_12
         pass
 
 e "You approach the open kitchen door to see Nema at the counter."
 
 e "She's silently scrubbing at some dishes."
 
-call kitchen
+call kitchen from _call_kitchen_3
 
 e "Haruka is eating quietly at the table."
 
@@ -103,7 +103,7 @@ menu:
     "You haven't done anything to me.":
         pass
 
-y s "Nah, I've been the worst. "
+y s "Nah, {w=0.15}I've been the worst. "
 
 y s "I just feel so...{w=1.0} I don't know. "
 
@@ -126,7 +126,7 @@ hide y
 
 e "Haruka makes her way out of the kitchen."
 
-e "Nema's still absorbed in her work at the counter, so you quietly eat your food."
+e "Nema's still absorbed in her work at the counter, {w=0.15}so you quietly eat your food."
 
 e "..."
 
@@ -157,7 +157,7 @@ r m "we're doing-{w=0.5} it's a thing Nema,{w=0.5} just-"
 
 show p n
 
-p n "Hei, you must always respect your Captain."
+p n "Hei, {w=0.15}you must always respect your Captain."
 
 show r m
 
@@ -183,17 +183,17 @@ hide p
 
 menu:
     "I guess it's time to face the music.":
-        call hall
+        call hall from _call_hall_13
         pass
 
     "I'm not done eating.":
-        e "You take a few more minutes, then head out to meet Hei."
-        call hall
+        e "You take a few more minutes, {w=0.15}then head out to meet Hei."
+        call hall from _call_hall_14
         pass
 
 e "You make your way to Hei's room."
 
-call redRoom
+call redRoom from _call_redRoom_1
 
 show r m
 
@@ -229,7 +229,7 @@ p su "I wasn't aware you two had been spending time together."
 
 show r s
 
-r s "What? Well, I guess we haven't really."
+r s "What? Well, {w=0.15}I guess we haven't really."
 
 menu:
     "At all.":
@@ -290,7 +290,7 @@ r m "That's what we're doing right now Nema."
 
 show p n
 
-p n "Yes, but to form strong bonds you must spend time getting to know other people Hei.{w=0.2} That is how you make friends."
+p n "Yes, {w=0.15}but to form strong bonds you must spend time getting to know other people Hei.{w=0.2} That is how you make friends."
 
 show r n
 
@@ -300,14 +300,14 @@ menu:
     "You guys have gotten close.":
         pass
 
-    "I agree, we should spend some time together Hei.":
+    "I agree, {w=0.15}we should spend some time together Hei.":
         pass
 
 e "Nema immediately smiles."
 
 show p h
 
-p h "We're two peas in a pod, sir."
+p h "We're two peas in a pod, {w=0.15}sir."
 
 show r h
 
@@ -320,7 +320,7 @@ menu:
     "Good to hear.":
         pass
 
-r n "Nah, we're just friends."
+r n "Nah, {w=0.15}we're just friends."
 
 show p h
 
@@ -336,12 +336,12 @@ p s "It would have been that one ni-"
 
 show r h
 
-r h "C'mon, you know when."
+r h "C'mon, {w=0.15}you know when."
 
 r m "No more stalling!"
 
 menu:
-    "Alright, alright.":
+    "Alright, {w=0.15}alright.":
         pass
 
 r s "Wait is...{w=0.1} uhm..."
@@ -355,9 +355,9 @@ menu:
     "No.":
         pass
 
-r s "Right.{w=0.1} Right, yeah, just wondering."
+r s "Right.{w=0.1} Right, {w=0.15}yeah, {w=0.15}just wondering."
 
-r h "Alright, you ready to start?"
+r h "Alright, {w=0.15}you ready to start?"
 
 menu:
     "Born ready.":
@@ -376,7 +376,7 @@ p h "Go Buff Daddy!"
 
 e "Nema smiles earnestly."
 
-p h "Also, go Captain!"
+p h "Also, {w=0.15}go Captain!"
 
 e "Hei frowns."
 
@@ -416,13 +416,13 @@ r h "Cucumber!"
 
 p su "Of course!"
 
-r h "That's right, I wont lose to you this time!"
+r h "That's right, {w=0.15}I wont lose to you this time!"
 
 menu:
     "Sure.":
         pass
 
-    "You wont touch a leaf on my head, idiot!":
+    "You wont touch a leaf on my head, {w=0.15}idiot!":
         pass
 
 r n "Nema,{w=0.1} please."
@@ -437,7 +437,7 @@ p n "Ahem."
 
 p h "Gentlemen! I want a fair fight!"
 
-p s "But most of all, I want to see a fight...{w=0.1} with honor."
+p s "But most of all, {w=0.15}I want to see a fight...{w=0.1} with honor."
 
 p h "Reach the limits of the battlefield,{w=0.1} and surpass them!"
 
@@ -501,7 +501,7 @@ menu:
     "Like... what?":
         pass
 
-r m "Dunno, stop grilling me man."
+r m "Dunno, {w=0.15}stop grilling me man."
 
 show p s
 
@@ -517,7 +517,7 @@ menu:
     "You have no work ethic. Shameful.":
         pass
 
-    "Well, there's always next time!":
+    "Well, {w=0.15}there's always next time!":
         pass
 
 r m "I dedicate myself to what I {b}CARE{/b} about!"
@@ -538,10 +538,10 @@ menu:
     "Sore loser.":
         pass
 
-    "Right, it was fun!":
+    "Right, {w=0.15}it was fun!":
         pass
 
-r m "You wish, weiner head."
+r m "You wish, {w=0.15}weiner head."
 
 show p h
 
@@ -549,7 +549,7 @@ p h "Hei!{w=0.15} That's our Captain!"
 
 show r s
 
-r s "Whatever, sorry I don't have time to waste on a stupid video game."
+r s "Whatever, {w=0.15}sorry I don't have time to waste on a stupid video game."
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -578,7 +578,7 @@ y n "You? "
 
 show r n
 
-r n "Yeah, I've been looking forward to it."
+r n "Yeah, {w=0.15}I've been looking forward to it."
 
 show y n
 
@@ -592,7 +592,7 @@ menu:
     "I'm surprised.":
         pass
 
-    "You don't want to actually do it, do you?":
+    "You don't want to actually do it, {w=0.15}do you?":
         pass
 
 show r h
@@ -630,7 +630,7 @@ p s "Oh...{w=0.15} w-well,{w=0.15} I did have some work I planned to get done to
 
 show r h
 
-r h "C'mon dude, it'll be fun."
+r h "C'mon dude, {w=0.15}it'll be fun."
 
 show p s
 
@@ -652,7 +652,7 @@ menu:
 
 show r su
 
-r s "Well, it's getting pretty late."
+r s "Well, {w=0.15}it's getting pretty late."
 
 r n "I'm gonna get ready for the long night."
 
@@ -662,7 +662,7 @@ hide r
 
 hide p
 
-call hall
+call hall from _call_hall_15
 
 play sound "sounds/DoorClose2.mp3"
 
@@ -678,7 +678,7 @@ menu:
     "Go to your room and wait.":
         pass
 
-call blueRoom
+call blueRoom from _call_blueRoom_8
 
 e "There's a notification on your computer."
 

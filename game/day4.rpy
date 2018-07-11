@@ -1,20 +1,16 @@
 ﻿label day4:
 
-e "Conflicted and confused. Unsure of the future."
-
-e "Feeling love, hurt, sad. "
-
-e "Nobody is happy. Want to help. Feel alone."
+e "TODO: messages"
 
 e "The day starts with the typical alarm. You read your messages."
 
-call hall
+call hall from _call_hall_25
 
 e "Walk into the hallway. All the doors are locked and things seem quiet."
 
 e "You make your way into the kitchen."
 
-call kitchen
+call kitchen from _call_kitchen_7
 
 e "Haruka is sitting at the table eating."
 
@@ -35,9 +31,9 @@ y n "It seems like morale has reached an impressive low on the fourth day."
 
 y s "I don't get why it's so hard for people to just accept the way things are."
 
-y n "We're not meant to control the world, y'know? "
+y n "We're not meant to control the world, {w=0.15}y'know? "
 
-y n "Things are how they are, ya can't fight that."
+y n "Things are how they are, {w=0.15}ya can't fight that."
 
 y s "Especially when it comes to people."
 
@@ -50,11 +46,11 @@ menu:
     "I agree.":
         pass
 
-y s "I don't feel bad about what I said Cap, but I can't help but feel sorry for the guy."
+y s "I don't feel bad about what I said Cap, {w=0.15}but I can't help but feel sorry for the guy."
 
 y n "I'm not a machine."
 
-y s "I did what I thought would be best for us both though, I was honest."
+y s "I did what I thought would be best for us both though, {w=0.15}I was honest."
 
 y h "No regrets."
 
@@ -64,13 +60,13 @@ menu:
     "Plans for the day?":
         pass
 
-y h "Oh, thinking I might jump into Nemas room and hurt her feelings. I'm trying to get through the whole crew by the end of the week."
+y h "Oh, {w=0.15}thinking I might jump into Nemas room and hurt her feelings. I'm trying to get through the whole crew by the end of the week."
 
 e "Haruka smirked."
 
-y n "Nah, I'm going to just do a full system checkup today."
+y n "Nah, {w=0.15}I'm going to just do a full system checkup today."
 
-y n "Do it when things are working fine, and they'll stay that way."
+y n "Do it when things are working fine, {w=0.15}and they'll stay that way."
 
 y n "That should take the whole day I figure. If not then I'll-"
 
@@ -79,7 +75,7 @@ e "Nema enters"
 show p su:
     linear 0 xalign 0.9 yalign 1.0
 
-p su "Captain, something strange is showing up on the radar."
+p su "Captain, {w=0.15}something strange is showing up on the radar."
 
 show y su
 
@@ -87,11 +83,11 @@ y su "Strange? Like how?"
 
 show p n
 
-p n "Please, both of you come take a look."
+p n "Please, {w=0.15}both of you come take a look."
 
 e "You walk into the nav room."
 
-p n "Do you see the yellow mass on the radar, toward the right side of the screen?"
+p n "Do you see the yellow mass on the radar, {w=0.15}toward the right side of the screen?"
 
 show y su
 
@@ -99,17 +95,17 @@ y su "A ship? Way out here? "
 
 show p n
 
-p n "I checked, we're nowhere near any checkpoint or station. "
+p n "I checked, {w=0.15}we're nowhere near any checkpoint or station. "
 
 p n "It is possible we just happened upon a random traveller."
 
 show y s
 
-y s "Well, hardly."
+y s "Well, {w=0.15}hardly."
 
 show p s
 
-p s "Yes, it's true. Most encounters this far are less innocent..."
+p s "Yes, {w=0.15}it's true. Most encounters this far are less innocent..."
 
 p n "It has the highest probability of being Haneshowas."
 
@@ -119,7 +115,7 @@ y su "A what?"
 
 show p n
 
-p n "Those who chose to break from civilization after the government unification happened. They move between their base and the edges of our zoned-space to pick off travellers. This is a bit far out, but perhaps we're catching them on their way back to wherever they've set up operations."
+p n "Those who chose to break from civilization after the government unification happened. They move between their base and the edges of our zoned-space to pick off travellers. This is a bit far out, {w=0.15}but perhaps we're catching them on their way back to wherever they've set up operations."
 
 show y n
 
@@ -135,7 +131,7 @@ y n "It's slang for all that mess that just came out of your mouth."
 
 show p n
 
-p n "Oh. Yes, Lurks."
+p n "Oh. Yes, {w=0.15}Lurks."
 
 menu:
     "How long until we encounter them?":
@@ -145,19 +141,19 @@ p n "It looks like we have approximately three days."
 
 show y n
 
-y n "Good, so we have time."
+y n "Good, {w=0.15}so we have time."
 
-y n "We can prepare ourselves and fight them head on. No doubt we have more firepower than them, this ship is state of the art."
+y n "We can prepare ourselves and fight them head on. No doubt we have more firepower than them, {w=0.15}this ship is state of the art."
 
 show p s
 
 p s "F-...fight them?"
 
-p n "Captain, not to be disrespectful to Haruka, but I suggest we avoid them entirely. With our few days, we can take a long course around and avoid any sort of conflict. There's a mass of debris and large objects between us and the ship that will most likely block any sort of scanner that they have from detecting us until we've already passed them. It's the safest option."
+p n "Captain, {w=0.15}not to be disrespectful to Haruka, {w=0.15}but I suggest we avoid them entirely. With our few days, {w=0.15}we can take a long course around and avoid any sort of conflict. There's a mass of debris and large objects between us and the ship that will most likely block any sort of scanner that they have from detecting us until we've already passed them. It's the safest option."
 
 show y m
 
-y m "But if we're heading toward wherever their home base is, who's to say they wont report our path back to the rest of their group and ambush us somewhere down the road?"
+y m "But if we're heading toward wherever their home base is, {w=0.15}who's to say they wont report our path back to the rest of their group and ambush us somewhere down the road?"
 
 show p s
 
@@ -165,7 +161,7 @@ p s "..."
 
 show y m
 
-y m "We need to pound them now, show them that we're a force to be reckoned with, and scare them off us."
+y m "We need to pound them now, {w=0.15}show them that we're a force to be reckoned with, {w=0.15}and scare them off us."
 
 show p s
 
@@ -180,20 +176,20 @@ menu:
 
 show p n
 
-p n "That could also put a target on us, and notify them that we have things worth stealing, despite the risk."
+p n "That could also put a target on us, {w=0.15}and notify them that we have things worth stealing, {w=0.15}despite the risk."
 
-p n "I still suggest manuvering around the object. Even if our path is reported to the rest of their forces, we'll become aware of any oncoming ambush with our long range scanners, and be able to outrun any vessel they have."
+p n "I still suggest manuvering around the object. Even if our path is reported to the rest of their forces, {w=0.15}we'll become aware of any oncoming ambush with our long range scanners, {w=0.15}and be able to outrun any vessel they have."
 
 menu:
-    "Nema, are you sure we'd be able to detect and outrun them?":
+    "Nema, {w=0.15}are you sure we'd be able to detect and outrun them?":
         pass
 
-    "Haruka, are you sure we'd be able to fight them directly?":
+    "Haruka, {w=0.15}are you sure we'd be able to fight them directly?":
         pass
 
 p n "I'm fairly confident Captain."
      
-p n "With Haruka's one-of-a-kind engine and a complete suite of state of the art technology backing it up, we should be able to vastly outpace even the most advanced crafts that exist within high-level stations."
+p n "With Haruka's one-of-a-kind engine and a complete suite of state of the art technology backing it up, {w=0.15}we should be able to vastly outpace even the most advanced crafts that exist within high-level stations."
      
 p n "Let alone a... \"Lurk\""
 
@@ -201,7 +197,7 @@ menu:
     "Two prior options.":
         pass
 
-    "OK, I've made a decision.":
+    "OK, {w=0.15}I've made a decision.":
         pass
 
 menu:
@@ -221,7 +217,7 @@ e "Nema smiles."
 
 show p n
 
-p n "I'll begin plotting a course around the threat, thank you sir."
+p n "I'll begin plotting a course around the threat, {w=0.15}thank you sir."
 
 menu:
     "Of course.":
@@ -232,7 +228,7 @@ menu:
 
 show y n
 
-y n "And I should get movin' too, see ya at dinner."
+y n "And I should get movin' too, {w=0.15}see ya at dinner."
 
 menu:
     "Good luck to you both!":
@@ -245,17 +241,17 @@ y h "Thanks Cap."
 
 show p h
 
-p h "Yes, Captain!"
+p h "Yes, {w=0.15}Captain!"
 
-p n "Oh wait, sir?"
+p n "Oh wait, {w=0.15}sir?"
 
 menu:
     "Yes?":
         pass
 
-p s "I'm sorry to bother you, but... if at all possible, could you find time to go and speak to Hei today?"
+p s "I'm sorry to bother you, {w=0.15}but... if at all possible, {w=0.15}could you find time to go and speak to Hei today?"
 
-p n "I had a hard time speaking with him last night, but I believe you could boost his morale."
+p n "I had a hard time speaking with him last night, {w=0.15}but I believe you could boost his morale."
 
 menu:
     "Okay.":
@@ -269,11 +265,11 @@ hide p
 
 hide y
 
-call hall
+call hall from _call_hall_26
         
 e "You walk up to Hei's door."
 
-call redRoom
+call redRoom from _call_redRoom_4
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -289,15 +285,15 @@ show r n
 r n "How are you feeling today?"
 
 menu:
-    "Great, how about you?":
+    "Great, {w=0.15}how about you?":
         pass
 
     "Hi.":
         pass
 
-r h "Hey, pretty grand. Can't keep me down man."
+r h "Hey, {w=0.15}pretty grand. Can't keep me down man."
 
-r s "You know, at first I was really down, but I realized that Haruka was right."
+r s "You know, {w=0.15}at first I was really down, {w=0.15}but I realized that Haruka was right."
 
 menu:
     "Really?":
@@ -306,7 +302,7 @@ menu:
     "In what way?":
         pass
 
-r n "Yeah, she wants a strong man, and I haven't shown that to her. Why would she be interested?"
+r n "Yeah, {w=0.15}she wants a strong man, {w=0.15}and I haven't shown that to her. Why would she be interested?"
 
 menu:
     "So what will you do?":
@@ -321,7 +317,7 @@ r n "I'm gonna work hard."
 
 r n "What else? I'm gonna become a man she can look to when she's in need."
 
-r n "When all is lost, and she needs a miracle, I'll be the first thing she thinks of."
+r n "When all is lost, {w=0.15}and she needs a miracle, {w=0.15}I'll be the first thing she thinks of."
 
 r h "That kind of man."
 
@@ -329,15 +325,15 @@ menu:
     "How?":
         pass
 
-r n "Easy, I already told you, I'm gonna work hard."
+r n "Easy, {w=0.15}I already told you, {w=0.15}I'm gonna work hard."
 
 menu:
     "At what?":
         pass
 
-r n "Oh... Well, I'll figure it out."
+r n "Oh... Well, {w=0.15}I'll figure it out."
 
-r h "You worry too much man, I don't get why she likes you."
+r h "You worry too much man, {w=0.15}I don't get why she likes you."
 
 menu:
     "That's a bit mean.":
@@ -346,7 +342,7 @@ menu:
     "Excuse me?":
         pass
 
-r h "No offence, I think you're great, but you don't really say, or... do... much. It sounds like I'm being a dick, but for real."
+r h "No offence, {w=0.15}I think you're great, {w=0.15}but you don't really say, {w=0.15}or... do... much. It sounds like I'm being a dick, {w=0.15}but for real."
 
 r n "How can she like you when you haven't given her anything to like?"
 
@@ -357,37 +353,37 @@ menu:
     "How could she not?":
         pass
 
-r n "Well yeah, she's great."
+r n "Well yeah, {w=0.15}she's great."
 
 menu:
     "She doesn't say much.":
         pass
 
-r n "Well, no. I guess not. But she kind of communicates in a different way."
+r n "Well, {w=0.15}no. I guess not. But she kind of communicates in a different way."
 
 menu:
     "...":
         pass
 
-r n "Like, I just get her. You know? I don't need to say a lot, and neither does she. We're buds."
+r n "Like, {w=0.15}I just get her. You know? I don't need to say a lot, {w=0.15}and neither does she. We're buds."
 
 menu:
     "...?":
         pass
 
-r n "Whatever man, it's OK. I didn't mean to put you down, just thinkin' out loud."
+r n "Whatever man, {w=0.15}it's OK. I didn't mean to put you down, {w=0.15}just thinkin' out loud."
 
 menu:
     "OK.":
         pass
 
-r n "So, I guess I should get to working on a plan. How to be a man..."
+r n "So, {w=0.15}I guess I should get to working on a plan. How to be a man..."
 
 menu:
     "Whatever happened to your plan for dinner last night?":
         pass
 
-    "Alright, good luck!":
+    "Alright, {w=0.15}good luck!":
         pass
 
 r n "Plan for dinner last night?"
@@ -413,7 +409,7 @@ menu:
 r n "Me? For Haruka?"
 
 menu:
-    "Yes, you said it would blow my mind?":
+    "Yes, {w=0.15}you said it would blow my mind?":
         pass
 
     "Nevermind.":
@@ -447,7 +443,7 @@ r h "Thanks!"
 
 hide r
 
-call hall
+call hall from _call_hall_27
 
 e "Everyone's working on a task. How will you spend your day?"
 
@@ -458,15 +454,15 @@ menu:
     "Report writing.":
         pass
         
-call blueRoom
+call blueRoom from _call_blueRoom_12
 
 e "Time passes..." #todo
 
 show p n
 
-p n "Excuse me, sir?"
+p n "Excuse me, {w=0.15}sir?"
 
-p n "Dinner is ready, at your convenience sir."
+p n "Dinner is ready, {w=0.15}at your convenience sir."
 
 menu:
     "Thank you Nema.":
@@ -479,7 +475,7 @@ e "Nema smiles."
 
 p n "I'll tell the rest."
 
-p n "Haruka and Hei said they'd just be a little bit, but... well... everything's all set up if you want to eat, sir. I'm going to wait, but there's no reason you should have to."
+p n "Haruka and Hei said they'd just be a little bit, {w=0.15}but... well... everything's all set up if you want to eat, {w=0.15}sir. I'm going to wait, {w=0.15}but there's no reason you should have to."
 
 menu:
     "Sure!":
@@ -517,13 +513,13 @@ menu:
     "What about Hei?":
         pass
 
-p n "He was playing a game and just said \"I know, I know.\""
+p n "He was playing a game and just said \"I know, {w=0.15}I know.\""
 
-p s "I took that as his way of saying he would come as soon as possible, but I suppose I assumed a bit much."
+p s "I took that as his way of saying he would come as soon as possible, {w=0.15}but I suppose I assumed a bit much."
 
 p n "..."
 
-p n "Not a problem, I'll pack their meals away in the fridge."
+p n "Not a problem, {w=0.15}I'll pack their meals away in the fridge."
 
 menu:
     "Need help?":
@@ -544,14 +540,14 @@ p n "W-"
 
 e "Nema struggles to find words."
 
-p n "No, nevermind. I figured it out."
+p n "No, {w=0.15}nevermind. I figured it out."
 
 p n "Thank you though. "
 
 e "Nema smiled."
 
 menu:
-    "No, what was it?":
+    "No, {w=0.15}what was it?":
         pass
 
     "No problem.":
@@ -574,9 +570,9 @@ menu:
 
 p h "That's oddly a relief to me... Thank you."
 
-p s "To be quite honest, I'm worried as well."
+p s "To be quite honest, {w=0.15}I'm worried as well."
 
-p n "These \"Lurks\" that we saw earlier, I've noticed something weird."
+p n "These \"Lurks\" that we saw earlier, {w=0.15}I've noticed something weird."
 
 p n "The shape has changed. From a triangular mass to a large circle. It seems to be slowly spreading out."
 
@@ -587,13 +583,13 @@ menu:
     "Uh oh.":
         pass
 
-p n "It most likely is just interference, but it makes me uneasy. If something is able to effect our view that much, does that mean our information is unreliable?"
+p n "It most likely is just interference, {w=0.15}but it makes me uneasy. If something is able to effect our view that much, {w=0.15}does that mean our information is unreliable?"
 
 menu:
     "Should extra steps be taken?":
         pass
 
-p s "No, no. As I said, I think it's just a sort of interference. It just gave me momentary pause, I apologize Captain."
+p s "No, {w=0.15}no. As I said, {w=0.15}I think it's just a sort of interference. It just gave me momentary pause, {w=0.15}I apologize Captain."
 
 p n "I still firmly believe all that I said earlier this morning about the situation."
 
@@ -605,7 +601,7 @@ menu:
     "What happened?":
         pass
 
-    "Quck, to the nav room!":
+    "Quck, {w=0.15}to the nav room!":
         pass
 
 p su "I-I'm not sure! We-w-uhm..."
@@ -619,7 +615,7 @@ menu:
     "Hide.":
         pass
 
-call navRoom
+call navRoom from _call_navRoom_3
 
 p n "Yes sir!"
 
@@ -629,7 +625,7 @@ menu:
 
 p n "It looks like... a large asteroid just happened to pass beween us and the sun. "
 
-p n "Everything else is full power, the autopilot AI is functioning normally, we should be in no danger."
+p n "Everything else is full power, {w=0.15}the autopilot AI is functioning normally, {w=0.15}we should be in no danger."
 
 menu:
     "How did we not notice this asteroid before?":
@@ -638,7 +634,7 @@ menu:
     "Good to hear!":
         pass
 
-p n "I'm sorry sir, I actually did notice the asteroid before, but I failed to notice that it would have this effect on us. I apologize."
+p n "I'm sorry sir, {w=0.15}I actually did notice the asteroid before, {w=0.15}but I failed to notice that it would have this effect on us. I apologize."
 
 menu:
     "That's OK.":
@@ -664,7 +660,7 @@ p n "It seems to just be just a large asteroid blocking out the sunlight."
 
 show y n
 
-y n "Oh damn, well good. I thought we were about to launch into something serious."
+y n "Oh damn, {w=0.15}well good. I thought we were about to launch into something serious."
 
 y n "How long's this gonna go on for?"
 
@@ -678,7 +674,7 @@ y n "Thirteen hours? Wow..."
 
 show p n
 
-p n "Yes, the asteroid is travelling almost perfectly parallel to us."
+p n "Yes, {w=0.15}the asteroid is travelling almost perfectly parallel to us."
 
 show y h
 
@@ -693,21 +689,21 @@ menu:
 
 y n "It's exciting. "
 
-y h "A lil' taste of what things were like back on the blue rock, eh?"
+y h "A lil' taste of what things were like back on the blue rock, {w=0.15}eh?"
 
 e "Haruka smiles."
 
-y n "Perfect timing too, I was thinking of grabbin' some food and hittin' the bed."
+y n "Perfect timing too, {w=0.15}I was thinking of grabbin' some food and hittin' the bed."
 
-y n "Nems, there any food left?"
+y n "Nems, {w=0.15}there any food left?"
 
 show p n
 
-p n "Oh, yes. I saved a portion for you in the fridge."
+p n "Oh, {w=0.15}yes. I saved a portion for you in the fridge."
 
 show y h
 
-y h "Thanks, it smells so good, I've been rushin' through my last bit of work so I could come get some."
+y h "Thanks, {w=0.15}it smells so good, {w=0.15}I've been rushin' through my last bit of work so I could come get some."
 
 show p su
 
@@ -719,21 +715,21 @@ y n "Course. I'm stravin'."
 
 show p h
 
-p h "Oh, thank you Haruka!"
+p h "Oh, {w=0.15}thank you Haruka!"
 
 show y m
 
 y m "Sure?"
 
-y h "Well, I'm gonna go grab that, thanks."
+y h "Well, {w=0.15}I'm gonna go grab that, {w=0.15}thanks."
 
 hide y
 
 show p h
 
-p h "Well, of course!"
+p h "Well, {w=0.15}of course!"
 
-p h "I'm going to get to my room as well Captain, be sure to enjoy this personal night the best you can!"
+p h "I'm going to get to my room as well Captain, {w=0.15}be sure to enjoy this personal night the best you can!"
 
 menu:
     "OK.":
@@ -750,6 +746,6 @@ hide p
 
 e "You decide to head to yours as well."
 
-call blueRoom
+call blueRoom from _call_blueRoom_13
 
 return

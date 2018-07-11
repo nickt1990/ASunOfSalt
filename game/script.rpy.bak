@@ -8,6 +8,7 @@
         xpos 0.6
     transform midleft:
         xpos 0.05
+        
     
 # The start label marks the place where the main menu jumps to to
 # begin the actual game.
@@ -41,37 +42,59 @@ label start:
     # Store the current version of Ren'Py into a variable, so we can
     # interpolate it into the next line.
     $ version = renpy.version()
-
-    call day1
-    call day2
-    call day2Night
-    call day3
-    call day4
-    call day4Night
-    call day5
-    call day6
-    call day7
-    call day8
-    call day9
-    call day10
-    #call day11
-    #call day12
-    #call day13
-    #call day14
-    #call day15
-    #call day16
-    #call day17
-    #call day18
-    #call day19
-    #call day20
+    
+    call dayOneCard
+    call day1 from _call_day1
+    
+    call dayTwoCard    
+    call day2 from _call_day2
+    call day2Night from _call_day2Night
+    
+    call dayThreeCard
+    call day3 from _call_day3
+    
+    call dayFourCard
+    call day4 from _call_day4
+    call day4Night from _call_day4Night
+    
+    call dayFiveCard
+    call day5 from _call_day5
+    
+    call daySixCard
+    call day6 from _call_day6
+    call day6Night
+    
+    call daySevenCard
+    call day7 from _call_day7
+    
+    call dayEightCard
+    call day8 from _call_day8
+    
+    call dayNineCard
+    call day9 from _call_day9    
+    call day9Night
+    
+    call day10 from _call_day10
+    
+    call day10Night
+    
+    call day11
+    
+    call day11Night
+    
+    call day12
+    
+    call day13
+    
+    call day14
+    
+    call day15
+    
     
     #call endings
-    
-    
-    y "You've returned to the script file, dummy!"
 
     $ minutes, seconds = divmod(int(renpy.get_game_runtime()), 60)
-    "%(minutes)d minutes and %(seconds)d seconds, thanks for playing!"
+    "Your playtime is %(minutes)d minutes and %(seconds)d seconds."
     
        
     $ renpy.full_restart()

@@ -309,17 +309,18 @@ menu:
         pass
 
     "That's no excuse.":
+        y m "Ugh. {w=0.15}I know, {w=0.15}I know."
         pass
 
 y s "You probably think I'm insane."
 
-y n "But like I told you, sex isn't some casual thing to me."
+y n "But like I told you, {w=0.15}sex isn't some casual thing to me."
 
-y s "I know I don't own you or anything, I haven't even told... "
+y s "I know I don't own you or anything,{w=0.15} I haven't even told... "
 
 y n "Nevermind."
 
-y n "Point is, I was a jerk."
+y n "Point is, {w=0.15}I was a jerk."
 
 y m "Again."
 
@@ -346,6 +347,8 @@ y m "Hmph."
 
 play sound "sounds/DoorOpen2.mp3"
 
+hide y
+
 e "Haruka walks out of the room."
 
 play sound "sounds/DoorClose2.mp3"
@@ -360,6 +363,8 @@ menu:
 
 play sound "sounds/DoorOpen2.mp3"
 
+call hall from _call_hall_22
+
 e "You open the door and enter the hallway."
 
 play sound "sounds/DoorClose2.mp3"
@@ -372,7 +377,8 @@ show r s
 
 r s "C'mon, {w=0.15}you said it yourself that I wasn't too bad, what could it hurt?"
 
-show y m
+show y m:
+    linear 0 xalign 0.9 yalign 1.0
 
 y m "No,{w=0.15} absolutely not."
 
@@ -409,6 +415,8 @@ show y h
 y h "You're a real dirtbag rollercoaster,{w=0.15} you know that?"
 
 play sound "sounds/DoorOpen2.mp3"
+
+hide y
 
 e "Haruka abruptyl turns and enters her room."
 
@@ -456,7 +464,7 @@ menu:
 r h "Take a ride on the Nema express?"
 
 menu:
-    "That's extremely rude.":
+    "That's pretty rude.":
         pass
 
     "No.":
@@ -466,7 +474,7 @@ r su "Oh, {w=0.15}right."
 
 r s "Sorry, {w=0.15}I didn't mean it that way."
 
-r h "Well I did, but..."
+r h "Well I did,{w=0.15} but..."
 
 r n "I meant it in a bros kinda way,{w=0.15} right?"
 
@@ -485,9 +493,12 @@ r n "Whatever man, {w=0.15}I got some games to play."
 
 play sound "sounds/DoorOpen2.mp3"
 
-e "Hei walks over and opens his door, then..."
+e "Hei walks over and opens his door,{w=0.15} then..."
 
-show p su
+show p su:
+    linear 0 xalign 0.9 yalign 1.0
+
+play sound "sounds/DoorOpen2.mp3"
 
 p su "Wait!"
 
@@ -499,7 +510,7 @@ r su "Huh?"
 
 show p n
 
-p n "Hei..."
+p n "Hei{w=0.15}.{w=0.15}.{w=0.15}."
 
 show r n
 
@@ -507,15 +518,15 @@ r n "Oh hey, {w=0.15}wanna play?"
 
 show p h
 
-p h "Well, yes. I do."
+p h "Well,{w=0.15} yes.{w=0.25} I do."
 
 show r h
 
-r h "Noice. C'mon."
+r h "Noice.{w=0.25} C'mon."
 
 show p s
 
-p s "Wait, {w=0.15}first, I want to talk for a second."
+p s "Wait, {w=0.15}first,{w=0.15} I want to talk for a second."
 
 p s "Talking with Captain last night got me thinking..."
 
@@ -533,7 +544,7 @@ p n "I don't want to hold myself back anymore."
 
 p n "I just want to follow how I feel."
 
-p h "And I feel like..."
+p h "And I feel like.{w=0.15}.{w=0.15}."
 
 p n "I love you."
 
@@ -549,9 +560,9 @@ show r n
 
 r n "..."
 
-r s "..."
+r s ".{w=0.15}.{w=0.15}."
 
-r s "I'm sorry,{w=0.15} Nems, I thought we..."
+r s "I'm sorry,{w=0.15} Nems, I thought we.{w=0.15}.{w=0.15}."
 
 r s "Aren't we friends?"
 
@@ -567,11 +578,13 @@ r h "We're good friends,{w=0.15} right?"
 
 show p s
 
-p s "..."
+p s ".{w=0.15}.{w=0.15}."
 
 p s "I suppose it is."
 
 play sound "sounds/DoorClose2.mp3"
+
+hide p
 
 e "Nema turned and walked back into her room."
 
@@ -583,15 +596,19 @@ r s "Ugh."
 
 play sound "sounds/DoorClose2.mp3"
 
+hide r
+
 e "Hei walks back into his room as well."
 
 menu:
     "Head back to your room":
+        call blueRoom from _call_blueRoom_9
         pass
 
 e "You stay in your room for the rest of the day working."
 
-e "You don't hear anyone else leave their rooms."
+e "You don't hear anyone else leave their rooms for the rest of the night."
 
+show black
 
 return

@@ -1,10 +1,20 @@
 ﻿label day14:
     
+e ".{w=0.15}.{w=0.15}."
+
+hide black
+    
+e "You're woken up by some sort of sound coming from the hallway."
+
+e "It sounds like.{w=0.15}.{w=0.15}.{w=0.15} music?"
+    
 menu:
     "Check it out.":
         pass
 
 e "You walk over to the doorway."
+
+call hall from _call_hall_28
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -40,13 +50,14 @@ menu:
         pass
 
     "Did he talk you into that?":
+        p h "Hah, no Sir."
         pass
 
 p h "I want to understand thigns better."
 
 p n "I was thinking I'd monitor the levels and find averages."
 
-p n "Maybe we can automate the process at some point."
+p n "Maybe we can automate the process somehow."
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -81,7 +92,7 @@ show p s
 
 p s "..."
 
-p n "..."
+p n ".{w=0.15}.{w=0.15}."
 
 p m "No."
 
@@ -135,11 +146,19 @@ y m "Get out here and talk to me!"
 
 show p m
 
+play sound "sounds/DoorOpen2.mp3"
+
+e "Nema pops her head out of her doo."
+
 p m "I've been trying to talk to you for two weeks and I haven't made any progress."
 
 p m "You say you're sick of always being in control? "
 
 p m "Here's your chance,{w=0.15} sit back."
+
+hide p
+
+play sound "sounds/DoorClose2.mp3"
 
 e "Nema turned up the music in her room."
 
@@ -181,9 +200,9 @@ y m "I have a plan in place, {w=0.15}you have to come to me with this stuff."
 
 show r m
 
-r m "Woah dude, {w=0.15}what the hell."
+r m "Woah dude, {w=0.15}what?"
 
-r m "How am I getting yelled at here all of a sudden?"
+r m "Why am I getting chewed out here all of a sudden?"
 
 r m "You're the one that said you wanted us to take some initiative."
 
@@ -203,7 +222,7 @@ r m "Have you ever thought maybe that you're the problem?"
 
 r m "Maybe Nema and I want to try and do more,{w=0.15} but you always just shut us down?"
 
-r m "If you actually wanted us to step up, you've give us a chance."
+r m "If you actually wanted us to step up,{w=0.15} you've give us a chance."
 
 r m "You just want to feel all high and mighty and tell us what to do and feel like the one smart person among idiots."
 
@@ -233,13 +252,15 @@ y m "And I'm the bad guy here."
 
 menu:
     "Well, you are kind of shutting them down.":
+        y m "Seriously?"
         pass
 
     "Everyone's stressed out, just calm down.":
+        y m "Whatever."
         pass
 
-y m "Seriously?"
-
 y m "I'll see you later,{w=0.15} I can't do this right now."
+
+hide y
 
 return

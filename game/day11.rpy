@@ -35,7 +35,7 @@ menu:
     "Check it out.":
         pass
         
-call hall
+call hall from _call_hall_10
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -376,7 +376,7 @@ e "Haruka walked off toward the navigation room."
 
 play sound "sounds/DoorClose2.mp3"
 
-call blueRoom
+call blueRoom from _call_blueRoom_5
 
 e "You turned the other way and walked into your room."
 

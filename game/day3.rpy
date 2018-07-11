@@ -1,5 +1,5 @@
 ﻿label day3:
-e "There's a small introduction to your new application, and then you are shown a screen that lists the names of the crew."
+e "TODO: There's a small introduction to your new application, {w=0.15}and then you are shown a screen that lists the names of the crew."
 
 e "There is a sort of progress bar for each made of 3 chunks. Bad. Good. Perfect."
 
@@ -18,7 +18,7 @@ play sound "sounds/DoorOpen2.mp3"
 
 e "You open the door."
 
-call hall
+call hall from _call_hall_29
 
 e "You step out into the hallway. Haruka is laying on the floor with a blanket. Her eyes are closed."
 
@@ -31,7 +31,7 @@ menu:
 
 show y h
 
-y h "Oh, hey Cap. How you feeling after the late night?"
+y h "Oh, {w=0.15}hey Cap. How you feeling after the late night?"
 
 menu:
     "Excellent!":
@@ -40,7 +40,7 @@ menu:
     "Terrible!":
         pass
 
-y h "There he is, what a champ."
+y h "There he is, {w=0.15}what a champ."
 
 menu:
     "What are you doing?":
@@ -48,7 +48,7 @@ menu:
 
 y n "Layin' on the heater."
 
-y h "It feels good, so warm."
+y h "It feels good, {w=0.15}so warm."
 
 y n "It's easy to just zone out and relax."
 
@@ -59,7 +59,7 @@ menu:
     "In the hall?":
         pass
 
-y n "Yeah, I s'pose."
+y n "Yeah, {w=0.15}I s'pose."
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -82,7 +82,7 @@ r s "Why so hostile my pristine lemon cake?"
 
 show y n
 
-y n "No reason, my garbage pile of a crewmate."
+y n "No reason, {w=0.15}my garbage pile of a crewmate."
 
 show r h
 
@@ -118,11 +118,11 @@ show r h
 
 r h "PSYCH."
      
-r  "I'm the best, put the rest of the applicants to SHAME! I'm smart as hell dude, seriously."
+r  "I'm the best, {w=0.15}put the rest of the applicants to SHAME! I'm smart as hell dude, {w=0.15}seriously."
 
 show y n
 
-y n "OK, thank's for clearin' that up."
+y n "OK, {w=0.15}thank's for clearin' that up."
 
 show r n
 
@@ -145,7 +145,7 @@ menu:
     "Say nothing.":
         pass
 
-r m "Fine fine, geez, I was just joshin' sir."
+r m "Fine fine, {w=0.15}geez, {w=0.15}I was just joshin' sir."
 
 hide r m
 
@@ -159,7 +159,7 @@ e "There's a hint of a smile on her face."
 
 y n "I'm gonna use my newfound quiet for a bit of a nap."
 
-y h "I'll see you at breakfast, right Cappo?"
+y h "I'll see you at breakfast, {w=0.15}right Cappo?"
 
 menu:
     "Of course.":
@@ -178,7 +178,7 @@ menu:
 
 e "REDS ROOM"
 
-call redRoom
+call redRoom from _call_redRoom_5
 
 show r h
 
@@ -248,7 +248,7 @@ r n "You've barely said 3 words to you and she's all over ya."
 
 r s "I crack these hilarious jokes and she doesn't even smile."
 
-r n "Forget smiling, she hates my jokes."
+r n "Forget smiling, {w=0.15}she hates my jokes."
 
 r s "And me."
 
@@ -261,7 +261,7 @@ menu:
     "She seems to hate lazyness.":
         pass
 
-r n "Yeah, I can't disagree there."
+r n "Yeah, {w=0.15}I can't disagree there."
 
 r s "but I mean"
 
@@ -278,7 +278,7 @@ menu:
     "Artist?":
         pass
 
-r n "I played piano in the section 196 orchestra for three years, I was youngest in the whole place!"
+r n "I played piano in the section 196 orchestra for three years, {w=0.15}I was youngest in the whole place!"
 
 r m "I lead myself into that stuff."
 
@@ -292,7 +292,7 @@ r s "I am a cardboard box in the rain. Melting like ice cream on a summer's even
 
 r n "I was also the first person under 50 to be featured in my parents monthly poem compendium."
 
-r n "It may not be seeable, but I'm pretty boss when it comes to words and sentences... in an artistic way."
+r n "It may not be seeable, {w=0.15}but I'm pretty boss when it comes to words and sentences... in an artistic way."
 
 menu:
     "I'm sold.":
@@ -314,11 +314,11 @@ menu:
 
 r n "That's it... She wants a go-getter."
 
-r h "Thanks bud! I need to get to work. Dinner tonight, prepare your mind to be blown."
+r h "Thanks bud! I need to get to work. Dinner tonight, {w=0.15}prepare your mind to be blown."
 
 e "His eyes have glazed over."
 
-call hall
+call hall from _call_hall_30
 
 hide r
 
@@ -328,7 +328,7 @@ menu:
     "NEMAS ROOM":
         pass
 
-call pinkRoom
+call pinkRoom from _call_pinkRoom_2
 
 e "Nema is laying on the floor."
 
@@ -352,19 +352,19 @@ e "Her eyes shoot open."
 
 e "She looks like a scared owl."
 
-e "Her mouth opens, then her eyes slowly close."
+e "Her mouth opens, {w=0.15}then her eyes slowly close."
 
 e "She slowly curls up on the bed and closes her eyes."
 
 hide p
 
-call hall
+call hall from _call_hall_31
 
 menu:
     "BREAKFAST":
         pass
         
-call kitchen
+call kitchen from _call_kitchen_8
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -380,7 +380,7 @@ menu:
     "We're going to let her catch up on a bit of rest.":
         pass
 
-r n "Oh, well I'm tired to so I'll catch you guys la-"
+r n "Oh, {w=0.15}well I'm tired to so I'll catch you guys la-"
 
 show y m:
     linear 0 xalign 0.9
@@ -393,27 +393,27 @@ r su "This trip sucks."
 
 show y m
 
-y m "This isn't a trip, this is your job."
+y m "This isn't a trip, {w=0.15}this is your job."
 
 show r s
 
 r s "Still sucks."
 
 menu:
-    "I agree, boring.":
+    "I agree, {w=0.15}boring.":
         pass
 
-    "I disagree, this has been great.":
+    "I disagree, {w=0.15}this has been great.":
         pass
 
 r n "See? Even our (small text)suspiciously quiet captain thinks so."
 
 show y m
 
-y m "Maybe if you both did your jobs then you wouldn't be so bored, yeah?"
+y m "Maybe if you both did your jobs then you wouldn't be so bored, {w=0.15}yeah?"
 
 menu:
-    "Speaking of jobs, what's the agenda for you two today?":
+    "Speaking of jobs, {w=0.15}what's the agenda for you two today?":
         pass
 
 show r h
@@ -450,7 +450,7 @@ menu:
     "What?":
         pass
 
-y h "Yup, military grade."
+y h "Yup, {w=0.15}military grade."
 
 y n "It's gonna be somethin' special. "
 
@@ -475,11 +475,11 @@ y m "What?"
 
 show r n
 
-r n "Like, is it sexy. Is it cool."
+r n "Like, {w=0.15}is it sexy. Is it cool."
 
 show y n
 
-y n "Hei, why do you make it so hard to be around you?"
+y n "Hei, {w=0.15}why do you make it so hard to be around you?"
 
 show r m
 
@@ -489,7 +489,7 @@ e "Everyone eats quietly for a little bit."
 
 e "..."
 
-r h "Bossman, can you fetch a bottle of soy sauce from the fridge?"
+r h "Bossman, {w=0.15}can you fetch a bottle of soy sauce from the fridge?"
 
 menu:
     "Can you fetch it yourself?":
@@ -498,7 +498,7 @@ menu:
     "No problem.":
         pass
 
-r n "Sorry, may you fetch it for me?"
+r n "Sorry, {w=0.15}may you fetch it for me?"
 
 show y m
 
@@ -518,13 +518,13 @@ y n "Ugh. I'll get it."
 
 show r su
 
-r su "Uh, no that's fine, I'll get it! Don't worry about it!"
+r su "Uh, {w=0.15}no that's fine, {w=0.15}I'll get it! Don't worry about it!"
 
 show y n
 
-#todo, from here to end, alternate portraits and such
+#todo, {w=0.15}from here to end, {w=0.15}alternate portraits and such
 
-y n "I'm already up, you can continue to be la-"
+y n "I'm already up, {w=0.15}you can continue to be la-"
 
 e "ketchup squirts out of the frige when Haru tries to open it."
 
@@ -536,7 +536,7 @@ r s "Yeah... pretty funny right?"
 
 e "Haruka grabs a knife from the counter."
 
-r su "Haruka c'mon, it wasn't even meant for you! "
+r su "Haruka c'mon, {w=0.15}it wasn't even meant for you! "
 
 e "She turnes around and looks at Hei for a moment."
 
@@ -544,7 +544,7 @@ r su "Haruka! I swear I would not have done it if I kn-"
 
 e "She begins to swiftly walk towards him."
 
-r su "Haruka please, I'm so sorry I'll clean it up, I'll never bother you again I swear, I do"
+r su "Haruka please, {w=0.15}I'm so sorry I'll clean it up, {w=0.15}I'll never bother you again I swear, {w=0.15}I do"
 
 e "The moment she reaches him she lashes her arm out and slices his throat."
 
@@ -557,7 +557,7 @@ e "He collapses to the floor."
 show y m:
     linear .3 xalign 0.5
 
-y m "I just couldn't do it, sorry cap."
+y m "I just couldn't do it, {w=0.15}sorry cap."
 
 menu:
     "Holy shit. ":
@@ -575,7 +575,7 @@ y s "He would have driven me crazy."
 y n "Maybe he did."
 
 menu:
-    "No, this is not OK. ":
+    "No, {w=0.15}this is not OK. ":
         pass
 
 y s "Fine. I knew what I was doing. I took a chance. "
@@ -590,7 +590,7 @@ y m "Coward."
 
 y n "COWARD."
 
-e "Her portrait starts to become disfigured, she slowly melts into nothing."
+e "Her portrait starts to become disfigured, {w=0.15}she slowly melts into nothing."
 
 hide y
 
@@ -618,7 +618,7 @@ menu:
 
 e "No response."
 
-e "Nema is facing away. When you talk to her, jump scare."
+e "Nema is facing away. When you talk to her, {w=0.15}jump scare."
 
 hide p
 
@@ -628,17 +628,17 @@ e "Things take a sinister tone again here."
 
 #new devil character to speak
 
-d "Leviathan ov mine, stir..."
+d "Leviathan ov mine, {w=0.15}stir..."
 
 d "My burning sea. Rise."
 
 d "I arrive."
 
-d "Blow your horns, devout. Announce me."
+d "Blow your horns, {w=0.15}devout. Announce me."
 
 d "A total waste. Devoid ov value."
 
-d "Meager, pathetic am I. "
+d "Meager, {w=0.15}pathetic am I. "
 
 d "Piles of flesh. "
 
@@ -665,7 +665,7 @@ show r s
 show y m:
     linear 0 xalign 0.99
 
-r s "Haruka c'mon, it wasn't even meant for you! "
+r s "Haruka c'mon, {w=0.15}it wasn't even meant for you! "
 
 show y m:
     linear .2 xalign 0.94
@@ -757,27 +757,27 @@ hide r
 
 e "You finish eating then walk into the hallway."
 
-call hall
+call hall from _call_hall_32
 
 e "You have a lot of work to do tonight."
 
-e "Make sure you do everything you want to do before returning to your room, as it may well be evening once you're done."
+e "Make sure you do everything you want to do before returning to your room, {w=0.15}as it may well be evening once you're done."
 
 e "HARUKAS ROOM"
 
-call yellowRoom
+call yellowRoom from _call_yellowRoom_3
 
 show y m
 
 y m "Can you believe that idiot?"
 
-y h "Cap, I'm happy you're here."
+y h "Cap, {w=0.15}I'm happy you're here."
 
 y n "At least there's one other sane person on this damn ship."
 
 y n "But..."
 
-y n "If you don't mind, I need to get some work done..."
+y n "If you don't mind, {w=0.15}I need to get some work done..."
 
 y n "Sorry Cap."
 
@@ -787,13 +787,13 @@ hide y n
 
 e "HEIS ROOM"
 
-call redRoom
+call redRoom from _call_redRoom_6
 
 show r s
 
 r s "Dude I really fucked up."
 
-r s "My goal has moved down from her liking me, to her not hating me."
+r s "My goal has moved down from her liking me, {w=0.15}to her not hating me."
 
 r s "I hate my life."
 
@@ -805,7 +805,7 @@ hide r n
 
 e "DINNER TIME"
 
-call kitchen
+call kitchen from _call_kitchen_9
 
 e "Only Nema is here."
 
@@ -814,8 +814,8 @@ show p h
 p h "Hello Captain!"
 
 menu:
-    "Nema, how are you feeling?":
-        p h "I'm feeling great, thank you for your leniency sir. "
+    "Nema, {w=0.15}how are you feeling?":
+        p h "I'm feeling great, {w=0.15}thank you for your leniency sir. "
         
         menu:
             "Of course.":
@@ -841,17 +841,17 @@ e "Nema chuckles."
 
 show p h
 
-p h "Yes Hei, thank you for your concern."
+p h "Yes Hei, {w=0.15}thank you for your concern."
 
 show r n
 
 r n "No prob."
 
-r h "So, what we having for dinner?"
+r h "So, {w=0.15}what we having for dinner?"
 
-r n "You know, I was sort of thinking that steak sounded good."
+r n "You know, {w=0.15}I was sort of thinking that steak sounded good."
 
-r n "Nema, do you know how to mak-"
+r n "Nema, {w=0.15}do you know how to mak-"
 
 e "Haruka walks through the still open door."
 
@@ -875,7 +875,7 @@ e "Haruka glares at Hei."
 
 show p h
 
-p h "Good evening Haruka, how has your day been?"
+p h "Good evening Haruka, {w=0.15}how has your day been?"
 
 show y n
 
@@ -887,17 +887,17 @@ p su "Why is that? Some excitement this morning or perh-"
 
 show y n
 
-y n "Hei, why has my day been interesting?"
+y n "Hei, {w=0.15}why has my day been interesting?"
 
 show r n
 
 r n "W-well..."
 
-r h "Today you worked on a new training device, and we're all just so excited b-"
+r h "Today you worked on a new training device, {w=0.15}and we're all just so excited b-"
 
 e "Haruka's glare intensified. "
 
-r s "Uh, h-heh. Sorry. Again."
+r s "Uh, {w=0.15}h-heh. Sorry. Again."
 
 show y n
 
@@ -913,17 +913,17 @@ y n "Alright... Forgiven."
 
 show r su
 
-r su "Wait, really?"
+r su "Wait, {w=0.15}really?"
 
 show y n
 
-y n "I'm stuck with ya, aren't I?"
+y n "I'm stuck with ya, {w=0.15}aren't I?"
      
 y n "Why not."
 
 show r h
 
-r h "Thanks babe, I rea-"
+r h "Thanks babe, {w=0.15}I rea-"
 
 show y n
 
@@ -941,7 +941,7 @@ y su "You can cook?"
 
 show p n
 
-p n "Well... y-yes. I thought I mentioned that yesterday, my apologies. My parents were bo-"
+p n "Well... y-yes. I thought I mentioned that yesterday, {w=0.15}my apologies. My parents were bo-"
 
 show y h
 
@@ -949,7 +949,7 @@ y h "Great! Lookin' forward to it."
 
 show p n
 
-p n "Oh! It will be great, I promise! You'll love it!"
+p n "Oh! It will be great, {w=0.15}I promise! You'll love it!"
 
 show y n
 
@@ -981,13 +981,13 @@ r n "I can bring out my Game Slab X."
 
 show y n
 
-y n "If we're going to play a game, how about we play somethin' that's... you know."
+y n "If we're going to play a game, {w=0.15}how about we play somethin' that's... you know."
 
 y n "Not that."
 
 show r s
 
-r s "Man, you really know how to hurt a guy."
+r s "Man, {w=0.15}you really know how to hurt a guy."
 
 show p n
 
@@ -1007,7 +1007,7 @@ y n "Twenty questions then."
 
 show p h
 
-p h "Sure! Yes, that sounds fine, thank you Haruka."
+p h "Sure! Yes, {w=0.15}that sounds fine, {w=0.15}thank you Haruka."
 
 show r m
 
@@ -1028,7 +1028,7 @@ y n "Eloquent. "
 
 show r n
 
-r n "Fine, whatever. What's your favorite color?"
+r n "Fine, {w=0.15}whatever. What's your favorite color?"
 
 show y n
 
@@ -1038,7 +1038,7 @@ y n "We'll eat and then we can think about the game."
 
 show r n
 
-r n "Speaking of eating, is food ready Nibbles?"
+r n "Speaking of eating, {w=0.15}is food ready Nibbles?"
 
 show p h
 
@@ -1079,7 +1079,7 @@ r h "This food is dope."
 
 show y n
 
-y n "It is pretty good, nice job."
+y n "It is pretty good, {w=0.15}nice job."
 
 show p h
 
@@ -1100,7 +1100,7 @@ e "Eat in silence."
 
 show r s
 
-r s "Nemo, ya haven't touched your food. Feelin' alright?"
+r s "Nemo, {w=0.15}ya haven't touched your food. Feelin' alright?"
 
 show p h
 
@@ -1124,11 +1124,11 @@ r n "That's adorable."
 
 show y n
 
-y n "C'mon, just eat up so we can play."
+y n "C'mon, {w=0.15}just eat up so we can play."
 
 show p n
 
-p n "I'll save it for later, I'm ready!"
+p n "I'll save it for later, {w=0.15}I'm ready!"
 
 menu:
     "Let's start!":
@@ -1138,7 +1138,7 @@ show y n
 
 y n "Ok. Here are the rules."
 
-y n "We go clockwise, so it'll go me, Hei, Nema, then Caps."
+y n "We go clockwise, {w=0.15}so it'll go me, {w=0.15}Hei, {w=0.15}Nema, {w=0.15}then Caps."
 
 show r n
 
@@ -1148,7 +1148,7 @@ show y m
 
 y m "No."
 
-y n "So on your turn, the other 3 each get to ask you a question, and you pick one to answer."
+y n "So on your turn, {w=0.15}the other 3 each get to ask you a question, {w=0.15}and you pick one to answer."
 
 show r n
 
@@ -1162,7 +1162,7 @@ y n "And we just do that around the circle. We can call five times around good."
 
 show p h
 
-p h "Haruka, I've never played the game this way. It sounds interesting."
+p h "Haruka, {w=0.15}I've never played the game this way. It sounds interesting."
 
 show y n
 
@@ -1174,21 +1174,21 @@ r n "So..."
 
 show y m
 
-y m "So ask away, idiot."
+y m "So ask away, {w=0.15}idiot."
 
 show r n
 
-r n "Ok, uhhhhh...."
+r n "Ok, {w=0.15}uhhhhh...."
 
 r n "What age did you have your first kiss?"
 
 show y n
 
-y n "What is this, middle school?"
+y n "What is this, {w=0.15}middle school?"
 
 show r s
 
-r s "Hey, don't make fun of my question. This was your stupid idea for a game."
+r s "Hey, {w=0.15}don't make fun of my question. This was your stupid idea for a game."
 
 show y n
 
@@ -1196,11 +1196,11 @@ y n "Whatever. Nema what do you have?"
 
 show p n
 
-p n "Haruka, what is one thing you are very proud of?"
+p n "Haruka, {w=0.15}what is one thing you are very proud of?"
 
 show y n
 
-y n "Alright, Cap?"
+y n "Alright, {w=0.15}Cap?"
 
 menu:
     "What age did you have your first kiss?":
@@ -1209,9 +1209,9 @@ menu:
     "What is one thing you're very ashamed of?":
         pass
 
-y n "Tryin' to block me in, eh?"
+y n "Tryin' to block me in, {w=0.15}eh?"
 
-y h "Well, I'll pick something I'm proud of."
+y h "Well, {w=0.15}I'll pick something I'm proud of."
 
 y n "This ship."
 
@@ -1219,12 +1219,12 @@ y n "Being here."
 
 y n "I worked my ass off my entire life."
 
-y n "I've never not had to struggle, y'know?"
+y n "I've never not had to struggle, {w=0.15}y'know?"
 
 y n "
 rrh"
 
-y n "Classic from rags to riches. The princess of the stars, they call her."
+y n "Classic from rags to riches. The princess of the stars, {w=0.15}they call her."
 
 y m "It's amazing that you can turn my pride into shame with one sentence."
 
@@ -1234,15 +1234,15 @@ r n "Eh."
 
 show y n
 
-y n "Alright, next. "
+y n "Alright, {w=0.15}next. "
 
 show p n
 
-p n "Uhmmm... Hei, it's your turn."
+p n "Uhmmm... Hei, {w=0.15}it's your turn."
 
 show r h
 
-r h "Nice. Alright, what do ya got for papa?"
+r h "Nice. Alright, {w=0.15}what do ya got for papa?"
 
 show p h
 
@@ -1250,7 +1250,7 @@ e "Nema chuckles."
 
 show p n
 
-p n "Hei, what is your crowning achievement?"
+p n "Hei, {w=0.15}what is your crowning achievement?"
 
 menu:
     "Have you always been bad at video games?":
@@ -1280,9 +1280,9 @@ y n "Why do you try so hard to annoy me?"
 
 show r h
 
-r h "Haruka, honey, I never tried to do anything but love you."
+r h "Haruka, {w=0.15}honey, {w=0.15}I never tried to do anything but love you."
 
-r n "Alright, your turn Captain."
+r n "Alright, {w=0.15}your turn Captain."
 
 e "Nema laughs."
 
@@ -1296,7 +1296,7 @@ r n "Straight from my heart."
 
 show y n
 
-y n "Fine, Cap, you can go."
+y n "Fine, {w=0.15}Cap, {w=0.15}you can go."
 
 show r s
 
@@ -1312,9 +1312,9 @@ y n "Who is your favorite crewmate?"
 
 show r n
 
-r n "Ohhh, I like that. Same."
+r n "Ohhh, {w=0.15}I like that. Same."
 
-r n "Nema, pick the same one..."
+r n "Nema, {w=0.15}pick the same one..."
 
 show p s
 
@@ -1322,7 +1322,7 @@ p s "B-but... I'd much rather know his greatest accomplishment to be quite hones
 
 show y n
 
-y n "What's with you and your hokey questions? You're supposed to dig out their darkest secrets, not help them write a resume."
+y n "What's with you and your hokey questions? You're supposed to dig out their darkest secrets, {w=0.15}not help them write a resume."
 
 show p s
 
@@ -1341,11 +1341,11 @@ menu:
     "Nema":
         pass
 
-y h "Shucks Cap, I knew the answer, but to hear it makes me smile. What a smooth operator."
+y h "Shucks Cap, {w=0.15}I knew the answer, {w=0.15}but to hear it makes me smile. What a smooth operator."
 
 show p h
 
-p h "No surprise, Haruka is very charasmatic and strong. "
+p h "No surprise, {w=0.15}Haruka is very charasmatic and strong. "
 
 e "Nema smiles."
 
@@ -1355,11 +1355,11 @@ r m "Eh."
 
 e "Haruka glares."
 
-r h "Haha, you know I joke babe. "
+r h "Haha, {w=0.15}you know I joke babe. "
 
 show y n
 
-y n "Whatever, back to me. "
+y n "Whatever, {w=0.15}back to me. "
 
 show r n
 
@@ -1371,15 +1371,15 @@ y n "Idiot. Anybody that isn't you."
 
 show r s
 
-r s "Hey, if you're choosing mine you have to be serious."
+r s "Hey, {w=0.15}if you're choosing mine you have to be serious."
 
 show y n
 
-y n "Hmph, Nema?"
+y n "Hmph, {w=0.15}Nema?"
 
 show p n
 
-p n "Oh, well..."
+p n "Oh, {w=0.15}well..."
 
 p s "Not hokey right? Uhm..."
 
@@ -1387,7 +1387,7 @@ p n "Could I ask... why do you seem to dislike Hei so much?"
 
 show y h
 
-y h "You can, that's the point of the game."
+y h "You can, {w=0.15}that's the point of the game."
 
 y n "Cap?"
 
@@ -1398,17 +1398,17 @@ menu:
     "Same as Hei":
         pass
 
-y n "You know what, why don't I answer 'em all at once?"
+y n "You know what, {w=0.15}why don't I answer 'em all at once?"
 
 y n "The ideal man for me is strong."
 
 y n "Not because I need to be taken care of."
 
-y n "Strong mind, strong opinions, strong will. Someone to stand beside me."
+y n "Strong mind, {w=0.15}strong opinions, {w=0.15}strong will. Someone to stand beside me."
 
-y h "I want somebody who puts effort into their life, y'know?"
+y h "I want somebody who puts effort into their life, {w=0.15}y'know?"
 
-y h "Somebody who understands that you need to work hard, and take control, or else you're throwing your time away. "
+y h "Somebody who understands that you need to work hard, {w=0.15}and take control, {w=0.15}or else you're throwing your time away. "
 
 y n "Looks don't matter so much to me. Strength does."
 
@@ -1420,21 +1420,21 @@ show y h
 
 y h "I already answered it."
 
-y n "I like strong people, and you are not one of those."
+y n "I like strong people, {w=0.15}and you are not one of those."
 
-y m "You're soft, you bend under the slightest amount of pressure, ya have no convictions, you're the place that time goes to die."
+y m "You're soft, {w=0.15}you bend under the slightest amount of pressure, {w=0.15}ya have no convictions, {w=0.15}you're the place that time goes to die."
 
 show r s
 
-r s "Hey, that's not true."
+r s "Hey, {w=0.15}that's not true."
 
 show y n
 
-y n "Then prove me wrong. If you were that kind of person I'd see it, but I don't."
+y n "Then prove me wrong. If you were that kind of person I'd see it, {w=0.15}but I don't."
 
 show r n
 
-r n "I have a lot to offer, I-"
+r n "I have a lot to offer, {w=0.15}I-"
 
 show y n
 
@@ -1448,17 +1448,17 @@ show y n
 
 y n "That's what I thought."
 
-y m "Do your own thing, I don't care."
+y m "Do your own thing, {w=0.15}I don't care."
 
-y n "But don't try to force your friendship on me, please."
+y n "But don't try to force your friendship on me, {w=0.15}please."
 
-y n "I'm not trying to hurt you, but I wont slow down."
+y n "I'm not trying to hurt you, {w=0.15}but I wont slow down."
 
-y n "I need to do what I'm passionate about, and I want to be around passionate people."
+y n "I need to do what I'm passionate about, {w=0.15}and I want to be around passionate people."
 
-y n "When I look at you, I see a weaker me, and that puts me on edge."
+y n "When I look at you, {w=0.15}I see a weaker me, {w=0.15}and that puts me on edge."
 
-y su "I don't mean to be so rude to you, but something about you brings that out in me. I'm sorry, but that's how it is."
+y su "I don't mean to be so rude to you, {w=0.15}but something about you brings that out in me. I'm sorry, {w=0.15}but that's how it is."
 
 show r s
 
@@ -1468,7 +1468,7 @@ r s "I think... I'm done with this game. Can you let me out Nema."
 
 show p n
 
-p n "Yes, of course..."
+p n "Yes, {w=0.15}of course..."
 
 show r s
 
@@ -1482,11 +1482,11 @@ hide r
 
 show y n
 
-y n "Well, looks like the game is over."
+y n "Well, {w=0.15}looks like the game is over."
 
 show p s
 
-p s "Yes, it does."
+p s "Yes, {w=0.15}it does."
 
 p s "..."
 
@@ -1520,11 +1520,11 @@ y n "I agree."
 
 y n "I honestly don't think he's a bad guy."
 
-y n "I know it doesn't look that way, but it's true."
+y n "I know it doesn't look that way, {w=0.15}but it's true."
 
 y n "But I'd rather he knew exactly how I feel instead of leading him on and hurting him every day."
 
-y s "It didn't feel good to say that, I know I look like a jerk..."
+y s "It didn't feel good to say that, {w=0.15}I know I look like a jerk..."
 
 y n "But I think it was the best thing to do."
 
@@ -1532,7 +1532,7 @@ y h "And I'm happy you agree."
 
 y n "..."
 
-y n "Anyways, I'm going to take a shower and get to bed."
+y n "Anyways, {w=0.15}I'm going to take a shower and get to bed."
 
 y s "This has been a shitty night. "
 

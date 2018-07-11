@@ -13,7 +13,7 @@ play sound "sounds/DoorOpen2.mp3"
 
 show p s
 
-p s "Captain, may I speak with you?"
+p s "Captain, {w=0.15}may I speak with you?"
 
 menu:
     "Sure.":
@@ -49,7 +49,7 @@ menu:
 
 play sound "sounds/DoorClose2.mp3"
 
-call kitchen
+call kitchen from _call_kitchen_2
 
 e "Nema and Hei are standing at the counter joking."
 
@@ -79,11 +79,11 @@ menu:
     "Uh.":
         pass
 
-r n "Well. I think we should do something about that, don't you?"
+r n "Well. I think we should do something about that, {w=0.15}don't you?"
 
 show p h
 
-p h "Hehe, oh, most definitely! "
+p h "Hehe, {w=0.15}oh, {w=0.15}most definitely! "
 
 show r n
 
@@ -117,7 +117,7 @@ y m "Kill me."
 
 show r n
 
-r n "Here you are, the \"Kill me\" deluxe for the lady."
+r n "Here you are, {w=0.15}the \"Kill me\" deluxe for the lady."
 
 show p h
 
@@ -135,7 +135,7 @@ p h "The captain did!"
 
 show r h
 
-r h "Right, the captain! Tummy filler for sir Capitol."
+r h "Right, {w=0.15}the captain! Tummy filler for sir Capitol."
 
 menu:
     "Thank you?":
@@ -146,17 +146,17 @@ menu:
 
 e "Hei and Nema share a plate."
 
-r n "So Mr. Boss, what's the plan for today?"
+r n "So Mr. Boss, {w=0.15}what's the plan for today?"
 
 show y n
 
-y n "Actually, today I'm going to be giving you all a briefing on how to compound the engine."
+y n "Actually, {w=0.15}today I'm going to be giving you all a briefing on how to compound the engine."
 
-y s "I should have did it from the start, but better late than never I guess."
+y s "I should have did it from the start, {w=0.15}but better late than never I guess."
 
 show p h
 
-p h "That sounds great Haruka, I can't wait."
+p h "That sounds great Haruka, {w=0.15}I can't wait."
 
 show r s
 
@@ -180,7 +180,7 @@ show y m
 
 y m "It's sickening. Just being near you."
 
-y s "Just get it on with already and bang, we can wait."
+y s "Just get it on with already and bang, {w=0.15}we can wait."
 
 show p h
 
@@ -192,17 +192,17 @@ r h "Too late?"
 
 show y su
 
-y su "Woah, what?"
+y su "Woah, {w=0.15}what?"
 
 y n "Are you serious?"
 
 e "Hei smiles sheepishly."
 
-y m "Hei she was drunk, you disgu-"
+y m "Hei she was drunk, {w=0.15}you disgu-"
 
 show r h
 
-r h "No, this morning."
+r h "No, {w=0.15}this morning."
 
 show y su
 
@@ -230,25 +230,25 @@ y m "We're doomed. This mission was DOA. What am I even doing trying so hard."
 
 show r su
 
-r su "Uh, what?"
+r su "Uh, {w=0.15}what?"
 
 show p su
 
-p su "H-haruka... it's not a big deal, we were just having fun."
+p su "H-haruka... it's not a big deal, {w=0.15}we were just having fun."
 
 show y su
 
 y su "Having fun? You're sick."
 
-y m "If you don't value your body nobody else will, I just- I just can't believe it."
+y m "If you don't value your body nobody else will, {w=0.15}I just- I just can't believe it."
 
 show r su
 
-r su "Woah, where's this comin' from? Lay off her man."
+r su "Woah, {w=0.15}where's this comin' from? Lay off her man."
 
 show y m
 
-y m "Oh fuck you, you've never thought of another person in your life, don't pretend like ya have her best interest in mind."
+y m "Oh fuck you, {w=0.15}you've never thought of another person in your life, {w=0.15}don't pretend like ya have her best interest in mind."
 
 show r su
 
@@ -263,7 +263,7 @@ menu:
 
 show y n
 
-y n "Whatever, I'm done. "
+y n "Whatever, {w=0.15}I'm done. "
 
 y m "Thanks for the pancakes."
 
@@ -296,7 +296,7 @@ e "Nema and Hei sit in silence as the door closes again and Haruka disappears."
 
 show r m
 
-r m "Shit, what was her problem."
+r m "Shit, {w=0.15}what was her problem."
 
 menu:
     "Jealous.":
@@ -315,7 +315,7 @@ p su "Buff daddy?"
 
 show r h
 
-r h "Yeah babe, it's slang for cool guy."
+r h "Yeah babe, {w=0.15}it's slang for cool guy."
 
 show p h
 
@@ -325,7 +325,7 @@ e "Nema smiles."
 
 show r s
 
-r s "I should probably go talk to Haruka, huh Heli-Capter?"
+r s "I should probably go talk to Haruka, {w=0.15}huh Heli-Capter?"
 
 menu:
     "Yes.":
@@ -334,7 +334,7 @@ menu:
     "No.":
         pass
 
-r n "Alright, I'll give it a shot."
+r n "Alright, {w=0.15}I'll give it a shot."
 
 r h "Wish me luck!"
 
@@ -365,13 +365,13 @@ menu:
     "Don't you like Hei?":
         pass
 
-p n "Oh, yes. He's a great friend."
+p n "Oh, {w=0.15}yes. He's a great friend."
 
 p h "That's why I want him and Haruka to get along."
 
-p s "When they fight, they make their feelings a public thing."
+p s "When they fight, {w=0.15}they make their feelings a public thing."
 
-p s "It brings the mood of everyone down, I feel."
+p s "It brings the mood of everyone down, {w=0.15}I feel."
 
 menu:
     "That's true.":
@@ -391,7 +391,7 @@ menu:
     "I doubt that.":
         pass
 
-p h "No, I'm sure of it."
+p h "No, {w=0.15}I'm sure of it."
 
 p n "They're both so passionate. "
 
@@ -422,7 +422,7 @@ p s "I'm sorry Hei..."
 
 show r h
 
-r h "It's cool, I didn't expect much."
+r h "It's cool, {w=0.15}I didn't expect much."
 
 menu:
     "What did you say?":
@@ -430,13 +430,13 @@ menu:
 
 show p su
 
-p su "Yeah, what did you say to her?"
+p su "Yeah, {w=0.15}what did you say to her?"
 
 show r n
 
 r n "Just the truth."
 
-r s "I said to her, I said, \"Haruka...\""
+r s "I said to her, {w=0.15}I said, {w=0.15}\"Haruka...\""
 
 r n "\"I know you're worried darlin'...\""
 
@@ -459,11 +459,11 @@ menu:
     "At least you... tried?":
         pass
 
-r h "Weird, right?"
+r h "Weird, {w=0.15}right?"
 
 r n "I'm not totally convinced she heard me but whatever. She'll get over it."
 
-r h "Anyways I'm gonna go play some games until dinner, you wanna come Nebs?"
+r h "Anyways I'm gonna go play some games until dinner, {w=0.15}you wanna come Nebs?"
 
 show p h
 
@@ -493,26 +493,26 @@ define day8Haru = True
 
 label day8Free:
     
-call hall
+call hall from _call_hall_5
 
 menu:
     "Haruka's Room" if day8Haru:
         $ day8Haru = False
-        call yellowRoom
+        call yellowRoom from _call_yellowRoom
         pass
     "Hei's Room" if day8Hei:
         $ day8Hei = False        
-        call redRoom
-        e "In hei's room, her and Nema are just playing games."
+        call redRoom from _call_redRoom
+        e "In hei's room, {w=0.15}her and Nema are just playing games."
         e "The don't acknowledge you."
         jump day8Free
     "Go back to your room" if day8Haru == False and day8Hei == False:
-        call blueRoom
+        call blueRoom from _call_blueRoom_2
         jump day8AfterFree
 
 show y h
 
-y h "Oh, hey Cap."
+y h "Oh, {w=0.15}hey Cap."
 
 y n "Whatsup?"
 
@@ -529,22 +529,22 @@ y m "I'm not apologizing."
 
 y n "It's not my fault that I'm the only one here with standards."
 
-y m "Seriously, am I imagining it, or am I the only one who gives a shit?"
+y m "Seriously, {w=0.15}am I imagining it, {w=0.15}or am I the only one who gives a shit?"
 
 menu:
-    "They're adults, they can do what they want.":
+    "They're adults, {w=0.15}they can do what they want.":
         pass
 
-    "No, the others are pretty lax.":
+    "No, {w=0.15}the others are pretty lax.":
         pass
 
-y s "Well duh. Thanks Captain, gee."
+y s "Well duh. Thanks Captain, {w=0.15}gee."
 
 y n "Of course they can."
 
 y n "I just wish that they cared about quality in any part of their lives."
 
-y m "Or having some semblence of respect for themselves, or anyone around them."
+y m "Or having some semblence of respect for themselves, {w=0.15}or anyone around them."
 
 menu:
     "Are you jealous?":
@@ -555,13 +555,13 @@ menu:
 
 y n "Jealous of those idiots?"
 
-y m "I thought I'd be surrounded by greats on this mission, y'know?"
+y m "I thought I'd be surrounded by greats on this mission, {w=0.15}y'know?"
 
-y m "I thought I'd be among people who worked hard and gave a shit like me, so I wouldn't have to be the bad guy all the time."
+y m "I thought I'd be among people who worked hard and gave a shit like me, {w=0.15}so I wouldn't have to be the bad guy all the time."
 
-y s "I'm sick of being the odd one out, and I'm tired of always feeling like an asshole."
+y s "I'm sick of being the odd one out, {w=0.15}and I'm tired of always feeling like an asshole."
 
-y m "I want everyone to be the best they can, and I refuse to hide it."
+y m "I want everyone to be the best they can, {w=0.15}and I refuse to hide it."
 
 y m "It's not fair that all it gets me is hated."
 
@@ -569,12 +569,12 @@ menu:
     "Maybe you can try being a bit more gentle?":
         pass
 
-    "Don't hide how you feel, I get it.":
+    "Don't hide how you feel, {w=0.15}I get it.":
         pass
 
-y n "Cap I kind of want to be alone, thanks."
+y n "Cap I kind of want to be alone, {w=0.15}thanks."
 
-y s "I know you mean well, but... please?"
+y s "I know you mean well, {w=0.15}but... please?"
 
 menu:
     "No problem.":
@@ -587,7 +587,7 @@ y s "Thank you."
 
 hide y s
 
-call hall
+call hall from _call_hall_6
 
 e "You walk out into the empty hallway."
 
@@ -607,11 +607,11 @@ e "There's a knock on your door."
 
 play sound "sounds/DoorOpen2.mp3"
 
-call hall
+call hall from _call_hall_7
 
 show y
 
-y s "Time of the thing, c'mon."
+y s "Time of the thing, {w=0.15}c'mon."
 
 play sound "sounds/DoorClose2.mp3"
 
@@ -619,7 +619,7 @@ menu:
     "Yes Ma'am.":
         pass
         
-call navRoom
+call navRoom from _call_navRoom_1
 
 e "You head into into the navigation room together."
 
@@ -645,7 +645,7 @@ menu:
 
 show y s
 
-y s "Alright, I'm just going to get through this. "
+y s "Alright, {w=0.15}I'm just going to get through this. "
 
 y n "Everyone open up the MonEn.exe program on your station."
 
@@ -659,7 +659,7 @@ y n "That's the stability."
 
 y n "You want that to be above 2c's. "
 
-y n "That's give or take the missing information, which could go either way."
+y n "That's give or take the missing information, {w=0.15}which could go either way."
 
 y s "So you- Hei."
 
@@ -669,7 +669,7 @@ y m "HEI."
 
 show r su
 
-r su "Oh, yeah?"
+r su "Oh, {w=0.15}yeah?"
 
 show y m
 
@@ -683,15 +683,15 @@ show y m
 
 y m "Ya better be."
 
-y n "Now finally, the last bar is the transfer rate."
+y n "Now finally, {w=0.15}the last bar is the transfer rate."
 
-y n "You want this to mostly be stable, between 2 and 4 C's."
+y n "You want this to mostly be stable, {w=0.15}between 2 and 4 C's."
 
-y n "If anything goes out of range, then you can type in the emergency code that applies and it will walk you through steps to remedy the problem, or you can come get me."
+y n "If anything goes out of range, {w=0.15}then you can type in the emergency code that applies and it will walk you through steps to remedy the problem, {w=0.15}or you can come get me."
 
 y n "The codes are all in an email I sent you on our first or second day."
 
-y n "Really as long as you know that, you'll be fine in nine out of ten situations."
+y n "Really as long as you know that, {w=0.15}you'll be fine in nine out of ten situations."
 
 y n "The most important bar to watch is green."
 
@@ -717,11 +717,11 @@ y m "You have got to be the most incompetent person I have ever met."
 
 show r h
 
-r h "Hah, well, gee."
+r h "Hah, {w=0.15}well, {w=0.15}gee."
 
 show y m
 
-y m "No, I mean it."
+y m "No, {w=0.15}I mean it."
 
 y m "The whole fucking damn I worked my ass off my entire life-"
 
@@ -735,7 +735,7 @@ r su "Hey hold on I wa-"
 
 show y m
 
-y m "Was to get away from the sort of ignorant, drunk, filth that I grew up surrounded by."
+y m "Was to get away from the sort of ignorant, {w=0.15}drunk, {w=0.15}filth that I grew up surrounded by."
 
 y s "I thought I'd be among brilliant minds."
 
@@ -745,19 +745,19 @@ y m "But here I am surrounded by the same filth."
 
 show p su
 
-p su "H-haruka, tha-that's not fair..."
+p su "H-haruka, {w=0.15}tha-that's not fair..."
 
 p s "We're not p-"
 
 show y m
 
-y m "It's not fair, NOTHING is."
+y m "It's not fair, {w=0.15}NOTHING is."
 
 y s "That's my point."
 
-y m "I'm sick of working myself to death, being the odd one out because I care about doing something with my life."
+y m "I'm sick of working myself to death, {w=0.15}being the odd one out because I care about doing something with my life."
 
-y s "I want a friend, Nema."
+y s "I want a friend, {w=0.15}Nema."
 
 y s "I want to relax for one day."
 
@@ -791,19 +791,19 @@ p m "Hei! You should have paid attention!"
 
 show r su
 
-r su "I did, I was just joshin'."
+r su "I did, {w=0.15}I was just joshin'."
 
 menu:
     "Probably a bad move.":
         pass
 
-r m "Well duh, I see that now dude."
+r m "Well duh, {w=0.15}I see that now dude."
 
-r n "Still, wasn't that sort of an overreaction? I mean c'mon."
+r n "Still, {w=0.15}wasn't that sort of an overreaction? I mean c'mon."
 
 show p s
 
-p s "I cannot say I'd have responded the same, but she has seemed to be a bit irritable lately."
+p s "I cannot say I'd have responded the same, {w=0.15}but she has seemed to be a bit irritable lately."
 
 show r n
 
@@ -811,7 +811,7 @@ r n "Should I go apologize?"
 
 show p s
 
-p s "I'm sorry Hei, but I'm not sure that would help right now."
+p s "I'm sorry Hei, {w=0.15}but I'm not sure that would help right now."
 
 p n "Perhaps if Captain went to see her?"
 
@@ -824,9 +824,9 @@ menu:
 
 show r n
 
-r n "Well, you know best man."
+r n "Well, {w=0.15}you know best man."
 
-r s "If we're done here though, I think I'm gonna go snooze."
+r s "If we're done here though, {w=0.15}I think I'm gonna go snooze."
 
 show p s
 
@@ -849,13 +849,13 @@ hide r
 
 e "Hei and Nema walk off to their individual rooms."
 
-call hall
+call hall from _call_hall_8
 
 play sound "sounds/DoorOpen2.mp3"
 
 e "You make your way back to yours as well."
 
-call blueRoom
+call blueRoom from _call_blueRoom_3
 
 play sound "sounds/DoorClose2.mp3"
 

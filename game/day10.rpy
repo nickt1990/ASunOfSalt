@@ -6,7 +6,7 @@ y n "..."
 
 hide black
 
-y h "Hey, we're fine."
+y h "Hey, {w=0.15}we're fine."
 
 y n "Neat."
 
@@ -26,13 +26,13 @@ r s "Why me?"
 
 show y m
 
-y m "We're alive dude, be thankful."
+y m "We're alive dude, {w=0.15}be thankful."
 
 show p n
 
 p n "She's right Hei... "
 
-p n "We're lucky, {w=0.15}there was no telling what was going to happen."
+p n "We're lucky, {w=0.15}{w=0.15}there was no telling what was going to happen."
 
 show r n
 
@@ -44,11 +44,11 @@ y n "Yeah..."
 
 show r m
 
-r m "No, {w=0.15}this wasn't mere luck..."
+r m "No, {w=0.15}{w=0.15}this wasn't mere luck..."
 
 show p n
 
-p n "You don't think so, Hei?"
+p n "You don't think so, {w=0.15}Hei?"
 
 show r n
 
@@ -80,7 +80,7 @@ y m "Yes. Hei."
 
 y h "Ya came up with a plan of action quickly."
 
-y h "I'm proud, {w=0.15}ya did awesome dude."
+y h "I'm proud, {w=0.15}{w=0.15}ya did awesome dude."
 
 show y n
 
@@ -90,7 +90,7 @@ show r h
 
 r h "Hell yeah baby! "
 
-r h "Daddy's beeh here all along baby-girl, {w=0.15}come sit on my lap and I'll tell you a story."
+r h "Daddy's beeh here all along baby-girl, {w=0.15}{w=0.15}come sit on my lap and I'll tell you a story."
 
 show y n
 
@@ -125,7 +125,7 @@ menu:
     "Forgot your password?":
         pass
 
-y n "Cap, my station isn't reacting..."
+y n "Cap, {w=0.15}my station isn't reacting..."
 
 y n "Seems like it's in low power mode..."
 
@@ -155,7 +155,7 @@ y n "So let's see..."
 
 show p n
 
-p n "Can you see what the problem may be, {w=0.15}Haruka?"
+p n "Can you see what the problem may be, {w=0.15}{w=0.15}Haruka?"
 
 show y n
 
@@ -165,7 +165,7 @@ y n "No big deal!"
 
 show r h
 
-r h "Hoo, {w=0.15}really? Nice."
+r h "Hoo, {w=0.15}{w=0.15}really? Nice."
 
 show y n
 
@@ -212,7 +212,7 @@ p n "What's the system Haruka?"
 
 show y n
 
-y n "Well basically, the starboard side of the ship will be shut down to conserve energy."
+y n "Well basically, {w=0.15}the starboard side of the ship will be shut down to conserve energy."
 
 y n "Until the one power source recharges that is."
 
@@ -224,7 +224,7 @@ r n "Am I on the starboard side?"
 
 show p n
 
-p n "No Hei, starboard is the right side of the ship when facing the bow. "
+p n "No Hei, {w=0.15}starboard is the right side of the ship when facing the bow. "
 
 show r n
 
@@ -287,21 +287,21 @@ r h "Right Nema?"
 
 show p su
 
-p su "Oh, right."
+p su "Oh, {w=0.15}right."
 
 p h "We'll be staying together?"
 
-p h "That will be fun, I agree Hei."
+p h "That will be fun, {w=0.15}I agree Hei."
 
 show r n
 
-r n "Oh right, Haru."
+r n "Oh right, {w=0.15}Haru."
 
 r h "What happens if we go into one of the dead rooms?"
 
 show y n
 
-y n "Uh, don't do that."
+y n "Uh, {w=0.15}don't do that."
 
 show r n
 
@@ -323,7 +323,7 @@ r n "C'mon neebs,{w=0.15} sleepover!"
 
 show p h
 
-p h "Oh my, I've never been to a sleepover."
+p h "Oh my, {w=0.15}I've never been to a sleepover."
 
 r h "Not like we'll get much sleeping done."
 
@@ -331,15 +331,15 @@ show y m
 
 p su "Hei!"
 
-y m "Come on, idiot."
+y m "Come on, {w=0.15}idiot."
 
 r h "Just sayin'."
 
-p n "Are we safe to walk through the hallway, Haruka?"
+p n "Are we safe to walk through the hallway, {w=0.15}Haruka?"
 
 show y n
 
-y n "You are for now, but once you get into your room I'm locking us all up for the rest of the night."
+y n "You are for now, {w=0.15}but once you get into your room I'm locking us all up for the rest of the night."
 
 y n "Stock up on food and whatever you'll need."
 
@@ -347,7 +347,7 @@ y n "We'll have a meeting once one day is up and see where we stand then."
 
 show r n
 
-r n "Sounds good, smell ya later chumps."
+r n "Sounds good, {w=0.15}smell ya later chumps."
 
 e "Hei starts to walk out the door."
 
@@ -373,7 +373,7 @@ e "Nema and Hei trot out into the hallway."
 
 show y n
 
-y n "I'll grab some food and meet you in your room, 'kay?"
+y n "I'll grab some food and meet you in your room, {w=0.15}'kay?"
 
 menu:
     "Sounds good!":
@@ -388,7 +388,7 @@ hide y
 
 play sound "sounds/DoorClose2.mp3"
 
-call hall
+call hall from _call_hall_11
 
 e "You walk out into the hallway."
 
@@ -396,7 +396,7 @@ e "Nema and Hei seem to have already settled down in Hei's room."
 
 play sound "sounds/DoorOpen2.mp3"
 
-call blueRoom
+call blueRoom from _call_blueRoom_7
 
 hide y
 
