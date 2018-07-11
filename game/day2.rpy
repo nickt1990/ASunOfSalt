@@ -2,13 +2,18 @@
     
 hide black
 
-e "You wake up to the quiet sound of the ship drifting through space."
+play music "music/MorningAlarm.mp3" fadein 2.0
+
+e "You wake up to your computers alarm."
 
 e "The room is lit up by the mail notification on your computer screen."
 
 menu:
     "Check mail.":
+        stop music fadeout 1
         pass
+
+e "Once you pull yourself away from the computer, you hear a strange sound.{w=0.15}.{w=0.15}."
 
 e "There's a faint sound of music coming from the hallway."
 
@@ -708,12 +713,14 @@ menu:
 y n "Sure thing boss."
 
 menu:
-    "It's great! / Stay silent":
+    "It's great!":
+        y h "I know!"
         pass
-
-y h "I know! / Good right?"
-
-y n "I know it is. You don't have to tell me."
+    "Stay silent":
+        y h "good, right?"
+        y n "I know it is. You don't have to say a word."
+        y h "Just enjoy."
+        pass
 
 e "Haruka is beaming with confidence."
 
@@ -742,12 +749,12 @@ r n "How about you *name of whoever is staying up*"
 e "Hei sticks his tongue out."
 
 menu:
-    "Are you volunteering Hei? / Yeah Yeah.":
+    "Are you volunteering Hei?":
         pass
 
 e "Nema chuckles."
 
-e "Hei slowly withdraws his tongue. / Hei smiles."
+e "Hei slowly withdraws his tongue."
 
 show y n
 
@@ -826,10 +833,12 @@ r n "I think I'll have myself a snooze."
 r h "Captain! Good luck my fearless captain."
 
 menu:
-    "Thanks! / Your turn next time!":
+    "Thanks!":
+        r n "Hei smiles"
         pass
-
-r n "Hei smiles / Heis eyes get wide. He walks away."
+    "Your turn next time.":
+        r n "Hei's eyes get wide. He walks away."
+        pass
 
 e "Hei walks out into the hallway."
 
@@ -846,10 +855,11 @@ show y n
 y n "Actually, {w=0.15}I thought I might help cap pass the time tonight."
 
 menu:
-    "What do you mean? / You want to stay up?":
+    "What do you mean?":
+        y n "I'm gonna stay up with you."
         pass
-
-y n "I'm gonna stay up with you."
+    "You want to stay up?":
+        pass
 
 y h "It'll be fun! "
 

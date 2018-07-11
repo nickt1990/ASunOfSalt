@@ -14,6 +14,9 @@
 # begin the actual game.
 
 label start:
+    
+    define harukaEnd = False
+    define twoWeeksEnd = False
 
     stop music fadeout 2.0
     
@@ -90,7 +93,7 @@ label start:
     
     call day15 from _call_day15
     
-    
+    label END:
     #call endings
 
     $ minutes, seconds = divmod(int(renpy.get_game_runtime()), 60)

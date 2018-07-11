@@ -7,12 +7,15 @@ play music "music/Space.mp3" fadein 1.0
 
 call beginningZoom from _call_beginningZoom
 
-e "..."
+e ".{w=0.15}.{w=0.15}."
+
+e "It's been quiet for hours."
+
+e "Then, suddenly-"
 
 play sound "sounds/DoorOpen2.mp3"
 
 e "There's a sound from the hallway that sounds like a door opening."
-play sound "sounds/Knock.mp3"
 
 e "The clock show's it's about 3AM."
 

@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/day11Night.rpy", line 490: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    pass
-    ^
+File "game/day2.rpy", line 834: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Your turn next time."
+                          ^
 
 Ren'Py Version: Ren'Py 6.99.13.2919

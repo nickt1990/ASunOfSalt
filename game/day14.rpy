@@ -50,7 +50,7 @@ menu:
         pass
 
     "Did he talk you into that?":
-        p h "Hah, no Sir."
+        p h "Hah, {w= 0.15}no Sir."
         pass
 
 p h "I want to understand thigns better."
@@ -76,7 +76,7 @@ show y m
 
 y m "We didn't automate the monitoring of the engine because we're operating with untested hardware."
 
-y n "There's no way for us to actually know what levels to expect, or what things going wrong will look like."
+y n "There's no way for us to actually know what levels to expect,{w= 0.15}or what things going wrong will look like."
 
 show p n
 
@@ -86,7 +86,7 @@ p n "Have we done extensi-"
 
 show y m
 
-y m "Just leave it alone Nema, alright?"
+y m "Just leave it alone Nema,{w= 0.15}alright?"
 
 show p s
 
@@ -210,25 +210,33 @@ r m "That's what Nema's doing."
 
 show y m
 
-y m "Right,{w=0.15} and what are you doing?"
+y m "Right,{w= 0.15}and what are you doing?"
 
 y m "Why am I even talking to you."
 
 show r m
 
-r m "Hey, that's not fair."
+r m "Hey,{w= 0.15}that's not fair."
 
 r m "Have you ever thought maybe that you're the problem?"
 
-r m "Maybe Nema and I want to try and do more,{w=0.15} but you always just shut us down?"
+r m "Maybe Nema and I want to try and do more,{w= 0.15}but you always just shut us down?"
 
-r m "If you actually wanted us to step up,{w=0.15} you've give us a chance."
+r m "If you actually wanted us to step up,{w= 0.15}you've give us a chance."
 
-r m "You just want to feel all high and mighty and tell us what to do and feel like the one smart person among idiots."
+show y m
 
-r m "Screw this,{w=0.15} figure it out on your own."
+y m "Please,{w= 0.15}you don't wait for somebody else to give you a chance."
 
-r m "And more power to Nema, good for her finally standing up for herself."
+y m "You take it,{w= 0.15}or you don't do anything."
+
+show r m
+
+r m "Whatever,{w= 0.15}you just want to feel all high and mighty and tell us what to do and feel like the one smart person among idiots."
+
+r m "Screw this,{w= 0.15}figure it out on your own."
+
+r m "And more power to Nema,{w= 0.15}good for her finally standing up for herself."
 
 e "Hei looks towards you."
 
@@ -236,15 +244,13 @@ r m "Good luck with her dude."
 
 play sound "sounds/DoorClose2.mp3"
 
-hide r
-
 e "Then he turns and storms off back into his room."
 
 show y m
 
-y m "Great, {w=0.15}so it's take your frustrations out on Haruka day."
+y m "Great,{w= 0.15}so it's take your frustrations out on Haruka day."
 
-y m "I don't deserve this, {w=0.15}I've kept this ship afloat this entire time."
+y m "I don't deserve this,{w= 0.15}I've kept this ship afloat this entire time."
 
 y m "I work day and night for a stupid cause I don't even care about anymore."
 
@@ -252,15 +258,29 @@ y m "And I'm the bad guy here."
 
 menu:
     "Well, you are kind of shutting them down.":
-        y m "Seriously?"
         pass
 
     "Everyone's stressed out, just calm down.":
-        y m "Whatever."
         pass
 
-y m "I'll see you later,{w=0.15} I can't do this right now."
+y m "Seriously?"
+
+y m "You don't think it's possible for them to do anything without me guiding them along and allowing it?"
+
+y m "I'm not their mother man,{w= 0.15}they need to figure out their own shit."
+
+y m "I'll see you later,{w= 0.15}I can't do this right now."
 
 hide y
+
+e "Everyone has gone back to their rooms."
+
+e "You head back into your room and check your mail."
+
+show black
+
+e "You spend the rest of the evening working and end up falling asleep early."
+
+e ".{w=0.15}.{w=0.15}."
 
 return

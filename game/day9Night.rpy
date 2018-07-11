@@ -78,16 +78,18 @@ y s "You're not gonna let me off easy?"
 
 y n "..."
 
+play music "music/PianoCave.mp3" fadein 2.0
+
 y h "What do you want to drink."
 
 menu:
     "Juice.":
+        y h "Hope you like apple, dork."
         pass
 
     "Something hard.":
+        y h "Shots it is."
         pass
-
-y h "Shots it is."
 
 e "Haruka grabs you both drinks."
 

@@ -2,11 +2,7 @@
     
 e "Haruka walks out of the room"
 
-menu:
-    "Get ready - I should go change my clothes and check to see if I've recieved any emails from Hcue.":
-        pass
-
-e "Change clothes at dresser."
+e "You change clothes and get prepared for the night."
 
 e "Go to computer to check email."
 
@@ -33,9 +29,7 @@ menu:
     "That's great!":
         pass
 
-#play sound "sounds/KnockOnDoor.mp3" TODO
-
-e "Sound effect plays, {w=0.15}knock on dor"
+play sound "sounds/Knock.mp3"
 
 show y h
 
@@ -105,22 +99,22 @@ y h "Eventually if things goes peachy, {w=0.15}we'll be moving faster than any k
 
 menu:
     "That sounds risky...":
+        y s "Well... yeah. S'posed to be. Hear me out cap."
         pass
 
     "That sounds amazing!":
+        y h "I was hoping you'd think so!"
         pass
-
-y s "Well... yeah. S'posed to be. Hear me out cap."
 
 y n "We'll be so far away after week two that there's no going back anyways. We came into this knowing we'd die out here. So why stop?"
 
 menu:
-    "This is bigger than us.":
+    "This is much bigger than us.":
         pass
 
 y h "Exactly!"
 
-y n "There's no knowing! We could discover something so beyond what we understand now that we push humanity ahead a thousand years. A million years! We need to take risks!"
+y n "There's no knowing!{w=0.15} We could discover something so beyond what we understand now that we push humanity ahead a thousand years. A million years! We need to take risks!"
 
 menu:
     "Some risks, {w=0.15}but this might be too much.":
@@ -128,7 +122,7 @@ menu:
 
 y n "I understand your concern, {w=0.15}but we could be talking about secrets of the universe type shit here. Existence, {w=0.15}reality."
 
-y h "The goddamn meaning of life! C'mon!"
+y h "The damn meaning of life!{w=0.15} C'mon!"
 
 menu:
     "Can the ship handle that kind of force?":
@@ -149,28 +143,25 @@ menu:
         pass
 
     "Don't get your hopes up.":
+        e "Haruka smiles."
+
+        y h "Whatever you say cap."
         pass
-
-e "Haruka smiles."
-
-y h "Whatever you say cap."
 
 y n "At least admit that you're impressed with me though. Bet ya didn't expect me to be so freakin' smart."
 
 menu:
     "No, {w=0.15}I didn't. How'd that happen?":
+        y n "I appreciate the honesty."
+        y h "I just woke up one day smart. A miracle!"
+        e "haruka smirks."
+        y m "I worked my ass off, {w=0.15}how do you think?"
         pass
 
     "I knew you were an engineer.":
+        y h "Far enough,{w=0.15} but it didn't happen on its own."
+        y m "I worked my ass off"
         pass
-
-y n "I appreciate the honesty."
-
-y h "I just woke up one day smart. A miracle!"
-
-e "haruka smirks."
-
-y m "I worked my ass off, {w=0.15}how do you think?"
 
 y n "It's funny. It was all for some man. Professor Motakomi."
 
@@ -188,14 +179,15 @@ y n "I shared a room with my seven brothers."
 
 menu:
     "Seven in one room?":
+        y n "Yeh, {w=0.15}it sucked."
+        y m "Seven dudes and little ol' me? {w=0.15}Childhood was hard."
         pass
 
     "All brothers?":
+        y n "Yeh, {w=0.15}it sucked."
+
+        y m "Hated 'em all."
         pass
-
-y n "Yeh, {w=0.15}it sucked."
-
-y m "Hated 'em all."
 
 y h "But my oldest brother and I were close. Name was Jin. A true bro."
 
@@ -203,9 +195,9 @@ y n "We didn't have much money to do normal kid shit, {w=0.15}so we'd go to the 
 
 y n "The library did this thing where they brought professors and scientists in to speak."
 
-y n "Present their science garbage for all the 10 people who came to these things. Sort of a \"educate the poor children\" deal."
+y n "Present their science garbage for all the 10 people who came to these things. {w=0.15}Sort of a \"educate the poor children\" deal."
 
-y n "At first I was blown away. The science talk made my lil' eyes bulge. Loved it."
+y n "At first I was blown away.{w=0.15} The science talk made my lil' eyes bulge.{w=0.15} Loved it."
 
 y n "I started to have Jin take me to the library early mornings, {w=0.15}late nights. I was like 13 and still needed help getting places, {w=0.15}but he didn't mind."
 
@@ -235,7 +227,7 @@ menu:
     "What was he talking about?":
         pass
 
-y m "Yeah, {w=0.15}screw that guy. These speeches were supposed to be educational. These guys were supposed to be examples for us kids."
+y m "Yeah, {w=0.15}screw that guy. These speeches were supposed to be educational. {w=0.15}These guys were supposed to be examples for us kids."
 
 y n "I looked around and saw the other kids just soaking in his complete bullshit, {w=0.15}and it just pissed me off. He was poisoning kids who wanted to learn with his stupid existence."
 
@@ -274,9 +266,11 @@ menu:
     "What did your brother do?":
         pass
 
-y n "I did. It's crazy, {w=0.15}the second he finished his lecture he walked right up to me and aske-"
+y n "I did.{w=0.15} He taught me everything I know."
+     
+y h "It's crazy, {w=0.15}the second he finished his lecture he walked right up to me and aske-"
 
-#play sound "sounds/Alarm.mp3" todo
+play music "music/Alarm.mp3" fadein 2.0
 
 e "Alarm goes off."
 
