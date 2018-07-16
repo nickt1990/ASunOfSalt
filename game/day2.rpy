@@ -681,7 +681,7 @@ r n "What are we having Haru?"
 
 show y h
 
-y h "Ramen. My specialty."
+y h "Ramen.{w=0.15} My specialty."
 
 show p n
 
@@ -744,7 +744,7 @@ e "Haruka rolls her eyes."
 
 r n "I'm looking forward to a nice sleep."
 
-r n "How about you *name of whoever is staying up*"
+r n "How about you Captain?"
 
 e "Hei sticks his tongue out."
 
@@ -808,7 +808,7 @@ p h "High value to volume ratio."
 
 show r h
 
-r h "Precicely. I'm the bargain of the century ergonomically."
+r h "Precisely. I'm the bargain of the century ergonomically."
 
 show y n
 

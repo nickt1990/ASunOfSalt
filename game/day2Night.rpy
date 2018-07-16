@@ -2,13 +2,19 @@
     
 e "Haruka walks out of the room"
 
-e "You change clothes and get prepared for the night."
+call hall
+
+e "You follow shortly behind."
+
+call blueRoom
+
+e "Then, head back to your room to change clothes and get prepared for the night."
 
 e "Go to computer to check email."
 
-e "Email from Hcue appears:"
+e "Email from HQ appears:"
 
-e "Captain Sentaku, {w=0.15}Tonight at 0100 we will activate the Satori sensors in each of your crewmates rooms. Following is all the information you will need to know."
+e "Captain, {w=0.15}Tonight at 0100 we will activate the Satori sensors in each of your crewmates rooms. Following is all the information you will need to know."
 
 e "The sensors are located under the beds of each crewmate. In order to get a read on them, {w=0.15}they must sleep in their bed, {w=0.15}over their sensor."
    
@@ -74,7 +80,7 @@ menu:
 y n "Sure. We have a one week compound engine so it'll be once a week somebody will be sitting here."
 
 menu:
-    "One week compund?":
+    "One week compound?":
         pass
 
 y h "Right. It's why I'm here, {w=0.15}remember? It's my own lil' contraption that builds on EnDrives. I call it the EhDrive. The little 'h' is for me. "
@@ -87,15 +93,15 @@ y n "The change comes in the form of that cone. While it still funnels the energ
      
 y n "The same material is around the entire ship causing the force of our movement and really anything else that affects us to store energy. This causes us to actually gain more energy then we are using. "
 
-y n "This extra energy is stored throughout the week, {w=0.15}and is slowly integrated into the engine over the course of the 7th night each week. That makes us faster, {w=0.15}which generates more engery faster."
+y n "This extra energy is stored throughout the week, {w=0.15}and is slowly integrated into the engine over the course of the 7th night each week. That makes us faster, {w=0.15}which generates more energy faster."
      
 y n "It compounds upon itself exponentially."
 
-y n "The thing tho, {w=0.15}is that we have only idea how the ship, {w=0.15}the engine, {w=0.15}or anythign else will react to the energy levels we'll reach. "
+y n "The thing tho, {w=0.15}is that we have only idea how the ship, {w=0.15}the engine, {w=0.15}or anything else will react to the energy levels we'll reach. "
 
 y s "I built fail-safes and designed everything around massive amounts of energy and speed, {w=0.15}y'know... we'll see. "
 
-y h "Eventually if things goes peachy, {w=0.15}we'll be moving faster than any known object in history. We'll be exherting more energy than Earth's sun at any given moment. We'll be a force of nature. Endless potential cap, {w=0.15}right under your little feet!"
+y h "Eventually if things goes peachy, {w=0.15}we'll be moving faster than any known object in history. We'll be exerting more energy than Earth's sun at any given moment. We'll be a force of nature. Endless potential cap, {w=0.15}right under your little feet!"
 
 menu:
     "That sounds risky...":
@@ -154,7 +160,7 @@ menu:
     "No, {w=0.15}I didn't. How'd that happen?":
         y n "I appreciate the honesty."
         y h "I just woke up one day smart. A miracle!"
-        e "haruka smirks."
+        e "Haruka smirks."
         y m "I worked my ass off, {w=0.15}how do you think?"
         pass
 
@@ -171,7 +177,7 @@ menu:
     "The top deck was bad?":
         pass
 
-y h "Used to be, {w=0.15}until they realized it sucks shit. You can fall out of buildings and you don't have the wider open spaces of the base. "
+y h "Yeah. {w=0.15}Used to be that the higher you were the classier, {w=0.15}until they realized it sucks up there. You can fall out of buildings and you don't have the wider open spaces of the base. "
 
 y s "Space is a luxury, {w=0.15}and we did not have it."
 
@@ -195,7 +201,7 @@ y n "We didn't have much money to do normal kid shit, {w=0.15}so we'd go to the 
 
 y n "The library did this thing where they brought professors and scientists in to speak."
 
-y n "Present their science garbage for all the 10 people who came to these things. {w=0.15}Sort of a \"educate the poor children\" deal."
+y n "Present their science garbage for all the 10 people who came to these things. {w=0.15}Sort of an \"educate the poor children\" deal."
 
 y n "At first I was blown away.{w=0.15} The science talk made my lil' eyes bulge.{w=0.15} Loved it."
 
@@ -287,7 +293,7 @@ menu:
     "Is it serious?":
         pass
 
-y n "One of the converters was micalibrated. Tiny bit of energy was going to one side of the ship than the other."
+y n "One of the converters was miscalibrated. A tiny bit more energy was going to one side of the ship than the other."
 
 y h "Coulda spent our entire lives flying in circles."
 
