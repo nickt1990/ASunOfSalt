@@ -157,7 +157,7 @@ menu:
 
 p h "S-sir! Thank you so much! I'll set it all up sir, {w=0.15}no worries!"
 
-p h "I even brought my board game on the mission in preperation!"
+p h "I even brought my board game on the mission in preparation!"
 
 p h "I thought I might miss celebrating this year, {w=0.15}thank you so much!"
 
@@ -469,7 +469,7 @@ p h "You're amazing!"
 
 p n "And so pretty, {w=0.15}and smart."
 
-p n "You're so good at the... the leading."
+p n "You're so good at the.{w=0.15}.{w=0.15}. the leading."
 
 p h "Even better than the captian."
 
@@ -510,7 +510,7 @@ show r n
 
 r n "Alright, {w=0.15}alright, {w=0.15}sitting."
 
-e "Hei and nema sit together. Haru by you on the outside."
+e "Hei and Nema sit together.{w=0.15} Haru by you on the outside."
 
 show p h
 
@@ -544,7 +544,7 @@ r su "Uhm, {w=0.15}well, {w=0.15}I, {w=0.15}uh..."
 
 show p h
 
-p h "Pschhh... Hehe."
+p h "Pschhh.{w=0.15}.{w=0.15}.{w=0.15} Hehe."
 
 show r h
 
@@ -667,7 +667,7 @@ r s "Come on Haruka."
 
 show y n
 
-y n "I'm trying Hei. I'm trying so hard."
+y n "I'm trying Hei.{w=0.15} I'm trying so hard."
 
 show r m
 
@@ -711,7 +711,7 @@ y h "Hahaha"
 
 show r su
 
-r su "Shut up. Let me switch seats with you."
+r su "Shut up.{w=0.25} Let me switch seats with you."
 
 show y m
 
@@ -789,7 +789,7 @@ show p h
 
 p h "Hei!"
 
-p su "You... love me."
+p su "You.{w=0.15}.{w=0.15}.{w=0.25} love me."
 
 show r s
 
@@ -891,7 +891,7 @@ y n "So you don't really have to ask to use it then, {w=0.15}do you?"
 
 show p s
 
-p s "It's not for playing. I haven't asked."
+p s "It's not for playing.{w=0.25} I haven't asked."
 
 show y m
 
@@ -910,7 +910,7 @@ r n "Yeah, {w=0.15}what if we try to talk to them?"
 
 show p su
 
-p su "B-but, {w=0.15}I... we can't anymore."
+p su "B-but, {w=0.15}I.{w=0.15}.{w=0.15}. we can't anymore."
 
 show y m
 
@@ -918,11 +918,11 @@ y m "Are you guys talking about communicating with spirits? Really?"
 
 show r n
 
-r n "Yes. Do you want to try Nema."
+r n "Yes.{w=0.25} Do you want to try Nema."
 
 show p m
 
-p m "Wha-... N-no!"
+p m "Wha-{w=0.15}.{w=0.15}.{w=0.15}. N-no!"
 
 show r su
 
@@ -970,7 +970,7 @@ p s "No, {w=0.15}they do, {w=0.15}I know."
 
 show r n
 
-r n "Right. We won't do that then."
+r n "Right. {w=0.25}We won't do that then."
 
 show p s
 
@@ -980,7 +980,7 @@ p s "I don't want to play anymore."
 
 show y m
 
-y m "Alright, {w=0.15}it's official, {w=0.15}I'm out of here. I have a ton of work to do and this is ridiculous."
+y m "Alright, {w=0.15}it's official, {w=0.15}I'm out of here.{w=0.15} I have a ton of work to do and this is ridiculous."
 
 menu:
     "Alright.":

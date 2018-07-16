@@ -1,15 +1,12 @@
 ﻿label day5:
 
-#todo make everything dark
-e "Everything is dark..."
-
-e "But you hear sound coming from nearby."
+e "You hear sound coming from nearby."
 
 show y n
 
 y n "Cap?"
 
-y n "Cap you ok?"
+y n "Cap you okay?"
 
 menu:
     "What happened?":
@@ -132,7 +129,7 @@ p n "OK, {w=0.15}lean back sir."
 
 e "You feel Nema move very closely to you."
 
-e "Her warm breath just barely reaches your forhead."
+e "Her warm breath just barely reaches your forehead."
 
 p n "I see..."
 

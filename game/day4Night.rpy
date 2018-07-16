@@ -279,6 +279,6 @@ e "There is a loud crash."
 show black
 with fade
 
-e "Everything is black."
+e "Everything suddenly went dark."
 
 return

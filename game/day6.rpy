@@ -5,6 +5,7 @@ menu:
         pass
 
 hide black
+with fade
 
 e "Nema is sitting in a chair beside you sleeping."
 
@@ -196,7 +197,7 @@ show y h
 
 y h "Hah."
 
-y n "And you wanna take energy from the engine? Right. Ok."
+y n "And you wanna take energy from the engine?{w=0.15} Right.{w=0.15} Okay."
 
 show r s
 
@@ -208,7 +209,7 @@ y m "Any amount could screw up everything. How do you not get this?"
 
 y n "It's just not worth the risk. "
 
-y n "We can't mess with this. This engine is the reason we're even taking this trip. I'm not letting you screw it up."
+y n "We can't mess with this. This engine is the reason we're even taking this trip.{w=0.15} I'm not letting you screw it up."
 
 show r m
 
@@ -226,7 +227,7 @@ r n "But we're already moving stupid fast and that thing stuck to us like nothin
 
 show p s
 
-p s "H-he's right... You'd think that nothing would be ab-"
+p s "H-{w=0.15}he's right.{w=0.15}.{w=0.15}. You'd think that nothing would be ab-"
 
 show y m
 
@@ -264,7 +265,7 @@ menu:
 
 show y h
 
-y h "Oh Cap, {w=0.15}you beatiful man."
+y h "Oh Cap, {w=0.15}you beautiful man."
 
 y n "This is the right choice, {w=0.15}I promise."
 

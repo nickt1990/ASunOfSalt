@@ -1,5 +1,7 @@
 ﻿label day8:
 
+play sound "sounds/Knock.mp3"
+
 e "There's a knock at your door."
 
 menu:
@@ -99,7 +101,7 @@ r n "You thinking what I'm thinking?"
 
 show p s
 
-p s "Oh. Uhm."
+p s "Oh. {w=0.15}Uhm."
 
 p n "I hope that you're thinking pancak-"
 
@@ -125,7 +127,7 @@ p h "Hehe"
 
 show r n
 
-r n "And the tummy filler for... "
+r n "And the tummy filler for.{w=0.15}.{w=0.15}. "
 
 r s "Who had the tummy filler?"
 
@@ -208,7 +210,7 @@ show y su
 
 y su "This morning?"
 
-y m "Nema... what the hell."
+y m "Nema.{w=0.15}.{w=0.15}.{w=0.15} what the hell."
 
 show p su
 
@@ -220,13 +222,13 @@ y m "Do you have absolutely no self-respect?"
 
 show p su
 
-p su "Self re-...what?"
+p su "Self re-{w=0.15}.{w=0.15}.{w=0.15}. what?"
 
 show y m
 
 y m "It's great to know you two can't do ANYTHING on your own other than screw this loser."
 
-y m "We're doomed. This mission was DOA. What am I even doing trying so hard."
+y m "We're doomed. {w=0.15}This mission was DOA.{w=0.25} What am I even doing trying so hard."
 
 show r su
 
@@ -234,7 +236,7 @@ r su "Uh, {w=0.15}what?"
 
 show p su
 
-p su "H-haruka... it's not a big deal, {w=0.15}we were just having fun."
+p su "H-haruka.{w=0.15}.{w=0.15}. it's not a big deal, {w=0.15}we were just having fun."
 
 show y su
 
@@ -275,11 +277,11 @@ e "Haruka walks out of the room."
 
 show p s
 
-p s "..."
+p s ".{w=0.15}.{w=0.15}."
 
 show r s
 
-r s "..."
+r s ".{w=0.15}.{w=0.15}."
 
 e "She pops her head back in the door."
 
@@ -319,7 +321,7 @@ r h "Yeah babe, {w=0.15}it's slang for cool guy."
 
 show p h
 
-p h "Buff daddy..."
+p h "Buff daddy.{w=0.15}.{w=0.15}."
 
 e "Nema smiles."
 
@@ -348,7 +350,7 @@ e "Hei leaves"
 
 hide r
 
-p s "I hope... I hope he sorts things out."
+p s "I hope.{w=0.15}.{w=0.15}. {w} I hope he sorts things out."
 
 menu:
     "Why?":
@@ -365,7 +367,7 @@ menu:
     "Don't you like Hei?":
         pass
 
-p n "Oh, {w=0.15}yes. He's a great friend."
+p n "Oh, {w=0.15}yes.{w=0.25} He's a great friend."
 
 p h "That's why I want him and Haruka to get along."
 
@@ -418,7 +420,7 @@ r s "It didn't work."
 
 show p s
 
-p s "I'm sorry Hei..."
+p s "I'm sorry Hei.{w=0.15}.{w=0.15}."
 
 show r h
 
@@ -438,9 +440,9 @@ r n "Just the truth."
 
 r s "I said to her, {w=0.15}I said, {w=0.15}\"Haruka...\""
 
-r n "\"I know you're worried darlin'...\""
+r n "\"I know you're worried darlin'{w=0.15}.{w=0.15}.{w=0.15}.\""
 
-r s "\"And I know you're hungry...\""
+r s "\"And I know you're hungry{w=0.15}.{w=0.15}.{w=0.15}.\""
 
 show p s
 
@@ -448,7 +450,7 @@ p s "Oh Hei..."
 
 show r n
 
-r n "\"But don't worry...\""
+r n "\"But don't worry{w=0.15}.{w=0.15}.{w=0.15}.\""
 
 r n "\"This meal feeds two.\""
 
@@ -467,7 +469,7 @@ r h "Anyways I'm gonna go play some games until dinner, {w=0.15}you wanna come N
 
 show p h
 
-p h "O-of course I'd like to!"
+p h "O-{w=0.15}of course I'd like to!"
 
 e "Nema smiles again."
 
@@ -544,7 +546,7 @@ y n "Of course they can."
 
 y n "I just wish that they cared about quality in any part of their lives."
 
-y m "Or having some semblence of respect for themselves, {w=0.15}or anyone around them."
+y m "Or having some semblance of respect for themselves, {w=0.15}or anyone around them."
 
 menu:
     "Are you jealous?":
@@ -745,7 +747,7 @@ y m "But here I am surrounded by the same filth."
 
 show p su
 
-p su "H-haruka, {w=0.15}tha-that's not fair..."
+p su "H-{w=0.15}haruka, {w=0.15}tha-{w=0.15}that's not fair..."
 
 p s "We're not p-"
 
@@ -763,7 +765,7 @@ y s "I want to relax for one day."
 
 y m "I want to close my eyes and know that one other person out there has my back."
 
-y s "..."
+y s ".{w=0.15}.{w=0.15}."
 
 y s "Not in this lifetime."
 
@@ -861,8 +863,9 @@ play sound "sounds/DoorClose2.mp3"
 
 e "You lay down on your bed."
 
-e "..."
+e ".{w=0.15}.{w=0.15}.{w=0.15}"
 
-
+show black
+with fade
 
 return
