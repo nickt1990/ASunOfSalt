@@ -178,7 +178,7 @@ show p n
 
 p n "That could also put a target on us, {w=0.15}and notify them that we have things worth stealing, {w=0.15}despite the risk."
 
-p n "I still suggest manuvering around the object. Even if our path is reported to the rest of their forces, {w=0.15}we'll become aware of any oncoming ambush with our long range scanners, {w=0.15}and be able to outrun any vessel they have."
+p n "I still suggest maneuvering around the object. Even if our path is reported to the rest of their forces, {w=0.15}we'll become aware of any oncoming ambush with our long range scanners, {w=0.15}and be able to outrun any vessel they have."
 
 menu:
     "Nema, {w=0.15}are you sure we'd be able to detect and outrun them?":
@@ -342,7 +342,7 @@ menu:
     "Excuse me?":
         pass
 
-r h "No offence, {w=0.15}I think you're great, {w=0.15}but you don't really say, {w=0.15}or... do... much. It sounds like I'm being a dick, {w=0.15}but for real."
+r h "No offense, {w=0.15}I think you're great, {w=0.15}but you don't really say, {w=0.15}or... do... much. It sounds like I'm being a dick, {w=0.15}but for real."
 
 r n "How can she like you when you haven't given her anything to like?"
 
@@ -456,7 +456,7 @@ menu:
         
 call blueRoom from _call_blueRoom_12
 
-e "Time passes..." #todo
+e "Time passes.{w=0.15}.{w=0.15}." #todo
 
 show p n
 
@@ -623,7 +623,7 @@ menu:
     "What is it?":
         pass
 
-p n "It looks like... a large asteroid just happened to pass beween us and the sun. "
+p n "It looks like... a large asteroid just happened to pass between us and the sun. "
 
 p n "Everything else is full power, {w=0.15}the autopilot AI is functioning normally, {w=0.15}we should be in no danger."
 

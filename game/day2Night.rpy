@@ -105,7 +105,7 @@ y h "Eventually if things goes peachy, {w=0.15}we'll be moving faster than any k
 
 menu:
     "That sounds risky...":
-        y s "Well... yeah. S'posed to be. Hear me out Cap."
+        y s "Well.{w=0.15}.{w=0.15}. yeah. S'posed to be. Hear me out Cap."
         pass
 
     "That sounds amazing!":
@@ -293,12 +293,12 @@ menu:
     "Is it serious?":
         pass
 
-y n "One of the converters was miscalibrated. A tiny bit more energy was going to one side of the ship than the other."
+y n "One of the converters was mis-calibrated. A tiny bit more energy was going to one side of the ship than the other."
 
 y h "Coulda spent our entire lives flying in circles."
 
 menu:
-    "Miscalibrated by you?":
+    "Mis-calibrated by you?":
         pass
 
     "Great, {w=0.15}no harm?":
@@ -390,7 +390,7 @@ e "You walk into the hallway with Haruka close behind."
 
 show y h
 
-y h "Captain, {w=0.15}was nice talkin to you tonight."
+y h "Captain, {w=0.15}was nice talkin' to you tonight."
 
 menu:
     "You mean talking at me?":

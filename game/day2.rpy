@@ -81,7 +81,7 @@ menu:
     "Turn on radio":
         pass
 
-    "Eat in silence. (Cut to asking for anime)":
+    "Eat in silence.":#todo cut to asking about anime
         pass
 
 e "The radio starts to quietly play the music that Nema had been listening to."
@@ -166,7 +166,7 @@ e "YOU ARE NOW ABLE TO EXPLORE A LITTLE"
 
 e "NAV ROOM CONTINUES MAIN STORYtodo"
 
-e "HARUKAS ROOM"
+e "HARUKAS ROOM" #todo make menu choice for rooms
 
 call yellowRoom from _call_yellowRoom_1
 
@@ -193,15 +193,23 @@ e "You sit and look at the screen with her."
 
 y n "He's gonna get wrecked."
 
-y n "Just wait. Right here."
+y n "Just wait.{w=0.15} Right here."
 
 e "Somebody on the screen explodes."
 
 y h "Boom!"
 
-y h "God. I love this show."
+y h "God.{w=0.15} I love this show."
 
-e "Times passes.todo"
+e "You and Haruka sit quietly, enthralled in the show on the television."
+
+show black
+with fade
+
+e ".{w=0.35}.{w=0.35}."
+
+hide black
+with fade
 
 y n "And that's it. What'd ya think?"
 
@@ -214,11 +222,17 @@ menu:
 
 y h "Agreed."
 
-y n "Mako's just too damn sexy. Do I have that kinda ass?"
+y n "Mako's just too damn sexy."
 
-y s "I don't think I do."
+y h "What a badass."
 
-y su "Do I?"
+y n "Ya think I could pull off her kind of look?"
+
+y s "Hmm.{w=0.15}.{w=0.15}."
+
+y s "I don't think I could."
+
+y su "Could I?"
 
 y s "No."
 
@@ -226,7 +240,7 @@ e "She looks troubled."
 
 y h "Well, {w=0.15}I'll work on it."
 
-y n "But, {w=0.15}I'm gonna take a little nap."
+y n "But, {w=0.15}I'm gonna take a little nap,{w=0.15} if ya don't mind."
 
 y h "I'll talk to you in a bit Cap."
 
@@ -278,13 +292,13 @@ menu:
     "Pick up the paper on Nema's desk.":
         pass
 
-e "..."
+e ".{w=0.15}.{w=0.15}."
 
-e "...."
+e ".{w=0.15}.{w=0.15}.{w=0.15}."
 
-e "....."
+e ".{w=0.15}.{w=0.15}.{w=0.15}{w=0.15}.."
 
-e "The report basically just says \"no findings yet\" in a much more verbose way."
+e "The report basically just says \"no findings yet\" in an overly verbose way."
 
 e "She's still absorbed in the notebook on her bed."
 
@@ -312,7 +326,7 @@ menu:
     "Report looks great. Good job.":
         pass
 
-    "What's with the alchohol in your desk?":
+    "What's with the alcohol in your desk?":
         pass
 
 p n "Thank you sir. I do my best."
@@ -482,7 +496,7 @@ menu:
 
 e "He looks surprised for a second."
 
-r n "..."
+r n ".{w=0.15}.{w=0.15}."
 
 r h "Bring your big boy pants."
 
@@ -786,7 +800,7 @@ y m "God, {w=0.15}please."
 
 show r n
 
-r n "Loved by all, {w=0.15}saught after by many, {w=0.15}tamed by none."
+r n "Loved by all, {w=0.15}sought after by many, {w=0.15}tamed by none."
 
 show y m
 

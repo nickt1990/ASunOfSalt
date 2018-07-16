@@ -264,7 +264,7 @@ show y su
 y su "Captain!"
 
 #todo one more option here
-e "There is a timed prompt with two options. The easier of which will flahs you away. The other option leads to a bad end of everyone just dying here slowly."
+#e "There is a timed prompt with two options. The easier of which will flahs you away. The other option leads to a bad end of everyone just dying here slowly."
 
 e "The ship lurches forward and for a moment, {w=0.15}you feel an intense force pushing you back."
 

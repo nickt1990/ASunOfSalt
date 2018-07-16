@@ -17,7 +17,7 @@ play sound "sounds/DoorOpen2.mp3"
 
 e "There's a sound from the hallway that sounds like a door opening."
 
-e "The clock show's it's about 3AM."
+e "The clock shows it's about 3AM."
 
 e "You can faintly hear footsteps nearby."
 
@@ -201,7 +201,7 @@ y h "Cap."
 
 e "She nods her head."
 
-y "Whatcha drinkin'?"
+y "What'cha drinkin'?"
 
 menu:
     "Same as you.":
@@ -436,7 +436,7 @@ y "That doesn't make sense. Scientist I understand, a historian I get... Well sh
 
 y m "Why would we need a historian at all?"
 
-y "Oh hey Cap,{w=0.15} we're in danger.{w=0.15} Quick, who was the birthmother of Andrew Jackson?"
+y "Oh hey Cap,{w=0.15} we're in danger.{w=0.15} Quick, who was the birth-mother of Andrew Jackson?"
 
 y h "Is that sorta what ya do?"
 
@@ -714,7 +714,7 @@ menu:
 
 p "I... look forward to getting to know them."
 
-p "I'm a little aprehensive about..."
+p "I'm a little apprehensive about..."
 
 p "No,{w=0.15} I'm excited to see what comes of our close proximity."
 

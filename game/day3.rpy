@@ -258,7 +258,7 @@ menu:
     "She seems to like leadership.":
         pass
 
-    "She seems to hate lazyness.":
+    "She seems to hate laziness.":
         pass
 
 r n "Yeah, {w=0.15}I can't disagree there."
@@ -502,7 +502,7 @@ r n "Sorry, {w=0.15}may you fetch it for me?"
 
 show y m
 
-y m "Get it yourself jackoff."
+y m "Get it yourself,{w=0.15} jackoff."
 
 show r n
 
@@ -548,7 +548,7 @@ r su "Haruka please, {w=0.15}I'm so sorry I'll clean it up, {w=0.15}I'll never b
 
 e "The moment she reaches him she lashes her arm out and slices his throat."
 
-r su "Grgrlgl-Hargh H-g-"
+r su "Grgrlgl-{w=0.1}hargh H-g-"
 
 hide r su
 
@@ -1345,7 +1345,7 @@ y h "Shucks Cap, {w=0.15}I knew the answer, {w=0.15}but to hear it makes me smil
 
 show p h
 
-p h "No surprise, {w=0.15}Haruka is very charasmatic and strong. "
+p h "No surprise, {w=0.15}Haruka is very charismatic and strong. "
 
 e "Nema smiles."
 
