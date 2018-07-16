@@ -39,7 +39,7 @@ play sound "sounds/Knock.mp3"
 
 show y h
 
-y h "Ya comin' cap?"
+y h "Ya comin' Cap?"
 
 menu:
     "On my way!":
@@ -101,11 +101,11 @@ y n "The thing tho, {w=0.15}is that we have only idea how the ship, {w=0.15}the 
 
 y s "I built fail-safes and designed everything around massive amounts of energy and speed, {w=0.15}y'know... we'll see. "
 
-y h "Eventually if things goes peachy, {w=0.15}we'll be moving faster than any known object in history. We'll be exerting more energy than Earth's sun at any given moment. We'll be a force of nature. Endless potential cap, {w=0.15}right under your little feet!"
+y h "Eventually if things goes peachy, {w=0.15}we'll be moving faster than any known object in history. We'll be exerting more energy than Earth's sun at any given moment. We'll be a force of nature. Endless potential Cap, {w=0.15}right under your little feet!"
 
 menu:
     "That sounds risky...":
-        y s "Well... yeah. S'posed to be. Hear me out cap."
+        y s "Well... yeah. S'posed to be. Hear me out Cap."
         pass
 
     "That sounds amazing!":
@@ -151,7 +151,7 @@ menu:
     "Don't get your hopes up.":
         e "Haruka smiles."
 
-        y h "Whatever you say cap."
+        y h "Whatever you say Cap."
         pass
 
 y n "At least admit that you're impressed with me though. Bet ya didn't expect me to be so freakin' smart."
@@ -263,7 +263,7 @@ y n "I sat and listened. Professor Motakomi. It was the first time I'd ever hear
 
 y n "He made me feel small again. Like the little girl that I was supposed to be."
 
-y h "The things he spoke, {w=0.15}and the way he spoke about them... He was a genius. I was seeing stars cap, {w=0.15}for real I was."
+y h "The things he spoke, {w=0.15}and the way he spoke about them... He was a genius. I was seeing stars Cap, {w=0.15}for real I was."
 
 menu:
     "Did you get to speak to him?":
@@ -315,7 +315,7 @@ menu:
     "Safe enough?":
         pass
 
-y h "Aw cap, {w=0.15}ya chucklehead."
+y h "Aw Cap, {w=0.15}ya chucklehead."
 
 y h "Hey, {w=0.15}nothings perfect. I'm not worried though, {w=0.15}and that means you shouldn't be either."
 

@@ -191,9 +191,9 @@ menu:
 
 show r h
 
-r h "Heya Captain Crunk Incorperated."
+r h "Heya Captain Crunk Incorporated."
 
-r n "I actually have something I want your captainly advice on."
+r n "I actually have something I want your captain-ly advice on."
 
 menu:
     "What?":
@@ -244,11 +244,11 @@ r m "Well what the hell."
 
 r s "I just don't get it man."
 
-r n "You've barely said 3 words to you and she's all over ya."
+r n "You've barely said three words to her and she's all over ya."
 
 r s "I crack these hilarious jokes and she doesn't even smile."
 
-r n "Forget smiling, {w=0.15}she hates my jokes."
+r s "Forget smiling, {w=0.15}she hates my jokes."
 
 r s "And me."
 
@@ -354,7 +354,7 @@ e "She looks like a scared owl."
 
 e "Her mouth opens, {w=0.15}then her eyes slowly close."
 
-e "She slowly curls up on the bed and closes her eyes."
+e "She slowly curls up and closes her eyes."
 
 hide p
 
@@ -406,7 +406,7 @@ menu:
     "I disagree, {w=0.15}this has been great.":
         pass
 
-r n "See? Even our (small text)suspiciously quiet captain thinks so."
+r n "See? Even our (TODOsmall text)suspiciously quiet captain thinks so."
 
 show y m
 
@@ -526,7 +526,7 @@ show y n
 
 y n "I'm already up, {w=0.15}you can continue to be la-"
 
-e "ketchup squirts out of the frige when Haru tries to open it."
+e "Ketchup squirts out of the fridge when Haru tries to open it."
 
 y su "Is this... Ketchup?"
 
@@ -538,7 +538,7 @@ e "Haruka grabs a knife from the counter."
 
 r su "Haruka c'mon, {w=0.15}it wasn't even meant for you! "
 
-e "She turnes around and looks at Hei for a moment."
+e "She turns around and looks at Hei for a moment."
 
 r su "Haruka! I swear I would not have done it if I kn-"
 

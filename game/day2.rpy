@@ -58,7 +58,7 @@ p s "Well, {w=0.15}I will be sure to continue being cautious."
 
 p n "Anyways, {w=0.15}I was just heading back to my room."
 
-p n "Have a good morning captain."
+p n "Have a good morning Captain."
 
 menu:
     "Join me?":
@@ -67,7 +67,7 @@ menu:
     "Have a good morning, {w=0.15}Nema.":
         pass
 
-p s "No, {w=0.15}I really should be back to work. Thank you though captain."
+p s "No, {w=0.15}I really should be back to work. Thank you though Captain."
 
 play sound "sounds/DoorClose2.mp3"
 
@@ -131,7 +131,7 @@ y n "Really?"
 
 y s "Can't say they've held up for me."
 
-y h "I'm glad you're happy though cap."
+y h "I'm glad you're happy though Cap."
 
 e "Her voice is a little patronizing."
 
@@ -244,7 +244,7 @@ call pinkRoom from _call_pinkRoom
 
 show p n
 
-p n "Oh, {w=0.15}good afternoon captain."
+p n "Oh, {w=0.15}good afternoon Captain."
 
 e "Nema smiles bashfully."
 
@@ -319,7 +319,7 @@ p n "Thank you sir. I do my best."
 
 p n "Anyways sir, {w=0.15}I have a lot to attend to, {w=0.15}and I don't want to keep you."
 
-p n "Please have a wonderful day captain, {w=0.15}and feel free to inform me of any way I can be of help."
+p n "Please have a wonderful day Captain, {w=0.15}and feel free to inform me of any way I can be of help."
 
 call hall from _call_hall_19
 
@@ -591,7 +591,7 @@ y n "Well, {w=0.15}I don't want to babysit you all, {w=0.15}but I sort of assume
 
 y n "Maybe we don't need to have a strict schedule, {w=0.15}but there should be some sort of periodic progress update."
 
-y n "We need some way of knowing things are getting done, {w=0.15}that's part of a captains job, {w=0.15}right?"
+y n "We need some way of knowing things are getting done, {w=0.15}that's part of a Captains job, {w=0.15}right?"
 
 e "She looks accusingly at you."
 
@@ -830,7 +830,7 @@ r su "You know... I am."
 
 r n "I think I'll have myself a snooze."
 
-r h "Captain! Good luck my fearless captain."
+r h "Captain! Good luck my fearless Captain."
 
 menu:
     "Thanks!":
@@ -852,7 +852,7 @@ p s "Haruka, {w=0.15}do you plan on staying up for a while?"
 
 show y n
 
-y n "Actually, {w=0.15}I thought I might help cap pass the time tonight."
+y n "Actually, {w=0.15}I thought I might help Cap pass the time tonight."
 
 menu:
     "What do you mean?":
@@ -873,7 +873,7 @@ p n "U-unless... you'd like another pair of hands to help?"
 
 show y n
 
-y n "I think we got it, {w=0.15}right cap?"
+y n "I think we got it, {w=0.15}right Cap?"
 
 menu:
     "Yeah, {w=0.15}we're good.":
