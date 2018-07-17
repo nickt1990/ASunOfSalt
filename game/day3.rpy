@@ -406,7 +406,7 @@ menu:
     "I disagree, {w=0.15}this has been great.":
         pass
 
-r n "See? Even our (TODOsmall text)suspiciously quiet captain thinks so."
+r n "See? {w=0.25}Even our {size=-6}suspiciously quiet{/size} captain thinks so."
 
 show y m
 

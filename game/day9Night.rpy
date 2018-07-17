@@ -174,7 +174,7 @@ menu:
     "Maybe you've been unfair to them?":
         pass
 
-y m "Ugh, {w=0.15}c'mon. I didn't ask you here for this."
+y m "Ugh, {w=0.15}c'mon.{w=0.35} I didn't ask you here for this."
 
 y s "I wanted to talk about us, {w=0.15}not them."
 
@@ -232,7 +232,7 @@ y n "You pass on what you've accomplished.{w=0.2} I get it."
 
 y s "I just feel like a life that was sacrificed to give comfortable idiots another vacation option though."
 
-y n "I never got a chance to.{w=0.1}.{w=0.1}.{w=0.15} I dont know.{w=0.2} Relax."
+y n "I never got a chance to.{w=0.1}.{w=0.1}.{w=0.15} I don't know.{w=0.2} Relax."
 
 menu:
     "Why not now?":
@@ -265,11 +265,11 @@ e "The ship shakes. An alarm goes off."
 
 y su "W-{w=0.15}what?"
 
-y su "Oh wa-Quick! {w=0.15}To the cockpit!"
+y su "Oh wa-Quick! {w=0.15}To the nav room!"
 
 play sound "sounds/DoorOpen2.mp3"
 
-e "You both run to the cockpit."
+e "You both run to the navigation room."
 
 e "Hei runs into the hall wearing a dress."
 
@@ -293,11 +293,11 @@ y su "What do you mean way off?!"
 
 show r s
 
-r s "It's just not...{w=0.15} right?"
+r s "It's just not.{w=0.15}.{w=0.15}.{w=0.15} right?"
 
 r n "It's off where it's supposed to be."
 
-r s "The...{w=0.15} uh..."
+r s "The.{w=0.15}.{w=0.15}.{w=0.15} uh.{w=0.15}.{w=0.15}."
 
 show y m
 
@@ -376,7 +376,7 @@ y n "I say we compound.{w=0.15} Let's take a chance.{w=0.15} The engine can take
 
 show r su
 
-r su "That could kill us! "
+r su "That could kill us!"
 
 show y n
 
@@ -398,7 +398,7 @@ y n "I don't know, {w=0.15}{w=0.15}but what else can we do?"
 
 show p s
 
-p s "R-right..."
+p s "R-right.{w=0.15}.{w=0.15}."
 
 show y m
 
@@ -409,7 +409,7 @@ menu:
         pass
 
     "We're going to wait it out.":
-        e "Hey tester. We're pretending you made the other choice here! Sorry. -Nick"
+        #todo this branch
         pass
 
 y s "Alright,{w=0.15} done."

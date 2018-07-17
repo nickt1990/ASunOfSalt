@@ -14,13 +14,13 @@ y h "Thanks for the quick decision Cap."
 
 show p h
 
-p h "W-wow... "
+p h "W-wow.{w=0.15}.{w=0.15}. "
 
 show r su
 
-r su "Ooof..."
+r su "Ooof.{w=0.15}.{w=0.15}."
 
-r s "I'm gonna be sick..."
+r s "I'm gonna be sick.{w=0.15}.{w=0.15}."
 
 r s "Why me?"
 
@@ -30,9 +30,9 @@ y m "We're alive dude, {w=0.15}be thankful."
 
 show p n
 
-p n "She's right Hei... "
+p n "She's right Hei.{w=0.15}.{w=0.15}. "
 
-p n "We're lucky, {w=0.15}{w=0.15}there was no telling what was going to happen."
+p n "We're lucky, {w=0.15}there was no telling what was going to happen."
 
 show r n
 
@@ -40,11 +40,11 @@ r n "Lucky."
 
 show y n
 
-y n "Yeah..."
+y n "Yeah.{w=0.15}.{w=0.15}."
 
 show r m
 
-r m "No, {w=0.15}{w=0.15}this wasn't mere luck..."
+r m "No, {w=0.15}this wasn't mere luck..."
 
 show p n
 
@@ -52,15 +52,15 @@ p n "You don't think so, {w=0.15}Hei?"
 
 show r n
 
-r n "No... "
+r n "No.{w=0.15}.{w=0.15}. "
 
 r h "This was me."
 
-r h "I must be good luck,{w=0.15} huh Haru-baru?"
+r h "I must be good luck,{w=0.15} huh Haru-{w=0.1}baru?"
 
 show y m
 
-y m "..."
+y m ".{w=0.15}.{w=0.15}."
 
 y n "I won't lie."
 
@@ -80,7 +80,7 @@ y m "Yes. Hei."
 
 y h "Ya came up with a plan of action quickly."
 
-y h "I'm proud, {w=0.15}{w=0.15}ya did awesome dude."
+y h "I'm proud, {w=0.15}ya did awesome dude."
 
 show y n
 
@@ -90,11 +90,11 @@ show r h
 
 r h "Hell yeah baby! "
 
-r h "Daddy's beeh here all along baby-girl, {w=0.15}{w=0.15}come sit on my lap and I'll tell you a story."
+r h "Daddy's been here all along baby-{w=0.1}girl, {w=0.15}come sit on my lap and I'll tell you a story."
 
 show y n
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 show r n
 
@@ -102,7 +102,7 @@ r n "Uh."
 
 show p n
 
-p n "..."
+p n ".{w=0.15}.{w=0.15}."
 
 show y n
 
@@ -116,7 +116,7 @@ e "Haruka presses a few keys on her computer."
 
 show y su
 
-y su "Weird..."
+y su "Weird.{w=0.15}.{w=0.15}."
 
 menu:
     "What is it?":
@@ -135,7 +135,7 @@ p su "Mine too!"
 
 show r s
 
-r s "Shit shit shit."
+r s "Shit{w=0.1} shit{w=0.1} shit."
 
 r s "Mine too."
 
@@ -151,11 +151,11 @@ e "She flips a small switch and her monitor turns on."
 
 y h "There we go."
 
-y n "So let's see..."
+y n "So let's see.{w=0.15}.{w=0.15}."
 
 show p n
 
-p n "Can you see what the problem may be, {w=0.15}{w=0.15}Haruka?"
+p n "Can you see what the problem may be, {w=0.15}Haruka?"
 
 show y n
 
@@ -165,15 +165,15 @@ y n "No big deal!"
 
 show r h
 
-r h "Hoo, {w=0.15}{w=0.15}really? Nice."
+r h "Hoo, {w=0.15}really? Nice."
 
 show y n
 
-y n "One of power sources is dead since we made that emergency compund."
+y n "One of power sources is dead since we made that emergency compound."
 
 show r su
 
-r su "That sounds...{w=0.15} pretty bad."
+r su "That sounds.{w=0.15}.{w=0.15}.{w=0.15} pretty bad."
 
 show p su
 
@@ -242,11 +242,11 @@ y n "My room and Nema's room are dead for probably about two days."
 
 show p su
 
-p su "Oh my..."
+p su "Oh my.{w=0.15}.{w=0.15}."
 
 show r su
 
-r su "So that means..."
+r su "So that means.{w=0.15}.{w=0.15}."
 
 show r h
 

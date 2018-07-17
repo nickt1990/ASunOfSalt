@@ -6,7 +6,7 @@ hide black
     
 e "Haruka is out of sight."
 
-e "..."
+e ".{w=0.15}.{w=0.15}."
 
 e "She doesn't seem to be in the room."
 
@@ -18,7 +18,7 @@ menu:
 
 e "It's a plain ham sandwich with one bite taken out of it."
 
-e "...There's a note on it."
+e ".{w=0.15}.{w=0.15}.{w=0.15}There's a note on it."
 
 e "The note reads \"You can have the rest.\""
 
@@ -147,7 +147,7 @@ show p h
 
 p h "Don't worry Haruka,{w=0.15} it was a really fun sleepover."
 
-p n "Not quite what I'd always imagined they'd be like as a kid,{w=0.15} but..."
+p n "Not quite what I'd always imagined they'd be like as a kid,{w=0.15} but{w=0.15}.{w=0.15}.{w=0.15}."
 
 p h "Fun."
 
@@ -205,7 +205,7 @@ r n "Dude."
 
 e "Hei looks you in the eyes,{w=0.15} hopeful."
 
-r n "You stay with Nema,{w=0.15} I'm with Haruka, good?"
+r n "You stay with Nema,{w=0.15} I'm with Haruka,{w=0.15} good?"
 
 r n "Good."
 
@@ -215,7 +215,7 @@ y su "Woah woah,{w=0.15} what?"
 
 y n "Did I mishear that?"
 
-y m "What in the world makes you think I'd be even half alright with that?"
+y m "What in the world makes ya think I'd be even half alright with that?"
 
 show r n
 
@@ -231,13 +231,13 @@ r s "Please Haruka, I know I've been a dick."
 
 r n "But have you ever thought that maybe it's because you've never given me a real shot?"
 
-r n "Have we ever had a one on one converstion before?"
+r n "Have we ever had a one on one conversation before?"
 
 r s "Even one?"
 
 show y s
 
-y s "Well,{w=0.15} not really..."
+y s "Well,{w=0.15} not really.{w=0.15}.{w=0.15}."
 
 show p h
 
@@ -253,15 +253,15 @@ r s "Is that what you want?"
 
 show y m
 
-y m "Ugh..."
+y m "Ugh.{w=0.15}.{w=0.15}."
 
-y s "But..."
+y s "But.{w=0.15}.{w=0.15}."
 
 e "Haruka looks at you with a defeated look."
 
-y s "..."
+y s ".{w=0.15}.{w=0.15}."
 
-y n "What do you think Cap?"
+y n "What do ya think Cap?"
 
 menu:
     "Let's just stick with the same roommates.":
@@ -324,7 +324,7 @@ r h "It's about time to get back to our rooms, right?"
 
 show y s
 
-y s "Ugh..."
+y s "Ugh.{w=0.15}.{w=0.15}."
 
 show p h
 
@@ -334,7 +334,7 @@ p h "I look forward to getting to spend some time with you as well, Sir."
 
 show y s
 
-y s "..."
+y s ".{w=0.15}.{w=0.15}."
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -352,19 +352,19 @@ play sound "sounds/DoorOpen2.mp3"
 
 hide r
 
-e "Hei joggs off to his room."
+e "Hei jogs off to his room."
 
 show y n
 
-y n "Well..."
+y n "Well.{w=0.15}.{w=0.15}."
 
-y s "..."
+y s ".{w=0.15}.{w=0.15}."
 
 y s "I have to go turn on energy conservation."
 
 e "Haruka looks down at the ground sadly."
 
-y s "..."
+y s ".{w=0.15}.{w=0.15}."
 
 y s "Better get back to your room."
 

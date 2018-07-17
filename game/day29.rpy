@@ -20,7 +20,7 @@ menu:
     "What's gotten into you two?":
         pass
 
-    "G'morning.":
+    "Good morning.":
         pass
 
 p h "Hey,{w= 0.15} Haru,{w= 0.15} would you mind giving me and Captain a minute to talk privately?"
@@ -91,7 +91,7 @@ menu:
     "What's that mean?":
         pass
 
-p n "I think that should be failry obvious."
+p n "I think that should be fairly obvious."
 
 p h "Hei wont be too happy about it,{w= 0.15} but to be honest.{w= 0.15}.{w= 0.15}."
 

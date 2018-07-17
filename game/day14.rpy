@@ -20,9 +20,9 @@ play sound "sounds/DoorOpen2.mp3"
 
 e "As you walk out into the hallway, {w=0.15}you see Nema sitting on the ground across the hall."
 
-e "Music is coming from a small,{w=0.15} old boombox."
+e "Music is coming from a small,{w=0.15} old boom-box."
 
-e "On the ground next to the boombox,{w=0.15} Nema is laying down, writing in a black notebook."
+e "On the ground next to the boom-box,{w=0.15} Nema is laying down, writing in a black notebook."
 
 show p h
 
@@ -53,7 +53,7 @@ menu:
         p h "Hah, {w= 0.15}no Sir."
         pass
 
-p h "I want to understand thigns better."
+p h "I want to understand things better."
 
 p n "I was thinking I'd monitor the levels and find averages."
 
@@ -164,7 +164,7 @@ e "Nema turned up the music in her room."
 
 show y su
 
-y su "Unbelivable."
+y su "Unbelievable."
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -184,7 +184,7 @@ r su "What?"
 
 show y m
 
-y m "She wants to take your shift tonight for some maintinence stuff that I already know wont work."
+y m "She wants to take your shift tonight for some maintenance stuff that I already know wont work."
 
 show r n
 

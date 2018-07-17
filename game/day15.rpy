@@ -124,7 +124,7 @@ show y m
 
 y m "A resource? We're dead to them."
 
-y n "They're expecting a message or two from us with a little intformation,{w= 0.15}and that's it."
+y n "They're expecting a message or two from us with a little information,{w= 0.15}and that's it."
 
 y n "Let's do this for.{w= 0.15}.{w= 0.15}."
 
@@ -265,7 +265,7 @@ p n "One of yours found a way to communicate with one of us."
 
 p h "He's the one who's helped me hold this form for so long."
 
-p n "He also took on a prodege,{w= 0.15}which I'm told was a big deal for him. "
+p n "He also took on a student,{w= 0.15}which I'm told was a big deal for him. "
 
 p n "His first ever,{w= 0.15}a young girl from the slums."
 
@@ -290,7 +290,7 @@ menu:
     "Nema?":
         pass
 
-p m "Obviousy."
+p m "Obvious."
 
 p n "She had an expiration date on her head since the moment Motokami saw her."
 
@@ -343,7 +343,7 @@ p n "This ship runs on my excess power."
 
 p n "So you can see why this \"compounding\" has been an issue to me."
 
-p h "I'm about ready to transfer over to this existance completely though,{w= 0.15}so I need to gather myself."
+p h "I'm about ready to transfer over to this existence completely though,{w= 0.15}so I need to gather myself."
 
 menu:
     "Gather yourself?":
@@ -392,7 +392,9 @@ p n "Hei is.{w= 0.15}.{w= 0.15}. a friend."
 
 p s "In a way."
 
-p n "I can't offer you much more than that."
+p s "I'll admit that he disappointed me more than I could ever show.{w=0.15}.{w=0.15}."
+
+p n "I can't offer you much more than that though."
 
 p h "That's life sometimes though,{w= 0.15}isn't it?"
 
@@ -538,7 +540,7 @@ y h "That explains it then."
 y n "I must have turned off prior memories."
 
 menu:
-    "pror memories?":
+    "Prior memories?":
         pass
 
     "What do you mean?":

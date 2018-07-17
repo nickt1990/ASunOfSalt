@@ -40,7 +40,7 @@ menu:
     "What's your problem?":
         pass
 
-r m "Soft and Moist Vegetables: 2 Turbo Vegetable Edition REMATCH."
+r m "Soft and Moist Vegetables:{w=0.15} 2 Turbo Vegetable Edition{w=0.15} {b}R{w=0.15}E{w=0.15}M{w=0.15}A{w=0.15}T{w=0.15}C{w=0.15}H{/b}."
 
 r n "My room, {w=0.15}10 minutes."
 
@@ -92,9 +92,9 @@ menu:
     "Morning grumpy.":
         pass
 
-y s "I'm...{w=1.0} Sorry."
+y s "I'm.{w=0.15}.{w=0.15}.{w=0.5} Sorry."
 
-y s "..."
+y s ".{w=0.15}.{w=0.15}."
 
 menu:
     "Don't worry about it.":
@@ -105,11 +105,11 @@ menu:
 
 y s "Nah, {w=0.15}I've been the worst. "
 
-y s "I just feel so...{w=1.0} I don't know. "
+y s "I just feel so.{w=0.15}.{w=0.15}.{w=0.3} I don't know. "
 
-y n "Would..."
+y n "Would.{w=0.15}.{w=0.15}."
 
-y h " Would...{w=0.5} you be willing to meet up and talk over drinks tonight?"
+y h " Would.{w=0.15}.{w=0.15}.{w=0.5} you be willing to meet up and talk over drinks tonight?"
 
 y s "I have some things to say."
 
@@ -128,7 +128,7 @@ e "Haruka makes her way out of the kitchen."
 
 e "Nema's still absorbed in her work at the counter, {w=0.15}so you quietly eat your food."
 
-e "..."
+e ".{w=0.15}.{w=0.15}."
 
 e "Hei pops in."
 
@@ -161,7 +161,7 @@ p n "Hei, {w=0.15}you must always respect your Captain."
 
 show r m
 
-r m "But I have to-{w=0.5} urrrrgh."
+r m "But I have to-{w=0.25} urrrrgh."
 
 r n "{i}Captain.{/i}"
 
@@ -212,11 +212,11 @@ r n "Let us reminisce."
 
 r s "A week has passed."
 
-r n "As men,{w=0.5} we have grown only stronger."
+r n "As men,{w=0.25} we have grown only stronger."
 
-r h "As rivals,{w=0.5} we have grown more intense."
+r h "As rivals,{w=0.25} we have grown more intense."
 
-r n "As friends,{w=0.5} we have grown closer."
+r n "As friends,{w=0.25} we have grown closer."
 
 r s "It's all been leading up to this."
 
@@ -244,7 +244,7 @@ p n "Then how is any of what you said true? "
 
 show r s
 
-r s ".{w=0.2}.{w=0.2}.{w=0.2}Nema{w=0.2}.{w=0.2}.{w=0.2}.{w=0.5} you gotta stop this."
+r s ".{w=0.2}.{w=0.2}.{w=0.2}Nema{w=0.2}.{w=0.2}.{w=0.2}.{w=0.25} you gotta stop this."
 
 e "Nema smiles at Hei."
 
@@ -272,7 +272,7 @@ r n "What was it?"
 
 show p s
 
-p s "Oh..."
+p s "Oh.{w=0.15}.{w=0.15}."
 
 p n "Nothing."
 
@@ -282,7 +282,7 @@ r m "Just tell me."
 
 show p h
 
-p h "Well I was going to say,{w=0.1} that you two should spend some time together."
+p h "Well I was going to say,{w=0.15} that you two should spend some time together."
 
 show r m
 
@@ -344,7 +344,7 @@ menu:
     "Alright, {w=0.15}alright.":
         pass
 
-r s "Wait is...{w=0.1} uhm..."
+r s "Wait is.{w=0.15}.{w=0.15}.{w=0.15} uhm.{w=0.15}.{w=0.15}."
 
 r n "Is Haruka gonna watch?"
 
@@ -410,7 +410,7 @@ show r n
 
 show p h
 
-r n "I'd been practicing with the Veggie that's able to beat Tomato with no problem..."
+r n "I'd been practicing with the Veggie that's able to beat Tomato with no problem.{w=0.15}.{w=0.15}."
 
 r h "Cucumber!"
 
@@ -475,11 +475,11 @@ p s "No..."
 
 show r s
 
-r s "But...{w=0.1} You were Tomato..."
+r s "But.{w=0.15}.{w=0.15}.{w=0.1} You were Tomato.{w=0.15}.{w=0.15}."
 
-r s "I had it all planned..."
+r s "I had it all planned.{w=0.15}.{w=0.15}."
 
-r s "I...{w=0.1} Wha..."
+r s "I.{w=0.15}.{w=0.15}.{w=0.1} Wha.{w=0.15}.{w=0.15}."
 
 show p s
 
@@ -487,7 +487,7 @@ p s "After all that practice,{w=0.1} I understand why you're upset Hei."
 
 show r s
 
-r s "Y-yeah...{w=0.1} well..."
+r s "Y-yeah.{w=0.15}.{w=0.15}.{w=0.1} well.{w=0.15}.{w=0.15}."
 
 r n "I guess I technically didn't \"practice\"."
 
@@ -541,11 +541,11 @@ menu:
     "Right, {w=0.15}it was fun!":
         pass
 
-r m "You wish, {w=0.15}weiner head."
+r m "You wish, {w=0.15}wiener head."
 
 show p h
 
-p h "Hei!{w=0.15} That's our Captain!"
+p h "Hei!{w=0.1} That's our Captain!"
 
 show r s
 
@@ -553,7 +553,7 @@ r s "Whatever, {w=0.15}sorry I don't have time to waste on a stupid video game."
 
 play sound "sounds/DoorOpen2.mp3"
 
-e "The door opens and haruka walks through"
+e "The door opens and Haruka walks through"
 
 show y n:
     linear 0.5 xalign 0.1 yalign 1.0
@@ -562,7 +562,7 @@ y n "Since when have you not had time to waste?"
 
 show r s
 
-r s "..."
+r s ".{w=0.15}.{w=0.15}."
 
 show y n
 
@@ -607,11 +607,11 @@ show r su
 
 r su "Bu-wait."
 
-r s "I was kind of hoping that maybe you...{w=0.15} would..."
+r s "I was kind of hoping that maybe you...{w=0.15} would.{w=0.15}.{w=0.15}."
 
 show p su
 
-p su "I would...?"
+p su "I would.{w=0.15}.{w=0.15}.?"
 
 menu:
     "You want her to keep you company?":
@@ -626,7 +626,7 @@ r h "Yes! "
 
 show p s
 
-p s "Oh...{w=0.15} w-well,{w=0.15} I did have some work I planned to get done tonight,{w=0.15} but I can help you out if you truly want me to."
+p s "Oh.{w=0.15}.{w=0.15}.{w=0.15} w-well,{w=0.15} I did have some work I planned to get done tonight,{w=0.15} but I can help you out if you truly want me to."
 
 show r h
 
@@ -636,14 +636,14 @@ show p s
 
 p s "S-{w=0.1}sure,{w=0.15} I suppose it couldn't hurt."
 
-p n "..."
+p n ".{w=0.15}.{w=0.15}."
 
 p s "C-captain?{w=0.15} Would you like to join us?"
 
 menu:
     "I have plans with Haruka tonight.":
-        r su "Oh...{w=0.15} with Haruka?"
-        r s "Right.{w=0.15} Ok."
+        r su "Oh.{w=0.15}.{w=0.15}. with Haruka?"
+        r s "Right.{w=0.35} Ok."
         pass
 
     "I have work to do.":

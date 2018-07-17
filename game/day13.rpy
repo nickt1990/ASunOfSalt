@@ -1,8 +1,8 @@
 ﻿label day13:
     
-e "..."
-
 e ".{w=0.15}.{w=0.15}."
+
+e ".{w=0.35}.{w=0.35}."
     
 e "After two nights of sharing,{w=0.15} you have the room to yourself."
 
@@ -28,15 +28,15 @@ e "No sign of anyone."
 
 call kitchen from _call_kitchen_1
 
-e "As you walk closer to the kitchen you can hear the sound of somebody rustling through items in the fride."
+e "As you walk closer to the kitchen you can hear the sound of somebody rustling through items in the fridge."
 
-e "The kitchen door is open, Haruka is sitting at the table and Hei is at the fridle,{w=0.15} looking around."
+e "The kitchen door is open, Haruka is sitting at the table and Hei is at the fridge,{w=0.15} looking around."
 
 show r h
 
-r h "Uhh, so we have...{w=0.15} uhm..."
+r h "Uhh, so we have.{w=0.15}.{w=0.15}.{w=0.15} uhm.{w=0.15}.{w=0.15}."
 
-r n "What do I know how to make..."
+r n "What do I know how to make.{w=0.15}.{w=0.15}."
 
 r h "You want some cereal?"
 
@@ -51,7 +51,7 @@ show r s
 
 r s "Yeaaaah, I did didn't I."
 
-r m "Hmm..."
+r m "Hmm.{w=0.15}.{w=0.15}."
 
 show y su
 
@@ -183,7 +183,7 @@ e "Sunny side up."
 
 show y n
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 y h "Better than I expected."
 
@@ -222,7 +222,7 @@ menu:
 
 y n "I'll come to your room later."
 
-y n "Tomorrow's the engine compound and I want to make sure everythings in order after all the weird stuff that's been happening."
+y n "Tomorrow's the engine compound and I want to make sure everything's in order after all the weird stuff that's been happening."
 
 menu:
     "No problem.":
@@ -244,11 +244,16 @@ play sound "sounds/DoorOpen2.mp3"
 
 call blueRoom from _call_blueRoom_1
 
-e "And into your room,{w=0.15} to get some work done on your computer."
+e "Into your room."
 
 play sound "sounds/DoorClose2.mp3"
 
-e "todo knock"
+e "You sit down at your computer to get some work done."
+
+#todo computer
+
+play sound "sounds/Knock.mp3"
+
 e "Some time passes,{w=0.15} and you hear a knock on your door."
 
 menu:
@@ -276,13 +281,13 @@ menu:
     "I guess.":
         pass
 
-y n "So..."
+y n "So.{w=0.15}.{w=0.15}."
 
 e "Haruka walks right up in front of you."
 
 y n "I just wanted to say that,{w=0.15} uhm."
 
-e "Her hands are figeting."
+e "Her hands are fidgeting."
 
 y h "Well."
 
@@ -299,7 +304,7 @@ y s "Whatever."
 
 e "Haruka starts to walk out your door,{w=0.15} then turns around."
 
-y n "Oh,{w=0.15} and..."
+y n "Oh,{w=0.15} and.{w=0.15}.{w=0.15}."
 
 y s ".{w=0.15}.{w=0.15}."
 

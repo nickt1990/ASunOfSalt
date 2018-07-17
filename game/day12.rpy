@@ -49,7 +49,7 @@ menu:
     "Good morning.":
         pass
 
-y h "..."
+y h ".{w=0.15}.{w=0.15}."
 
 y n "How was your night?"
 
@@ -60,7 +60,7 @@ menu:
     "Good.":
         pass
 
-y n "Ah,{w=0.15} I see..."
+y n "Ah,{w=0.15} I see.{w=0.15}.{w=0.15}."
 
 show p h
 
@@ -112,11 +112,11 @@ y n "Right, {w=0.15}he's still sleepin'."
 
 show p h
 
-p h "I see..."
+p h "I see.{w=0.15}.{w=0.15}."
 
 show y s
 
-y s "So..."
+y s "So.{w=0.15}.{w=0.15}."
 
 y n "Did you two get any sleeping done last night?"
 
@@ -145,7 +145,7 @@ menu:
 
     "On the floor.":
         p su "What?"
-        p n "No, we shared the bed.{w=0.2} Of course."
+        p n "No,{w=0.15} we shared the bed.{w=0.2} Of course."
         pass
 
 y su "Oh wow,{w=0.15} really?"
@@ -158,7 +158,7 @@ p h "It was just nice to cuddle up to a warm body."
 
 show y m
 
-y m "I mean, isn't that something?"
+y m "I mean,{w=0.15} isn't that something?"
 
 show p su
 
@@ -180,7 +180,7 @@ y m "Well I wouldn't want you to."
 
 show p s
 
-p s "I'm sorry Haruka...{w=0.15} have I offended you somehow?"
+p s "I'm sorry Haruka.{w=0.15}.{w=0.15}.{w=0.15} have I offended you somehow?"
 
 show y m
 
@@ -206,7 +206,7 @@ y m "You know exactly what I mean."
 
 show p s
 
-p s "Haruka, I-"
+p s "Haruka,{w=0.15} I-"
 
 show y n
 
@@ -226,7 +226,7 @@ p m "I feel that you're purposely trying to provoke me,{w=0.15} Haruka."
 
 show y n
 
-y n "I'm not doing anything, just making observations."
+y n "I'm not doing anything,{w=0.15} just making observations."
 
 show p m
 
@@ -316,7 +316,7 @@ y s "You probably think I'm insane."
 
 y n "But like I told you, {w=0.15}sex isn't some casual thing to me."
 
-y s "I know I don't own you or anything,{w=0.15} I haven't even told... "
+y s "I know I don't own you or anything,{w=0.15} I haven't even told.{w=0.15}.{w=0.15}. "
 
 y n "Nevermind."
 
@@ -335,13 +335,13 @@ y n "I know,{w=0.15} I know."
 
 y s "It doesn't even matter."
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 y n "I should apologize I guess."
 
 y h "Or maybe not?"
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 y m "Hmph."
 
@@ -353,7 +353,7 @@ e "Haruka walks out of the room."
 
 play sound "sounds/DoorClose2.mp3"
 
-e "..."
+e ".{w=0.15}.{w=0.15}."
 
 e "You hear the sound of arguing coming from the hallway."
 
@@ -412,13 +412,13 @@ r n "You're my real sunshine."
 
 show y h
 
-y h "You're a real dirtbag rollercoaster,{w=0.15} you know that?"
+y h "You're a real dirtbag roller-coaster,{w=0.15} you know that?"
 
 play sound "sounds/DoorOpen2.mp3"
 
 hide y
 
-e "Haruka abruptyl turns and enters her room."
+e "Haruka abruptly turns and enters her room."
 
 show r m
 
@@ -474,7 +474,7 @@ r su "Oh, {w=0.15}right."
 
 r s "Sorry, {w=0.15}I didn't mean it that way."
 
-r h "Well I did,{w=0.15} but..."
+r h "Well I did,{w=0.15} but.{w=0.15}.{w=0.15}."
 
 r n "I meant it in a bros kinda way,{w=0.15} right?"
 
@@ -554,11 +554,11 @@ r su "W-{w=0.15}what?"
 
 show p h
 
-p h "..."
+p h ".{w=0.15}.{w=0.15}."
 
 show r n
 
-r n "..."
+r n ".{w=0.15}.{w=0.15}."
 
 r s ".{w=0.15}.{w=0.15}."
 
