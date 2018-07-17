@@ -41,6 +41,43 @@ init:
         "Nema/PLeatherHappy2.png"
         pause 0.1
         repeat        
+        
+    image pz:
+        "Nema/PNakedNeutral.png"
+        pause 7
+        "Nema/PLeatherNeutral2.png"
+        pause 0.1
+        repeat
+    image pz n:
+        "Nema/PNakedNeutral.png"
+        pause 7
+        "Nema/PLeatherNeutral2.png"
+        pause 0.1
+        repeat        
+    image pz s:
+        "Nema/PNakedSad.png"
+        pause 7 #10.5
+        "Nema/PLeatherSad2.png"
+        pause 0.1
+        repeat
+    image pz su:
+        "Nema/PNakedSurprised.png"
+        pause 7 #10.5
+        "Nema/PLeatherSurprised2.png"
+        pause 0.1
+        repeat
+    image pz m:
+        "Nema/PNakedAngry.png"
+        pause 7 #10.5
+        "Nema/PLeatherAngry2.png"
+        pause 0.1
+        repeat
+    image pz h:
+        "Nema/PNakedHappy.png"
+        pause 7
+        "Nema/PLeatherHappy2.png"
+        pause 0.1
+        repeat     
 
     image y neu = "Haruka/YNakedNeutral.png"
     image y hap = "Haruka/YNakedHappy.png"
@@ -84,6 +121,117 @@ init:
         pause 0.1
         repeat        
 
+    image yp:
+        "Haruka/YBunnyNeutral.png"
+        pause 7.7 
+        "Haruka/YBunnyNeutral2.png"
+        pause 0.1
+        repeat
+    image yp n:
+        "Haruka/YBunnyNeutral.png"
+        pause 7.7 
+        "Haruka/YBunnyNeutral2.png"
+        pause 0.1
+        repeat        
+    image yp m:
+        "Haruka/YGreenAngry.png"
+        pause 7.7
+        "Haruka/YGreenAngry2.png"
+        pause 0.1
+        repeat       
+    image yp s:
+        "Haruka/YGreenSad.png"
+        pause 7.7 
+        "Haruka/YGreenSad2.png"
+        pause 0.1
+        repeat
+    image yp su:
+        "Haruka/YGreenSurprised.png"
+        pause 7.7 
+        "Haruka/YGreenSurprised2.png"
+        pause 0.1
+        repeat
+    image yp h:
+        "Haruka/YGreenHappy.png"
+        pause 7.7 
+        "Haruka/YGreenHappy2.png"
+        pause 0.1
+        repeat    
+
+    image yb:
+        "Haruka/YMaidNeutral.png"
+        pause 7.7 
+        "Haruka/YMaidNeutral2.png"
+        pause 0.1
+        repeat
+    image yb n:
+        "Haruka/YMaidNeutral.png"
+        pause 7.7 
+        "Haruka/YMaidNeutral2.png"
+        pause 0.1
+        repeat        
+    image yb m:
+        "Haruka/YGreenAngry.png"
+        pause 7.7
+        "Haruka/YGreenAngry2.png"
+        pause 0.1
+        repeat       
+    image yb s:
+        "Haruka/YGreenSad.png"
+        pause 7.7 
+        "Haruka/YGreenSad2.png"
+        pause 0.1
+        repeat
+    image yb su:
+        "Haruka/YGreenSurprised.png"
+        pause 7.7 
+        "Haruka/YGreenSurprised2.png"
+        pause 0.1
+        repeat
+    image yb h:
+        "Haruka/YGreenHappy.png"
+        pause 7.7 
+        "Haruka/YGreenHappy2.png"
+        pause 0.1
+        repeat    
+
+    image yz:
+        "Haruka/YNakedNeutral.png"
+        pause 7.7 
+        "Haruka/YNakedNeutral2.png"
+        pause 0.1
+        repeat
+    image yz n:
+        "Haruka/YNakedNeutral.png"
+        pause 7.7 
+        "Haruka/YNakedNeutral2.png"
+        pause 0.1
+        repeat        
+    image yz m:
+        "Haruka/YNakedAngry.png"
+        pause 7.7
+        "Haruka/YGreenAngry2.png"
+        pause 0.1
+        repeat       
+    image yz s:
+        "Haruka/YNakedSad.png"
+        pause 7.7 
+        "Haruka/YGreenSad2.png"
+        pause 0.1
+        repeat
+    image yz su:
+        "Haruka/YNakedSurprised.png"
+        pause 7.7 
+        "Haruka/YGreenSurprised2.png"
+        pause 0.1
+        repeat
+    image yz h:
+        "Haruka/YNakedHappy.png"
+        pause 7.7 
+        "Haruka/YGreenHappy2.png"
+        pause 0.1
+        repeat    
+
     image r neu = "Hei/RNakedNeutral.png"
     image r hap = "Hei/RNakedHappy.png"
     image r ang = "Hei/RNakedAngry.png"
@@ -121,6 +269,80 @@ init:
         repeat
     image r h:
         "Hei/RCasualHappy.png"
+        pause 8.3
+        "Hei/RCasualHappy2.png"
+        pause 0.1
+        repeat        
+
+    image rz:
+        "Hei/RNakedNeutral.png"
+        pause 8.3
+        "Hei/RCasualNeutral2.png"
+        pause 0.1
+        repeat
+    image rz n:
+        "Hei/RNakedNeutral.png"
+        pause 8.3
+        "Hei/RCasualNeutral2.png"
+        pause 0.1
+        repeat        
+    image rz m:
+        "Hei/RNakedAngry.png"
+        pause 8.3
+        "Hei/RCasualAngry2.png"
+        pause 0.1
+        repeat
+    image rz s:
+        "Hei/RNakedSad.png"
+        pause 8.3
+        "Hei/RCasualSad2.png"
+        pause 0.1
+        repeat
+    image rz su:
+        "Hei/RNakedSurprised.png"
+        pause 8.3
+        "Hei/RCasualSurprised2.png"
+        pause 0.1
+        repeat
+    image rz h:
+        "Hei/RNakedHappy.png"
+        pause 8.3
+        "Hei/RCasualHappy2.png"
+        pause 0.1
+        repeat     
+        
+    image rn:
+        "Hei/RNakedNeutral.png"
+        pause 8.3
+        "Hei/RCasualNeutral2.png"
+        pause 0.1
+        repeat
+    image rn n:
+        "Hei/RNakedNeutral.png"
+        pause 8.3
+        "Hei/RCasualNeutral2.png"
+        pause 0.1
+        repeat        
+    image rn m:
+        "Hei/RNakedAngry.png"
+        pause 8.3
+        "Hei/RCasualAngry2.png"
+        pause 0.1
+        repeat
+    image rn s:
+        "Hei/RNakedSad.png"
+        pause 8.3
+        "Hei/RCasualSad2.png"
+        pause 0.1
+        repeat
+    image rn su:
+        "Hei/RNakedSurprised.png"
+        pause 8.3
+        "Hei/RCasualSurprised2.png"
+        pause 0.1
+        repeat
+    image rn h:
+        "Hei/RNakedHappy.png"
         pause 8.3
         "Hei/RCasualHappy2.png"
         pause 0.1

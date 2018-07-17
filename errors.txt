@@ -2,8 +2,12 @@
 errors listed below, and try again.
 
 
-File "game/day2.rpy", line 834: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Your turn next time."
-                          ^
+File "game/options.rpy", line 129: expected statement.
+    Preference("transitions", "all")
+                                    ^
+
+File "game/screens.rpy", line 1561: expected statement.
+    Preference("transitions", "all")
+                                    ^
 
 Ren'Py Version: Ren'Py 6.99.13.2919
