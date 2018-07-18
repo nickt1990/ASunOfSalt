@@ -176,7 +176,7 @@ menu:
     "FREE TIME":
         pass
 
-e "REDS ROOM"
+#todo e "REDS ROOM"
 
 call redRoom from _call_redRoom_5
 
@@ -263,7 +263,7 @@ menu:
 
 r n "Yeah, {w=0.15}I can't disagree there."
 
-r s "but I mean"
+r s "But I mean"
 
 r n "I'm sort of a leader in a way."
 
@@ -325,7 +325,7 @@ hide r
 e "You walk back out into the hallway."
 
 menu:
-    "NEMAS ROOM":
+    "NEMAS ROOM todo":
         pass
 
 call pinkRoom from _call_pinkRoom_2
@@ -582,19 +582,19 @@ y s "Fine. I knew what I was doing. I took a chance. "
 
 y n "I'm not a coward like you."
 
-y s "Coward."
+y s "{size=-6}Coward.{/size}"#todo check this
 
-y n "Coward."
+y n "{size=-1}Coward.{/size}"
 
-y m "Coward."
+y m "{size=12}Coward.{/size}"
 
-y n "COWARD."
+y n "{size=27}{b}Coward.{/b}{/size}"
 
 e "Her portrait starts to become disfigured, {w=0.15}she slowly melts into nothing."
 
 hide y
 
-e "When you try to enter Nema's room."
+#todo When you try to enter Nema's room. ( What does this mean?
 
 show p su
 
@@ -618,7 +618,7 @@ menu:
 
 e "No response."
 
-e "Nema is facing away. When you talk to her, {w=0.15}jump scare."
+e "Nema is facing away." #todo When you talk to her, jump scare.
 
 hide p
 
@@ -670,7 +670,7 @@ r s "Haruka c'mon, {w=0.15}it wasn't even meant for you! "
 show y m:
     linear .2 xalign 0.94
 
-e "She takes another step forward"
+e "She takes another step forward."
 
 r s "Haruka! I swear I would not have done it if I kn-"
 
@@ -763,7 +763,7 @@ e "You have a lot of work to do tonight."
 
 e "Make sure you do everything you want to do before returning to your room, {w=0.15}as it may well be evening once you're done."
 
-e "HARUKAS ROOM"
+# todo e "HARUKAS ROOM"
 
 call yellowRoom from _call_yellowRoom_3
 
@@ -785,7 +785,7 @@ y n "We'll talk later."
 
 hide y n
 
-e "HEIS ROOM"
+#todo e "HEIS ROOM"
 
 call redRoom from _call_redRoom_6
 

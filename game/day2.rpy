@@ -79,94 +79,123 @@ e "You pour yourself a bowl of cereal and sit at the table to eat."
 
 menu:
     "Turn on radio":
+		e "The radio starts to quietly play the music that Nema had been listening to."
+
+		e "A moment goes by as you continue to eat, {w=0.15}and Haruka walks in."
+		
+		show y h
+		
+		y h "Morrrrnin'."
+		
+		menu:
+			"Good morning.":
+				pass
+		
+			"Nod.":
+				pass
+				
+		e "She grabs a bowl and pours herself some cereal as well."
+		
+		y n "Listenin' to some tunes, {w=0.15}yeah?"
+		
+		e "Nema creeps back into the picture, {w=0.15}just outside the room."
+		
+		y n "This is that one band that was popular a few years ago right?"
+		
+		y s "What was their name?"
+		
+		menu:
+			"Little Legs?":
+				pass
+		
+			"Penguin Boys?":
+				pass
+		
+		y s "No..."
+		
+		y n "Whatever."
+		
+		y h "I was obsessed for a bit, {w=0.15}this is a major throwback."
+		
+		menu:
+			"They do sound great.":
+				pass
+		
+			"They sound terrible...":
+				pass
+		
+		y n "Really?"
+		
+		y s "Can't say they've held up for me."
+		
+		y h "I'm glad you're happy though Cap."
+		
+		e "Her voice is a little patronizing."
+		
+		y n "Anyways, {w=0.15}I'm heading back to my room."
         pass
 
-    "Eat in silence.":#todo cut to asking about anime
+    "Eat in silence.":
+		e "A moment goes by as you continue to eat, {w=0.15}and Haruka walks in."
+		
+		show y h
+		
+		y h "Morrrrnin'."
+		
+		menu:
+			"Good morning.":
+				pass
+		
+			"Nod.":
+				pass
+				
+		e "She grabs a bowl and pours herself some cereal as well."
+		
+		e "Hey, I was gonna eat in my room."
         pass
-
-e "The radio starts to quietly play the music that Nema had been listening to."
-
-e "A moment goes by as you continue to eat, {w=0.15}and Haruka walks in."
-
-show y h
-
-y h "Morrrrnin'."
-
-menu:
-    "Good morning.":
-        pass
-
-    "Nod.":
-        pass
-
-y n "Listenin' to some tunes, {w=0.15}yeah?"
-
-e "Nema creeps back into the picture, {w=0.15}just outside the room."
-
-y n "This is that one band that was popular a few years ago right?"
-
-y s "What was their name?"
-
-menu:
-    "Little Legs?":
-        pass
-
-    "Penguin Boys?":
-        pass
-
-y s "No..."
-
-y n "Whatever."
-
-y h "I was obsessed for a bit, {w=0.15}this is a major throwback."
-
-menu:
-    "They do sound great.":
-        pass
-
-    "They sound terrible...":
-        pass
-
-y n "Really?"
-
-y s "Can't say they've held up for me."
-
-y h "I'm glad you're happy though Cap."
-
-e "Her voice is a little patronizing."
-
-e "Nema blushes in the hallway and runs off."
-
-y n "Anyways, {w=0.15}was just heading back to my room."
 
 y h "Wanna come and watch some anime with me?"
 
 menu:
     "Yes.":
+		y h "Awesome."
+		
+		y h "Head over now?"
+		
+		e "You put your bowl in the sink."
+		
+		call hall
+		
+		play sound "sounds/DoorOpen2.mp3"
+		
+		e "Haruka turns and walks out towards her room and you follow closely behind."
+		
+		call yellowRoom
+		
+		#todo jump to anime, turn off haruka option for later menu
+		
         pass
     "No.":
+		y m "Fine, {w=0.15}I get it. Busy man."
+		
+		y s "See ya later Cap."
+		
+		hide y m
+		
+		e "Haruka walks over to her room."
+		
+		play sound "sounds/DoorClose2.mp3"
+		
+		call hall from _call_hall_17
+		
+		e "You finish your food and walk out into the hallway."
+		
+		#todo give menu including Haruka's room
+		
         pass
 
-
-y m "Fine, {w=0.15}I get it. Busy man."
-
-hide y m
-
-play sound "sounds/DoorOpen2.mp3"
-
-e "Haruka walks over to her room."
-
-e "You finish your food and walk out into the hallway."
-
-call hall from _call_hall_17
-
-play sound "sounds/DoorClose2.mp3"
-
-e "YOU ARE NOW ABLE TO EXPLORE A LITTLE"
-
-e "NAV ROOM CONTINUES MAIN STORYtodo"
-
-e "HARUKAS ROOM" #todo make menu choice for rooms
+label harukaAnime:
+#todo haruka's room
 
 call yellowRoom from _call_yellowRoom_1
 
@@ -252,7 +281,7 @@ menu:
 
 hide m2
 
-e "NEMAS ROOM"
+#todo e "NEMAS ROOM"
 
 call pinkRoom from _call_pinkRoom
 
@@ -312,6 +341,7 @@ menu:
         pass
 
     "Snoop it up!":
+		#todo snoop
         pass
 
 e "You take a moment to observe the room."
@@ -342,7 +372,7 @@ e "You walk out her door into the hallway."
 hide p
 
 menu:
-    "HEI ROOMtodo":
+    "HEI ROOM todo":
         call redRoom from _call_redRoom_2
         pass
 
@@ -515,7 +545,7 @@ e "You make your way back out into the hallway."
 call hall from _call_hall_20
 
 menu:
-    "NAV ROOM":
+    "NAV ROOM todo":
         call navRoom from _call_navRoom_2
         pass
 

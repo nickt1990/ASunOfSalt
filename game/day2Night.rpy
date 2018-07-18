@@ -101,7 +101,7 @@ y n "The thing tho, {w=0.15}is that we have only idea how the ship, {w=0.15}the 
 
 y s "I built fail-safes and designed everything around massive amounts of energy and speed, {w=0.15}y'know... we'll see. "
 
-y h "Eventually if things goes peachy, {w=0.15}we'll be moving faster than any known object in history. We'll be exerting more energy than Earth's sun at any given moment. We'll be a force of nature. Endless potential Cap, {w=0.15}right under your little feet!"
+y h "Eventually if things go peachy, {w=0.15}we'll be moving faster than any known object in history. We'll be exerting more energy than Earth's sun at any given moment. We'll be a force of nature. Endless potential Cap, {w=0.15}right under your little feet!"
 
 menu:
     "That sounds risky...":
@@ -293,7 +293,7 @@ menu:
     "Is it serious?":
         pass
 
-y n "One of the converters was mis-calibrated. A tiny bit more energy was going to one side of the ship than the other."
+y n "One of the converters was miscalibrated. A tiny bit more energy was going to one side of the ship than the other."
 
 y h "Coulda spent our entire lives flying in circles."
 
