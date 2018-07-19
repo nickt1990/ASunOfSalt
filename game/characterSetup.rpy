@@ -40,42 +40,79 @@ init:
         pause 7
         "Nema/PLeatherHappy2.png"
         pause 0.1
+        repeat
+        
+    image pc:
+        "Nema/PCommanderNeutral.png"
+        pause 7
+        "Nema/PCommanderNeutral2.png"
+        pause 0.1
+        repeat
+    image pc n:
+        "Nema/PCommanderNeutral.png"
+        pause 7
+        "Nema/PCommanderNeutral2.png"
+        pause 0.1
         repeat        
+    image pc s:
+        "Nema/PCommanderSad.png"
+        pause 7 #10.5
+        "Nema/PCommanderSad2.png"
+        pause 0.1
+        repeat
+    image pc su:
+        "Nema/PCommanderSurprised.png"
+        pause 7 #10.5
+        "Nema/PCommanderSurprised2.png"
+        pause 0.1
+        repeat
+    image pc m:
+        "Nema/PCommanderAngry.png"
+        pause 7 #10.5
+        "Nema/PCommanderAngry2.png"
+        pause 0.1
+        repeat
+    image pc h:
+        "Nema/PCommanderHappy.png"
+        pause 7
+        "Nema/PCommanderHappy2.png"
+        pause 0.1
+        repeat
         
     image pz:
         "Nema/PNakedNeutral.png"
         pause 7
-        "Nema/PLeatherNeutral2.png"
+        "Nema/PNakedNeutral2.png"
         pause 0.1
         repeat
     image pz n:
         "Nema/PNakedNeutral.png"
         pause 7
-        "Nema/PLeatherNeutral2.png"
+        "Nema/PNakedNeutral2.png"
         pause 0.1
         repeat        
     image pz s:
         "Nema/PNakedSad.png"
         pause 7 #10.5
-        "Nema/PLeatherSad2.png"
+        "Nema/PNakedSad2.png"
         pause 0.1
         repeat
     image pz su:
         "Nema/PNakedSurprised.png"
         pause 7 #10.5
-        "Nema/PLeatherSurprised2.png"
+        "Nema/PNakedSurprised2.png"
         pause 0.1
         repeat
     image pz m:
         "Nema/PNakedAngry.png"
         pause 7 #10.5
-        "Nema/PLeatherAngry2.png"
+        "Nema/PNakedAngry2.png"
         pause 0.1
         repeat
     image pz h:
         "Nema/PNakedHappy.png"
         pause 7
-        "Nema/PLeatherHappy2.png"
+        "Nema/PNakedHappy2.png"
         pause 0.1
         repeat     
 
@@ -134,27 +171,27 @@ init:
         pause 0.1
         repeat        
     image yp m:
-        "Haruka/YGreenAngry.png"
+        "Haruka/YBunnyAngry.png"
         pause 7.7
-        "Haruka/YGreenAngry2.png"
+        "Haruka/YBunnyAngry2.png"
         pause 0.1
         repeat       
     image yp s:
-        "Haruka/YGreenSad.png"
+        "Haruka/YBunnySad.png"
         pause 7.7 
-        "Haruka/YGreenSad2.png"
+        "Haruka/YBunnySad2.png"
         pause 0.1
         repeat
     image yp su:
-        "Haruka/YGreenSurprised.png"
+        "Haruka/YBunnySurprised.png"
         pause 7.7 
-        "Haruka/YGreenSurprised2.png"
+        "Haruka/YBunnySurprised2.png"
         pause 0.1
         repeat
     image yp h:
-        "Haruka/YGreenHappy.png"
+        "Haruka/YBunnyHappy.png"
         pause 7.7 
-        "Haruka/YGreenHappy2.png"
+        "Haruka/YBunnyHappy2.png"
         pause 0.1
         repeat    
 
@@ -171,27 +208,27 @@ init:
         pause 0.1
         repeat        
     image yb m:
-        "Haruka/YGreenAngry.png"
+        "Haruka/YMaidAngry.png"
         pause 7.7
-        "Haruka/YGreenAngry2.png"
+        "Haruka/YMaidAngry2.png"
         pause 0.1
         repeat       
     image yb s:
-        "Haruka/YGreenSad.png"
+        "Haruka/YMaidSad.png"
         pause 7.7 
-        "Haruka/YGreenSad2.png"
+        "Haruka/YMaidSad2.png"
         pause 0.1
         repeat
     image yb su:
-        "Haruka/YGreenSurprised.png"
+        "Haruka/YMaidSurprised.png"
         pause 7.7 
-        "Haruka/YGreenSurprised2.png"
+        "Haruka/YMaidSurprised2.png"
         pause 0.1
         repeat
     image yb h:
-        "Haruka/YGreenHappy.png"
+        "Haruka/YMaidHappy.png"
         pause 7.7 
-        "Haruka/YGreenHappy2.png"
+        "Haruka/YMaidHappy2.png"
         pause 0.1
         repeat    
 
@@ -210,25 +247,25 @@ init:
     image yz m:
         "Haruka/YNakedAngry.png"
         pause 7.7
-        "Haruka/YGreenAngry2.png"
+        "Haruka/YNakedAngry2.png"
         pause 0.1
         repeat       
     image yz s:
         "Haruka/YNakedSad.png"
         pause 7.7 
-        "Haruka/YGreenSad2.png"
+        "Haruka/YNakedSad2.png"
         pause 0.1
         repeat
     image yz su:
         "Haruka/YNakedSurprised.png"
         pause 7.7 
-        "Haruka/YGreenSurprised2.png"
+        "Haruka/YNakedSurprised2.png"
         pause 0.1
         repeat
     image yz h:
         "Haruka/YNakedHappy.png"
         pause 7.7 
-        "Haruka/YGreenHappy2.png"
+        "Haruka/YNakedHappy2.png"
         pause 0.1
         repeat    
 
@@ -275,39 +312,39 @@ init:
         repeat        
 
     image rz:
-        "Hei/RNakedNeutral.png"
+        "Hei/RNightyNeutral.png"
         pause 8.3
         "Hei/RCasualNeutral2.png"
         pause 0.1
         repeat
     image rz n:
-        "Hei/RNakedNeutral.png"
+        "Hei/RNightyNeutral.png"
         pause 8.3
-        "Hei/RCasualNeutral2.png"
+        "Hei/RNightyNeutral2.png"
         pause 0.1
         repeat        
     image rz m:
-        "Hei/RNakedAngry.png"
+        "Hei/RNightyAngry.png"
         pause 8.3
-        "Hei/RCasualAngry2.png"
+        "Hei/RNightyAngry2.png"
         pause 0.1
         repeat
     image rz s:
-        "Hei/RNakedSad.png"
+        "Hei/RNightySad.png"
         pause 8.3
-        "Hei/RCasualSad2.png"
+        "Hei/RNightySad2.png"
         pause 0.1
         repeat
     image rz su:
-        "Hei/RNakedSurprised.png"
+        "Hei/RNightySurprised.png"
         pause 8.3
-        "Hei/RCasualSurprised2.png"
+        "Hei/RNightySurprised2.png"
         pause 0.1
         repeat
     image rz h:
-        "Hei/RNakedHappy.png"
+        "Hei/RNightyHappy.png"
         pause 8.3
-        "Hei/RCasualHappy2.png"
+        "Hei/RNightyHappy2.png"
         pause 0.1
         repeat     
         
@@ -326,25 +363,25 @@ init:
     image rn m:
         "Hei/RNakedAngry.png"
         pause 8.3
-        "Hei/RCasualAngry2.png"
+        "Hei/RNakedAngry2.png"
         pause 0.1
         repeat
     image rn s:
         "Hei/RNakedSad.png"
         pause 8.3
-        "Hei/RCasualSad2.png"
+        "Hei/RNakedSad2.png"
         pause 0.1
         repeat
     image rn su:
         "Hei/RNakedSurprised.png"
         pause 8.3
-        "Hei/RCasualSurprised2.png"
+        "Hei/RNakedSurprised2.png"
         pause 0.1
         repeat
     image rn h:
         "Hei/RNakedHappy.png"
         pause 8.3
-        "Hei/RCasualHappy2.png"
+        "Hei/RNakedHappy2.png"
         pause 0.1
         repeat        
 
