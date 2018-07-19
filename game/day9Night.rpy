@@ -273,10 +273,10 @@ e "You both run to the navigation room."
 
 e "Hei runs into the hall wearing a dress."
 
-show r su:
+show rz su:
     linear 0.5 xalign 0.1 yalign 1.0
 
-r su "Guys! Something went wrong!"
+rz su "Guys! Something went wrong!"
 
 menu:
     "What happened?!":
@@ -285,25 +285,25 @@ menu:
     "What are you wearing!":
         pass
 
-r su "The engine went way off balance!"
+rz su "The engine went way off balance!"
 
 show y su
 
 y su "What do you mean way off?!"
 
-show r s
+show rz s
 
-r s "It's just not.{w=0.15}.{w=0.15}.{w=0.15} right?"
+rz s "It's just not.{w=0.15}.{w=0.15}.{w=0.15} right?"
 
-r n "It's off where it's supposed to be."
+rz n "It's off where it's supposed to be."
 
-r s "The.{w=0.15}.{w=0.15}.{w=0.15} uh.{w=0.15}.{w=0.15}."
+rz s "The.{w=0.15}.{w=0.15}.{w=0.15} uh.{w=0.15}.{w=0.15}."
 
 show y m
 
 call hall from _call_hall_36
 
-hide r
+hide rz
 
 y m "Get out of my way!"
 
@@ -349,22 +349,22 @@ y n "I'm adjusting the transfer rate to control the stability."
 
 y s "Just tell me if-"
 
-show r su:
+show rz su:
     linear 0 xalign 0.1 yalign 1.0
 
-r su "Shit!"
+rz su "Shit!"
 
-r su "It's back!"
+rz su "It's back!"
 
 show p n
 
 p n "What's back Hei?"
 
-show r su
+show rz su
 
-r su "The red!{w=0.15} The blood!"
+rz su "The red!{w=0.15} The blood!"
 
-r su "Look!{w=0.15} I can see it moving towards us! "
+rz su "Look!{w=0.15} I can see it moving towards us! "
 
 show y m
 
@@ -374,19 +374,19 @@ y n "It looks like it's moving slow. We have time to do something."
 
 y n "I say we compound.{w=0.15} Let's take a chance.{w=0.15} The engine can take it."
 
-show r su
+show rz su
 
-r su "That could kill us!"
+rz su "That could kill us!"
 
 show y n
 
 y n "What do you think that red shit's going to do?{w=0.15} It's followed us this far and we're going insanely fast as it is. We need to move."
 
-show r s
+show rz s
 
-r s "I say we just wait it out.{w=0.15} See what happens."
+rz s "I say we just wait it out.{w=0.15} See what happens."
 
-r s "Have our guns ready."
+rz s "Have our guns ready."
 
 show p s
 
@@ -418,7 +418,7 @@ y n "I put transfer to as high as I can,{w=0.15} it should take hold in a few se
 
 y s "Brace yourselves kids,{w=0.15} this might be it."
 
-show r s
+show rz s
 
 r s "I'm not ready to d-"
 

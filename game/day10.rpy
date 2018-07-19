@@ -16,13 +16,13 @@ show p h
 
 p h "W-wow.{w=0.15}.{w=0.15}. "
 
-show r su
+show rz su
 
-r su "Ooof.{w=0.15}.{w=0.15}."
+rz su "Ooof.{w=0.15}.{w=0.15}."
 
-r s "I'm gonna be sick.{w=0.15}.{w=0.15}."
+rz s "I'm gonna be sick.{w=0.15}.{w=0.15}."
 
-r s "Why me?"
+rz s "Why me?"
 
 show y m
 
@@ -34,29 +34,29 @@ p n "She's right Hei.{w=0.15}.{w=0.15}. "
 
 p n "We're lucky, {w=0.15}there was no telling what was going to happen."
 
-show r n
+show rz n
 
-r n "Lucky."
+rz n "Lucky."
 
 show y n
 
 y n "Yeah.{w=0.15}.{w=0.15}."
 
-show r m
+show rz m
 
-r m "No, {w=0.15}this wasn't mere luck..."
+rz m "No, {w=0.15}this wasn't mere luck..."
 
 show p n
 
 p n "You don't think so, {w=0.15}Hei?"
 
-show r n
+show rz n
 
-r n "No.{w=0.15}.{w=0.15}. "
+rz n "No.{w=0.15}.{w=0.15}. "
 
-r h "This was me."
+rz h "This was me."
 
-r h "I must be good luck,{w=0.15} huh Haru-{w=0.1}baru?"
+rz h "I must be good luck,{w=0.15} huh Haru-{w=0.1}baru?"
 
 show y m
 
@@ -66,9 +66,9 @@ y n "I won't lie."
 
 y h "Guy did surprisingly well."
 
-show r su
+show rz su
 
-r su "What?"
+rz su "What?"
 
 show p su
 
@@ -86,19 +86,19 @@ show y n
 
 y n "Maybe I underestimated you?"
 
-show r h
+show rz h
 
-r h "Hell yeah baby! "
+rz h "Hell yeah baby! "
 
-r h "Daddy's been here all along baby-{w=0.1}girl, {w=0.15}come sit on my lap and I'll tell you a story."
+rz h "Daddy's been here all along baby-{w=0.1}girl, {w=0.15}come sit on my lap and I'll tell you a story."
 
 show y n
 
 y n ".{w=0.15}.{w=0.15}."
 
-show r n
+show rz n
 
-r n "Uh."
+rz n "Uh."
 
 show p n
 
@@ -133,11 +133,11 @@ show p su
 
 p su "Mine too!"
 
-show r s
+show rz s
 
-r s "Shit{w=0.1} shit{w=0.1} shit."
+rz s "Shit{w=0.1} shit{w=0.1} shit."
 
-r s "Mine too."
+rz s "Mine too."
 
 show y n
 
@@ -163,17 +163,17 @@ y n "Yeah.{w=0.15}.{w=0.15}. "
 
 y n "No big deal!"
 
-show r h
+show rz h
 
-r h "Hoo, {w=0.15}really? Nice."
+rz h "Hoo, {w=0.15}really? Nice."
 
 show y n
 
 y n "One of power sources is dead since we made that emergency compound."
 
-show r su
+show rz su
 
-r su "That sounds.{w=0.15}.{w=0.15}.{w=0.15} pretty bad."
+rz su "That sounds.{w=0.15}.{w=0.15}.{w=0.15} pretty bad."
 
 show p su
 
@@ -183,11 +183,11 @@ show y n
 
 y n "Well for one,{w=0.15} it means that life support systems aren't working at full capacity. "
 
-show r s
+show rz s
 
-r s "We're dead already.{w=0.15} I knew it."
+rz s "We're dead already.{w=0.15} I knew it."
 
-r s "I didn't even get a chance to form my harem."
+rz s "I didn't even get a chance to form my harem."
 
 show y m
 
@@ -216,19 +216,19 @@ y n "Well basically, {w=0.15}the starboard side of the ship will be shut down to
 
 y n "Until the one power source recharges that is."
 
-show r su
+show rz su
 
-r su "Starboard!"
+rz su "Starboard!"
 
-r n "Am I on the starboard side?"
+rz n "Am I on the starboard side?"
 
 show p n
 
 p n "No Hei, {w=0.15}starboard is the right side of the ship when facing the bow. "
 
-show r n
+show rz n
 
-r n "Bow..."
+rz n "Bow..."
 
 show p h
 
@@ -244,25 +244,25 @@ show p su
 
 p su "Oh my.{w=0.15}.{w=0.15}."
 
-show r su
+show rz su
 
-r su "So that means.{w=0.15}.{w=0.15}."
+rz su "So that means.{w=0.15}.{w=0.15}."
 
-show r h
+show rz h
 
-r h "Sharing rooms?"
+rz h "Sharing rooms?"
 
-r n "I call Haruka."
+rz n "I call Haruka."
 
 show y n
 
 y n "I'm staying with Cap."
 
-show r su
+show rz su
 
-r su "What?!"
+rz su "What?!"
 
-r n "Should we stick in same gender pairs?"
+rz n "Should we stick in same gender pairs?"
 
 menu:
     "Didn't you just call Haruka as a roommate?":
@@ -271,7 +271,7 @@ menu:
     "I'm fine with it.":
         pass
 
-r s "Whatever. "
+rz s "Whatever. "
 
 show y h
 
@@ -279,11 +279,11 @@ y h "This will be fun."
 
 e "Haruka pats you on the back."
 
-show r m
+show rz m
 
-r m "We'll have TONS of fun too."
+rz m "We'll have TONS of fun too."
 
-r h "Right Nema?"
+rz h "Right Nema?"
 
 show p su
 
@@ -293,39 +293,39 @@ p h "We'll be staying together?"
 
 p h "That will be fun, {w=0.15}I agree Hei."
 
-show r n
+show rz n
 
-r n "Oh right, {w=0.15}Haru."
+rz n "Oh right, {w=0.15}Haru."
 
-r h "What happens if we go into one of the dead rooms?"
+rz h "What happens if we go into one of the dead rooms?"
 
 show y n
 
 y n "Uh, {w=0.15}don't do that."
 
-show r n
+show rz n
 
-r n "Why."
+rz n "Why."
 
 show y n
 
 y n "There wont really be air?"
 
-show r n
+show rz n
 
-r n "Right."
+rz n "Right."
 
-r n "Well."
+rz n "Well."
 
-r h "Let's get going!"
+rz h "Let's get going!"
 
-r n "C'mon neebs,{w=0.15} sleepover!"
+rz n "C'mon neebs,{w=0.15} sleepover!"
 
 show p h
 
 p h "Oh my, {w=0.15}I've never been to a sleepover."
 
-r h "Not like we'll get much sleeping done."
+rz h "Not like we'll get much sleeping done."
 
 show y m
 
@@ -333,7 +333,7 @@ p su "Hei!"
 
 y m "Come on, {w=0.15}idiot."
 
-r h "Just sayin'."
+rz h "Just sayin'."
 
 p n "Are we safe to walk through the hallway, {w=0.15}Haruka?"
 
@@ -345,9 +345,9 @@ y n "Stock up on food and whatever you'll need."
 
 y n "We'll have a meeting once one day is up and see where we stand then."
 
-show r n
+show rz n
 
-r n "Sounds good, {w=0.15}smell ya later chumps."
+rz n "Sounds good, {w=0.15}smell ya later chumps."
 
 e "Hei starts to walk out the door."
 
@@ -355,9 +355,9 @@ show p s
 
 p s "Chumps?"
 
-show r h
+show rz h
 
-r h "Not you Nebs,{w=0.15} c'mon."
+rz h "Not you Nebs,{w=0.15} c'mon."
 
 show p h
 
@@ -365,7 +365,7 @@ p h "Ah.{w=0.15} Of course."
 
 hide p
 
-hide r
+hide rz
 
 play sound "sounds/DoorOpen2.mp3"
 
