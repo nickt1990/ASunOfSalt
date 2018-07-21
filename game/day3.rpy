@@ -663,7 +663,7 @@ d "We shall burn together."
 
 d "We shall be of many skins."
 
-music stop with fade 3.0
+stop music fadeout 3.0
 
 e "You fall back into your chair at the dinner table."
 
