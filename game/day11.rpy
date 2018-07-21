@@ -1,6 +1,6 @@
 ﻿label day11:
 
-e "You wake up slowly and realize the boy beside you is now gone."
+e "You wake up slowly and realize the body beside you is now gone."
 
 hide black
     

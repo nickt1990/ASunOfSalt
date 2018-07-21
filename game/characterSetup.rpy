@@ -392,8 +392,18 @@ init:
     $ e = Character('Eileen', color=(200, 255, 200, 255))
 
     $ p = Character('Nema', image="p", color=(255, 100, 255, 255), ctc="ctc_blink", ctc_position="nestled")
+    $ pc = Character('Nema', image="pc", color=(255, 100, 255, 255), ctc="ctc_blink", ctc_position="nestled")
+    $ pz = Character('Nema', image="pz", color=(255, 100, 255, 255), ctc="ctc_blink", ctc_position="nestled")
+    
     $ y = Character('Haruka', image="y", color=(240, 240, 0, 255), ctc="ctc_blink", ctc_position="nestled")
+    $ yz = Character('Haruka', image="yz", color=(240, 240, 0, 255), ctc="ctc_blink", ctc_position="nestled")
+    $ yb = Character('Haruka', image="yb", color=(240, 240, 0, 255), ctc="ctc_blink", ctc_position="nestled")
+    $ yp = Character('Haruka', image="yp", color=(240, 240, 0, 255), ctc="ctc_blink", ctc_position="nestled")
+    
     $ r = Character('Hei', image="r", color=(0, 0, 255, 255), ctc="ctc_blink", ctc_position="nestled")
+    $ rz = Character('Hei', image="rz", color=(0, 0, 255, 255), ctc="ctc_blink", ctc_position="nestled")
+    $ rn = Character('Hei', image="rn", color=(0, 0, 255, 255), ctc="ctc_blink", ctc_position="nestled")
+    
     $ m = Character('Player', color=(150,255,150,255))
     $ d = Character('Demon', color=(255, 0, 0, 255))
     $ ma = Character('Marsh', color=(150,150,150,255))

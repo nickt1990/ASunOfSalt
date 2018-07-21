@@ -791,10 +791,13 @@ play sound "sounds/DoorClose2.mp3"
 
 e "As soon as you lay your head down on the pillow, you feel yourself dozing off."
 
+window hide
+
 show black
-with fade
+with dissolve
 
 e "..."
 
+window hide
 
 return

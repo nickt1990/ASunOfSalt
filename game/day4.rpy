@@ -22,7 +22,7 @@ menu:
     "Sure.":
         pass
 
-    "No thanks.":
+    "No thanks.":#todo 
         pass
 
 y h "Good to have ya."
@@ -43,7 +43,7 @@ menu:
     "Sounds like you feel guilty.":
         pass
 
-    "I agree.":
+    "I agree.":#todo 
         pass
 
 y s "I don't feel bad about what I said Cap, {w=0.15}but I can't help but feel sorry for the guy."
@@ -105,7 +105,7 @@ y s "Well, {w=0.15}hardly."
 
 show p s
 
-p s "Yes, {w=0.15}it's true. Most encounters this far are less innocent..."
+p s "Yes, {w=0.15}it's true. Most encounters this far are less innocent.{w=0.15}.{w=0.15}."
 
 p n "It has the highest probability of being Haneshowas."
 
@@ -147,7 +147,7 @@ y n "We can prepare ourselves and fight them head on. No doubt we have more fire
 
 show p s
 
-p s "F-...fight them?"
+p s "F-.{w=0.15}.{w=0.15}.fight them?"
 
 p n "Captain, {w=0.15}not to be disrespectful to Haruka, {w=0.15}but I suggest we avoid them entirely. With our few days, {w=0.15}we can take a long course around and avoid any sort of conflict. There's a mass of debris and large objects between us and the ship that will most likely block any sort of scanner that they have from detecting us until we've already passed them. It's the safest option."
 
@@ -157,7 +157,7 @@ y m "But if we're heading toward wherever their home base is, {w=0.15}who's to s
 
 show p s
 
-p s "..."
+p s ".{w=0.15}.{w=0.15}."
 
 show y m
 
@@ -165,13 +165,13 @@ y m "We need to pound them now, {w=0.15}show them that we're a force to be recko
 
 show p s
 
-p s "Well..."
+p s "Well.{w=0.15}.{w=0.15}."
 
 menu:
     "Yes Nema?":
         pass
 
-    "You agree with Haruka?":
+    "You agree with Haruka?":#todo 
         pass
 
 show p n
@@ -191,20 +191,20 @@ p n "I'm fairly confident Captain."
      
 p n "With Haruka's one-of-a-kind engine and a complete suite of state of the art technology backing it up, {w=0.15}we should be able to vastly outpace even the most advanced crafts that exist within high-level stations."
      
-p n "Let alone a... \"Lurk\""
+p n "Let alone a.{w=0.15}.{w=0.15}. \"Lurk\""
 
 menu:
-    "Two prior options.":
+    "Two prior options.":#todo jump back to last options
         pass
 
     "OK, {w=0.15}I've made a decision.":
         pass
 
 menu:
-    "We will outrun them.":
+    "We will outrun them.":#todo branch for these to ending
         pass
 
-    "We will fight.":
+    "We will fight.":#todo ending
         pass
 
 show y m
@@ -249,7 +249,7 @@ menu:
     "Yes?":
         pass
 
-p s "I'm sorry to bother you, {w=0.15}but... if at all possible, {w=0.15}could you find time to go and speak to Hei today?"
+p s "I'm sorry to bother you, {w=0.15}but.{w=0.15}.{w=0.15}. if at all possible, {w=0.15}could you find time to go and speak to Hei today?"
 
 p n "I had a hard time speaking with him last night, {w=0.15}but I believe you could boost his morale."
 
@@ -258,7 +258,7 @@ menu:
         pass
 
 menu:
-    "Leave and talk to HEI.":
+    "Leave and talk to HEI.":#todo sound effects and branch for hei
         pass
 
 hide p
@@ -291,7 +291,7 @@ menu:
     "Hi.":
         pass
 
-r h "Hey, {w=0.15}pretty grand. Can't keep me down man."
+r h "Hey, {w=0.15}pretty grand.{w=0.15} Can't keep me down man."
 
 r s "You know, {w=0.15}at first I was really down, {w=0.15}but I realized that Haruka was right."
 
@@ -308,7 +308,7 @@ menu:
     "So what will you do?":
         pass
 
-    "Good point.":
+    "Good point.":#todo branch
         pass
 
 r h "Man up and get me a babe."
@@ -331,7 +331,7 @@ menu:
     "At what?":
         pass
 
-r n "Oh... Well, {w=0.15}I'll figure it out."
+r n "Oh.{w=0.15}.{w=0.15}. Well, {w=0.15}I'll figure it out."
 
 r h "You worry too much man, {w=0.15}I don't get why she likes you."
 
@@ -342,7 +342,7 @@ menu:
     "Excuse me?":
         pass
 
-r h "No offense, {w=0.15}I think you're great, {w=0.15}but you don't really say, {w=0.15}or... do... much. It sounds like I'm being a dick, {w=0.15}but for real."
+r h "No offense, {w=0.15}I think you're great, {w=0.15}but you don't really say, {w=0.15}or.{w=0.15}.{w=0.15}. do.{w=0.15}.{w=0.15}. much. It sounds like I'm being a dick, {w=0.15}but for real."
 
 r n "How can she like you when you haven't given her anything to like?"
 
@@ -350,7 +350,7 @@ menu:
     "You're friends with Nema.":
         pass
 
-    "How could she not?":
+    "How could she not?":#todo branch
         pass
 
 r n "Well yeah, {w=0.15}she's great."
@@ -362,13 +362,13 @@ menu:
 r n "Well, {w=0.15}no. I guess not. But she kind of communicates in a different way."
 
 menu:
-    "...":
+    ".{w=0.15}.{w=0.15}.":
         pass
 
 r n "Like, {w=0.15}I just get her. You know? I don't need to say a lot, {w=0.15}and neither does she. We're buds."
 
 menu:
-    "...?":
+    ".{w=0.15}.{w=0.15}.?":
         pass
 
 r n "Whatever man, {w=0.15}it's OK. I didn't mean to put you down, {w=0.15}just thinkin' out loud."
@@ -377,7 +377,7 @@ menu:
     "OK.":
         pass
 
-r n "So, {w=0.15}I guess I should get to working on a plan. How to be a man..."
+r n "So, {w=0.15}I guess I should get to working on a plan. How to be a man.{w=0.15}.{w=0.15}."
 
 menu:
     "Whatever happened to your plan for dinner last night?":
@@ -394,7 +394,7 @@ menu:
     "You planned something to impress Haruka?":
         pass
 
-    "Nevermind.":
+    "Nevermind.":#todo 
         pass
 
 r su "I did?"
@@ -403,25 +403,25 @@ menu:
     "You told me yesterday in the morning.":
         pass
 
-    "Nevermind.":
+    "Nevermind.":#todo 
         pass
 
-r n "Me? For Haruka?"
+r n "Me?{w=0.15} For Haruka?"
 
 menu:
     "Yes, {w=0.15}you said it would blow my mind?":
         pass
 
-    "Nevermind.":
+    "Nevermind.":#todo 
         pass
 
-r s "Blow your mind..."
+r s "Blow your mind.{w=0.15}.{w=0.15}."
 
 menu:
     "You don't remember?":
         pass
 
-    "Nevermind.":
+    "Nevermind.":#todo 
         pass
 
 r h "It sounds like something I'd remember doesn't it?"
@@ -430,7 +430,7 @@ menu:
     "Yes. But you don't?":
         pass
 
-    "Nevermind.":
+    "Nevermind.":#todo 
         pass
 
 r n "Nah."
@@ -445,18 +445,19 @@ hide r
 
 call hall from _call_hall_27
 
-e "Everyone's working on a task. How will you spend your day?"
-
-menu:
-    "Video games.":
-        pass
-
-    "Report writing.":
-        pass
+e "Everyone's working on a task so you sit down at your computer and get some work done."
         
 call blueRoom from _call_blueRoom_12
 
-e "Time passes.{w=0.15}.{w=0.15}." #todo
+window hide
+show black
+with fade
+
+e ".{w=0.25}.{w=0.25}." #todo
+
+window hide
+hide black
+with fade
 
 show p n
 
@@ -475,7 +476,7 @@ e "Nema smiles."
 
 p n "I'll tell the rest."
 
-p n "Haruka and Hei said they'd just be a little bit, {w=0.15}but... well... everything's all set up if you want to eat, {w=0.15}sir. I'm going to wait, {w=0.15}but there's no reason you should have to."
+p n "Haruka and Hei said they'd just be a little bit, {w=0.15}but.{w=0.15}.{w=0.15}.{w=0.15} well.{w=0.15}.{w=0.15}.{w=0.15} everything's all set up if you want to eat, {w=0.15}sir. I'm going to wait, {w=0.15}but there's no reason you should have to."
 
 menu:
     "Sure!":
@@ -490,8 +491,8 @@ menu:
     "This is good!":
         pass
 
-    "Say nothing.":
-        pass
+    "...":
+        pass#todo branch
 
 p h "Thank you Captain."
 
@@ -499,7 +500,7 @@ e "Nema smiles shortly."
 
 e "Time flashes forward and your food is gone."
 
-p s "The others should be here soon..."
+p s "The others should be here soon.{w=0.15}.{w=0.15}."
 
 menu:
     "What exactly did they say?":
@@ -507,7 +508,7 @@ menu:
 
 p n "Haruka just glanced at me when I told her food was ready. "
 
-p s "That's not an uncommon response from her though..."
+p s "That's not an uncommon response from her though.{w=0.15}.{w=0.15}."
 
 menu:
     "What about Hei?":
@@ -517,7 +518,7 @@ p n "He was playing a game and just said \"I know, {w=0.15}I know.\""
 
 p s "I took that as his way of saying he would come as soon as possible, {w=0.15}but I suppose I assumed a bit much."
 
-p n "..."
+p n ".{w=0.15}.{w=0.15}."
 
 p n "Not a problem, {w=0.15}I'll pack their meals away in the fridge."
 
@@ -525,12 +526,12 @@ menu:
     "Need help?":
         pass
 
-    "OK.":
+    "OK.":#todo 
         pass
 
 e "Nema ignores you for a second and moves to put the food away."
 
-p s "C-captain... May I ask you a question?"
+p s "C-captain.{w=0.15}.{w=0.15}. May I ask you a question?"
 
 menu:
     "Yes.":
@@ -553,9 +554,9 @@ menu:
     "No problem.":
         pass
 
-p n "I was going to ask what you..."
+p n "I was going to ask what you.{w=0.15}.{w=0.15}."
 
-p s "What... Uhm......."
+p s "What.{w=0.15}.{w=0.15}.{w=0.15} Uhm.{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15}."
 
 p n "What do you think about the ship we spotted on the radar?"
 
@@ -565,10 +566,10 @@ menu:
     "Worried.":
         pass
 
-    "Not worried.":
+    "Not worried.":#todo branch
         pass
 
-p h "That's oddly a relief to me... Thank you."
+p h "That's oddly a relief to me.{w=0.15}.{w=0.15}.{w=0.15} Thank you."
 
 p s "To be quite honest, {w=0.15}I'm worried as well."
 
@@ -601,10 +602,10 @@ menu:
     "What happened?":
         pass
 
-    "Quck, {w=0.15}to the nav room!":
+    "Quick, {w=0.15}to the nav room!":
         pass
 
-p su "I-I'm not sure! We-w-uhm..."
+p su "I-I'm not sure! We-w-uhm.{w=0.15}.{w=0.15}."
 
 p n "What should we do?"
 
@@ -612,7 +613,7 @@ menu:
     "Head to nav room. ":
         pass
 
-    "Hide.":
+    "Hide.":#todo end
         pass
 
 call navRoom from _call_navRoom_3
@@ -623,7 +624,7 @@ menu:
     "What is it?":
         pass
 
-p n "It looks like... a large asteroid just happened to pass between us and the sun. "
+p n "It looks like.{w=0.15}.{w=0.15}.{w=0.15} a large asteroid just happened to pass between us and the sun. "
 
 p n "Everything else is full power, {w=0.15}the autopilot AI is functioning normally, {w=0.15}we should be in no danger."
 
@@ -670,7 +671,7 @@ p n "My closest estimation is thirteen hours."
 
 show y n
 
-y n "Thirteen hours? Wow..."
+y n "Thirteen hours? Wow.{w=0.15}.{w=0.15}."
 
 show p n
 
@@ -707,11 +708,11 @@ y h "Thanks, {w=0.15}it smells so good, {w=0.15}I've been rushin' through my las
 
 show p su
 
-p su "R-really?"
+p su "R-{w=0.15}really?"
 
 show y n
 
-y n "Course. I'm stravin'."
+y n "Course.{w=0.15} I'm stravin'."
 
 show p h
 

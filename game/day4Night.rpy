@@ -3,10 +3,10 @@
 e "There is a loud thud."
 
 menu:
-    "...":
+    ".{w=0.15}.{w=0.15}.":
         pass
 
-e "There's another loud thud. Then a few more."
+e "There's another loud thud.{w=0.25} Then a few more."
 
 menu:
     "Is Nema up to something again?":
@@ -22,13 +22,13 @@ show p n
 
 menu:
     "Nema is that you?":
+        p n "No sir, {w=0.15}this time it's not me."
         pass
 
     "What's that sound?":
+        p s "I'm not sure, Captain."
         pass
         
-p n "No sir, {w=0.15}this time it's not me."
-
 e "Haruka emerges from her room."
 
 show y m:
@@ -46,7 +46,7 @@ call navRoom from _call_navRoom
 
 play sound "sounds/DoorOpen2.mp3"
 
-p n "Ok, {w=0.15}let's see..."
+p n "Ok, {w=0.15}let's see.{w=0.15}.{w=0.15}."
 
 e "After a moment Hei walks groggily into the room."
 
@@ -67,11 +67,11 @@ r s "Nibbler, {w=0.15}what's going on?"
 
 show p n
 
-p n "One moment please..."
+p n "One moment please.{w=0.15}.{w=0.15}."
 
-p s "Wait..."
+p s "Wait.{w=0.15}.{w=0.15}."
 
-p su "The ship we saw on the radar yesterday... it's on top of us."
+p su "The ship we saw on the radar yesterday.{w=0.15}.{w=0.15}. it's on top of us."
 
 show r su
 
@@ -94,25 +94,25 @@ r s "Oh god, {w=0.15}oh no."
 
 show y m
 
-y m "I'm turning on the heavy external floods. Maybe we can light up whatever it is we're smackin' up against."
+y m "I'm turning on the heavy external floods.{w=0.15} Maybe we can light up whatever it is we're smackin' up against."
 
 e "Haruka turns on the light, {w=0.15}and you see a sea of blood and body parts floating around you."
 
-y su "Oh my god..."
+y su "Oh my god.{w=0.15}.{w=0.15}."
 
 show p su
 
-p su "Those... those.."
+p su "Those.{w=0.15}.{w=0.15}. those{w=0.15}.{w=0.15}.{w=0.15}."
 
 show y su
 
-y su "They're people. Body parts."
+y su "They're people.{w=0.15} Body parts."
 
-y su "This is... blood?"
+y su "This is.{w=0.15}.{w=0.15}. blood?"
 
 show r su
 
-r su "..."
+r su ".{w=0.15}.{w=0.15}."
 
 e "Hei runs out of the room into the bathroom."
 
@@ -122,12 +122,12 @@ menu:
     "Nema, {w=0.15}what can we do?":
         pass
 
-    "Haruka, {w=0.15}what can we do?":
+    "Haruka, {w=0.15}what can we do?":#todo branch
         pass
 
 show p su
 
-p su "W-we, {w=0.15}u-uh- w-oh... w-ell we-"
+p su "W-we, {w=0.15}u-uh- w-oh.{w=0.15}.{w=0.15}. w-ell we-"
 
 e "There is a loud thud."
 
@@ -143,7 +143,7 @@ show y m
 
 y m "Move."
 
-y su "There's a ship here. It's moving up from below us... I think the blood is a trap."
+y su "There's a ship here. It's moving up from below us.{w=0.15}.{w=0.15}. I think the blood is a trap."
 
 y m "Captain, {w=0.15}turn power to the shields, {w=0.15}Nema, {w=0.15}watch the radar for potential collision."
 
@@ -152,7 +152,7 @@ y m "HEI, {w=0.15}WE NEED YOUR HELP."
 show r su:
     linear 0 xalign 0.1 yalign 1.0
 
-r su "I, {w=0.15}but I can't..."
+r su "I, {w=0.15}but I can't.{w=0.15}.{w=0.15}."
 
 show y m #todo deal with hei being not in room
 
@@ -160,7 +160,7 @@ y m "GET YOUR ASS IN HERE."
 
 show r s
 
-r s "But..."
+r s "But.{w=0.15}.{w=0.15}."
 
 show y m
 
@@ -168,13 +168,13 @@ y m "DO YOU WANT TO GET THROUGH THIS? NOW."
 
 show r s
 
-r s "I'm here. OK. I'm alright."
+r s "I'm here.{w=0.15} OK. {w=0.15}I'm alright."
 
-r s "Jump on lasers. Hold your fire until I say."
+r s "Jump on lasers. {w=0.15}Hold your fire until I say."
 
 show y n
 
-y n "Captain, {w=0.15}stay on the main controls. When I say, {w=0.15}you need to jump into full boost."
+y n "Captain, {w=0.15}stay on the main controls.{w=0.25} When I say, {w=0.15}you need to jump into full boost."
 
 y n "Nema, {w=0.15}I really need you to watch for collisions, {w=0.15}are you ok over there?"
 
@@ -227,7 +227,7 @@ y n "God, {w=0.15}Nema, {w=0.15}are we clear?"
 
 show p n
 
-p n "..."
+p n ".{w=0.15}.{w=0.15}."
 
 show y m
 
@@ -276,6 +276,7 @@ y h "Alright, {w=0.15}then we should be goo-"
 
 e "There is a loud crash."
 
+window hide
 show black
 with fade
 

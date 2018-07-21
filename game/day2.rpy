@@ -1,6 +1,7 @@
 ﻿label day2:
     
 hide black
+with fade
 
 play music "music/MorningAlarm.mp3" fadein 2.0
 
@@ -11,11 +12,15 @@ e "The room is lit up by the mail notification on your computer screen."
 menu:
     "Check mail.":
         stop music fadeout 1
+        play music "music/Idle.mp3" fadein 2.0
+        #todo computer
         pass
+
+play music "music/RadioMusic.mp3" fadein 2.0
 
 e "Once you pull yourself away from the computer, you hear a strange sound.{w=0.15}.{w=0.15}."
 
-e "There's a faint sound of music coming from the hallway."
+e "There's some sort of strange music coming from the hallway."
 
 menu:
     "Check it out.":
@@ -37,9 +42,8 @@ call kitchen from _call_kitchen_4
 
 e "You walk in to find Nema sitting at the table with a small music player."
 
+stop music
 e "She seems surprised to see you walk in, {w=0.15}and quickly turns off her music."
-
-stop music fadeout 1
 
 play music "music/Space.mp3" fadein 2.0
 
@@ -49,12 +53,12 @@ p s "C-captain I apologize if my music bothered you. I tried to keep it at a rea
 
 menu:
     "It didn't bother me at all.":
+        p s "Well, {w=0.15}I will be sure to continue being cautious."
         pass
 
     "What were you listening to?":
+        #todo
         pass
-
-p s "Well, {w=0.15}I will be sure to continue being cautious."
 
 p n "Anyways, {w=0.15}I was just heading back to my room."
 
@@ -62,23 +66,25 @@ p n "Have a good morning Captain."
 
 menu:
     "Join me?":
+        p s "No, {w=0.15}I really should be back to work."
+        p h "Thank you though Captain."
         pass
 
     "Have a good morning, {w=0.15}Nema.":
+        e "Nema smiles."
         pass
-
-p s "No, {w=0.15}I really should be back to work. Thank you though Captain."
 
 play sound "sounds/DoorClose2.mp3"
 
 hide p
 
-e "Nema bows slightly and walks out of the room."
+e "She bows slightly and walks out of the room."
 
 e "You pour yourself a bowl of cereal and sit at the table to eat."
 
 menu:
     "Turn on radio":
+        play music "music/RadioMusic.mp3" fadein 1.0
         e "The radio starts to quietly play the music that Nema had been listening to."
 
         e "A moment goes by as you continue to eat, {w=0.15}and Haruka walks in."
@@ -106,31 +112,39 @@ menu:
 
         menu:
             "Little Legs?":
+                y s "No..."
+
+                y n "Whatever."
                 pass
 
             "Penguin Boys?":
+                y s "No..."
+
+                y n "Whatever."
                 pass
+                
+            "No clue. Nema had it on.":
+                y h "Haha, she would."
+                pass                
 
-        y s "No..."
-
-        y n "Whatever."
+        y h "This is The Frontier Quests."
 
         y h "I was obsessed for a bit, {w=0.15}this is a major throwback."
 
         menu:
             "They do sound great.":
+                y n "Really?"
+
+                y s "Can't say they've held up for me."
+
+                y h "I'm glad you're happy though Cap."
+
+                e "Her voice is a little patronizing."
                 pass
 
             "They sound terrible...":
+                y h "Yeah, they haven't exactly held up, have they?"
                 pass
-
-        y n "Really?"
-
-        y s "Can't say they've held up for me."
-
-        y h "I'm glad you're happy though Cap."
-
-        e "Her voice is a little patronizing."
 
         y n "Anyways, {w=0.15}I'm heading back to my room."
         pass
@@ -151,18 +165,22 @@ menu:
 
         e "She grabs a bowl and pours herself some cereal as well."
 
-        e "Hey, I was gonna eat in my room."
+        y h "Hey, I was gonna eat in my room."
         pass
 
-y h "Wanna come and watch some anime with me?"
+        y h "Wanna come and watch some anime with me?"
 
 menu:
     "Yes.":
         y h "Awesome."
 
         y h "Head over now?"
+        
+        stop music
 
-        e "You put your bowl in the sink."
+        e "You turn off the radio, put your bowl in the sink then follow Haruka to her room."
+        
+        play music "music/Soace.mp3" fadein 2.0
 
         call hall
 
@@ -196,7 +214,7 @@ menu:
         pass
 
 label harukaAnime:
-#todo haruka's room
+#todo HARUKA's room
 
 call yellowRoom from _call_yellowRoom_1
 
@@ -219,6 +237,7 @@ e "She smiles."
 
 y n "Watch a little with me, {w=0.15}I need a break."
 
+#todo: show music
 e "You sit and look at the screen with her."
 
 y n "He's gonna get wrecked."
@@ -235,22 +254,26 @@ e "You and Haruka sit quietly, enthralled in the show on the television."
 
 show black
 with fade
-
+#todo: stop music
 e ".{w=0.35}.{w=0.35}."
 
 hide black
 with fade
-
+#todo: idle music
 y n "And that's it. What'd ya think?"
 
 menu:
     "Awesome.":
+        y h "Agreed."
         pass
 
     "Pretty dumb.":
+        y s "Aw,{w=0.15} you thought so?"
+        
+        y h "Well,{w=0.15} I love it."
+        
+        y h "Especially the main characters."
         pass
-
-y h "Agreed."
 
 y n "Mako's just too damn sexy."
 
@@ -263,6 +286,8 @@ y s "Hmm.{w=0.15}.{w=0.15}."
 y s "I don't think I could."
 
 y su "Could I?"
+
+e ".{w=0.15}.{w=0.15}."
 
 y s "No."
 
@@ -304,13 +329,17 @@ menu:
 p n "I just finished my report for my first day of findings. Would you mind going over it for me?"
 
 menu:
-    "Sure.":
+    "I'd love to!":
+        p h "That's great to hear Sir!"
         pass
 
-    "No thanks.":
+    "I guess.":
+        p s "I see."
+        
+        p s "Well."
         pass
 
-p h "Excellent!"
+
 
 p n "It's sitting at the desk, {w=0.15}feel free to look it over."
 
@@ -358,6 +387,7 @@ menu:
         pass
 
     "What's with the alcohol in your desk?":
+        #todo, if snoop, and branch here
         pass
 
 p n "Thank you sir. I do my best."
@@ -391,7 +421,11 @@ menu:
         pass
 
     "No, {w=0.15}just checking in.":
+        r m "No choice man, prove your leadership!"
+        e "You reluctantly sit down with Hei and start playing."
         pass
+
+#todo: game music
 
 r n "I don't have the newest one, {w=0.15}but Soft and Moist Vegetables: 2 Turbo Vegetable Edition is the best anyways."
 
@@ -402,7 +436,7 @@ r n "Like, {w=0.15}yeah, {w=0.15}it's not a epic story with a huge budget and wh
 r n "But you get to kick people in the face and I think it does that well."
 
 menu:
-    "You have tough standards.":
+    "You have high standards.":
         pass
 
     "I do like face kicking.":
@@ -429,7 +463,7 @@ r n "Yeah, {w=0.15}I barely even played by myself. I was just that good."
 
 r su "I tell you it ju-"
 
-r n "..."
+r n ".{w=0.15}.{w=0.15}."
 
 r su "Did you just beat me?"
 
@@ -440,36 +474,42 @@ menu:
     "What does it look like?":
         pass
 
-r n "Well... Shit."
+r n "Well.{w=0.15}.{w=0.15}. Shit."
 
 e "He's stopped functioning. "
 
 e "He no longer appears to be breathing."
 
-e "He's probably joking, {w=0.15}but... it's getting weird."
+e "He's probably joking, {w=0.15}but.{w=0.15}.{w=0.15}. it's getting weird."
 
 menu:
     "I think... I'm gonna go.":
+        r m "NO! REMAAAAATCH."
+        e "He slapped you in the face and frowned."
         pass
 
     "Wanna play again?":
         pass
 
-r m "NO! REMAAAAATCH."
-
-e "He slapped you in the face and frowned."
-
 r m "Les go, {w=0.15}bitch."
 
-e "Not being left much of a choice, {w=0.15}you play another round with him."
+e "You play another round with him."
 
-e "..."
+window hide
+show black
+with fade
 
-e "..."
+e ".{w=0.15}.{w=0.15}."
 
-e "..."
+e ".{w=0.15}.{w=0.15}."
 
-r su "You won... again."
+e ".{w=0.15}.{w=0.15}."
+
+window hide
+hide black
+with fade
+
+r su "You won.{w=0.15}.{w=0.15}. again."
 
 r n "Did you used to have this game?"
 
@@ -484,9 +524,9 @@ r m "Psh, {w=0.15}right. You probably used to play this all the time."
 
 r m "Nerd."
 
-e "..."
+e ".{w=0.15}.{w=0.15}."
 
-e "..."
+e ".{w=0.15}.{w=0.15}."
 
 e "He looks sad."
 
@@ -498,7 +538,7 @@ e "He walks up behind you."
 
 r s "I have to tell you something sir."
 
-r s "I..."
+r s "I.{w=0.15}.{w=0.15}."
 
 r s "I never beat my maids son in the game."
 
@@ -514,7 +554,7 @@ menu:
 
 r s "I thought I could reinvent my image. This was to be my big debut."
 
-r s "I'm... sorry."
+r s "I'm.{w=0.15}.{w=0.15}. sorry."
 
 e "You see tears well up in his eyes. "
 
@@ -523,6 +563,7 @@ menu:
         pass
 
     "*Blow raspberry*":
+        #todo, no rematch
         pass
 
 e "He looks surprised for a second."
@@ -557,6 +598,7 @@ menu:
         pass
 
     "Ah, {w=0.15}just in time for the meeting.":
+        #todo this whole block
         pass
 
 show y n
@@ -604,13 +646,14 @@ menu:
         pass
 
     "What do you think?":
+        #todo branch
         pass
 
 y h "Great lets hear it!"
 
 e "You did not plan for this."
 
-y s "...You don't have a clue do you?"
+y s ".{W=0.15}.{W=0.15}.You don't have a clue do you?"
 
 y h "Fine. Points for trying. "
 
@@ -664,7 +707,7 @@ y m "Idiot."
 e "Hei smiles."
 
 menu:
-    "Say nothing.":
+    "Say nothing.":#todo
         pass
 
     "Good work Haruka.":
@@ -698,7 +741,7 @@ r h "Yes mumsy."
 
 e "There is silence."
 
-r n "..."
+r n ".{w=0.15}.{w=0.15}."
 
 show y n
 
@@ -750,12 +793,21 @@ y h "So who wants the first dish?"
 
 menu:
     "Give it to me.":
+        y n "Sure thing boss."
         pass
 
     "Give it to Nema.":
+        show y m
+        e "Haruka frowns."
+        
+        y h "You know, actually, this one goes to you sir."
+        y h "You are the captain after all."
+        p h "Can't argue with that!"
         pass
 
-y n "Sure thing boss."
+e "You take a bite."
+
+e "It's fine. {w=0.15}Not the best,{w=0.15} not the worst."
 
 menu:
     "It's great!":
@@ -769,7 +821,7 @@ menu:
 
 e "Haruka is beaming with confidence."
 
-y n "Alright. The rest of you get your own."
+y n "Alright. {w=0.15}The rest of you get your own."
 
 e "Everyone grabs their food and sits down to the table."
 
@@ -779,7 +831,7 @@ r s "Man, {w=0.15}I'm tired."
 
 show y n
 
-y n "Tired from what. You haven't done a single today."
+y n "Tired from what.{w=0.15} You haven't done a single today."
 
 show r s
 
@@ -871,7 +923,7 @@ y m "Alright. I thought you were tired?"
 
 show r su
 
-r su "You know... I am."
+r su "You know.{w=0.15}.{w=0.15}.{w=0.15} I am."
 
 r n "I think I'll have myself a snooze."
 
@@ -882,7 +934,7 @@ menu:
         r n "Hei smiles"
         pass
     "Your turn next time.":
-        r n "Hei's eyes get wide. He walks away."
+        r n "Hei's eyes get wide. {w=0.15}He walks away."
         pass
 
 e "Hei walks out into the hallway."
@@ -910,11 +962,11 @@ y h "It'll be fun! "
 
 show p s
 
-p s "Oh. I see, {w=0.15}nice. Ok."
+p s "Oh. {w=0.15}I see, {w=0.15}nice. Ok."
 
 p s "Then I guess I'll just retreat to my room for the night."
 
-p n "U-unless... you'd like another pair of hands to help?"
+p n "U-unless.{w=0.15}.{w=0.15}. you'd like another pair of hands to help?"
 
 show y n
 
@@ -926,7 +978,7 @@ menu:
 
 show p n
 
-p n "Yes sir... I'll gladly take the shift next week, {w=0.15}if that would help?"
+p n "Yes sir.{w=0.15}.{w=0.15}. I'll gladly take the shift next week, {w=0.15}if that would help?"
 
 hide p n
 
@@ -940,7 +992,7 @@ menu:
     "Sounds good":
         pass
 
-y h "Right-o"
+y h "Right-{w=0.15}o"
 
 hide y h
 

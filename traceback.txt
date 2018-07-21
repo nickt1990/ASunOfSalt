@@ -1,24 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 85, in script call
-    call day12
-  File "renpy/common/00start.rpy", line 120, in script
-    return
-Exception: Could not find return label (u'C:\\Users\\Nick\\Documents\\renpy-6.99.13-sdk\\A-Sun-Of-Salt/game/day12.rpy', 1530814682, 459).
+  File "game/script.rpy", line 82, in script call
+    call day10Night from _call_day10Night
+  File "game/script.rpy", line 82, in script call
+    call day10Night from _call_day10Night
+ScriptError: could not find label 'day10Night'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 85, in script call
-    call day12
-  File "renpy/common/00start.rpy", line 120, in script
-    return
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\ast.py", line 1400, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\execution.py", line 586, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'C:\\Users\\Nick\\Documents\\renpy-6.99.13-sdk\\A-Sun-Of-Salt/game/day12.rpy', 1530814682, 459).
+  File "game/script.rpy", line 82, in script call
+    call day10Night from _call_day10Night
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\ast.py", line 1336, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 82, in script call
+    call day10Night from _call_day10Night
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\script.py", line 861, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'day10Night'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.13.2919

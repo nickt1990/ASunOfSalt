@@ -12,6 +12,10 @@ e "Then, head back to your room to change clothes and get prepared for the night
 
 e "Go to computer to check email."
 
+window hide
+show black
+with fade
+
 e "Email from HQ appears:"
 
 e "Captain, {w=0.15}Tonight at 0100 we will activate the Satori sensors in each of your crewmates rooms. Following is all the information you will need to know."
@@ -28,8 +32,12 @@ e "Rather they miss a night here and there than learn of the sensors and intenti
 
 e "The message ends."
 
+window hide
+hide black
+with fade
+
 menu:
-    "That's terrible!":
+    "That's terrible!":#todo: what happens here?
         pass
 
     "That's great!":
@@ -46,7 +54,7 @@ menu:
         pass
 
 e "You open the door to Haruka standing there in her PJ's"
-
+#todo this page should all be pj haruka
 menu:
     "Pajamas?":
         pass
@@ -57,13 +65,13 @@ menu:
 y n "Figured I'd dress comfortable, {w=0.15}since it will be a long night and all."
 
 menu:
-    "Looks good!":
+    "Looks good!":#todo: does this conversation happen way later as well?
+        y h "I'm cute. "
         pass
 
-    "Looks unprofessional.":
+    "Looks unprofessional.":#todo: need text for this branch
         pass
 
-y h "I'm cute. "
 
 y n "..."
 
@@ -105,14 +113,14 @@ y h "Eventually if things go peachy, {w=0.15}we'll be moving faster than any kno
 
 menu:
     "That sounds risky...":
-        y s "Well.{w=0.15}.{w=0.15}. yeah. S'posed to be. Hear me out Cap."
+        y s "Well.{w=0.15}.{w=0.15}. yeah. S'posed to be.{w=0.15} Hear me out Cap."
         pass
 
     "That sounds amazing!":
         y h "I was hoping you'd think so!"
         pass
 
-y n "We'll be so far away after week two that there's no going back anyways. We came into this knowing we'd die out here. So why stop?"
+y n "We'll be so far away after week two that there's no going back anyways.{w=0.25} We came into this knowing we'd die out here. So why stop?"
 
 menu:
     "This is much bigger than us.":
@@ -134,11 +142,11 @@ menu:
     "Can the ship handle that kind of force?":
         pass
 
-y m "Oh you, {w=0.15}somebody was not listening. The stuff it's made out of is special. This ship isn't made of some sort of metal. It's a machine made to absorb and reuse energy from top to bottom. It can hold. For. Sure. "
+y m "Oh you, {w=0.15}somebody was not listening.{w=0.25} The stuff it's made out of is special. This ship isn't made of some sort of metal. It's a machine made to absorb and reuse energy from top to bottom. It can hold. For. Sure. "
 
 y n "Besides, {w=0.15}we'll be so far away, {w=0.15}chances are if anything does happen it wont get back to the rest of humanity for decades."
 
-y n "Look, {w=0.15}we can think and try to explain things away all our lives and be no better for it. But imagine actually having real answers in our hands. We have the question of reality before us, {w=0.15}and the key's in our hands."
+y n "Look, {w=0.15}we can think and try to explain things away all our lives and be no better for it.{w=0.25} But imagine actually having real answers in our hands. We have the question of reality before us, {w=0.15}and the key's in our hands."
 
 y h "Consider it."
 
@@ -154,7 +162,7 @@ menu:
         y h "Whatever you say Cap."
         pass
 
-y n "At least admit that you're impressed with me though. Bet ya didn't expect me to be so freakin' smart."
+y n "At least admit that you're impressed with me though.{w=0.25} Bet ya didn't expect me to be so freakin' smart."
 
 menu:
     "No, {w=0.15}I didn't. How'd that happen?":
@@ -169,9 +177,9 @@ menu:
         y m "I worked my ass off"
         pass
 
-y n "It's funny. It was all for some man. Professor Motakomi."
+y n "It's funny.{w=0.25} It was all for some man. Professor Motakomi."
 
-y n "I grew up in a poor family. We were on the top deck of my station."
+y n "I grew up in a poor family.{w=0.25} We were on the top deck of my station."
 
 menu:
     "The top deck was bad?":
@@ -228,12 +236,14 @@ y n "I must have been 16? I'm sure he was shocked. Maybe relieved that somebody 
 
 menu:
     "You took his place?":
+        y h "Yeah."
         pass
 
     "What was he talking about?":
+        y m "Who cares?"
         pass
 
-y m "Yeah, {w=0.15}screw that guy. These speeches were supposed to be educational. {w=0.15}These guys were supposed to be examples for us kids."
+y m "Screw that guy.{w=0.25}These speeches were supposed to be educational. {w=0.15}These guys were supposed to be examples for us kids."
 
 y n "I looked around and saw the other kids just soaking in his complete bullshit, {w=0.15}and it just pissed me off. He was poisoning kids who wanted to learn with his stupid existence."
 
@@ -255,7 +265,7 @@ y n "Without a moment of hesitation he slapped me across the face."
 
 y n "\"Sit down.\""
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 y n "I did."
 
@@ -270,6 +280,7 @@ menu:
         pass
 
     "What did your brother do?":
+        #todo branch
         pass
 
 y n "I did.{w=0.15} He taught me everything I know."
@@ -299,25 +310,25 @@ y h "Coulda spent our entire lives flying in circles."
 
 menu:
     "Mis-calibrated by you?":
+        y s "Apparently.{w=0.15} I'm not perfect."
         pass
 
     "Great, {w=0.15}no harm?":
+        y h "Doesn't look like it!"
         pass
 
-y s "Apparently. I'm not perfect."
 
-y h "There we go. S'all fine. The engine itself is doin' grand."
+
+y h "S'all fine now.{w=0.15} The engine itself is doin' grand."
 
 menu:
     "Good to hear.":
+        y h "Yep!"
         pass
 
     "Safe enough?":
+        y h "Hey, {w=0.15}nothings perfect.{w=0.15} I'm not worried though, {w=0.15}and that means you shouldn't be either."
         pass
-
-y h "Aw Cap, {w=0.15}ya chucklehead."
-
-y h "Hey, {w=0.15}nothings perfect. I'm not worried though, {w=0.15}and that means you shouldn't be either."
 
 y n "Still, {w=0.15}let's focus on the engine. This first compound process is the big test."
 
@@ -351,7 +362,7 @@ menu:
     "I'll take a break.":
         pass
 
-    "No thank you.":
+    "No thank you.":#todo branch
         pass
 
 p h "Oh, {w=0.15}not at all Captain. I would be honored to help."
@@ -372,13 +383,13 @@ p s "What?"
 
 show y h
 
-y h "Yeah I'm getting pretty tired. Good luck Nemo."
+y h "Yeah I'm getting pretty tired.{w=0.15} Good luck Nemo."
 
 show p s
 
-p s "Oh... OK, {w=0.15}I'll do my best."
+p s "Oh.{w=0.15}.{w=0.15}. OK, {w=0.15}I'll do my best."
 
-p s "Sleep well you two..."
+p s "Sleep well you two.{w=0.15}.{w=0.15}."
 
 call hall from _call_hall_9
 
@@ -396,12 +407,12 @@ menu:
     "You mean talking at me?":
         pass
 
-    "It was nice, {w=0.15}wasn't it?":
+    "It was nice, {w=0.15}wasn't it?":#todo branch
         pass
 
 y s "Maybe I said too much? "
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 y h "Nah. G'night Cap. "
 
