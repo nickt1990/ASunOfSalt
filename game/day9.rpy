@@ -330,7 +330,7 @@ menu:
     "When did that happen?":
         pass
 
-p s "Well...{w=0.1} I g-guess it would have been... "
+p s "Well.{w=0.15}.{w=0.15}.{w=0.1} I g-guess it would have been.{w=0.15}.{w=0.15}. "
 
 p s "It would have been that one ni-"
 
@@ -437,13 +437,13 @@ p n "Ahem."
 
 p h "Gentlemen! I want a fair fight!"
 
-p s "But most of all, {w=0.15}I want to see a fight...{w=0.1} with honor."
+p s "But most of all, {w=0.15}I want to see a fight.{w=0.15}.{w=0.15}.{w=0.1} with honor."
 
 p h "Reach the limits of the battlefield,{w=0.1} and surpass them!"
 
 p h "The time limit shall be set to infinite and the match will go on as long as it needs to!"
 
-p n "Let this be a match that will go down..."
+p n "Let this be a match that will go down.{w=0.15}.{w=0.15}."
 
 show r h
 
@@ -461,7 +461,7 @@ hide black #todo
 
 r ".{w=0.3}.{w=0.3}."
 
-r su "Y-you beat me..."
+r su "Y-you beat me.{w=0.15}.{w=0.15}."
 
 menu:
     "Yep.":
@@ -471,7 +471,7 @@ r s "I didn't even touch you."
 
 show p s
 
-p s "No..."
+p s "No.{w=0.15}.{w=0.15}."
 
 show r s
 
@@ -498,7 +498,7 @@ menu:
 r n "I had so much to do."
 
 menu:
-    "Like... what?":
+    "Like.{w=0.15}.{w=0.15}. what?":
         pass
 
 r m "Dunno, {w=0.15}stop grilling me man."
@@ -607,7 +607,7 @@ show r su
 
 r su "Bu-wait."
 
-r s "I was kind of hoping that maybe you...{w=0.15} would.{w=0.15}.{w=0.15}."
+r s "I was kind of hoping that maybe you.{w=0.15}.{w=0.15}.{w=0.15} would.{w=0.15}.{w=0.15}."
 
 show p su
 

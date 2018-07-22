@@ -90,7 +90,7 @@ y m "Just leave it alone Nema,{w= 0.15}alright?"
 
 show p s
 
-p s "..."
+p s ".{w=0.15}.{w=0.15}."
 
 p n ".{w=0.15}.{w=0.15}."
 

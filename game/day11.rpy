@@ -10,7 +10,7 @@ e ".{w=0.15}.{w=0.15}."
 
 e "She doesn't seem to be in the room."
 
-e "Then,{w=0.15} you notice that there's a sandwich sitting on your bedside table..."
+e "Then,{w=0.15} you notice that there's a sandwich sitting on your bedside table.{w=0.15}.{w=0.15}."
 
 menu:
     "Check it out.":
@@ -77,7 +77,7 @@ menu:
     "No thanks.":
         pass
 
-y s "Hey Cap..."
+y s "Hey Cap.{w=0.15}.{w=0.15}."
 
 y n "I'm sorry about last night."
 
@@ -108,7 +108,7 @@ r n "Apparently not such a hot night."
 
 show y n
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 show r h
 

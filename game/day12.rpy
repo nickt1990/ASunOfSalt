@@ -294,7 +294,7 @@ play sound "sounds/DoorClose2.mp3"
 
 show y n
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 e "Haruka stared blankly at the wall for a moment, {w=0.15}thinking."
 
@@ -440,7 +440,7 @@ r n "How did your night go?"
 r h "Did you.{w=0.15}.{w=0.15}.{w=0.15}?"
 
 menu:
-    "...?":
+    ".{w=0.15}.{w=0.15}.?":
         pass
 
     "What?":
@@ -493,7 +493,7 @@ r n "Whatever man, {w=0.15}I got some games to play."
 
 play sound "sounds/DoorOpen2.mp3"
 
-e "Hei walks over and opens his door,{w=0.15} then..."
+e "Hei walks over and opens his door,{w=0.15} then.{w=0.15}.{w=0.15}."
 
 show p su:
     linear 0 xalign 0.9 yalign 1.0
@@ -528,7 +528,7 @@ show p s
 
 p s "Wait, {w=0.15}first,{w=0.15} I want to talk for a second."
 
-p s "Talking with Captain last night got me thinking..."
+p s "Talking with Captain last night got me thinking.{w=0.15}.{w=0.15}."
 
 p n "About all the things I miss from home."
 
@@ -536,7 +536,7 @@ p s ".{w=0.15}.{w=0.15}."
 
 p h "My brothers."
 
-p n "About the people I respect here on this ship..."
+p n "About the people I respect here on this ship.{w=0.15}.{w=0.15}."
 
 p h "About the person I want to be."
 
@@ -590,7 +590,7 @@ e "Nema turned and walked back into her room."
 
 show r n
 
-r n "..."
+r n ".{w=0.15}.{w=0.15}."
 
 r s "Ugh."
 

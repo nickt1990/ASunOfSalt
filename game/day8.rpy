@@ -8,7 +8,7 @@ menu:
     "Hello?":
         pass
 
-    "...":
+    ".{w=0.15}.{w=0.15}.":
         pass
 
 play sound "sounds/DoorOpen2.mp3"
@@ -26,7 +26,7 @@ menu:
 
 p s "Sir I just wanted to apologize for last night."
 
-p s "Hei told me how I was acting and I... There's just no excuse sir."
+p s "Hei told me how I was acting and I.{w=0.15}.{w=0.15}. There's just no excuse sir."
 
 p s "I apologize."
 
@@ -37,7 +37,7 @@ menu:
     "Try to not do that again. You know how Haruka gets.":
         pass
 
-p su "B-...Of course sir."
+p su "B-.{w=0.15}.{w=0.15}.Of course sir."
 
 p s "I've made breakfast in the kitchen if you're interested sir. We'll be waiting."
 
@@ -89,7 +89,7 @@ p h "Hehe, {w=0.15}oh, {w=0.15}most definitely! "
 
 show r n
 
-r n "But..."
+r n "But.{w=0.15}.{w=0.15}."
 
 show p su
 
@@ -143,7 +143,7 @@ menu:
     "Thank you?":
         pass
 
-    "...":
+    ".{w=0.15}.{w=0.15}.":
         pass
 
 e "Hei and Nema share a plate."
@@ -309,7 +309,7 @@ menu:
 
 r su "Jealous? You think so?"
 
-r n "I am a pretty buff daddy..."
+r n "I am a pretty buff daddy.{w=0.15}.{w=0.15}."
 
 show p su
 
@@ -438,7 +438,7 @@ show r n
 
 r n "Just the truth."
 
-r s "I said to her, {w=0.15}I said, {w=0.15}\"Haruka...\""
+r s "I said to her, {w=0.15}I said, {w=0.15}\"Haruka.{w=0.15}.{w=0.15}.\""
 
 r n "\"I know you're worried darlin'{w=0.15}.{w=0.15}.{w=0.15}.\""
 
@@ -446,7 +446,7 @@ r s "\"And I know you're hungry{w=0.15}.{w=0.15}.{w=0.15}.\""
 
 show p s
 
-p s "Oh Hei..."
+p s "Oh Hei.{w=0.15}.{w=0.15}."
 
 show r n
 
@@ -458,7 +458,7 @@ menu:
     "And that didn't work?":
         pass
 
-    "At least you... tried?":
+    "At least you.{w=0.15}.{w=0.15}. tried?":
         pass
 
 r h "Weird, {w=0.15}right?"
@@ -576,7 +576,7 @@ menu:
 
 y n "Cap I kind of want to be alone, {w=0.15}thanks."
 
-y s "I know you mean well, {w=0.15}but... please?"
+y s "I know you mean well, {w=0.15}but.{w=0.15}.{w=0.15}. please?"
 
 menu:
     "No problem.":
@@ -665,7 +665,7 @@ y n "That's give or take the missing information, {w=0.15}which could go either 
 
 y s "So you- Hei."
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 y m "HEI."
 
@@ -711,7 +711,7 @@ r n "Actually what do all the bars stand for? There's no words on this screen."
 
 show y m
 
-y m "..."
+y m ".{w=0.15}.{w=0.15}."
 
 y m "Hei."
 
@@ -729,7 +729,7 @@ y m "The whole fucking damn I worked my ass off my entire life-"
 
 show y s
 
-y s "and threw my life away to go on this mission..."
+y s "and threw my life away to go on this mission.{w=0.15}.{w=0.15}."
 
 show r su
 
@@ -747,7 +747,7 @@ y m "But here I am surrounded by the same filth."
 
 show p su
 
-p su "H-{w=0.15}haruka, {w=0.15}tha-{w=0.15}that's not fair..."
+p su "H-{w=0.15}haruka, {w=0.15}tha-{w=0.15}that's not fair.{w=0.15}.{w=0.15}."
 
 p s "We're not p-"
 
@@ -838,7 +838,7 @@ menu:
     "Goodnight you two.":
         pass
 
-    "\"Snooze\" or...?":
+    "\"Snooze\" or.{w=0.15}.{w=0.15}.?":
         pass
 
 p s "Goodnight Cap."

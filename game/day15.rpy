@@ -527,7 +527,7 @@ y m "Wait."
 y n "You do remember the other endings you've gotten,{w= 0.15}don't you?"
 
 menu:
-    "No...":
+    "No.{w=0.15}.{w=0.15}.":
         pass
 
     "Yes.":

@@ -26,7 +26,7 @@ menu:
     "Right, {w=0.15}Peggy day.":
         pass
 
-p s "Sir... D-... do you not celebrate Peggy day?"
+p s "Sir.{w=0.15}.{w=0.15}. D-.{w=0.15}.{w=0.15}. do you not celebrate Peggy day?"
 
 menu:
     "I don't know what it is.":
@@ -57,7 +57,7 @@ menu:
     "With what?":
         pass
 
-p n "Sir... y-you aren't familiar? I suppose it's old technology now, {w=0.15}but still..."
+p n "Sir.{w=0.15}.{w=0.15}. y-you aren't familiar? I suppose it's old technology now, {w=0.15}but still.{w=0.15}.{w=0.15}."
 
 p n "It's the main reason we're able to survive out in space."
 
@@ -74,7 +74,7 @@ menu:
     "Oh, {w=0.15}neat.":
         pass
 
-p s "Oh... w-well, {w=0.15}Haruka would be able to explain better than me."
+p s "Oh.{w=0.15}.{w=0.15}. w-well, {w=0.15}Haruka would be able to explain better than me."
 
 p n "B-but, {w=0.15}I know that we we owe our existence to it!"
 
@@ -111,7 +111,7 @@ r s "Peggy day?"
 
 show p su
 
-p su "W-... what? You as well?"
+p su "W-.{w=0.15}.{w=0.15}. what? You as well?"
 
 show r s
 
@@ -129,13 +129,13 @@ show p m
 
 p m "Unbelievable!"
 
-p s "Then, {w=0.15}uhm, {w=0.15}well..."
+p s "Then, {w=0.15}uhm, {w=0.15}well.{w=0.15}.{w=0.15}."
 
-p n "C-captain, {w=0.15}would it be OK if I..."
+p n "C-captain, {w=0.15}would it be OK if I.{w=0.15}.{w=0.15}."
 
 p s "Well, {w=0.15}I mean."
 
-p s "Could we have a, {w=0.15}uhm..."
+p s "Could we have a, {w=0.15}uhm.{w=0.15}.{w=0.15}."
 
 menu:
     "What is it?":
@@ -169,7 +169,7 @@ r su "Uh, {w=0.15}wow. I've never seen you so excited for something."
 
 show p n
 
-p n "Oh, {w=0.15}uhm..."
+p n "Oh, {w=0.15}uhm.{w=0.15}.{w=0.15}."
 
 show r h
 
@@ -293,7 +293,7 @@ play sound "sounds/DoorClose2.mp3"
 
 hide r
 
-e "You have some free time..."
+e "You have some free time.{w=0.15}.{w=0.15}."
 
 define day7Hei = True
 
@@ -522,7 +522,7 @@ y n "What?"
 
 show p n
 
-p n "..."
+p n ".{w=0.15}.{w=0.15}."
 
 show r n
 
@@ -540,7 +540,7 @@ p m "Party."
 
 show r su
 
-r su "Uhm, {w=0.15}well, {w=0.15}I, {w=0.15}uh..."
+r su "Uhm, {w=0.15}well, {w=0.15}I, {w=0.15}uh.{w=0.15}.{w=0.15}."
 
 show p h
 
@@ -571,7 +571,7 @@ y h "Convincing."
 
 show r su
 
-r su "So... what do we do here Nema?"
+r su "So.{w=0.15}.{w=0.15}. what do we do here Nema?"
 
 show p n
 
@@ -621,7 +621,7 @@ y h "Nema please don't laugh like that."
 
 show p n
 
-p n "Oh..."
+p n "Oh.{w=0.15}.{w=0.15}."
 
 p h "Heh."
 
@@ -755,7 +755,7 @@ menu:
     "Haruka be nice.":
         pass
 
-    "...":
+    ".{w=0.15}.{w=0.15}.":
         pass
 
 y h "I'm being nice. Nobody likes to be led on."
@@ -793,7 +793,7 @@ p su "You.{w=0.15}.{w=0.15}.{w=0.25} love me."
 
 show r s
 
-r s "Ha, {w=0.15}oh, {w=0.15}well..."
+r s "Ha, {w=0.15}oh, {w=0.15}well.{w=0.15}.{w=0.15}."
 
 r n "I like you Nema, {w=0.15}how about that."
 
@@ -837,9 +837,9 @@ show y h
 
 y h "Alright great."
 
-y s "..."
+y s ".{w=0.15}.{w=0.15}."
 
-y n "So..."
+y n "So.{w=0.15}.{w=0.15}."
 
 show p n
 
@@ -945,7 +945,7 @@ e "Nema starts to tear up."
 
 show r su
 
-r su "Woah hey, {w=0.15}c'mon you, {w=0.15}stop... that."
+r su "Woah hey, {w=0.15}c'mon you, {w=0.15}stop.{w=0.15}.{w=0.15}. that."
 
 r s "Uhm."
 
@@ -958,7 +958,7 @@ menu:
     "Look back with fear.":
         pass
 
-r su "Uhhh..."
+r su "Uhhh.{w=0.15}.{w=0.15}."
 
 e "Hei wraps his arm around Nema."
 

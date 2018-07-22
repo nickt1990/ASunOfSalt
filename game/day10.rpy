@@ -2,7 +2,7 @@
 
 show y n
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 hide black
 
@@ -44,7 +44,7 @@ y n "Yeah.{w=0.15}.{w=0.15}."
 
 show rz m
 
-rz m "No, {w=0.15}this wasn't mere luck..."
+rz m "No, {w=0.15}this wasn't mere luck.{w=0.15}.{w=0.15}."
 
 show p n
 
@@ -125,9 +125,9 @@ menu:
     "Forgot your password?":
         pass
 
-y n "Cap, {w=0.15}my station isn't reacting..."
+y n "Cap, {w=0.15}my station isn't reacting.{w=0.15}.{w=0.15}."
 
-y n "Seems like it's in low power mode..."
+y n "Seems like it's in low power mode.{w=0.15}.{w=0.15}."
 
 show p su
 
@@ -228,7 +228,7 @@ p n "No Hei, {w=0.15}starboard is the right side of the ship when facing the bow
 
 show rz n
 
-rz n "Bow..."
+rz n "Bow.{w=0.15}.{w=0.15}."
 
 show p h
 
@@ -379,7 +379,7 @@ menu:
     "Sounds good!":
         pass
 
-    "I guess...":
+    "I guess.{w=0.15}.{w=0.15}.":
         pass
 
 y n "See ya in a few Cap."

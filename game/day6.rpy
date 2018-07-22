@@ -24,7 +24,7 @@ menu:
 
 show p s
 
-p s "Huh..."
+p s "Huh.{w=0.15}.{w=0.15}."
 
 p n "Captain?"
 
@@ -59,7 +59,7 @@ menu:
     "Go on.":
         pass
 
-p s "I apologize for pushing this on you so s-soon after you getting back to health but..."
+p s "I apologize for pushing this on you so s-soon after you getting back to health but.{w=0.15}.{w=0.15}."
 
 p n "Ever since the moment you started to rest yesterday, {w=0.15}Haruka and Hei have been arguing."
 
@@ -76,7 +76,7 @@ p n "Hei wants to make modifications to the ship."
 
 p n "Haruka thinks he shouldn't, {w=0.15}she built the ship and he's not familiar with it enough to make worthwhile modifications."
 
-p s "I... I can't understand a lot of what they say honestly, {w=0.15}it seems to be a very technical argument, {w=0.15}but that's the basic idea of it sir."
+p s "I.{w=0.15}.{w=0.15}. I can't understand a lot of what they say honestly, {w=0.15}it seems to be a very technical argument, {w=0.15}but that's the basic idea of it sir."
 
 menu:
     "Ok.":
@@ -110,7 +110,7 @@ menu:
 
 y h "Awww Cap. You mushball."
 
-y n "But hey, {w=0.15}I've got a bit of an issue with... the other one."
+y n "But hey, {w=0.15}I've got a bit of an issue with.{w=0.15}.{w=0.15}. the other one."
 
 menu:
     "Hei?":
@@ -149,7 +149,7 @@ p s "The captain just got up, {w=0.15}he nee-"
 
 show r m
 
-r m "She's just being... a little hard to work with."
+r m "She's just being.{w=0.15}.{w=0.15}. a little hard to work with."
 
 r su "Man, {w=0.15}I can improve the ship, {w=0.15}I know I can!"
 
@@ -161,13 +161,13 @@ y m "Crap? You built them. It was your job from the beginning, {w=0.15}and now w
 
 show r n
 
-r n "Well... Yeah? I built them, {w=0.15}so I know how to improve on them. "
+r n "Well.{w=0.15}.{w=0.15}. Yeah? I built them, {w=0.15}so I know how to improve on them. "
 
 r s "Do you want to fly out into the unknown with underpowered weapons?"
 
 show y n
 
-y n "Ya realize that because of the... unique qualities of our engine, {w=0.15}we can't slow down, {w=0.15}let alone stop this ship, {w=0.15}right?"
+y n "Ya realize that because of the.{w=0.15}.{w=0.15}. unique qualities of our engine, {w=0.15}we can't slow down, {w=0.15}let alone stop this ship, {w=0.15}right?"
 
 show r su
 
@@ -275,7 +275,7 @@ r m "Fine, {w=0.15}if you say so sir."
 
 show p s
 
-p s "..."
+p s ".{w=0.15}.{w=0.15}."
 
 show y n
 
@@ -299,9 +299,9 @@ play sound "sounds/DoorClose2.mp3"
 
 show p s
 
-p s "..."
+p s ".{w=0.15}.{w=0.15}."
 
-p s "I guess I'll get to work as well, {w=0.15}sir..."
+p s "I guess I'll get to work as well, {w=0.15}sir.{w=0.15}.{w=0.15}."
 
 e "Nema looks at you sadly, {w=0.15}then slowly walks off to her room."
 
@@ -363,7 +363,7 @@ menu:
     "Hello.":
         pass
 
-p n "..."
+p n ".{w=0.15}.{w=0.15}."
 
 menu:
     "What is it?":
@@ -374,7 +374,7 @@ menu:
 
 p n "I was just thinking about earlier."
 
-p s "I don't necessarily agree with your decision..."
+p s "I don't necessarily agree with your decision.{w=0.15}.{w=0.15}."
 
 p n "But I'm not jealous of the fact that you are the one who had to make it."
 
@@ -389,7 +389,7 @@ menu:
     "Logic. You think it through.":
         pass
 
-p s "Follow your gut..."
+p s "Follow your gut.{w=0.15}.{w=0.15}."
 
 p n "I don't even know what that means sir."
 
@@ -421,7 +421,7 @@ menu:
 
 p n "I can improve in other ways to compliment the leaders. Not everybody has to be a leader."
 
-p s "Maybe..."
+p s "Maybe.{w=0.15}.{w=0.15}."
 
 p n "I'm content just being support. I want to see us succeed."
 
@@ -434,7 +434,7 @@ menu:
 
 p h "No, {w=0.15}it's not limiting, {w=0.15}it's focusing."
 
-p n "It makes sense..."
+p n "It makes sense.{w=0.15}.{w=0.15}."
 
 p h "I'm appreciative you took the time to talk over these petty personal problems with me sir."
 
@@ -502,13 +502,13 @@ menu:
 
 r n "Keep trying?"
 
-r s "But like... Why bother?"
+r s "But like.{w=0.15}.{w=0.15}. Why bother?"
 
 r s "So Haruka can make my life miserable?"
 
 r m "She's so hot, {w=0.15}I can't not be attracted to her."
 
-r s "But..."
+r s "But.{w=0.15}.{w=0.15}."
 
 r s "I don't know."
 

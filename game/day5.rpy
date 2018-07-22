@@ -29,18 +29,19 @@ y s "You got the worst of it, {w=0.15}lucky you."
 
 menu:
     "Are we still behind the asteroid?":
+        p su "What do you mean Sir?"
+        
+        p s "Wait.{w=0.15}.{w=0.15}."
         pass
 
     "Why are we sitting in the dark?":
+        show r su
+        r su "The dark?"
         pass
-
-show r su
-
-r su "The dark?"
 
 show p su
 
-p su "Oh no..."
+p su "Oh no.{w=0.15}.{w=0.15}."
 
 show y su
 
@@ -86,14 +87,14 @@ menu:
     "Nema, {w=0.15}you smell nice.":
         pass
 
-    "...":
+    ".{w=0.15}.{w=0.15}.":
         pass
 
-p su "T-thank you, {w=0.15}sir..."
+p su "T-thank you, {w=0.15}sir.{w=0.15}.{w=0.15}."
 
-p n "..."
+p n ".{w=0.15}.{w=0.15}."
 
-p su "Oh! Right..."
+p su "Oh! Right.{w=0.15}.{w=0.15}."
 
 p n "O-one moment sir, {w=0.15}please just hold still."
 
@@ -131,7 +132,7 @@ e "You feel Nema move very closely to you."
 
 e "Her warm breath just barely reaches your forehead."
 
-p n "I see..."
+p n "I see.{w=0.15}.{w=0.15}."
 
 show y su
 
@@ -187,13 +188,13 @@ y m "After all you WERE the one that told us it was OK to drive directly into a 
 
 show p s
 
-p s "I-I know..."
+p s "I-I know.{w=0.15}.{w=0.15}."
 
 p s "Captain, {w=0.15}I'm so very sorry."
 
 p n "I'll never be able to make it up to you, {w=0.15}I know, {w=0.15}but I- b- I, {w=0.15}please know that it was a mistake."
 
-p n "C-captain I... I..."
+p n "C-captain I.{w=0.15}.{w=0.15}. I.{w=0.15}.{w=0.15}."
 
 menu:
     "It's OK Nema.":
@@ -202,19 +203,19 @@ menu:
     "It was a risk, {w=0.15}I should have known better.":
         pass
 
-p su "Sir..."
+p su "Sir.{w=0.15}.{w=0.15}."
 
 p s "I will gladly watch the Captain. Of course."
 
 show y m
 
-y m "Well... good? You don't really have a choice, {w=0.15}but, {w=0.15}right."
+y m "Well.{w=0.15}.{w=0.15}. good? You don't really have a choice, {w=0.15}but, {w=0.15}right."
 
 y n "Hei and me are gonna take a look around to make sure everything's OK."
 
 show r s
 
-r s "But I'm sore from the crash..."
+r s "But I'm sore from the crash.{w=0.15}.{w=0.15}."
 
 show y n
 
@@ -254,7 +255,7 @@ e "There is silence for a while."
 
 show p s
 
-p s "..."
+p s ".{w=0.15}.{w=0.15}."
 
 p s "C-captain, {w=0.15}I just want to say again that I'm sorry."
 
@@ -299,7 +300,7 @@ p n "You just have to be the kind of person who can step up and take charge, {w=
 
 p s "I'm not that person and I never will be."
 
-p s "..."
+p s ".{w=0.15}.{w=0.15}."
 
 menu:
     "You can be.":
@@ -329,7 +330,7 @@ p s "I just don't know how to push myself into being a dependable person when I 
 
 p s "And I can't stop being me. I'm weak, {w=0.15}captain."
 
-p n "..."
+p n ".{w=0.15}.{w=0.15}."
 
 p s "I'm sorry for wasting your time with my self-pity sir. "
 

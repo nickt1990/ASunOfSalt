@@ -2,7 +2,7 @@
 
 show yp n
 
-yp n "..."
+yp n ".{w=0.15}.{w=0.15}."
 
 yp m "Wake up."
 
@@ -26,9 +26,9 @@ menu:
 
 yp h "I knew you'd understand."
 
-yp n "B-..."
+yp n "B-.{w=0.15}.{w=0.15}."
 
-yp h "Uhm..."
+yp h "Uhm.{w=0.15}.{w=0.15}."
 
 menu:
     "What?":
@@ -37,7 +37,7 @@ menu:
     "Are you alright?":
         pass
 
-yp s "If you want I could... change?"
+yp s "If you want I could.{w=0.15}.{w=0.15}. change?"
 
 yp s "Into something more comfortable, I mean."
 
@@ -62,7 +62,7 @@ yp m "Close your eyes."
 
 e "You close your eyes."
 
-yz n "Uhm..."
+yz n "Uhm.{w=0.15}.{w=0.15}."
 
 yz s "O-Ok."
 
@@ -72,7 +72,7 @@ e "You open your eyes to see Haruka sitting beside you on the bed, stripped down
 
 yz m "Don't stare at me."
 
-yz n "But... do you think it looks good?"
+yz n "But.{w=0.15}.{w=0.15}. do you think it looks good?"
 
 menu:
     "Yes. No.":
@@ -81,13 +81,13 @@ menu:
     "You're making me uncomfortable.":
         pass
 
-yz h "Oh..."
+yz h "Oh.{w=0.15}.{w=0.15}."
 
 yz n "Thank you."
 
 yz m "Not that I changed because of that."
 
-yz n "I just didn't know how you felt about the... uhm..."
+yz n "I just didn't know how you felt about the.{w=0.15}.{w=0.15}. uhm.{w=0.15}.{w=0.15}."
 
 yz n "You know."
 
@@ -101,14 +101,14 @@ e "She's making an effort to stay close, but you can feel her trembling."
 
 y h "I guess we're all locked in our rooms for a whole day, huh."
 
-y n "So I guess we should..."
+y n "So I guess we should.{w=0.15}.{w=0.15}."
 
 e "She leans toward your face, closes her eyes and pushes her lips out."
 
 e "She's trembling violently, her face is scrunched up and uncomfortable looking."
 
 menu:
-    "Of course...":
+    "Of course.{w=0.15}.{w=0.15}.":
         pass
 
     "Why are you doing this all of a sudden?":
@@ -130,7 +130,7 @@ y n "I thought a lot about what you said before."
 
 y s "I was jealous of Hei and Nema."
 
-y n "I've never taken the time to... ya'know... like somebody."
+y n "I've never taken the time to.{w=0.15}.{w=0.15}. ya'know.{w=0.15}.{w=0.15}. like somebody."
 
 y s "It seemed sort of like it could be nice, I don't know."
 
@@ -144,7 +144,7 @@ y n "Having somebody who you're just connected to."
 
 y h "Sharing stories, time, life."
 
-y n "You know... and... sex."
+y n "You know.{w=0.15}.{w=0.15}. and.{w=0.15}.{w=0.15}. sex."
 
 y n "I always thought sex was more mental than physical."
 
@@ -178,9 +178,9 @@ menu:
     "There's nothing to know, follow your instincts.":
         pass
 
-y su "C-cap..."
+y su "C-cap.{w=0.15}.{w=0.15}."
 
-y s "No..."
+y s "No.{w=0.15}.{w=0.15}."
 
 y n "PLAYERNAME"
 
@@ -190,9 +190,9 @@ y n "I've never tried to actually talk about this stuff before."
 
 y h "I thought I'd mess everything up, or weird you out, or seem like a little kid."
 
-y n "I know I sort of project a certain image..."
+y n "I know I sort of project a certain image.{w=0.15}.{w=0.15}."
 
-y s "I'm fine talking about it when I'm messing around, but when it feels real like this..."
+y s "I'm fine talking about it when I'm messing around, but when it feels real like this.{w=0.15}.{w=0.15}."
 
 menu:
     "Don't worry about that.":
@@ -201,9 +201,9 @@ menu:
     "Yeah, this was a surprise.":
         pass
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
-y su "Is... this alright?"
+y su "Is.{w=0.15}.{w=0.15}. this alright?"
 
 e "She slowly falls on the bed, pulling you down with her."
 
@@ -218,6 +218,6 @@ menu:
 
 e "Haruka just smiles up at you, then closes her eyes and squeezes your arm."
 
-y h "Thank you..."
+y h "Thank you.{w=0.15}.{w=0.15}."
 
 return
