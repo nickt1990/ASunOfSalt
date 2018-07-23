@@ -6,7 +6,7 @@ with fade
 
 e "You wake up slowly and realize the body beside you is now gone."
 
-hide black
+#todo haru act different if last night is different
     
 e "Haruka is out of sight."
 
@@ -47,6 +47,8 @@ show y n
 
 y n "Hey."
 
+play sound "sounds/DoorClose2.mp3"
+
 e "Haruka's sitting on the floor by the heater, covered in a blanket from her neck down."
 
 menu:
@@ -75,19 +77,25 @@ menu:
             "Of course.":
                 e "You wrap yourself up with the blanket and she pulls in closely to you."
                 e "Her skin is so warm from the heat,{w=0.15} it's almost hot."
+				y s "Hey,{w=0.15} Cap.{w=0.15}.{w=0.15}."
                 pass
         pass
 
     "No thanks.":
+		y s "Oh, sorry."
+		y n "I didn't mean anything by it."
+		y s "I just wanted to say.{w=0.15}.{w=0.15}."
         pass
 
-y s "Hey Cap.{w=0.15}.{w=0.15}."
+
 
 y n "I'm sorry about last night."
 
 y s "I know I'm kind of awkward when it comes to stuff like that."
 
 y n "I just wanted to let you kn-"
+
+play sound "sounds/DoorOpen2.mp3"
 
 show r h:
     linear 0.0 xalign 0.1 yalign 1.0
@@ -231,7 +239,7 @@ y h "I couldn't give less of a shit about what you want."
 
 show r s
 
-r s "Please Haruka, I know I've been a dick."
+r s "Please Haruka, {w=0.15}I know I've been a dick."
 
 r n "But have you ever thought that maybe it's because you've never given me a real shot?"
 

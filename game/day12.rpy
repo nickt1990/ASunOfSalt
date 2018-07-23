@@ -2,7 +2,9 @@
     
 e "You both sleep peacefully through the night."
 
+window hide
 hide black
+with fade
     
 e "Nema is still cuddled up beside you sleeping when you wake up."
 
@@ -11,6 +13,7 @@ menu:
         pass
 
     "Stay in bed.":
+	#todo branch
         pass
 
 e "You move quietly out of the bed and to your computer."
@@ -330,6 +333,9 @@ menu:
 
     "We just shared a bed.":
         pass
+		
+	"It's none of your business what we did.":
+        pass
 
 y n "I know,{w=0.15} I know."
 
@@ -418,7 +424,7 @@ play sound "sounds/DoorOpen2.mp3"
 
 hide y
 
-e "Haruka abruptly turns and enters her room."
+e "Haruka abruptly turns and walks to her room."
 
 show r m
 
@@ -431,7 +437,9 @@ menu:
     "Next time.":
         pass
 
-r m "You're damn right,{w=0.15} too bad."
+show r s
+		
+e "Hei just looks at you and frowns."
 
 r h "But hey!"
 
@@ -464,13 +472,13 @@ menu:
 r h "Take a ride on the Nema express?"
 
 menu:
-    "That's pretty rude.":
+    "Are you serious?":
+		r s "Um.{w=0.25} No?"
         pass
 
     "No.":
+		r su "Oh, {w=0.15}right."
         pass
-
-r su "Oh, {w=0.15}right."
 
 r s "Sorry, {w=0.15}I didn't mean it that way."
 
@@ -609,6 +617,8 @@ e "You stay in your room for the rest of the day working."
 
 e "You don't hear anyone else leave their rooms for the rest of the night."
 
+window hide
 show black
+with fade
 
 return

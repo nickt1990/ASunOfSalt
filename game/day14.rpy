@@ -34,12 +34,12 @@ p h "How are you Sir?"
 
 menu:
     "Good.":
+		p h "I'm happy to hear it sir!"
         pass
 
     "Are you feeling alright?":
+		p h "Of course!"
         pass
-
-p h "I'm happy to hear it sir!"
 
 p n "By the way, {w=0.15}while I have you here."
 
@@ -50,7 +50,7 @@ menu:
         pass
 
     "Did he talk you into that?":
-        p h "Hah, {w= 0.15}no Sir."
+        p h "Hah, {w= 0.15}no sir."
         pass
 
 p h "I want to understand things better."
@@ -275,11 +275,18 @@ hide y
 
 e "Everyone has gone back to their rooms."
 
+call blueRoom
+
+#todo computer
 e "You head back into your room and check your mail."
 
 show black
 
 e "You spend the rest of the evening working and end up falling asleep early."
+
+window hide
+show black
+with fade
 
 e ".{w=0.15}.{w=0.15}."
 

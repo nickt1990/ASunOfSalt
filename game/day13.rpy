@@ -8,11 +8,13 @@ e "After two nights of sharing,{w=0.15} you have the room to yourself."
 
 e "You wake up peacefully and slowly sit up."
 
+window hide
 hide black
+with fade
 
 menu:
     "Check mail":
-        e "Checking mail."
+        #todo computer
         pass
 
     "Get breakfast":
@@ -34,7 +36,7 @@ e "The kitchen door is open, Haruka is sitting at the table and Hei is at the fr
 
 show r h
 
-r h "Uhh, so we have.{w=0.15}.{w=0.15}.{w=0.15} uhm.{w=0.15}.{w=0.15}."
+r h "Uhh,{w=0.15} so we have.{w=0.15}.{w=0.15}.{w=0.15} uhm.{w=0.15}.{w=0.15}."
 
 r n "What do I know how to make.{w=0.15}.{w=0.15}."
 
@@ -49,7 +51,7 @@ y m "Not pour cereal."
 
 show r s
 
-r s "Yeaaaah, I did didn't I."
+r s "Yeaaaah,{w=0.15} I did didn't I."
 
 r m "Hmm.{w=0.15}.{w=0.15}."
 
@@ -148,7 +150,7 @@ y h "Yeah, {w=0.15}I was a little bit."
 
 y n "I just can't see eye to eye with her."
 
-y n "I'm fine not being friends with her,{w=0.15} but I don't want her to come inbetween.{w=0.25}.{w=0.25}."
+y n "I'm fine not being friends with her,{w=0.15} but I don't want her to come in-between.{w=0.25}.{w=0.25}."
 
 y n "I don't want her to make life harder than it has to be."
 
@@ -177,7 +179,7 @@ r n "I'm proving myself here,{w=0.15} she'll come around."
 
 r h "Food's ready anyway."
 
-e "Hei sets two plates on the table, each with two eggs on them."
+e "Hei sets two plates on the table,{w=0.15} each with two eggs on them."
 
 e "Sunny side up."
 

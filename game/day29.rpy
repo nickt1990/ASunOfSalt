@@ -40,6 +40,7 @@ menu:
         pass
 
     "I know.":
+	#todo branch
         pass
 
 p h "Yeah,{w= 0.15} we don't have to get into it."
@@ -73,6 +74,7 @@ menu:
         pass
 
     "Happy with all of us?":
+	#todo branch
         pass
 
 p h "Yeah."
@@ -115,6 +117,7 @@ menu:
         pass
 
     "I'm going to tell them what you just said.":
+	#todo branch
         pass
 
 p n "Me too."
@@ -130,6 +133,5 @@ p n "Either work toward what you want,{w= 0.15} or give up and fade away."
 show black
 
 jump END
-
     
 return

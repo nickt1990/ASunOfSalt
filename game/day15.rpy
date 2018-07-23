@@ -1,6 +1,8 @@
 ﻿label day15:
-    
+
+window hide
 hide black 
+with fade
 
 e "You wake up,{w= 0.15}but it's still the middle of the night."
 
@@ -46,6 +48,7 @@ menu:
         pass
 
     "Why the change of heart?":
+	#todo branch
         pass
 
 show p h
@@ -158,7 +161,7 @@ y n "Captain,{w= 0.15}what do you want to do?"
 
 menu:
     "Compound.":
-        #if haruka flag, call HarukaEnd
+        #todo if haruka flag, call HarukaEnd
         pass
 
     "Stop and follow our original orders.":
@@ -188,11 +191,12 @@ menu:
         pass
 
     "Don't help her.":
+	#todo both branches
         pass
 
 show p n
 
-p n "There's no need to help her,{w= 0.15}Sir."
+p n "There's no need to help her,{w= 0.15}sir."
 
 e "Nema looks somehow different."
 
@@ -217,9 +221,10 @@ menu:
         pass
 
     "Prepare to die.":
+		#todo
         pass
 
-p n "I'm disappointed Sir. You really had no clue?"
+p n "I'm disappointed sir. You really had no clue?"
 
 p h "This mission is really about me."
 
@@ -285,22 +290,24 @@ p h "And that got us all the funding and time we needed."
 
 menu:
     "Haruka?":
+		p m "Obviously."
         pass
 
     "Nema?":
+		p h "Me?"
+		p n "Not quite,{w=0.15} the only other girl on the ship."
         pass
-
-p m "Obvious."
 
 p n "She had an expiration date on her head since the moment Motokami saw her."
 
-p h "She fulfilled her purpose perfectly. Don't feel bad for her."
+p h "She fulfilled her purpose perfectly.{w=0.25} Don't feel bad for her."
 
 menu:
     "You killed her.":
         pass
 
     "What are you?":
+	#todo branch
         pass
 
 p n "Yeah,{w= 0.15}but I gave her the courtesy of letting her think she might have made a difference in the world all the way to the end."
@@ -357,9 +364,11 @@ p n "Is that your question or do you have another?"
 
 menu:
     "I have a different one.":
+	#todo branch
         pass
 
     "That's my question.":
+	#todo branch
         pass
 
 p n "I thought as much."
@@ -368,21 +377,23 @@ p h "Ask when you are ready,{w= 0.15}Sir."
 
 menu:
     "Is Hei in on this?":
+		jump heiQ15
         pass
 
     "What's going to happen?":
         pass
 
-menu:
     "Why am I here?":
         pass
 
     "What's your goal?":
         pass
 
-menu:
     "Why do you seem so normal?":
         pass
+
+		
+label heiQ15:#############################################
 
 p n "Hei? "
 
@@ -408,6 +419,7 @@ p h "It's been interesting spending some time with normal people."
 
 p n "But I think I'm done here."
 
+window hide
 show black
 
 jump END
@@ -483,7 +495,7 @@ e "About two weeks go by.{w= 0.15}.{w= 0.15}.."
 
 jump day29
 
-label HarukaEnd: #END ---------------------------------------------------
+label HarukaEnd: #############################################
     
 show y h
 y h "Hah,{w= 0.15}I knew you had a mind of your own."
@@ -508,7 +520,7 @@ menu:
         pass
 
 y n "I was worried we were gonna run out of time."
-
+#todo go back and foreshadow this
 y h "The game normally ends around this point anyways."
 
 menu:
@@ -531,6 +543,7 @@ menu:
         pass
 
     "Yes.":
+	#todo branch
         pass
 
 y n "Ooooh,{w= 0.15}alright."
@@ -569,6 +582,7 @@ menu:
         pass
 
     "What's that?":
+	#todo branch
         pass
 
 y n "Maybe three weeks?"
@@ -597,9 +611,6 @@ menu:
     "You seem happy about that.":
         pass
 
-    "I guess.":
-        pass
-
 y h "I am."
 
 y n "I've decided to relax a bit."
@@ -607,6 +618,8 @@ y n "I've decided to relax a bit."
 y s "And,{w= 0.15}uh.{w= 0.15}.{w= 0.15}."
 
 y n ".{w= 0.15}.{w= 0.15}."
+
+show y h
 
 e "Haruka goes flush."
 
@@ -618,6 +631,7 @@ y n "So.{w= 0.15}.{w= 0.15}."
 
 y h "You want a drink?"
 
+window hide
 show black
 
 jump END

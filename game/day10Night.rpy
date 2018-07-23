@@ -20,7 +20,7 @@ menu:
 
 yp n "My jim-jams."
 
-yp h "I know it's dumb, but a girls gotta be comfy."
+yp h "I know it's dumb,{w=0.15} but a girls gotta be comfy."
 
 menu:
     "Of course.":
@@ -57,9 +57,9 @@ menu:
     "You're acting weird.":
         pass
 
-yp su "O-Ok."
+yp su "O-{w=0.15}okay."
 
-yp n "Of course, right."
+yp n "Of course,{w=0.15} right."
 
 yp n "I'll change."
 
@@ -69,21 +69,22 @@ e "You close your eyes."
 
 yz n "Uhm.{w=0.15}.{w=0.15}."
 
-yz s "O-Ok."
+yz s "A-{w=0.15}alright."
 
-yz n "I mean you can open your eyes."
+yz n "I mean,{w=0.15} you can open your eyes."
 
 e "You open your eyes to see Haruka sitting beside you on the bed, stripped down to her underwear."
 
-yz m "Don't stare at me."
+yz m "Don't stare!"
 
-yz n "But.{w=0.15}.{w=0.15}. do you think it looks good?"
+yz n "But.{w=0.15}.{w=0.15}.{w=0.15} do you think it looks good?"
 
 menu:
-    "Yes. No.":
+    "Yes.":
         pass
 
     "You're making me uncomfortable.":
+	#todo branch , have her back off
         pass
 
 yz h "Oh.{w=0.15}.{w=0.15}."
@@ -117,6 +118,7 @@ menu:
         pass
 
     "Why are you doing this all of a sudden?":
+	#todo branch
         pass
 
 e "The second you get close she jumps back, shocked."
@@ -176,28 +178,27 @@ menu:
     "Sex and relationships can be what you want.":
         pass
 
-    "Don't worry about them.":
+    "Don't worry about anyone but you.":
         pass
-
-menu:
+		
     "There's nothing to know, follow your instincts.":
         pass
 
-yz su "C-cap.{w=0.15}.{w=0.15}."
+yz su "C-{w=0.15}cap.{w=0.15}.{w=0.15}."
 
 yz s "No.{w=0.15}.{w=0.15}."
 
-yz n "PLAYERNAME"
+yz n "PLAYERNAME"#todo name
 
 yz h "It means a lot to hear that."
 
 yz n "I've never tried to actually talk about this stuff before."
 
-yz h "I thought I'd mess everything up, or weird you out, or seem like a little kid."
+yz h "I thought I'd mess everything up,{w=0.15} or weird you out, {w=0.15}or seem like a little kid."
 
 yz n "I know I sort of project a certain image.{w=0.15}.{w=0.15}."
 
-yz s "I'm fine talking about it when I'm messing around, but when it feels real like this.{w=0.15}.{w=0.15}."
+yz s "I'm fine talking about it when I'm messing around,{w=0.15} but when it feels real like this.{w=0.15}.{w=0.15}."
 
 menu:
     "Don't worry about that.":
@@ -212,13 +213,14 @@ yz su "Is.{w=0.15}.{w=0.15}. this alright?"
 
 e "She slowly falls on the bed, pulling you down with her."
 
-e "Her head is resting on your shoulder, the length of her body is sat warmly beside your own."
+e "Her head is resting on your shoulder,{w=0.15} the length of her body is sat warmly beside your own."
 
 menu:
     "This is perfect.":
         pass
 
     "Sorry, let's keep some space.":
+	#todo branch
         pass
 
 e "Haruka just smiles up at you, then closes her eyes and squeezes your arm."
