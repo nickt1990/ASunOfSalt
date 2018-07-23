@@ -1,5 +1,13 @@
 ﻿label day7:
 
+window hide
+hide black
+with fade
+
+e "You wake up abruptly."
+
+play sound "sounds/Knock.mp3"
+
 e "There is a knock on the door."
 
 menu:
@@ -12,6 +20,7 @@ p h "Hello sir!"
 
 menu:
     "Hello?":
+		p h "Good morning!"
         pass
 
     "What's going on?":
@@ -33,6 +42,7 @@ menu:
         pass
 
     "No. I hate Peggy day.":
+		p su "What?!"
         pass
 
 p h "Oh sir! My apologies! It's my favorite holiday!"
@@ -42,6 +52,8 @@ p h "It's celebrates the historic day in 2013 that scientists discovered our Peg
 menu:
     "Still don't know what Peggy is.":
         pass
+	"Okay.":
+		pass
 
 p h "Peggy was the start to everything!"
 
@@ -72,6 +84,7 @@ menu:
         pass
 
     "Oh, {w=0.15}neat.":
+		#todo jump to pastExp
         pass
 
 p s "Oh.{w=0.15}.{w=0.15}. w-well, {w=0.15}Haruka would be able to explain better than me."
@@ -85,6 +98,8 @@ p n "If we hadn't had at least Station 001 built by the time of The Shred, {w=0.
 p h "To me, {w=0.15}Peggy day is the start of a new history for the human race. "
 
 p n "The day we started on our path from earthlings to something more."
+
+label pastExp:
 
 e "Hei walks out into the hallway."
 
@@ -138,13 +153,13 @@ p s "Well, {w=0.15}I mean."
 p s "Could we have a, {w=0.15}uhm.{w=0.15}.{w=0.15}."
 
 menu:
-    "What is it?":
+    "What?":
+		p n "What would you think of a Peggy day Celebration tonight? I'll set everything up on my own, {w=0.15}it will be no hassle sir, {w=0.15}I promise."
         pass
 
     "A celebration?":
+		p h "Yes!"
         pass
-
-p n "What would you think of a Peggy day Celebration tonight? I'll set everything up on my own, {w=0.15}it will be no hassle sir, {w=0.15}I promise."
 
 p n "I can teach everyone more about the history of our greatest holiday, {w=0.15}and it will give everyone a much needed chance to relax a bit. I think it's a great opportunity, {w=0.15}but if you disagree I completely understand."
 
@@ -220,22 +235,21 @@ y n "It's been a shit couple of days, {w=0.15}that sounds nice."
 
 menu:
     "I'm surprised you think so.":
+		y su "Oh?"
+
+		y s "Yeah I guess I've been a bit rough lately, {w=0.15}sorry."
+
+		show r h
+
+		r h "No problem my dude! I totally understand."
+
+		show y n
+
+		y n "Yep."
         pass
 
     "I agree!":
         pass
-
-y su "Oh?"
-
-y s "Yeah I guess I've been a bit rough lately, {w=0.15}sorry."
-
-show r h
-
-r h "No problem my dude! I totally understand."
-
-show y n
-
-y n "Yep."
 
 show r h
 
@@ -327,16 +341,17 @@ y n "Oh hey Cap, {w=0.15}what's up?"
 
 menu:
     "Just checking on progress.":
+		y h "Always on top of things, {w=0.15}nice."
         pass
 
     "Just saying hi.":
+		y h "Hi."
+		y s "But, well."
         pass
 
-y h "Always on top of things, {w=0.15}nice."
+y n "I've got tons to do before tonight if I want some free time."
 
-y n "I got tons to do before tonight if I want some free time though."
-
-y s "Gotta focus, {w=0.15}sorry Cap."
+y s "So,{w=0.15} gotta focus, {w=0.15}sorry Cap."
 
 hide y
 
@@ -370,7 +385,7 @@ menu:
     "Oh yeah.":
         pass
 
-r h "Damn right. I'm gonna beat you this time."
+r h "Damn right. {w=0.15}I'm gonna beat you this time."
 
 r m "Now GET OUT."
 
@@ -384,7 +399,10 @@ e "Seems like everyone is busy."
 
 e "Check your computer in order to work on your own project."
 
+#todo computer
 e "Check computer, {w=0.15}time skips."
+
+play sound "sounds/Knock.mp3"
 
 e "There's a knock on your door."
 
@@ -410,6 +428,7 @@ menu:
         pass
 
     "Yeah, {w=0.15}maybe she'd be fine without us.":
+		y s "Nah, c'mon, we have to go."
         pass
 
 r h "I know, {w=0.15}I know."
@@ -420,11 +439,11 @@ y s "Sleeping would probably be more exciting."
 
 show r n
 
-r n "Let's just throw her a bone, {w=0.15}c'mon."
-
-e "Haruka opens the door to the kitchen."
+r n "You were right though, let's just throw her a bone."
 
 play sound "sounds/DoorOpen2.mp3"
+
+e "Haruka opens the door to the kitchen."
 
 call kitchen from _call_kitchen_10
 
@@ -435,7 +454,7 @@ y su "What the-"
 show p h:
     linear 0 xalign 0.1 yalign 1.0
 
-p h "Hey! G-guys! "
+p h "Hey!{w=0.15} G-{w=0.15}guys! "
 
 p su "*hic*"
 
@@ -451,31 +470,31 @@ show p su
 
 p su "What?! "
 
-p m "NOT ME."
+p m "{b}NOT ME.{/b}"
 
 e "Nema leans in close."
 
-p h "I might be a little drunk."
+p h "I might{w=0.45} be a little {w=0.25}drunk."
 
 p m "Shhh."
 
 show y h
 
-y h "I take back everything I said. This party's gonna be amazing."
+y h "I take back everything I said.{w=0.15} This party's gonna be amazing."
 
 show p h
 
-p h "You're amazing!"
+p h "You're{w=0.15} am{w=0.1}azing!"
 
-p n "And so pretty, {w=0.15}and smart."
+p n "And{w=0.15} so pretty, {w=0.15}and sm{w=0.15}art."
 
 p n "You're so good at the.{w=0.15}.{w=0.15}. the leading."
 
-p h "Even better than the captian."
+p h "Even better{w=0.15} than{w=0.15} the captain."
 
 p su "But"
 
-p m "DON'T"
+p m "{b}DON'T{/b}"
 
 p n "tell"
 
@@ -487,6 +506,7 @@ y h "Hahaha, {w=0.15}you gonna take that Cap?"
 
 menu:
     "Nema show some respect.":
+	
         pass
 
     "Somehow, {w=0.15}I'm not insulted.":
@@ -536,7 +556,7 @@ p n "Now."
 
 e "She put her hand on his."
 
-p m "Party."
+p m "{size=-4}{i}Party.{/i}{/size}"
 
 show r su
 
@@ -559,11 +579,11 @@ menu:
 
 show p n
 
-p n "I am OK sir."
+p n "I am O-{w=0.25}oaky{w=0.15}.{w=0.15}.{w=0.15}.{w=0.25} sir."
 
 p n "Please."
 
-p n "Do not worry."
+p n "Do no{w=0.15}t worry."
 
 show y h
 
@@ -577,7 +597,7 @@ show p n
 
 p n "How about a board game?"
 
-p h "Please, {w=0.15}let's play a board game."
+p h "Please, {w=0.15}let's play a{w=0.15} board game."
 
 show y h
 
@@ -589,11 +609,11 @@ r su "No, {w=0.15}we're missing a piece on our side?"
 
 show p su
 
-p su "What? No, {w=0.15}I had them all out."
+p su "What? No, {w=0.15}I had them all{w=0.15} out."
 
-p n "Did you move it?"
+p n "Did you move{w=0.15} it?"
 
-p m "You snake."
+p m "You {i}snake.{/i}"
 
 show r h
 
@@ -603,7 +623,7 @@ show p n
 
 p n "I like that."
 
-p h "Hei you're always honest and I. Like. That."
+p h "Hei you are{w=0.15} always honest and I.{w=0.35} Like.{w=0.35} That."
 
 e "Nema puts her arm around Hei."
 
@@ -613,7 +633,7 @@ r su "Oh, {w=0.15}hi there."
 
 show p h
 
-p h "Hi. Heh. Heh."
+p h "Hi.{w=0.15} Heh.{w=0.25} Heh."
 
 show y h
 
@@ -633,17 +653,17 @@ show p n
 
 p n "Normally? "
 
-p s "Well this is not normally."
+p s "Well this is not{w=0.15} normally."
 
 p s "Normally I'd be at home, {w=0.15}with my family."
 
 show y n
 
-y n "Right. And?"
+y n "Right.{w=0.15} And?"
 
 show p n
 
-p n "And we would play games."
+p n "And{w=0.15} we wou{w=0.15}ld play {w=0.15}games."
 
 show y m
 
@@ -651,11 +671,11 @@ y m "Like?"
 
 show p h
 
-p h "My brothers always had something new to play."
+p h "My brothers{w=0.15}*hic*{w=0.15} always had some{w=0.15}thing new to play."
 
-p n "They were the fun ones."
+p n "They were{w=0.15} the fun ones."
 
-p s "I am not the fun one."
+p s "I am{w=0.15} not the fun one."
 
 show y m
 
@@ -683,11 +703,11 @@ r m "That's not fair, {w=0.15}she's obviously not used to doing this sort of thi
 
 show y m
 
-y m "Yes, {w=0.15}obviously. That's what I was saying."
+y m "Yes, {w=0.15}obviously.{w=0.15} That's what I was saying."
 
 show p m
 
-p m "That's what she was saying."
+p m "That's what she was {i}saying.{/i}"
 
 show r s
 
@@ -695,11 +715,11 @@ r s "I'm on your side, {w=0.15}Nema."
 
 show p h
 
-p h "Awww. "
+p h "Awww."
 
 e "Nema smiles and gives Hei a hug."
 
-p h "What a sweetie-pie."
+p h "What{w=0.15} a sweetie-pie."
 
 show r su
 
@@ -719,7 +739,7 @@ y m "Hell no."
 
 show p h
 
-p h "Haruka I'll sit by you!"
+p h "Haruka I'll{w=0.15} sit by{w=0.15} you!"
 
 e "Nema let out a little wink."
 
@@ -729,7 +749,7 @@ r s "Cap I don't think I feel right sitting here right now."
 
 show y m
 
-y m "Hell no to that too. I'm not sitting by you."
+y m "Hell no to that too.{w=0.15} I'm not sitting by you."
 
 show r m
 
@@ -737,7 +757,7 @@ r m "Fine, {w=0.15}you know, {w=0.15}I don't even know why I care."
 
 show p su
 
-p su "Woah, {w=0.15}grumps."
+p su "Woah, {w=0.15}{b}grumps.{/b}"
 
 show y m
 
@@ -753,14 +773,13 @@ y n "Because I don't really like ya?"
 
 menu:
     "Haruka be nice.":
+		y h "I'm being nice. Nobody likes to be led on."
         pass
 
     ".{w=0.15}.{w=0.15}.":
         pass
 
-y h "I'm being nice. Nobody likes to be led on."
-
-y n "He has a right ta know how I feel."
+y n "He has a right t'know how I feel."
 
 show r m
 
@@ -772,7 +791,7 @@ p m "Yeah, {w=0.15}ruude!"
 
 show r m
 
-r m "I'm done. Nema's cuter anyways."
+r m "I'm done. {w=0.15}Nema's cuter anyways."
 
 menu:
     "Is this a conversation to have while we're all here?":
@@ -783,13 +802,13 @@ menu:
 
 show y h
 
-y h "HAH. Alright."
+y h "HAH.{w=0.15} Alright."
 
 show p h
 
 p h "Hei!"
 
-p su "You.{w=0.15}.{w=0.15}.{w=0.25} love me."
+p su "You.{w=0.15}.{w=0.15}.{w=0.25} {i}love{/i} me."
 
 show r s
 
@@ -799,7 +818,7 @@ r n "I like you Nema, {w=0.15}how about that."
 
 show p s
 
-p s "You love me. "
+p s "{size=-6}You love me.{/size}"
 
 e "Nema stuck her tongue out at Haruka."
 
@@ -809,7 +828,7 @@ y h "Alright happy couple, {w=0.15}what are we doing?"
 
 show p m
 
-p m "We're going to sit here and argue."
+p m "We're going to{w=0.15} sit here and argue."
 
 show y n
 
@@ -821,9 +840,9 @@ r n "What did you and your brothers do?"
 
 show p h
 
-p h "My brothers would set up a board game, {w=0.15}or Mahjong in the living room, {w=0.15}and we'd all sit down and just play and talk and eat and laugh."
+p h "My brothers{w=0.15} would set up a bo{w=0.15}ard game, {w=0.15}or Mahjong in the living room, {w=0.15}and we'd all sit down and just play and talk and eat and laugh."
 
-p n "That's what we will do."
+p n "That's{w=0.15} what we will{w=0.15} do."
 
 show y n
 
@@ -831,7 +850,7 @@ y n "I'd play some Mahjong, {w=0.15}do you have a set?"
 
 show p n
 
-p n "In my room."
+p n "In{w=0.15} my room."
 
 show y h
 
@@ -861,7 +880,7 @@ y s "I think I'm going to bed."
 
 show r su
 
-r su "Wait. Why can't we use it Nema?"
+r su "Wait. {w=0.15}Why can't we use it Nema?"
 
 show p h
 
@@ -875,7 +894,7 @@ r h "Ahaha, {w=0.15}easy."
 
 show p n
 
-p n "Because it's my brothers set and I never asked if I could use it."
+p n "Because {w=0.15}it's my brothers set and I never asked{w=0.15} if I could{w=0.15} use it."
 
 show r n
 
@@ -883,7 +902,7 @@ r n "Then why do you have it?"
 
 show p n
 
-p n "I got it when they died."
+p n "I got it when they{w=0.15} died."
 
 show y n
 
@@ -891,7 +910,7 @@ y n "So you don't really have to ask to use it then, {w=0.15}do you?"
 
 show p s
 
-p s "It's not for playing.{w=0.25} I haven't asked."
+p s "It's not for playing.{w=0.25} I haven't{w=0.15} asked."
 
 show y m
 
@@ -910,7 +929,7 @@ r n "Yeah, {w=0.15}what if we try to talk to them?"
 
 show p su
 
-p su "B-but, {w=0.15}I.{w=0.15}.{w=0.15}. we can't anymore."
+p su "B-but, {w=0.15}I.{w=0.15}.{w=0.15}. we can't{w=0.15} anymore."
 
 show y m
 
@@ -922,7 +941,7 @@ r n "Yes.{w=0.25} Do you want to try Nema."
 
 show p m
 
-p m "Wha-{w=0.15}.{w=0.15}.{w=0.15}. N-no!"
+p m "Wha-{w=0.15}.{w=0.15}.{w=0.15}. N-{w=0.15}no!"
 
 show r su
 
@@ -939,7 +958,7 @@ menu:
     "Alright.":
         pass
 
-p s "They'll get mad. N-no."
+p s "They'll get{w=0.15} mad.{w=0.15} N-{w=0.15}no."
 
 e "Nema starts to tear up."
 
@@ -974,9 +993,9 @@ r n "Right. {w=0.25}We won't do that then."
 
 show p s
 
-p s "They hate me, {w=0.15}no."
+p s "They hate{w=0.15} me, {w=0.15}no."
 
-p s "I don't want to play anymore."
+p s "I don't want to{w=0.15} play anymore."
 
 show y m
 
@@ -1028,15 +1047,20 @@ e "You pass by Haruka in the hall."
 
 show y m
 
-y m "Geesh."
+y m "{i}Geesh.{/i}"
 
 play sound "sounds/DoorClose2.mp3"
 
 hide y
 
-e "Her door closes and you head into your room."
+window hide
+show black
+with fade
+
+e "Her door closes and you head into your room and go to bed."
+
+e ".{w=0.15}.{w=0.15}."
 
 call blueRoom from _call_blueRoom_15
-
 
 return

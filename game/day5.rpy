@@ -12,9 +12,6 @@ menu:
     "What happened?":
         pass
 
-    "Is everyone alright?":
-        pass
-
 y s "We clipped a space rock at high speed."
 
 y n "Luckily shields were up, {w=0.15}so no damage to the ship as far as I know.{w=0.25}"
@@ -22,7 +19,7 @@ y n "Luckily shields were up, {w=0.15}so no damage to the ship as far as I know.
 y n "We managed to lose track of whatever else was there too."
 
 menu:
-    "And what about everyone else?":
+    "Is everyone alright?":
         pass
 
 y h "Yep, {w=0.15}everyone's OK."
@@ -31,7 +28,7 @@ y s "You got the worst of it, {w=0.15}lucky you."
 
 menu:
     "Are we still with the asteroid?":
-        p su "What do you mean Sir?"
+        p su "What do you mean sir?"
         
         p s "Wait.{w=0.15}.{w=0.15}."
         pass
@@ -87,24 +84,23 @@ e "You catch a light fragrance, {w=0.15}it's faint, {w=0.15}but it almost smells
 
 menu:
     "Nema, {w=0.15}you smell nice.":
+		p su "T-thank you, {w=0.15}sir.{w=0.15}.{w=0.15}."
+
+		p n ".{w=0.15}.{w=0.15}."
+
+		p su "Oh! Right.{w=0.15}.{w=0.15}."
         pass
 
     ".{w=0.15}.{w=0.15}.":
         pass
 
-p su "T-thank you, {w=0.15}sir.{w=0.15}.{w=0.15}."
-
-p n ".{w=0.15}.{w=0.15}."
-
-p su "Oh! Right.{w=0.15}.{w=0.15}."
-
-p n "O-one moment sir, {w=0.15}please just hold still."
+p n "O-one moment sir, {w=0.15}please hold still."
 
 e "Soft skin touches your face."
 
 e "Fingertips."
 
-e "They're gentle and quick. "
+e "They're gentle and quick."
 
 show r h
 
@@ -250,6 +246,9 @@ r s "Ouch, {w=0.15}rude."
 
 play sound "sounds/DoorOpen2.mp3"
 
+hide r
+hide y
+
 e "You hear Hei and Haruka walk out the door."
 
 play sound "sounds/DoorClose2.mp3"
@@ -268,18 +267,19 @@ p s "I p-put your life in danger. I'm weak, {w=0.15}I panicked."
 
 menu:
     "You did the best you could.":
+		p m "But my best isn't good enough!"
         pass
 
     "I know you're capable of better, {w=0.15}Nema.":
+		p s "I know sir, I apologize.{w=0.15}.{w=0.15}."
+		p s "The more time that passes the more I realize I'm just not meant for this life.
         pass
-
-p m "But my best isn't good enough!"
 
 p s "Haruka was amazing. She took charge, {w=0.15}she kept calm."
 
 p n "She can be a little abrupt sometimes, {w=0.15}but she is a leader."
 
-p s "I'm not a leader captain. "
+p s "I'm not a leader,{w=0.15} Captain. "
 
 p s "I have difficulty even standing up straight when I'm startled."
 
@@ -307,12 +307,13 @@ p s ".{w=0.15}.{w=0.15}."
 
 menu:
     "You can be.":
+		p su "Me? {w=0.15}I can be?"
         pass
 
     "Not with that attitude, {w=0.15}no.":
+		p s "My attitude?"
+		p s "Even still.{w=0.15}.{w=0.15}."
         pass
-
-p su "Me? I can be?"
 
 p s "I mean no disrespect sir, {w=0.15}but how could I ever be that?"
 
@@ -340,7 +341,7 @@ p s "I'm sorry for wasting your time with my self-pity sir. "
 p n "You really should be getting some rest, {w=0.15}after all."
 
 menu:
-    "OK.":
+    "Okay.":
         pass
 
     "I don't mind.":
@@ -360,8 +361,11 @@ call blueRoom from _call_blueRoom_6
 
 e "You hear Nema sit down beside you."
 
+hide p
+
 e "A moment passes, {w=0.15}and you drift off to sleep."
 
+#todo demon
 
 d "Rip."
 
@@ -385,12 +389,5 @@ d "A hand to grasp your soul."
 
 
 d "All of nothing."
-
-hide r
-
-hide y
-
-hide p
-
 
 return

@@ -123,9 +123,10 @@ menu:
         pass
 
     "Forgot your password?":
+		y s "That's not it."
         pass
 
-y n "Cap, {w=0.15}my station isn't reacting.{w=0.15}.{w=0.15}."
+y s "Cap, {w=0.15}my station isn't reacting.{w=0.15}.{w=0.15}."
 
 y n "Seems like it's in low power mode.{w=0.15}.{w=0.15}."
 
@@ -147,7 +148,7 @@ e "Haruka walks over to the wall and removes a panel."
 
 y n "I'm going to divert a little of our emergency energy to my computer."
 
-e "She flips a small switch and her monitor turns on."
+e "She flips a few small switches and her monitor turns on."
 
 y h "There we go."
 
@@ -199,16 +200,13 @@ y n "There's a system in place for this."
 
 menu:
     "Great!":
+		y h "It is great!"
+		show p n
+		p n "What's the system Haruka?"
         pass
 
     "What system?":
         pass
-
-y h "It is great!"
-
-show p n
-
-p n "What's the system Haruka?"
 
 show y n
 
@@ -281,7 +279,7 @@ e "Haruka pats you on the back."
 
 show rz m
 
-rz m "We'll have TONS of fun too."
+rz m "We'll have {b}TONS{/b} of fun too."
 
 rz h "Right Nema?"
 
@@ -404,6 +402,8 @@ e "Haruka enters the kitchen as you continue on into your room."
 
 e "You lay on your bed to wait for Haruka and slowly drift off to sleep."
 
+window hide
 show black
+with fade
 
 return

@@ -1,12 +1,28 @@
 ﻿label day9:
 
-e "You've spent the morning monitoring system reports on your computer in silence."
+window hide
+hide black
+with fade
+
+play music "music/MorningAlarm.mp3" fadein 2.0
+
+e "You wake up to your alarm."
+
+e "After getting up and about, you notice you have mail notifications on your computer."
+
+#todo computer
+
+stop music fadeout 2.0
+
+play music "music/Space.mp3" fadein 2.0
+
+play sound "sounds/Knock.mp3"
 
 e "Suddenly, {w=0.15}there's a loud knocking on your door."
 
 show r m
 
-r m "Come out here COWARD."
+r m "Come out here {b}COWARD.{/b}"
 
 menu:
     "What?":
@@ -37,7 +53,7 @@ menu:
     "Let's do it.":
         pass
 
-    "What's your problem?":
+    "What?":
         pass
 
 r m "Soft and Moist Vegetables:{w=0.15} 2 Turbo Vegetable Edition{w=0.15} {b}R{w=0.15}E{w=0.15}M{w=0.15}A{w=0.15}T{w=0.15}C{w=0.15}H{/b}."
@@ -87,6 +103,7 @@ y n "Hey Cap."
 
 menu:
     "Morning.":
+		y s "So,{w=0.15} I just wanted to say.{w=0.15}.{w=0.15}."
         pass
 
     "Morning grumpy.":
@@ -115,12 +132,13 @@ y s "I have some things to say."
 
 menu:
     "Of course.":
+		y n "Thank you."
         pass
 
     "Somebody's getting a little dramatic.":
+		y m "Hey,{w=0.15} c'mon,{w=0.15} I'm trying here."
+		y s "I'll see ya later Cap."
         pass
-
-y n "Thank you."
 
 hide y
 
@@ -139,7 +157,7 @@ r h "Shakin' in your boots?"
 
 r n "Look at the baby."
 
-r h "He's terrified."
+r h "He's {i}terrified.{/i}"
     
 show r h:
     linear 0.5 xalign 0.5 yalign 1.0    
@@ -209,6 +227,8 @@ menu:
 r h "First!"
 
 r n "Let us reminisce."
+
+#todo music dramatic
 
 r s "A week has passed."
 
@@ -378,6 +398,8 @@ e "Nema smiles earnestly."
 
 p h "Also, {w=0.15}go Captain!"
 
+show r s
+
 e "Hei frowns."
 
 show r n
@@ -385,6 +407,8 @@ show r n
 r n "Alright,{w=0.1} let's do this."
 
 r m "{b}ENGAGE.{/b}"
+
+#todo music game
 
 e "Cheesy music begins to play."
 
@@ -394,7 +418,7 @@ p h "Woo!"
 
 show r h
 
-r h "Ha! You picked Tomato?"
+r h "Ha!{w=0.15} You picked Tomato?"
 
 r m "Foolish you,{w=0.1} I KNEW you would pick tomato."
 
@@ -404,7 +428,7 @@ r h "You were all too easy to read I'm afraid!"
 
 show p su
 
-p su "Woah!"
+p su "{i}Woah!{/i}"
 
 show r n
 
@@ -412,7 +436,7 @@ show p h
 
 r n "I'd been practicing with the Veggie that's able to beat Tomato with no problem.{w=0.15}.{w=0.15}."
 
-r h "Cucumber!"
+r h "{i}Cucumber!{/i}"
 
 p su "Of course!"
 
@@ -451,13 +475,17 @@ r h "In history!"
 
 r m "Fight!"
 
+window hide
 show black
+with fade
 
 e ".{w=0.2}.{w=0.2}."
 
 e ".{w=0.2}.{w=0.2}."
 
-hide black #todo
+window hide
+hide black
+with fade
 
 r ".{w=0.3}.{w=0.3}."
 
@@ -615,14 +643,14 @@ p su "I would.{w=0.15}.{w=0.15}.?"
 
 menu:
     "You want her to keep you company?":
+	r h "Yes!"
         pass
 
     "You want her to do all the work?":
+		r m "Absolutely not!"
+		
+		r h "Help would be nice though."
         pass
-
-show r h
-
-r h "Yes! "
 
 show p s
 
@@ -683,5 +711,7 @@ call blueRoom from _call_blueRoom_8
 e "There's a notification on your computer."
 
 e "You check your email."
+
+# todo computer
 
 return

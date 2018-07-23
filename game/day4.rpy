@@ -1,12 +1,18 @@
 ﻿label day4:
 
-e "TODO: messages"
+play music "music/MorningAlarm.mp3" fadein 2.0
 
 window hide
 hide black
 with fade
 
-e "The day starts with the typical alarm. You read your messages."
+e "The day starts with the typical alarm.{w=0.15} You sit down at your computer."
+
+#todo computer
+
+stop music fadeout 2.0
+
+play music "music/Space.mp3" fadein 2.0
 
 call hall from _call_hall_25
 

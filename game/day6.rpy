@@ -4,6 +4,7 @@ menu:
     "Open your eyes.":
         pass
 
+window hide
 hide black
 with fade
 
@@ -28,16 +29,17 @@ p s "Huh.{w=0.15}.{w=0.15}."
 
 p n "Captain?"
 
-p su "Sir! Can you see?!"
+p su "Sir!{w=0.15} Can you see?!"
 
 menu:
     "Yes.":
+		p h "Oh, {w=0.15}I'm so happy! Thank goodness. "
         pass
 
     "No. I'm blind!":
+		p su "Oh, uhm.{w=0.15}.{w=0.15}."
+		p s "I-{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} is that some sort of a joke,{w=0.15} sir?"
         pass
-
-p h "Oh, {w=0.15}I'm so happy! Thank goodness. "
 
 p n "How do you feel?"
 
@@ -54,12 +56,11 @@ p s "So then, {w=0.15}there is something I need to bring up to you, {w=0.15}sir.
 
 menu:
     "Wow, {w=0.15}right to it.":
+		p s "I apologize for pushing this on you so s-soon after you getting back to health but.{w=0.15}.{w=0.15}."
         pass
 
     "Go on.":
         pass
-
-p s "I apologize for pushing this on you so s-soon after you getting back to health but.{w=0.15}.{w=0.15}."
 
 p n "Ever since the moment you started to rest yesterday, {w=0.15}Haruka and Hei have been arguing."
 
@@ -70,6 +71,7 @@ menu:
         pass
 
     "I'll talk to them.":
+		p h "Of course, {w=0.15} thank you."
         pass
 
 p n "Hei wants to make modifications to the ship."
@@ -103,25 +105,17 @@ e "Haruka smiles."
 
 menu:
     "Good to see you!":
+		y h "Awww Cap.{w=0.15} You mushball."
+
+		y n "But hey, {w=0.15}I've got a bit of an issue with.{w=0.15}.{w=0.15}. the other one."
+		menu:
+			"Hei.":
+				y m "Yes."
+				pass
         pass
 
     "What's this about you arguing with Hei?":
         pass
-
-y h "Awww Cap. You mushball."
-
-y n "But hey, {w=0.15}I've got a bit of an issue with.{w=0.15}.{w=0.15}. the other one."
-
-menu:
-    "Hei?":
-        pass
-
-    "Nema?":
-        pass
-
-y m "Yes."
-
-y n "Hei."
 
 y m "He's trying to dick up everything I've built with this ship."
 
@@ -240,6 +234,7 @@ menu:
         pass
 
     "I'm sorry, {w=0.15}but I agree with Haruka.":
+		#todo branch
         pass
 
 y n "Unfair? Cap, {w=0.15}sorry if I'm a bit riled up, {w=0.15}but I wanna survive and I don't trust Hei to come through in a pinch for shit."
@@ -261,6 +256,7 @@ menu:
         pass
 
     "Haruka, {w=0.15}I think we need a little extra insurance. You said yourself, {w=0.15}we're heading into the unknown.":
+		#todo branch
         pass
 
 show y h
@@ -317,21 +313,23 @@ define haru6 = True
 define nema6 = True
     
 label day6Menu:
+
+call hall
     
-menu:
-    "Hei's Room" if hei6 == True:
+menu:#todo respond to earlier choice
+    "Hei's room" if hei6 == True:
         call redRoom from _call_redRoom_3
         $ hei6 = False
         jump day6Hei
         pass
 
-    "Haruka's Room" if haru6 == True:
+    "Haruka's room" if haru6 == True:
         call yellowRoom from _call_yellowRoom_2
         $ haru6 = False
         jump day6Haruka
         pass
         
-    "Nema's Room" if nema6 == True:
+    "Nema's room" if nema6 == True:
         call pinkRoom from _call_pinkRoom_1
         $ nema6 = False
         jump day6Nema
@@ -351,7 +349,21 @@ jump day6Menu#day6Hei
 
 label day6Haruka:
 
-e "Haruka talks briefly, {w=0.15}but is busy on her computer."
+e "You walk into Haruka's room."
+
+y h "Heya Cap."
+
+y n "Whatsup?"
+
+menu:
+	"Checking in":
+		pass
+
+y h "Ah, gotcha."
+
+y n "Well you know that I love chatting with ya, but I've got a lot to get through."
+
+y h "See ya around, 'kay?"
 
 jump day6Menu#day6Haruak
 
@@ -384,27 +396,33 @@ p n "How do you do it?"
 
 menu:
     "You just follow your gut.":
+		p s "Follow your gut.{w=0.15}.{w=0.15}."
+
+		p n "I don't even know what that means sir."
         pass
 
     "Logic. You think it through.":
+		p s "But sometimes that's not an option."
+		
+		p s "Sometimes it really is more random than anything."
         pass
 
-p s "Follow your gut.{w=0.15}.{w=0.15}."
 
-p n "I don't even know what that means sir."
 
 p n "What do you do when your decision gets people killed?"
 
-p s "Or when you make the wrong choice?"
+p n "Even if it's right?"
+
+p s "Or when you make the wrong choice all together?"
 
 menu:
     "Do your best to make things right.":
+		p n "I believe I'd want to do my best to make things right, {w=0.15}but the fact would remain that I decided to take responsibility when I obviously wasn't ready. "
         pass
 
     "Just deal with it.":
+		p n "Well of course, but.{w=0.15}.{w=0.15}."
         pass
-
-p n "I believe I'd want to do my best to make things right, {w=0.15}but the fact would remain that I decided to take responsibility when I obviously wasn't ready. "
 
 p n "It's hard to imagine that wouldn't end in a snowball effect."
 
@@ -417,19 +435,21 @@ menu:
         pass
 
     "Yes, {w=0.15}I guess it does.":
+		#todo branch
         pass
 
 p n "I can improve in other ways to compliment the leaders. Not everybody has to be a leader."
 
 p s "Maybe.{w=0.15}.{w=0.15}."
 
-p n "I'm content just being support. I want to see us succeed."
+p n "I'm content just being support.{w=0.15} I want to see us succeed."
 
 menu:
     "Don't limit yourself. You can succeed on your own too.":
         pass
 
     "There needs to be a great crew behind every leader, {w=0.15}that's true.":
+		#todo branch
         pass
 
 p h "No, {w=0.15}it's not limiting, {w=0.15}it's focusing."
@@ -448,7 +468,10 @@ label preDinnerDay6:
 
 menu:
     "Check email":
+		#todo computer
         pass
+
+play sound "sounds/Knock.mp3"
 
 e "After checking email you hear a knock on the door."
 
@@ -495,14 +518,15 @@ r m "I'm just a man for god's sake."
 
 menu:
     "Keep trying?":
+		r n "Keep trying?"
+		r s "But like.{w=0.15}.{w=0.15}. "
         pass
 
     "Maybe it's not meant to be.":
+		r s "That's what I've been thinking."
         pass
 
-r n "Keep trying?"
-
-r s "But like.{w=0.15}.{w=0.15}. Why bother?"
+r s "Why bother?"
 
 r s "So Haruka can make my life miserable?"
 
@@ -536,7 +560,11 @@ call blueRoom from _call_blueRoom_11
 
 e "You lay down on your bed and slowly fall asleep."
 
-e "The screen fades to black."
+window hide
+show black
+with fade
+
+e ".{w=0.15}.{w=0.15}."
 
 #TODO DAY 6 NIGHT SCENE
 

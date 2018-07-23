@@ -4,6 +4,10 @@ play sound "sounds/Knock.mp3"
 
 e "There's a knock at your door."
 
+window hide
+hide black
+with fade
+
 menu:
     "Hello?":
         pass
@@ -19,27 +23,30 @@ p s "Captain, {w=0.15}may I speak with you?"
 
 menu:
     "Sure.":
+		p s "Sir I just wanted to apologize for last night."
         pass
 
     "About last night?":
+		p s "Yes.{w=0.15}.{w=0.15}."
         pass
 
-p s "Sir I just wanted to apologize for last night."
 
-p s "Hei told me how I was acting and I.{w=0.15}.{w=0.15}. There's just no excuse sir."
+
+p s "Hei told me how I was acting and I.{w=0.15}.{w=0.15}.{w=0.15} There's just no excuse sir."
 
 p s "I apologize."
 
 menu:
     "No worries.":
+		p s "B-.{w=0.15}.{w=0.15}."
         pass
 
     "Try to not do that again. You know how Haruka gets.":
         pass
 
-p su "B-.{w=0.15}.{w=0.15}.Of course sir."
+p n "Of course sir."
 
-p s "I've made breakfast in the kitchen if you're interested sir. We'll be waiting."
+p s "I've made breakfast in the kitchen if you're interested sir.{w=0.15} We'll be waiting."
 
 hide p
 
@@ -81,7 +88,7 @@ menu:
     "Uh.":
         pass
 
-r n "Well. I think we should do something about that, {w=0.15}don't you?"
+r n "Well.{w=0.15} I think we should do something about that, {w=0.15}don't you?"
 
 show p h
 
@@ -109,7 +116,7 @@ show r h
 
 r h "PANCAKES!"
 
-e "Both laugh"
+e "Both of them laugh."
 
 show y s
 
@@ -119,11 +126,11 @@ y m "Kill me."
 
 show r n
 
-r n "Here you are, {w=0.15}the \"Kill me\" deluxe for the lady."
+r n "Here you are, {w=0.15}the \"kill me\" deluxe for the lady."
 
 show p h
 
-p h "Hehe"
+p h "Hehe."
 
 show r n
 
@@ -162,7 +169,7 @@ p h "That sounds great Haruka, {w=0.15}I can't wait."
 
 show r s
 
-r s "Seriously? That sounds like the worst."
+r s "Seriously?{w=0.15} That sounds like the worst."
 
 show p h
 
@@ -180,7 +187,7 @@ r su "What."
 
 show y m
 
-y m "It's sickening. Just being near you."
+y m "It's sickening.{w=0.15} Just being near you."
 
 y s "Just get on with it already and bang, {w=0.15}we can wait."
 
@@ -214,7 +221,7 @@ y m "Nema.{w=0.15}.{w=0.15}.{w=0.15} what the hell."
 
 show p su
 
-p su "W-what?"
+p su "W-{w=0.15}what?"
 
 show y m
 
@@ -226,7 +233,7 @@ p su "Self re-{w=0.15}.{w=0.15}.{w=0.15}. what?"
 
 show y m
 
-y m "It's great to know you two can't do ANYTHING on your own other than screw this loser."
+y m "It's great to know you two can't do {i}ANYTHING{/i} on your own other than screw this loser."
 
 y m "We're doomed. {w=0.15}This mission was DOA.{w=0.25} What am I even doing trying so hard."
 
@@ -236,11 +243,11 @@ r su "Uh, {w=0.15}what?"
 
 show p su
 
-p su "H-haruka.{w=0.15}.{w=0.15}. it's not a big deal, {w=0.15}we were just having fun."
+p su "H-haruka.{w=0.15}.{w=0.15}.{w=0.15} it's not a big deal, {w=0.15}we were just having fun."
 
 show y su
 
-y su "Having fun? You're sick."
+y su "Having fun?{w=0.15} You're sick."
 
 y m "If you don't value your body nobody else will, {w=0.15}I just- I just can't believe it."
 
@@ -302,28 +309,30 @@ r m "Shit, {w=0.15}what was her problem."
 
 menu:
     "Jealous.":
+		r su "Jealous?"
+		
+		r su "You think so?"
+
+		r n "I am a pretty buff daddy.{w=0.15}.{w=0.15}."
+
+		show p su
+
+		p su "Buff daddy?"
+
+		show r h
+
+		r h "Yeah babe, {w=0.15}it's slang for cool guy."
+
+		show p h
+
+		p h "Buff daddy.{w=0.15}.{w=0.15}."
+
+		e "Nema smiles."
         pass
 
     "Stressed.":
+		r s "Yeah,{w=0.15} I guess she does always seem busy."
         pass
-
-r su "Jealous? You think so?"
-
-r n "I am a pretty buff daddy.{w=0.15}.{w=0.15}."
-
-show p su
-
-p su "Buff daddy?"
-
-show r h
-
-r h "Yeah babe, {w=0.15}it's slang for cool guy."
-
-show p h
-
-p h "Buff daddy.{w=0.15}.{w=0.15}."
-
-e "Nema smiles."
 
 show r s
 
@@ -331,12 +340,12 @@ r s "I should probably go talk to Haruka, {w=0.15}huh Heli-Capter?"
 
 menu:
     "Yes.":
+		r n "Alright, {w=0.15}I'll give it a shot."
         pass
 
     "No.":
+		r h "Going to anyways!"
         pass
-
-r n "Alright, {w=0.15}I'll give it a shot."
 
 r h "Wish me luck!"
 
@@ -354,14 +363,14 @@ p s "I hope.{w=0.15}.{w=0.15}. {w} I hope he sorts things out."
 
 menu:
     "Why?":
+		p n "Why?{w=0.15} I want us all to be happy. "
         pass
 
     "Me too.":
+		p h "Exactly."
         pass
 
-p n "Why? I want us all to be happy. "
-
-p n "This is our life now sir."
+p n "This is our life now."
 
 menu:
     "Don't you like Hei?":
@@ -401,14 +410,13 @@ p n "How could things not work out?"
 
 menu:
     "That seems to be working against them.":
+		p h "For now."
+
+		p n "I believe that will change."
         pass
 
     "I guess.":
         pass
-
-p h "For now."
-
-p n "I believe that will change."
 
 e "Hei enters."
 
@@ -458,12 +466,12 @@ menu:
     "And that didn't work?":
         pass
 
-    "At least you.{w=0.15}.{w=0.15}. tried?":
+    "At least you.{w=0.15}.{w=0.15}.{w=0.15} tried?":
         pass
 
 r h "Weird, {w=0.15}right?"
 
-r n "I'm not totally convinced she heard me but whatever. She'll get over it."
+r n "I'm not totally convinced she heard me,{w=0.15} but whatever.{w=0.15} She'll get over it."
 
 r h "Anyways I'm gonna go play some games until dinner, {w=0.15}you wanna come Nebs?"
 
@@ -601,9 +609,12 @@ menu:
     "I guess I can get some work done now?":
         pass
 
+#todo computer
 e "Go back to computer."
 
 e "Time passes."
+
+play sound "sounds/Knock.mp3"
 
 e "There's a knock on your door."
 
@@ -653,7 +664,7 @@ y n "Everyone open up the MonEn.exe program on your station."
 
 y n "Now look at the red bar. "
 
-y n "That's the missing info. Our sensors aren't perfect and this shows how imperfect."
+y n "That's the missing info.{w=0.15} Our sensors aren't perfect and this shows how imperfect."
 
 y n "Now green bar. "
 
@@ -663,11 +674,11 @@ y n "You want that to be above 2c's. "
 
 y n "That's give or take the missing information, {w=0.15}which could go either way."
 
-y s "So you- Hei."
+y s "So you-{w=0.15} Hei."
 
 y n ".{w=0.15}.{w=0.15}."
 
-y m "HEI."
+y m "{size=+4}HEI.{/size}"
 
 show r su
 
@@ -679,7 +690,7 @@ y m "Are you paying attention?"
 
 show r s
 
-r s "Uh. Yeah."
+r s "Uh.{w=0.25} Yeah."
 
 show y m
 
@@ -707,7 +718,7 @@ y su "What?"
 
 show r n
 
-r n "Actually what do all the bars stand for? There's no words on this screen."
+r n "Actually what do all the bars stand for? {w=0.15}There's no words on this screen."
 
 show y m
 
@@ -771,9 +782,9 @@ y s "Not in this lifetime."
 
 y m "What a goddamn joke this all turned out to be."
 
-y m "I threw EVERYTHING away for this."
+y m "I threw {b}EVERYTHING{/b} away for this."
 
-y m "Fuck this and fuck you."
+y m "Screw this and fuck you."
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -789,7 +800,7 @@ r n "Somebody's in a bad mood lately."
 
 show p m
 
-p m "Hei! You should have paid attention!"
+p m "Hei!{w=0.15} You should have paid attention!"
 
 show r su
 
@@ -822,6 +833,7 @@ menu:
         pass
 
     "Alright.":
+		#todo branch
         pass
 
 show r n
@@ -838,10 +850,7 @@ menu:
     "Goodnight you two.":
         pass
 
-    "\"Snooze\" or.{w=0.15}.{w=0.15}.?":
-        pass
-
-p s "Goodnight Cap."
+p s "Goodnight Captain."
 
 play sound "sounds/DoorClose2.mp3"
 
@@ -863,9 +872,10 @@ play sound "sounds/DoorClose2.mp3"
 
 e "You lay down on your bed."
 
-e ".{w=0.15}.{w=0.15}.{w=0.15}"
-
+window hide
 show black
 with fade
+
+e ".{w=0.15}.{w=0.15}.{w=0.15}"
 
 return

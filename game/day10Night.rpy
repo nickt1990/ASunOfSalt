@@ -6,11 +6,16 @@ yp n ".{w=0.15}.{w=0.15}."
 
 yp m "Wake up."
 
+window hide
+hide black
+with fade
+
 menu:
     "W-what are you wearing?":
         pass
 
     "Cute.":
+		e "Haruka smiles and looks down."
         pass
 
 yp n "My jim-jams."
@@ -99,9 +104,9 @@ e "You can feel her warm skin against your arm."
 
 e "She's making an effort to stay close, but you can feel her trembling."
 
-y h "I guess we're all locked in our rooms for a whole day, huh."
+yz h "I guess we're all locked in our rooms for a whole day, huh."
 
-y n "So I guess we should.{w=0.15}.{w=0.15}."
+yz n "So I guess we should.{w=0.15}.{w=0.15}."
 
 e "She leans toward your face, closes her eyes and pushes her lips out."
 
@@ -116,45 +121,45 @@ menu:
 
 e "The second you get close she jumps back, shocked."
 
-y su "S-sorry!"
+yz su "S-{w=0.15}sorry!"
 
-y s "I'm sorry."
+yz s "I'm sorry."
 
 menu:
     "What is going on with you?":
         pass
 
-y s "Am I that bad at this?"
+yz s "Am I that bad at this?"
 
-y n "I thought a lot about what you said before."
+yz n "I thought a lot about what you said before."
 
-y s "I was jealous of Hei and Nema."
+yz s "I was jealous of Hei and Nema."
 
-y n "I've never taken the time to.{w=0.15}.{w=0.15}. ya'know.{w=0.15}.{w=0.15}. like somebody."
+yz n "I've never taken the time to.{w=0.15}.{w=0.15}. ya'know.{w=0.15}.{w=0.15}. like somebody."
 
-y s "It seemed sort of like it could be nice, I don't know."
+yz s "It seemed sort of like it could be nice, I don't know."
 
-y h "I've thought about it all of course."
+yz h "I've thought about it all of course."
 
-y s "Does that make it sound sad?"
+yz s "Does that make it sound sad?"
 
-y n "Of course I have though."
+yz n "Of course I have though."
 
-y n "Having somebody who you're just connected to."
+yz n "Having somebody who you're just connected to."
 
-y h "Sharing stories, time, life."
+yz h "Sharing stories, time, life."
 
-y n "You know.{w=0.15}.{w=0.15}. and.{w=0.15}.{w=0.15}. sex."
+yz n "You know.{w=0.15}.{w=0.15}. and.{w=0.15}.{w=0.15}. sex."
 
-y n "I always thought sex was more mental than physical."
+yz n "I always thought sex was more mental than physical."
 
-y h "Like the most honest way to tell somebody that you love them."
+yz h "Like the most honest way to tell somebody that you love them."
 
-y s "I'm naive."
+yz s "I'm naive."
 
-y s "Hei and Nema have shit all over that idea."
+yz s "Hei and Nema have shit all over that idea."
 
-y s "I just don't know a thing about anyone or anything but myself and this damn ship."
+yz s "I just don't know a thing about anyone or anything but myself and this damn ship."
 
 menu:
     "That's not true.":
@@ -163,9 +168,9 @@ menu:
     "You've built this all up too much.":
         pass
 
-y su "What?"
+yz su "What?"
 
-y n "What do you mean?"
+yz n "What do you mean?"
 
 menu:
     "Sex and relationships can be what you want.":
@@ -178,21 +183,21 @@ menu:
     "There's nothing to know, follow your instincts.":
         pass
 
-y su "C-cap.{w=0.15}.{w=0.15}."
+yz su "C-cap.{w=0.15}.{w=0.15}."
 
-y s "No.{w=0.15}.{w=0.15}."
+yz s "No.{w=0.15}.{w=0.15}."
 
-y n "PLAYERNAME"
+yz n "PLAYERNAME"
 
-y h "It means a lot to hear that."
+yz h "It means a lot to hear that."
 
-y n "I've never tried to actually talk about this stuff before."
+yz n "I've never tried to actually talk about this stuff before."
 
-y h "I thought I'd mess everything up, or weird you out, or seem like a little kid."
+yz h "I thought I'd mess everything up, or weird you out, or seem like a little kid."
 
-y n "I know I sort of project a certain image.{w=0.15}.{w=0.15}."
+yz n "I know I sort of project a certain image.{w=0.15}.{w=0.15}."
 
-y s "I'm fine talking about it when I'm messing around, but when it feels real like this.{w=0.15}.{w=0.15}."
+yz s "I'm fine talking about it when I'm messing around, but when it feels real like this.{w=0.15}.{w=0.15}."
 
 menu:
     "Don't worry about that.":
@@ -201,9 +206,9 @@ menu:
     "Yeah, this was a surprise.":
         pass
 
-y n ".{w=0.15}.{w=0.15}."
+yz n ".{w=0.15}.{w=0.15}."
 
-y su "Is.{w=0.15}.{w=0.15}. this alright?"
+yz su "Is.{w=0.15}.{w=0.15}. this alright?"
 
 e "She slowly falls on the bed, pulling you down with her."
 
@@ -218,6 +223,10 @@ menu:
 
 e "Haruka just smiles up at you, then closes her eyes and squeezes your arm."
 
-y h "Thank you.{w=0.15}.{w=0.15}."
+window hide
+show black
+with fade
+
+yz h "Thank you.{w=0.15}.{w=0.15}."
 
 return

@@ -1,10 +1,12 @@
 ﻿label day9Night:
     
-call kitchen from _call_kitchen_11
+call hall
 
-e "You meet Haruka in the Kitchen"
+e "Some time has passed, so you head out to the kitchen to meet Haruka."
 
 show y h
+
+call kitchen
 
 y h "Heya Cap."
 
@@ -37,6 +39,7 @@ menu:
         pass
 
     "It's alright.":
+	#todo
         pass
 
 y n "Hei and Nema?"
@@ -76,7 +79,7 @@ menu:
 
 y s "You're not gonna let me off easy?"
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 play music "music/PianoCave.mp3" fadein 2.0
 
@@ -84,7 +87,7 @@ y h "What do you want to drink."
 
 menu:
     "Juice.":
-        y h "Hope you like apple, dork."
+        y h "Hope you like apple,{w=0.15} dork."
         pass
 
     "Something hard.":
@@ -190,6 +193,7 @@ y s "I think I made a mistake."
 
 menu:
     "Yeah, {w=0.15}you were rude as hell.":
+		y s "No."
         pass
 
     "What do you mean?":
@@ -211,12 +215,14 @@ y s "Why even bother exploring when we have dozens of safe sustainable places to
 
 menu:
     "You never know what you'll find out here.":
+		y s "But.{w=0.15}.{w=0.15}."
         pass
 
     "I agree, {w=0.15}why not just be happy with what we have?":
+		y n "Exactly."
         pass
 
-y s "But why strive for something better when what you have is good enough?"
+y s "Why strive for something better when what you have is good enough?"
 
 y s "I'm definitely not happier than the millions of stupid people who wake up every day and piss their lives away."
 
@@ -253,7 +259,7 @@ y s "Well I-"
 
 y s "This should be more spread out up until day 19."
 
-y s "..."
+y s ".{w=0.15}.{w=0.15}."
 
 y n "Yeah."
 
@@ -261,11 +267,13 @@ y n "Maybe I should do what I want."
 
 y n "Maybe I sh-"
 
-e "The ship shakes. An alarm goes off."
+play music "music/Alarm.mp3" fadein 1.0
+
+e "The ship shakes.{w=0.15} An alarm goes off."
 
 y su "W-{w=0.15}what?"
 
-y su "Oh wa-Quick! {w=0.15}To the nav room!"
+y su "Oh wai-{w=0.15}Quick! {w=0.15}To the nav room!"
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -283,6 +291,7 @@ menu:
         pass
 
     "What are you wearing!":
+		rz m "Nevermind that!"
         pass
 
 rz su "The engine went way off balance!"
@@ -370,7 +379,7 @@ show y m
 
 y m "Goddammit why now!"
 
-y n "It looks like it's moving slow. We have time to do something."
+y n "It looks like it's moving slow.{w=0.15} We have time to do something."
 
 y n "I say we compound.{w=0.15} Let's take a chance.{w=0.15} The engine can take it."
 
@@ -409,7 +418,7 @@ menu:
         pass
 
     "We're going to wait it out.":
-        #todo this branch
+        #todo branch
         pass
 
 y s "Alright,{w=0.15} done."
@@ -422,6 +431,7 @@ show rz s
 
 r s "I'm not ready to d-"
 
+window hide
 show black
 with vpunch
 
