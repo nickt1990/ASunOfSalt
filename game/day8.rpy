@@ -162,7 +162,7 @@ p h "That sounds great Haruka, {w=0.15}I can't wait."
 
 show r s
 
-r s "Seriously? That souns like the worst."
+r s "Seriously? That sounds like the worst."
 
 show p h
 
@@ -182,7 +182,7 @@ show y m
 
 y m "It's sickening. Just being near you."
 
-y s "Just get it on with already and bang, {w=0.15}we can wait."
+y s "Just get on with it already and bang, {w=0.15}we can wait."
 
 show p h
 
@@ -344,7 +344,7 @@ show p h
 
 p h "Good luck."
 
-e "The smile warmly at one another."
+e "They smile warmly at one another."
 
 e "Hei leaves"
 
@@ -505,7 +505,7 @@ menu:
     "Hei's Room" if day8Hei:
         $ day8Hei = False        
         call redRoom from _call_redRoom
-        e "In hei's room, {w=0.15}her and Nema are just playing games."
+        e "In Hei's room, {w=0.15}he and Nema are just playing games."
         e "The don't acknowledge you."
         jump day8Free
     "Go back to your room" if day8Haru == False and day8Hei == False:
@@ -613,12 +613,12 @@ call hall from _call_hall_7
 
 show y
 
-y s "Time of the thing, {w=0.15}c'mon."
+y s "Time for the thing, {w=0.15}c'mon."
 
 play sound "sounds/DoorClose2.mp3"
 
 menu:
-    "Yes Ma'am.":
+    "Yes ma'am.":
         pass
         
 call navRoom from _call_navRoom_1
@@ -725,7 +725,7 @@ show y m
 
 y m "No, {w=0.15}I mean it."
 
-y m "The whole fucking damn I worked my ass off my entire life-"
+y m "I worked my ass off my entire life-"
 
 show y s
 

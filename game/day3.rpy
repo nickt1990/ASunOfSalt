@@ -1469,7 +1469,7 @@ show r s
 
 r s "Oh Ok."
 
-r s "I think I'm done with this game. Can you let me out Nema."
+r s "I think I'm done with this game.{w=0.15} Can you let me out Nema."
 
 show p n
 
@@ -1544,5 +1544,21 @@ play sound "sounds/DoorOpen2.mp3"
 hide y
 
 e "Haruka walks out and goes to bed."
+
+call hall
+
+e "You follow shortly after into the hallway.{w=0.15}.{w=0.15}."
+
+call blueRoom
+
+e "And then turn into your room."
+
+window hide
+show black
+with fade
+
+e "You fall onto your bed and drift off to sleep."
+
+e ".{w=0.15}.{w=0.15}.{w=0.15}"
 
 return

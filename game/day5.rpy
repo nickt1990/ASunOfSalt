@@ -17,7 +17,9 @@ menu:
 
 y s "We clipped a space rock at high speed."
 
-y n "Luckily shields were up, {w=0.15}so there was no damage to the ship as far as I know. We managed ta lose track of the ship as well."
+y n "Luckily shields were up, {w=0.15}so no damage to the ship as far as I know.{w=0.25}"
+
+y n "We managed to lose track of whatever else was there too."
 
 menu:
     "And what about everyone else?":
@@ -28,7 +30,7 @@ y h "Yep, {w=0.15}everyone's OK."
 y s "You got the worst of it, {w=0.15}lucky you."
 
 menu:
-    "Are we still behind the asteroid?":
+    "Are we still with the asteroid?":
         p su "What do you mean Sir?"
         
         p s "Wait.{w=0.15}.{w=0.15}."
@@ -106,7 +108,7 @@ e "They're gentle and quick. "
 
 show r h
 
-r h "Cap bap, {w=0.15}if you're blind forever, {w=0.15}I will take your place as the alpha."
+r h "Cap my boy, {w=0.15}if you're blind forever, {w=0.15}I will take your place as the alpha."
 
 show y h
 
@@ -241,7 +243,8 @@ show r h
 
 r h "Don't die on us bro."
 
-e "You sound a slapping sound."
+#todo slap 
+e "You hear a slapping sound."
 
 r s "Ouch, {w=0.15}rude."
 
@@ -296,7 +299,7 @@ p s "I want to get stronger captain, {w=0.15}but what do I do?"
 
 p n "You can't practice traumatic events."
 
-p n "You just have to be the kind of person who can step up and take charge, {w=0.15}who doesn't care if they step on another's toes, {w=0.15}or gets in anothers face."
+p n "You just have to be the kind of person who can step up and take charge, {w=0.15}who doesn't care if they step on another's toes, {w=0.15}or gets in another's face."
 
 p s "I'm not that person and I never will be."
 
@@ -355,7 +358,7 @@ menu:
         
 call blueRoom from _call_blueRoom_6
 
-e "You hear Nema set down beside you."
+e "You hear Nema sit down beside you."
 
 e "A moment passes, {w=0.15}and you drift off to sleep."
 

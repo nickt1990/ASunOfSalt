@@ -8,9 +8,15 @@ menu:
 
 e "There's another loud thud.{w=0.25} Then a few more."
 
+window hide
+hide black
+with fade
+
 menu:
     "Is Nema up to something again?":
         pass
+		
+play sound "sounds/DoorOpen2.mp3"
 
 call hall from _call_hall_2
 
@@ -40,11 +46,10 @@ show p s
 
 p s "N-no Haruka. I'll go check the radar."
 
-e "The three of you walk into the navigation room."
-
 call navRoom from _call_navRoom
-
 play sound "sounds/DoorOpen2.mp3"
+
+e "The three of you walk into the navigation room."
 
 p n "Ok, {w=0.15}let's see.{w=0.15}.{w=0.15}."
 
@@ -77,7 +82,7 @@ show r su
 
 r su "Wha-on top of us?!"
 
-r su "Oh shit, {w=0.15}oh god. Nope."
+r su "Oh no, {w=0.15}oh god."
 
 r su "Captain, {w=0.15}do something!"
 
@@ -143,7 +148,7 @@ show y m
 
 y m "Move."
 
-y su "There's a ship here. It's moving up from below us.{w=0.15}.{w=0.15}. I think the blood is a trap."
+y su "There's something else here. It's moving up from below us.{w=0.15}.{w=0.15}.{w=0.15} I think the blood is a decoy."
 
 y m "Captain, {w=0.15}turn power to the shields, {w=0.15}Nema, {w=0.15}watch the radar for potential collision."
 

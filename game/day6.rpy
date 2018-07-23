@@ -89,7 +89,7 @@ play sound "sounds/DoorOpen2.mp3"
 
 hide p
 
-e "Leave the room. Haruka is on her heater."
+e "You leave the room. {w=0.15}Haruka is on her heater."
 
 show y h
 

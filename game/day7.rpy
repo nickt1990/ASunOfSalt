@@ -510,7 +510,7 @@ show r n
 
 r n "Alright, {w=0.15}alright, {w=0.15}sitting."
 
-e "Hei and Nema sit together.{w=0.15} Haru by you on the outside."
+e "Hei and Nema sit together,{w=0.15} Haru by you on the outside."
 
 show p h
 

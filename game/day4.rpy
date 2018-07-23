@@ -2,13 +2,21 @@
 
 e "TODO: messages"
 
+window hide
+hide black
+with fade
+
 e "The day starts with the typical alarm. You read your messages."
 
 call hall from _call_hall_25
 
+play sound "sounds/DoorOpen2.mp3"
+
 e "Walk into the hallway. All the doors are locked and things seem quiet."
 
 e "You make your way into the kitchen."
+
+play sound "sounds/DoorOpen2.mp3"
 
 call kitchen from _call_kitchen_7
 
@@ -62,7 +70,7 @@ menu:
 
 y h "Oh, {w=0.15}thinking I might jump into Nemas room and hurt her feelings. I'm trying to get through the whole crew by the end of the week."
 
-e "Haruka smirked."
+e "Haruka smirks."
 
 y n "Nah, {w=0.15}I'm going to just do a full system checkup today."
 
@@ -84,6 +92,9 @@ y su "Strange? Like how?"
 show p n
 
 p n "Please, {w=0.15}both of you come take a look."
+
+call navRoom
+play sound "sounds/DoorOpen2.mp3"
 
 e "You walk into the nav room."
 
@@ -115,7 +126,9 @@ y su "A what?"
 
 show p n
 
-p n "Those who chose to break from civilization after the government unification happened. They move between their base and the edges of our zoned-space to pick off travellers. This is a bit far out, {w=0.15}but perhaps we're catching them on their way back to wherever they've set up operations."
+p n "Those who chose to break from civilization after the government unification happened.{w=0.15} They move between their base and the edges of our zoned-space to pick off travelers."
+
+p n "This is a bit far out, {w=0.15}but perhaps we're catching them on their way back to wherever they've set up operations."
 
 show y n
 
@@ -149,7 +162,13 @@ show p s
 
 p s "F-.{w=0.15}.{w=0.15}.fight them?"
 
-p n "Captain, {w=0.15}not to be disrespectful to Haruka, {w=0.15}but I suggest we avoid them entirely. With our few days, {w=0.15}we can take a long course around and avoid any sort of conflict. There's a mass of debris and large objects between us and the ship that will most likely block any sort of scanner that they have from detecting us until we've already passed them. It's the safest option."
+p n "Captain, {w=0.15}not to be disrespectful to Haruka, {w=0.15}but I suggest we avoid them entirely."
+
+p n "With our few days, {w=0.15}we can take a long course around and avoid any sort of conflict."
+
+p n "There's a mass of debris and large objects between us and the ship that will most likely block any sort of scanner that they have from detecting us until we've already passed them."
+
+p n "It's the safest option."
 
 show y m
 
@@ -264,6 +283,8 @@ menu:
 hide p
 
 hide y
+
+play sound "sounds/DoorClose2.mp3"
 
 call hall from _call_hall_26
         
@@ -445,6 +466,8 @@ hide r
 
 call hall from _call_hall_27
 
+play sound "sounds/DoorClose2.mp3"
+
 e "Everyone's working on a task so you sit down at your computer and get some work done."
         
 call blueRoom from _call_blueRoom_12
@@ -453,7 +476,7 @@ window hide
 show black
 with fade
 
-e ".{w=0.25}.{w=0.25}." #todo
+e "{w=0.25}.{w=0.35}.{w=0.45}." #todo
 
 window hide
 hide black
@@ -584,7 +607,7 @@ menu:
     "Uh oh.":
         pass
 
-p n "It most likely is just interference, {w=0.15}but it makes me uneasy. If something is able to effect our view that much, {w=0.15}does that mean our information is unreliable?"
+p n "It most likely is just interference, {w=0.15}but it makes me uneasy. If something is able to affect our view that much, {w=0.15}does that mean our information is unreliable?"
 
 menu:
     "Should extra steps be taken?":
@@ -596,18 +619,18 @@ p n "I still firmly believe all that I said earlier this morning about the situa
 
 p n "I can't agree with hostility as our first action in meeting with this unknown ship."
 
+#todo everything would not go dark in a spaceship
 e "Suddenly everything goes dark."
 
-menu:
-    "What happened?":
-        pass
+p su "W-what's happening?!"
 
-    "Quick, {w=0.15}to the nav room!":
+menu:
+    "What do we do?":
         pass
 
 p su "I-I'm not sure! We-w-uhm.{w=0.15}.{w=0.15}."
 
-p n "What should we do?"
+p n "I don't know!"
 
 menu:
     "Head to nav room. ":
@@ -615,6 +638,8 @@ menu:
 
     "Hide.":#todo end
         pass
+
+play sound "sounds/DoorOpen2.mp3"
 
 call navRoom from _call_navRoom_3
 
@@ -624,27 +649,29 @@ menu:
     "What is it?":
         pass
 
-p n "It looks like.{w=0.15}.{w=0.15}.{w=0.15} a large asteroid just happened to pass between us and the sun. "
+#todo "Passed between us and the sun" Didn't we leave Earth and it's solar system, which includes the sun, behind? I thought we are testing some device for getting around fast. Maybe I misread something along the line.
+p n "It looks like.{w=0.15}.{w=0.15}.{w=0.15}"
+
+p n "we're getting some sort of interference from a large asteroid that's floating alongside us."
+#todo this ties in with end, nema gathering power
+p su "I'm not sure I've ever heard of an asteroid causing this sort of interference, but it seems clear that that's the source."
 
 p n "Everything else is full power, {w=0.15}the autopilot AI is functioning normally, {w=0.15}we should be in no danger."
 
 menu:
     "How did we not notice this asteroid before?":
+		p n "I'm sorry sir, {w=0.15}I actually did notice the asteroid before, {w=0.15}but I failed to think it could have this affect."
+		menu:
+			"That's OK.":
+				pass
+
+			"Please keep an eye out for things like this.":
+				p n "It wont happen again sir."
+				pass
         pass
 
     "Good to hear!":
         pass
-
-p n "I'm sorry sir, {w=0.15}I actually did notice the asteroid before, {w=0.15}but I failed to notice that it would have this effect on us. I apologize."
-
-menu:
-    "That's OK.":
-        pass
-
-    "Please keep an eye out for things like this.":
-        pass
-
-p n "It wont happen again sir."
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -655,13 +682,23 @@ show y n:
 
 y n "What's happenin'?"
 
+y n "The lights went out but everything seems fine."
+
 show p n
 
-p n "It seems to just be just a large asteroid blocking out the sunlight."
+p n "It seems to just be just a large asteroid interfering with our lights."
+
+y su "Just our lights?"
+
+y m "Hmmm.{w=0.15}.{w=0.15}."
+
+y n "I suppose that sort of makes sense?"
+
+y n "The lights are on their own circuits, but still.{w=0.15}.{w=0.15}."
 
 show y n
 
-y n "Oh damn, {w=0.15}well good. I thought we were about to launch into something serious."
+y n "Anyways,{w=0.15} I thought we might be about to launch into something serious,{w=0.15} so I guess I'm thankful."
 
 y n "How long's this gonna go on for?"
 
@@ -675,7 +712,7 @@ y n "Thirteen hours? Wow.{w=0.15}.{w=0.15}."
 
 show p n
 
-p n "Yes, {w=0.15}the asteroid is travelling almost perfectly parallel to us."
+p n "Yes, {w=0.15}the asteroid is traveling almost perfectly parallel to us at a surprisingly close speed to our own."
 
 show y h
 
@@ -712,7 +749,7 @@ p su "R-{w=0.15}really?"
 
 show y n
 
-y n "Course.{w=0.15} I'm stravin'."
+y n "Course.{w=0.15} I'm starvin'."
 
 show p h
 
@@ -741,12 +778,30 @@ menu:
 
 p h "Good night!"
 
-e "Nema smiles as she walks back to her room."
+play sound "sounds/DoorClose2.mp3"
+
+call hall
+e "You follow Nema out into the hallway."
 
 hide p
 
-e "You decide to head to yours as well."
+e "She smiles at you as she walks into her room down the hall."
 
 call blueRoom from _call_blueRoom_13
+play sound "sounds/DoorOpen2.mp3"
+
+e "You make your way to your own room."
+
+play sound "sounds/DoorClose2.mp3"
+
+e "You walk in,{w=0.15} and lay on your bed."
+
+e ".{w=0.15}.{w=0.15}."
+
+e "After some time, you drift off to sleep."
+
+window hide
+show black
+with fade
 
 return
