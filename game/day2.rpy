@@ -57,7 +57,8 @@ menu:
         pass
 
     "What were you listening to?":
-        #todo
+        p h "Nothing important."
+		p n "Just an album I brought with me."
         pass
 
 p n "Anyways, {w=0.15}I was just heading back to my room."
@@ -146,7 +147,7 @@ menu:
                 y h "Yeah, they haven't exactly held up, have they?"
                 pass
 
-        y n "Anyways, {w=0.15}I'm heading back to my room."
+        y n "Anyways, {w=0.15}I'm heading back to my room."#todo test this branch, does it make sense
         pass
 
     "Eat in silence.":
@@ -170,8 +171,13 @@ menu:
 
         y h "Wanna come and watch some anime with me?"
 
+define heiRoomd2 = True
+define haruRoomd2 = True
+define nemaRoomd2 = True
+
 menu:
     "Yes.":
+	    $ haruRoomd2 = False
         y h "Awesome."
 
         y h "Head over now?"
@@ -180,17 +186,19 @@ menu:
 
         e "You turn off the radio, put your bowl in the sink then follow Haruka to her room."
         
-        play music "music/Soace.mp3" fadein 2.0
+        play music "music/Space.mp3" fadein 2.0
 
         call hall
 
         play sound "sounds/DoorOpen2.mp3"
 
         e "Haruka turns and walks out towards her room and you follow closely behind."
+		
+		e "You walk in and she sits on the bed, facing a small screen."
 
         call yellowRoom
 
-        #todo jump to anime, turn off haruka option for later menu
+        jump watchingAnime
 
         pass
 
@@ -209,16 +217,17 @@ menu:
 
         e "You finish your food and walk out into the hallway."
 
-        #todo give menu including Haruka's room
+		call hall
+		
+		jump day2Menu
 
         pass
 
-label harukaAnime:
-#todo HARUKA's room
+label haruD2:
 
 call yellowRoom from _call_yellowRoom_1
 
-show y hR
+show y h
 
 y h "Hey champ, {w=0.15}came to visit me after all?"
 
@@ -233,12 +242,16 @@ menu:
 
 y h "Very impressive, {w=0.15}what a hero."
 
+label watchingAnime:
+
 e "She smiles."
 
 y n "Watch a little with me, {w=0.15}I need a break."
 
 #todo: show music
 e "You sit and look at the screen with her."
+
+e ".{w=0.15}.{w=0.15}."
 
 y n "He's gonna get wrecked."
 
@@ -252,14 +265,16 @@ y h "God.{w=0.15} I love this show."
 
 e "You and Haruka sit quietly, enthralled in the show on the television."
 
+window hide
 show black
 with fade
-#todo: stop music
+stop music fadeout 2
 e ".{w=0.35}.{w=0.35}."
 
+window hide
 hide black
 with fade
-#todo: idle music
+play music "music/Idle.mp3" fadein 2.0
 y n "And that's it. What'd ya think?"
 
 menu:
@@ -305,9 +320,9 @@ menu:
         call hall from _call_hall_18
         pass
 
-hide m2
+jump day2Menu
 
-#todo e "NEMAS ROOM"
+label nemaD2:
 
 call pinkRoom from _call_pinkRoom
 
@@ -402,10 +417,9 @@ e "You walk out her door into the hallway."
 
 hide p
 
-menu:
-    "HEI ROOM todo":
-        call redRoom from _call_redRoom_2
-        pass
+jump day2Menu
+
+label heiD2:
 
 show r h
 
@@ -584,12 +598,30 @@ hide r
 
 e "You make your way back out into the hallway."
 
+label day2Menu:
+
 call hall from _call_hall_20
 
 menu:
-    "NAV ROOM todo":
+    "Nema's Room" if nemaRoomd2:
+	    $ nemaRoomd2 = False
+        call nemaD2
+        pass
+    "Haruka's Room" if haruRoomd2:
+	    $ haruRoomd2 = False
+        call haruD2
+        pass
+    "Hei's Room" if heiRoomd2:
+	    $ heiRoomd2 = False
+        call heiD2
+        pass
+    "Nav Room (Continue Story)":
         call navRoom from _call_navRoom_2
         pass
+
+play sound "sounds/DoorOpen2.mp3"
+
+e "You step into the Nav room."
 
 e "Everyone shows up right behind you."
 
@@ -707,10 +739,11 @@ y m "Idiot."
 e "Hei smiles."
 
 menu:
-    "Say nothing.":#todo
+    "...":
         pass
 
     "Good work Haruka.":
+	    y h "No worries!"
         pass
 
 y n "Cap, {w=0.15}I'd use any time you have today to get comfortable with the ship and your new equipment."
