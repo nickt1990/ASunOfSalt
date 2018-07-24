@@ -1,8 +1,14 @@
 ﻿label day11Night:
 
+play sound "sounds/DoorClose2.mp3"
+
+e "You enter to Nema standing in front of your computer."
+
 show p h
 
 p h "Hello sir."
+
+e "You sit on the side of your bed."
 
 menu:
     "Hey.":
@@ -49,6 +55,8 @@ e ".{w=0.45}.{w=0.45}.{w=0.45}"
 
 p h "So,{w=0.15} sir. I ha-"
 
+play sound "sounds/Knock.mp3"
+
 e "There's a loud knocking on the door."
 
 p su "I would have thought the life support systems in the hallway would be on low-power mode by now."
@@ -57,6 +65,8 @@ menu:
     "Answer the door.":
         pass
 
+play sound "sounds/DoorOpen2.mp3"
+		
 e "Haruka's standing outside of your room with a small package."
 
 show y m
@@ -66,6 +76,8 @@ y m "Here."
 e "She glares at Nema for a moment before handing you the package and walking away."
 
 y m "I'm turning off the life support,{w=0.15} stay in your room."
+
+play sound "sounds/DoorClose2.mp3"
 
 hide y m
 
@@ -87,23 +99,25 @@ p n "She's always first to act in a time of need."
 
 menu:
     "She's great.":
+		p h "I had figured you'd feel that way,{w=0.15} Captain."
         pass
 
     "Not always.":
+		p su "I'm sure you don't mean that."
+		p n "She's always very quick to act."
+		p h "I've noticed you've spent a bit of time together lately."
         pass
-
-p h "I has figured you'd feel that way,{w=0.15} Captain."
 
 p n "You two have become close,{w=0.15} haven't you?"
 
 menu:
     "We have.":
+		p h "I'm glad."
         pass
 
     "Uhm.{w=0.15}.{w=0.15}.{w=0.15}":
+        p h "It's okay, I understand."
         pass
-
-p h "I'm glad."
 
 e "Nema continues to stare forward for a moment in silence."
 
@@ -123,9 +137,11 @@ p h "But,{w=0.15} I like that."
 
 menu:
     "Me too.":
+	    p h "I'm glad I'm not alone in that."
         pass
 
     "You're the only one.":
+	    p n "Well,{w=0.15} for me it would."
         pass
 
 p n "I think it takes a little courage to be a dork."
@@ -137,9 +153,8 @@ menu:
         pass
 
     "Not really.":
+	    p n "Well,{w=0.15} for me it would."
         pass
-
-p n "Well,{w=0.15} for me it would."
 
 p h "I'm not the best at just relaxing and being myself."
 
@@ -173,12 +188,11 @@ p h "And knowing we're locked up in here makes it easier to talk,{w=0.15} for so
 
 menu:
     "I kind of get that.":
+	    p h "Right? I'm glad."
         pass
 
     "Why?":
         pass
-
-p h "Right? I'm glad."
 
 p n "It feels more personal,{w=0.15} more private."
 
@@ -193,7 +207,7 @@ menu:
     "Who knows.":
         pass
 
-p h "Right. "
+p h "Right."
 
 e "Nema smiles at you,{w=0.15} then looks down at the floor."
 
@@ -204,6 +218,9 @@ menu:
         pass
 
     "Are we in danger?":
+	    show p h
+	    e "Nema smiles at you."
+		p n "I don't think so{w=0.15}.{w=0.15}.{w=0.15}."
         pass
 
 p n "Hey.{w=0.15}.{w=0.15}.{w=0.15}"
@@ -217,6 +234,7 @@ menu:
         pass
 
     "Creepy.":
+	    p su "You think so?"
         pass
 
 p n "I always loved when space shrimp would pass by my home."
@@ -231,12 +249,13 @@ p n "It's romantic,{w=0.15} isn't it?"
 
 menu:
     "Yeah.":
+	    p h "Agreed sir."
         pass
 
     "Not really. It's shrimp.":
+	    p h "I suppose you are right, sir."
+		p n "But even still{w=0.15}.{w=0.15}.{w=0.15}."
         pass
-
-p h "Agreed sir."
 
 p n "You know,{w=0.15} when I was young,{w=0.15} I'd play thunderstorm sounds every night."
 
@@ -257,6 +276,7 @@ menu:
         pass
 
     "I'm feeling a little tired.":
+#todo branch end night
         pass
 
 p h "Thank you sir."
@@ -279,12 +299,18 @@ p n "I'd collect candles and CDs and old pictures."
 
 menu:
     "Candles?":
+	    p s "Yeah.{w=0.15}.{w=0.15}.{w=0.15}"
         pass
 
     "Old pictures?":
+        p h "Yeah."
+		p n "Just random pictures."
+		p n "Not even people I knew."
+		p h "I think that made it more interesting though."
+		p h "Like having a tiny piece of somebody's life story."
+		p n "That's how I felt at the time, anyways."
+		p h "I really miss the candles more though, if I'm honest with you."
         pass
-
-p s "Yeah.{w=0.15}.{w=0.15}.{w=0.15}"
 
 p h "Pumpkin scents were always my favorite."
 
@@ -305,6 +331,7 @@ menu:
         pass
 
     "What was the last time?":
+	    jump lastCandle
         pass
 
 p h "Yes sir!"
@@ -318,6 +345,8 @@ p n "To celebrate finding it."
 p h "Second time was when I was accepted into Segment 3 higher studies."
 
 p n "The next few times with my brothers.{w=0.15}.{w=0.15}.{w=0.15}"
+
+label lastCandle:
 
 p h "The last time was the night before I left for this mission."
 
@@ -340,12 +369,12 @@ p n "You'll think I'm strange."
 
 menu:
     "It takes courage to be strange too.":
+	    p h "I suppose so."
         pass
 
     "No I wont.":
+	    p s "Okay{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} Well{w=0.15}.{w=0.15}.{w=0.15}."
         pass
-
-p h "I suppose so."
 
 p n "Well I turned to temperature down as far as I could."
 
@@ -391,10 +420,11 @@ p n "So,{w=0.15} it doesn't make me unique."
 p h "But it makes me feel understood a little bit."
 
 menu:
-    "Can I read one of your poems?":
+    "Can I read one of your poems?":#todo hear one of the poems flag
         pass
 
     "I see.":
+		jump noPoem
         pass
 
 p s "Oh.{w=0.15}.{w=0.15}.{w=0.15}"
@@ -429,6 +459,8 @@ menu:
     "Not really.":
         pass
 
+label noPoem:
+
 e "Nema smiles at you."
 
 p n "So.{w=0.15}.{w=0.15}.{w=0.15}"
@@ -444,6 +476,7 @@ menu:
         pass
 
     "Sure.":
+	    jump inBed
         pass
 
 p su "Oh I'm sorry."
@@ -476,6 +509,8 @@ menu:
 
 p h "That sounds excellent to me,{w=0.15} sir."
 
+label inBed:
+
 e "She smiles,{w=0.15} then starts to lift her shirt over her head."
 
 menu:
@@ -491,13 +526,14 @@ p n "My apologies again sir."
 
 p h "I normally sleep in my underwear because I have a hard time getting comfortable in clothes."
 
-p n "But I'd be ok staying dressed if you'd like."
+p n "But I'd be okay staying dressed if you'd like."
 
 menu:
     "No,{w=0.15} it's no trouble. ":
         pass
 
     "If you could,{w=0.15} please.":
+#todo keep clothes on
         pass
 
 p h "Are you sure sir?"
@@ -515,6 +551,9 @@ e "She continues to pull her shirt up over her head and off her body."
 
 e "Once her shirt's removed,{w=0.15} she pulls down her skirt and steps over it."
 
+hide p n
+show pz n
+
 e "She looks you in the eyes and smiles an innocent smile,{w=0.15} then slides into the bed."
 
 menu:
@@ -525,11 +564,11 @@ e "You lay in the bed next to her and pull up the blankets."
 
 e "She sighs,{w=0.15} then pulls her body against yours."
 
-p s "I'm sorry for talking so much tonight Captain."
+pz s "I'm sorry for talking so much tonight Captain."
 
-p n ".{w=0.15}.{w=0.15}.{w=0.15}"
+pz n ".{w=0.15}.{w=0.15}.{w=0.15}"
 
-p h "Thank you,{w=0.15} Sir."
+pz h "Thank you,{w=0.15} Sir."
 
 e "She squeezes you lightly,{w=0.15} and then falls asleep."
 

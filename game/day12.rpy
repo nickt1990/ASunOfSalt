@@ -24,9 +24,9 @@ e "No other messages."
 
 show p h
 
-p h "Good morning, Sir."
+pz h "Good morning, Sir."
 
-hide p h
+hide pz h
 
 e "Nema stands up out of bed and begins to put her clothes on."
 

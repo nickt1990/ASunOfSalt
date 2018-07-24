@@ -340,7 +340,7 @@ y s "Ugh.{w=0.15}.{w=0.15}."
 
 show p h
 
-p h "Have a wonderful night you too."
+p h "Have a wonderful night you two."
 
 p h "I look forward to getting to spend some time with you as well, Sir."
 
@@ -384,13 +384,13 @@ hide y
 
 play sound "sounds/DoorOpen2.mp3"
 
-e "Haruka walked off toward the navigation room."
+e "Haruka walks off toward the navigation room."
 
 play sound "sounds/DoorClose2.mp3"
 
 call blueRoom from _call_blueRoom_5
 
-e "You turned the other way and walked into your room."
+e "You turn the other way and walk into your room."
 
 
 return
