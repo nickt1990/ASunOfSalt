@@ -34,11 +34,11 @@ p h "How are you Sir?"
 
 menu:
     "Good.":
-		p h "I'm happy to hear it sir!"
+        p h "I'm happy to hear it sir!"
         pass
 
     "Are you feeling alright?":
-		p h "Of course!"
+        p h "Of course!"
         pass
 
 p n "By the way, {w=0.15}while I have you here."

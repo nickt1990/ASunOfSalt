@@ -1,7 +1,7 @@
 ﻿label day11:
 
 window hide
-black hide
+hide black
 with fade
 
 e "You wake up slowly and realize the body beside you is now gone."
@@ -77,14 +77,14 @@ menu:
             "Of course.":
                 e "You wrap yourself up with the blanket and she pulls in closely to you."
                 e "Her skin is so warm from the heat,{w=0.15} it's almost hot."
-				y s "Hey,{w=0.15} Cap.{w=0.15}.{w=0.15}."
+                y s "Hey,{w=0.15} Cap.{w=0.15}.{w=0.15}."
                 pass
         pass
 
     "No thanks.":
-		y s "Oh, sorry."
-		y n "I didn't mean anything by it."
-		y s "I just wanted to say.{w=0.15}.{w=0.15}."
+        y s "Oh, sorry."
+        y n "I didn't mean anything by it."
+        y s "I just wanted to say.{w=0.15}.{w=0.15}."
         pass
 
 

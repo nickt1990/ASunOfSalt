@@ -15,7 +15,7 @@ menu:
         pass
 
     "Cute.":
-		e "Haruka smiles and looks down."
+        e "Haruka smiles and looks down."
         pass
 
 yp n "My jim-jams."
@@ -84,7 +84,7 @@ menu:
         pass
 
     "You're making me uncomfortable.":
-	#todo branch , have her back off
+#todo branch , have her back off
         pass
 
 yz h "Oh.{w=0.15}.{w=0.15}."
@@ -118,7 +118,7 @@ menu:
         pass
 
     "Why are you doing this all of a sudden?":
-	#todo branch
+#todo branch
         pass
 
 e "The second you get close she jumps back, shocked."
@@ -180,7 +180,7 @@ menu:
 
     "Don't worry about anyone but you.":
         pass
-		
+
     "There's nothing to know, follow your instincts.":
         pass
 
@@ -220,7 +220,7 @@ menu:
         pass
 
     "Sorry, let's keep some space.":
-	#todo branch
+#todo branch
         pass
 
 e "Haruka just smiles up at you, then closes her eyes and squeezes your arm."

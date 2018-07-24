@@ -48,7 +48,7 @@ menu:
         pass
 
     "Why the change of heart?":
-	#todo branch
+#todo branch
         pass
 
 show p h
@@ -161,7 +161,7 @@ y n "Captain,{w= 0.15}what do you want to do?"
 
 menu:
     "Compound.":
-        #todo if haruka flag, call HarukaEnd
+#todo if haruka flag, call HarukaEnd
         pass
 
     "Stop and follow our original orders.":
@@ -191,7 +191,7 @@ menu:
         pass
 
     "Don't help her.":
-	#todo both branches
+#todo both branches
         pass
 
 show p n
@@ -221,7 +221,7 @@ menu:
         pass
 
     "Prepare to die.":
-		#todo
+#todo
         pass
 
 p n "I'm disappointed sir. You really had no clue?"
@@ -290,12 +290,12 @@ p h "And that got us all the funding and time we needed."
 
 menu:
     "Haruka?":
-		p m "Obviously."
+        p m "Obviously."
         pass
 
     "Nema?":
-		p h "Me?"
-		p n "Not quite,{w=0.15} the only other girl on the ship."
+        p h "Me?"
+        p n "Not quite,{w=0.15} the only other girl on the ship."
         pass
 
 p n "She had an expiration date on her head since the moment Motokami saw her."
@@ -307,7 +307,7 @@ menu:
         pass
 
     "What are you?":
-	#todo branch
+#todo branch
         pass
 
 p n "Yeah,{w= 0.15}but I gave her the courtesy of letting her think she might have made a difference in the world all the way to the end."
@@ -364,11 +364,11 @@ p n "Is that your question or do you have another?"
 
 menu:
     "I have a different one.":
-	#todo branch
+#todo branch
         pass
 
     "That's my question.":
-	#todo branch
+#todo branch
         pass
 
 p n "I thought as much."
@@ -377,7 +377,7 @@ p h "Ask when you are ready,{w= 0.15}Sir."
 
 menu:
     "Is Hei in on this?":
-		jump heiQ15
+        jump heiQ15
         pass
 
     "What's going to happen?":
@@ -392,7 +392,7 @@ menu:
     "Why do you seem so normal?":
         pass
 
-		
+
 label heiQ15:#############################################
 
 p n "Hei? "
@@ -543,7 +543,7 @@ menu:
         pass
 
     "Yes.":
-	#todo branch
+#todo branch
         pass
 
 y n "Ooooh,{w= 0.15}alright."
@@ -582,7 +582,7 @@ menu:
         pass
 
     "What's that?":
-	#todo branch
+#todo branch
         pass
 
 y n "Maybe three weeks?"

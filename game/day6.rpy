@@ -33,12 +33,12 @@ p su "Sir!{w=0.15} Can you see?!"
 
 menu:
     "Yes.":
-		p h "Oh, {w=0.15}I'm so happy! Thank goodness. "
+        p h "Oh, {w=0.15}I'm so happy! Thank goodness. "
         pass
 
     "No. I'm blind!":
-		p su "Oh, uhm.{w=0.15}.{w=0.15}."
-		p s "I-{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} is that some sort of a joke,{w=0.15} sir?"
+        p su "Oh, uhm.{w=0.15}.{w=0.15}."
+        p s "I-{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} is that some sort of a joke,{w=0.15} sir?"
         pass
 
 p n "How do you feel?"
@@ -56,7 +56,7 @@ p s "So then, {w=0.15}there is something I need to bring up to you, {w=0.15}sir.
 
 menu:
     "Wow, {w=0.15}right to it.":
-		p s "I apologize for pushing this on you so s-soon after you getting back to health but.{w=0.15}.{w=0.15}."
+        p s "I apologize for pushing this on you so s-soon after you getting back to health but.{w=0.15}.{w=0.15}."
         pass
 
     "Go on.":
@@ -71,7 +71,7 @@ menu:
         pass
 
     "I'll talk to them.":
-		p h "Of course, {w=0.15} thank you."
+        p h "Of course, {w=0.15} thank you."
         pass
 
 p n "Hei wants to make modifications to the ship."
@@ -105,13 +105,13 @@ e "Haruka smiles."
 
 menu:
     "Good to see you!":
-		y h "Awww Cap.{w=0.15} You mushball."
+        y h "Awww Cap.{w=0.15} You mushball."
 
-		y n "But hey, {w=0.15}I've got a bit of an issue with.{w=0.15}.{w=0.15}. the other one."
-		menu:
-			"Hei.":
-				y m "Yes."
-				pass
+        y n "But hey, {w=0.15}I've got a bit of an issue with.{w=0.15}.{w=0.15}. the other one."
+        menu:
+            "Hei.":
+                y m "Yes."
+                pass
         pass
 
     "What's this about you arguing with Hei?":
@@ -234,7 +234,7 @@ menu:
         pass
 
     "I'm sorry, {w=0.15}but I agree with Haruka.":
-		#todo branch
+#todo branch
         pass
 
 y n "Unfair? Cap, {w=0.15}sorry if I'm a bit riled up, {w=0.15}but I wanna survive and I don't trust Hei to come through in a pinch for shit."
@@ -256,7 +256,7 @@ menu:
         pass
 
     "Haruka, {w=0.15}I think we need a little extra insurance. You said yourself, {w=0.15}we're heading into the unknown.":
-		#todo branch
+#todo branch
         pass
 
 show y h
@@ -356,8 +356,8 @@ y h "Heya Cap."
 y n "Whatsup?"
 
 menu:
-	"Checking in":
-		pass
+    "Checking in":
+        pass
 
 y h "Ah, gotcha."
 
@@ -396,18 +396,16 @@ p n "How do you do it?"
 
 menu:
     "You just follow your gut.":
-		p s "Follow your gut.{w=0.15}.{w=0.15}."
+        p s "Follow your gut.{w=0.15}.{w=0.15}."
 
-		p n "I don't even know what that means sir."
+        p n "I don't even know what that means sir."
         pass
 
     "Logic. You think it through.":
-		p s "But sometimes that's not an option."
-		
-		p s "Sometimes it really is more random than anything."
+        p s "But sometimes that's not an option."
+
+        p s "Sometimes it really is more random than anything."
         pass
-
-
 
 p n "What do you do when your decision gets people killed?"
 
@@ -417,11 +415,11 @@ p s "Or when you make the wrong choice all together?"
 
 menu:
     "Do your best to make things right.":
-		p n "I believe I'd want to do my best to make things right, {w=0.15}but the fact would remain that I decided to take responsibility when I obviously wasn't ready. "
+        p n "I believe I'd want to do my best to make things right, {w=0.15}but the fact would remain that I decided to take responsibility when I obviously wasn't ready. "
         pass
 
     "Just deal with it.":
-		p n "Well of course, but.{w=0.15}.{w=0.15}."
+        p n "Well of course, but.{w=0.15}.{w=0.15}."
         pass
 
 p n "It's hard to imagine that wouldn't end in a snowball effect."
@@ -435,7 +433,7 @@ menu:
         pass
 
     "Yes, {w=0.15}I guess it does.":
-		#todo branch
+#todo branch
         pass
 
 p n "I can improve in other ways to compliment the leaders. Not everybody has to be a leader."
@@ -449,7 +447,7 @@ menu:
         pass
 
     "There needs to be a great crew behind every leader, {w=0.15}that's true.":
-		#todo branch
+#todo branch
         pass
 
 p h "No, {w=0.15}it's not limiting, {w=0.15}it's focusing."
@@ -468,7 +466,7 @@ label preDinnerDay6:
 
 menu:
     "Check email":
-		#todo computer
+#todo computer
         pass
 
 play sound "sounds/Knock.mp3"
@@ -518,12 +516,12 @@ r m "I'm just a man for god's sake."
 
 menu:
     "Keep trying?":
-		r n "Keep trying?"
-		r s "But like.{w=0.15}.{w=0.15}. "
+        r n "Keep trying?"
+        r s "But like.{w=0.15}.{w=0.15}. "
         pass
 
     "Maybe it's not meant to be.":
-		r s "That's what I've been thinking."
+        r s "That's what I've been thinking."
         pass
 
 r s "Why bother?"

@@ -84,11 +84,11 @@ e "You catch a light fragrance, {w=0.15}it's faint, {w=0.15}but it almost smells
 
 menu:
     "Nema, {w=0.15}you smell nice.":
-		p su "T-thank you, {w=0.15}sir.{w=0.15}.{w=0.15}."
+        p su "T-thank you, {w=0.15}sir.{w=0.15}.{w=0.15}."
 
-		p n ".{w=0.15}.{w=0.15}."
+        p n ".{w=0.15}.{w=0.15}."
 
-		p su "Oh! Right.{w=0.15}.{w=0.15}."
+        p su "Oh! Right.{w=0.15}.{w=0.15}."
         pass
 
     ".{w=0.15}.{w=0.15}.":
@@ -267,12 +267,12 @@ p s "I p-put your life in danger. I'm weak, {w=0.15}I panicked."
 
 menu:
     "You did the best you could.":
-		p m "But my best isn't good enough!"
+        p m "But my best isn't good enough!"
         pass
 
     "I know you're capable of better, {w=0.15}Nema.":
-		p s "I know sir, I apologize.{w=0.15}.{w=0.15}."
-		p s "The more time that passes the more I realize I'm just not meant for this life.
+        p s "I know sir, I apologize.{w=0.15}.{w=0.15}."
+        p s "The more time that passes the more I realize I'm just not meant for this life."
         pass
 
 p s "Haruka was amazing. She took charge, {w=0.15}she kept calm."
@@ -307,12 +307,12 @@ p s ".{w=0.15}.{w=0.15}."
 
 menu:
     "You can be.":
-		p su "Me? {w=0.15}I can be?"
+        p su "Me? {w=0.15}I can be?"
         pass
 
     "Not with that attitude, {w=0.15}no.":
-		p s "My attitude?"
-		p s "Even still.{w=0.15}.{w=0.15}."
+        p s "My attitude?"
+        p s "Even still.{w=0.15}.{w=0.15}."
         pass
 
 p s "I mean no disrespect sir, {w=0.15}but how could I ever be that?"

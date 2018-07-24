@@ -20,7 +20,7 @@ p h "Hello sir!"
 
 menu:
     "Hello?":
-		p h "Good morning!"
+        p h "Good morning!"
         pass
 
     "What's going on?":
@@ -42,7 +42,7 @@ menu:
         pass
 
     "No. I hate Peggy day.":
-		p su "What?!"
+        p su "What?!"
         pass
 
 p h "Oh sir! My apologies! It's my favorite holiday!"
@@ -52,8 +52,8 @@ p h "It's celebrates the historic day in 2013 that scientists discovered our Peg
 menu:
     "Still don't know what Peggy is.":
         pass
-	"Okay.":
-		pass
+    "Okay.":
+        pass
 
 p h "Peggy was the start to everything!"
 
@@ -84,7 +84,7 @@ menu:
         pass
 
     "Oh, {w=0.15}neat.":
-		#todo jump to pastExp
+#todo jump to pastExp
         pass
 
 p s "Oh.{w=0.15}.{w=0.15}. w-well, {w=0.15}Haruka would be able to explain better than me."
@@ -154,11 +154,11 @@ p s "Could we have a, {w=0.15}uhm.{w=0.15}.{w=0.15}."
 
 menu:
     "What?":
-		p n "What would you think of a Peggy day Celebration tonight? I'll set everything up on my own, {w=0.15}it will be no hassle sir, {w=0.15}I promise."
+        p n "What would you think of a Peggy day Celebration tonight? I'll set everything up on my own, {w=0.15}it will be no hassle sir, {w=0.15}I promise."
         pass
 
     "A celebration?":
-		p h "Yes!"
+        p h "Yes!"
         pass
 
 p n "I can teach everyone more about the history of our greatest holiday, {w=0.15}and it will give everyone a much needed chance to relax a bit. I think it's a great opportunity, {w=0.15}but if you disagree I completely understand."
@@ -235,17 +235,17 @@ y n "It's been a shit couple of days, {w=0.15}that sounds nice."
 
 menu:
     "I'm surprised you think so.":
-		y su "Oh?"
+        y su "Oh?"
 
-		y s "Yeah I guess I've been a bit rough lately, {w=0.15}sorry."
+        y s "Yeah I guess I've been a bit rough lately, {w=0.15}sorry."
 
-		show r h
+        show r h
 
-		r h "No problem my dude! I totally understand."
+        r h "No problem my dude! I totally understand."
 
-		show y n
+        show y n
 
-		y n "Yep."
+        y n "Yep."
         pass
 
     "I agree!":
@@ -341,12 +341,12 @@ y n "Oh hey Cap, {w=0.15}what's up?"
 
 menu:
     "Just checking on progress.":
-		y h "Always on top of things, {w=0.15}nice."
+        y h "Always on top of things, {w=0.15}nice."
         pass
 
     "Just saying hi.":
-		y h "Hi."
-		y s "But, well."
+        y h "Hi."
+        y s "But, well."
         pass
 
 y n "I've got tons to do before tonight if I want some free time."
@@ -428,7 +428,7 @@ menu:
         pass
 
     "Yeah, {w=0.15}maybe she'd be fine without us.":
-		y s "Nah, c'mon, we have to go."
+        y s "Nah, c'mon, we have to go."
         pass
 
 r h "I know, {w=0.15}I know."
@@ -506,7 +506,7 @@ y h "Hahaha, {w=0.15}you gonna take that Cap?"
 
 menu:
     "Nema show some respect.":
-	
+
         pass
 
     "Somehow, {w=0.15}I'm not insulted.":
@@ -773,7 +773,7 @@ y n "Because I don't really like ya?"
 
 menu:
     "Haruka be nice.":
-		y h "I'm being nice. Nobody likes to be led on."
+        y h "I'm being nice. Nobody likes to be led on."
         pass
 
     ".{w=0.15}.{w=0.15}.":

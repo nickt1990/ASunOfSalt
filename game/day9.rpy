@@ -103,7 +103,7 @@ y n "Hey Cap."
 
 menu:
     "Morning.":
-		y s "So,{w=0.15} I just wanted to say.{w=0.15}.{w=0.15}."
+        y s "So,{w=0.15} I just wanted to say.{w=0.15}.{w=0.15}."
         pass
 
     "Morning grumpy.":
@@ -132,12 +132,12 @@ y s "I have some things to say."
 
 menu:
     "Of course.":
-		y n "Thank you."
+        y n "Thank you."
         pass
 
     "Somebody's getting a little dramatic.":
-		y m "Hey,{w=0.15} c'mon,{w=0.15} I'm trying here."
-		y s "I'll see ya later Cap."
+        y m "Hey,{w=0.15} c'mon,{w=0.15} I'm trying here."
+        y s "I'll see ya later Cap."
         pass
 
 hide y
@@ -643,13 +643,13 @@ p su "I would.{w=0.15}.{w=0.15}.?"
 
 menu:
     "You want her to keep you company?":
-	r h "Yes!"
+        r h "Yes!"
         pass
 
     "You want her to do all the work?":
-		r m "Absolutely not!"
-		
-		r h "Help would be nice though."
+        r m "Absolutely not!"
+
+        r h "Help would be nice though."
         pass
 
 show p s

@@ -23,11 +23,11 @@ p s "Captain, {w=0.15}may I speak with you?"
 
 menu:
     "Sure.":
-		p s "Sir I just wanted to apologize for last night."
+        p s "Sir I just wanted to apologize for last night."
         pass
 
     "About last night?":
-		p s "Yes.{w=0.15}.{w=0.15}."
+        p s "Yes.{w=0.15}.{w=0.15}."
         pass
 
 
@@ -38,7 +38,7 @@ p s "I apologize."
 
 menu:
     "No worries.":
-		p s "B-.{w=0.15}.{w=0.15}."
+        p s "B-.{w=0.15}.{w=0.15}."
         pass
 
     "Try to not do that again. You know how Haruka gets.":
@@ -309,29 +309,29 @@ r m "Shit, {w=0.15}what was her problem."
 
 menu:
     "Jealous.":
-		r su "Jealous?"
-		
-		r su "You think so?"
+        r su "Jealous?"
 
-		r n "I am a pretty buff daddy.{w=0.15}.{w=0.15}."
+        r su "You think so?"
 
-		show p su
+        r n "I am a pretty buff daddy.{w=0.15}.{w=0.15}."
 
-		p su "Buff daddy?"
+        show p su
 
-		show r h
+        p su "Buff daddy?"
 
-		r h "Yeah babe, {w=0.15}it's slang for cool guy."
+        show r h
 
-		show p h
+        r h "Yeah babe, {w=0.15}it's slang for cool guy."
 
-		p h "Buff daddy.{w=0.15}.{w=0.15}."
+        show p h
 
-		e "Nema smiles."
+        p h "Buff daddy.{w=0.15}.{w=0.15}."
+
+        e "Nema smiles."
         pass
 
     "Stressed.":
-		r s "Yeah,{w=0.15} I guess she does always seem busy."
+        r s "Yeah,{w=0.15} I guess she does always seem busy."
         pass
 
 show r s
@@ -340,11 +340,11 @@ r s "I should probably go talk to Haruka, {w=0.15}huh Heli-Capter?"
 
 menu:
     "Yes.":
-		r n "Alright, {w=0.15}I'll give it a shot."
+        r n "Alright, {w=0.15}I'll give it a shot."
         pass
 
     "No.":
-		r h "Going to anyways!"
+        r h "Going to anyways!"
         pass
 
 r h "Wish me luck!"
@@ -363,11 +363,11 @@ p s "I hope.{w=0.15}.{w=0.15}. {w} I hope he sorts things out."
 
 menu:
     "Why?":
-		p n "Why?{w=0.15} I want us all to be happy. "
+        p n "Why?{w=0.15} I want us all to be happy. "
         pass
 
     "Me too.":
-		p h "Exactly."
+        p h "Exactly."
         pass
 
 p n "This is our life now."
@@ -410,9 +410,9 @@ p n "How could things not work out?"
 
 menu:
     "That seems to be working against them.":
-		p h "For now."
+        p h "For now."
 
-		p n "I believe that will change."
+        p n "I believe that will change."
         pass
 
     "I guess.":
@@ -833,7 +833,7 @@ menu:
         pass
 
     "Alright.":
-		#todo branch
+#todo branch
         pass
 
 show r n

@@ -39,7 +39,7 @@ menu:
         pass
 
     "It's alright.":
-	#todo
+#todo
         pass
 
 y n "Hei and Nema?"
@@ -193,7 +193,7 @@ y s "I think I made a mistake."
 
 menu:
     "Yeah, {w=0.15}you were rude as hell.":
-		y s "No."
+        y s "No."
         pass
 
     "What do you mean?":
@@ -215,11 +215,11 @@ y s "Why even bother exploring when we have dozens of safe sustainable places to
 
 menu:
     "You never know what you'll find out here.":
-		y s "But.{w=0.15}.{w=0.15}."
+        y s "But.{w=0.15}.{w=0.15}."
         pass
 
     "I agree, {w=0.15}why not just be happy with what we have?":
-		y n "Exactly."
+        y n "Exactly."
         pass
 
 y s "Why strive for something better when what you have is good enough?"
@@ -291,7 +291,7 @@ menu:
         pass
 
     "What are you wearing!":
-		rz m "Nevermind that!"
+        rz m "Nevermind that!"
         pass
 
 rz su "The engine went way off balance!"

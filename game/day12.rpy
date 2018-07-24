@@ -13,7 +13,7 @@ menu:
         pass
 
     "Stay in bed.":
-	#todo branch
+#todo branch
         pass
 
 e "You move quietly out of the bed and to your computer."
@@ -333,8 +333,8 @@ menu:
 
     "We just shared a bed.":
         pass
-		
-	"It's none of your business what we did.":
+
+    "It's none of your business what we did.":
         pass
 
 y n "I know,{w=0.15} I know."
@@ -438,7 +438,7 @@ menu:
         pass
 
 show r s
-		
+
 e "Hei just looks at you and frowns."
 
 r h "But hey!"
@@ -473,11 +473,11 @@ r h "Take a ride on the Nema express?"
 
 menu:
     "Are you serious?":
-		r s "Um.{w=0.25} No?"
+        r s "Um.{w=0.25} No?"
         pass
 
     "No.":
-		r su "Oh, {w=0.15}right."
+        r su "Oh, {w=0.15}right."
         pass
 
 r s "Sorry, {w=0.15}I didn't mean it that way."

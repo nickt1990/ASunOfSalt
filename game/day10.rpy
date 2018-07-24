@@ -123,7 +123,7 @@ menu:
         pass
 
     "Forgot your password?":
-		y s "That's not it."
+        y s "That's not it."
         pass
 
 y s "Cap, {w=0.15}my station isn't reacting.{w=0.15}.{w=0.15}."
@@ -200,9 +200,9 @@ y n "There's a system in place for this."
 
 menu:
     "Great!":
-		y h "It is great!"
-		show p n
-		p n "What's the system Haruka?"
+        y h "It is great!"
+        show p n
+        p n "What's the system Haruka?"
         pass
 
     "What system?":

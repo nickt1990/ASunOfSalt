@@ -666,14 +666,14 @@ p n "Everything else is full power, {w=0.15}the autopilot AI is functioning norm
 
 menu:
     "How did we not notice this asteroid before?":
-		p n "I'm sorry sir, {w=0.15}I actually did notice the asteroid before, {w=0.15}but I failed to think it could have this affect."
-		menu:
-			"That's OK.":
-				pass
+        p n "I'm sorry sir, {w=0.15}I actually did notice the asteroid before, {w=0.15}but I failed to think it could have this affect."
+        menu:
+            "That's OK.":
+                pass
 
-			"Please keep an eye out for things like this.":
-				p n "It wont happen again sir."
-				pass
+            "Please keep an eye out for things like this.":
+                p n "It wont happen again sir."
+                pass
         pass
 
     "Good to hear!":

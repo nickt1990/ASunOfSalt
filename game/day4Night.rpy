@@ -15,7 +15,7 @@ with fade
 menu:
     "Is Nema up to something again?":
         pass
-		
+
 play sound "sounds/DoorOpen2.mp3"
 
 call hall from _call_hall_2
