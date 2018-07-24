@@ -30,16 +30,17 @@ e "Haruka is sitting at the table eating."
 
 show y h
 
-y h "Ay Cap. Care to join me?"
+y h "Ay Cap.{w=0.25} Care to join me?"
 
 menu:
     "Sure.":
+	    y h "Good to have ya."
         pass
 
-    "No thanks.":#todo 
+    "No thanks.":
+	    y s "Aw c'mon, talk with me for a minute."
+		y s "I need ya."
         pass
-
-y h "Good to have ya."
 
 y n "It seems like morale has reached an impressive low on the fourth day."
 

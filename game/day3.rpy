@@ -9,10 +9,13 @@ menu:
     "I should read the summaries.":#todo branch
         pass
 
-    "I'm going to respect their privacy.":#todo 
+    "I'm going to respect their privacy.":
+	    jump day3Start
         pass
 
-e "This new information makes you think that perhaps you should check on the crew."#todo 
+label day3Start:#DAY3START!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+e "You decide to head out to see what the others are doing."
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -20,7 +23,7 @@ e "You open the door."
 
 call hall from _call_hall_29
 
-e "You step out into the hallway. Haruka is laying on the floor with a blanket. Her eyes are closed."
+e "You step out into the hallway.{w=0.15} Haruka is laying on the floor with a blanket.{w=0.15} Her eyes are closed."
 
 menu:
     "Haruka?":
@@ -34,12 +37,12 @@ show y h
 y h "Oh, {w=0.15}hey Cap.{w=0.15} How you feeling after the late night?"
 
 menu:
-    "Excellent!":#todo 
+    "Excellent!":
         y h "There he is, {w=0.15}what a champ."
         pass
 
     "Terrible!":
-        y h "Hah, boo hoo, you'll live."
+        y h "Hah, boo hoo,{w=0.15} you'll live."
         pass
 
 menu:
@@ -140,16 +143,18 @@ r h "But I'm just trying to get to know my brand new ship buds. "
 
 menu:
     "Cool it.":
+		r m "Fine fine, {w=0.15}geez, {w=0.15}I was just joshin' sir."
+		e "Haruka shoots you a little smile as Hei walks away grumbling."
+		hide r m
         pass
 
-    "":#todo branch
+    "...":
+	    y m "Hei,{w=0.15} I said {b}STOP{/b}."
+		r su "Woah hey,{w=0.15} alright."
+		r s "I was just kidding,{w=0.15} geez."
+		hide r s
+		e "Hei turns and starts to walk away, mumbling to himself."
         pass
-
-r m "Fine fine, {w=0.15}geez, {w=0.15}I was just joshin' sir."
-
-hide r m
-
-e "Hei walks away grumbling."
 
 show y h
 
@@ -172,12 +177,25 @@ y n "See ya then."
 
 hide y n
 
-menu:
-    "FREE TIME":#todo menu free time
+define heiD3 = True
+define nemaD3 = True
+define varName = True
+
+label day3Menu:
+call hall
+
+menu:#MENU###################################################
+    "Hei's Room":
+	    jump heiRoomD3
+        pass
+    "Nema's Room":
+	    jump nemaRoomD3
+        pass
+    "Kichen (Continues Story)":
+	    jump day3Kitchen
         pass
 
-#todo e "REDS ROOM"
-
+label heiRoomD3:
 call redRoom from _call_redRoom_5
 
 show r h
@@ -258,16 +276,17 @@ r n "I don't get it."
 
 menu:
     "She seems to like leadership.":
+		r n "Yeah, {w=0.15}I can't disagree there."
+
+        r s "But I mean"
+
+        r n "I'm sort of a leader in a way."
         pass
 
-    "She seems to hate laziness.":#todo leader is accounted for not lazy
+    "She seems to hate laziness.":
+	    r su "Lazy?"
+		r m "I don't have a lazy bone in my friggen body dude."
         pass
-
-r n "Yeah, {w=0.15}I can't disagree there."
-
-r s "But I mean"
-
-r n "I'm sort of a leader in a way."
 
 r n "I built every ounce of weapons technology on this ship."
 
@@ -290,7 +309,7 @@ r s "My parents forced me into it. But I worked hard."
 
 r s "Whatever.{w=0.15} She'll hate me forever and the rest of my life will be miserable."
 
-r s "I am a cardboard box in the rain. Melting like ice cream on a summer's evening."
+r s "I am a cardboard box in the rain.{w=0.15} Melting like ice cream on a summer's evening."
 
 r n "I was also the first person under 50 to be featured in my parents monthly poem compendium."
 
@@ -326,8 +345,9 @@ hide r
 
 e "You walk back out into the hallway."
 
-#todo
-#label NemaRoom3:
+jump day3Menu
+
+label nemaRoomD3:
 
 call pinkRoom from _call_pinkRoom_2
 
@@ -359,11 +379,9 @@ e "She slowly curls up and closes her eyes."
 
 hide p
 
-call hall from _call_hall_31
+jump day3Menu
 
-menu:
-    "BREAKFAST":
-        pass
+label day3Kitchen:
         
 call kitchen from _call_kitchen_8
 
@@ -402,16 +420,16 @@ r s "Still sucks."
 
 menu:
     "I agree, {w=0.15}boring.":
+	    r n "See? {w=0.25}Even our {size=-6}suspiciously quiet{/size} captain thinks so."
+		show y m
+
+        y m "Maybe if you both did your jobs then you wouldn't be so bored, {w=0.15}yeah?"
         pass
 
-    "I disagree, {w=0.15}this has been great.":#todo branch
+    "I disagree, {w=0.15}this has been great.":
+	    y m "I'm sure time goes by a bit faster when you don't just lay around all day."
+		r m "Hey, I do my job just fine."
         pass
-
-r n "See? {w=0.25}Even our {size=-6}suspiciously quiet{/size} captain thinks so."
-
-show y m
-
-y m "Maybe if you both did your jobs then you wouldn't be so bored, {w=0.15}yeah?"
 
 menu:
     "Speaking of jobs, {w=0.15}what's the agenda for you two today?":
@@ -425,7 +443,7 @@ show y n
 
 y n "Have you ever served on a ship?"
 
-y n "We're not children and crews arent run that way anymore.{w=0.15} You can figure out how to be productive. Do your best to keep us alive so the rest of us can work on our research."
+y n "We're not children and crews aren't run that way anymore.{w=0.15} You can figure out how to be productive. Do your best to keep us alive so the rest of us can work on our research."
 
 show r n
 
@@ -581,7 +599,7 @@ menu:
     "No, {w=0.15}this is not OK. ":
         pass
 
-y s "Fine. I knew what I was doing. I took a chance. "
+y s "Fine.{w=0.35} I knew what I was doing.{w=0.35} I took a chance. "
 
 y n "I'm not a coward like you."
 
@@ -597,11 +615,20 @@ e "Her portrait starts to become disfigured, {w=0.15}she slowly melts into nothi
 
 hide y
 
-#todo When you try to enter Nema's room. ( What does this mean?
+window hide
+show black
+
+call hall
 
 show p su
 
+e "{w=0.15}.{w=0.15}.{w=0.15}."
+
 p su "Captain."
+
+window hide
+hide black
+with fade
 
 menu:
     "Nema?":
@@ -610,7 +637,13 @@ menu:
     "What's going on?":
         pass
 
-e "The atmosphere gets dark as you enter the room."
+e "You find yourself in the hallway all of a sudden."
+
+call pinkRoom
+
+e "At the sound of her voice,{w=0.15} you head toward Nema's room."
+
+e "The atmosphere seems to change as you enter."
 
 menu:
     "Nema?":
@@ -643,8 +676,6 @@ d "Blow your horns, {w=0.15}devout.{w=0.15} Announce me."
 
 d "A total waste.{w=0.15} Devoid ov value."
 
-d "Meager, {w=0.15}pathetic am I. "
-
 d "Piles of flesh. "
 
 d "Waves of nothing."
@@ -652,7 +683,9 @@ d "Waves of nothing."
 d "Do I make you smile?"
 
 menu:
-    "Yes?":
+    "Yes.":#todo endings
+        pass
+    "No.":
         pass
 
 d "A deal is struck."
@@ -665,9 +698,22 @@ d "We shall be of many skins."
 
 stop music fadeout 3.0
 
-e "You fall back into your chair at the dinner table."
+window hide
+show black
+
+call kitchen
+
+e "You feel cold wind on your skin."
+
+e "{w=0.35}.{w=0.35}.{w=0.35}."
+
+window hide
+hide black
+with fade
 
 play music "music/Space.mp3" fadein 1.0
+
+e "You fall back into your chair at the dinner table."
 
 show r s
 
@@ -688,11 +734,11 @@ show y m:
 
 e "She takes a step forward."
 
-menu:#todo branching
+menu:
     "Stop her.":
         pass
 
-    "Let her go.":
+    "Let her go.":#todo branch ending
         pass
 
 e "She sighs."
@@ -758,7 +804,7 @@ menu:
         
 r h ".{w=0.15}.{w=0.15}."        
 
-r s "Today sucks. I'm gonna go to sleep. See ya man."
+r s "Today sucks.{w=0.15} I'm gonna go to sleep.{w=0.15} See ya man."
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -768,12 +814,23 @@ e "You finish eating then walk into the hallway."
 
 call hall from _call_hall_32
 
-e "You have a lot of work to do tonight."
+define heiRoomD32 = True
+define haruRoomD32 = True
 
-e "Make sure you do everything you want to do before returning to your room, {w=0.15}as it may well be evening once you're done."
+label menuD32:
+call hall
+menu:
+    "Hei's Room" if heiRoomD32:
+        $ heiRoomD32 = False
+		jump heiRoom3
+    "Haruka's Room" if haruRoomD32:
+        $ haruRoomD32 = False
+		jump haruRoom3
+    "Work (Continues)" if haruRoomD32 :
+        $ haruRoomD32 = False
+		jump haruRoom3
 
-# todo e "HARUKAS ROOM"
-
+label haruRoom3:
 call yellowRoom from _call_yellowRoom_3
 
 show y m
@@ -793,8 +850,9 @@ y n "Sorry Cap."
 y n "We'll talk later."
 
 hide y n
+jump menuD32
 
-#todo e "HEIS ROOM"
+label heiRoom3:
 
 call redRoom from _call_redRoom_6
 
@@ -808,13 +866,36 @@ r s "I hate my life."
 
 r s "Ughhh"
 
-r n "Man I'll see you at dinner. I need to mope around for a while."
+r n "Man I'll see you at dinner.{w=0.15} I need to mope around for a while."
 
 hide r n
 
-e "DINNER TIME"
+jump menuD32
+
+label workD3:
+
+call blueRoom
+
+e "You go to your room and get some work done on the computer."
+
+window hide
+show black
+with fade
+
+e ".{w=0.35}.{w=0.35}.{w=0.35}"
+
+window hide
+hide black
+with fade
+
+
+call hall
+play sound "sounds/DoorClose2.mp3"
+e "After a while,{w=0.25} you decide to head to the kitchen for dinner."
 
 call kitchen from _call_kitchen_9
+play sound "sounds/DoorOpen2.mp3"
+e "You enter the kitchen{w=0.15}.{w=0.15}.{w=0.15}."
 
 e "Only Nema is here."
 
@@ -835,9 +916,9 @@ menu:
         pass
 
     "Finally up?":
+		p h "Yes sir,{w=0.15} I apologize."
+		p n "I had to catch up on a little sleep."
         pass
-
-play sound "sounds/DoorOpen2.mp3"
 
 e "Hei walks in"
 
