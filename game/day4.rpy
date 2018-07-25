@@ -240,7 +240,7 @@ menu:
         pass
 
 menu:
-    "We will outrun them.":#todo branch for these to ending
+    "We will outrun them.":
         pass
 
     "We will fight.":#todo ending
@@ -301,7 +301,7 @@ play sound "sounds/DoorClose2.mp3"
 
 call hall from _call_hall_26
 
-e "You walk out of the room into the hall."#todo sound effects and branch for hei
+e "You walk out of the room into the hall."
 
 hide p
 
@@ -335,7 +335,7 @@ menu:
     "Hi.":
         pass
 
-r h "Hey, {w=0.15}pretty grand.{w=0.15} Can't keep me down man."
+r h "Hey, {w=0.15}pretty grand.{w=0.25} Can't keep me down man."
 
 r s "You know, {w=0.15}at first I was really down, {w=0.15}but I realized that Haruka was right."
 
@@ -359,7 +359,7 @@ r h "Man up and get me a babe."
 
 r n "I'm gonna work hard."
 
-r n "What else? I'm gonna become a man she can look to when she's in need."
+r n "What else?{w=0.25} I'm gonna become a man she can look to when she's in need."
 
 r n "When all is lost, {w=0.15}and she needs a miracle, {w=0.15}I'll be the first thing she thinks of."
 
@@ -403,7 +403,7 @@ menu:
     "She doesn't say much.":
         pass
 
-r n "Well, {w=0.15}no. I guess not. But she kind of communicates in a different way."
+r n "Well, {w=0.15}no. I guess not.{w=0.25} But she kind of communicates in a different way."
 
 menu:
     ".{w=0.15}.{w=0.15}.":
@@ -438,7 +438,8 @@ menu:
     "You planned something to impress Haruka?":
         pass
 
-    "Nevermind.":#todo 
+    "Nevermind.":
+	    jump neverminded
         pass
 
 r su "I did?"
@@ -447,7 +448,8 @@ menu:
     "You told me yesterday in the morning.":
         pass
 
-    "Nevermind.":#todo 
+    "Nevermind.":
+	    jump neverminded
         pass
 
 r n "Me?{w=0.15} For Haruka?"
@@ -456,7 +458,8 @@ menu:
     "Yes, {w=0.15}you said it would blow my mind?":
         pass
 
-    "Nevermind.":#todo 
+    "Nevermind.":
+	    jump neverminded
         pass
 
 r s "Blow your mind.{w=0.15}.{w=0.15}."
@@ -465,7 +468,8 @@ menu:
     "You don't remember?":
         pass
 
-    "Nevermind.":#todo 
+    "Nevermind.":
+	    jump neverminded
         pass
 
 r h "It sounds like something I'd remember doesn't it?"
@@ -474,13 +478,24 @@ menu:
     "Yes. But you don't?":
         pass
 
-    "Nevermind.":#todo 
+    "Nevermind.":
+	    jump neverminded
         pass
 
 r n "Nah."
 
+label neverminded:
+
+r h "Whatever dude."
+
+r h "She'll be mine this time tomorrow,{w=0.15} just you wait!"
+
+label noNevermind:
+
 menu:
     "Good luck.":
+        pass
+    "Good luck, I guess?":
         pass
 
 r h "Thanks!"
@@ -491,15 +506,21 @@ call hall from _call_hall_27
 
 play sound "sounds/DoorClose2.mp3"
 
-e "Everyone's working on a task so you sit down at your computer and get some work done."
+e "Everyone's busy working on a task."
         
 call blueRoom from _call_blueRoom_12
+
+e "You head to your room to try and get some things done."
 
 window hide
 show black
 with fade
 
-e "{w=0.25}.{w=0.35}.{w=0.45}." #todo
+e "{w=0.25}.{w=0.35}.{w=0.45}."
+
+play sound "sounds/DoorOpen2.mp3"
+
+e "There's a knock on your door."
 
 window hide
 hide black
@@ -515,36 +536,53 @@ menu:
     "Thank you Nema.":
         pass
 
-    "Cool.":
+    "Okay.":
         pass
 
 e "Nema smiles."
 
 p n "I'll tell the rest."
 
-p n "Haruka and Hei said they'd just be a little bit, {w=0.15}but.{w=0.15}.{w=0.15}.{w=0.15} well.{w=0.15}.{w=0.15}.{w=0.15} everything's all set up if you want to eat, {w=0.15}sir. I'm going to wait, {w=0.15}but there's no reason you should have to."
+p n "Haruka and Hei said they'd just be a little bit.{w=0.25} I'd like to suggest that we wait for them,{w=0.15} if that's alright with you Captain?"
+
+define eatD4 = False
 
 menu:
-    "Sure!":
+    "Of course.":
+	    e "Nema sits down across the table from you."
+	    jump nemaWaitD4
         pass
 
-    "I'll wait.":
+    "I'm hungry now.":
         pass
 
 e "Nema sits down across the table from you."
 
+e "You dig into the food, finishing it quickly."
+
+e "It's got a great flavor to it."
+
 menu:
-    "This is good!":
-        pass
+    "This was great!":
+	    p h "I'm glad you think so, sir!"
+	    pass
+	"Thanks.":
+	    p h "Of course, I'm happy to contribute."
+	    pass
+	"...":
+	    pass
 
-    "...":
-        pass#todo branch
-
-p h "Thank you Captain."
-
+label nemaWaitD4:
 e "Nema smiles shortly."
 
-e "Time flashes forward and your food is gone."
+window hide
+show black
+with fade
+e ".{w=0.15}.{w=0.15}."
+e ".{w=0.35}.{w=0.35}."
+window hide
+hide black
+with fade
 
 p s "The others should be here soon.{w=0.15}.{w=0.15}."
 
@@ -572,7 +610,7 @@ menu:
     "Need help?":
         pass
 
-    "OK.":#todo 
+    "OK.":
         pass
 
 e "Nema ignores you for a second and moves to put the food away."
@@ -587,7 +625,7 @@ p n "W-"
 
 e "Nema struggles to find words."
 
-p n "No, {w=0.15}nevermind. I figured it out."
+p n "No, {w=0.15}nevermind.{w=0.25} I figured it out."
 
 p n "Thank you though. "
 
@@ -598,6 +636,7 @@ menu:
         pass
 
     "No problem.":
+	    jump dontListenNemaD4
         pass
 
 p n "I was going to ask what you.{w=0.15}.{w=0.15}."
@@ -642,8 +681,10 @@ p n "I still firmly believe all that I said earlier this morning about the situa
 
 p n "I can't agree with hostility as our first action in meeting with this unknown ship."
 
+label dontListenNemaD4:
+
 #todo everything would not go dark in a spaceship
-e "Suddenly everything goes dark."
+e "Suddenly, {w=0.15} everything goes dark."
 
 p su "W-what's happening?!"
 
@@ -651,7 +692,7 @@ menu:
     "What do we do?":
         pass
 
-p su "I-I'm not sure! We-w-uhm.{w=0.15}.{w=0.15}."
+p su "I-I'm not sure!{w=0.25} We-w-uhm.{w=0.15}.{w=0.15}."
 
 p n "I don't know!"
 
@@ -676,6 +717,7 @@ menu:
 p n "It looks like.{w=0.15}.{w=0.15}.{w=0.15}"
 
 p n "we're getting some sort of interference from a large asteroid that's floating alongside us."
+
 #todo this ties in with end, nema gathering power
 p su "I'm not sure I've ever heard of an asteroid causing this sort of interference, but it seems clear that that's the source."
 

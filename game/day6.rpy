@@ -564,6 +564,4 @@ with fade
 
 e ".{w=0.15}.{w=0.15}."
 
-#TODO DAY 6 NIGHT SCENE
-
 return

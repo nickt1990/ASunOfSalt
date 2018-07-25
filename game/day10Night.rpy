@@ -186,10 +186,6 @@ menu:
 
 yz su "C-{w=0.15}cap.{w=0.15}.{w=0.15}."
 
-yz s "No.{w=0.15}.{w=0.15}."
-
-yz n "PLAYERNAME"#todo name
-
 yz h "It means a lot to hear that."
 
 yz n "I've never tried to actually talk about this stuff before."

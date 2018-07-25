@@ -179,16 +179,15 @@ hide y n
 
 define heiD3 = True
 define nemaD3 = True
-define varName = True
 
 label day3Menu:
 call hall
 
 menu:#MENU###################################################
-    "Hei's Room":
+    "Hei's Room" if heiD3:
         jump heiRoomD3
         pass
-    "Nema's Room":
+    "Nema's Room" if nemaD3:
         jump nemaRoomD3
         pass
     "Kichen (Continues Story)":
