@@ -58,10 +58,11 @@ menu:
     "Sounds like you feel guilty.":
         pass
 
-    "I agree.":#todo 
+    "I agree.":
+	    y h "I knew you'd get it."
+		y n "It's like{w=0.15}.{w=0.15}.{w=0.15}."
+		y n "I don't feel bad about what I said, {w=0.15}I just can't help but feel sorry for the guy."							   
         pass
-
-y s "I don't feel bad about what I said Cap, {w=0.15}but I can't help but feel sorry for the guy."
 
 y n "I'm not a machine."
 
@@ -204,13 +205,24 @@ show p n
 
 p n "That could also put a target on us, {w=0.15}and notify them that we have things worth stealing, {w=0.15}despite the risk."
 
-p n "I still suggest maneuvering around the object. Even if our path is reported to the rest of their forces, {w=0.15}we'll become aware of any oncoming ambush with our long range scanners, {w=0.15}and be able to outrun any vessel they have."
+p n "I still suggest maneuvering around the object.{w=0.25} Even if our path is reported to the rest of their forces, {w=0.15}we'll become aware of any oncoming ambush with our long range scanners, {w=0.15}and be able to outrun any vessel they have."
 
+label menuSmall4:
 menu:
     "Nema, {w=0.15}are you sure we'd be able to detect and outrun them?":
+	    p n "I{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} I'm fairly confident Captain."
+        p n "With Haruka's one-of-a-kind engine and a complete suite of state of the art technology backing it up, {w=0.15}we should be able to vastly outpace even the most advanced crafts that exist within high-level stations."
+        p n "Let alone a.{w=0.15}.{w=0.15}. \"Lurk\""
+		p s "Fighting just seems like an unnecessary risk."
         pass
 
     "Haruka, {w=0.15}are you sure we'd be able to fight them directly?":
+	    y s "Not completely."
+		y n "But we can't rely on our radars past those things."
+		y n "They could be jamming us,{w=0.15} this could be a trap,{w=0.15} we have no idea what's up ahead."
+		y n "I know my ship is fast enough to get past them, but I don't know if we're suited to deal with what we might find."
+		y n "I'll say that we don't see the typical signs of radar jamming as far as I can tell,{w=0.15} though."
+		y s "And,{w=0.15} the weapons that they have are an unknown."
         pass
 
 p n "I'm fairly confident Captain."
@@ -220,7 +232,8 @@ p n "With Haruka's one-of-a-kind engine and a complete suite of state of the art
 p n "Let alone a.{w=0.15}.{w=0.15}. \"Lurk\""
 
 menu:
-    "Two prior options.":#todo jump back to last options
+    "Two prior options.":
+	    jump menuSmall4
         pass
 
     "OK, {w=0.15}I've made a decision.":
@@ -235,10 +248,11 @@ menu:
 
 show y m
 
-y m "Seriously? We can blow them away and find some cool stuff."
+y m "Seriously?{w=0.15} We could blow them away and find some cool stuff."
 
 y s "Your loss cap."
 
+show p h
 e "Nema smiles."
 
 show p n
@@ -283,9 +297,11 @@ menu:
     "Okay.":
         pass
 
-menu:
-    "Leave and talk to HEI.":#todo sound effects and branch for hei
-        pass
+play sound "sounds/DoorClose2.mp3"
+
+call hall from _call_hall_26
+
+e "You walk out of the room into the hall."#todo sound effects and branch for hei
 
 hide p
 
