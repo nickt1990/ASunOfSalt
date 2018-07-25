@@ -278,14 +278,14 @@ yp h "I was seeing stars Cap, {w=0.15}for real I was."
 
 menu:
     "Did you get to speak to him?":
-	    yp n "I did.{w=0.15} He taught me everything I know."
+        yp n "I did.{w=0.15} He taught me everything I know."
         pass
 
     "What did your brother do?":
         yp su "My brother?"
-		yp n "I don't remember him doing anything"
-		yp n "I think he was already gone at that point."
-		yp h "Anyways, the professor."
+        yp n "I don't remember him doing anything"
+        yp n "I think he was already gone at that point."
+        yp h "Anyways, the professor."
         pass
 
 yp h "It's crazy, {w=0.15}the second he finished his lecture he walked right up to me and aske-"
@@ -363,13 +363,13 @@ p s "W-would you like to take a break Captain? I wouldn't mind taking over your 
 
 menu:
     "I'll take a break.":
-		p h "Really?"
-		p h "I'm happy to help sir."
+        p h "Really?"
+        p h "I'm happy to help sir."
         pass
 
     "No thank you.":
         p s "I have to insist sir."
-	    p h "I would be honored to help."
+        p h "I would be honored to help."
         pass
 
 p n "Go ahead and get some rest."
@@ -413,7 +413,7 @@ menu:
         pass
 
     "It was nice, {w=0.15}wasn't it?":
-	    yp h "It was.{w=0.15}.{w=0.15}."
+        yp h "It was.{w=0.15}.{w=0.15}."
         pass
 
 yp s "Maybe I said too much? "

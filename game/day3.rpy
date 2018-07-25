@@ -10,7 +10,7 @@ menu:
         pass
 
     "I'm going to respect their privacy.":
-	    jump day3Start
+        jump day3Start
         pass
 
 label day3Start:#DAY3START!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -143,17 +143,17 @@ r h "But I'm just trying to get to know my brand new ship buds. "
 
 menu:
     "Cool it.":
-		r m "Fine fine, {w=0.15}geez, {w=0.15}I was just joshin' sir."
-		e "Haruka shoots you a little smile as Hei walks away grumbling."
-		hide r m
+        r m "Fine fine, {w=0.15}geez, {w=0.15}I was just joshin' sir."
+        e "Haruka shoots you a little smile as Hei walks away grumbling."
+        hide r m
         pass
 
     "...":
-	    y m "Hei,{w=0.15} I said {b}STOP{/b}."
-		r su "Woah hey,{w=0.15} alright."
-		r s "I was just kidding,{w=0.15} geez."
-		hide r s
-		e "Hei turns and starts to walk away, mumbling to himself."
+        y m "Hei,{w=0.15} I said {b}STOP{/b}."
+        r su "Woah hey,{w=0.15} alright."
+        r s "I was just kidding,{w=0.15} geez."
+        hide r s
+        e "Hei turns and starts to walk away, mumbling to himself."
         pass
 
 show y h
@@ -186,13 +186,13 @@ call hall
 
 menu:#MENU###################################################
     "Hei's Room":
-	    jump heiRoomD3
+        jump heiRoomD3
         pass
     "Nema's Room":
-	    jump nemaRoomD3
+        jump nemaRoomD3
         pass
     "Kichen (Continues Story)":
-	    jump day3Kitchen
+        jump day3Kitchen
         pass
 
 label heiRoomD3:
@@ -276,7 +276,7 @@ r n "I don't get it."
 
 menu:
     "She seems to like leadership.":
-		r n "Yeah, {w=0.15}I can't disagree there."
+        r n "Yeah, {w=0.15}I can't disagree there."
 
         r s "But I mean"
 
@@ -284,8 +284,8 @@ menu:
         pass
 
     "She seems to hate laziness.":
-	    r su "Lazy?"
-		r m "I don't have a lazy bone in my friggen body dude."
+        r su "Lazy?"
+        r m "I don't have a lazy bone in my friggen body dude."
         pass
 
 r n "I built every ounce of weapons technology on this ship."
@@ -420,15 +420,15 @@ r s "Still sucks."
 
 menu:
     "I agree, {w=0.15}boring.":
-	    r n "See? {w=0.25}Even our {size=-6}suspiciously quiet{/size} captain thinks so."
-		show y m
+        r n "See? {w=0.25}Even our {size=-6}suspiciously quiet{/size} captain thinks so."
+        show y m
 
         y m "Maybe if you both did your jobs then you wouldn't be so bored, {w=0.15}yeah?"
         pass
 
     "I disagree, {w=0.15}this has been great.":
-	    y m "I'm sure time goes by a bit faster when you don't just lay around all day."
-		r m "Hey, I do my job just fine."
+        y m "I'm sure time goes by a bit faster when you don't just lay around all day."
+        r m "Hey, I do my job just fine."
         pass
 
 menu:
@@ -822,13 +822,13 @@ call hall
 menu:
     "Hei's Room" if heiRoomD32:
         $ heiRoomD32 = False
-		jump heiRoom3
+        jump heiRoom3
     "Haruka's Room" if haruRoomD32:
         $ haruRoomD32 = False
-		jump haruRoom3
+        jump haruRoom3
     "Work (Continues)" if haruRoomD32 :
         $ haruRoomD32 = False
-		jump haruRoom3
+        jump haruRoom3
 
 label haruRoom3:
 call yellowRoom from _call_yellowRoom_3
@@ -916,8 +916,8 @@ menu:
         pass
 
     "Finally up?":
-		p h "Yes sir,{w=0.15} I apologize."
-		p n "I had to catch up on a little sleep."
+        p h "Yes sir,{w=0.15} I apologize."
+        p n "I had to catch up on a little sleep."
         pass
 
 e "Hei walks in"

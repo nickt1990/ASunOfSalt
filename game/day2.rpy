@@ -58,7 +58,7 @@ menu:
 
     "What were you listening to?":
         p h "Nothing important."
-		p n "Just an album I brought with me."
+        p n "Just an album I brought with me."
         pass
 
 p n "Anyways, {w=0.15}I was just heading back to my room."
@@ -177,7 +177,7 @@ define nemaRoomd2 = True
 
 menu:
     "Yes.":
-	    $ haruRoomd2 = False
+        $ haruRoomd2 = False
         y h "Awesome."
 
         y h "Head over now?"
@@ -193,8 +193,8 @@ menu:
         play sound "sounds/DoorOpen2.mp3"
 
         e "Haruka turns and walks out towards her room and you follow closely behind."
-		
-		e "You walk in and she sits on the bed, facing a small screen."
+
+        e "You walk in and she sits on the bed, facing a small screen."
 
         call yellowRoom
 
@@ -217,9 +217,9 @@ menu:
 
         e "You finish your food and walk out into the hallway."
 
-		call hall
-		
-		jump day2Menu
+        call hall
+
+        jump day2Menu
 
         pass
 
@@ -604,15 +604,15 @@ call hall from _call_hall_20
 
 menu:
     "Nema's Room" if nemaRoomd2:
-	    $ nemaRoomd2 = False
+        $ nemaRoomd2 = False
         call nemaD2
         pass
     "Haruka's Room" if haruRoomd2:
-	    $ haruRoomd2 = False
+        $ haruRoomd2 = False
         call haruD2
         pass
     "Hei's Room" if heiRoomd2:
-	    $ heiRoomd2 = False
+        $ heiRoomd2 = False
         call heiD2
         pass
     "Nav Room (Continue Story)":
@@ -630,7 +630,7 @@ menu:
         pass
 
     "Ah, {w=0.15}just in time for the meeting.":
-        #todo this whole block
+#todo this whole block
         pass
 
 show y n
@@ -743,7 +743,7 @@ menu:
         pass
 
     "Good work Haruka.":
-	    y h "No worries!"
+        y h "No worries!"
         pass
 
 y n "Cap, {w=0.15}I'd use any time you have today to get comfortable with the ship and your new equipment."

@@ -66,7 +66,7 @@ menu:
         pass
 
 play sound "sounds/DoorOpen2.mp3"
-		
+
 e "Haruka's standing outside of your room with a small package."
 
 show y m
@@ -99,20 +99,20 @@ p n "She's always first to act in a time of need."
 
 menu:
     "She's great.":
-		p h "I had figured you'd feel that way,{w=0.15} Captain."
+        p h "I had figured you'd feel that way,{w=0.15} Captain."
         pass
 
     "Not always.":
-		p su "I'm sure you don't mean that."
-		p n "She's always very quick to act."
-		p h "I've noticed you've spent a bit of time together lately."
+        p su "I'm sure you don't mean that."
+        p n "She's always very quick to act."
+        p h "I've noticed you've spent a bit of time together lately."
         pass
 
 p n "You two have become close,{w=0.15} haven't you?"
 
 menu:
     "We have.":
-		p h "I'm glad."
+        p h "I'm glad."
         pass
 
     "Uhm.{w=0.15}.{w=0.15}.{w=0.15}":
@@ -137,11 +137,11 @@ p h "But,{w=0.15} I like that."
 
 menu:
     "Me too.":
-	    p h "I'm glad I'm not alone in that."
+        p h "I'm glad I'm not alone in that."
         pass
 
     "You're the only one.":
-	    p n "Well,{w=0.15} for me it would."
+        p n "Well,{w=0.15} for me it would."
         pass
 
 p n "I think it takes a little courage to be a dork."
@@ -153,7 +153,7 @@ menu:
         pass
 
     "Not really.":
-	    p n "Well,{w=0.15} for me it would."
+        p n "Well,{w=0.15} for me it would."
         pass
 
 p h "I'm not the best at just relaxing and being myself."
@@ -188,7 +188,7 @@ p h "And knowing we're locked up in here makes it easier to talk,{w=0.15} for so
 
 menu:
     "I kind of get that.":
-	    p h "Right? I'm glad."
+        p h "Right? I'm glad."
         pass
 
     "Why?":
@@ -218,9 +218,9 @@ menu:
         pass
 
     "Are we in danger?":
-	    show p h
-	    e "Nema smiles at you."
-		p n "I don't think so{w=0.15}.{w=0.15}.{w=0.15}."
+        show p h
+        e "Nema smiles at you."
+        p n "I don't think so{w=0.15}.{w=0.15}.{w=0.15}."
         pass
 
 p n "Hey.{w=0.15}.{w=0.15}.{w=0.15}"
@@ -234,7 +234,7 @@ menu:
         pass
 
     "Creepy.":
-	    p su "You think so?"
+        p su "You think so?"
         pass
 
 p n "I always loved when space shrimp would pass by my home."
@@ -249,12 +249,12 @@ p n "It's romantic,{w=0.15} isn't it?"
 
 menu:
     "Yeah.":
-	    p h "Agreed sir."
+        p h "Agreed sir."
         pass
 
     "Not really. It's shrimp.":
-	    p h "I suppose you are right, sir."
-		p n "But even still{w=0.15}.{w=0.15}.{w=0.15}."
+        p h "I suppose you are right, sir."
+        p n "But even still{w=0.15}.{w=0.15}.{w=0.15}."
         pass
 
 p n "You know,{w=0.15} when I was young,{w=0.15} I'd play thunderstorm sounds every night."
@@ -299,17 +299,17 @@ p n "I'd collect candles and CDs and old pictures."
 
 menu:
     "Candles?":
-	    p s "Yeah.{w=0.15}.{w=0.15}.{w=0.15}"
+        p s "Yeah.{w=0.15}.{w=0.15}.{w=0.15}"
         pass
 
     "Old pictures?":
         p h "Yeah."
-		p n "Just random pictures."
-		p n "Not even people I knew."
-		p h "I think that made it more interesting though."
-		p h "Like having a tiny piece of somebody's life story."
-		p n "That's how I felt at the time, anyways."
-		p h "I really miss the candles more though, if I'm honest with you."
+        p n "Just random pictures."
+        p n "Not even people I knew."
+        p h "I think that made it more interesting though."
+        p h "Like having a tiny piece of somebody's life story."
+        p n "That's how I felt at the time, anyways."
+        p h "I really miss the candles more though, if I'm honest with you."
         pass
 
 p h "Pumpkin scents were always my favorite."
@@ -331,7 +331,7 @@ menu:
         pass
 
     "What was the last time?":
-	    jump lastCandle
+        jump lastCandle
         pass
 
 p h "Yes sir!"
@@ -369,11 +369,11 @@ p n "You'll think I'm strange."
 
 menu:
     "It takes courage to be strange too.":
-	    p h "I suppose so."
+        p h "I suppose so."
         pass
 
     "No I wont.":
-	    p s "Okay{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} Well{w=0.15}.{w=0.15}.{w=0.15}."
+        p s "Okay{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} Well{w=0.15}.{w=0.15}.{w=0.15}."
         pass
 
 p n "Well I turned to temperature down as far as I could."
@@ -424,7 +424,7 @@ menu:
         pass
 
     "I see.":
-		jump noPoem
+        jump noPoem
         pass
 
 p s "Oh.{w=0.15}.{w=0.15}.{w=0.15}"
@@ -476,7 +476,7 @@ menu:
         pass
 
     "Sure.":
-	    jump inBed
+        jump inBed
         pass
 
 p su "Oh I'm sorry."
