@@ -59,9 +59,9 @@ menu:
         pass
 
     "I agree.":
-	    y h "I knew you'd get it."
-		y n "It's like{w=0.15}.{w=0.15}.{w=0.15}."
-		y n "I don't feel bad about what I said, {w=0.15}I just can't help but feel sorry for the guy."							   
+        y h "I knew you'd get it."
+        y n "It's like{w=0.15}.{w=0.15}.{w=0.15}."
+        y n "I don't feel bad about what I said, {w=0.15}I just can't help but feel sorry for the guy."
         pass
 
 y n "I'm not a machine."
@@ -210,19 +210,19 @@ p n "I still suggest maneuvering around the object.{w=0.25} Even if our path is 
 label menuSmall4:
 menu:
     "Nema, {w=0.15}are you sure we'd be able to detect and outrun them?":
-	    p n "I{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} I'm fairly confident Captain."
+        p n "I{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} I'm fairly confident Captain."
         p n "With Haruka's one-of-a-kind engine and a complete suite of state of the art technology backing it up, {w=0.15}we should be able to vastly outpace even the most advanced crafts that exist within high-level stations."
         p n "Let alone a.{w=0.15}.{w=0.15}. \"Lurk\""
-		p s "Fighting just seems like an unnecessary risk."
+        p s "Fighting just seems like an unnecessary risk."
         pass
 
     "Haruka, {w=0.15}are you sure we'd be able to fight them directly?":
-	    y s "Not completely."
-		y n "But we can't rely on our radars past those things."
-		y n "They could be jamming us,{w=0.15} this could be a trap,{w=0.15} we have no idea what's up ahead."
-		y n "I know my ship is fast enough to get past them, but I don't know if we're suited to deal with what we might find."
-		y n "I'll say that we don't see the typical signs of radar jamming as far as I can tell,{w=0.15} though."
-		y s "And,{w=0.15} the weapons that they have are an unknown."
+        y s "Not completely."
+        y n "But we can't rely on our radars past those things."
+        y n "They could be jamming us,{w=0.15} this could be a trap,{w=0.15} we have no idea what's up ahead."
+        y n "I know my ship is fast enough to get past them, but I don't know if we're suited to deal with what we might find."
+        y n "I'll say that we don't see the typical signs of radar jamming as far as I can tell,{w=0.15} though."
+        y s "And,{w=0.15} the weapons that they have are an unknown."
         pass
 
 p n "I'm fairly confident Captain."
@@ -233,7 +233,7 @@ p n "Let alone a.{w=0.15}.{w=0.15}. \"Lurk\""
 
 menu:
     "Two prior options.":
-	    jump menuSmall4
+        jump menuSmall4
         pass
 
     "OK, {w=0.15}I've made a decision.":
@@ -308,8 +308,6 @@ hide p
 hide y
 
 play sound "sounds/DoorClose2.mp3"
-
-call hall from _call_hall_26
         
 e "You walk up to Hei's door."
 
@@ -439,7 +437,7 @@ menu:
         pass
 
     "Nevermind.":
-	    jump neverminded
+        jump neverminded
         pass
 
 r su "I did?"
@@ -449,7 +447,7 @@ menu:
         pass
 
     "Nevermind.":
-	    jump neverminded
+        jump neverminded
         pass
 
 r n "Me?{w=0.15} For Haruka?"
@@ -459,7 +457,7 @@ menu:
         pass
 
     "Nevermind.":
-	    jump neverminded
+        jump neverminded
         pass
 
 r s "Blow your mind.{w=0.15}.{w=0.15}."
@@ -469,7 +467,7 @@ menu:
         pass
 
     "Nevermind.":
-	    jump neverminded
+        jump neverminded
         pass
 
 r h "It sounds like something I'd remember doesn't it?"
@@ -479,7 +477,7 @@ menu:
         pass
 
     "Nevermind.":
-	    jump neverminded
+        jump neverminded
         pass
 
 r n "Nah."
@@ -549,8 +547,8 @@ define eatD4 = False
 
 menu:
     "Of course.":
-	    e "Nema sits down across the table from you."
-	    jump nemaWaitD4
+        e "Nema sits down across the table from you."
+        jump nemaWaitD4
         pass
 
     "I'm hungry now.":
@@ -564,13 +562,13 @@ e "It's got a great flavor to it."
 
 menu:
     "This was great!":
-	    p h "I'm glad you think so, sir!"
-	    pass
-	"Thanks.":
-	    p h "Of course, I'm happy to contribute."
-	    pass
-	"...":
-	    pass
+        p h "I'm glad you think so, sir!"
+        pass
+    "Thanks.":
+        p h "Of course, I'm happy to contribute."
+        pass
+    "...":
+        pass
 
 label nemaWaitD4:
 e "Nema smiles shortly."
@@ -636,7 +634,7 @@ menu:
         pass
 
     "No problem.":
-	    jump dontListenNemaD4
+        jump dontListenNemaD4
         pass
 
 p n "I was going to ask what you.{w=0.15}.{w=0.15}."

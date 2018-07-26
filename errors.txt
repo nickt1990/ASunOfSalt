@@ -2,6 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/day4.rpy", line 37: Tab characters are not allowed in Ren'Py scripts.
+The label _call_hall_26 is defined twice, at
+  File "game/day4.rpy", line 302 and
+  File "game/day4.rpy", line 312.
 
 Ren'Py Version: Ren'Py 6.99.13.2919

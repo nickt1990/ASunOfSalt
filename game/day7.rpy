@@ -83,8 +83,8 @@ menu:
     "How does it work?":
         pass
 
-    "Oh, {w=0.15}neat.":
-        jump to pastExp
+    "Oh, neat.":
+        jump pastExp
         pass
 
 p s "Oh.{w=0.15}.{w=0.15}. w-well, {w=0.15}Haruka would be able to explain better than me."
