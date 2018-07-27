@@ -240,7 +240,7 @@ y m "NEMA."
 
 show p n
 
-p n "What? Yes. We're c-clear."
+p n "What?{w=0.15} Yes.{w=0.25} We're c-{w=0.15}clear."
 
 show y n
 
@@ -285,6 +285,6 @@ window hide
 show black
 with fade
 
-e "Everything suddenly went dark."
+e "Everything suddenly goes dark."
 
 return
