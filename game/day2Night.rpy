@@ -52,6 +52,8 @@ menu:
     "On my way!":
         pass
 
+call hall
+
 play sound "sounds/DoorOpen2.mp3"
 e "You open the door to Haruka standing there in her Pajamas"
 
@@ -77,7 +79,13 @@ menu:
 
 e "She smiles."
 
-yp n "Lets get to it. Do you know what to do?"
+
+play sound "sounds/DoorOpen2.mp3"
+call navRoom
+
+yp n "Let's get to it. {w=0.15}Do you know what to do?"
+
+play sound "sounds/DoorClose2.mp3"
 
 menu:
     "No.":

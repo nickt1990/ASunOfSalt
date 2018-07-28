@@ -557,6 +557,8 @@ show y n
 
 y n "I'm already up, {w=0.15}you can continue to be la-"
 
+play sound "sounds/Ketchup.mp3"
+
 e "Ketchup squirts out of the fridge when Haru tries to open it."
 
 y su "Is this.{w=0.15}.{w=0.15}.{w=0.15} Ketchup?"
@@ -583,12 +585,14 @@ e "She begins to swiftly walk towards him."
 
 r su "Haruka please, {w=0.15}I'm so sorry I'll clean it up, {w=0.15}I'll never bother you again I swear, {w=0.15}I do"
 
+play sound "sounds/Slash.mp3"
 show tRed
 with hpunch
-$ renpy.pause(0.10)
+$ renpy.pause(0.09)
 hide tRed
 
 e "The moment she reaches him she lashes her arm out and slices his throat."
+
 #todo hei portrait
 r su "Grgrlgl-{w=0.1}hargh H-g-"
 
@@ -705,8 +709,6 @@ window hide
 show black
 
 e "Suddenly you're in complete darkness."
-
-#todo voice 
 
 play sound "sounds/demonspeechd31.mp3"
 d "Leviathan ov mine, {w=0.15}stir.{w=0.15}.{w=0.15}."
@@ -1330,11 +1332,11 @@ y n "What is this, {w=0.15}middle school?"
 
 show r s
 
-r s "Hey, {w=0.15}don't make fun of my question. This was your stupid idea for a game."
+r s "Hey, {w=0.15}don't make fun of my question.{w=0.25 This was your stupid idea for a game."
 
 show y n
 
-y n "Whatever. Nema what do you have?"
+y n "Whatever.{w=0.25 Nema what do you have?"
 
 show p n
 
@@ -1348,7 +1350,7 @@ menu:
     "What age did you have your first kiss?":
         pass
 
-    "What is one thing you're very ashamed of?":#todo 
+    "What is one thing you're very ashamed of?":
         pass
 
 y n "Tryin' to block me in, {w=0.15}eh?"
