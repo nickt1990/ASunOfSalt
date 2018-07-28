@@ -4,7 +4,9 @@ show y n
 
 y n ".{w=0.15}.{w=0.15}."
 
+window hide
 hide black
+with fade
 
 y h "Hey, {w=0.15}we're fine."
 

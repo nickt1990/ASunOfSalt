@@ -248,20 +248,24 @@ e "She smiles."
 
 y n "Watch a little with me, {w=0.15}I need a break."
 
-#todo: show music
+play music "music/Show.mp3" fadein 2.0
 e "You sit and look at the screen with her."
+
+e "A sombre show you don't recognize plays."
 
 e ".{w=0.15}.{w=0.15}."
 
-y n "He's gonna get wrecked."
+y n "She can talk her way out of anything."
 
 y n "Just wait.{w=0.15} Right here."
 
-e "Somebody on the screen explodes."
+e "Two characters are having a casual conversation."
 
 y h "Boom!"
 
 y h "God.{w=0.15} I love this show."
+
+e "Nothing seemed to happen to you, but the show is interesting enough."
 
 e "You and Haruka sit quietly, enthralled in the show on the television."
 
@@ -293,6 +297,8 @@ menu:
 y n "Mako's just too damn sexy."
 
 y h "What a badass."
+
+y h "She's got 'em all in the palm of her hands."
 
 y n "Ya think I could pull off her kind of look?"
 
@@ -386,28 +392,35 @@ menu:
         pass
 
     "Snoop it up!":
-#todo snoop
+        e "There's a few strange tools you don't recognize and a bottle of what appears to be cinnamon flavored alchohol."
         pass
 
-e "You take a moment to observe the room."
+e "You take a moment to observe the rest of the room."
 
 e "The room smells like a flower garden. Sort of earthy, {w=0.15}but pleasant."
 
 e "She has pencils and books lined up on her desk. "
-
-e "One of her drawers is slightly open."
 
 menu:
     "Report looks great. Good job.":
         pass
 
     "What's with the alcohol in your desk?":
-        #todo, if snoop, and branch here
+        p su "Alchohol?"
+        p n "I'm not sure what you're talking about sir."
+        p n "But how was the report?"
+        menu:
+            "Looked good.":
+                p n "Thank you sir. I do my best."
+
+                p n "Anyways sir, {w=0.15}I have a lot to attend to, {w=0.15}and I don't want to keep you."
+                pass
+            "Could use some work.":
+                p s "Oh.{w=0.15}.{w=0.15}."
+                p n "Well, I'll get back to work on it then, sir."
+                p n "Thank you for your time."
+                pass
         pass
-
-p n "Thank you sir. I do my best."
-
-p n "Anyways sir, {w=0.15}I have a lot to attend to, {w=0.15}and I don't want to keep you."
 
 p n "Please have a wonderful day Captain, {w=0.15}and feel free to inform me of any way I can be of help."
 
@@ -431,15 +444,18 @@ e "He motions his hand to the second controller."
 
 menu:
     "Sure.":
-        e "You pick up the controller and start playing with him."
+        e "You pick up the controller."
         pass
 
     "No, {w=0.15}just checking in.":
         r m "No choice man, prove your leadership!"
         e "You reluctantly sit down with Hei and start playing."
         pass
+        
+play music "music/Game.mp3" fadein 2.0
+e "The game shows up on screen."
 
-#todo: game music
+e "It appears to be an old fashioned fighting game."
 
 r n "I don't have the newest one, {w=0.15}but Soft and Moist Vegetables: 2 Turbo Vegetable Edition is the best anyways."
 
@@ -572,17 +588,18 @@ r s "I'm.{w=0.15}.{w=0.15}. sorry."
 
 e "You see tears well up in his eyes. "
 
+define heiRematch = True
+
 menu:
     "Rematch. One week from today.":
+        e "He looks surprised for a second."
+        r n ".{w=0.15}.{w=0.15}."
         pass
 
-    "*Blow raspberry*":
-        #todo, no rematch
+    "*Blow raspberry*":#maydo
+        r m "Whatever.{w=0.15} I call for a rematch."
+        r n "One week."
         pass
-
-e "He looks surprised for a second."
-
-r n ".{w=0.15}.{w=0.15}."
 
 r h "Bring your big boy pants."
 
@@ -627,21 +644,18 @@ e "Everyone shows up right behind you."
 
 menu:
     "What's going on?":
+        show y n
+        y n "You called a meeting remember?"
+        menu:
+            "Yes.":
+                y h "No you didn't, {w=0.15}ass.{w=0.15} I grabbed everyone."
+                pass
         pass
 
     "Ah, {w=0.15}just in time for the meeting.":
-#todo this whole block
+        y su "I'm pretty sure I never even told you about the meeting."
+        y h "Good save though,{w=0.15} I guess."
         pass
-
-show y n
-
-y n "You called a meeting remember?"
-
-menu:
-    "Yes.":
-        pass
-
-y h "No you didn't, {w=0.15}ass. I grabbed everyone."
 
 show p n:
     linear 0 xalign 0.1
@@ -651,7 +665,7 @@ p n "Captain, {w=0.15}Haruka expressed an interest in setting a sort of schedule
 show r m:
     linear 0 xalign 0.9 yalign 1.0
 
-r m "I don't see why we need one. We'll be fine. "
+r m "I don't see why we need one.{w=0.25} We'll be fine. "
 
 show y n
 
@@ -678,14 +692,14 @@ menu:
         pass
 
     "What do you think?":
-        #todo branch
+        jump haruDecision2
         pass
 
 y h "Great lets hear it!"
 
 e "You did not plan for this."
 
-y s ".{W=0.15}.{W=0.15}.You don't have a clue do you?"
+y s ".{w=0.15}.{w=0.15}.You don't have a clue do you?"
 
 y h "Fine. Points for trying. "
 
@@ -697,7 +711,7 @@ r su "What?"
 
 e "Hei obviously had not been listening."
 
-e "Nema was fidgeting with her hands."
+e "Nema is fidgeting with her hands."
 
 show p s
 
@@ -706,6 +720,8 @@ p s "Well, {w=0.15}we c-could... maybe..."
 show y m
 
 y m "Ugh."
+
+label haruDecision2:
 
 y n "Well, {w=0.15}I don't want to babysit you all, {w=0.15}but I sort of assumed you guys would be a little more excited to get stuff done."
 

@@ -12,8 +12,8 @@
     image bg hall =    "e1.png"
     image bg shipFull = "ship_full.png"
     image shipFull = "ship_full.png"
-    image black = Solid((0, 0, 0, 255))
-    image tRed = "red.png"
+    image black = Solid((0, 0, 0, 255))#r,b,g,alpha
+    image tRed = Solid((255, 0, 0, 100))
     
 # ~~~SETTING UP BG SHIP MOVEMENTS~~~
 label beginningZoom:

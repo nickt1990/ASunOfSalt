@@ -1,12 +1,25 @@
 ﻿label day3:
 #todo There's a small introduction to your new application, and then you are shown a screen that lists the names of the crew."
 
-#e "There is a sort of progress bar for each made of 3 chunks. Bad. Good. Perfect."
-
-#e "These are the accuracy levels for the readings."
-
 menu:
-    "I should read the summaries.":#todo branch
+    "I should read the summaries.":
+        label summariesD3:
+        menu:
+            "Haruka's summary.":
+                call day3HaruS
+                jump summariesD3
+                pass
+            "Hei's summary.":
+                call day3HeiS
+                jump summariesD3
+                pass
+            "Nema's summary.":
+                call day3NemaS
+                jump summariesD3
+                pass
+            "I think I'm done.":
+                jump day3Start
+                pass                
         pass
 
     "I'm going to respect their privacy.":
@@ -550,9 +563,13 @@ y su "Is this.{w=0.15}.{w=0.15}.{w=0.15} Ketchup?"
 
 show r s
 
+stop music fadeout 2
+
 r s "Yeah.{w=0.15}.{w=0.15}.{w=0.15} pretty funny right?"
 
-play music "music/BadSituation.mp3" fadein 1.0
+play music "music/BadSituation.mp3" fadein 3.0
+
+show y m
 
 e "Haruka grabs a knife from the counter."
 
@@ -565,7 +582,12 @@ r su "Haruka! I swear I would not have done it if I kn-"
 e "She begins to swiftly walk towards him."
 
 r su "Haruka please, {w=0.15}I'm so sorry I'll clean it up, {w=0.15}I'll never bother you again I swear, {w=0.15}I do"
-#todo flash red with punch
+
+show tRed
+with hpunch
+$ renpy.pause(0.10)
+hide tRed
+
 e "The moment she reaches him she lashes her arm out and slices his throat."
 #todo hei portrait
 r su "Grgrlgl-{w=0.1}hargh H-g-"
@@ -580,7 +602,7 @@ show y m:
 y m "I just couldn't do it, {w=0.15}sorry cap."
 
 menu:
-    "Holy shit. ":
+    "Holy shit.":
         pass
 
     "Oh It's cool":
@@ -602,13 +624,13 @@ y s "Fine.{w=0.35} I knew what I was doing.{w=0.35} I took a chance. "
 
 y n "I'm not a coward like you."
 
-y s "{size=-6}Coward.{/size}"#todo check this
+y s "{size=-6}Coward.{/size}"#todo portrait change here
 
 y n "{size=-1}Coward.{/size}"
 
-y m "{size=12}Coward.{/size}"
+y m "{size=+12}Coward.{/size}"
 
-y n "{size=27}{b}Coward.{/b}{/size}"
+y n "{size=+27}{b}Coward.{/b}{/size}"
 
 e "Her portrait starts to become disfigured, {w=0.15}she slowly melts into nothing."
 
@@ -617,13 +639,17 @@ hide y
 window hide
 show black
 
-call hall
+stop music fadeout 2
 
-show p su
+play music "music/Space.mp3" fadein 2.0
+
+call hall
 
 e "{w=0.15}.{w=0.15}.{w=0.15}."
 
+show p su
 p su "Captain."
+hide p
 
 window hide
 hide black
@@ -638,9 +664,15 @@ menu:
 
 e "You find yourself in the hallway all of a sudden."
 
+e "You just barely noticed Nema walking into her open room."
+
 call pinkRoom
 
-e "At the sound of her voice,{w=0.15} you head toward Nema's room."
+stop music fadeout 3
+
+e "You follow just behind her through the door."
+
+play music "music/Evil.mp3" fadein 2.0
 
 e "The atmosphere seems to change as you enter."
 
@@ -653,32 +685,48 @@ menu:
 
 e "No response."
 
-e "Nema is facing away." #todo When you talk to her, jump scare.
+e "You notice her standing in the corner, facing away from you."
+
+menu:
+    "Approach her.":
+        pass
+        
+e "You walk up behind her."
+
+e "Your arm reaches out to touch her shoulder{w=0.35}.{w=0.35}.{w=0.35}."
+
+play sound "sounds/CaptainScare.mp3"
+
+#todo jump scare. image
 
 hide p
 
-play music "music/Evil.mp3" fadein 1.0
+window hide
+show black
 
-e "Suddenly you're floating in space."
-
-e "Things take a sinister tone again here."
+e "Suddenly you're in complete darkness."
 
 #todo voice 
 
+play sound "sounds/demonspeechd31.mp3"
 d "Leviathan ov mine, {w=0.15}stir.{w=0.15}.{w=0.15}."
 
+play sound "sounds/demonspeechd32.mp3"
 d "My burning sea. {w=0.15}Rise."
 
+play sound "sounds/demonspeechd33.mp3"
 d "I arrive."
 
+play sound "sounds/demonspeechd34.mp3"
 d "Blow your horns, {w=0.15}devout.{w=0.15} Announce me."
 
-d "A total waste.{w=0.15} Devoid ov value."
-
+play sound "sounds/demonspeechd35.mp3"
 d "Piles of flesh. "
 
+play sound "sounds/demonspeechd36.mp3"
 d "Waves of nothing."
 
+play sound "sounds/demonspeechd37.mp3"
 d "Do I make you smile?"
 
 menu:
@@ -687,13 +735,20 @@ menu:
     "No.":
         pass
 
+play sound "sounds/demonspeechd38.mp3"
 d "A deal is struck."
 
-d "My companion."
+play sound "sounds/demonspeechd39.mp3"
+d "Companion."
 
+play sound "sounds/demonspeechd310.mp3"
 d "We shall burn together."
 
+play sound "sounds/demonspeechd312.mp3"
 d "We shall be of many skins."
+
+play sound "sounds/demonspeechd313.mp3"
+d "We live."
 
 stop music fadeout 3.0
 
@@ -704,13 +759,12 @@ call kitchen
 
 e "You feel cold wind on your skin."
 
+play music "music/Space.mp3" fadein 2.0
 e "{w=0.35}.{w=0.35}.{w=0.35}."
 
 window hide
 hide black
 with fade
-
-play music "music/Space.mp3" fadein 1.0
 
 e "You fall back into your chair at the dinner table."
 
@@ -1341,7 +1395,8 @@ menu:
     "Have you always been bad at video games?":
         pass
 
-    "What is your ideal woman?":#todo 
+    "What is your ideal woman?":
+        jump heiNoRealQ        
         pass
 
 show r n
@@ -1352,12 +1407,15 @@ menu:
     "No.":
         pass
 
-    "What is your ideal woman?":#todo branch
+    "What is your ideal woman?":
+        jump heiNoRealQ
         pass
 
 r m "I'm going to SMASH you at that rematch. "
 
 r h "You dick."
+
+label heiNoRealQ:
 
 show y n
 
@@ -1369,6 +1427,7 @@ r h "Haruka, {w=0.15}honey, {w=0.15}I never tried to do anything but love you."
 
 r n "Alright, {w=0.15}your turn Captain."
 
+show p h
 e "Nema laughs."
 
 show y n
@@ -1417,13 +1476,20 @@ show y h
 
 y h "Life is pain. "
 
-y n "Her question is the same. Answer."
+y n "Her question is the same.{w=0.15} Answer."
 
 menu:
     "Haruka":
         pass
 
-    "Nema":#todo branch
+    "Nema":
+        y su "Seriously?"
+        p su "Me?"
+        p n ".{w=0.15}.{w=0.15}."
+        p h "Thank you captain."
+        y m "I don't buy it."
+        e "Haruka rolls her eyes."
+        jump harukaNextTurn
         pass
 
 y h "Shucks Cap, {w=0.15}I knew the answer, {w=0.15}but to hear it makes me smile. What a smooth operator."
@@ -1444,6 +1510,8 @@ r h "Haha, {w=0.15}you know I joke babe. "
 
 show y n
 
+label harukaNextTurn:
+    
 y n "Whatever, {w=0.15}back to me. "
 
 show r n

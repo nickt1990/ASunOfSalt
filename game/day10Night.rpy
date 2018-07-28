@@ -1,39 +1,51 @@
 ﻿label day10Night:
 
-show yp n
+show yb n
 
-yp n ".{w=0.15}.{w=0.15}."
+yb n ".{w=0.15}.{w=0.15}."
 
-yp m "Wake up."
+yb m "Wake up."
 
 window hide
 hide black
 with fade
 
 menu:
-    "W-what are you wearing?":
+    "What are you wearing?":
         pass
 
-    "Cute.":
-        e "Haruka smiles and looks down."
-        pass
+yb su "Oh."
 
-yp n "My jim-jams."
+yb s "Uhm,{w=0.15} nothing."
 
-yp h "I know it's dumb,{w=0.15} but a girls gotta be comfy."
+yb n "Guys,{w=0.15} I mean,{w=0.15} people like this kind of thing, {w=0.15}right?"
+
+yb s ".{w=0.15}.{w=0.15}."
+
+yb h "What do you think?"
 
 menu:
-    "Of course.":
+    "Cute.":
+        yb h "You think?"
+        yb s "It's weird isn't it."
+        yb s "I look dumb.{w=0.15} I don't even know why I brought this outfit."
+        yb s ".{w=0.15}.{w=0.15}."
+        yb s "I'm going to change."
+        yb h "Yeah."
+        jump changeHaru10n
         pass
 
-    "I guess so.":
+    "Uhm...":
+        yb s "Oh.{w=0.15}.{w=0.15}."
+        pass
+        
+    "Not a fan.":
+        yb su "Seriously?"
+        yb s "I see."
+        yb n "B-.{w=0.15}.{w=0.15}."
         pass
 
-yp h "I knew you'd understand."
-
-yp n "B-.{w=0.15}.{w=0.15}."
-
-yp h "Uhm.{w=0.15}.{w=0.15}."
+yb h "Uhm.{w=0.15}.{w=0.15}."
 
 menu:
     "What?":
@@ -42,13 +54,13 @@ menu:
     "Are you alright?":
         pass
 
-yp s "If you want I could.{w=0.15}.{w=0.15}. change?"
+yb s "If you want I could.{w=0.15}.{w=0.15}. change?"
 
-yp s "Into something more comfortable, I mean."
+yb s "Into something more comfortable,{w=0.15} I mean."
 
-yp h "Not that this isn't comfortable."
+yb h "Not that this isn't comfortable."
 
-yp h "I mean, just like, if you don't like this I can change."
+yb h "I mean, just like, if you want I can change."
 
 menu:
     "You should change.":
@@ -57,13 +69,15 @@ menu:
     "You're acting weird.":
         pass
 
-yp su "O-{w=0.15}okay."
+yb su "O-{w=0.15}okay."
 
-yp n "Of course,{w=0.15} right."
+yb n "Of course,{w=0.15} right."
 
-yp n "I'll change."
+yb n "I'll change."
 
-yp m "Close your eyes."
+label changeHaru10n:
+
+yb m "Close your eyes."
 
 e "You close your eyes."
 
@@ -114,14 +128,15 @@ e "She leans toward your face, closes her eyes and pushes her lips out."
 e "She's trembling violently, her face is scrunched up and uncomfortable looking."
 
 menu:
-    "Of course.{w=0.15}.{w=0.15}.":
+    "Of course...":
+        e "The second you get close she jumps back, shocked."
         pass
 
     "Why are you doing this all of a sudden?":
-#todo branch
+        yz su "Oh!{w=0.15} Uhm.{w=0.15}{w=0.15}.{w=0.15}."
         pass
 
-e "The second you get close she jumps back, shocked."
+
 
 yz su "S-{w=0.15}sorry!"
 

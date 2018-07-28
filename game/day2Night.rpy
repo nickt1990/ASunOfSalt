@@ -16,13 +16,15 @@ window hide
 show black
 with fade
 
-e "Email from HQ appears:"
+e "You have an email from HQ{w=0.15}.{w=0.15}.{w=0.15}."
 
-e "Captain, {w=0.15}Tonight at 0100 we will activate the Satori sensors in each of your crewmates rooms. Following is all the information you will need to know."
+e "Captain,"
 
-e "The sensors are located under the beds of each crewmate. In order to get a read on them, {w=0.15}they must sleep in their bed, {w=0.15}over their sensor."
+e "{w=0.15}Tonight at 0100 we will activate the Satori sensors in each of your crewmates rooms.{w=0.15} Following is all the information you will need to know."
+
+e "The sensors are located under the beds of each crewmate.{w=0.15} In order to get a read on them, {w=0.15}they must sleep in their bed, {w=0.15}over their sensor."
    
-e "The more time they spend, {w=0.15}the more accurate it will be. At 8 hours, {w=0.15}peak information accuracy will be achieved."
+e "The more time they spend, {w=0.15}the more accurate it will be.{w=0.15} At 8 hours, {w=0.15}peak information accuracy will be achieved."
    
 e "These instructions are intentionally left vague as to leave you to naturally testing the device in new ways giving us a wider range of information."
 
@@ -37,10 +39,7 @@ hide black
 with fade
 
 menu:
-    "That's terrible!":#todo: what happens here?
-        pass
-
-    "That's great!":
+    "...":
         pass
 
 play sound "sounds/Knock.mp3"
@@ -66,7 +65,7 @@ menu:
 yp n "Figured I'd dress comfortable, {w=0.15}since it will be a long night and all."
 
 menu:
-    "Looks good!":#todo: does this conversation happen way later as well?
+    "Looks good!":
         yp h "I'm cute. "
         pass
 
@@ -312,7 +311,7 @@ yp n "One of the converters was miscalibrated. A tiny bit more energy was going 
 yp h "Coulda spent our entire lives flying in circles."
 
 menu:
-    "Mis-calibrated by you?":
+    "Miscalibrated by you?":
         yp s "Apparently.{w=0.15} I'm not perfect."
         pass
 
@@ -321,6 +320,7 @@ menu:
         pass
 
 
+play music "music/CalmNight.mp3" fadein 3.0
 
 yp h "S'all fine now.{w=0.15} The engine itself is doin' grand."
 
@@ -426,7 +426,7 @@ menu:
     "Goodnight":
         pass
 
-hide y
+hide yp n
 
 call blueRoom from _call_blueRoom_4
 
