@@ -1,7 +1,7 @@
 ﻿label day3:
 #todo There's a small introduction to your new application, and then you are shown a screen that lists the names of the crew."
 
-menu:
+menu:#computer
     "I should read the summaries.":
         label summariesD3:
         menu:

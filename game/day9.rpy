@@ -10,7 +10,34 @@ e "You wake up to your alarm."
 
 e "After getting up and about, you notice you have mail notifications on your computer."
 
-#todo computer
+label summariesD9:
+
+menu:#computer
+    "I'll read the summaries.":
+        label summariesD9:
+        menu:
+            "Haruka's summary.":
+                call day9HaruS
+                jump summariesD9
+                pass
+            "Hei's summary.":
+                call day9HeiS
+                jump summariesD9
+                pass
+            "Nema's summary.":
+                call day9NemaS
+                jump summariesD9
+                pass
+            "I think I'm done.":
+                jump day9Start
+                pass                
+        pass
+
+    "I'm going to respect their privacy.":
+        jump day9Start
+        pass
+
+label day9Start:
 
 stop music fadeout 2.0
 

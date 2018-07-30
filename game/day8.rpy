@@ -609,10 +609,39 @@ menu:
     "I guess I can get some work done now?":
         pass
 
-#todo computer
-e "Go back to computer."
+call blueRoom
+e "You go back to your room and get on the computer."
 
-e "Time passes."
+label summariesD8:
+
+menu:#computer
+    "I'll read the summaries.":
+        label summariesD8:
+        menu:
+            "Haruka's summary.":
+                call day8HaruS
+                jump summariesD8
+                pass
+            "Hei's summary.":
+                call day8HeiS
+                jump summariesD8
+                pass
+            "Nema's summary.":
+                call day8NemaS
+                jump summariesD8
+                pass
+            "I think I'm done.":
+                jump day8Mid
+                pass                
+        pass
+
+    "I'm going to respect their privacy.":
+        jump day8Mid
+        pass
+
+label day8Mid:
+
+e "Time has passed."
 
 play sound "sounds/Knock.mp3"
 

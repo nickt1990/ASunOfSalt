@@ -18,9 +18,38 @@ menu:
 
 e "You move quietly out of the bed and to your computer."
 
-e "There's a instant message from Haruka telling you sleep well."
+label summariesD12:
 
-e "No other messages."
+menu:#computer
+    "I'll read the summaries.":
+        label summariesD12:
+        menu:
+            "Haruka's summary.":
+                call day12HaruS
+                jump summariesD12
+                pass
+            "Hei's summary.":
+                call day12HeiS
+                jump summariesD12
+                pass
+            "Nema's summary.":
+                call day12NemaS
+                jump summariesD12
+                pass
+            "Instant message client.":
+                e "There's an instant message from Haruka..."
+				e "todo"#todo im hharuka
+                pass
+            "I think I'm done.":
+                jump day12Mid
+                pass                
+        pass
+
+    "I'm going to respect their privacy.":
+        jump day12Mid
+        pass
+
+label day12Mid:
 
 show p h
 

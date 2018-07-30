@@ -466,8 +466,36 @@ label preDinnerDay6:
 
 menu:
     "Check email":
-#todo computer
         pass
+
+label summariesD4:
+
+menu:#computer
+    "I'll read the summaries.":
+        label summariesD6:
+        menu:
+            "Haruka's summary.":
+                call day6HaruS
+                jump summariesD6
+                pass
+            "Hei's summary.":
+                call day6HeiS
+                jump summariesD6
+                pass
+            "Nema's summary.":
+                call day6NemaS
+                jump summariesD6
+                pass
+            "I think I'm done.":
+                jump day6Mid
+                pass                
+        pass
+
+    "I'm going to respect their privacy.":
+        jump day6Mid
+        pass
+
+label day6Mid:
 
 play sound "sounds/Knock.mp3"
 

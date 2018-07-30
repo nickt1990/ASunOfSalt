@@ -395,12 +395,40 @@ jump day7FreeTime
 
 label partyTime:
 
+call blueRoom
+
 e "Seems like everyone is busy."
 
-e "Check your computer in order to work on your own project."
+e "You spend some time checking your computer."
 
-#todo computer
-e "Check computer, {w=0.15}time skips."
+label summariesD7:
+
+menu:#computer
+    "I'll read the summaries.":
+        label summariesD7:
+        menu:
+            "Haruka's summary.":
+                call day7HaruS
+                jump summariesD7
+                pass
+            "Hei's summary.":
+                call day7HeiS
+                jump summariesD7
+                pass
+            "Nema's summary.":
+                call day7NemaS
+                jump summariesD7
+                pass
+            "I think I'm done.":
+                jump day7Mid
+                pass                
+        pass
+
+    "I'm going to respect their privacy.":
+        jump day7Mid
+        pass
+
+label day7Mid:
 
 play sound "sounds/Knock.mp3"
 

@@ -277,8 +277,36 @@ e "Everyone has gone back to their rooms."
 
 call blueRoom
 
-#todo computer
 e "You head back into your room and check your mail."
+
+label summariesD14:
+
+menu:#computer
+    "I'll read the summaries.":
+        label summariesD14:
+        menu:
+            "Haruka's summary.":
+                call day14HaruS
+                jump summariesD14
+                pass
+            "Hei's summary.":
+                call day14HeiS
+                jump summariesD14
+                pass
+            "Nema's summary.":
+                call day14NemaS
+                jump summariesD14
+                pass
+            "I think I'm done.":
+                jump day14Mid
+                pass                
+        pass
+
+    "I'm going to respect their privacy.":
+        jump day14Mid
+        pass
+
+label day14Mid:
 
 show black
 

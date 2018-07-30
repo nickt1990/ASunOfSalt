@@ -14,11 +14,40 @@ with fade
 
 menu:
     "Check mail":
-        #todo computer
         pass
 
     "Get breakfast":
+	    jump day13Start
         pass
+
+label summariesD13:
+
+menu:#computer
+    "I'll read the summaries.":
+        label summariesD13:
+        menu:
+            "Haruka's summary.":
+                call day13HaruS
+                jump summariesD13
+                pass
+            "Hei's summary.":
+                call day13HeiS
+                jump summariesD13
+                pass
+            "Nema's summary.":
+                call day13NemaS
+                jump summariesD13
+                pass
+            "I think I'm done.":
+                jump day13Start
+                pass                
+        pass
+
+    "I'm going to respect their privacy.":
+        jump day13Start
+        pass
+
+label day13Start:
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -28,9 +57,9 @@ e "You stand up and walk out into the hallway."
 
 e "No sign of anyone."
 
-call kitchen from _call_kitchen_1
-
 e "As you walk closer to the kitchen you can hear the sound of somebody rustling through items in the fridge."
+
+call kitchen from _call_kitchen_1
 
 e "The kitchen door is open, Haruka is sitting at the table and Hei is at the fridge,{w=0.15} looking around."
 

@@ -8,7 +8,34 @@ with fade
 
 e "The day starts with the typical alarm.{w=0.15} You sit down at your computer."
 
-#todo computer
+label summariesD4:
+
+menu:#computer
+    "I'll read the summaries.":
+        label summariesD4:
+        menu:
+            "Haruka's summary.":
+                call day4HaruS
+                jump summariesD4
+                pass
+            "Hei's summary.":
+                call day4HeiS
+                jump summariesD4
+                pass
+            "Nema's summary.":
+                call day4NemaS
+                jump summariesD4
+                pass
+            "I think I'm done.":
+                jump day4Start
+                pass                
+        pass
+
+    "I'm going to respect their privacy.":
+        jump day3Start
+        pass
+
+label day4Start:
 
 stop music fadeout 2.0
 
