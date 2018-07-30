@@ -5,20 +5,33 @@ e "You both sleep peacefully through the night."
 window hide
 hide black
 with fade
-    
-e "Nema is still cuddled up beside you sleeping when you wake up."
+
+play music "music/MorningAlarm.mp3" fadein 2.0
+e "You wake up to the sound of your alarm."
+
+menu:
+    "Shut off alarm." if nemaBed == True:
+	    e "You reach over and shut the alarm off."
+		e "Nema is still curled up beside you sleeping."
+	    pass
+    "Shut off alarm." if nemaBed == False:
+	    e "You reach over and shut the alarm off."
+		e "Nema is still asleep on the floor when you look over."
+	    pass
+
+play music "music/Idle.mp3" fadein 3.0#todo change music
 
 menu:
     "Get out of bed.":
         pass
 
-    "Stay in bed.":
-#todo branch
-        pass
-
 e "You move quietly out of the bed and to your computer."
 
 label summariesD12:
+
+window hide
+show black 
+with fade
 
 menu:#computer
     "I'll read the summaries.":
@@ -36,9 +49,13 @@ menu:#computer
                 call day12NemaS
                 jump summariesD12
                 pass
-            "Instant message client.":
-                e "There's an instant message from Haruka..."
-				e "todo"#todo im hharuka
+            "Email from Haruka":
+                e "There's an email from Haruka that came in last night."
+				e "Cap,"
+				e "I'm sorry for all the ham."
+				e "I've just been eating them a lot and when I make them I figure I might as well make an extra in case you're hungry."
+				e "They're good though, right?"
+				e "-Haru"
                 pass
             "I think I'm done.":
                 jump day12Mid
@@ -51,15 +68,39 @@ menu:#computer
 
 label day12Mid:
 
-show p h
+window hide
+hide black 
+with fade
 
-pz h "Good morning, Sir."
+e "You notice Nema starting to move."
 
-hide pz h
+menu:
+    "Good morning!" if nemaBed == True and nemaClothes == True:
+	show p h
+    p h "Good morning, Sir."
+    e "Nema sits up and scoots over and sits on the side of the bed."
+	pass
 
-e "Nema stands up out of bed and begins to put her clothes on."
+    "Good morning!" if nemaBed == True and nemaClothes == False:
+	show pz h
+    pz h "Good morning, Sir."
+    hide pz h
+    e "Nema stands up out of bed and begins to put her clothes on."
+	show p h
+    e "Once dressed, she laid back down on the bed."
+	pass
 
-e "Once dressed, she laid back down on the bed."
+    "Good morning!" if nemaBed == False and nemaClothes == True:
+	e "Nema gets out of her sleeping bag,{w=0.15} walks over to the side of your bed,{w=0.15} and sits down."
+	pass
+
+    "Good morning!" if nemaBed == False and nemaClothes == False:
+	pz h "Good morning sir!"
+	hide pz h
+	show p h
+	e "She quickly gathers her clothing and puts it back on."
+	e "Then,{w=0.15} she walks over to the side of your bed and sits down."
+	pass
 
 show p h
 
@@ -175,9 +216,15 @@ menu:
     "We shared.":
         pass
 
-    "On the floor.":
-        p su "What?"
-        p n "No,{w=0.15} we shared the bed.{w=0.2} Of course."
+    "On the floor." if nemaBed == False:
+        p h "I brought a sleeping bag.{w=0.15} See?"
+		e "She points to a sleeping bag on the floor."
+		y m "Yeah, I bet you did."
+		p su "Excuse me?"
+		p n "Are you implying something, Haruka?"
+		y m "I think you know exactly what I'm implying."
+		p m "I'm sorry Haruka, but I don't feel I need to defend myself any further."
+		jump nemaNoBed12
         pass
 
 y su "Oh wow,{w=0.15} really?"
@@ -222,7 +269,9 @@ show p s
 
 p s "Haruka, {w=0.15}I don't mean to sound obvious,{w=0.15} but Captain and I merely slept near one another."
 
-p h "My relationship with him has no bearing on yours, {w=0.15}you should have no worries."
+label nemaNoBed12:
+
+p h "My relationship with the captain has no bearing on yours, {w=0.15}you should have no worries."
 
 show y m
 
@@ -360,7 +409,7 @@ menu:
     "We didn't have sex.":
         pass
 
-    "We just shared a bed.":
+    "We just shared a bed." if nemaBed:
         pass
 
     "It's none of your business what we did.":
@@ -517,12 +566,16 @@ r n "I meant it in a bros kinda way,{w=0.15} right?"
 
 menu:
     "No.":
+	    r s "Right."
+        pass
+
+    "Show your crewmate some respect.":
+	    r m "Sheesh."
         pass
 
     "Whatever.":
+	    r s "Fine."
         pass
-
-r s "Right."
 
 r n "Well."
 

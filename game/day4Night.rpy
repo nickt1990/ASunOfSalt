@@ -44,7 +44,7 @@ y m "Nema are you making those freakin' noises again? It's the middle of the nig
 
 show p s
 
-p s "N-no Haruka. I'll go check the radar."
+p s "N-no Haruka. {w=0.15}I'll go check the radar."
 
 call navRoom from _call_navRoom
 play sound "sounds/DoorOpen2.mp3"
@@ -127,7 +127,9 @@ menu:
     "Nema, {w=0.15}what can we do?":
         pass
 
-    "Haruka, {w=0.15}what can we do?":#todo branch
+    "Haruka, {w=0.15}what can we do?":
+	    y n "Nema's the one with the information right now."
+		y n "What do we do Nema?"
         pass
 
 show p su
@@ -260,7 +262,9 @@ show r su
 
 r su "Right!"
 
-#todo screen shake and stuff
+window hide
+show white#todo add white and play thru this part
+with hpunch
 
 e "There's a large flash of light and explosion."
 
@@ -272,6 +276,10 @@ y su "Captain!"
 #e "There is a timed prompt with two options. The easier of which will flahs you away. The other option leads to a bad end of everyone just dying here slowly."
 
 e "The ship lurches forward and for a moment, {w=0.15}you feel an intense force pushing you back."
+
+window hide
+hide white
+with fade
 
 menu:
     "We're going full speed.":

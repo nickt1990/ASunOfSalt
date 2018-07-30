@@ -6,7 +6,13 @@ window hide
 hide black
 with fade
 
-e "The day starts with the typical alarm.{w=0.15} You sit down at your computer."
+e "The day starts with the typical alarm."
+
+e "You sit down at your computer."
+
+window hide
+show black 
+with fade
 
 label summariesD4:
 
@@ -36,6 +42,10 @@ menu:#computer
         pass
 
 label day4Start:
+
+window hide
+hide black 
+with fade
 
 stop music fadeout 2.0
 
@@ -225,7 +235,8 @@ menu:
     "Yes Nema?":
         pass
 
-    "You agree with Haruka?":#todo 
+    "You agree with Haruka?":
+	    p s "I.{w=0.15}.{w=0.15}.{w=0.15} I'm not sure about that,{w=0.15} sir."
         pass
 
 show p n
@@ -371,13 +382,15 @@ menu:
     "In what way?":
         pass
 
-r n "Yeah, {w=0.15}she wants a strong man, {w=0.15}and I haven't shown that to her. Why would she be interested?"
+r n "Yeah, {w=0.15}she wants a strong man, {w=0.15}and I haven't shown that to her.{w=0.15} Why would she be interested?"
 
 menu:
     "So what will you do?":
         pass
 
-    "Good point.":#todo branch
+    "Good point.":
+	    r h "I know."
+		r h "I also know what I have to do."
         pass
 
 r h "Man up and get me a babe."
@@ -405,10 +418,10 @@ r n "Oh.{w=0.15}.{w=0.15}. Well, {w=0.15}I'll figure it out."
 r h "You worry too much man, {w=0.15}I don't get why she likes you."
 
 menu:
-    "That's a bit mean.":
+    "Excuse me?":
         pass
 
-    "Excuse me?":
+    "What do you mean?":
         pass
 
 r h "No offense, {w=0.15}I think you're great, {w=0.15}but you don't really say, {w=0.15}or.{w=0.15}.{w=0.15}. do.{w=0.15}.{w=0.15}. much. It sounds like I'm being a dick, {w=0.15}but for real."
@@ -417,9 +430,6 @@ r n "How can she like you when you haven't given her anything to like?"
 
 menu:
     "You're friends with Nema.":
-        pass
-
-    "How could she not?":#todo branch
         pass
 
 r n "Well yeah, {w=0.15}she's great."
@@ -674,14 +684,16 @@ e "Nema blushed."
 
 menu:
     "Worried.":
+    	p h "That's oddly a relief to me.{w=0.15}.{w=0.15}.{w=0.15} Thank you."
+        p s "To be quite honest, {w=0.15}I'm worried as well."
         pass
 
-    "Not worried.":#todo branch
+    "Not worried.":
+	    p su "Oh.{w=0.15}.{w=0.15}."
+		p n "Wow,{w=0.15} I suppose that's one of many reasons that you are the captain."
+		p s "I can't help but feel worried, {w=0.15}even a little panicked."
+		p n "But we have to go on,{w=0.15} right?"
         pass
-
-p h "That's oddly a relief to me.{w=0.15}.{w=0.15}.{w=0.15} Thank you."
-
-p s "To be quite honest, {w=0.15}I'm worried as well."
 
 p n "These \"Lurks\" that we saw earlier, {w=0.15}I've noticed something weird."
 
@@ -741,7 +753,7 @@ menu:
 #todo "Passed between us and the sun" Didn't we leave Earth and it's solar system, which includes the sun, behind? I thought we are testing some device for getting around fast. Maybe I misread something along the line.
 p n "It looks like.{w=0.15}.{w=0.15}.{w=0.15}"
 
-p n "we're getting some sort of interference from a large asteroid that's floating alongside us."
+p n "We're getting some sort of interference from a large asteroid that's floating alongside us."
 
 #todo this ties in with end, nema gathering power
 p su "I'm not sure I've ever heard of an asteroid causing this sort of interference, but it seems clear that that's the source."

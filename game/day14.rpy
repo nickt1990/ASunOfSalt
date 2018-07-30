@@ -281,6 +281,10 @@ e "You head back into your room and check your mail."
 
 label summariesD14:
 
+window hide
+show black 
+with fade
+
 menu:#computer
     "I'll read the summaries.":
         label summariesD14:
@@ -308,13 +312,7 @@ menu:#computer
 
 label day14Mid:
 
-show black
-
 e "You spend the rest of the evening working and end up falling asleep early."
-
-window hide
-show black
-with fade
 
 e ".{w=0.15}.{w=0.15}."
 

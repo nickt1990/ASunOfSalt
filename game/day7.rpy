@@ -403,6 +403,10 @@ e "You spend some time checking your computer."
 
 label summariesD7:
 
+window hide
+show black 
+with fade
+
 menu:#computer
     "I'll read the summaries.":
         label summariesD7:
@@ -429,6 +433,10 @@ menu:#computer
         pass
 
 label day7Mid:
+
+window hide
+hide black 
+with fade
 
 play sound "sounds/Knock.mp3"
 

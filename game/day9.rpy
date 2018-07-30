@@ -255,7 +255,7 @@ r h "First!"
 
 r n "Let us reminisce."
 
-#todo music dramatic
+play music "music/Dramatic.mp3" fadein 2.0
 
 r s "A week has passed."
 
@@ -435,9 +435,7 @@ r n "Alright,{w=0.1} let's do this."
 
 r m "{b}ENGAGE.{/b}"
 
-#todo music game
-
-e "Cheesy music begins to play."
+play music "music/Game.mp3" fadein 2.0
 
 show p h
 
@@ -739,6 +737,33 @@ e "There's a notification on your computer."
 
 e "You check your email."
 
-# todo computer
+label summariesD9:
+
+menu:#computer
+    "I'll read the summaries.":
+        label summariesD9:
+        menu:
+            "Haruka's summary.":
+                call day9HaruS
+                jump summariesD9
+                pass
+            "Hei's summary.":
+                call day9HeiS
+                jump summariesD9
+                pass
+            "Nema's summary.":
+                call day9NemaS
+                jump summariesD9
+                pass
+            "I think I'm done.":
+                jump day9End
+                pass                
+        pass
+
+    "I'm going to respect their privacy.":
+        jump day9End
+        pass
+
+label day9End:
 
 return

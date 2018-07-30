@@ -16,21 +16,25 @@ window hide
 show black
 with fade
 
-e "You have an email from HQ{w=0.15}.{w=0.15}.{w=0.15}."
+e "You only have one email in your inbox."
+
+e "An urgent email from HQ{w=0.15}.{w=0.15}.{w=0.15}."
 
 e "Captain,"
 
-e "{w=0.15}Tonight at 0100 we will activate the Satori sensors in each of your crewmates rooms.{w=0.15} Following is all the information you will need to know."
+e "{w=0.15}Tonight at 0100 we will activate the Satori sensors in each of your crewmate's rooms.{w=0.15} Following is all the information you will need to know:"
 
 e "The sensors are located under the beds of each crewmate.{w=0.15} In order to get a read on them, {w=0.15}they must sleep in their bed, {w=0.15}over their sensor."
    
-e "The more time they spend, {w=0.15}the more accurate it will be.{w=0.15} At 8 hours, {w=0.15}peak information accuracy will be achieved."
+e "The more time they spend over the sensor, {w=0.15}the more accurate it will be.{w=0.15} At 8 hours, {w=0.15}peak information accuracy will be achieved."
    
-e "These instructions are intentionally left vague as to leave you to naturally testing the device in new ways giving us a wider range of information."
+e "These instructions are intentionally left vague as to leave you to naturally test the device in new ways giving us a wider range of information."
 
-e "The crew is not to know about the sensors.{w=0.15} We want natural readings and complete compliance. Do not strictly enforce the crewmates to stay in their room."
+e "The crew is not to know about the sensors.{w=0.15} We want natural readings and complete compliance.{w=0.15} As such, do not strictly enforce the crewmates to stay in their room."
    
-e "Rather they miss a night here and there than learn of the sensors and intentionally try to interfere with the experiment."
+e "Rather they miss a night here and there than learn of the sensors and potential invalidate all the information gathered from that point on."
+
+e ".{w=0.15}.{w=0.15}."
 
 e "The message ends."
 

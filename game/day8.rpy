@@ -859,15 +859,17 @@ p n "Perhaps if Captain went to see her?"
 
 menu:
     "Not a good idea.":
+	    r n "Well, {w=0.15}you know best man."
         pass
 
     "Alright.":
-#todo branch
+        p su "Uhm,{w=0.15} Hei."
+		p n "Maybe give her some time."
+		r su "You think so?"
+		r s "I guess I can do that{w=0.15}.{w=0.15}.{w=0.15}."
         pass
 
 show r n
-
-r n "Well, {w=0.15}you know best man."
 
 r s "If we're done here though, {w=0.15}I think I'm gonna go snooze."
 

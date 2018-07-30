@@ -22,6 +22,10 @@ menu:
 
 label summariesD13:
 
+window hide
+show black 
+with fade
+
 menu:#computer
     "I'll read the summaries.":
         label summariesD13:
@@ -48,6 +52,10 @@ menu:#computer
         pass
 
 label day13Start:
+
+window hide
+hide black 
+with fade
 
 play sound "sounds/DoorOpen2.mp3"
 
@@ -281,7 +289,38 @@ play sound "sounds/DoorClose2.mp3"
 
 e "You sit down at your computer to get some work done."
 
-#todo computer
+label summariesD132:
+
+window hide
+show black 
+with fade
+
+menu:#computer
+    "I'll read the summaries.":
+        label summariesD13:
+        menu:
+            "Mail.":#todo mail?
+                call day13Mail
+                jump summariesD132
+                pass
+            "Junk Mail.":
+                call day13Mail2
+                jump summariesD132
+                pass
+            "I think I'm done.":
+                jump day13End
+                pass                
+        pass
+
+    "I'm going to respect their privacy.":
+        jump day13End
+        pass
+
+label day13End:
+
+window hide
+hide black 
+with fade
 
 play sound "sounds/Knock.mp3"
 

@@ -1,5 +1,11 @@
 ﻿label day3:
-#todo There's a small introduction to your new application, and then you are shown a screen that lists the names of the crew."
+#todo check all music is implemented
+
+#todo intro to day 3, There's a small introduction to your new application, and then you are shown a screen that lists the names of the crew."
+
+window hide
+show black 
+with fade
 
 menu:#computer
     "I should read the summaries.":
@@ -25,6 +31,10 @@ menu:#computer
     "I'm going to respect their privacy.":
         jump day3Start
         pass
+
+window hide
+hide black 
+with fade
 
 label day3Start:#DAY3START!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

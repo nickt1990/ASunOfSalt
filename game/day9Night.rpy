@@ -39,7 +39,7 @@ menu:
         pass
 
     "It's alright.":
-#todo
+# todo branch
         pass
 
 y n "Hei and Nema?"

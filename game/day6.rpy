@@ -231,13 +231,12 @@ y m "Like hell I'm going to listen to your opinion on this."
 
 menu:
     "Haruka you're being unfair.":
+	    y n "Unfair? {w=0.15}Cap, {w=0.15}sorry if I'm a bit riled up, {w=0.15}but I wanna survive and I don't trust Hei to come through in a pinch for shit."
         pass
 
     "I'm sorry, {w=0.15}but I agree with Haruka.":
-#todo branch
+        y h "Thank you Cap."
         pass
-
-y n "Unfair? Cap, {w=0.15}sorry if I'm a bit riled up, {w=0.15}but I wanna survive and I don't trust Hei to come through in a pinch for shit."
 
 y n "Our weapon can be our speed. "
 
@@ -255,7 +254,7 @@ menu:
     "Sorry Hei, {w=0.15}but I think it's in our best interest to just build speed.":
         pass
 
-    "Haruka, {w=0.15}I think we need a little extra insurance. You said yourself, {w=0.15}we're heading into the unknown.":
+    "Haruka, {w=0.15}I think we need a little extra insurance. You said yourself, we're heading into the unknown.":
 #todo branch
         pass
 
@@ -433,10 +432,11 @@ menu:
         pass
 
     "Yes, {w=0.15}I guess it does.":
-#todo branch
+        p n "That's what I think."
+		p n "It's not all bad."
         pass
 
-p n "I can improve in other ways to compliment the leaders. Not everybody has to be a leader."
+p n "I can improve in other ways to compliment the leaders.{w=0.15} Not everybody has to be a leader."
 
 p s "Maybe.{w=0.15}.{w=0.15}."
 
@@ -444,15 +444,18 @@ p n "I'm content just being support.{w=0.15} I want to see us succeed."
 
 menu:
     "Don't limit yourself. You can succeed on your own too.":
+	    p h "No, {w=0.15}it's not limiting, {w=0.15}it's focusing."
+		p n "I'm putting the group first."
+		p n "It's the right thing to do.{w=0.15}.{w=0.15}."
         pass
 
     "There needs to be a great crew behind every leader, {w=0.15}that's true.":
-#todo branch
+        p h "Agreed."
+		p h "A good crew can be just as important, {w=0.15}right?"
+		p n "I'm fine with that{w=0.35}.{w=0.35}.{w=0.35}."
         pass
 
-p h "No, {w=0.15}it's not limiting, {w=0.15}it's focusing."
-
-p n "It makes sense.{w=0.15}.{w=0.15}."
+p n "It makes sense{w=0.15}.{w=0.15}.{w=0.15}."
 
 p h "I'm appreciative you took the time to talk over these petty personal problems with me sir."
 
@@ -468,7 +471,11 @@ menu:
     "Check email":
         pass
 
-label summariesD4:
+window hide
+show black 
+with fade
+
+label summariesD6:
 
 menu:#computer
     "I'll read the summaries.":
@@ -496,6 +503,10 @@ menu:#computer
         pass
 
 label day6Mid:
+
+window hide
+hide black 
+with fade
 
 play sound "sounds/Knock.mp3"
 

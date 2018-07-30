@@ -3,6 +3,12 @@
 
 # These are the accuracy levels for the readings.
 
+#MISC
+label day13Mail:
+    return
+label day13Mail2:
+    return
+
 #HEI
 label day3HeiS:
     return

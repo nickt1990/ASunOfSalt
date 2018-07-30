@@ -13,8 +13,28 @@ menu:
     "Check mail.":
         stop music fadeout 1
         play music "music/Idle.mp3" fadein 2.0
-        #todo computer
         pass
+
+label summariesD2:
+
+menu:#todo computer options pre summary
+    "I'll check my mail.":
+        label summariesD2:
+        menu:
+            "Mail.":
+                call day2HaruS
+                jump summariesD2
+                pass
+            "I think I'm done.":
+                jump day4Start
+                pass                
+        pass
+
+    "I'm done.":
+        jump day2Start
+        pass
+
+label day2Start:
 
 play music "music/RadioMusic.mp3" fadein 2.0
 

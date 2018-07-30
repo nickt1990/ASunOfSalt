@@ -1,5 +1,9 @@
 ﻿label day11Night:
 
+define nemaBed = False
+define nemaClothes = False
+define nemaPoem = False
+
 play sound "sounds/DoorClose2.mp3"
 
 e "You enter to Nema standing in front of your computer."
@@ -211,6 +215,7 @@ p h "Right."
 
 e "Nema smiles at you,{w=0.15} then looks down at the floor."
 
+#todo space shrimp effect
 e "You sit in silence for a moment,{w=0.15} then there's a bright light out the window."
 
 menu:
@@ -267,17 +272,15 @@ p n "But I think.{w=0.15}.{w=0.15}.{w=0.15} "
 
 p s "Well."
 
-p n "I'm talking too much,{w=0.15} arent I?"
+p n "I'm talking too much,{w=0.15} aren't I?"
 
 p s "I'm sorry sir,{w=0.15} I'm not sure what's gotten into me."
 
 menu:
     "No,{w=0.15} I'm happy to listen!":
         pass
-
-    "I'm feeling a little tired.":
-#todo branch end night
-        pass
+    "Don't worry about it.":
+	    pass
 
 p h "Thank you sir."
 
@@ -420,7 +423,8 @@ p n "So,{w=0.15} it doesn't make me unique."
 p h "But it makes me feel understood a little bit."
 
 menu:
-    "Can I read one of your poems?":#todo hear one of the poems flag
+    "Can I read one of your poems?":#todo read poem later
+		$ nemaPoem = True
         pass
 
     "I see.":
@@ -469,55 +473,66 @@ p h "If I'm honest Captain,{w=0.15} I'm feeling a little exhausted."
 
 e "Nema stands up,{w=0.15} then pulls back the covers of your bed."
 
-p n "Do you want to come to bed?"
-
+p n "Do you want to get to bed?"
+#todo test branches
 menu:
-    "Come to bed?":
+    "What? Come to bed?":
         pass
 
     "Sure.":
+	    $ nemaBed = True
         jump inBed
         pass
 
-p su "Oh I'm sorry."
+p su "Oh I'm sorry, I don't mean anything by it."
 
-p n "Is that weird?"
+p n "There's nothing inherently sexual about physical contact or exposing skin as far as I'm concerned."
+
+p s "I know that's not common thought though."
+
+p h "I wouldn't blame you at all for feeling different, but{w=0.15}.{w=0.15}.{w=0.15}."
+
+p n "Do you think that's weird?"
 
 menu:
-    "A little.{w=0.15}.{w=0.15}.{w=0.15}":
+    "A little...":
+	    p s "I apologize sir."
+        p n "I'm not suggesting we do anything sexual,{w=0.15} if that helps."
         pass
 
     "No!":
+	    p h "Good."
+		p n "I'm happy you think the same."
         pass
-
-p s "Sorry."
-
-p n "I'm not suggesting we do anything physical,{w=0.15} if that helps."
 
 p h "I just find it nice to sleep near another person."
 
-p n "If it makes you uncomfortable,{w=0.15} I have no issues with sleeping on the floor."
+p n "If it makes you uncomfortable,{w=0.15} I have no issues with sleeping on the floor though."
 
 p h "I grabbed a sleeping bag just in case."
 
 menu:
     "We can share.":
+	    p h "That sounds excellent to me,{w=0.15} sir."
+	    $ nemaBed = True
         pass
 
     "It might be best if we split up.":
+	    p h "No problem sir."
+		e "Nema grabs a sleeping bag from the corner of the room and spreads it out on the floor."
         pass
-
-p h "That sounds excellent to me,{w=0.15} sir."
 
 label inBed:
 
 e "She smiles,{w=0.15} then starts to lift her shirt over her head."
 
 menu:
-    "Wait!":
+    "What are you doing?":
         pass
 
-    ".{w=0.15}.{w=0.15}.{w=0.15}":
+    "...":
+	    $ nemaClothes = False
+	    jump gettingNakedNema
         pass
 
 p su "Oh!"
@@ -533,7 +548,11 @@ menu:
         pass
 
     "If you could,{w=0.15} please.":
-#todo keep clothes on
+		$ nemaClothes = True
+        p su "Oh, okay."
+		p h "Of course, I didn't mean to make you uncomfortable sir."
+		p s "I suppose that was extremely inappropriate of me to even ask{w=0.15}.{w=0.15}.{w=0.15}."
+		jump day11nEnd
         pass
 
 p h "Are you sure sir?"
@@ -545,38 +564,63 @@ menu:
     "Yes.":
         pass
 
-p n "Alright,{w=0.15} as long as you're alright with it,{w=0.15} Captain."
+p n "Alright,{w=0.15} as long as you're not bothered."
+
+label gettingNakedNema:
 
 e "She continues to pull her shirt up over her head and off her body."
 
 e "Once her shirt's removed,{w=0.15} she pulls down her skirt and steps over it."
 
-hide p n
-show pz n
+e "She starts to fold her clothes, paying no attention to you."
 
-e "She looks you in the eyes and smiles an innocent smile,{w=0.15} then slides into the bed."
+label day11nMenu:
 
 menu:
-    "Get in next to her.":
+    "Get into bed." if nemaBed == True and nemaClothes == True:
+	    e "You climb into bed."
+    	e "She slides into the bed next to you shortly after and pulls up the blankets."
+        e "She sighs,{w=0.15} then pulls her body against yours."
+        p s "I'm sorry for talking so much tonight Captain."
+        p n ".{w=0.15}.{w=0.15}.{w=0.15}"
+        p h "Thank you,{w=0.15} Sir."
+        e "She squeezes you lightly,{w=0.15} and then falls asleep."
+		hide p h
         pass
+    "Get into bed." if nemaBed == True and nemaClothes == False:
+	    hide p n
+        show pz n
+		e "You climb into bed."
+    	e "She slides into the bed next to you and pulls up the blankets."
+        e "She sighs,{w=0.15} then rolls onto her side."
+        pz s "I'm sorry for talking so much tonight Captain."
+        pz n ".{w=0.15}.{w=0.15}.{w=0.15}"
+		pz n "And.{w=0.15}.{w=0.15}.{w=0.15}"
+        pz h "Thank you,{w=0.15} Sir."
+        e "She touches your side lightly,{w=0.15} and then falls asleep."
+		hide pz h
+        pass
+	"Get into bed." if nemaBed == False and nemaClothes == True:
+	    e "As you climb into bed, you notice Nema sliding into her sleeping bag."
+		e "She pulls it up to her chin and looks over at you with a smile."
+		p h "Sleep well, sir."
+		p h "I'm happy we were able to talk tonight."
+		hide p h
+	    pass
+	"Get into bed." if nemaBed == False and nemaClothes == False:
+	    e "As you climb into bed, you notice Nema sliding into her sleeping bag."
+		e "She pulls it up to her chin and looks over at you with a smile."
+		pz h "Sleep well, sir."
+		pz h "I'm happy we were able to talk tonight."
+		hide pz h
+	    pass
 
-e "You lay in the bed next to her and pull up the blankets."
-
-e "She sighs,{w=0.15} then pulls her body against yours."
-
-pz s "I'm sorry for talking so much tonight Captain."
-
-pz n ".{w=0.15}.{w=0.15}.{w=0.15}"
-
-pz h "Thank you,{w=0.15} Sir."
-
-e "She squeezes you lightly,{w=0.15} and then falls asleep."
+label day11nEnd:
 
 e "After a few moments you drift off."
 
 window hide
 show black
 with fade
-
 
 return

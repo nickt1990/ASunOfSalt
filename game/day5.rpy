@@ -239,7 +239,8 @@ show r h
 
 r h "Don't die on us bro."
 
-#todo slap 
+play sound "sounds/Slap.mp3"
+
 e "You hear a slapping sound."
 
 r s "Ouch, {w=0.15}rude."
