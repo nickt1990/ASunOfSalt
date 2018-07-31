@@ -1,7 +1,16 @@
-﻿label day3:
-#todo check all music is implemented
+﻿#todo check all music is implemented
 
 #todo intro to day 3, There's a small introduction to your new application, and then you are shown a screen that lists the names of the crew."
+#todo ending idea
+# haruka mentions that motokami was world renown for his crossdimensional ideas
+# Nema is still nema at the end, it takes a human to trade places with their kind in order for them to move over to this world. Motokami gave them placeholder bodies but they aren't completely here, causing ripples in dimension -the demon
+# Nema can be persuaded to stay if shes happy as things are with haruka
+# Hei is also a being from other dimension
+# plan was that you trade with hei, nema with haruka.
+# everyone on the ship but you knows motokami
+# ending revolves around if you're sacrificed to the other dimension or not so that hei and nema can come into our world as whole										  
+
+label day3:
 
 window hide
 show black 
@@ -591,6 +600,10 @@ e "She turns around and looks at Hei for a moment."
 
 r su "Haruka! I swear I would not have done it if I kn-"
 
+show y m:
+    linear .2 xalign 0.89
+	
+	
 e "She begins to swiftly walk towards him."
 
 r su "Haruka please, {w=0.15}I'm so sorry I'll clean it up, {w=0.15}I'll never bother you again I swear, {w=0.15}I do"
@@ -756,10 +769,10 @@ d "Companion."
 play sound "sounds/demonspeechd310.mp3"
 d "We shall burn together."
 
-play sound "sounds/demonspeechd312.mp3"
+play sound "sounds/demonspeechd311.mp3"
 d "We shall be of many skins."
 
-play sound "sounds/demonspeechd313.mp3"
+play sound "sounds/demonspeechd312.mp3"
 d "We live."
 
 stop music fadeout 3.0

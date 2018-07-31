@@ -81,6 +81,7 @@ menu:
         yp h "Hey, {w=0.15}this isn't my assignment, {w=0.15}I'm the morale support, {w=0.15}remember?"
         pass
 
+	play music "music/RelaxTalk.mp3" fadein 3.0									   
 e "She smiles."
 
 
