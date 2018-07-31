@@ -616,7 +616,6 @@ label summariesD8:
 
 menu:#computer
     "I'll read the summaries.":
-        label summariesD8:
         menu:
             "Haruka's summary.":
                 call day8HaruS
@@ -859,14 +858,14 @@ p n "Perhaps if Captain went to see her?"
 
 menu:
     "Not a good idea.":
-	    r n "Well, {w=0.15}you know best man."
+        r n "Well, {w=0.15}you know best man."
         pass
 
     "Alright.":
         p su "Uhm,{w=0.15} Hei."
-		p n "Maybe give her some time."
-		r su "You think so?"
-		r s "I guess I can do that{w=0.15}.{w=0.15}.{w=0.15}."
+        p n "Maybe give her some time."
+        r su "You think so?"
+        r s "I guess I can do that{w=0.15}.{w=0.15}.{w=0.15}."
         pass
 
 show r n

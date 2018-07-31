@@ -280,7 +280,7 @@ menu:
     "No,{w=0.15} I'm happy to listen!":
         pass
     "Don't worry about it.":
-	    pass
+        pass
 
 p h "Thank you sir."
 
@@ -424,7 +424,7 @@ p h "But it makes me feel understood a little bit."
 
 menu:
     "Can I read one of your poems?":#todo read poem later
-		$ nemaPoem = True
+        $ nemaPoem = True
         pass
 
     "I see.":
@@ -480,7 +480,7 @@ menu:
         pass
 
     "Sure.":
-	    $ nemaBed = True
+        $ nemaBed = True
         jump inBed
         pass
 
@@ -496,13 +496,13 @@ p n "Do you think that's weird?"
 
 menu:
     "A little...":
-	    p s "I apologize sir."
+        p s "I apologize sir."
         p n "I'm not suggesting we do anything sexual,{w=0.15} if that helps."
         pass
 
     "No!":
-	    p h "Good."
-		p n "I'm happy you think the same."
+        p h "Good."
+        p n "I'm happy you think the same."
         pass
 
 p h "I just find it nice to sleep near another person."
@@ -513,13 +513,13 @@ p h "I grabbed a sleeping bag just in case."
 
 menu:
     "We can share.":
-	    p h "That sounds excellent to me,{w=0.15} sir."
-	    $ nemaBed = True
+        p h "That sounds excellent to me,{w=0.15} sir."
+        $ nemaBed = True
         pass
 
     "It might be best if we split up.":
-	    p h "No problem sir."
-		e "Nema grabs a sleeping bag from the corner of the room and spreads it out on the floor."
+        p h "No problem sir."
+        e "Nema grabs a sleeping bag from the corner of the room and spreads it out on the floor."
         pass
 
 label inBed:
@@ -531,8 +531,8 @@ menu:
         pass
 
     "...":
-	    $ nemaClothes = False
-	    jump gettingNakedNema
+        $ nemaClothes = False
+        jump gettingNakedNema
         pass
 
 p su "Oh!"
@@ -548,11 +548,11 @@ menu:
         pass
 
     "If you could,{w=0.15} please.":
-		$ nemaClothes = True
+        $ nemaClothes = True
         p su "Oh, okay."
-		p h "Of course, I didn't mean to make you uncomfortable sir."
-		p s "I suppose that was extremely inappropriate of me to even ask{w=0.15}.{w=0.15}.{w=0.15}."
-		jump day11nEnd
+        p h "Of course, I didn't mean to make you uncomfortable sir."
+        p s "I suppose that was extremely inappropriate of me to even ask{w=0.15}.{w=0.15}.{w=0.15}."
+        jump day11nEnd
         pass
 
 p h "Are you sure sir?"
@@ -578,42 +578,42 @@ label day11nMenu:
 
 menu:
     "Get into bed." if nemaBed == True and nemaClothes == True:
-	    e "You climb into bed."
-    	e "She slides into the bed next to you shortly after and pulls up the blankets."
+        e "You climb into bed."
+        e "She slides into the bed next to you shortly after and pulls up the blankets."
         e "She sighs,{w=0.15} then pulls her body against yours."
         p s "I'm sorry for talking so much tonight Captain."
         p n ".{w=0.15}.{w=0.15}.{w=0.15}"
         p h "Thank you,{w=0.15} Sir."
         e "She squeezes you lightly,{w=0.15} and then falls asleep."
-		hide p h
+        hide p h
         pass
     "Get into bed." if nemaBed == True and nemaClothes == False:
-	    hide p n
+        hide p n
         show pz n
-		e "You climb into bed."
-    	e "She slides into the bed next to you and pulls up the blankets."
+        e "You climb into bed."
+        e "She slides into the bed next to you and pulls up the blankets."
         e "She sighs,{w=0.15} then rolls onto her side."
         pz s "I'm sorry for talking so much tonight Captain."
         pz n ".{w=0.15}.{w=0.15}.{w=0.15}"
-		pz n "And.{w=0.15}.{w=0.15}.{w=0.15}"
+        pz n "And.{w=0.15}.{w=0.15}.{w=0.15}"
         pz h "Thank you,{w=0.15} Sir."
         e "She touches your side lightly,{w=0.15} and then falls asleep."
-		hide pz h
+        hide pz h
         pass
-	"Get into bed." if nemaBed == False and nemaClothes == True:
-	    e "As you climb into bed, you notice Nema sliding into her sleeping bag."
-		e "She pulls it up to her chin and looks over at you with a smile."
-		p h "Sleep well, sir."
-		p h "I'm happy we were able to talk tonight."
-		hide p h
-	    pass
-	"Get into bed." if nemaBed == False and nemaClothes == False:
-	    e "As you climb into bed, you notice Nema sliding into her sleeping bag."
-		e "She pulls it up to her chin and looks over at you with a smile."
-		pz h "Sleep well, sir."
-		pz h "I'm happy we were able to talk tonight."
-		hide pz h
-	    pass
+    "Get into bed." if nemaBed == False and nemaClothes == True:
+        e "As you climb into bed, you notice Nema sliding into her sleeping bag."
+        e "She pulls it up to her chin and looks over at you with a smile."
+        p h "Sleep well, sir."
+        p h "I'm happy we were able to talk tonight."
+        hide p h
+        pass
+    "Get into bed." if nemaBed == False and nemaClothes == False:
+        e "As you climb into bed, you notice Nema sliding into her sleeping bag."
+        e "She pulls it up to her chin and looks over at you with a smile."
+        pz h "Sleep well, sir."
+        pz h "I'm happy we were able to talk tonight."
+        hide pz h
+        pass
 
 label day11nEnd:
 

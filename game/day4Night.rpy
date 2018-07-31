@@ -128,8 +128,8 @@ menu:
         pass
 
     "Haruka, {w=0.15}what can we do?":
-	    y n "Nema's the one with the information right now."
-		y n "What do we do Nema?"
+        y n "Nema's the one with the information right now."
+        y n "What do we do Nema?"
         pass
 
 show p su

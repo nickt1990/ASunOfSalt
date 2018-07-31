@@ -17,7 +17,7 @@ menu:
         pass
 
     "Get breakfast":
-	    jump day13Start
+        jump day13Start
         pass
 
 label summariesD13:
@@ -28,7 +28,6 @@ with fade
 
 menu:#computer
     "I'll read the summaries.":
-        label summariesD13:
         menu:
             "Haruka's summary.":
                 call day13HaruS
@@ -297,7 +296,6 @@ with fade
 
 menu:#computer
     "I'll read the summaries.":
-        label summariesD13:
         menu:
             "Mail.":#todo mail?
                 call day13Mail

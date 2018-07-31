@@ -287,7 +287,6 @@ with fade
 
 menu:#computer
     "I'll read the summaries.":
-        label summariesD14:
         menu:
             "Haruka's summary.":
                 call day14HaruS

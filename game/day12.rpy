@@ -11,13 +11,13 @@ e "You wake up to the sound of your alarm."
 
 menu:
     "Shut off alarm." if nemaBed == True:
-	    e "You reach over and shut the alarm off."
-		e "Nema is still curled up beside you sleeping."
-	    pass
+        e "You reach over and shut the alarm off."
+        e "Nema is still curled up beside you sleeping."
+        pass
     "Shut off alarm." if nemaBed == False:
-	    e "You reach over and shut the alarm off."
-		e "Nema is still asleep on the floor when you look over."
-	    pass
+        e "You reach over and shut the alarm off."
+        e "Nema is still asleep on the floor when you look over."
+        pass
 
 play music "music/Idle.mp3" fadein 3.0#todo change music
 
@@ -35,7 +35,6 @@ with fade
 
 menu:#computer
     "I'll read the summaries.":
-        label summariesD12:
         menu:
             "Haruka's summary.":
                 call day12HaruS
@@ -51,11 +50,11 @@ menu:#computer
                 pass
             "Email from Haruka":
                 e "There's an email from Haruka that came in last night."
-				e "Cap,"
-				e "I'm sorry for all the ham."
-				e "I've just been eating them a lot and when I make them I figure I might as well make an extra in case you're hungry."
-				e "They're good though, right?"
-				e "-Haru"
+                e "Cap,"
+                e "I'm sorry for all the ham."
+                e "I've just been eating them a lot and when I make them I figure I might as well make an extra in case you're hungry."
+                e "They're good though, right?"
+                e "-Haru"
                 pass
             "I think I'm done.":
                 jump day12Mid
@@ -76,31 +75,31 @@ e "You notice Nema starting to move."
 
 menu:
     "Good morning!" if nemaBed == True and nemaClothes == True:
-	show p h
-    p h "Good morning, Sir."
-    e "Nema sits up and scoots over and sits on the side of the bed."
-	pass
+        show p h
+        p h "Good morning, Sir."
+        e "Nema sits up and scoots over and sits on the side of the bed."
+        pass
 
     "Good morning!" if nemaBed == True and nemaClothes == False:
-	show pz h
-    pz h "Good morning, Sir."
-    hide pz h
-    e "Nema stands up out of bed and begins to put her clothes on."
-	show p h
-    e "Once dressed, she laid back down on the bed."
-	pass
+        show pz h
+        pz h "Good morning, Sir."
+        hide pz h
+        e "Nema stands up out of bed and begins to put her clothes on."
+        show p h
+        e "Once dressed, she laid back down on the bed."
+        pass
 
     "Good morning!" if nemaBed == False and nemaClothes == True:
-	e "Nema gets out of her sleeping bag,{w=0.15} walks over to the side of your bed,{w=0.15} and sits down."
-	pass
+        e "Nema gets out of her sleeping bag,{w=0.15} walks over to the side of your bed,{w=0.15} and sits down."
+        pass
 
     "Good morning!" if nemaBed == False and nemaClothes == False:
-	pz h "Good morning sir!"
-	hide pz h
-	show p h
-	e "She quickly gathers her clothing and puts it back on."
-	e "Then,{w=0.15} she walks over to the side of your bed and sits down."
-	pass
+        pz h "Good morning sir!"
+        hide pz h
+        show p h
+        e "She quickly gathers her clothing and puts it back on."
+        e "Then,{w=0.15} she walks over to the side of your bed and sits down."
+        pass
 
 show p h
 
@@ -218,13 +217,13 @@ menu:
 
     "On the floor." if nemaBed == False:
         p h "I brought a sleeping bag.{w=0.15} See?"
-		e "She points to a sleeping bag on the floor."
-		y m "Yeah, I bet you did."
-		p su "Excuse me?"
-		p n "Are you implying something, Haruka?"
-		y m "I think you know exactly what I'm implying."
-		p m "I'm sorry Haruka, but I don't feel I need to defend myself any further."
-		jump nemaNoBed12
+        e "She points to a sleeping bag on the floor."
+        y m "Yeah, I bet you did."
+        p su "Excuse me?"
+        p n "Are you implying something, Haruka?"
+        y m "I think you know exactly what I'm implying."
+        p m "I'm sorry Haruka, but I don't feel I need to defend myself any further."
+        jump nemaNoBed12
         pass
 
 y su "Oh wow,{w=0.15} really?"
@@ -566,15 +565,15 @@ r n "I meant it in a bros kinda way,{w=0.15} right?"
 
 menu:
     "No.":
-	    r s "Right."
+        r s "Right."
         pass
 
     "Show your crewmate some respect.":
-	    r m "Sheesh."
+        r m "Sheesh."
         pass
 
     "Whatever.":
-	    r s "Fine."
+        r s "Fine."
         pass
 
 r n "Well."

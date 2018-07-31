@@ -401,15 +401,14 @@ e "Seems like everyone is busy."
 
 e "You spend some time checking your computer."
 
-label summariesD7:
-
 window hide
 show black 
 with fade
 
+label summariesD7:
+
 menu:#computer
     "I'll read the summaries.":
-        label summariesD7:
         menu:
             "Haruka's summary.":
                 call day7HaruS

@@ -19,7 +19,6 @@ label summariesD2:
 
 menu:#todo computer options pre summary
     "I'll check my mail.":
-        label summariesD2:
         menu:
             "Mail.":
                 call day2HaruS

@@ -14,7 +14,6 @@ label summariesD9:
 
 menu:#computer
     "I'll read the summaries.":
-        label summariesD9:
         menu:
             "Haruka's summary.":
                 call day9HaruS
@@ -737,23 +736,26 @@ e "There's a notification on your computer."
 
 e "You check your email."
 
-label summariesD9:
+window hide
+show black
+with fade
+
+label summariesD92:
 
 menu:#computer
     "I'll read the summaries.":
-        label summariesD9:
         menu:
             "Haruka's summary.":
                 call day9HaruS
-                jump summariesD9
+                jump summariesD92
                 pass
             "Hei's summary.":
                 call day9HeiS
-                jump summariesD9
+                jump summariesD92
                 pass
             "Nema's summary.":
                 call day9NemaS
-                jump summariesD9
+                jump summariesD92
                 pass
             "I think I'm done.":
                 jump day9End
@@ -765,5 +767,9 @@ menu:#computer
         pass
 
 label day9End:
+   
+window hide
+hide black
+with fade
 
 return

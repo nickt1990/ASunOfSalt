@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/day3.rpy", line 691: choice menuitem expects a non-empty block.
-    "Approach her.":
-                    ^
+The label summariesD14 is defined twice, at
+  File "game/day14.rpy", line 282 and
+  File "game/day14.rpy", line 290.
 
 Ren'Py Version: Ren'Py 6.99.13.2919

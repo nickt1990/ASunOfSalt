@@ -18,7 +18,6 @@ label summariesD4:
 
 menu:#computer
     "I'll read the summaries.":
-        label summariesD4:
         menu:
             "Haruka's summary.":
                 call day4HaruS
@@ -236,7 +235,7 @@ menu:
         pass
 
     "You agree with Haruka?":
-	    p s "I.{w=0.15}.{w=0.15}.{w=0.15} I'm not sure about that,{w=0.15} sir."
+        p s "I.{w=0.15}.{w=0.15}.{w=0.15} I'm not sure about that,{w=0.15} sir."
         pass
 
 show p n
@@ -389,8 +388,8 @@ menu:
         pass
 
     "Good point.":
-	    r h "I know."
-		r h "I also know what I have to do."
+        r h "I know."
+        r h "I also know what I have to do."
         pass
 
 r h "Man up and get me a babe."
@@ -684,15 +683,15 @@ e "Nema blushed."
 
 menu:
     "Worried.":
-    	p h "That's oddly a relief to me.{w=0.15}.{w=0.15}.{w=0.15} Thank you."
+        p h "That's oddly a relief to me.{w=0.15}.{w=0.15}.{w=0.15} Thank you."
         p s "To be quite honest, {w=0.15}I'm worried as well."
         pass
 
     "Not worried.":
-	    p su "Oh.{w=0.15}.{w=0.15}."
-		p n "Wow,{w=0.15} I suppose that's one of many reasons that you are the captain."
-		p s "I can't help but feel worried, {w=0.15}even a little panicked."
-		p n "But we have to go on,{w=0.15} right?"
+        p su "Oh.{w=0.15}.{w=0.15}."
+        p n "Wow,{w=0.15} I suppose that's one of many reasons that you are the captain."
+        p s "I can't help but feel worried, {w=0.15}even a little panicked."
+        p n "But we have to go on,{w=0.15} right?"
         pass
 
 p n "These \"Lurks\" that we saw earlier, {w=0.15}I've noticed something weird."

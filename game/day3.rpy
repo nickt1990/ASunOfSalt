@@ -602,8 +602,7 @@ r su "Haruka! I swear I would not have done it if I kn-"
 
 show y m:
     linear .2 xalign 0.89
-	
-	
+
 e "She begins to swiftly walk towards him."
 
 r su "Haruka please, {w=0.15}I'm so sorry I'll clean it up, {w=0.15}I'll never bother you again I swear, {w=0.15}I do"
