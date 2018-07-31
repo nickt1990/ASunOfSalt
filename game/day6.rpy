@@ -169,19 +169,21 @@ r su "What? I mean, {w=0.15}didn't we stop when that blood stuff surrounded us?"
 
 show y n
 
-y n "Nope, {w=0.15}I checked. It was sticking to us somehow."
+y n "Nope, {w=0.15}I checked.{w=0.15} It was sticking to us somehow."
 
 show r n
 
 r n "Well whatever, {w=0.15}that's what the suits are for."
 
+r n "And that's all the more reason for us to have more options outside of speed if it can just stick to us."
+
 r n "I can still get out there to make changes."
 
 show y n
 
-y n "You could, {w=0.15}but you wont."
+y n "No way."
 
-y n "We'd have to put all weapons offline for how long?"
+y n "Besides the obvious, we'd have to put all weapons offline for how long?"
 
 show r n
 
@@ -199,11 +201,11 @@ r s "Only the tiniest smallest amount."
 
 show y m
 
-y m "Any amount could screw up everything. How do you not get this?"
+y m "Any amount could screw up everything, we're running an experimental engine.{w=0.15} How do you not get this?"
 
 y n "It's just not worth the risk. "
 
-y n "We can't mess with this. This engine is the reason we're even taking this trip.{w=0.15} I'm not letting you screw it up."
+y n "We can't mess with this.{w=0.15} This engine is the reason we're even taking this trip.{w=0.15} I'm not letting you screw it up."
 
 show r m
 
@@ -238,7 +240,7 @@ menu:
         y h "Thank you Cap."
         pass
 
-y n "Our weapon can be our speed. "
+y n "Now that we're going as fast as we are already, our weapon can be our speed. "
 
 y n "We just need to keep up with our weekly speed compounds and we'll be fine."
 
@@ -255,7 +257,27 @@ menu:
         pass
 
     "Haruka, {w=0.15}I think we need a little extra insurance. You said yourself, we're heading into the unknown.":
-#todo branch
+        y m "Seriously?"
+		r h "Awesome."
+		y m "I'm sorry Cap,{w=0.15} but that just can't happen."
+		y m "I'm telling you all now,{w=0.15} if you go out to work on those weapons,{w=0.15} you will die, and we will be vulnerable."
+		y n "And for the safety of us all,{w=0.15} I just can't allow us to do any unplanned changes to the engine's energy routing."
+		y n "I'm not the captain,{w=0.15} it's not my call in the end."
+		y n "I recognize that,{w=0.15} but{w=0.15}.{w=0.15}.{w=0.15}."
+		y s "Please."
+		y s "We cannot do this."
+		menu:
+		    "Sounds like I have no real choice.":
+                y n "You don't.{w=0.15} We don't."
+                y m "And Hei should already understand that."
+			    pass
+		    "Hei, what do you think?":
+			    pass
+		r m "Whatever,{w=0.15} nevermind."
+		r m "I don't even want to try it."
+		r m "I have other things to do anyways."
+		y n "Thank god."
+		jump afterChoiceD6
         pass
 
 show y h
@@ -267,6 +289,8 @@ y n "This is the right choice, {w=0.15}I promise."
 show r m
 
 r m "Fine, {w=0.15}if you say so sir."
+
+label afterChoiceD6:
 
 show p s
 
@@ -284,7 +308,7 @@ e "Haruka walks into her room."
 
 hide y
 
-r m "I got stuff to do too."
+r m "Right."
 
 e "Hei shuffles off to his room."
 
@@ -315,7 +339,7 @@ label day6Menu:
 
 call hall
     
-menu:#todo respond to earlier choice
+menu:
     "Hei's room" if hei6 == True:
         call redRoom from _call_redRoom_3
         $ hei6 = False

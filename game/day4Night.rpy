@@ -10,7 +10,7 @@ e "There's another loud thud.{w=0.25} Then a few more."
 
 window hide
 hide black
-with fade
+show tBlack
 
 menu:
     "Is Nema up to something again?":
@@ -101,6 +101,10 @@ show y m
 
 y m "I'm turning on the heavy external floods.{w=0.15} Maybe we can light up whatever it is we're smackin' up against."
 
+window hide
+hide tBlack
+show ptRed
+
 e "Haruka turns on the light, {w=0.15}and you see a sea of blood and body parts floating around you."
 
 y su "Oh my god.{w=0.15}.{w=0.15}."
@@ -159,11 +163,13 @@ y m "HEI, {w=0.15}WE NEED YOUR HELP."
 show r su:
     linear 0 xalign 0.1 yalign 1.0
 
+e "You can hear Hei through the doorway."
+
 r su "I, {w=0.15}but I can't.{w=0.15}.{w=0.15}."
 
-show y m #todo deal with hei being not in room
-
 y m "GET YOUR ASS IN HERE."
+
+e "Hei shuffles into the room."
 
 show r s
 
@@ -171,7 +177,7 @@ r s "But.{w=0.15}.{w=0.15}."
 
 show y m
 
-y m "DO YOU WANT TO GET THROUGH THIS? NOW."
+y m "DO YOU WANT TO GET THROUGH THIS?{w=0.25} NOW."
 
 show r s
 
@@ -183,7 +189,7 @@ show y n
 
 y n "Captain, {w=0.15}stay on the main controls.{w=0.25} When I say, {w=0.15}you need to jump into full boost."
 
-y n "Nema, {w=0.15}I really need you to watch for collisions, {w=0.15}are you ok over there?"
+y n "Nema, {w=0.15}I really need you to watch for collisions, {w=0.15}are you okay over there?"
 
 show p s
 
@@ -203,11 +209,11 @@ e "She focuses for a long moment."
 
 show y n
 
-y n "OK, {w=0.15}Captain, {w=0.15}we can get a shot off on where the main ship shows on our radar, {w=0.15}but I still advise that we get out of here immediately after. Our lack of visibility will give us huge issues if we don't. Do you want to fire a shot or just go?"
+y n "OK, {w=0.15}Captain, {w=0.15}we can get a shot off on where the main ship shows on our radar, {w=0.15}but I still advise that we get out of here immediately after.{w=0.15} Our lack of visibility will give us huge issues if we don't."
 
-y m "What do you want to do?"
+y n "Do you want to fire a shot or just go?"
 
-menu:
+menu:#todo this choice should maybe not exist?
     "Fire whatever's necessary then get out of here.":
         pass
 
@@ -246,7 +252,7 @@ p n "What?{w=0.15} Yes.{w=0.25} We're c-{w=0.15}clear."
 
 show y n
 
-y n "Hei, {w=0.15}if you're ready, {w=0.15}fire on my mark. Captain, {w=0.15}wait two seconds then get us the hell away from here."
+y n "Hei, {w=0.15}if you're ready, {w=0.15}fire on my mark. Captain, {w=0.15}wait two seconds then engage the boost."
 
 y n "Everyone ready?"
 
@@ -263,17 +269,31 @@ show r su
 r su "Right!"
 
 window hide
-show white#todo add white and play thru this part
+hide ptRed
+show tWhite #todo test white and play thru this part
 with hpunch
+
+play sound "sounds/Explosion.mp3"#add explosion
 
 e "There's a large flash of light and explosion."
 
 show y su
 
-y su "Captain!"
+y su "Captain, now!"
 
-#todo one more option here
-#e "There is a timed prompt with two options. The easier of which will flahs you away. The other option leads to a bad end of everyone just dying here slowly."
+menu:
+    "Engage.":
+        pass
+
+$ renpy.pause(0.09)
+window hide
+hide tWhite
+show tGreen
+$ renpy.pause(0.05)
+show tBlue
+$ renpy.pause(0.05)
+show tWhite
+with hpunch
 
 e "The ship lurches forward and for a moment, {w=0.15}you feel an intense force pushing you back."
 
@@ -281,18 +301,16 @@ window hide
 hide white
 with fade
 
-menu:
-    "We're going full speed.":
-        pass
-
 y h "Alright, {w=0.15}then we should be goo-"
 
-e "There is a loud crash."
+play sound "sounds/Explosion.mp3"#add explosion
 
 window hide
 show black
 with fade
 
-e "Everything suddenly goes dark."
+e "There is a loud crash."
+
+e "Everything goes completely dark."
 
 return

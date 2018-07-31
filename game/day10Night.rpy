@@ -67,6 +67,8 @@ menu:
         pass
 
     "You're acting weird.":
+	    yb su "Weird?"
+		yb n "Whatever, okay, I'll change."
         pass
 
 yb su "O-{w=0.15}okay."
@@ -81,26 +83,60 @@ yb m "Close your eyes."
 
 e "You close your eyes."
 
+window hide
+show black
+with fade
+
 yz n "Uhm.{w=0.15}.{w=0.15}."
 
 yz s "A-{w=0.15}alright."
 
 yz n "I mean,{w=0.15} you can open your eyes."
 
+window hide
+hide black
+with fade
+
 e "You open your eyes to see Haruka sitting beside you on the bed, stripped down to her underwear."
 
 yz m "Don't stare!"
 
-yz n "But.{w=0.15}.{w=0.15}.{w=0.15} do you think it looks good?"
+yz n "But.{w=0.15}.{w=0.15}.{w=0.15} do you think I look good?"
 
 menu:
     "Yes.":
+	    jump nakedStay10n
         pass
 
     "You're making me uncomfortable.":
 #todo branch , have her back off
+        yz su "Oh man."
+		yz s "I'm so sorry Cap."
+		yz s "I feel like an idiot."
+		yz s "Look away."
         pass
 
+label onClothesd10n:
+
+window hide
+show black
+with fade
+
+e "You hear rustling."
+
+e ".{w=0.15}.{w=0.15}."
+
+yb s "Okay."
+
+window hide
+hide black
+with fade
+
+yb s "This is all I brought over{w=0.15}.{w=0.15}.{w=0.15}."
+
+#todo jumpdown to where makes sense
+
+label nakedStay10n:
 yz h "Oh.{w=0.15}.{w=0.15}."
 
 yz n "Thank you."

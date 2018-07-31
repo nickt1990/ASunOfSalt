@@ -280,7 +280,7 @@ menu:
     "We will outrun them.":
         pass
 
-    "We will fight.":#todo ending
+    "We will fight.":#todo ending - Blow them up and then in the end it's you? Set up a warp jump that's you travelling through time.
         pass
 
 show y m
@@ -705,7 +705,7 @@ menu:
     "Uh oh.":
         pass
 
-p n "It most likely is just interference, {w=0.15}but it makes me uneasy. If something is able to affect our view that much, {w=0.15}does that mean our information is unreliable?"
+p n "It most likely is just interference, {w=0.15}but it makes me uneasy.{w=0.15} If something is able to affect our view that much, {w=0.15}does that mean our information is unreliable?"
 
 menu:
     "Should extra steps be taken?":
@@ -719,7 +719,9 @@ p n "I can't agree with hostility as our first action in meeting with this unkno
 
 label dontListenNemaD4:
 
-#todo everything would not go dark in a spaceship
+window hide
+show tBlack
+
 e "Suddenly, {w=0.15} everything goes dark."
 
 p su "W-what's happening?!"
@@ -728,15 +730,12 @@ menu:
     "What do we do?":
         pass
 
-p su "I-I'm not sure!{w=0.25} We-w-uhm.{w=0.15}.{w=0.15}."
+p su "I-I'm not sure!{w=0.25} We-{w=0.15}w-{w=0.15}uhm.{w=0.15}.{w=0.15}."
 
 p n "I don't know!"
 
 menu:
     "Head to nav room. ":
-        pass
-
-    "Hide.":#todo end
         pass
 
 play sound "sounds/DoorOpen2.mp3"
@@ -749,7 +748,6 @@ menu:
     "What is it?":
         pass
 
-#todo "Passed between us and the sun" Didn't we leave Earth and it's solar system, which includes the sun, behind? I thought we are testing some device for getting around fast. Maybe I misread something along the line.
 p n "It looks like.{w=0.15}.{w=0.15}.{w=0.15}"
 
 p n "We're getting some sort of interference from a large asteroid that's floating alongside us."
@@ -783,7 +781,7 @@ show y n:
 
 y n "What's happenin'?"
 
-y n "The lights went out but everything seems fine."
+y n "The lights went out but everything seems fine far as I can tell."
 
 show p n
 
@@ -793,9 +791,9 @@ y su "Just our lights?"
 
 y m "Hmmm.{w=0.15}.{w=0.15}."
 
-y n "I suppose that sort of makes sense?"
+y n "I suppose that almost makes sense?"
 
-y n "The lights are on their own circuits, but still.{w=0.15}.{w=0.15}."
+y n "The lights are on their own separate power system, but still{w=0.15}.{w=0.15}.{w=0.15}."
 
 show y n
 
@@ -902,6 +900,7 @@ e ".{w=0.15}.{w=0.15}."
 e "After some time, you drift off to sleep."
 
 window hide
+hide tBlack
 show black
 with fade
 

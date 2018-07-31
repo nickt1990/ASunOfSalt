@@ -39,7 +39,11 @@ menu:
         pass
 
     "It's alright.":
-# todo branch
+        y s "Well,{w=0.2} still."
+		y m "It's just that{w=0.2}.{w=0.2}.{w=0.2}."
+		y n "Hei and Nema."
+		y m "They just get under my skin."
+		jump day9NightAlright
         pass
 
 y n "Hei and Nema?"
@@ -61,6 +65,8 @@ menu:
         pass
 
 y n "I'm not sorry for how I treated them.{w=0.2} I'm sorry that I promised you better than I'm giving you, {w=0.15}that's all."
+
+label day9NightAlright:
 
 y m "Why bother putting any effort into them if all they're gonna do is sit around screwing?"
 

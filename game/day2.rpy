@@ -17,11 +17,15 @@ menu:
 
 label summariesD2:
 
-menu:#todo computer options pre summary
+menu:
     "I'll check my mail.":
         menu:
             "Mail.":
-                call day2HaruS
+                call day2Mail
+                jump summariesD2
+                pass
+            "Junk Mail.":
+                call day2Mail2
                 jump summariesD2
                 pass
             "I think I'm done.":
