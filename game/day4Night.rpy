@@ -76,7 +76,7 @@ p n "One moment please.{w=0.15}.{w=0.15}."
 
 p s "Wait.{w=0.15}.{w=0.15}."
 
-p su "The ship we saw on the radar yesterday.{w=0.15}.{w=0.15}. it's on top of us."
+p su "The ship we saw on the radar yesterday.{w=0.15}.{w=0.15}. it's almost on top of us."
 
 show r su
 
@@ -101,9 +101,9 @@ show y m
 
 y m "I'm turning on the heavy external floods.{w=0.15} Maybe we can light up whatever it is we're smackin' up against."
 
-window hide
-hide tBlack
+window hide#todo test this transition
 show ptRed
+with fade
 
 e "Haruka turns on the light, {w=0.15}and you see a sea of blood and body parts floating around you."
 
@@ -154,7 +154,7 @@ show y m
 
 y m "Move."
 
-y su "There's something else here. It's moving up from below us.{w=0.15}.{w=0.15}.{w=0.15} I think the blood is a decoy."
+y su "There's something else here.{w=0.15} It's moving up from below us.{w=0.15}.{w=0.15}.{w=0.15} I think the blood is a decoy."
 
 y m "Captain, {w=0.15}turn power to the shields, {w=0.15}Nema, {w=0.15}watch the radar for potential collision."
 
@@ -183,7 +183,9 @@ show r s
 
 r s "I'm here.{w=0.15} OK. {w=0.15}I'm alright."
 
-r s "Jump on lasers. {w=0.15}Hold your fire until I say."
+y m "Jump on lasers. {w=0.15}Hold your fire until I say."
+
+y m "We have no idea what exactly is there,{w=0.15} or where to shoot right now,{w=0.15} but we need to be prepared."
 
 show y n
 
@@ -213,7 +215,8 @@ y n "OK, {w=0.15}Captain, {w=0.15}we can get a shot off on where the main ship s
 
 y n "Do you want to fire a shot or just go?"
 
-menu:#todo this choice should maybe not exist?
+#todo make both sides of this an ending
+menu:#todo this leads to you potentially hitting "yourself"
     "Fire whatever's necessary then get out of here.":
         pass
 
@@ -252,7 +255,7 @@ p n "What?{w=0.15} Yes.{w=0.25} We're c-{w=0.15}clear."
 
 show y n
 
-y n "Hei, {w=0.15}if you're ready, {w=0.15}fire on my mark. Captain, {w=0.15}wait two seconds then engage the boost."
+y n "Hei, {w=0.15}if you're ready, {w=0.15}fire on my mark.{w=0.15} Captain, {w=0.15}wait two seconds then engage the boost."
 
 y n "Everyone ready?"
 
@@ -264,6 +267,7 @@ y n "One."
 
 y m "Hei now!"
 
+
 show r su
 
 r su "Right!"
@@ -273,13 +277,13 @@ hide ptRed
 show tWhite #todo test white and play thru this part
 with hpunch
 
-play sound "sounds/Explosion.mp3"#add explosion
+play sound "sounds/Explosion.mp3"#todo add explosion
 
 e "There's a large flash of light and explosion."
 
 show y su
 
-y su "Captain, now!"
+y su "Captain,{w=0.15} now!"
 
 menu:
     "Engage.":
@@ -303,7 +307,7 @@ with fade
 
 y h "Alright, {w=0.15}then we should be goo-"
 
-play sound "sounds/Explosion.mp3"#add explosion
+play sound "sounds/Explosion.mp3"#todo add crash
 
 window hide
 show black

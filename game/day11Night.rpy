@@ -215,7 +215,7 @@ p h "Right."
 
 e "Nema smiles at you,{w=0.15} then looks down at the floor."
 
-#todo space shrimp effect
+#todo space shrimp effect (move effects across screen)
 e "You sit in silence for a moment,{w=0.15} then there's a bright light out the window."
 
 menu:
@@ -428,6 +428,7 @@ menu:
         pass
 
     "I see.":
+        $ nemaPoem = False
         jump noPoem
         pass
 

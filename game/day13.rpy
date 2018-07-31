@@ -297,7 +297,7 @@ with fade
 menu:#computer
     "I'll read the summaries.":
         menu:
-            "Mail.":#todo mail?
+            "Mail.":
                 call day13Mail
                 jump summariesD132
                 pass
