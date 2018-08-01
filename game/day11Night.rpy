@@ -49,7 +49,7 @@ menu:
     "Not right now.":
         pass
 
-e "Nema promply stands up,{w=0.15} walks over,{w=0.15} and sits down neatly beside you with her hands in her lap."
+e "Nema promptly stands up,{w=0.15} walks over,{w=0.15} and sits down neatly beside you with her hands in her lap."
 
 e ".{w=0.15}.{w=0.15}.{w=0.15}"
 
@@ -66,7 +66,11 @@ e "There's a loud knocking on the door."
 p su "I would have thought the life support systems in the hallway would be on low-power mode by now."
 
 menu:
-    "Answer the door.":
+    "Answer the door." if harukaLove == True:
+        pass
+    "Answer the door." if harukaLove == False:
+	    e "Haruka's standing just outside the door."
+		jump day11nBegin
         pass
 
 play sound "sounds/DoorOpen2.mp3"
@@ -77,7 +81,9 @@ show y m
 
 y m "Here."
 
-e "She glares at Nema for a moment before handing you the package and walking away."
+e "She glares at Nema for a moment before handing you the package and starting to walk away."
+
+label day11nBegin:
 
 y m "I'm turning off the life support,{w=0.15} stay in your room."
 
@@ -87,7 +93,16 @@ hide y m
 
 show p n
 
-p n "Did Haruka just drop off a package for us? "
+p su "What did she say?"
+
+menu:
+    "She dropped off a package..." if harukaLove == True:
+	    pass
+    "Life support is off now." if harukaLove == False:
+	    p h "Oh good."
+		p h "I'm glad we have Haruka to keep us in order."
+	    jump noSandwich
+	    pass
 
 menu:
     "Check the package.":
@@ -98,6 +113,8 @@ e "You slowly open up the small box."
 e "It's another plain ham sandwich."
 
 p h "How nice of Haruka."
+
+label noSandwich:
 
 p n "She's always first to act in a time of need."
 
@@ -440,18 +457,16 @@ p n "But.{w=0.15}.{w=0.15}.{w=0.15} yes."
 
 p h "Yes,{w=0.15} I'll let you read some."
 
-p n "Once I can get back to my room,{w=0.15} if you want."
-
 menu:
     "Do you not want me to see?":
+        p h "I'm just a little nervous."
+        p n "I've never shared them."
         pass
 
     "Alright.":
+        p n "I've never shared them."
+		p n "So I am a little nervous{w=0.15}.{w=0.15}.{w=0.15}."
         pass
-
-p h "I'm just a little nervous."
-
-p n "I've never shared them."
 
 p n "But.{w=0.15}.{w=0.15}.{w=0.15}"
 
@@ -620,8 +635,15 @@ label day11nEnd:
 
 e "After a few moments you drift off."
 
+e ".{w=0.25}.{w=0.25}."
+
 window hide
 show black
 with fade
+
+#todo demon
+d "Sleep well."
+
+d "Our time draws near."
 
 return

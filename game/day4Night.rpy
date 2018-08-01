@@ -277,7 +277,7 @@ hide ptRed
 show tWhite #todo test white and play thru this part
 with hpunch
 
-play sound "sounds/Explosion.mp3"#todo add explosion
+play sound "sounds/Explosion.mp3"
 
 e "There's a large flash of light and explosion."
 
@@ -307,7 +307,7 @@ with fade
 
 y h "Alright, {w=0.15}then we should be goo-"
 
-play sound "sounds/Explosion.mp3"#todo add crash
+play sound "sounds/Explosion.mp3"#todo change sound effect
 
 window hide
 show black

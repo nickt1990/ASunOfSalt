@@ -5,14 +5,19 @@ hide black
 with fade
 
 e "You wake up slowly and realize the body beside you is now gone."
-
-#todo haru act different if last night is different
     
 e "Haruka is out of sight."
 
 e ".{w=0.15}.{w=0.15}."
 
 e "She doesn't seem to be in the room."
+
+menu:
+	"Get out of bed." if harukaLove:
+		pass
+	"Get out of bed." if harukaLove == False:
+	    jump d11MorningHall
+		pass
 
 e "Then,{w=0.15} you notice that there's a sandwich sitting on your bedside table.{w=0.15}.{w=0.15}."
 
@@ -32,6 +37,8 @@ menu:
 
     "\"That's sweet.\"":
         pass
+
+label d11MorningHall:
 
 e "There's some sound coming from the hallway."
 
@@ -69,25 +76,26 @@ y s ".{w=0.15}.{w=0.15}."
 y n "Want to sit?"
 
 menu:
-    "Sure.":
+    "Sure." if harukaLove:
         e "You sit down next to her."
         e "The warm air from the heater shoots up the back of your shirt."
         y n "Blanket?"
         menu:
-            "Of course.":
+            "Of course."
                 e "You wrap yourself up with the blanket and she pulls in closely to you."
                 e "Her skin is so warm from the heat,{w=0.15} it's almost hot."
                 y s "Hey,{w=0.15} Cap.{w=0.15}.{w=0.15}."
                 pass
         pass
-
+    "Sure." if harukaLove == False:
+        e "You sit down next to her."
+        e "The warm air from the heater shoots up the back of your shirt."
+        pass
     "No thanks.":
         y s "Oh, sorry."
         y n "I didn't mean anything by it."
         y s "I just wanted to say.{w=0.15}.{w=0.15}."
         pass
-
-
 
 y n "I'm sorry about last night."
 
@@ -185,13 +193,13 @@ p n "That could be interesting."
 
 show y s
 
-y s "Well, we don't have to switch."
+y s "Well,{w=0.2} we don't have to switch."
 
-y n "I mean, it would probably be easier to just stay with how things are, right?"
+y n "I mean,{w=0.2} it would probably be easier to just stay with how things are,{w=0.2} right?"
 
 show r su
 
-r su "Maybe somebody had a better time than we thought, huh Nebo?"
+r su "Maybe somebody had a better time than we thought,{w=0.2} huh Nebo?"
 
 show p su
 
@@ -199,13 +207,13 @@ p su "You think so?"
 
 p n "Did you have a nice night with Captain Haruka?"
 
-p h "We can stay in the same rooms again, I had a lot of fun with Hei."
+p h "We can stay in the same rooms again,{w=0.2} I had a lot of fun with Hei."
 
 show y su
 
-y su "Oh, well."
+y su "Oh,{w=0.2} well."
 
-y h "Yeah, I mean-"
+y h "Yeah,{w=0.2} I mean-"
 
 show r h
 
@@ -380,6 +388,12 @@ y s ".{w=0.15}.{w=0.15}."
 
 y s "Better get back to your room."
 
+menu:
+	"Sure" if harukaLove == False:
+	    y s "Sorry again for last night."
+		y s "Don't worry,{w=0.2} I got the message."
+		pass
+
 hide y
 
 play sound "sounds/DoorOpen2.mp3"
@@ -392,5 +406,6 @@ call blueRoom from _call_blueRoom_5
 
 e "You turn the other way and walk into your room."
 
+call blueRoom
 
 return

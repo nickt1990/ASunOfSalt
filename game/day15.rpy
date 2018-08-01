@@ -520,6 +520,7 @@ menu:
         pass
 
 y n "I was worried we were gonna run out of time."
+
 #todo go back and foreshadow this
 y h "The game normally ends around this point anyways."
 

@@ -20,14 +20,13 @@ menu:
         jump day13Start
         pass
 
-label summariesD13:
-
 window hide
 show black 
 with fade
 
 menu:#computer
     "I'll read the summaries.":
+	    label summariesD13:
         menu:
             "Haruka's summary.":
                 call day13HaruS
@@ -288,14 +287,13 @@ play sound "sounds/DoorClose2.mp3"
 
 e "You sit down at your computer to get some work done."
 
-label summariesD132:
-
 window hide
 show black 
 with fade
 
 menu:#computer
     "I'll read the summaries.":
+	    label summariesD132:
         menu:
             "Mail.":
                 call day13Mail

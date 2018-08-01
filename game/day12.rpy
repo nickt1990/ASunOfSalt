@@ -27,14 +27,13 @@ menu:
 
 e "You move quietly out of the bed and to your computer."
 
-label summariesD12:
-
 window hide
 show black 
 with fade
 
 menu:#computer
     "I'll read the summaries.":
+	    label summariesD12:
         menu:
             "Haruka's summary.":
                 call day12HaruS
@@ -48,7 +47,7 @@ menu:#computer
                 call day12NemaS
                 jump summariesD12
                 pass
-            "Email from Haruka":
+            "Email from Haruka" if harukaLove:
                 e "There's an email from Haruka that came in last night."
                 e "Cap,"
                 e "I'm sorry for all the ham."

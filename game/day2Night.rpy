@@ -441,6 +441,12 @@ menu:
 
 hide yp n
 
+window hide
+show black 
+with fade
+
+e "You head into your room and fall asleep almost immediately."
+
 call blueRoom from _call_blueRoom_4
 
 return

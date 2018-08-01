@@ -14,11 +14,11 @@ window hide
 show black 
 with fade
 
-label summariesD4:
-
 menu:#computer
     "I'll read the summaries.":
+        label summariesD4:
         menu:
+
             "Haruka's summary.":
                 call day4HaruS
                 jump summariesD4

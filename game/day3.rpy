@@ -1,6 +1,7 @@
 ﻿#todo check all music is implemented
+#todo convert mp3 to ogg
+#todo add demon to later day
 
-#todo intro to day 3, There's a small introduction to your new application, and then you are shown a screen that lists the names of the crew."
 #todo ending idea
 # haruka mentions that motokami was world renown for his crossdimensional ideas
 # Nema is still nema at the end, it takes a human to trade places with their kind in order for them to move over to this world. Motokami gave them placeholder bodies but they aren't completely here, causing ripples in dimension -the demon
@@ -11,6 +12,14 @@
 # ending revolves around if you're sacrificed to the other dimension or not so that hei and nema can come into our world as whole										  
 
 label day3:
+
+window hide
+hide black 
+with fade
+
+e "You wake up to see a notification on your computer screen."
+
+e "It appears that the Satori sensors are live."
 
 window hide
 show black 
@@ -510,6 +519,7 @@ menu:
 
     "It sounds special.":
         pass
+
 #todo setup for ending with testing vr
 y h "I'll let that be a lil' surprise for everyone."
 

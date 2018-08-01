@@ -279,14 +279,13 @@ call blueRoom
 
 e "You head back into your room and check your mail."
 
-label summariesD14:
-
 window hide
 show black 
 with fade
 
 menu:#computer
     "I'll read the summaries.":
+	    label summariesD14:
         menu:
             "Haruka's summary.":
                 call day14HaruS

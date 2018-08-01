@@ -612,10 +612,9 @@ menu:
 call blueRoom
 e "You go back to your room and get on the computer."
 
-label summariesD8:
-
 menu:#computer
     "I'll read the summaries.":
+	    label summariesD8:
         menu:
             "Haruka's summary.":
                 call day8HaruS

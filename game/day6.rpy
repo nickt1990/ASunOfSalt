@@ -499,10 +499,9 @@ window hide
 show black 
 with fade
 
-label summariesD6:
-
 menu:#computer
     "I'll read the summaries.":
+	    label summariesD6:
         menu:
             "Haruka's summary.":
                 call day6HaruS

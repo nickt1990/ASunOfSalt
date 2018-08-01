@@ -1,5 +1,7 @@
 ﻿label day10Night:
 
+define harukaLove = True
+
 show yb n
 
 yb n ".{w=0.15}.{w=0.15}."
@@ -109,7 +111,6 @@ menu:
         pass
 
     "You're making me uncomfortable.":
-#todo branch , have her back off
         yz su "Oh man."
         yz s "I'm so sorry Cap."
         yz s "I feel like an idiot."
@@ -117,7 +118,7 @@ menu:
         pass
 
 label onClothesd10n:
-
+##############################################
 window hide
 show black
 with fade
@@ -134,7 +135,129 @@ with fade
 
 yb s "This is all I brought over{w=0.15}.{w=0.15}.{w=0.15}."
 
-#todo jumpdown to where makes sense
+yb s ".{w=0.45}.{w=0.45}."
+
+yb s "I'm sorry."
+
+menu:
+    "What is going on with you?":
+        pass
+
+yb s "Am I that bad at this?"
+
+yb n "I thought a lot about what you said before."
+
+yb s "I was jealous of Hei and Nema."
+
+yb n "I've never taken the time to.{w=0.15}.{w=0.15}. ya'know.{w=0.15}.{w=0.15}. like somebody."
+
+yb s "It seemed sort of like it could be nice, I don't know."
+
+yb h "I've thought about it all of course."
+
+yb s "Does that make it sound sad?"
+
+yb n "Of course I have though."
+
+yb n "Having somebody who you're just connected to."
+
+yb h "Sharing stories, time, life."
+
+yb n "You know.{w=0.15}.{w=0.15}. and.{w=0.15}.{w=0.15}. sex."
+
+yb n "I always thought sex was more mental than physical."
+
+yb h "Like the most honest way to tell somebody that you love them."
+
+yb s "I'm naive."
+
+yb s "Hei and Nema have shit all over that idea."
+
+yb s "I just don't know a thing about anyone or anything but myself and this damn ship."
+
+menu:
+    "That's not true.":
+        pass
+
+    "You've built this all up too much.":
+        pass
+
+yb su "What?"
+
+yb n "What do you mean?"
+
+menu:
+    "Sex and relationships can be what you want.":
+        pass
+
+    "Don't worry about anyone but you.":
+	    yb n "Yeah.{w=0.35}.{w=0.35}."
+		yb h "Yeah I guess so."
+		jump notAsSweet
+        pass
+
+    "There's nothing to know, follow your instincts.":
+        pass
+
+yb su "C-{w=0.15}cap.{w=0.15}.{w=0.15}."
+
+yb h "It means a lot to hear that."
+
+label notAsSweet:
+
+yb n "I've never tried to actually talk about this stuff before."
+
+yb h "I thought I'd mess everything up,{w=0.15} or weird you out, {w=0.15}or seem like a little kid."
+
+yb n "I know I sort of project a certain image.{w=0.15}.{w=0.15}."
+
+yb s "I'm fine talking about it when I'm messing around,{w=0.15} but when it feels real like this.{w=0.15}.{w=0.15}."
+
+menu:
+    "Don't worry about that.":
+        pass
+
+    "Yeah, this was a surprise.":
+        pass
+
+yb n ".{w=0.15}.{w=0.15}."
+
+yb su "Is.{w=0.15}.{w=0.15}. this alright?"
+
+e "She slowly falls on the bed, pulling you down with her."
+
+e "Her head is resting on your shoulder,{w=0.15} the length of her body is sat warmly beside your own."
+
+menu:
+    "This is perfect.":
+        pass
+
+    "Sorry, let's keep some space.":
+	    $ harukaLove = False
+        yb su "Oh."
+		yb n ".{w=0.25}.{w=0.25}."
+		yb s "Oh."
+		yb s "Gotcha."
+		yb s "Well, I didn't bring anything else to sleep on, but I'll keep to my side of the bed."
+		yb s ".{w=0.25}.{w=0.25}."
+		yb s "I'm sorry to make this night weird for you."
+		yb s "I thought I felt a connection,{w=0.25} but I guess that was just me."
+		yb s "That's okay."
+		hide yb s
+		jump endDay10N
+        pass
+
+e "Haruka just smiles up at you, then closes her eyes and squeezes your arm."
+
+window hide
+show black
+with fade
+
+yb h "Thank you.{w=0.15}.{w=0.15}."
+
+hide yb h
+
+jump endDay10N
 
 label nakedStay10n:
 yz h "Oh.{w=0.15}.{w=0.15}."
@@ -267,7 +390,18 @@ menu:
         pass
 
     "Sorry, let's keep some space.":
-#todo branch
+        $ harukaLove = False
+        yz su "Oh."
+		yz n ".{w=0.25}.{w=0.25}."
+		yz s "Oh."
+		yz s "Gotcha."
+		yz m "You just wanted a show."
+		yz m "I get it."
+		yz s "Well, I didn't bring anything else to sleep on, but I'll keep to my side of the bed."
+		yz s ".{w=0.25}.{w=0.25}."
+		yz s "Goodnight I guess."
+		hide yz s
+		jump endDay10N
         pass
 
 e "Haruka just smiles up at you, then closes her eyes and squeezes your arm."
@@ -277,5 +411,12 @@ show black
 with fade
 
 yz h "Thank you.{w=0.15}.{w=0.15}."
+hide yz h
+
+label endDay10N:
+
+window hide
+show black
+with fade
 
 return

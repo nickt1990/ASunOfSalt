@@ -10,10 +10,9 @@ e "You wake up to your alarm."
 
 e "After getting up and about, you notice you have mail notifications on your computer."
 
-label summariesD9:
-
 menu:#computer
     "I'll read the summaries.":
+	    label summariesD9:
         menu:
             "Haruka's summary.":
                 call day9HaruS
@@ -740,10 +739,9 @@ window hide
 show black
 with fade
 
-label summariesD92:
-
 menu:#computer
     "I'll read the summaries.":
+	    label summariesD92:
         menu:
             "Haruka's summary.":
                 call day9HaruS
