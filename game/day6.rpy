@@ -258,26 +258,26 @@ menu:
 
     "Haruka, {w=0.15}I think we need a little extra insurance. You said yourself, we're heading into the unknown.":
         y m "Seriously?"
-		r h "Awesome."
-		y m "I'm sorry Cap,{w=0.15} but that just can't happen."
-		y m "I'm telling you all now,{w=0.15} if you go out to work on those weapons,{w=0.15} you will die, and we will be vulnerable."
-		y n "And for the safety of us all,{w=0.15} I just can't allow us to do any unplanned changes to the engine's energy routing."
-		y n "I'm not the captain,{w=0.15} it's not my call in the end."
-		y n "I recognize that,{w=0.15} but{w=0.15}.{w=0.15}.{w=0.15}."
-		y s "Please."
-		y s "We cannot do this."
-		menu:
-		    "Sounds like I have no real choice.":
+        r h "Awesome."
+        y m "I'm sorry Cap,{w=0.15} but that just can't happen."
+        y m "I'm telling you all now,{w=0.15} if you go out to work on those weapons,{w=0.15} you will die, and we will be vulnerable."
+        y n "And for the safety of us all,{w=0.15} I just can't allow us to do any unplanned changes to the engine's energy routing."
+        y n "I'm not the captain,{w=0.15} it's not my call in the end."
+        y n "I recognize that,{w=0.15} but{w=0.15}.{w=0.15}.{w=0.15}."
+        y s "Please."
+        y s "We cannot do this."
+        menu:
+            "Sounds like I have no real choice.":
                 y n "You don't.{w=0.15} We don't."
                 y m "And Hei should already understand that."
-			    pass
-		    "Hei, what do you think?":
-			    pass
-		r m "Whatever,{w=0.15} nevermind."
-		r m "I don't even want to try it."
-		r m "I have other things to do anyways."
-		y n "Thank god."
-		jump afterChoiceD6
+                pass
+            "Hei, what do you think?":
+                pass
+        r m "Whatever,{w=0.15} nevermind."
+        r m "I don't even want to try it."
+        r m "I have other things to do anyways."
+        y n "Thank god."
+        jump afterChoiceD6
         pass
 
 show y h

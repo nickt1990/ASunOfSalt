@@ -816,12 +816,12 @@ menu:
         y su "What are you doing?"
         e "You look at her hands."
         show y n
-		e "She's not holding anything."
+        e "She's not holding anything."
         pass
 
     "Let her go.":
         e "Now, standing right before Hei{w=0.15}.{w=0.15}.{w=0.15}."
-	    e "She sighs."
+        e "She sighs."
         show y n
         y n "Nope."
         pass

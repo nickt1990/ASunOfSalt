@@ -67,8 +67,8 @@ menu:
         pass
 
     "You're acting weird.":
-	    yb su "Weird?"
-		yb n "Whatever, okay, I'll change."
+        yb su "Weird?"
+        yb n "Whatever, okay, I'll change."
         pass
 
 yb su "O-{w=0.15}okay."
@@ -105,15 +105,15 @@ yz n "But.{w=0.15}.{w=0.15}.{w=0.15} do you think I look good?"
 
 menu:
     "Yes.":
-	    jump nakedStay10n
+        jump nakedStay10n
         pass
 
     "You're making me uncomfortable.":
 #todo branch , have her back off
         yz su "Oh man."
-		yz s "I'm so sorry Cap."
-		yz s "I feel like an idiot."
-		yz s "Look away."
+        yz s "I'm so sorry Cap."
+        yz s "I feel like an idiot."
+        yz s "Look away."
         pass
 
 label onClothesd10n:

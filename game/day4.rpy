@@ -552,15 +552,17 @@ with fade
 
 e "{w=0.25}.{w=0.35}.{w=0.45}."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/Knock.mp3"
 
-e "There's a knock on your door."
+e "After a few hours of getting work done, there's a knock on your door."
 
 window hide
 hide black
 with fade
 
 show p n
+
+play sound "sounds/DoorOpen2.mp3"
 
 p n "Excuse me, {w=0.15}sir?"
 
@@ -576,6 +578,17 @@ menu:
 e "Nema smiles."
 
 p n "I'll tell the rest."
+
+play sound "sounds/DoorClose2.mp3"
+call hall
+e "You head out into the hallway..."
+
+play sound "sounds/DoorOpen2.mp3"
+call kitchen
+e "And then into the kitchen."
+
+play sound "sounds/DoorClose2.mp3"
+e "A few moments later, Nema walks in."
 
 p n "Haruka and Hei said they'd just be a little bit.{w=0.25} I'd like to suggest that we wait for them,{w=0.15} if that's alright with you Captain?"
 
@@ -612,8 +625,8 @@ e "Nema smiles shortly."
 window hide
 show black
 with fade
-e ".{w=0.15}.{w=0.15}."
 e ".{w=0.35}.{w=0.35}."
+e ".{w=0.55}.{w=0.55}."
 window hide
 hide black
 with fade

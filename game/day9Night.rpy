@@ -40,10 +40,10 @@ menu:
 
     "It's alright.":
         y s "Well,{w=0.2} still."
-		y m "It's just that{w=0.2}.{w=0.2}.{w=0.2}."
-		y n "Hei and Nema."
-		y m "They just get under my skin."
-		jump day9NightAlright
+        y m "It's just that{w=0.2}.{w=0.2}.{w=0.2}."
+        y n "Hei and Nema."
+        y m "They just get under my skin."
+        jump day9NightAlright
         pass
 
 y n "Hei and Nema?"

@@ -9,16 +9,12 @@ e "You wake up to your computers alarm."
 
 e "The room is lit up by the mail notification on your computer screen."
 
-menu:
-    "Check mail.":
-        stop music fadeout 1
-        play music "music/Idle.mp3" fadein 2.0
-        pass
-
-label summariesD2:
+stop music fadeout 1
+play music "music/Idle.mp3" fadein 2.0
 
 menu:
     "I'll check my mail.":
+        label summariesD2:
         menu:
             "Mail.":
                 call day2Mail
