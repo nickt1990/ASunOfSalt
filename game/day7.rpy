@@ -6,7 +6,7 @@ with fade
 
 e "You wake up abruptly."
 
-play sound "sounds/Knock.mp3"
+play sound "sounds/Knock.ogg"
 
 e "There is a knock on the door."
 
@@ -103,7 +103,7 @@ label pastExp:
 
 e "Hei walks out into the hallway."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 show r h:
     linear 0 xalign 0.9 yalign 1.0
@@ -289,11 +289,11 @@ y s "Ugh."
 
 hide y
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Haruka disappears into her room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 show r s
 
@@ -303,7 +303,7 @@ r h "You should drop by later for some games though."
 
 r n "Later man."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide r
 
@@ -407,7 +407,7 @@ with fade
 
 menu:#computer
     "I'll read the summaries.":
-	    label summariesD7:
+        label summariesD7:
         menu:
             "Haruka's summary.":
                 call day7HaruS
@@ -436,11 +436,11 @@ window hide
 hide black 
 with fade
 
-play sound "sounds/Knock.mp3"
+play sound "sounds/Knock.ogg"
 
 e "There's a knock on your door."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call hall from _call_hall_34
 
@@ -475,7 +475,7 @@ show r n
 
 r n "You were right though, let's just throw her a bone."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Haruka opens the door to the kitchen."
 
@@ -1048,7 +1048,7 @@ hide y
 
 e "Haruka walks out."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Nema continues to sniffle into Hei's shoulder."
 
@@ -1073,7 +1073,7 @@ hide r
 
 hide p
         
-play sound "sounds/DoorClose2.mp3"        
+play sound "sounds/DoorClose2.ogg"        
     
 call hall from _call_hall_35
 
@@ -1083,7 +1083,7 @@ show y m
 
 y m "{i}Geesh.{/i}"
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide y
 

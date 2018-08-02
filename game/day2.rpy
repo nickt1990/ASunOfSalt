@@ -3,17 +3,20 @@
 hide black
 with fade
 
-play music "music/MorningAlarm.mp3" fadein 2.0
+play music "music/MorningAlarm.ogg" fadein 2.0
 
 e "You wake up to your computers alarm."
 
 e "The room is lit up by the mail notification on your computer screen."
 
-stop music fadeout 1
-play music "music/Idle.mp3" fadein 2.0
+window hide
+show black
+with fade
 
 menu:
     "I'll check my mail.":
+        stop music fadeout 1
+        play music "music/Idle.ogg" fadein 1.0
         label summariesD2:
         menu:
             "Mail.":
@@ -25,7 +28,7 @@ menu:
                 jump summariesD2
                 pass
             "I think I'm done.":
-                jump day4Start
+                jump day2Start
                 pass                
         pass
 
@@ -35,7 +38,11 @@ menu:
 
 label day2Start:
 
-play music "music/RadioMusic.mp3" fadein 2.0
+window hide
+hide black
+with fade
+
+play music "music/RadioMusic.ogg" fadein 2.0
 
 e "Once you pull yourself away from the computer, you hear a strange sound.{w=0.15}.{w=0.15}."
 
@@ -47,11 +54,9 @@ menu:
         
 call hall from _call_hall_16
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "The music seems to be coming from the kitchen."
-
-play sound "sounds/DoorOpen2.mp3"
 
 menu:
     "Enter kitchen.":
@@ -59,16 +64,18 @@ menu:
 
 call kitchen from _call_kitchen_4
 
+play sound "sounds/DoorOpen2.ogg"
+
 e "You walk in to find Nema sitting at the table with a small music player."
 
 stop music
 e "She seems surprised to see you walk in, {w=0.15}and quickly turns off her music."
 
-play music "music/Space.mp3" fadein 2.0
+play music "music/Space.ogg" fadein 1.0
 
 show p s
 
-p s "C-captain I apologize if my music bothered you. I tried to keep it at a reasonable volume but I'll be sure to use headphones from now on sir."
+p s "C-{w=0.15}captain I apologize if my music bothered you. {w=0.35}I tried to keep it at a reasonable volume but I'll be sure to use headphones from now on sir."
 
 menu:
     "It didn't bother me at all.":
@@ -86,7 +93,7 @@ p n "Have a good morning Captain."
 
 menu:
     "Join me?":
-        p s "No, {w=0.15}I really should be back to work."
+        p s "No,{w=0.15} thank you, {w=0.15}I really should be back to work."
         p h "Thank you though Captain."
         pass
 
@@ -94,7 +101,7 @@ menu:
         e "Nema smiles."
         pass
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide p
 
@@ -104,7 +111,7 @@ e "You pour yourself a bowl of cereal and sit at the table to eat."
 
 menu:
     "Turn on radio":
-        play music "music/RadioMusic.mp3" fadein 1.0
+        play music "music/RadioMusic.ogg" fadein 1.0
         e "The radio starts to quietly play the music that Nema had been listening to."
 
         e "A moment goes by as you continue to eat, {w=0.15}and Haruka walks in."
@@ -166,7 +173,8 @@ menu:
                 y h "Yeah, they haven't exactly held up, have they?"
                 pass
 
-        y n "Anyways, {w=0.15}I'm heading back to my room."#todo test this branch, does it make sense
+        y n "Anyways, {w=0.15}I'm heading back to my room."
+        jump animeWQ
         pass
 
     "Eat in silence.":
@@ -188,6 +196,7 @@ menu:
         y h "Hey, I was gonna eat in my room."
         pass
 
+label animeWQ:
         y h "Wanna come and watch some anime with me?"
 
 define heiRoomd2 = True
@@ -195,6 +204,7 @@ define haruRoomd2 = True
 define nemaRoomd2 = True
 
 menu:
+    
     "Yes.":
         $ haruRoomd2 = False
         y h "Awesome."
@@ -205,11 +215,11 @@ menu:
 
         e "You turn off the radio, put your bowl in the sink then follow Haruka to her room."
         
-        play music "music/Space.mp3" fadein 2.0
+        play music "music/Space.ogg" fadein 2.0
 
         call hall
 
-        play sound "sounds/DoorOpen2.mp3"
+        play sound "sounds/DoorOpen2.ogg"
 
         e "Haruka turns and walks out towards her room and you follow closely behind."
 
@@ -230,10 +240,10 @@ menu:
 
         e "Haruka walks over to her room."
 
-        play sound "sounds/DoorClose2.mp3"
+        play sound "sounds/DoorClose2.ogg"
 
         call hall from _call_hall_17
-
+        play music "music/Space.ogg" fadein 1.0
         e "You finish your food and walk out into the hallway."
 
         call hall
@@ -254,12 +264,12 @@ y n "Quite the rebel aren't ya?"
 
 menu:
     "Yes. Yes I am.":
+        y h "Very impressive, {w=0.15}what a hero."
         pass
 
     "Just checking in.":
+        y h "Oh whatever."
         pass
-
-y h "Very impressive, {w=0.15}what a hero."
 
 label watchingAnime:
 
@@ -267,7 +277,7 @@ e "She smiles."
 
 y n "Watch a little with me, {w=0.15}I need a break."
 
-play music "music/Show.mp3" fadein 2.0
+play music "music/Show.ogg" fadein 2.0
 e "You sit and look at the screen with her."
 
 e "A sombre show you don't recognize plays."
@@ -297,7 +307,7 @@ e ".{w=0.35}.{w=0.35}."
 window hide
 hide black
 with fade
-play music "music/Idle.mp3" fadein 2.0
+play music "music/Idle.ogg" fadein 2.0
 y n "And that's it. What'd ya think?"
 
 menu:
@@ -319,7 +329,7 @@ y h "What a badass."
 
 y h "She's got 'em all in the palm of her hands."
 
-y n "Ya think I could pull off her kind of look?"
+y n "Ya think I could pull off her kinda look?"
 
 y s "Hmm.{w=0.15}.{w=0.15}."
 
@@ -385,7 +395,7 @@ p n "It's sitting at the desk, {w=0.15}feel free to look it over."
 
 hide p
 
-e "Nema grabs a small notebook and lays down on her bed."
+e "Nema grabs a small notebook and lays down on her bed while you sit down at her desk."
 
 menu:
     "Pick up the paper on Nema's desk.":
@@ -403,14 +413,19 @@ e "She's still absorbed in the notebook on her bed."
 
 e "She doesn't appear to be paying attention."
 
-e "One of the drawers is just barely open and you can make out some sort of object inside."
+e ".{w=0.15}.{w=0.15}."
+
+e "You notice of the drawers is just barely open and you can make out some sort of object inside."
+
+define snoopNema = True
 
 menu:
     "Don't snoop.":
+        $ snoopNema = False
         e "You decide to give her privacy."
         pass
 
-    "Snoop it up!":
+    "Snoop.":
         e "There's a few strange tools you don't recognize and a bottle of what appears to be cinnamon flavored alchohol."
         pass
 
@@ -424,7 +439,8 @@ menu:
     "Report looks great. Good job.":
         pass
 
-    "What's with the alcohol in your desk?":
+    "What's with the alcohol in your desk?" if snoopNema:
+        show p su
         p su "Alchohol?"
         p n "I'm not sure what you're talking about sir."
         p n "But how was the report?"
@@ -441,9 +457,13 @@ menu:
                 pass
         pass
 
+show p n
+
 p n "Please have a wonderful day Captain, {w=0.15}and feel free to inform me of any way I can be of help."
 
 call hall from _call_hall_19
+
+hide p 
 
 e "You walk out her door into the hallway."
 
@@ -452,6 +472,8 @@ hide p
 jump day2Menu
 
 label heiD2:
+
+call redRoom
 
 show r h
 
@@ -471,14 +493,14 @@ menu:
         e "You reluctantly sit down with Hei and start playing."
         pass
         
-play music "music/Game.mp3" fadein 2.0
+play music "music/Game.ogg" fadein 1.0
 e "The game shows up on screen."
 
 e "It appears to be an old fashioned fighting game."
 
 r n "I don't have the newest one, {w=0.15}but Soft and Moist Vegetables: 2 Turbo Vegetable Edition is the best anyways."
 
-r h "Best games ever made, {w=0.15}if you ask me."
+r h "Best game ever made, {w=0.15}if you ask me."
 
 r n "Like, {w=0.15}yeah, {w=0.15}it's not a epic story with a huge budget and whatever."
 
@@ -486,12 +508,12 @@ r n "But you get to kick people in the face and I think it does that well."
 
 menu:
     "You have high standards.":
+        r h "I like what I like man."
         pass
 
     "I do like face kicking.":
+        r h "Who doesn't!"
         pass
-
-r h "I like what I like man."
 
 r h "I used to play this all the time when I was a kid. My family had a maid, {w=0.15}and she would bring her kid over on the weekends."
 
@@ -508,9 +530,11 @@ menu:
     "The Mangler. Right.":
         pass
 
-r n "Yeah, {w=0.15}I barely even played by myself. I was just that good."
+r n "Yeah, {w=0.15}I barely even played by myself.{w=0.35} I was just that good."
 
 r su "I tell you it ju-"
+
+play music "music/Space.ogg" fadein 1.0
 
 r n ".{w=0.15}.{w=0.15}."
 
@@ -527,18 +551,24 @@ r n "Well.{w=0.15}.{w=0.15}. Shit."
 
 e "He's stopped functioning. "
 
+e ".{w=0.15}.{w=0.15}."
+
 e "He no longer appears to be breathing."
+
+e ".{w=0.15}.{w=0.15}."
 
 e "He's probably joking, {w=0.15}but.{w=0.15}.{w=0.15}. it's getting weird."
 
 menu:
     "I think... I'm gonna go.":
         r m "NO! REMAAAAATCH."
-        e "He slapped you in the face and frowned."
+        e "He shoots you a glare and frowns."
         pass
 
     "Wanna play again?":
         pass
+
+play music "music/Game.ogg" fadein 1.0
 
 r m "Les go, {w=0.15}bitch."
 
@@ -550,15 +580,17 @@ with fade
 
 e ".{w=0.15}.{w=0.15}."
 
-e ".{w=0.15}.{w=0.15}."
+e ".{w=0.25}.{w=0.25}."
 
-e ".{w=0.15}.{w=0.15}."
+e ".{w=0.35}.{w=0.35}."
 
 window hide
 hide black
 with fade
 
 r su "You won.{w=0.15}.{w=0.15}. again."
+
+play music "music/Space.ogg" fadein 1.0
 
 r n "Did you used to have this game?"
 
@@ -583,9 +615,11 @@ e "You turn to leave."
 
 r s "Wait."
 
+play music "music/MelancholyPiano.ogg" fadein 1.0
+
 e "He walks up behind you."
 
-r s "I have to tell you something sir."
+r s "I have to tell you something dude."
 
 r s "I.{w=0.15}.{w=0.15}."
 
@@ -593,7 +627,7 @@ r s "I never beat my maids son in the game."
 
 r s "I never even won a match against another person."
 
-r n "I've been practicing since we got on this ship, {w=0.15}it's been at least 20 hours of nothing but intense training. I really tried."
+r n "I've been practicing since we got on this ship, {w=0.15}it's been at least twenty hours of nothing but intense training.{w=0.15} I really tried."
 
 menu:
     "This is all you've been doing?":
@@ -611,11 +645,13 @@ define heiRematch = True
 
 menu:
     "Rematch. One week from today.":
+        play music "music/Space.ogg" fadein 1.0
         e "He looks surprised for a second."
         r n ".{w=0.15}.{w=0.15}."
         pass
 
     "*Blow raspberry*":#maydo
+        play music "music/Space.ogg" fadein 1.0
         r m "Whatever.{w=0.15} I call for a rematch."
         r n "One week."
         pass
@@ -635,6 +671,8 @@ hide r
 e "You make your way back out into the hallway."
 
 label day2Menu:
+    
+play music "music/Space.ogg" fadein 1.0
 
 call hall from _call_hall_20
 
@@ -655,11 +693,13 @@ menu:
         call navRoom from _call_navRoom_2
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "You step into the Nav room."
 
 e "Everyone shows up right behind you."
+
+play music "music/Pillows.ogg" fadein 1.0
 
 menu:
     "What's going on?":
@@ -672,6 +712,7 @@ menu:
         pass
 
     "Ah, {w=0.15}just in time for the meeting.":
+        show y n
         y su "I'm pretty sure I never even told you about the meeting."
         y h "Good save though,{w=0.15} I guess."
         pass
@@ -734,7 +775,7 @@ e "Nema is fidgeting with her hands."
 
 show p s
 
-p s "Well, {w=0.15}we c-could... maybe..."
+p s "Well, {w=0.15}we c-{w=0.15}could{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} maybe{w=0.15}.{w=0.15}.{w=0.15}."
 
 show y m
 
@@ -771,6 +812,8 @@ y m "Seriously? Only if you want."
 
 y m "Idiot."
 
+show r h
+
 e "Hei smiles."
 
 menu:
@@ -796,6 +839,8 @@ y n "What."
 show p s
 
 p s "Thank you for your hard work. "
+
+show y m
 
 e "Haruka looked blankly at Nema for a brief moment then turned back to you."
 
@@ -829,7 +874,7 @@ call hall from _call_hall_21
 
 e "Everyone moves into the kitchen."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call kitchen from _call_kitchen_5
 
@@ -870,7 +915,7 @@ menu:
         
         y h "You know, actually, this one goes to you sir."
         y h "You are the captain after all."
-        p h "Can't argue with that!"
+        p h "I'm okay with that, Sir."
         pass
 
 e "You take a bite."
@@ -959,7 +1004,7 @@ y m "You sound like a damn car commercial."
 
 y n "What gives you this huge ego? "
 
-y n "Are you secretly not a huge waste of space?"
+y n "Are you somehow secretly {b}not{/b} a huge waste of space?"
 
 show r n
 
@@ -995,7 +1040,7 @@ r su "You know.{w=0.15}.{w=0.15}.{w=0.15} I am."
 
 r n "I think I'll have myself a snooze."
 
-r h "Captain! Good luck my fearless Captain."
+r h "Good luck tonight my fearless Captain."
 
 menu:
     "Thanks!":
@@ -1009,7 +1054,15 @@ e "Hei walks out into the hallway."
 
 hide r
 
-e "for a moment there is silence."
+e "For a moment there is silence."
+
+menu:
+    "So..." if harukaNight2:
+        p n "So{w=0.15}.{w=0.15}.{w=0.15}."
+        p s "You two will be staying up tonight?"
+        y h "Yep!"
+        jump harukaTonightToo
+        pass
 
 show p s
 
@@ -1032,6 +1085,8 @@ show p s
 
 p s "Oh. {w=0.15}I see, {w=0.15}nice. Ok."
 
+label harukaTonightToo:
+
 p s "Then I guess I'll just retreat to my room for the night."
 
 p n "U-unless.{w=0.15}.{w=0.15}. you'd like another pair of hands to help?"
@@ -1046,7 +1101,12 @@ menu:
 
 show p n
 
-p n "Yes sir.{w=0.15}.{w=0.15}. I'll gladly take the shift next week, {w=0.15}if that would help?"
+p s "Yes sir.{w=0.15}.{w=0.15}. I'll gladly take the shift next week, {w=0.15}if that would help?"
+
+menu:
+    "We'll see.":
+        pass
+p s "Okay."
 
 hide p n
 

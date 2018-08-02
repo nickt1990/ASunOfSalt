@@ -367,7 +367,7 @@ hide p
 
 hide rz
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Nema and Hei trot out into the hallway."
 
@@ -386,7 +386,7 @@ y n "See ya in a few Cap."
 
 hide y
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 call hall from _call_hall_11
 
@@ -394,7 +394,7 @@ e "You walk out into the hallway."
 
 e "Nema and Hei seem to have already settled down in Hei's room."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call blueRoom from _call_blueRoom_7
 

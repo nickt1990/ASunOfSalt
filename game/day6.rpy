@@ -87,7 +87,7 @@ menu:
     "Thank you.":
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide p
 
@@ -302,7 +302,7 @@ y n "Well then, {w=0.15}I'm gonna go finish my work."
 
 y n "I'll see you guys later."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "Haruka walks into her room."
 
@@ -314,7 +314,7 @@ e "Hei shuffles off to his room."
 
 hide r
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 show p s
 
@@ -501,7 +501,7 @@ with fade
 
 menu:#computer
     "I'll read the summaries.":
-	    label summariesD6:
+        label summariesD6:
         menu:
             "Haruka's summary.":
                 call day6HaruS
@@ -530,7 +530,7 @@ window hide
 hide black 
 with fade
 
-play sound "sounds/Knock.mp3"
+play sound "sounds/Knock.ogg"
 
 e "After checking email you hear a knock on the door."
 
@@ -547,11 +547,11 @@ menu:
         call hall from _call_hall_23
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "You open your door and step into the hallway."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "Hei is nowhere in sight, {w=0.15}but the kitchen door is open."
 
@@ -607,13 +607,13 @@ e "You sit in silence and eat your food."
 
 e "After you finish, {w=0.15}you make your way back to your room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 call hall from _call_hall_24
 
 e "The ship is silent."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call blueRoom from _call_blueRoom_11
 

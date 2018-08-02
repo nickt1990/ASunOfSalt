@@ -10,7 +10,7 @@ e "You can hear a slight sound coming from the hallway."
 
 e "You get out of bed and get dressed."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "After that,{w= 0.15}you walk out into the hallway."
 
@@ -481,7 +481,7 @@ menu:
 hide y
 hide p
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "You walk out of the room."
 

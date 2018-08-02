@@ -6,7 +6,7 @@ window hide
 hide black
 with fade
 
-play music "music/MorningAlarm.mp3" fadein 2.0
+play music "music/MorningAlarm.ogg" fadein 2.0
 e "You wake up to the sound of your alarm."
 
 menu:
@@ -19,7 +19,7 @@ menu:
         e "Nema is still asleep on the floor when you look over."
         pass
 
-play music "music/Idle.mp3" fadein 3.0#todo change music
+play music "music/Idle.ogg" fadein 3.0#todo change music
 
 menu:
     "Get out of bed.":
@@ -33,7 +33,7 @@ with fade
 
 menu:#computer
     "I'll read the summaries.":
-	    label summariesD12:
+        label summariesD12:
         menu:
             "Haruka's summary.":
                 call day12HaruS
@@ -106,7 +106,7 @@ p h "How did you sleep?"
 
 e "Suddenly, the door opens."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 show y n:
     linear 0 xalign 0.9 yalign 1.0
@@ -369,7 +369,7 @@ hide p
 
 e "Nema gets up and walks out the door."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 show y n
 
@@ -427,13 +427,13 @@ y n ".{w=0.15}.{w=0.15}."
 
 y m "Hmph."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide y
 
 e "Haruka walks out of the room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e ".{w=0.15}.{w=0.15}."
 
@@ -443,13 +443,13 @@ menu:
     "Check it out.":
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call hall from _call_hall_22
 
 e "You open the door and enter the hallway."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "Hei and Haruka are standing in the middle of the hallway yelling at one another."
 
@@ -496,7 +496,7 @@ show y h
 
 y h "You're a real dirtbag roller-coaster,{w=0.15} you know that?"
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide y
 
@@ -579,14 +579,14 @@ r n "Well."
 
 r n "Whatever man, {w=0.15}I got some games to play."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Hei walks over and opens his door,{w=0.15} then.{w=0.15}.{w=0.15}."
 
 show p su:
     linear 0 xalign 0.9 yalign 1.0
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 p su "Wait!"
 
@@ -670,7 +670,7 @@ p s ".{w=0.15}.{w=0.15}."
 
 p s "I suppose it is."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide p
 
@@ -682,7 +682,7 @@ r n ".{w=0.15}.{w=0.15}."
 
 r s "Ugh."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide r
 

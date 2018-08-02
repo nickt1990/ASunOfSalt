@@ -1,5 +1,4 @@
 ﻿#todo check all music is implemented
-#todo convert mp3 to ogg
 #todo add demon to later day
 
 #todo ending idea
@@ -13,11 +12,17 @@
 
 label day3:
 
+e ".{w=0.25}.{w=0.25}."
+
+play music "music/MorningAlarm.ogg" fadein 3.0
+
 window hide
 hide black 
 with fade
 
 e "You wake up to see a notification on your computer screen."
+
+play music "music/RelaxTalk.ogg" fadein 3.0
 
 e "It appears that the Satori sensors are live."
 
@@ -50,21 +55,19 @@ menu:#computer
         jump day3Start
         pass
 
+label day3Start:#DAY3START!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    
 window hide
 hide black 
 with fade
 
-label day3Start:#DAY3START!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 e "You decide to head out to see what the others are doing."
 
-play sound "sounds/DoorOpen2.mp3"
-
-e "You open the door."
+play sound "sounds/DoorOpen2.ogg"
 
 call hall from _call_hall_29
 
-e "You step out into the hallway.{w=0.15} Haruka is laying on the floor with a blanket.{w=0.15} Her eyes are closed."
+e "You step out into the hallway.{w=0.15} Haruka is laying on the floor covered by a blanket.{w=0.15} Her eyes are closed."
 
 menu:
     "Haruka?":
@@ -105,11 +108,11 @@ menu:
         y h "Sure, why not?"
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Hei walks out of his room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 show r h:
     linear 0 xalign 0.9
@@ -144,7 +147,7 @@ r n "Yet."
 
 e "Hei gazes at Haru."
 
-r n "(Softly) Sweet like a cake."
+r n "{size=-6}Sweet,{w=0.3} like a cake.{/size}"
 
 show y m
 
@@ -226,9 +229,11 @@ call hall
 
 menu:#MENU###################################################
     "Hei's Room" if heiD3:
+        $ heiD3 = False
         jump heiRoomD3
         pass
     "Nema's Room" if nemaD3:
+        $ nemaD3 = False
         jump nemaRoomD3
         pass
     "Kichen (Continues Story)":
@@ -251,7 +256,7 @@ show r h
 
 r h "Heya Captain Crunk Incorporated."
 
-r n "I actually have something I want your captain-ly advice on."
+r n "I actually have something I want your captain-{w=0.15}ly advice on."
 
 menu:
     "What?":
@@ -263,12 +268,13 @@ r n "Just between us?"
 
 menu:
     "Sure":
+        r s "Alright.{w=0.15}.{w=0.15}.{w=0.15} so.{w=0.15}.{w=0.15}."
         pass
 
     "No promises.":
+        r m "Fine."
+        r n "Still.{w=0.15}.{w=0.15}."
         pass
-
-r s "Alright.{w=0.15}.{w=0.15}.{w=0.15} so.{w=0.15}.{w=0.15}."
 
 r n "I've been having problems with one of the ship's ladies."
 
@@ -333,13 +339,13 @@ r n "I built every ounce of weapons technology on this ship."
 r h "I was a professional yo-yo artist before I even hit 20."
 
 menu:
-    "Stay silent.":
+    "...":
         pass
 
     "Artist?":
         pass
 
-r n "I played piano in the section 196 orchestra for three years, {w=0.15}I was youngest in the whole place!"
+r n "I played piano in the section one-nine-six orchestra for three years, {w=0.15}I was youngest in the whole place!"
 
 r m "I lead myself into that stuff."
 
@@ -368,14 +374,15 @@ r s "Why doesn't she like me more?"
 
 menu:
     "Maybe try to prove your worth?":
+        r n "That's it.{w=0.15}.{w=0.15}.{w=0.15} She wants a go-getter."
         pass
 
     "Why's it so important?":
+        r m "Shh,{w=0.15} shut up."
+        r n "I got it."
         pass
 
-r n "That's it.{w=0.15}.{w=0.15}.{w=0.15} She wants a go-getter."
-
-r h "Thanks bud!{w=0.15} I need to get to work. Dinner tonight, {w=0.15}prepare your mind to be blown."
+r h "Thanks bud!{w=0.35} I need to get to work.{w=0.35} Dinner tonight, {w=0.15}prepare your mind to be blown."
 
 e "His eyes have glazed over."
 
@@ -396,12 +403,10 @@ e "Nema is laying on the floor."
 menu:
     "Nema?":
         pass
-        
-#todo change nema to static images
 
 show p s
 
-p s "Nema."
+p sl "Nema."
 
 e "There is drool all over her face.{w=0.15}.{w=0.15}. and the floor. {w=0.15}There's an empty glass bottle in her hand."
 
@@ -409,9 +414,13 @@ menu:
     "Shake her.":
         pass
 
+show p s
+
 e "Her eyes shoot open."
 
 e "She looks like a scared owl."
+
+show p sl
 
 e "Her mouth opens, {w=0.15}then her eyes slowly close."
 
@@ -425,11 +434,11 @@ label day3Kitchen:
         
 call kitchen from _call_kitchen_8
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "You walk into the kitchen just ahead of Haruka and Hei."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 show r su
 
@@ -460,7 +469,7 @@ r s "Still sucks."
 
 menu:
     "I agree, {w=0.15}boring.":
-        r n "See? {w=0.25}Even our {size=-6}suspiciously quiet{/size} captain thinks so."
+        r n "See? {w=0.25}Even our {size=-6}{i}suspiciously quiet{/i}{/size} captain thinks so."
         show y m
 
         y m "Maybe if you both did your jobs then you wouldn't be so bored, {w=0.15}yeah?"
@@ -515,13 +524,14 @@ y n "It's gonna be somethin' special. "
 
 menu:
     "But what is it?":
+        y h "I'll let that be a lil' surprise for everyone."
         pass
 
     "It sounds special.":
         pass
 
 #todo setup for ending with testing vr
-y h "I'll let that be a lil' surprise for everyone."
+
 
 e "She smirks."
 
@@ -545,6 +555,8 @@ show r m
 
 r m "Whatever."
 
+show r n
+
 e "Everyone eats quietly for a little bit."
 
 e ".{w=0.15}.{w=0.15}."
@@ -553,12 +565,12 @@ r h "Bossman, {w=0.15}can you fetch a bottle of soy sauce from the fridge?"
 
 menu:
     "Can you fetch it yourself?":
+        r n "Sorry, {w=0.15}may you fetch it for me?"
         pass
 
     "No problem.":
+        y m "Wait."
         pass
-
-r n "Sorry, {w=0.15}may you fetch it for me?"
 
 show y m
 
@@ -578,16 +590,19 @@ y n "Ugh. I'll get it."
 
 show r su
 
-r su "Uh, {w=0.15}no that's fine, {w=0.15}I'll get it! Don't worry about it!"
+r su "Uh, {w=0.15}no that's fine."
+
+r su "I'll get it!"
+
+r su "Don't worry about it!"
 
 show y n
 
-#todo, {w=0.15}from here to end, {w=0.15}alternate portraits and such
-
 y n "I'm already up, {w=0.15}you can continue to be la-"
 
-play sound "sounds/Ketchup.mp3"
+play sound "sounds/Ketchup.ogg"
 
+#todo low priority new ketchup sound
 e "Ketchup squirts out of the fridge when Haru tries to open it."
 
 y su "Is this.{w=0.15}.{w=0.15}.{w=0.15} Ketchup?"
@@ -598,7 +613,7 @@ stop music fadeout 2
 
 r s "Yeah.{w=0.15}.{w=0.15}.{w=0.15} pretty funny right?"
 
-play music "music/BadSituation.mp3" fadein 3.0
+play music "music/BadSituation.ogg" fadein 3.0
 
 show y m
 
@@ -617,18 +632,21 @@ e "She begins to swiftly walk towards him."
 
 r su "Haruka please, {w=0.15}I'm so sorry I'll clean it up, {w=0.15}I'll never bother you again I swear, {w=0.15}I do"
 
-play sound "sounds/Slash.mp3"
+play sound "sounds/Slash.ogg"
 show tRed
 with hpunch
 $ renpy.pause(0.09)
 hide tRed
 
+show r sub
+
 e "The moment she reaches him she lashes her arm out and slices his throat."
 
-#todo hei portrait
-r su "Grgrlgl-{w=0.1}hargh H-g-"
+r sub "Grgrlgl-{w=0.1}hargh H-g-"
 
 hide r su
+
+play sound "sounds/Thud.ogg"
 
 e "He collapses to the floor."
 
@@ -660,15 +678,13 @@ y s "Fine.{w=0.35} I knew what I was doing.{w=0.35} I took a chance. "
 
 y n "I'm not a coward like you."
 
-y s "{size=-6}Coward.{/size}"#todo portrait change here
+y s "{size=-6}Coward.{w=0.05}{/size}{nw}"
 
-y n "{size=-1}Coward.{/size}"
+y c1 "{size=-1}Coward.{w=0.05}{/size}{nw}"
 
-y m "{size=+12}Coward.{/size}"
+y c2 "{size=+12}Coward.{w=0.05}{/size}{nw}"
 
-y n "{size=+27}{b}Coward.{/b}{/size}"
-
-e "Her portrait starts to become disfigured, {w=0.15}she slowly melts into nothing."
+y c3 "{size=+27}{b}Coward.{w=0.05}{/b}{/size}{nw}"
 
 hide y
 
@@ -677,7 +693,7 @@ show black
 
 stop music fadeout 2
 
-play music "music/Space.mp3" fadein 2.0
+play music "music/Space.ogg" fadein 2.0
 
 call hall
 
@@ -708,7 +724,9 @@ stop music fadeout 3
 
 e "You follow just behind her through the door."
 
-play music "music/Evil.mp3" fadein 2.0
+play music "music/Evil.ogg" fadein 2.0
+
+show ptBlack
 
 e "The atmosphere seems to change as you enter."
 
@@ -731,57 +749,58 @@ e "You walk up behind her."
 
 e "Your arm reaches out to touch her shoulder{w=0.35}.{w=0.35}.{w=0.35}."
 
-play sound "sounds/CaptainScare.mp3"
+play sound "sounds/CaptainScare.ogg"
 
-#todo jump scare. image
+show p ss
+
+$ renpy.pause(0.45)
 
 hide p
 
 window hide
 show black
-
+hide ptBlack
 e "Suddenly you're in complete darkness."
 
-play sound "sounds/demonspeechd31.mp3"
+play sound "sounds/demonspeechd31.ogg"
 d "Leviathan ov mine, {w=0.15}stir.{w=0.15}.{w=0.15}."
 
-play sound "sounds/demonspeechd32.mp3"
+play sound "sounds/demonspeechd32.ogg"
 d "My burning sea. {w=0.15}Rise."
 
-play sound "sounds/demonspeechd33.mp3"
+play sound "sounds/demonspeechd33.ogg"
 d "I arrive."
 
-play sound "sounds/demonspeechd34.mp3"
+play sound "sounds/demonspeechd34.ogg"
 d "Blow your horns, {w=0.15}devout.{w=0.15} Announce me."
 
-play sound "sounds/demonspeechd35.mp3"
+play sound "sounds/demonspeechd35.ogg"
 d "Piles of flesh. "
 
-play sound "sounds/demonspeechd36.mp3"
+play sound "sounds/demonspeechd36.ogg"
 d "Waves of nothing."
 
-play sound "sounds/demonspeechd37.mp3"
+play sound "sounds/demonspeechd37.ogg"
 d "Do I make you smile?"
 
 menu:
     "Yes.":#todo endings
+        play sound "sounds/demonspeechd38.ogg"
+        d "A deal is struck."
         pass
     "No.":
         pass
 
-play sound "sounds/demonspeechd38.mp3"
-d "A deal is struck."
-
-play sound "sounds/demonspeechd39.mp3"
+play sound "sounds/demonspeechd39.ogg"
 d "Companion."
 
-play sound "sounds/demonspeechd310.mp3"
+play sound "sounds/demonspeechd310.ogg"
 d "We shall burn together."
 
-play sound "sounds/demonspeechd311.mp3"
+play sound "sounds/demonspeechd312.ogg"
 d "We shall be of many skins."
 
-play sound "sounds/demonspeechd312.mp3"
+play sound "sounds/demonspeechd313.ogg"
 d "We live."
 
 stop music fadeout 3.0
@@ -793,19 +812,21 @@ call kitchen
 
 e "You feel cold wind on your skin."
 
-play music "music/Space.mp3" fadein 2.0
+play music "music/Space.ogg" fadein 2.0
 e "{w=0.35}.{w=0.35}.{w=0.35}."
 
 window hide
 hide black
 with fade
+hide ptBlack
 
 e "You fall back into your chair at the dinner table."
 
 show r s
 
+show y m
 show y m:
-    linear 0 xalign 0.99
+    linear 0 xalign 0.99 #todo she floats
 
 r s "Haruka c'mon, {w=0.15}it wasn't even meant for you! "
 
@@ -852,13 +873,13 @@ show y n
 
 y n "I'm gonna go wash up. "
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide y
 
 e "Haruka leaves the room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 show r s
 
@@ -895,7 +916,7 @@ r h ".{w=0.15}.{w=0.15}."
 
 r s "Today sucks.{w=0.15} I'm gonna go to sleep.{w=0.15} See ya man."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide r
 
@@ -979,11 +1000,11 @@ with fade
 
 
 call hall
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 e "After a while,{w=0.25} you decide to head to the kitchen for dinner."
 
 call kitchen from _call_kitchen_9
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 e "You enter the kitchen{w=0.15}.{w=0.15}.{w=0.15}."
 
 e "Only Nema is here."
@@ -1034,7 +1055,7 @@ r n "Nema, {w=0.15}do you know how to mak-"
 
 e "Haruka walks through the still open door."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "The door closes behind her."
 
@@ -1663,7 +1684,7 @@ show r s
 
 r s "Goodnight."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Hei opens the door and walks out of the room."
 
@@ -1685,7 +1706,7 @@ p n "Goodnight. It's been nice getting a chance to know you both more."
 
 e "Nema walks out after Hei."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide p
 
@@ -1723,7 +1744,7 @@ y n "Anyways, {w=0.15}I'm going to take a shower and get to bed."
 
 y s "This has been a shitty night. "
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide y
 

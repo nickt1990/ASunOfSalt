@@ -1,6 +1,6 @@
 ﻿label day8:
 
-play sound "sounds/Knock.mp3"
+play sound "sounds/Knock.ogg"
 
 e "There's a knock at your door."
 
@@ -15,7 +15,7 @@ menu:
     ".{w=0.15}.{w=0.15}.":
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 show p s
 
@@ -56,7 +56,7 @@ menu:
     "Get up and move to kitchen.":
         pass
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 call kitchen from _call_kitchen_2
 
@@ -276,7 +276,7 @@ y n "Whatever, {w=0.15}I'm done. "
 
 y m "Thanks for the pancakes."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide y
 
@@ -297,7 +297,7 @@ show y m:
 
 y m "And we're still having our goddamn meeting later. "
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide y
 
@@ -420,7 +420,7 @@ menu:
 
 e "Hei enters."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 show r s
 
@@ -493,7 +493,7 @@ hide p
 
 e "The two of them walk out of the room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "You have some free time."
 
@@ -614,7 +614,7 @@ e "You go back to your room and get on the computer."
 
 menu:#computer
     "I'll read the summaries.":
-	    label summariesD8:
+        label summariesD8:
         menu:
             "Haruka's summary.":
                 call day8HaruS
@@ -641,11 +641,11 @@ label day8Mid:
 
 e "Time has passed."
 
-play sound "sounds/Knock.mp3"
+play sound "sounds/Knock.ogg"
 
 e "There's a knock on your door."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call hall from _call_hall_7
 
@@ -653,7 +653,7 @@ show y
 
 y s "Time for the thing, {w=0.15}c'mon."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 menu:
     "Yes ma'am.":
@@ -813,7 +813,7 @@ y m "I threw {b}EVERYTHING{/b} away for this."
 
 y m "Screw this and fuck you."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide y
 
@@ -881,7 +881,7 @@ menu:
 
 p s "Goodnight Captain."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide p
 
@@ -891,13 +891,13 @@ e "Hei and Nema walk off to their individual rooms."
 
 call hall from _call_hall_8
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "You make your way back to yours as well."
 
 call blueRoom from _call_blueRoom_3
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "You lay down on your bed."
 

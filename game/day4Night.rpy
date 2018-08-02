@@ -16,7 +16,7 @@ menu:
     "Is Nema up to something again?":
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call hall from _call_hall_2
 
@@ -47,7 +47,7 @@ show p s
 p s "N-no Haruka. {w=0.15}I'll go check the radar."
 
 call navRoom from _call_navRoom
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "The three of you walk into the navigation room."
 
@@ -55,7 +55,7 @@ p n "Ok, {w=0.15}let's see.{w=0.15}.{w=0.15}."
 
 e "After a moment Hei walks groggily into the room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 show r s:
     linear 0 xalign 0.1 yalign 1.0
@@ -277,7 +277,7 @@ hide ptRed
 show tWhite #todo test white and play thru this part
 with hpunch
 
-play sound "sounds/Explosion.mp3"
+play sound "sounds/Explosion.ogg"
 
 e "There's a large flash of light and explosion."
 
@@ -288,6 +288,8 @@ y su "Captain,{w=0.15} now!"
 menu:
     "Engage.":
         pass
+
+play sound "sounds/Boost.ogg"        
 
 $ renpy.pause(0.09)
 window hide
@@ -307,7 +309,7 @@ with fade
 
 y h "Alright, {w=0.15}then we should be goo-"
 
-play sound "sounds/Explosion.mp3"#todo change sound effect
+play sound "sounds/Explosion2.ogg"
 
 window hide
 show black

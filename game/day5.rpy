@@ -239,20 +239,20 @@ show r h
 
 r h "Don't die on us bro."
 
-play sound "sounds/Slap.mp3"
+play sound "sounds/Slap.ogg"
 
 e "You hear a slapping sound."
 
 r s "Ouch, {w=0.15}rude."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide r
 hide y
 
 e "You hear Hei and Haruka walk out the door."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "There is silence for a while."
 

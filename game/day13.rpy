@@ -26,7 +26,7 @@ with fade
 
 menu:#computer
     "I'll read the summaries.":
-	    label summariesD13:
+        label summariesD13:
         menu:
             "Haruka's summary.":
                 call day13HaruS
@@ -55,7 +55,7 @@ window hide
 hide black 
 with fade
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call hall from _call_hall_3
 
@@ -277,13 +277,13 @@ e "You finish your eggs and head out of the kitchen.{w=0.15}.{w=0.15}."
 hide y
 hide r
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call blueRoom from _call_blueRoom_1
 
 e "Into your room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "You sit down at your computer to get some work done."
 
@@ -293,7 +293,7 @@ with fade
 
 menu:#computer
     "I'll read the summaries.":
-	    label summariesD132:
+        label summariesD132:
         menu:
             "Mail.":
                 call day13Mail
@@ -318,7 +318,7 @@ window hide
 hide black 
 with fade
 
-play sound "sounds/Knock.mp3"
+play sound "sounds/Knock.ogg"
 
 e "Some time passes,{w=0.15} and you hear a knock on your door."
 
@@ -326,7 +326,7 @@ menu:
     "Open the door":
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 show y h
 
@@ -378,7 +378,7 @@ y h "Nevermind!"
 
 y h "I have work to do,{w=0.15} talk to ya later."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide y
 

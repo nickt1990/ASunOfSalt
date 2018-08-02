@@ -10,11 +10,15 @@ call blueRoom
 
 e "Then, head back to your room to change clothes and get prepared for the night."
 
+stop music fadeout 2.0
+
 e "Go to computer to check email."
 
 window hide
 show black
 with fade
+
+play music "music/Spacetalk.ogg" fadein 3.0
 
 e "You only have one email in your inbox."
 
@@ -46,9 +50,7 @@ menu:
     "...":
         pass
 
-play sound "sounds/Knock.mp3"
-
-show yp h
+play sound "sounds/Knock.ogg"
 
 yp h "Ya comin' Cap?"
 
@@ -58,7 +60,10 @@ menu:
 
 call hall
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
+
+show yp h
+
 e "You open the door to Haruka standing there in her Pajamas"
 
 menu:
@@ -70,27 +75,29 @@ menu:
 
 yp n "Figured I'd dress comfortable, {w=0.15}since it will be a long night and all."
 
+stop music fadeout 3
+
 menu:
     "Looks good!":
         yp h "I'm cute. "
         pass
 
     "Looks unprofessional.":
-        yp n "..."
-
-        yp h "Hey, {w=0.15}this isn't my assignment, {w=0.15}I'm the morale support, {w=0.15}remember?"
+        yp n "Unprofessional?"
+        yp h "Hah."
         pass
 
-        play music "music/RelaxTalk.mp3" fadein 3.0
+play music "music/RelaxTalk.ogg" fadein 3.0
+
 e "She smiles."
 
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 call navRoom
 
 yp n "Let's get to it. {w=0.15}Do you know what to do?"
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 menu:
     "No.":
@@ -102,7 +109,7 @@ menu:
     "One week compound?":
         pass
 
-yp h "Right. It's why I'm here, {w=0.15}remember? It's my own lil' contraption that builds on EnDrives. I call it the EhDrive. The little 'h' is for me. "
+yp h "Right. It's why I'm here, {w=0.15}remember?{w=0.15} It's my own lil' contraption that builds on EnDrives.{w=0.15} I call it the EhDrive.{w=0.15} The little 'h' is for me. "
 
 e "Haruka winks."
 
@@ -110,17 +117,19 @@ yp n "The basics are the same, {w=0.15}microwaves are pushed by a magnetron agai
 
 yp n "The change comes in the form of that cone. While it still funnels the energy out of the cone, {w=0.15}it also absorbs and stores the energy that is exchanged when the microwaves collide with the cone, {w=0.15}and each other."
      
-yp n "The same material is around the entire ship causing the force of our movement and really anything else that affects us to store energy. This causes us to actually gain more energy then we are using. "
+yp n "The same material is around the entire ship causing the force of our movement and really anything else that affects us to store energy.{w=0.15} This causes us to actually gain more energy then we are using. "
 
 yp n "This extra energy is stored throughout the week, {w=0.15}and is slowly integrated into the engine over the course of the 7th night each week. That makes us faster, {w=0.15}which generates more energy faster."
      
 yp n "It compounds upon itself exponentially."
 
-yp n "The thing tho, {w=0.15}is that we have only idea how the ship, {w=0.15}the engine, {w=0.15}or anything else will react to the energy levels we'll reach. "
+yp n "The thing tho, {w=0.15}is that we have only idea of how the ship, {w=0.15}the engine, {w=0.15}and everything else will react to the energy levels we'll reach. "
 
-yp s "I built fail-safes and designed everything around massive amounts of energy and speed, {w=0.15}y'know... we'll see. "
+yp s "I built fail-safes and designed everything around massive amounts of energy and speed, {w=0.15}y'know.{w=0.25}.{w=0.25}.{w=0.25} we'll see. "
 
-yp h "Eventually if things go peachy, {w=0.15}we'll be moving faster than any known object in history. We'll be exerting more energy than Earth's sun at any given moment. We'll be a force of nature. Endless potential Cap, {w=0.15}right under your little feet!"
+yp h "Eventually if things go peachy, {w=0.15}we'll be moving faster than any known object in history. We'll be exerting more energy than Earth's sun at any given moment. We'll be a force of nature."
+
+yp h "Endless potential Cap, {w=0.15}right under your little feet!"
 
 menu:
     "That sounds risky...":
@@ -131,7 +140,7 @@ menu:
         yp h "I was hoping you'd think so!"
         pass
 
-yp n "We'll be so far away after week two that there's no going back anyways.{w=0.25} We came into this knowing we'd die out here. So whyp stop?"
+yp n "We'll be so far away after week two that there's no going back anyways.{w=0.25} We came into this knowing we'd die out here.{w=0.25} So why stop?"
 
 menu:
     "This is much bigger than us.":
@@ -153,11 +162,15 @@ menu:
     "Can the ship handle that kind of force?":
         pass
 
-yp m "Oh you, {w=0.15}somebody was not listening.{w=0.25} The stuff it's made out of is special. This ship isn't made of some sort of metal. It's a machine made to absorb and reuse energy from top to bottom. It can hold. For. Sure. "
+yp m "Oh you, {w=0.15}somebody was not listening."
+
+yp h "The stuff it's made out of is special. This ship isn't made of some sort of metal. It's a machine made to absorb and reuse energy from top to bottom. It can hold."
+
+yp h " For.{w} Sure."
 
 yp n "Besides, {w=0.15}we'll be so far away, {w=0.15}chances are if anything does happen it wont get back to the rest of humanity for decades."
 
-yp n "Look, {w=0.15}we can think and try to explain things away all our lives and be no better for it.{w=0.25} But imagine actuallyp having real answers in our hands. We have the question of reality before us, {w=0.15}and the key's in our hands."
+yp n "Look, {w=0.15}we can think and try to explain things away all our lives and be no better for it.{w=0.25} But imagine actually having real answers in our hands. We have the question of reality before us, {w=0.15}and the key's in our hands."
 
 yp h "Consider it."
 
@@ -178,19 +191,19 @@ yp n "At least admit that you're impressed with me though.{w=0.25} Bet ya didn't
 menu:
     "No, {w=0.15}I didn't. How'd that happen?":
         yp n "I appreciate the honesty."
-        yp h "I just woke up one dayp smart. A miracle!"
+        yp h "I just woke up one day smart. A miracle!"
         e "Haruka smirks."
         yp m "I worked my ass off, {w=0.15}how do you think?"
         pass
 
     "I knew you were an engineer.":
-        yp h "Far enough,{w=0.15} but it didn't happen on its own."
+        yp h "Fair enough,{w=0.15} but it didn't happen on its own."
         yp m "I worked my ass off"
         pass
 
 yp n "It's funny.{w=0.25} It was all for some man. Professor Motakomi."
 
-yp n "I grew up in a poor family.{w=0.25} We were on the top deck of myp station."
+yp n "I grew up in a poor family.{w=0.25} We were on the top deck of my station."
 
 menu:
     "The top deck was bad?":
@@ -200,7 +213,7 @@ yp h "Yeah. {w=0.15}Used to be that the higher you were the classier, {w=0.15}un
 
 yp s "Space is a luxury, {w=0.15}and we did not have it."
 
-yp n "I shared a room with myp seven brothers."
+yp n "I shared a room with my seven brothers."
 
 menu:
     "Seven in one room?":
@@ -214,17 +227,17 @@ menu:
         yp m "Hated 'em all."
         pass
 
-yp h "But my oldest brother and I were close. Name was Jin. A true bro."
+yp h "But my oldest brother and I were close though.{w=0.15} Name was Jin.{w=0.15} A true bro."
 
 yp n "We didn't have much money to do normal kid shit, {w=0.15}so we'd go to the local library and read while my other brothers drank gasoline or whatever those idiots did."
 
 yp n "The library did this thing where they brought professors and scientists in to speak."
 
-yp n "Present their science garbage for all the 10 people who came to these things. {w=0.15}Sort of an \"educate the poor children\" deal."
+yp n "Present their science garbage for all the three people who came to these things. {w=0.15}Sort of an \"educate the poor children\" deal."
 
 yp n "At first I was blown away.{w=0.15} The science talk made my lil' eyes bulge.{w=0.15} Loved it."
 
-yp n "I started to have Jin take me to the library earlyp mornings, {w=0.15}late nights. I was like 13 and still needed help getting places, {w=0.15}but he didn't mind."
+yp n "I started to have Jin take me to the library early mornings, {w=0.15}late nights. I was like thirteen and still needed help getting places, {w=0.15}but he didn't mind."
 
 yp n "I'd read day and night. Pops didn't believe in school, {w=0.15}but who needs school when you have the best teach in the skies?"
 
@@ -237,13 +250,21 @@ menu:
 
 yp h "Me."
 
+yp h "Myself."
+
+yp h "Of {i}course.{/i}"
+
 e "She smirked."
 
 yp n "So, {w=0.15}gradually I started to understand enough that even I knew these speakers were full of shit. Only the shitbirds had the free time for children I guess."
 
-yp n "One time a dude was up there stammering around his own words. The man was incompetent, {w=0.15}it made me furious, {w=0.15}HE is educating the future of Station 6?  So I just walked up, {w=0.15}told him that he was free to go, {w=0.15}and started my own talk. He didn't even fight me on it."
+yp n "One time a dude was up there stammering around his own words. The man was incompetent, {w=0.15}it made me furious, {w=0.15}HE is educating the future of Station 6?"
 
-yp n "I must have been 16? I'm sure he was shocked. Maybe relieved that somebodyp set him free from his own bullshit."
+yp n "So I just walked up, {w=0.15}told him that he was free to go, {w=0.15}and started my own talk."
+
+yp h "He didn't even fight me on it."
+
+yp n "I must have been sixteen by then?{w=0.35} I'm sure he was shocked.{w=0.25} Maybe relieved that somebodyp set him free from his own bullshit."
 
 menu:
     "You took his place?":
@@ -254,7 +275,7 @@ menu:
         yp m "Who cares?"
         pass
 
-yp m "Screw that guy.{w=0.25}These speeches were supposed to be educational. {w=0.15}These guys were supposed to be examples for us kids."
+yp m "Screw that guy.{w=0.25} These speeches were supposed to be educational. {w=0.15}These guys were supposed to be examples for us kids."
 
 yp n "I looked around and saw the other kids just soaking in his complete bullshit, {w=0.15}and it just pissed me off. He was poisoning kids who wanted to learn with his stupid existence."
 
@@ -266,11 +287,11 @@ yp n "They were all losers. Nobody challenged me."
 
 yp s "Until one day.{w=0.15} Shit.{w=0.15} I will never forget."
 
-yp n "I was way into what I was saying already when man in a suit and tie- probably early 40's, {w=0.15}walked up to me."
+yp n "I was way into what I was saying already when man in a suit and tie-{w=0.15} probably early 40's, {w=0.15}walked up to me."
 
 yp n "He asked what I was doing.{w=0.15} Said he was supposed to be giving a lecture today."
 
-yp h "I responded with the classic; \"screw off old man.\" They love that one."
+yp h "I responded with the classic;{w=0.25} \"screw off old man.\"{w=0.25} They love that one."
 
 yp n "Without a moment of hesitation he slapped me across the face."
 
@@ -302,13 +323,13 @@ menu:
 
 yp h "It's crazy, {w=0.15}the second he finished his lecture he walked right up to me and aske-"
 
-play music "music/Alarm.mp3" fadein 2.0
+play music "music/Alarm.ogg" fadein 2.0
 
 e "Alarm goes off."
 
 yp su "Shit."
 
-yp n "We haven't been watching the levels at all. "
+yp su "We haven't been watching the levels at all. "
 
 e "Haruka adjusted some numbers on the computer screen."
 
@@ -333,7 +354,7 @@ menu:
         pass
 
 
-play music "music/CalmNight.mp3" fadein 3.0
+play music "music/CalmNight.ogg" fadein 3.0
 
 yp h "S'all fine now.{w=0.15} The engine itself is doin' grand."
 
@@ -352,11 +373,11 @@ menu:
     "Right. ":
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Nema walks in."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 show p su:
     linear 0 xalign 0.9
@@ -372,7 +393,7 @@ menu:
 
 p n "I see."
 
-p s "W-would you like to take a break Captain? I wouldn't mind taking over your shift for a while."
+p s "W-{w=0.15}would you like to take a break Captain?{w=0.25} I wouldn't mind taking over your shift for a while."
 
 menu:
     "I'll take a break.":
@@ -411,7 +432,7 @@ p s "Sleep well you two.{w=0.15}.{w=0.15}."
 
 call hall from _call_hall_9
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide p
 
@@ -438,7 +459,7 @@ yp h "Nah.{w=0.15} G'night Cap. "
 menu:
     "Goodnight":
         pass
-
+        
 hide yp n
 
 window hide

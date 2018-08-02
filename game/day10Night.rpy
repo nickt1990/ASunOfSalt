@@ -191,9 +191,9 @@ menu:
         pass
 
     "Don't worry about anyone but you.":
-	    yb n "Yeah.{w=0.35}.{w=0.35}."
-		yb h "Yeah I guess so."
-		jump notAsSweet
+        yb n "Yeah.{w=0.35}.{w=0.35}."
+        yb h "Yeah I guess so."
+        jump notAsSweet
         pass
 
     "There's nothing to know, follow your instincts.":
@@ -233,18 +233,18 @@ menu:
         pass
 
     "Sorry, let's keep some space.":
-	    $ harukaLove = False
+        $ harukaLove = False
         yb su "Oh."
-		yb n ".{w=0.25}.{w=0.25}."
-		yb s "Oh."
-		yb s "Gotcha."
-		yb s "Well, I didn't bring anything else to sleep on, but I'll keep to my side of the bed."
-		yb s ".{w=0.25}.{w=0.25}."
-		yb s "I'm sorry to make this night weird for you."
-		yb s "I thought I felt a connection,{w=0.25} but I guess that was just me."
-		yb s "That's okay."
-		hide yb s
-		jump endDay10N
+        yb n ".{w=0.25}.{w=0.25}."
+        yb s "Oh."
+        yb s "Gotcha."
+        yb s "Well, I didn't bring anything else to sleep on, but I'll keep to my side of the bed."
+        yb s ".{w=0.25}.{w=0.25}."
+        yb s "I'm sorry to make this night weird for you."
+        yb s "I thought I felt a connection,{w=0.25} but I guess that was just me."
+        yb s "That's okay."
+        hide yb s
+        jump endDay10N
         pass
 
 e "Haruka just smiles up at you, then closes her eyes and squeezes your arm."
@@ -392,16 +392,16 @@ menu:
     "Sorry, let's keep some space.":
         $ harukaLove = False
         yz su "Oh."
-		yz n ".{w=0.25}.{w=0.25}."
-		yz s "Oh."
-		yz s "Gotcha."
-		yz m "You just wanted a show."
-		yz m "I get it."
-		yz s "Well, I didn't bring anything else to sleep on, but I'll keep to my side of the bed."
-		yz s ".{w=0.25}.{w=0.25}."
-		yz s "Goodnight I guess."
-		hide yz s
-		jump endDay10N
+        yz n ".{w=0.25}.{w=0.25}."
+        yz s "Oh."
+        yz s "Gotcha."
+        yz m "You just wanted a show."
+        yz m "I get it."
+        yz s "Well, I didn't bring anything else to sleep on, but I'll keep to my side of the bed."
+        yz s ".{w=0.25}.{w=0.25}."
+        yz s "Goodnight I guess."
+        hide yz s
+        jump endDay10N
         pass
 
 e "Haruka just smiles up at you, then closes her eyes and squeezes your arm."

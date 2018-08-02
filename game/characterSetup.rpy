@@ -42,6 +42,12 @@ init:
         pause 0.1
         repeat
         
+    image p sl:
+        "Nema/PLeatherSad2.png"
+        
+    image p ss:
+        "Nema/PLeatherSurprisedScare.png"
+        
     image pc:
         "Nema/PCommanderNeutral.png"
         pause 7
@@ -157,6 +163,14 @@ init:
         "Haruka/YGreenHappy2.png"
         pause 0.1
         repeat        
+        
+    image y c1:
+        "Haruka/YGreenSadCoward1.png"   
+    image y c2:
+        "Haruka/YGreenSadCoward2.png"
+    image y c3:
+        "Haruka/YGreenSadCoward3.png"
+
 
     image yp:
         "Haruka/YBunnyNeutral.png"
@@ -311,6 +325,9 @@ init:
         pause 0.1
         repeat        
 
+    image r sub:
+        "Hei/RCasualSurprisedDead.png"
+
     image rz:
         "Hei/RNightyNeutral.png"
         pause 8.3
@@ -389,7 +406,7 @@ init:
     # dialogue without us having to repeatedly type their name. It also
     # lets us change the color of their name.
     
-    $ e = Character('Eileen', color=(200, 255, 200, 255))
+    $ e = Character('???', color=(0, 0, 0, 255))
 
     $ p = Character('Nema', image="p", color=(255, 100, 255, 255), ctc="ctc_blink", ctc_position="nestled")
     $ pc = Character('Nema', image="pc", color=(255, 100, 255, 255), ctc="ctc_blink", ctc_position="nestled")
@@ -400,12 +417,12 @@ init:
     $ yb = Character('Haruka', image="yb", color=(240, 240, 0, 255), ctc="ctc_blink", ctc_position="nestled")
     $ yp = Character('Haruka', image="yp", color=(240, 240, 0, 255), ctc="ctc_blink", ctc_position="nestled")
     
-    $ r = Character('Hei', image="r", color=(0, 0, 255, 255), ctc="ctc_blink", ctc_position="nestled")
-    $ rz = Character('Hei', image="rz", color=(0, 0, 255, 255), ctc="ctc_blink", ctc_position="nestled")
-    $ rn = Character('Hei', image="rn", color=(0, 0, 255, 255), ctc="ctc_blink", ctc_position="nestled")
+    $ r = Character('Hei', image="r", color=(0, 0, 240, 255), ctc="ctc_blink", ctc_position="nestled")
+    $ rz = Character('Hei', image="rz", color=(0, 0, 240, 255), ctc="ctc_blink", ctc_position="nestled")
+    $ rn = Character('Hei', image="rn", color=(0, 0, 240, 255), ctc="ctc_blink", ctc_position="nestled")
     
     $ m = Character('Player', color=(150,255,150,255))
-    $ d = Character('Demon', color=(255, 0, 0, 255))
+    $ d = Character('???', color=(230, 0, 0, 255))
     $ ma = Character('Marsh', color=(150,150,150,255))
     $ e = Character(what_color="#ffffff", window_background="gui/narrator.png")
     

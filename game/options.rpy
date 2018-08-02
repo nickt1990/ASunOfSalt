@@ -60,7 +60,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "music/Base.mp3"
+define config.main_menu_music = "music/Base.ogg"
 
 
 ## Transitions #################################################################
@@ -191,8 +191,8 @@ init python:
     build.classify('game/**.psd', 'archive')
     build.classify('game/**.otf', 'archive')
     build.classify('game/**.ttf', 'archive')
-    build.classify('game/music/**.mp3', 'archive')
-    build.classify('game/sounds/**.mp3', 'archive')
+    build.classify('game/music/**.ogg', 'archive')
+    build.classify('game/sounds/**.ogg', 'archive')
     build.classify('game/images/Haruka/**.png', 'archive')
     build.classify('game/images/Haruka/**.psd', 'archive')
     build.classify('game/images/Hei/**.png', 'archive')

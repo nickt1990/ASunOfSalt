@@ -87,7 +87,7 @@ y s "You're not gonna let me off easy?"
 
 y n ".{w=0.15}.{w=0.15}."
 
-play music "music/PianoCave.mp3" fadein 2.0
+play music "music/PianoCave.ogg" fadein 2.0
 
 y h "What do you want to drink."
 
@@ -273,7 +273,7 @@ y n "Maybe I should do what I want."
 
 y n "Maybe I sh-"
 
-play music "music/Alarm.mp3" fadein 1.0
+play music "music/Alarm.ogg" fadein 1.0
 
 e "The ship shakes.{w=0.15} An alarm goes off."
 
@@ -281,7 +281,7 @@ y su "W-{w=0.15}what?"
 
 y su "Oh wai-{w=0.15}Quick! {w=0.15}To the nav room!"
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "You both run to the navigation room."
 

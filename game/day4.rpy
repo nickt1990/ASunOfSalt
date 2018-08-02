@@ -1,6 +1,6 @@
 ﻿label day4:
 
-play music "music/MorningAlarm.mp3" fadein 2.0
+play music "music/MorningAlarm.ogg" fadein 2.0
 
 window hide
 hide black
@@ -48,17 +48,17 @@ with fade
 
 stop music fadeout 2.0
 
-play music "music/Space.mp3" fadein 2.0
+play music "music/Space.ogg" fadein 2.0
 
 call hall from _call_hall_25
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Walk into the hallway. All the doors are locked and things seem quiet."
 
 e "You make your way into the kitchen."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call kitchen from _call_kitchen_7
 
@@ -138,7 +138,7 @@ show p n
 p n "Please, {w=0.15}both of you come take a look."
 
 call navRoom
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "You walk into the nav room."
 
@@ -334,7 +334,7 @@ menu:
     "Okay.":
         pass
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 call hall from _call_hall_26
 
@@ -344,13 +344,13 @@ hide p
 
 hide y
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
         
 e "You walk up to Hei's door."
 
 call redRoom from _call_redRoom_4
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 menu:
     "Hei?":
@@ -538,7 +538,7 @@ hide r
 
 call hall from _call_hall_27
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "Everyone's busy working on a task."
         
@@ -552,7 +552,7 @@ with fade
 
 e "{w=0.25}.{w=0.35}.{w=0.45}."
 
-play sound "sounds/Knock.mp3"
+play sound "sounds/Knock.ogg"
 
 e "After a few hours of getting work done, there's a knock on your door."
 
@@ -562,7 +562,7 @@ with fade
 
 show p n
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 p n "Excuse me, {w=0.15}sir?"
 
@@ -579,15 +579,15 @@ e "Nema smiles."
 
 p n "I'll tell the rest."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 call hall
 e "You head out into the hallway..."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 call kitchen
 e "And then into the kitchen."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 e "A few moments later, Nema walks in."
 
 p n "Haruka and Hei said they'd just be a little bit.{w=0.25} I'd like to suggest that we wait for them,{w=0.15} if that's alright with you Captain?"
@@ -751,7 +751,7 @@ menu:
     "Head to nav room. ":
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call navRoom from _call_navRoom_3
 
@@ -785,7 +785,7 @@ menu:
     "Good to hear!":
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "The door opens and Haruka walks in."
 
@@ -890,7 +890,7 @@ menu:
 
 p h "Good night!"
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 call hall
 e "You follow Nema out into the hallway."
@@ -900,11 +900,11 @@ hide p
 e "She smiles at you as she walks into her room down the hall."
 
 call blueRoom from _call_blueRoom_13
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "You make your way to your own room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "You walk in,{w=0.15} and lay on your bed."
 

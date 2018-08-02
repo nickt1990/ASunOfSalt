@@ -4,7 +4,7 @@ define nemaBed = False
 define nemaClothes = False
 define nemaPoem = False
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "You enter to Nema standing in front of your computer."
 
@@ -59,7 +59,7 @@ e ".{w=0.45}.{w=0.45}.{w=0.45}"
 
 p h "So,{w=0.15} sir. I ha-"
 
-play sound "sounds/Knock.mp3"
+play sound "sounds/Knock.ogg"
 
 e "There's a loud knocking on the door."
 
@@ -69,11 +69,11 @@ menu:
     "Answer the door." if harukaLove == True:
         pass
     "Answer the door." if harukaLove == False:
-	    e "Haruka's standing just outside the door."
-		jump day11nBegin
+        e "Haruka's standing just outside the door."
+        jump day11nBegin
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Haruka's standing outside of your room with a small package."
 
@@ -87,7 +87,7 @@ label day11nBegin:
 
 y m "I'm turning off the life support,{w=0.15} stay in your room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide y m
 
@@ -97,12 +97,12 @@ p su "What did she say?"
 
 menu:
     "She dropped off a package..." if harukaLove == True:
-	    pass
+        pass
     "Life support is off now." if harukaLove == False:
-	    p h "Oh good."
-		p h "I'm glad we have Haruka to keep us in order."
-	    jump noSandwich
-	    pass
+        p h "Oh good."
+        p h "I'm glad we have Haruka to keep us in order."
+        jump noSandwich
+        pass
 
 menu:
     "Check the package.":
@@ -465,7 +465,7 @@ menu:
 
     "Alright.":
         p n "I've never shared them."
-		p n "So I am a little nervous{w=0.15}.{w=0.15}.{w=0.15}."
+        p n "So I am a little nervous{w=0.15}.{w=0.15}.{w=0.15}."
         pass
 
 p n "But.{w=0.15}.{w=0.15}.{w=0.15}"

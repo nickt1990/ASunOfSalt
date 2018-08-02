@@ -13,11 +13,11 @@ e ".{w=0.15}.{w=0.15}."
 e "She doesn't seem to be in the room."
 
 menu:
-	"Get out of bed." if harukaLove:
-		pass
-	"Get out of bed." if harukaLove == False:
-	    jump d11MorningHall
-		pass
+    "Get out of bed." if harukaLove:
+        pass
+    "Get out of bed." if harukaLove == False:
+        jump d11MorningHall
+        pass
 
 e "Then,{w=0.15} you notice that there's a sandwich sitting on your bedside table.{w=0.15}.{w=0.15}."
 
@@ -48,13 +48,13 @@ menu:
         
 call hall from _call_hall_10
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 show y n
 
 y n "Hey."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "Haruka's sitting on the floor by the heater, covered in a blanket from her neck down."
 
@@ -81,7 +81,7 @@ menu:
         e "The warm air from the heater shoots up the back of your shirt."
         y n "Blanket?"
         menu:
-            "Of course."
+            "Of course.":
                 e "You wrap yourself up with the blanket and she pulls in closely to you."
                 e "Her skin is so warm from the heat,{w=0.15} it's almost hot."
                 y s "Hey,{w=0.15} Cap.{w=0.15}.{w=0.15}."
@@ -103,7 +103,7 @@ y s "I know I'm kind of awkward when it comes to stuff like that."
 
 y n "I just wanted to let you kn-"
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 show r h:
     linear 0.0 xalign 0.1 yalign 1.0
@@ -356,7 +356,7 @@ show y s
 
 y s ".{w=0.15}.{w=0.15}."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide p
 
@@ -368,7 +368,7 @@ r h "Haru baby,{w=0.15} I'll be in my room."
 
 r h "Come on in whenever you're ready."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide r
 
@@ -389,18 +389,18 @@ y s ".{w=0.15}.{w=0.15}."
 y s "Better get back to your room."
 
 menu:
-	"Sure" if harukaLove == False:
-	    y s "Sorry again for last night."
-		y s "Don't worry,{w=0.2} I got the message."
-		pass
+    "Sure" if harukaLove == False:
+        y s "Sorry again for last night."
+        y s "Don't worry,{w=0.2} I got the message."
+        pass
 
 hide y
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Haruka walks off toward the navigation room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 call blueRoom from _call_blueRoom_5
 

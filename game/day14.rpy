@@ -16,7 +16,7 @@ e "You walk over to the doorway."
 
 call hall from _call_hall_28
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "As you walk out into the hallway, {w=0.15}you see Nema sitting on the ground across the hall."
 
@@ -59,7 +59,7 @@ p n "I was thinking I'd monitor the levels and find averages."
 
 p n "Maybe we can automate the process somehow."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 show y n:
     linear 0 xalign 0.9 yalign 1.0
@@ -128,7 +128,7 @@ show p m
 
 p m "I'll talk to you later Captain."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide p
 
@@ -146,7 +146,7 @@ y m "Get out here and talk to me!"
 
 show p m
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Nema pops her head out of her doo."
 
@@ -158,7 +158,7 @@ p m "Here's your chance,{w=0.15} sit back."
 
 hide p
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "Nema turned up the music in her room."
 
@@ -166,7 +166,7 @@ show y su
 
 y su "Unbelievable."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Hei walks out of his room."
 
@@ -242,7 +242,7 @@ e "Hei looks towards you."
 
 r m "Good luck with her dude."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "Then he turns and storms off back into his room."
 
@@ -285,7 +285,7 @@ with fade
 
 menu:#computer
     "I'll read the summaries.":
-	    label summariesD14:
+        label summariesD14:
         menu:
             "Haruka's summary.":
                 call day14HaruS

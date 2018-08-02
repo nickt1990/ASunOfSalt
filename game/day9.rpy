@@ -4,7 +4,7 @@ window hide
 hide black
 with fade
 
-play music "music/MorningAlarm.mp3" fadein 2.0
+play music "music/MorningAlarm.ogg" fadein 2.0
 
 e "You wake up to your alarm."
 
@@ -12,7 +12,7 @@ e "After getting up and about, you notice you have mail notifications on your co
 
 menu:#computer
     "I'll read the summaries.":
-	    label summariesD9:
+        label summariesD9:
         menu:
             "Haruka's summary.":
                 call day9HaruS
@@ -39,9 +39,9 @@ label day9Start:
 
 stop music fadeout 2.0
 
-play music "music/Space.mp3" fadein 2.0
+play music "music/Space.ogg" fadein 2.0
 
-play sound "sounds/Knock.mp3"
+play sound "sounds/Knock.ogg"
 
 e "Suddenly, {w=0.15}there's a loud knocking on your door."
 
@@ -89,11 +89,11 @@ r m "Warm your thumbs. {w=1.0}{size=-6}Bitch{/size}."
 
 hide r m
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "Just as Hei walks away and into his room, {w=0.15}Nema walks out of hers."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 show p h
 
@@ -253,7 +253,7 @@ r h "First!"
 
 r n "Let us reminisce."
 
-play music "music/Dramatic.mp3" fadein 2.0
+play music "music/Dramatic.ogg" fadein 2.0
 
 r s "A week has passed."
 
@@ -433,7 +433,7 @@ r n "Alright,{w=0.1} let's do this."
 
 r m "{b}ENGAGE.{/b}"
 
-play music "music/Game.mp3" fadein 2.0
+play music "music/Game.ogg" fadein 2.0
 
 show p h
 
@@ -602,7 +602,7 @@ show r s
 
 r s "Whatever, {w=0.15}sorry I don't have time to waste on a stupid video game."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "The door opens and Haruka walks through"
 
@@ -715,7 +715,7 @@ hide p
 
 call hall from _call_hall_15
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "You step out into the hallway."
 
@@ -741,7 +741,7 @@ with fade
 
 menu:#computer
     "I'll read the summaries.":
-	    label summariesD92:
+        label summariesD92:
         menu:
             "Haruka's summary.":
                 call day9HaruS

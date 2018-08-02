@@ -3,7 +3,7 @@
 $ seen_set = [ ]
 $ save_name = "Introductions"
 
-play music "music/Space.mp3" fadein 1.0
+play music "music/Space.ogg" fadein 1.0
 
 call beginningZoom from _call_beginningZoom
 
@@ -13,9 +13,9 @@ e "It's been quiet for hours."
 
 e "Then, suddenly-"
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
-e "There's a sound from the hallway that sounds like a door opening."
+e "You hear a sound like a door opening from the hall."
 
 e "The clock shows it's about 3AM."
 
@@ -29,7 +29,7 @@ e "You stand and walk over to the entrance to your room."
 
 call hall from _call_hall
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "The door opens as you draw near."
 
@@ -45,17 +45,17 @@ hide p su
 
 e "The girl walks across the hall quickly."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "She disappears into one of the doors across from you before you have a chance to speak."
 
 e "Not a moment goes by before the door nearest to you slides open."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "A girl dressed in green walks out.{w=0.15} She seems surprised to see you there."
 
-play music "music/SpaceSunday.mp3" fadein 3.0
+play music "music/SpaceSunday.ogg" fadein 3.0
 
 e "She stands closely in front of you."
 
@@ -92,8 +92,6 @@ menu:
     "Right.":
         y "Well, {w=0.15}my name is Haruka."
         pass
-
-y "You can just call me Haru though. "
 
 y "I'm sure ya've read my file or something,{w=0.15} so you already know I'm the engineer."
 
@@ -185,6 +183,8 @@ menu:
 
 hide y h
 
+play sound "sounds/DoorOpen2.ogg"
+
 e "Haruka walks off."
 
 menu:
@@ -192,6 +192,8 @@ menu:
       pass
       
 call kitchen from _call_kitchen
+
+play sound "sounds/DoorClose2.ogg"
 
 e "You enter the kitchen to see her standing by the counter."
 
@@ -281,18 +283,15 @@ menu:
         y s "Oh? Huh..."
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 show p su at left
 
 p su "H-hello?"
-
-show p su: 
-    linear 0 xalign 0.1
     
 show y h
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 y "Speak of the devil."
 
@@ -311,7 +310,7 @@ y "Your name is Nemo right?"
 
 p h "Hello Nichi Haruka.{w=0.15} That's close, {w=0.15}but my name is Nematsu Hi."
 
-y "My name is Haru, and you then, will be Nema. Sound good?"
+y "Call me Haruka,{w=0.15} and you then,{w=0.15} will be Nema.{w=0.35} Sound good?"
 
 show p s
 
@@ -366,7 +365,7 @@ y "Just what I was thinking."
 
 hide y
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "Haruka leaves."
 
@@ -387,7 +386,7 @@ e "A few moments pass in silence..."
 show y
 
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 y "Said he'd be over in a minute."
 
@@ -418,7 +417,7 @@ show p h
 
 p h "Oh, {w=0.15}uhm, {w=0.15}absolutely."
 
-p s "My n-{w=0.15}name is... {w=0.15}uh,{w=0.15} Nematsu Hi. "
+p s "As I said, my n-{w=0.15}name is{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} {w=0.15}uh,{w=0.15} Nematsu Hi. "
 
 p "My role on this m-{w=0.15}mission is as a scientific historian, so I'll be ta-"
 
@@ -456,7 +455,7 @@ p "As I was saying,{w=0.15} I'll b-"
 
 show p su
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 e "The door opens and the last crew member walks into the room."
 
@@ -534,7 +533,7 @@ y "I do whatever Cap needs."
 
 e "She smiles at you."
 
-r su "Oh really cool, {w=0.15}like a second in command right?"
+r su "Oh really?{w=0.35} Cool, {w=0.15}like a second in command right?"
 
 y h "Exactly like that."
 
@@ -554,7 +553,7 @@ show y
 
 y "I don't see why not."
 
-p s "So I'm f-{w=0.15}fourth in line..."
+p s "So I'm f-{w=0.15}fourth in line.{w=0.15}.{w=0.15}."
 
 e "Hei smiles"
 
@@ -566,7 +565,7 @@ e "Nema smiles."
 
 show p h
 
-p s "T-{w=0.15}there actually is no second in command...{w=0.15} is there?"
+p s "T-{w=0.15}there actually is no second in command.{w=0.15}.{w=0.15}.{w=0.15} is there?"
 
 menu:
     "No. ":
@@ -581,7 +580,7 @@ e "Nema looks relieved."
 
 show y
 
-y "Hey Cap,{w=0.15} speaking of being in command,{w=0.15} I just remembered something. {w=0.15}Someone needs ta pull an all nighter tomorrow to monitor the engine through the first milestone. "
+y "Hey Cap,{w=0.15} speaking of being in command,{w=0.15} I just remembered something. {w=0.35}Someone needs ta pull an all nighter tomorrow to monitor the engine through the first milestone. "
 
 y "Who do ya want on that?"
 
@@ -593,14 +592,17 @@ e "Hei groans."
 
 e "Nema waits quietly."
 
+define harukaNight2 = True
+
 menu:
     "I do it this time.":
+        $ harukaNight2 = False
         y h "Sure thing cap."
         pass
 
     "Haruka, you seem to understand it best.":
         y "No problem!"
-        y s "But,{w=0.15} actually..."
+        y s "But,{w=0.15} actually.{w=0.15}.{w=0.15}."
         show y
         y "Would you mind staying up with me just this once?"
         y h "Since you're the captain and all,{w=0.15} you should probably know the process, right?"
@@ -630,7 +632,7 @@ r "Seriously,{w=0.15} get some sleep and enjoy it."
 
 show p s
 
-p s "Right... "
+p s "Right.{w=0.15}.{w=0.15}. "
 
 e "Nema looks warily at you."
 
@@ -640,7 +642,7 @@ r h "Think of it this way, now you can be rested the next morning, and help cove
 
 e "Nema nods, she seems satisfied."
 
-e "There is a moment of silence"
+e "There is a moment of silence."
 
 show y
 
@@ -648,22 +650,24 @@ y "Well...{w=0.15} I'm going to bed."
 
 show r
 
-r "Ditto, see you snaggle babies in the morning. Just wanted to say hi."
+r "Ditto, see you snaggle babies in the morning.{w=0.15} Just wanted to pop in and say hey."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide r
 
-p "Snaggle babies...."
+p su ".{w=0.15}.{w=0.15}."
+
+p "Snaggle babies.{w=0.25}.{w=0.25}.{w=0.25}."
 
 y "Later."
 
 hide y
 
 show p s:
-    linear 0 xalign 0.5
+    linear 0.4 xalign 0.5
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 p s "Oh, {w=0.15}Okay."
 
@@ -760,41 +764,40 @@ p "Goodnight,{w=0.15} Captain."
 
 stop music fadeout 5
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide p
 
 e "Nema walks out into the hallway."
 
-play sound "sounds/DoorClose2.mp3"
-
-
 menu:
     "Might as well head to bed as well.":
         pass
         
-play music "music/Space.mp3" fadein 2.0
+play music "music/Space.ogg" fadein 2.0
 
 call hall from _call_hall_1
+
+play sound "sounds/DoorClose2.ogg"
 
 e "You walk out into the hallway and see all of the doors shut."
 
 e "The ship is silent."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 call blueRoom from _call_blueRoom
 
 e "You enter your room and head straight for your bed."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "As soon as you lay your head down on the pillow, you feel yourself dozing off."
 
 window hide
 
 show black
-with dissolve
+with fade
 
 e "..."
 
