@@ -280,7 +280,12 @@ menu:
     "We will outrun them.":
         pass
 
-    "We will fight.":#todo ending - Blow them up and then in the end it's you? Set up a warp jump that's you travelling through time.
+    "We will fight.":
+        y h "Excellent."
+        y h "You can always change your mind later if things change,{w=0.15} but I'll get the guns ready just in case."
+		y m "Since Hei is useless and all."
+		p n "I will plot a course around the threat, just in case."
+		jump weWillFight
         pass
 
 show y m
@@ -300,12 +305,14 @@ menu:
     "Of course.":
         pass
 
-    "It is what it is.":
+    "It's only logical.":
         pass
 
 show y n
 
 y n "And I should get movin' too, {w=0.15}see ya at dinner."
+
+label weWillFight:
 
 menu:
     "Good luck to you both!":

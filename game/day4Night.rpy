@@ -216,7 +216,7 @@ y n "OK, {w=0.15}Captain, {w=0.15}we can get a shot off on where the main ship s
 y n "Do you want to fire a shot or just go?"
 
 #todo make both sides of this an ending
-menu:#todo this leads to you potentially hitting "yourself"
+menu:#todo this leads to you potentially hitting "yourself" ~ ending - Blow them up and then in the end it's you? Set up a warp jump that's you traveling through time at some point. (Here?)
     "Fire whatever's necessary then get out of here.":
         pass
 

@@ -367,7 +367,6 @@ hide p
 e "A moment passes, {w=0.15}and you drift off to sleep."
 
 window hide
-hide black
 show sRed
 
 #todo demon
@@ -396,7 +395,7 @@ d "A hand to grasp your soul."
 d "All of nothing."
 
 window hide
-show black
+show black#remove this?
 with fade
 
 hide sRed#todo test this transition

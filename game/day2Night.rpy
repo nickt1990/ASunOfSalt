@@ -133,7 +133,7 @@ yp h "Endless potential Cap, {w=0.15}right under your little feet!"
 
 menu:
     "That sounds risky...":
-        yp s "Well.{w=0.15}.{w=0.15}. yeah. S'posed to be.{w=0.15} Hear me out Cap."
+        yp s "Well.{w=0.15}.{w=0.15}. yeah.{w=0.25} S'posed to be.{w=0.15} Hear me out Cap."
         pass
 
     "That sounds amazing!":
@@ -305,7 +305,9 @@ yp n "I sat and listened.{w=0.25} Professor Motakomi.{w=0.25} It was the first t
 
 yp n "He made me feel small again.{w=0.25} Like the little girl that I was supposed to be."
 
-yp h "The things he spoke, {w=0.15}and the way he spoke about them{w=0.15}.{w=0.15}.{w=0.15}.{w=0.15} He was a genius."
+yp h "He was known for his cross-dimensional theories,{w=0.15} but he seemed to know damn near everything."
+
+yp h "The man was a genius,{w=0.15} and for whatever reason,{w=0.15} he decided to share his thoughts and theories with me.{w=0.35} A stupid kid."
 
 yp h "I was seeing stars Cap, {w=0.15}for real I was."
 
@@ -319,9 +321,10 @@ menu:
         yp n "I don't remember him doing anything"
         yp n "I think he was already gone at that point."
         yp h "Anyways, the professor."
+		yp h "He really taught me everything I know."
         pass
 
-yp h "It's crazy, {w=0.15}the second he finished his lecture he walked right up to me and aske-"
+yp h "It's crazy, {w=0.15}the second he finished his lecture he walked right up to me and asked me to be his appren-"
 
 play music "music/Alarm.ogg" fadein 2.0
 
