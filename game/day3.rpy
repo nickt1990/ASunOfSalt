@@ -894,27 +894,17 @@ menu:
 
 r s "I know."
 
-r n "Man.{w=0.15} I could use a beer.{w=0.15} .{w=0.15} .{w=0.15}  could you grab me one from the fridge?"
+r n "Man.{w=0.15} I could use a beer.{w=0.15}.{w=0.15}.{w=0.15} Could you grab me one from the fridge?"
 
 menu:
-    "Sure.":
-        pass
-
     "Absolutely not.":
         pass
 
-e "Ketchup squirts."
-
-menu:
-    "":
-        pass
-
-    "Thanks. ":
-        pass
-        
 r h ".{w=0.15}.{w=0.15}."        
 
-r s "Today sucks.{w=0.15} I'm gonna go to sleep.{w=0.15} See ya man."
+r s "Today sucks.{w=0.15} I'm gonna go to sleep."
+
+r s "See ya man."
 
 play sound "sounds/DoorOpen2.ogg"
 
@@ -936,9 +926,8 @@ menu:
     "Haruka's Room" if haruRoomD32:
         $ haruRoomD32 = False
         jump haruRoom3
-    "Work (Continues)" if haruRoomD32 :
-        $ haruRoomD32 = False
-        jump haruRoom3
+    "Work (Continues Story)":
+        jump workD3
 
 label haruRoom3:
 call yellowRoom from _call_yellowRoom_3
@@ -953,7 +942,7 @@ y n "At least there's one other sane person on this damn ship."
 
 y n "But.{w=0.15}.{w=0.15}."
 
-y n "If you don't mind, {w=0.15}I need to get some work done"
+y n "If you don't mind, {w=0.15}I need to get some work done."
 
 y n "Sorry Cap."
 
@@ -1015,7 +1004,7 @@ p h "Hello Captain!"
 
 menu:
     "Nema, {w=0.15}how are you feeling?":
-        p h "I'm feeling great, {w=0.15}thank you for your leniency sir. "
+        p h "I'm feeling great, {w=0.15}thank you for your leniency today sir. "
         
         menu:
             "Of course.":
@@ -1035,7 +1024,7 @@ e "Hei walks in"
 show r h:
     linear 0 xalign .9
 
-r h "Hey Chicklet. Feeling better?"
+r h "Hey Chicklet.{w=0.35} Feeling better?"
 
 e "Nema chuckles."
 
@@ -1056,8 +1045,6 @@ r n "Nema, {w=0.15}do you know how to mak-"
 e "Haruka walks through the still open door."
 
 play sound "sounds/DoorClose2.ogg"
-
-e "The door closes behind her."
 
 show y n:
     linear 0 xalign .1
@@ -1091,13 +1078,13 @@ y n "Hei, {w=0.15}why has my day been interesting?"
 
 show r n
 
-r n "W-well.{w=0.15}.{w=0.15}."
+r n "W-{w=0.15}well.{w=0.15}.{w=0.15}."
 
 r h "Today you worked on a new training device, {w=0.15}and we're all just so excited b-"
 
 e "Haruka's glare intensified. "
 
-r s "Uh, {w=0.15}h-heh. Sorry. Again."
+r s "Uh, {w=0.15}h-{w=0.15}heh.{w=0.35} Sorry.{w=0.35} Again."
 
 show y n
 
