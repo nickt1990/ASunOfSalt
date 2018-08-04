@@ -321,7 +321,7 @@ menu:
         yp n "I don't remember him doing anything"
         yp n "I think he was already gone at that point."
         yp h "Anyways, the professor."
-		yp h "He really taught me everything I know."
+        yp h "He really taught me everything I know."
         pass
 
 yp h "It's crazy, {w=0.15}the second he finished his lecture he walked right up to me and asked me to be his appren-"

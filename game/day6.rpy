@@ -8,6 +8,14 @@ window hide
 hide black
 with fade
 
+$ renpy.pause(0.3)
+
+hide tWhite
+hide tGreen
+hide tBlue
+hide ptRed
+with fade
+
 e "Nema is sitting in a chair beside you sleeping."
 
 menu:

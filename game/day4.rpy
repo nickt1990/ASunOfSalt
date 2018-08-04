@@ -8,6 +8,8 @@ with fade
 
 e "The day starts with the typical alarm."
 
+play music "music/Space.ogg" fadein 3.0
+
 e "You sit down at your computer."
 
 window hide
@@ -15,7 +17,7 @@ show black
 with fade
 
 menu:#computer
-    "I'll read the summaries.":
+    "Check messages.":
         label summariesD4:
         menu:
 
@@ -36,8 +38,8 @@ menu:#computer
                 pass                
         pass
 
-    "I'm going to respect their privacy.":
-        jump day3Start
+    "I don't want to check my messages.":
+        jump day4Start
         pass
 
 label day4Start:
@@ -61,6 +63,8 @@ e "You make your way into the kitchen."
 play sound "sounds/DoorOpen2.ogg"
 
 call kitchen from _call_kitchen_7
+
+play music "music/Pillows.ogg" fadein 3.0
 
 e "Haruka is sitting at the table eating."
 
@@ -112,7 +116,7 @@ menu:
     "Plans for the day?":
         pass
 
-y h "Oh, {w=0.15}thinking I might jump into Nemas room and hurt her feelings. I'm trying to get through the whole crew by the end of the week."
+y h "Oh, {w=0.15}thinking I might jump into Nema's room and hurt her feelings.{w=0.15} I'm trying to get through the whole crew by the end of the week."
 
 e "Haruka smirks."
 
@@ -120,9 +124,9 @@ y n "Nah, {w=0.15}I'm going to just do a full system checkup today."
 
 y n "Do it when things are working fine, {w=0.15}and they'll stay that way."
 
-y n "That should take the whole day I figure. If not then I'll-"
+y n "That should take the whole day I figure.{w=0.35} If not then I'll-"
 
-e "Nema enters"
+e "Nema enters the room."
 
 show p su:
     linear 0 xalign 0.9 yalign 1.0
@@ -146,7 +150,7 @@ p n "Do you see the yellow mass on the radar, {w=0.15}toward the right side of t
 
 show y su
 
-y su "A ship? Way out here? "
+y su "A ship? {w=0.35}Way out here? "
 
 show p n
 
@@ -184,7 +188,7 @@ p n "Lurks?"
 
 show y n
 
-y n "It's slang for all that mess that just came out of your mouth."
+y m "It's slang for all that mess that just came out of your mouth."
 
 show p n
 
@@ -206,11 +210,13 @@ show p s
 
 p s "F-.{w=0.15}.{w=0.15}.fight them?"
 
-p n "Captain, {w=0.15}not to be disrespectful to Haruka, {w=0.15}but I suggest we avoid them entirely."
+p n "Captain.{w=0.15}.{w=0.15}.{w=0.15} Not to be disrespectful to Haruka, {w=0.15}but I suggest we avoid them entirely."
 
 p n "With our few days, {w=0.15}we can take a long course around and avoid any sort of conflict."
 
 p n "There's a mass of debris and large objects between us and the ship that will most likely block any sort of scanner that they have from detecting us until we've already passed them."
+
+p n "We can only see them because of our advanced radar system."
 
 p n "It's the safest option."
 
@@ -231,7 +237,7 @@ show p s
 p s "Well.{w=0.15}.{w=0.15}."
 
 menu:
-    "Yes Nema?":
+    "What is it?":
         pass
 
     "You agree with Haruka?":
@@ -251,6 +257,7 @@ menu:
         p n "With Haruka's one-of-a-kind engine and a complete suite of state of the art technology backing it up, {w=0.15}we should be able to vastly outpace even the most advanced crafts that exist within high-level stations."
         p n "Let alone a.{w=0.15}.{w=0.15}. \"Lurk\""
         p s "Fighting just seems like an unnecessary risk."
+        jump menuSmall4
         pass
 
     "Haruka, {w=0.15}are you sure we'd be able to fight them directly?":
@@ -260,16 +267,6 @@ menu:
         y n "I know my ship is fast enough to get past them, but I don't know if we're suited to deal with what we might find."
         y n "I'll say that we don't see the typical signs of radar jamming as far as I can tell,{w=0.15} though."
         y s "And,{w=0.15} the weapons that they have are an unknown."
-        pass
-
-p n "I'm fairly confident Captain."
-     
-p n "With Haruka's one-of-a-kind engine and a complete suite of state of the art technology backing it up, {w=0.15}we should be able to vastly outpace even the most advanced crafts that exist within high-level stations."
-     
-p n "Let alone a.{w=0.15}.{w=0.15}. \"Lurk\""
-
-menu:
-    "Two prior options.":
         jump menuSmall4
         pass
 
@@ -283,9 +280,9 @@ menu:
     "We will fight.":
         y h "Excellent."
         y h "You can always change your mind later if things change,{w=0.15} but I'll get the guns ready just in case."
-		y m "Since Hei is useless and all."
-		p n "I will plot a course around the threat, just in case."
-		jump weWillFight
+        y m "Since Hei is useless and all."
+        p n "I will plot a course around the threat, just in case."
+        jump weWillFight
         pass
 
 show y m
@@ -340,6 +337,10 @@ p n "I had a hard time speaking with him last night, {w=0.15}but I believe you c
 menu:
     "Okay.":
         pass
+        
+hide p
+
+hide y
 
 play sound "sounds/DoorClose2.ogg"
 
@@ -368,18 +369,15 @@ menu:
 
 show r n
 
-r n "How are you feeling today?"
+r n "Hey dude, how are ya?"
 
 menu:
     "Great, {w=0.15}how about you?":
         pass
 
-    "Hi.":
-        pass
-
 r h "Hey, {w=0.15}pretty grand.{w=0.25} Can't keep me down man."
 
-r s "You know, {w=0.15}at first I was really down, {w=0.15}but I realized that Haruka was right."
+r s "You know, {w=0.15}at first I was really sad, {w=0.15}but I realized that Haruka was right."
 
 menu:
     "Really?":
@@ -403,9 +401,9 @@ r h "Man up and get me a babe."
 
 r n "I'm gonna work hard."
 
-r n "What else?{w=0.25} I'm gonna become a man she can look to when she's in need."
+r n "I'm gonna become a man she can look to when she's in need."
 
-r n "When all is lost, {w=0.15}and she needs a miracle, {w=0.15}I'll be the first thing she thinks of."
+r s "When all is lost, {w=0.15}and she needs a miracle, {w=0.15}I'll be the first thing she thinks of."
 
 r h "That kind of man."
 
@@ -435,13 +433,7 @@ r h "No offense, {w=0.15}I think you're great, {w=0.15}but you don't really say,
 r n "How can she like you when you haven't given her anything to like?"
 
 menu:
-    "You're friends with Nema.":
-        pass
-
-r n "Well yeah, {w=0.15}she's great."
-
-menu:
-    "She doesn't say much.":
+    "Nema doesn't talk much.":
         pass
 
 r n "Well, {w=0.15}no. I guess not.{w=0.25} But she kind of communicates in a different way."
@@ -453,13 +445,13 @@ menu:
 r n "Like, {w=0.15}I just get her. You know? I don't need to say a lot, {w=0.15}and neither does she. We're buds."
 
 menu:
-    ".{w=0.15}.{w=0.15}.?":
+    ".{w=0.15}.{w=0.15}.":
         pass
 
-r n "Whatever man, {w=0.15}it's OK. I didn't mean to put you down, {w=0.15}just thinkin' out loud."
+r n "Whatever man, {w=0.15}it's okay. I didn't mean to put you down, {w=0.15}just thinkin' out loud."
 
 menu:
-    "OK.":
+    "Sure.":
         pass
 
 r n "So, {w=0.15}I guess I should get to working on a plan. How to be a man.{w=0.15}.{w=0.15}."
@@ -469,6 +461,7 @@ menu:
         pass
 
     "Alright, {w=0.15}good luck!":
+        jump goodLuckHei
         pass
 
 r n "Plan for dinner last night?"
@@ -531,14 +524,14 @@ r h "Whatever dude."
 
 r h "She'll be mine this time tomorrow,{w=0.15} just you wait!"
 
-label noNevermind:
-
 menu:
     "Good luck.":
         pass
     "Good luck, I guess?":
         pass
 
+label goodLuckHei:
+    
 r h "Thanks!"
 
 hide r
@@ -561,7 +554,7 @@ e "{w=0.25}.{w=0.35}.{w=0.45}."
 
 play sound "sounds/Knock.ogg"
 
-e "After a few hours of getting work done, there's a knock on your door."
+e "After a few hours, there's a knock on your door."
 
 window hide
 hide black
@@ -586,6 +579,8 @@ e "Nema smiles."
 
 p n "I'll tell the rest."
 
+hide p
+
 play sound "sounds/DoorClose2.ogg"
 call hall
 e "You head out into the hallway..."
@@ -597,6 +592,7 @@ e "And then into the kitchen."
 play sound "sounds/DoorClose2.ogg"
 e "A few moments later, Nema walks in."
 
+show p n
 p n "Haruka and Hei said they'd just be a little bit.{w=0.25} I'd like to suggest that we wait for them,{w=0.15} if that's alright with you Captain?"
 
 define eatD4 = False
@@ -627,7 +623,7 @@ menu:
         pass
 
 label nemaWaitD4:
-e "Nema smiles shortly."
+e "Nema smiles slightly."
 
 window hide
 show black
@@ -742,7 +738,9 @@ label dontListenNemaD4:
 window hide
 show tBlack
 
-e "Suddenly, {w=0.15} everything goes dark."
+play music "music/Alarm.ogg" fadein 1.0
+
+e "Suddenly, {w=0.15} everything goes dark and the alarm sounds."
 
 p su "W-what's happening?!"
 
@@ -765,7 +763,7 @@ call navRoom from _call_navRoom_3
 p n "Yes sir!"
 
 menu:
-    "What is it?":
+    "What do you see?":
         pass
 
 p n "It looks like.{w=0.15}.{w=0.15}.{w=0.15}"
@@ -799,6 +797,9 @@ e "The door opens and Haruka walks in."
 show y n:
     linear 0 xalign 0.9 yalign 1.0
 
+hide tBlack
+show tBlack
+
 y n "What's happenin'?"
 
 y n "The lights went out but everything seems fine far as I can tell."
@@ -813,7 +814,7 @@ y m "Hmmm.{w=0.15}.{w=0.15}."
 
 y n "I suppose that almost makes sense?"
 
-y n "The lights are on their own separate power system, but still{w=0.15}.{w=0.15}.{w=0.15}."
+y s "The lights are on their own separate power grid, but still, that was to ensure they wouldn't go out like this{w=0.15}.{w=0.15}.{w=0.15}."
 
 show y n
 
@@ -903,7 +904,7 @@ call hall
 e "You follow Nema out into the hallway."
 
 hide p
-
+play sound "sounds/DoorClose2.ogg"
 e "She smiles at you as she walks into her room down the hall."
 
 call blueRoom from _call_blueRoom_13

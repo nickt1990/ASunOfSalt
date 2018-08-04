@@ -15,6 +15,7 @@
 
 label start:
     
+    define nemaHarukaLove = False
     define harukaEnd = False
     define twoWeeksEnd = False
 

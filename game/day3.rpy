@@ -10,6 +10,9 @@
 # ~~ everyone on the ship but you knows motokami
 # ~~ ending revolves around if you're sacrificed to the other dimension or not so that hei and nema can come into our world as whole										  
 
+# the ship never jumps forward or compunds, it's a teleporter backwards about a week's worth of progress.
+# the mind tracking software is there to monitor the affects that being around the unstable beings has on a persons mind
+
 label day3:
 
 e ".{w=0.25}.{w=0.25}."
@@ -826,7 +829,7 @@ show r s
 
 show y m
 show y m:
-    linear 0 xalign 0.99 #todo she floats
+    linear 0 xalign 0.99
 
 r s "Haruka c'mon, {w=0.15}it wasn't even meant for you! "
 
@@ -1096,6 +1099,8 @@ r n "Never!"
 
 show y n
 
+play music "music/SpaceSunday.ogg" fadein 3.0
+
 y n "Alright.{w=0.15}.{w=0.15}.{w=0.15} Forgiven."
 
 show r su
@@ -1136,7 +1141,7 @@ y h "Great! Lookin' forward to it."
 
 show p n
 
-p n "Oh! It will be great, {w=0.15}I promise! You'll love it!"
+p n "Oh! It will be great, {w=0.15}I promise!{w=0.25} You'll love it!"
 
 show y n
 
@@ -1168,7 +1173,7 @@ r n "I can bring out my Game Slab X."
 
 show y n
 
-y n "If we're going to play a game, {w=0.15}how about we play somethin' that's you know."
+y n "If we're going to play a game, {w=0.15}how about we play somethin' that's.{w=0.15}.{w=0.15}.{w=0.15} you know.{w=0.15}.{w=0.15}."
 
 y n "Not that."
 
@@ -1198,7 +1203,7 @@ p h "Sure! Yes, {w=0.15}that sounds fine, {w=0.15}thank you Haruka."
 
 show r m
 
-r m "You can't even win 20 questions."
+r m "You can't even win twenty questions."
 
 menu:
     "You're right.":
@@ -1229,17 +1234,17 @@ r n "Speaking of eating, {w=0.15}is food ready Nibbles?"
 
 show p h
 
-p h "Nibbles!"
+p h "Nibbles, hah."
 
 e "Nema smiles."
 
-p n "It is. I'll prepare the plates shortly."
+p n "It is.{w=0.15} I'll prepare the plates shortly."
 
 show r h
 
 r h "Damn straaaaaight."
 
-e "Nema doles out the plates."
+e "Nema hands out the plates."
 
 show y n
 
@@ -1275,18 +1280,18 @@ p n "What do you think Captain?"
 
 menu:
     "It's delicious!":
+        p su "Captain thank you! "
         pass
 
     "It's not bad.":
+        p h "Ah,{w=0.15} I'm happy to hear that sir."
         pass
 
-p su "Captain thank you! "
-
-e "Eat in silence."
+e "You all eat in silence for a few minutes."
 
 show r s
 
-r s "Nemo, {w=0.15}ya haven't touched your food. Feelin' alright?"
+r s "Nemo, {w=0.15}ya haven't touched your food.{w=0.15} Feelin' alright?"
 
 show p h
 
@@ -1304,7 +1309,7 @@ e "She smiles."
 
 show r h
 
-r h "Awww"
+r h "Awww."
 
 r n "That's adorable."
 
@@ -1334,7 +1339,7 @@ show y m
 
 y m "No."
 
-y n "So on your turn, {w=0.15}the other 3 each get to ask you a question, {w=0.15}and you pick one to answer."
+y n "So on your turn, {w=0.15}the other three each get to ask you a question, {w=0.15}and you pick one to answer."
 
 show r n
 
@@ -1356,7 +1361,7 @@ y n "Sure. It's how I've always played it."
 
 show r n
 
-r n "So"
+r n "So.{w=0.15}.{w=0.15}."
 
 show y m
 
@@ -1374,11 +1379,11 @@ y n "What is this, {w=0.15}middle school?"
 
 show r s
 
-r s "Hey, {w=0.15}don't make fun of my question.{w=0.25 This was your stupid idea for a game."
+r s "Hey, {w=0.15}don't make fun of my question.{w=0.25} This was your stupid idea for a game."
 
 show y n
 
-y n "Whatever.{w=0.25 Nema what do you have?"
+y n "Whatever.{w=0.25} Nema what do you have?"
 
 show p n
 
@@ -1390,12 +1395,12 @@ y n "Alright, {w=0.15}Cap?"
 
 menu:
     "What age did you have your first kiss?":
+        y n "Tryin' to block me in, {w=0.15}eh?"
         pass
 
     "What is one thing you're very ashamed of?":
+        y h "Way to try and keep the mood light."
         pass
-
-y n "Tryin' to block me in, {w=0.15}eh?"
 
 y h "Well, {w=0.15}I'll pick something I'm proud of."
 
@@ -1407,9 +1412,9 @@ y n "I worked my ass off my entire life."
 
 y n "I've never not had to struggle, {w=0.15}y'know?"
 
-r n "Classic from rags to riches. The princess of the stars, {w=0.15}they call her."
+r n "Classic from rags to riches.{w=0.15} The princess of the stars, {w=0.15}they call her."
 
-y m "It's amazing that you can turn my pride into shame with one sentence."
+y m "It's amazing that you can even make my proudest achievement seem dumb."
 
 show r n
 
@@ -1440,7 +1445,8 @@ menu:
         pass
 
     "What is your ideal woman?":
-        jump heiNoRealQ        
+        r n "Alright.{w=0.15} Next."
+        jump heiNoRealQ
         pass
 
 show r n
@@ -1452,6 +1458,7 @@ menu:
         pass
 
     "What is your ideal woman?":
+        r n "Alright.{w=0.15} Next."
         jump heiNoRealQ
         pass
 
@@ -1486,10 +1493,6 @@ show y n
 
 y n "Fine, {w=0.15}Cap, {w=0.15}you can go."
 
-show r s
-
-r s "Haruka"
-
 menu:
     "Let's do it!":
         pass
@@ -1500,9 +1503,9 @@ y n "Who is your favorite crewmate?"
 
 show r n
 
-r n "Ohhh, {w=0.15}I like that. Same."
+r n "Ohhh, {w=0.15}I like that.{w=0.15} Same."
 
-r n "Nema, {w=0.15}pick the same one"
+r n "Nema, {w=0.15}pick the same one."
 
 show p s
 
@@ -1518,7 +1521,7 @@ p s "I don't want to make anyone uncomfortable."
 
 show y h
 
-y h "Life is pain. "
+y h "Life is pain, whatever."
 
 y n "Her question is the same.{w=0.15} Answer."
 
@@ -1578,7 +1581,7 @@ show p n
 
 p n "Oh, {w=0.15}well"
 
-p s "Not hokey right? Uhm"
+p s "Not hokey right?{w=0.15} Uhm.{w=0.15}.{w=0.15}."
 
 p n "Could I ask why do you seem to dislike Hei so much?"
 
@@ -1587,6 +1590,8 @@ show y h
 y h "You can, {w=0.15}that's the point of the game."
 
 y n "Cap?"
+
+play music "music/Space.ogg" fadein 20.0
 
 menu:
     "Same as Nema":
@@ -1607,11 +1612,11 @@ y h "I want somebody who puts effort into their life, {w=0.15}y'know?"
 
 y h "Somebody who understands that you need to work hard, {w=0.15}and take control, {w=0.15}or else you're throwing your time away. "
 
-y n "Looks don't matter so much to me. Strength does."
+y n "Looks don't matter so much to me.{w=0.15} Strength does."
 
 show r n
 
-r n "So what about the other part? About me?"
+r n "So what about the other part? {w=0.15}About me?"
 
 show y h
 
@@ -1619,7 +1624,7 @@ y h "I already answered it."
 
 y n "I like strong people, {w=0.15}and you are not one of those."
 
-y m "You're soft, {w=0.15}you bend under the slightest amount of pressure, {w=0.15}ya have no convictions, {w=0.15}you're the place that time goes to die."
+y m "You're soft, {w=0.15}you bend under the slightest amount of pressure, {w=0.15}ya have no convictions, {w=0.15}you're the place that ambition goes to die."
 
 show r s
 
@@ -1639,7 +1644,7 @@ y n "Well show me. I don't see it."
 
 show r s
 
-r s "That's well"
+r s "That's.{w=0.15}.{w=0.15}.{w=0.15} well.{w=0.15}.{w=0.15}.{w=0.15}"
 
 show y n
 
@@ -1659,13 +1664,13 @@ y su "I don't mean to be so rude to you, {w=0.15}but something about you brings 
 
 show r s
 
-r s "Oh Ok."
+r s "Oh.{w=0.15}.{w=0.15}.{w=0.15} Okay."
 
 r s "I think I'm done with this game.{w=0.15} Can you let me out Nema."
 
 show p n
 
-p n "Yes, {w=0.15}of course"
+p n "Yes, {w=0.15}of course."
 
 show r s
 
@@ -1685,11 +1690,11 @@ show p s
 
 p s "Yes, {w=0.15}it does."
 
-p s ""
+p s ".{w=0.15}.{w=0.15}.{w=0.15}"
 
 p s "I'm going to go check on Hei."
 
-p n "Goodnight. It's been nice getting a chance to know you both more."
+p n "Goodnight.{w=0.15}.{w=0.15}.{w=0.15} It's been nice getting a chance to know you both more."
 
 e "Nema walks out after Hei."
 
@@ -1725,8 +1730,6 @@ y s "It didn't feel good to say that, {w=0.15}I know I look like a jerk"
 
 y n "But I think it was the best thing to do."
 
-y h "And I'm happy you agree."
-
 y n "Anyways, {w=0.15}I'm going to take a shower and get to bed."
 
 y s "This has been a shitty night. "
@@ -1743,13 +1746,13 @@ e "You follow shortly after into the hallway.{w=0.15}.{w=0.15}."
 
 call blueRoom
 
-e "And then turn into your room."
+e "And then turn into your bedroom."
+
+e "You fall onto your bed and drift off to sleep."
 
 window hide
 show black
 with fade
-
-e "You fall onto your bed and drift off to sleep."
 
 e ".{w=0.15}.{w=0.15}.{w=0.15}"
 

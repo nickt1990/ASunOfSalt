@@ -1,24 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 57, in script call
+  File "game/script.rpy", line 58, in script call
     call day3 from _call_day3
-  File "renpy/common/00start.rpy", line 120, in script
-    return
-Exception: Could not find return label (u'C:\\Users\\Nick\\Documents\\renpy-6.99.13-sdk\\ASunOfSalt/game/day3.rpy', 1530850087, 138).
+  File "game/day3.rpy", line 1386, in script
+    y n "Whatever.{w=0.25 Nema what do you have?"
+Exception: Open text tag at end of string u'Whatever.{w=0.25 Nema what do you have?'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 57, in script call
+  File "game/script.rpy", line 58, in script call
     call day3 from _call_day3
-  File "renpy/common/00start.rpy", line 120, in script
-    return
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\ast.py", line 1400, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\execution.py", line 586, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'C:\\Users\\Nick\\Documents\\renpy-6.99.13-sdk\\ASunOfSalt/game/day3.rpy', 1530850087, 138).
+  File "game/day3.rpy", line 1386, in script
+    y n "Whatever.{w=0.25 Nema what do you have?"
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\ast.py", line 624, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\exports.py", line 1173, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\character.py", line 911, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\character.py", line 747, in do_display
+    **display_args)
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\character.py", line 511, in display_say
+    what_text.update()
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\text\text.py", line 1523, in update
+    tokens = self.tokenize(text)
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\text\text.py", line 1929, in tokenize
+    tokens.extend(textsupport.tokenize(i))
+  File "renpy/text/textsupport.pyx", line 120, in renpy.text.textsupport.tokenize (gen\renpy.text.textsupport.c:3641)
+    raise Exception("Open text tag at end of string {0!r}.".format(s))
+Exception: Open text tag at end of string u'Whatever.{w=0.25 Nema what do you have?'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.13.2919

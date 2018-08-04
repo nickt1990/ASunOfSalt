@@ -22,7 +22,7 @@ menu:
     "Is everyone alright?":
         pass
 
-y h "Yep, {w=0.15}everyone's OK."
+y h "Yep, {w=0.15}everyone's fine."
 
 y s "You got the worst of it, {w=0.15}lucky you."
 
@@ -154,7 +154,9 @@ p n "Of course, {w=0.15}let me grab them, {w=0.15}one moment."
 
 show y m
 
-y m "What the hell, {w=0.15}how does that even happen."
+y m "This is strange."
+
+y m "I mean, what the hell, {w=0.15}how does that even happen."
 
 y s "You look totally fine Cap."
 
@@ -182,7 +184,7 @@ show y n
 
 y n "Alright, {w=0.15}and you will wait with Cap."
 
-y m "After all you WERE the one that told us it was OK to drive directly into a huge rock."
+y m "After all you WERE the one that told us it was fine to drive directly into a huge rock."
 
 show p s
 
@@ -190,12 +192,12 @@ p s "I-I know.{w=0.15}.{w=0.15}."
 
 p s "Captain, {w=0.15}I'm so very sorry."
 
-p n "I'll never be able to make it up to you, {w=0.15}I know, {w=0.15}but I- b- I, {w=0.15}please know that it was a mistake."
+p n "I'll never be able to make it up to you, {w=0.15}I know, {w=0.15}but.{w=0.15}.{w=0.15}.{w=0.15} please know that it was a mistake."
 
-p n "C-captain I.{w=0.15}.{w=0.15}. I.{w=0.15}.{w=0.15}."
+p n "C-{w=0.15}captain I.{w=0.15}.{w=0.15}. I.{w=0.15}.{w=0.15}."
 
 menu:
-    "It's OK Nema.":
+    "It's alright Nema.":
         pass
 
     "It was a risk, {w=0.15}I should have known better.":
@@ -203,13 +205,13 @@ menu:
 
 p su "Sir.{w=0.15}.{w=0.15}."
 
-p s "I will gladly watch the Captain. Of course."
+p s "I will gladly watch the Captain.{w=0.35} Of course."
 
 show y m
 
 y m "Well.{w=0.15}.{w=0.15}. good? You don't really have a choice, {w=0.15}but, {w=0.15}right."
 
-y n "Hei and me are gonna take a look around to make sure everything's OK."
+y n "Hei and me are gonna take a look around to make sure everything's okay."
 
 show r s
 
@@ -258,13 +260,15 @@ e "There is silence for a while."
 
 show p s
 
+play music "music/MelancholyPiano.ogg" fadein 3.0
+
 p s ".{w=0.15}.{w=0.15}."
 
 p s "C-captain, {w=0.15}I just want to say again that I'm sorry."
 
 p n "I panicked, {w=0.15}I didn't even register what I was seeing or doing."
 
-p s "I p-put your life in danger. I'm weak, {w=0.15}I panicked."
+p s "I p-{w=0.15}put your life in danger by being so weak."
 
 menu:
     "You did the best you could.":
@@ -296,13 +300,13 @@ p s "I've known since the first day, {w=0.15}Haruka knew too."
 
 p s "She's the type of person who thrives off of excellence, {w=0.15}and I think it worries her that she might have to put her life in the hands of a sub-par person like me."
 
-p s "I want to get stronger captain, {w=0.15}but what do I do?"
+p s "I want to get stronger Captain, {w=0.15}but what do I do?"
 
 p n "You can't practice traumatic events."
 
 p n "You just have to be the kind of person who can step up and take charge, {w=0.15}who doesn't care if they step on another's toes, {w=0.15}or gets in another's face."
 
-p s "I'm not that person and I never will be."
+p s "I'm not that person,{w=0.15} and I never will be."
 
 p s ".{w=0.15}.{w=0.15}."
 
@@ -320,12 +324,14 @@ p s "I mean no disrespect sir, {w=0.15}but how could I ever be that?"
 
 menu:
     "Push yourself. ":
+        p s "I have been pushing myself."
         pass
 
     "Think differently.":
+        p s "I try."
         pass
 
-p s "I have been pushing myself."
+
 
 p s "I do every day, {w=0.15}sir."
 
@@ -343,16 +349,16 @@ p n "You really should be getting some rest, {w=0.15}after all."
 
 menu:
     "Okay.":
+        p h "Good."
         pass
 
     "I don't mind.":
+        p s "I have to insist."
         pass
 
-p h "Good."
+p n "Here sir, {w=0.15}take this medicine. {w=0.15}You should get drowsy fairly quickly."
 
-p n "Here sir, {w=0.15}take this medicine. You should get drowsy fairly quickly."
-
-e "Nema puts a pill in your hand."
+e "Nema puts another pill in your hand."
 
 menu:
     "Swallow the pill.":
@@ -364,10 +370,14 @@ e "You hear Nema sit down beside you."
 
 hide p
 
+stop music fadeout 3
+
 e "A moment passes, {w=0.15}and you drift off to sleep."
 
+play music "music/Evil.ogg" fadein 2.0
+
 window hide
-show sRed
+show tRed
 
 #todo demon
 
@@ -391,13 +401,17 @@ d "Nothing but a limb of mine."
 
 d "A hand to grasp your soul."
 
+stop music fadeout 2.0
 
 d "All of nothing."
 
 window hide
-show black#remove this?
+hide tRed
+show black
 with fade
 
-hide sRed#todo test this transition
+play music "music/Space.ogg" fadein 2.0
+
+e ".{w=0.35}.{w=0.35}.{w=0.35}.{w=0.35}"
 
 return

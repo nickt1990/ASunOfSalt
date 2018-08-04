@@ -1,12 +1,14 @@
 ﻿label day4Night:
-
+play sound "sounds/Thud.ogg"
 e "There is a loud thud."
 
 menu:
     ".{w=0.15}.{w=0.15}.":
         pass
-
-e "There's another loud thud.{w=0.25} Then a few more."
+play sound "sounds/Thud.ogg"
+e "There's another loud thud."
+play sound "sounds/Thud.ogg"
+e "And another."
 
 window hide
 hide black
@@ -26,6 +28,9 @@ e "Nema's already standing there."
 
 show p n
 
+hide tBlack
+show tBlack
+
 menu:
     "Nema is that you?":
         p n "No sir, {w=0.15}this time it's not me."
@@ -39,6 +44,9 @@ e "Haruka emerges from her room."
 
 show y m:
     linear 0 xalign 0.9 yalign 1.0
+
+hide tBlack
+show tBlack
 
 y m "Nema are you making those freakin' noises again? It's the middle of the night."
 
@@ -60,6 +68,9 @@ play sound "sounds/DoorClose2.ogg"
 show r s:
     linear 0 xalign 0.1 yalign 1.0
 
+hide tBlack
+show tBlack
+
 r s "Hey guys, {w=0.15}what's that sound?"
 
 show y n
@@ -75,6 +86,8 @@ show p n
 p n "One moment please.{w=0.15}.{w=0.15}."
 
 p s "Wait.{w=0.15}.{w=0.15}."
+
+play music "music/TroublesHere.ogg" fadein 2.0
 
 p su "The ship we saw on the radar yesterday.{w=0.15}.{w=0.15}. it's almost on top of us."
 
@@ -101,7 +114,8 @@ show y m
 
 y m "I'm turning on the heavy external floods.{w=0.15} Maybe we can light up whatever it is we're smackin' up against."
 
-window hide#todo test this transition
+window hide
+hide tBlack
 show ptRed
 with fade
 
@@ -150,7 +164,11 @@ show p su
 
 p su "W-well, {w=0.15}it's, {w=0.15}a- it's-"
 
-show y m
+show y m:
+    linear 0.5 xalign 0.5 yalign 1.0
+
+show p su:
+    linear 0.5 xalign 0.1 yalign 1.0
 
 y m "Move."
 
@@ -160,9 +178,6 @@ y m "Captain, {w=0.15}turn power to the shields, {w=0.15}Nema, {w=0.15}watch the
 
 y m "HEI, {w=0.15}WE NEED YOUR HELP."
 
-show r su:
-    linear 0 xalign 0.1 yalign 1.0
-
 e "You can hear Hei through the doorway."
 
 r su "I, {w=0.15}but I can't.{w=0.15}.{w=0.15}."
@@ -171,7 +186,11 @@ y m "GET YOUR ASS IN HERE."
 
 e "Hei shuffles into the room."
 
-show r s
+show r su:
+    linear 0 xalign 0.9 yalign 1.0
+
+hide ptRed
+show ptRed
 
 r s "But.{w=0.15}.{w=0.15}."
 
@@ -181,7 +200,7 @@ y m "DO YOU WANT TO GET THROUGH THIS?{w=0.25} NOW."
 
 show r s
 
-r s "I'm here.{w=0.15} OK. {w=0.15}I'm alright."
+r s "I'm here.{w=0.15} Okay. {w=0.15}I'm alright."
 
 y m "Jump on lasers. {w=0.15}Hold your fire until I say."
 
@@ -189,9 +208,9 @@ y m "We have no idea what exactly is there,{w=0.15} or where to shoot right now,
 
 show y n
 
-y n "Captain, {w=0.15}stay on the main controls.{w=0.25} When I say, {w=0.15}you need to jump into full boost."
+y m "Captain, {w=0.15}stay on the main controls.{w=0.25} When I say, {w=0.15}you need to jump into full boost."
 
-y n "Nema, {w=0.15}I really need you to watch for collisions, {w=0.15}are you okay over there?"
+y m "Nema, {w=0.15}I really need you to watch for collisions, {w=0.15}are you okay over there?"
 
 show p s
 
@@ -199,11 +218,11 @@ p s "W-yeah, {w=0.15}yes."
 
 show y n
 
-y n "Are you sure? You need to pay attention or we're dead."
+y m "Are you sure?{w=0.15} You need to pay attention or we're dead."
 
 show p n
 
-p n "Yes, {w=0.15}I'm alright, {w=0.15}I'll be alright."
+p s "Yes, {w=0.15}I'm alright, {w=0.15}I'll be alright."
 
 e "Haruka turns her attention to her computer."
 
@@ -211,9 +230,9 @@ e "She focuses for a long moment."
 
 show y n
 
-y n "OK, {w=0.15}Captain, {w=0.15}we can get a shot off on where the main ship shows on our radar, {w=0.15}but I still advise that we get out of here immediately after.{w=0.15} Our lack of visibility will give us huge issues if we don't."
+y m "Alright, {w=0.15}Captain, {w=0.15}we can get a shot off on where the main ship shows on our radar, {w=0.15}but I still advise that we get out of here immediately after.{w=0.15} Our lack of visibility will give us huge issues if we don't."
 
-y n "Do you want to fire a shot or just go?"
+y m "Do you want to fire a shot or just go?"
 
 #todo make both sides of this an ending
 menu:#todo this leads to you potentially hitting "yourself" ~ ending - Blow them up and then in the end it's you? Set up a warp jump that's you traveling through time at some point. (Here?)
@@ -223,7 +242,7 @@ menu:#todo this leads to you potentially hitting "yourself" ~ ending - Blow them
     "Just go, {w=0.15}we shouldn't risk it.":
         pass
 
-y n "OK, {w=0.15}Hei, {w=0.15}can you get a lock?"
+y m "OK, {w=0.15}Hei, {w=0.15}can you get a lock?"
 
 show r s
 
@@ -239,7 +258,7 @@ r s "I'm pretty sure."
 
 show y n
 
-y n "God, {w=0.15}Nema, {w=0.15}are we clear?"
+y m "God, {w=0.15}Nema, {w=0.15}are we clear?"
 
 show p n
 
@@ -251,19 +270,19 @@ y m "NEMA."
 
 show p n
 
-p n "What?{w=0.15} Yes.{w=0.25} We're c-{w=0.15}clear."
+p s "What?{w=0.15} Yes.{w=0.25} We're c-{w=0.15}clear."
 
 show y n
 
-y n "Hei, {w=0.15}if you're ready, {w=0.15}fire on my mark.{w=0.15} Captain, {w=0.15}wait two seconds then engage the boost."
+y m "Hei, {w=0.15}if you're ready, {w=0.15}fire on my mark.{w=0.15} Captain, {w=0.15}wait two seconds then engage the boost."
 
-y n "Everyone ready?"
+y m "Everyone ready?"
 
-y n "Three."
+y m "Three."
 
-y n "Two."
+y m "Two."
 
-y n "One."
+y m "One."
 
 y m "Hei now!"
 
@@ -276,10 +295,14 @@ window hide
 hide ptRed
 show tWhite #todo test white and play thru this part
 with hpunch
+hide tWhite
+show ptRed
 
 play sound "sounds/Explosion.ogg"
 
 e "There's a large flash of light and explosion."
+
+
 
 show y su
 
@@ -301,14 +324,19 @@ $ renpy.pause(0.05)
 show tWhite
 with hpunch
 
+stop music fadeout 4
+
 e "The ship lurches forward and for a moment, {w=0.15}you feel an intense force pushing you back."
 
 window hide
 hide white
 with fade
 
+play music "music/Space.ogg" fadein 2.0
+
 y h "Alright, {w=0.15}then we should be goo-"
 
+play sound "sounds/Explosion.ogg"
 play sound "sounds/Explosion2.ogg"
 
 window hide
@@ -317,6 +345,10 @@ with fade
 
 e "There is a loud crash."
 
+play music "music/Space.ogg" fadein 2.0
+
 e "Everything goes completely dark."
+
+e ".{w=0.35}.{w=0.35}.{w=0.35}.{w=0.35}."
 
 return
