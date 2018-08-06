@@ -12,7 +12,7 @@ label bMail2:#day2
     e "I turned off the computer screen today and realized it had been watching me the whole time.{w=0.25} It sounds crazy I know."
     e "When I turned it back on,{w=0.25} I was turned off.{w=0.25} Did i get unplugged at some point in my life? What really is a computer? Who is playing on who?"
     e "What if my programming can't be decoded? What if this isn't real and we're made for something greater?{w=0.25} If you have read this far then I know you care enough to help me figure this out."
-    e "Please send me a message on Artificialintelligencesexygirlsfromkazakhstan@!computer!#l#ove.co#m."
+    e "Please send me a message on Artificialintelligencesexygirlsfromkazakhstan@computer!l#ove.com."
     return
 
 label bMail13:
@@ -88,130 +88,156 @@ label bMail14:#d13
 
 #HEI######################################
 label day3HeiS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day4HeiS:
-    return
-    
-label day5HeiS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day6HeiS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
  
 label day7HeiS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day8HeiS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
     
 label day9HeiS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
-label day10HeiS:
-    return
- 
-label day11HeiS:
+label day9HeiS2:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day12HeiS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
     
 label day13HeiS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day14HeiS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
  
-label day15HeiS:
-    return
-
-label day29HeiS:
-    return
 
 #NEMA######################################
 label day3NemaS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day4NemaS:
-    return
-    
-label day5NemaS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day6NemaS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
  
 label day7NemaS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day8NemaS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
     
 label day9NemaS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
-label day10NemaS:
-    return
- 
-label day11NemaS:
+label day9NemaS2:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day12NemaS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
     
 label day13NemaS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day14NemaS:
-    return
- 
-label day15NemaS:
-    return
-
-label day29NemaS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 
 #HARU######################################
 label day3HaruS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day4HaruS:
-    return
-    
-label day5HaruS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day6HaruS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
  
 label day7HaruS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day8HaruS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
     
 label day9HaruS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
-label day10HaruS:
-    return
- 
-label day11HaruS:
+label day9HaruS2:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day12HaruS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
     
 label day13HaruS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
 label day14HaruS:
-    return
- 
-label day15HaruS:
+	e"Accuracy: 1/5"
+	e"Summary: "
     return
 
-label day29HaruS:
-    return

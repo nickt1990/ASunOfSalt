@@ -744,15 +744,15 @@ menu:#computer
         label summariesD92:
         menu:
             "Haruka's summary.":
-                call day9HaruS
+                call day9HaruS2
                 jump summariesD92
                 pass
             "Hei's summary.":
-                call day9HeiS
+                call day9HeiS2
                 jump summariesD92
                 pass
             "Nema's summary.":
-                call day9NemaS
+                call day9NemaS2
                 jump summariesD92
                 pass
             "I think I'm done.":
