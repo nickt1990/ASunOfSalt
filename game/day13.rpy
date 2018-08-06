@@ -12,20 +12,14 @@ window hide
 hide black
 with fade
 
-menu:
-    "Check mail":
-        pass
-
-    "Get breakfast":
-        jump day13Start
-        pass
+e "Your computer screen flashes a notification symbol."
 
 window hide
 show black 
 with fade
 
 menu:#computer
-    "I'll read the summaries.":
+    "I should check my mail.":
         label summariesD13:
         menu:
             "Haruka's summary.":
@@ -45,7 +39,7 @@ menu:#computer
                 pass                
         pass
 
-    "I'm going to respect their privacy.":
+    "Get breakfast.":
         jump day13Start
         pass
 
@@ -292,15 +286,15 @@ show black
 with fade
 
 menu:#computer
-    "I'll read the summaries.":
+    "I'll see if I have any mail.":
         label summariesD132:
         menu:
             "Mail.":
-                call day13Mail
+                call bMail13
                 jump summariesD132
                 pass
             "Junk Mail.":
-                call day13Mail2
+                call bMail14
                 jump summariesD132
                 pass
             "I think I'm done.":
@@ -308,7 +302,7 @@ menu:#computer
                 pass                
         pass
 
-    "I'm going to respect their privacy.":
+    "I'll go over some numbers for a while.":
         jump day13End
         pass
 

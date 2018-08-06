@@ -20,11 +20,11 @@ menu:
         label summariesD2:
         menu:
             "Mail.":
-                call day2Mail
+                call bMail1
                 jump summariesD2
                 pass
             "Junk Mail.":
-                call day2Mail2
+                call bMail2
                 jump summariesD2
                 pass
             "I think I'm done.":
@@ -32,7 +32,7 @@ menu:
                 pass                
         pass
 
-    "I'm done.":
+    "I don't feel like checking my mail.":
         jump day2Start
         pass
 
