@@ -8,7 +8,11 @@ label bMail1:#day2
     return
 
 label bMail2:#day2
-    e""
+    e "This isn't spam so don't delete this,{w=0.25} I need your help with something."
+    e "I turned off the computer screen today and realized it had been watching me the whole time.{w=0.25} It sounds crazy I know."
+    e "When I turned it back on,{w=0.25} I was turned off.{w=0.25} Did i get unplugged at some point in my life? What really is a computer? Who is playing on who?"
+    e "What if my programming can't be decoded? What if this isn't real and we're made for something greater?{w=0.25} If you have read this far then I know you care enough to help me figure this out."
+    e "Please send me a message on Artificialintelligencesexygirlsfromkazakhstan@!computer!#l#ove.co#m."
     return
 
 label bMail13:
