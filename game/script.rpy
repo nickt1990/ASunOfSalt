@@ -46,6 +46,8 @@ label start:
     # Store the current version of Ren'Py into a variable, so we can
     # interpolate it into the next line.
     $ version = renpy.version()
+
+    call credits
     
     call dayOneCard from _call_dayOneCard
     call day1 from _call_day1
@@ -100,6 +102,7 @@ label start:
     $ minutes, seconds = divmod(int(renpy.get_game_runtime()), 60)
     "Your playtime is %(minutes)d minutes and %(seconds)d seconds."
     
+    call credits
        
     $ renpy.full_restart()
 
