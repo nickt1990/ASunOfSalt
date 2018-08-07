@@ -601,7 +601,7 @@ menu:
     "Uh, {w=0.15}sure. ":
         pass
 
-r m "Psh, {w=0.15}right. You probably used to play this all the time."
+r m "Psh, {w=0.15}right.{w=0.25} You probably used to play this all the time."
 
 r m "Nerd."
 
@@ -1022,7 +1022,7 @@ r h "Precisely. I'm the bargain of the century ergonomically."
 
 show y n
 
-y n "Ergonomic. You sure that's the word you want?"
+y n "Ergonomic.{w=0.35} You sure that's the word you want?"
 
 show r h
 
@@ -1032,7 +1032,7 @@ r n "Premium label baby."
 
 show y m
 
-y m "Alright. I thought you were tired?"
+y m "Alright.{w=0.35} I thought you were tired?"
 
 show r su
 

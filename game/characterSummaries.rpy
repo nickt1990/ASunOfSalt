@@ -88,156 +88,156 @@ label bMail14:#d13
 
 #HEI######################################
 label day3HeiS:
-	e"Accuracy: 1/5"
-	e"Summary: "
+	e"Accuracy: 2/3"
+	e"Summary: I guess I'm the funny one."
     return
 
 label day4HeiS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day6HeiS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
  
 label day7HeiS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day8HeiS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
     
 label day9HeiS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day9HeiS2:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day12HeiS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
     
 label day13HeiS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day14HeiS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
  
 
 #NEMA######################################
 label day3NemaS:
-	e"Accuracy: 1/5"
-	e"Summary: "
+	e"Accuracy: 1/3"
+	e"Summary: I'll lead too."
     return
 
 label day4NemaS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day6NemaS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
  
 label day7NemaS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day8NemaS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
     
 label day9NemaS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day9NemaS2:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day12NemaS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
     
 label day13NemaS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day14NemaS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 
 #HARU######################################
 label day3HaruS:
-	e"Accuracy: 1/5"
-	e"Summary: "
+	e"Accuracy: 2/3"
+	e"Summary: The captain seems like a hard worker."
     return
 
 label day4HaruS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day6HaruS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
  
 label day7HaruS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day8HaruS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
     
 label day9HaruS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day9HaruS2:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day12HaruS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
     
 label day13HaruS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 
 label day14HaruS:
-	e"Accuracy: 1/5"
+	e"Accuracy: 1/3"
 	e"Summary: "
     return
 

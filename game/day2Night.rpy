@@ -28,13 +28,21 @@ e "Captain,"
 
 e "{w=0.15}Tonight at 0100 we will activate the Satori sensors in each of your crewmate's rooms.{w=0.15} Following is all the information you will need to know:"
 
-e "The sensors are located under the beds of each crewmate.{w=0.15} In order to get a read on them, {w=0.15}they must sleep in their bed, {w=0.15}over their sensor."
-   
-e "The more time they spend over the sensor, {w=0.15}the more accurate it will be.{w=0.15} At 8 hours, {w=0.15}peak information accuracy will be achieved."
-   
-e "These instructions are intentionally left vague as to leave you to naturally test the device in new ways giving us a wider range of information."
+e "There is one sensor located under the beds of each crewmate."
 
-e "The crew is not to know about the sensors.{w=0.15} We want natural readings and complete compliance.{w=0.15} As such, do not strictly enforce the crewmates to stay in their room."
+e "These sensors are able to read thought patterns and emotions,{w=0.15} then,{w=0.15} using the information gathered,{w=0.15} generate a short summary of the information which will be sent to you via email."
+
+e "These summaries will generally be only one to two sentences due to the experimental nature of the sensors and processing capabilities."
+
+e "In order to get a read on the crew members, {w=0.15}they must sleep in their bed, {w=0.15}over their sensor."
+   
+e "The more time they spend over the sensor, {w=0.15}the more accurate it will be.{w=0.15} The accuracy is rated between one and three.{w=0.15} At eight hours, {w=0.15}peak information accuracy (3/3) will be achieved."
+
+e "At accuracy levels one and two, it is possible that the information gathered may not necessarily reflect reality."
+   
+e "Direct instructions to you are intentionally left minimal as to leave you to naturally test the device in new ways giving us a wider range of information."
+
+e "The crew is not to know about the sensors.{w=0.15} We want natural readings and complete compliance.{w=0.15} As such,{w=0.15} do not strictly enforce the crewmates to sleep in their room."
    
 e "Rather they miss a night here and there than learn of the sensors and potential invalidate all the information gathered from that point on."
 
