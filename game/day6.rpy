@@ -499,16 +499,14 @@ jump day6Menu #day6nema
 
 label preDinnerDay6:
 
-menu:
-    "Check email":
-        pass
+e "You get on your computer to check your email."
 
 window hide
 show black 
 with fade
 
 menu:#computer
-    "I'll read the summaries.":
+    "Read mail.":
         label summariesD6:
         menu:
             "Haruka's summary.":
@@ -528,7 +526,7 @@ menu:#computer
                 pass                
         pass
 
-    "I'm going to respect their privacy.":
+    "I don't feel like checking my mail.":
         jump day6Mid
         pass
 

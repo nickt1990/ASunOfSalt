@@ -10,8 +10,12 @@ e "You wake up to your alarm."
 
 e "After getting up and about, you notice you have mail notifications on your computer."
 
+window hide
+show black
+with fade
+
 menu:#computer
-    "I'll read the summaries.":
+    "Read mail.":
         label summariesD9:
         menu:
             "Haruka's summary.":
@@ -31,11 +35,15 @@ menu:#computer
                 pass                
         pass
 
-    "I'm going to respect their privacy.":
+    "Not today.":
         jump day9Start
         pass
 
 label day9Start:
+
+window hide
+hide black
+with fade
 
 stop music fadeout 2.0
 
@@ -740,7 +748,7 @@ show black
 with fade
 
 menu:#computer
-    "I'll read the summaries.":
+    "I'll read my mail.":
         label summariesD92:
         menu:
             "Haruka's summary.":
@@ -760,7 +768,7 @@ menu:#computer
                 pass                
         pass
 
-    "I'm going to respect their privacy.":
+    "I don't want to read my mail.":
         jump day9End
         pass
 

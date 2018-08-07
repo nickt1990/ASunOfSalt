@@ -16,7 +16,7 @@ label bMail2:#day2
     return
 
 label bMail13:
-    e "If you think beaches are crazy way till you hear about swimming pools!{w=0.25} 
+    e "If you think beaches are crazy way till you hear about swimming pools!"
 	e "Buy Guardians of Life now."
     return
 

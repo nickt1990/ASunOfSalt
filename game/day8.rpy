@@ -612,8 +612,12 @@ menu:
 call blueRoom
 e "You go back to your room and get on the computer."
 
+window hide
+show black
+with fade
+
 menu:#computer
-    "I'll read the summaries.":
+    "Read mail.":
         label summariesD8:
         menu:
             "Haruka's summary.":
@@ -633,11 +637,15 @@ menu:#computer
                 pass                
         pass
 
-    "I'm going to respect their privacy.":
+    "Not in the mood to read mail.":
         jump day8Mid
         pass
 
 label day8Mid:
+
+window hide
+hide black
+with fade
 
 e "Time has passed."
 

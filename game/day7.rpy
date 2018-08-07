@@ -406,7 +406,7 @@ show black
 with fade
 
 menu:#computer
-    "I'll read the summaries.":
+    "Read mail.":
         label summariesD7:
         menu:
             "Haruka's summary.":
@@ -426,7 +426,7 @@ menu:#computer
                 pass                
         pass
 
-    "I'm going to respect their privacy.":
+    "I don't want to read my mail.":
         jump day7Mid
         pass
 

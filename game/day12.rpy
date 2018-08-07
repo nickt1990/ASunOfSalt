@@ -32,7 +32,7 @@ show black
 with fade
 
 menu:#computer
-    "I'll read the summaries.":
+    "I'll read my emails.":
         label summariesD12:
         menu:
             "Haruka's summary.":
@@ -60,7 +60,7 @@ menu:#computer
                 pass                
         pass
 
-    "I'm going to respect their privacy.":
+    "I don't feel like reading my emails.":
         jump day12Mid
         pass
 

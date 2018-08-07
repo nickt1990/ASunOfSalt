@@ -284,7 +284,7 @@ show black
 with fade
 
 menu:#computer
-    "I'll read the summaries.":
+    "I'll read my emails.":
         label summariesD14:
         menu:
             "Haruka's summary.":
@@ -304,7 +304,7 @@ menu:#computer
                 pass                
         pass
 
-    "I'm going to respect their privacy.":
+    "I don't feel like reading my emails.":
         jump day14Mid
         pass
 
@@ -312,6 +312,6 @@ label day14Mid:
 
 e "You spend the rest of the evening working and end up falling asleep early."
 
-e ".{w=0.15}.{w=0.15}."
+e ".{w=0.35}.{w=0.35}."
 
 return
