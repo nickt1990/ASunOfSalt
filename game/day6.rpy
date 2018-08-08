@@ -151,7 +151,7 @@ p s "The captain just got up, {w=0.15}he nee-"
 
 show r m
 
-r m "She's just being.{w=0.15}.{w=0.15}. a little hard to work with."
+r m "She's just being.{w=0.15}.{w=0.15}.{w=0.25} a little hard to work with."
 
 r su "Man, {w=0.15}I can improve the ship, {w=0.15}I know I can!"
 

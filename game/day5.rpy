@@ -280,7 +280,7 @@ menu:
         p s "The more time that passes the more I realize I'm just not meant for this life."
         pass
 
-p s "Haruka was amazing. She took charge, {w=0.15}she kept calm."
+p s "Haruka was amazing.{w=0.25} She took charge, {w=0.15}she kept calm."
 
 p n "She can be a little abrupt sometimes, {w=0.15}but she is a leader."
 
@@ -331,15 +331,13 @@ menu:
         p s "I try."
         pass
 
-
-
 p s "I do every day, {w=0.15}sir."
 
 p s "Just being around others, {w=0.15}trying to communicate, {w=0.15}that takes a toll on me."
 
 p s "I just don't know how to push myself into being a dependable person when I struggle to just exist."
 
-p s "And I can't stop being me. I'm weak, {w=0.15}captain."
+p s "And I can't stop being me.{w=0.25} I'm weak, {w=0.15}captain."
 
 p n ".{w=0.15}.{w=0.15}."
 

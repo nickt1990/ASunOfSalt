@@ -30,10 +30,6 @@ menu:#computer
                 call day9NemaS
                 jump summariesD9
                 pass
-            "Junk mail.":
-                call bMail8
-                jump summariesD9
-                pass
             "I think I'm done.":
                 jump day9Start
                 pass                
@@ -755,16 +751,8 @@ menu:#computer
     "I'll read my mail.":
         label summariesD92:
         menu:
-            "Haruka's summary.":
-                call day9HaruS2
-                jump summariesD92
-                pass
-            "Hei's summary.":
-                call day9HeiS2
-                jump summariesD92
-                pass
-            "Nema's summary.":
-                call day9NemaS2
+            "Junk mail.":
+                call bMail8
                 jump summariesD92
                 pass
             "I think I'm done.":

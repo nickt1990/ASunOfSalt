@@ -67,166 +67,157 @@ label bMail9:#day13
     return
 
 label bMail10:#day13
-    e""
+    e ""
     return
 
 label bMail11:#day14
-    e""
+    e "You try to open the email but your computer is unresponsive."
+    e "Perhaps you're getting some sort of interference?"
     return
 
 
 #HEI######################################
 label day3HeiS:
-    e"Accuracy: 2/3"
-    e"Summary: I guess I'm the funny one."
+    e"Accuracy:{w=0.25} 2/3"
+    e"Summary:{w=0.25} I guess I'm the funny one."
     return
 
 label day4HeiS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} Why even bother?{w=0.35} I have no place on this ship.{w=0.35} This was a mistake."
     return
 
 label day6HeiS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} Sucks,{w=0.15} but if something happens to the captain,{w=0.25} I could shine."
     return
  
 label day7HeiS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} "
     return
 
 label day8HeiS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} I'll take- we'll have fun- his body is mine life."
+	e ".{w=0.25}.{w=0.25}."
+	e "The message seems scattered for some reason."
     return
     
 label day9HeiS:
-    e"Accuracy: 1/3"
-    e"Summary: "
-    return
-
-label day9HeiS2:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} We are mine we body is mine take.{w=0.25} Dead."
+	e "The message is scattered again."
     return
 
 label day12HeiS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} I want to her so out bad hot she maybe?"
+	e "It seems like having two people over a sensor might show a mix of their thoughts."
+	e ".{w=0.25}.{w=0.25}."
     return
     
 label day13HeiS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} Haruka's a prude, Nema's too emotional. {w=0.25}Done with them."
     return
 
 label day14HeiS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} Maybe I made a mistake?{w=0.25} Haruka's a jerk,{w=0.15} but Nema's always been there for me."
     return
  
 
 #NEMA######################################
 label day3NemaS:
-    e"Accuracy: 1/3"
-    e"Summary: I'll lead too."
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} I'll lead too."
     return
 
 label day4NemaS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} How do I fit in?"
     return
 
 label day6NemaS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} If I hurt him I'll never live."
     return
  
 label day7NemaS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} Doesn't matter anyways."
     return
 
 label day8NemaS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} .{w=0.25}.{w=0.25}."
     return
     
 label day9NemaS:
-    e"Accuracy: 1/3"
-    e"Summary: "
-    return
-
-label day9NemaS2:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} .{w=0.25}.{w=0.25}."
     return
 
 label day12NemaS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} .{w=0.25}.{w=0.25}."
     return
     
 label day13NemaS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} Gave them a chance."
     return
 
 label day14NemaS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} Done being one of them."
     return
 
 
 #HARU######################################
 label day3HaruS:
-    e"Accuracy: 2/3"
-    e"Summary: The captain seems like a hard worker."
+    e"Accuracy:{w=0.25} 2/3"
+    e"Summary:{w=0.25} The captain seems like a hard worker."
     return
 
 label day4HaruS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} I have to be strong.{w=0.25} I don't have a choice here,{w=0.15} it's for all of us."
     return
 
 label day6HaruS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} How do I deal with this?"
     return
  
 label day7HaruS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 2/3"
+    e"Summary:{w=0.25} I wont let another disaster happen while I can help it."
     return
 
 label day8HaruS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} I hoped this would be my chance to loosen up with everyone."
     return
     
 label day9HaruS:
-    e"Accuracy: 1/3"
-    e"Summary: "
-    return
-
-label day9HaruS2:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} I want what they have."
     return
 
 label day12HaruS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 1/3"
+    e"Summary:{w=0.25} .{w=0.25}.{w=0.25}."
     return
     
 label day13HaruS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} That idiot is insane if he thinks he'll ever get {b}anything{/b} from me."
     return
 
 label day14HaruS:
-    e"Accuracy: 1/3"
-    e"Summary: "
+    e"Accuracy:{w=0.25} 3/3"
+    e"Summary:{w=0.25} How did I end up so bad at this? {w=0.25}Can I really only express myself by being a jerk?"
     return
 

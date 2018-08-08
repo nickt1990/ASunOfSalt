@@ -457,7 +457,7 @@ y m "Why would I EVER do that?"
 
 show r s
 
-r s "C'mon, {w=0.15}you said it yourself that I wasn't too bad, what could it hurt?"
+r s "C'mon, {w=0.15}you said it yourself that I wasn't too bad,{w=0.15} what could it hurt?"
 
 show y m:
     linear 0 xalign 0.9 yalign 1.0
