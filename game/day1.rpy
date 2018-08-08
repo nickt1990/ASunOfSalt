@@ -263,10 +263,23 @@ y "What kinda hair color do ya fancy?"
 
 menu:
     "Brown?":
+        y h "Good choice!"
+        pass
+    "Blonde?":
+        y n "Oh?"
+		y s "Well I guess that's unfortunate for you."
+        pass
+    "Black?":
+        pass
+    "Red?":
+        y su "Red?"
+		y s "Well I guess that's unfortunate for you."
+        pass
+    "I like unnatural colors.":
+        y m "Like pink?"
         pass
 
-    "I like unnatural colors.":
-        pass
+y n ".{w=0.25}.{w=0.25}."
 
 y "Hm."
 
@@ -274,7 +287,7 @@ y "What about personality?"
 
 menu:
     "Extrovert.":
-        y h "Gee, I think you're all out of luck."
+        y h "Gee,{w=0.25} I think you're all out of luck."
         y h "Don't know many girls like that."
         e "Haruka smiles."
         pass
