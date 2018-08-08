@@ -33,6 +33,10 @@ menu:#computer
                 call day4NemaS
                 jump summariesD4
                 pass
+            "Junk mail.":
+                call bMail4
+                jump summariesD4
+                pass
             "I think I'm done.":
                 jump day4Start
                 pass                

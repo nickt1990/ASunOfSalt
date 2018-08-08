@@ -49,6 +49,10 @@ menu:#computer
                 call day3NemaS
                 jump summariesD3
                 pass
+            "Junk mail.":
+                call bMail3
+                jump summariesD4
+                pass
             "I think I'm done.":
                 jump day3Start
                 pass                

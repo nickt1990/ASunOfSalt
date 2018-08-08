@@ -19,11 +19,11 @@ menu:
         play music "music/Idle.ogg" fadein 1.0
         label summariesD2:
         menu:
-            "Mail.":
+            "Junk mail.":
                 call bMail1
                 jump summariesD2
                 pass
-            "Junk Mail.":
+            "Junk mail two.":
                 call bMail2
                 jump summariesD2
                 pass

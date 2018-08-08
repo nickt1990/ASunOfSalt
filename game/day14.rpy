@@ -299,6 +299,10 @@ menu:#computer
                 call day14NemaS
                 jump summariesD14
                 pass
+            "Junk mail.":
+                call bMail11
+                jump summariesD14
+                pass
             "I think I'm done.":
                 jump day14Mid
                 pass                

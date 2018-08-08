@@ -34,6 +34,10 @@ menu:#computer
                 call day13NemaS
                 jump summariesD13
                 pass
+            "Junk mail.":
+                call bMail9
+                jump summariesD13
+                pass
             "I think I'm done.":
                 jump day13Start
                 pass                
@@ -289,12 +293,8 @@ menu:#computer
     "I'll see if I have any mail.":
         label summariesD132:
         menu:
-            "Mail.":
-                call bMail13
-                jump summariesD132
-                pass
-            "Junk Mail.":
-                call bMail14
+            "Junk mail.":
+                call bMail10
                 jump summariesD132
                 pass
             "I think I'm done.":

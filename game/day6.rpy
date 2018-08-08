@@ -521,6 +521,10 @@ menu:#computer
                 call day6NemaS
                 jump summariesD6
                 pass
+            "Junk mail.":
+                call bMail5
+                jump summariesD6
+                pass
             "I think I'm done.":
                 jump day6Mid
                 pass                
