@@ -267,13 +267,13 @@ menu:
         pass
     "Blonde?":
         y n "Oh?"
-		y s "Well I guess that's unfortunate for you."
+        y s "Well I guess that's unfortunate for you."
         pass
     "Black?":
         pass
     "Red?":
         y su "Red?"
-		y s "Well I guess that's unfortunate for you."
+        y s "Well I guess that's unfortunate for you."
         pass
     "I like unnatural colors.":
         y m "Like pink?"

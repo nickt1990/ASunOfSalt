@@ -100,21 +100,21 @@ label day7HeiS:
 label day8HeiS:
     e"Accuracy:{w=0.25} 3/3"
     e"Summary:{w=0.25} I'll take- we'll have fun- his body is mine life."
-	e ".{w=0.25}.{w=0.25}."
-	e "The message seems scattered for some reason."
+    e ".{w=0.25}.{w=0.25}."
+    e "The message seems scattered for some reason."
     return
     
 label day9HeiS:
     e"Accuracy:{w=0.25} 3/3"
     e"Summary:{w=0.25} We are mine we body is mine take.{w=0.25} Dead."
-	e "The message is scattered again."
+    e "The message is scattered again."
     return
 
 label day12HeiS:
     e"Accuracy:{w=0.25} 3/3"
     e"Summary:{w=0.25} I want to her so out bad hot she maybe?"
-	e "It seems like having two people over a sensor might show a mix of their thoughts."
-	e ".{w=0.25}.{w=0.25}."
+    e "It seems like having two people over a sensor might show a mix of their thoughts."
+    e ".{w=0.25}.{w=0.25}."
     return
     
 label day13HeiS:

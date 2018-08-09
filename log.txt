@@ -1,4 +1,4 @@
-Tue Aug 07 23:31:06 2018
+Thu Aug 09 00:03:56 2018
 Windows-8-6.2.9200
 Ren'Py 6.99.13.2919
  
@@ -7,7 +7,7 @@ Bootstrap to the start of init.init took 0.05s
 Early init took 0.00s
 Loader init took 0.03s
 Loading error handling took 0.01s
-Loading script took 0.17s
+Loading script took 0.18s
 Loading persistent took 0.06s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.08s
@@ -431,11 +431,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.07699990273s
+Total time until interface ready: 1.07000017166s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.039000 seconds.
-- Frame drawn at 0.040000 seconds.
+- Frame drawn at 0.042000 seconds.
 - Frame drawn at 0.043000 seconds.
-- Frame drawn at 0.060000 seconds.
-- 0.060000 seconds to render 5 frames.
+- Frame drawn at 0.047000 seconds.
+- Frame drawn at 0.064000 seconds.
+- 0.064000 seconds to render 5 frames.
