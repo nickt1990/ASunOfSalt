@@ -4,7 +4,6 @@
 
 init offset = -1
 
-
 ################################################################################
 ## Styles
 ################################################################################
@@ -355,13 +354,6 @@ screen navigation():
                 hover "gui/mmimgs/main3.png"
                 alpha False
                 hotspot (0,0,100,45) action MainMenu()            
-
-        imagemap:
-            ground "gui/mmimgs/about1.png"
-            idle "gui/mmimgs/about2.png"
-            hover "gui/mmimgs/about3.png"
-            alpha False
-            hotspot (0,0,100,45) action ShowMenu("about")   
                 
         if renpy.variant("pc"):
 
@@ -432,11 +424,11 @@ style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
-style main_menu_frame:
-    xsize 280
-    yfill True
+#style main_menu_frame:
+#    xsize 280
+#    yfill True
 
-    background "gui/overlay/main_menu.png"
+#    background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0

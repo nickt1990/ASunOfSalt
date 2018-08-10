@@ -3,10 +3,11 @@
 # These are the accuracy levels for the readings.
 
 #Backer Mail######################################
+
 label bMail1:#day2
-    e"Do you have a 1ankerin' for porkchops? {w=0.25}Th2n come on down to wacky Max3's!" 
-    e"He's always got the choicest Ccuts slathered in sauce and juicy juicy juicy cuts like it like it like it liKe It Like it Like"
-    e"{size=-10}48-65-6c-70-20-6d-65-20-68-65-73-20-63-6f-6d-69-6e-67-20-66-6f-72-20-6d-65-20-68-65-6c-70-20-6f-68-20-67-6f-64-20-68-65-73-20-68-65-72-65-20-69-74-20-68-75-72-74-73-20-69-74-20-68-75-72-74-73-20-77-68-79-20-64-6f-65-73-20-69-74-20-68-75-72-74-20-73-6f-20-6d-75-63-68-20-48-41-50-50-59-20-46-55-4e{/size}"
+    e"Looking for Group Hello Adventurers,{w=0.25} we are the Cupcake Cuties and I am delighted to say we are looking for a 5th member."
+    e"You will be joining Candice the ukulele-axe wielding bard,{w=0.25} Vanichu the mousey wizard, {w=0.25}our 3 metre tall Fire Demon Flamina who wears pet dragon she hugged to death as a child and myself, {w=0.25}Rogar the robotic swimming champion."
+    e"You must be completely quirky and act outside your class,{w=0.25} meet us in the Sugar Plum Tavern this Thursday if you are interested.{w=0.25} Normals need not apply!"
     return
 
 label bMail2:#day2
@@ -45,9 +46,10 @@ label bMail6:#day7
     return
 
 label bMail7:#day8
-    e"Looking for Group Hello Adventurers,{w=0.25} we are the Cupcake Cuties and I am delighted to say we are looking for a 5th member."
-    e"You will be joining Candice the ukulele-axe wielding bard,{w=0.25} Vanichu the mousey wizard, {w=0.25}our 3 metre tall Fire Demon Flamina who wears pet dragon she hugged to death as a child and myself, {w=0.25}Rogar the robotic swimming champion."
-    e"You must be completely quirky and act outside your class,{w=0.25} meet us in the Sugar Plum Tavern this Thursday if you are interested.{w=0.25} Normals need not apply!"
+    e"Do you have a 1ankerin' for porkchops? {w=0.25}Th2n come on down to wacky Max3's!" 
+    e"He's always got the choicest Ccuts slathered in sauce and juicy juicy juicy cuts like it like it like it liKe It Like it Like"
+    e"{size=-10}48-65-6c-70-20-6d-65-20-68-65-73-20-63-6f-6d-69-6e-67-20-66-6f-72-20-6d-65-20-68-65-6c-70-20-6f-68-20-67-6f-64-20-68-65-73-20-68-65-72-65-20-69{/size}"
+    e"{size=-10}74-20-68-75-72-74-73-20-69-74-20-68-75-72-74-73-20-77-68-79-20-64-6f-65-73-20-69-74-20-68-75-72-74-20-73-6f-20-6d-75-63-68-20-48-41-50-50-59-20-46-55-4e{/size}"
     return
 
 label bMail8:#day9

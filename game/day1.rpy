@@ -1,5 +1,8 @@
 ﻿label day1:
 
+window hide
+show black
+
 $ seen_set = [ ]
 $ save_name = "Introductions"
 
@@ -7,11 +10,23 @@ play music "music/Space.ogg" fadein 1.0
 
 call beginningZoom from _call_beginningZoom
 
+$ renpy.pause(1.5, hard=True)
+
 e ".{w=0.15}.{w=0.15}."
 
-e "It's been quiet for hours."
+e "It's your first night as captain aboard an experimental ship."
 
-e "Then, suddenly-"
+e "Due to the unorthidox nature of the mission,{w=0.15} you were placed on the ship with little knowledge of your crew or your goal."
+
+e "You were guided straight to your room,{w=0.15} and then sent off."
+
+e "\"Instructions will come\" is what you were told."
+
+e ".{w=0.15}.{w=0.15}."
+
+e "It had been quiet for hours at this point."
+
+e "Then,{w=0.15} suddenly-"
 
 play sound "sounds/DoorOpen2.ogg"
 
@@ -23,7 +38,10 @@ e "You can faintly hear footsteps nearby."
 
 menu:
     "Check it out.":
-      pass
+        window hide
+        hide black
+        with fade
+        pass
       
 e "You stand and walk over to the entrance to your room."
 

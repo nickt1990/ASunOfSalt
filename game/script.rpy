@@ -46,8 +46,6 @@ label start:
     # Store the current version of Ren'Py into a variable, so we can
     # interpolate it into the next line.
     $ version = renpy.version()
-
-    call credits
     
     call dayOneCard from _call_dayOneCard
     call day1 from _call_day1
@@ -97,7 +95,6 @@ label start:
     call day15 from _call_day15
     
     label END:
-    #call endings
 
     $ minutes, seconds = divmod(int(renpy.get_game_runtime()), 60)
     "Your playtime is %(minutes)d minutes and %(seconds)d seconds."
@@ -134,10 +131,10 @@ init:
     $ style.window.bottom_padding = 15
 
     # Interface sounds, just for the heck of it.
-    #$ style.button.activate_sound = 'click.wav'
-    #$ style.imagemap.activate_sound = 'click.wav'
-    #$ library.enter_sound = 'click.wav'
-    #$ library.exit_sound = 'click.wav'
+    $ style.button.activate_sound = 'sounds/Option.ogg'
+    $ style.imagemap.activate_sound = 'sounds/Option.ogg'
+    $ library.enter_sound = 'sounds/OpenMenu.ogg'
+    $ library.exit_sound = 'sounds/CloseMenu.ogg'
     #$ library.sample_sound = "18005551212.wav"
 
     # Select the transitions that are used when entering and exiting

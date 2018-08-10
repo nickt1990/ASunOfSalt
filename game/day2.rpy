@@ -17,6 +17,7 @@ menu:
     "I'll check my mail.":
         stop music fadeout 1
         play music "music/Idle.ogg" fadein 1.0
+        e "Only junk mail today{w=0.15}.{w=0.15}.{w=0.15}."
         label summariesD2:
         menu:
             "Junk mail.":

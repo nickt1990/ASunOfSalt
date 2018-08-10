@@ -21,11 +21,18 @@
     image tBlue = Solid((0, 255, 0, 200))
     image tBlack = Solid((0, 0, 0, 200))
     image ptBlack = Solid((0, 0, 0, 100))
+    image compScreen = "Screen.png"
     
 # ~~~SETTING UP BG SHIP MOVEMENTS~~~
 label beginningZoom:
     show shipFull:
         linear 1 zoom 1.3 xalign .369 yalign .020
+    return
+
+label cScreen:
+    window hide
+    show compScreen
+    with fade
     return
 
 label blueRoom:

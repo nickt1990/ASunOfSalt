@@ -1,15 +1,15 @@
-image splash = "large empty.png"
+image splash = "SplashScreen.png"
 
 label splashscreen:
-    scene black 
-    with Pause(1.5)
+    #scene black 
+    #$ renpy.pause(1.5, hard=True)
     
-    play sound "sounds/DoorOpen.ogg"
+    #play sound "sounds/Splash.ogg"
 
-    show splash with dissolve
-    with Pause(1.5)
+    #show splash with dissolve
+    #$ renpy.pause(1.5, hard=True)
     
-    scene black with dissolve
-    with Pause(0.5)
+    #scene black with dissolve
+    #$ renpy.pause(0.4, hard=True)
 
     return
