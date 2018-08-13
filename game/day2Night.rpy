@@ -2,11 +2,11 @@
     
 e "Haruka walks out of the room"
 
-call hall
+call hall from _call_hall_31
 
 e "You follow shortly behind."
 
-call blueRoom
+call blueRoom from _call_blueRoom_17
 
 e "Then, head back to your room to change clothes and get prepared for the night."
 
@@ -66,7 +66,7 @@ menu:
     "On my way!":
         pass
 
-call hall
+call hall from _call_hall_36
 
 play sound "sounds/DoorOpen2.ogg"
 
@@ -101,7 +101,7 @@ e "She smiles."
 
 
 play sound "sounds/DoorOpen2.ogg"
-call navRoom
+call navRoom from _call_navRoom_5
 
 yp n "Let's get to it. {w=0.15}Do you know what to do?"
 
@@ -209,7 +209,7 @@ menu:
         yp m "I worked my ass off"
         pass
 
-yp n "It's funny.{w=0.25} It was all for some man. Professor Motakomi."
+yp n "It's funny.{w=0.25} It was all for some man.{w=0.25} Professor Motokomi."
 
 yp n "I grew up in a poor family.{w=0.25} We were on the top deck of my station."
 
@@ -245,9 +245,9 @@ yp n "Present their science garbage for all the three people who came to these t
 
 yp n "At first I was blown away.{w=0.15} The science talk made my lil' eyes bulge.{w=0.15} Loved it."
 
-yp n "I started to have Jin take me to the library early mornings, {w=0.15}late nights. I was like thirteen and still needed help getting places, {w=0.15}but he didn't mind."
+yp n "I started to have Jin take me to the library early mornings, {w=0.15}late nights.{w=0.25} I was like thirteen and still needed help getting places, {w=0.15}but he didn't mind."
 
-yp n "I'd read day and night. Pops didn't believe in school, {w=0.15}but who needs school when you have the best teach in the skies?"
+yp n "I'd read day and night.{w=0.25} Pops didn't believe in school, {w=0.15}but who needs school when you have the best teach in the skies?"
 
 menu:
     "The best?":
@@ -291,7 +291,7 @@ yp h "Anyways, {w=0.15}from that point forward I would get there early and start
 
 yp n "When the guys who were supposed to be giving presentations showed up I'd just tell them that the schedule had changed and they were no longer needed."
 
-yp n "They were all losers. Nobody challenged me."
+yp n "They were all losers.{w=0.25} Nobody challenged me."
 
 yp s "Until one day.{w=0.15} Shit.{w=0.15} I will never forget."
 
@@ -309,13 +309,19 @@ yp n ".{w=0.15}.{w=0.15}."
 
 yp n "I did."
 
-yp n "I sat and listened.{w=0.25} Professor Motakomi.{w=0.25} It was the first time I'd ever heard of him, {w=0.15}and he was amazing. "
+yp n "I sat and listened.{w=0.25} Professor Motakomi.{w=0.25} It was the first time I'd ever heard of him, {w=0.15}and he was amazing."
 
 yp n "He made me feel small again.{w=0.25} Like the little girl that I was supposed to be."
 
 yp h "He was known for his cross-dimensional theories,{w=0.15} but he seemed to know damn near everything."
 
-yp h "The man was a genius,{w=0.15} and for whatever reason,{w=0.15} he decided to share his thoughts and theories with me.{w=0.35} A stupid kid."
+yp h "I always wondered why he picked me.{w=0.15} When I finally asked his reasoning made me laugh."
+
+yp n "I reminded him of his sister."
+
+yp h "The man was a genius,{w=0.15} and basically for no reason,{w=0.15} he decided to share his thoughts and theories with me.{w=0.35} A stupid kid."
+
+yp h "He pushed me straight to the top as fast as he could,{w=0.15} changed my life forever."
 
 yp h "I was seeing stars Cap, {w=0.15}for real I was."
 

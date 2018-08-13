@@ -2,9 +2,12 @@
 
 show y n
 
+play music "music/Space.ogg" fadein 3.0
+
 y n ".{w=0.15}.{w=0.15}."
 
 window hide
+show ptBlack
 hide black
 with fade
 
@@ -24,7 +27,7 @@ rz su "Ooof.{w=0.15}.{w=0.15}."
 
 rz s "I'm gonna be sick.{w=0.15}.{w=0.15}."
 
-rz s "Why me?"
+rz s "This is the worst."
 
 show y m
 
@@ -46,7 +49,7 @@ y n "Yeah.{w=0.15}.{w=0.15}."
 
 show rz m
 
-rz m "No, {w=0.15}this wasn't mere luck.{w=0.15}.{w=0.15}."
+rz m "No, {w=0.15}this wasn't any ordinary luck.{w=0.15}.{w=0.15}."
 
 show p n
 
@@ -58,6 +61,8 @@ rz n "No.{w=0.15}.{w=0.15}. "
 
 rz h "This was me."
 
+stop music fadeout 3
+
 rz h "I must be good luck,{w=0.15} huh Haru-{w=0.1}baru?"
 
 show y m
@@ -65,6 +70,8 @@ show y m
 y m ".{w=0.15}.{w=0.15}."
 
 y n "I won't lie."
+
+play music "music/SpaceSunday.ogg" fadein 2.0
 
 y h "Guy did surprisingly well."
 
@@ -82,7 +89,9 @@ y m "Yes. Hei."
 
 y h "Ya came up with a plan of action quickly."
 
-y h "I'm proud, {w=0.15}ya did awesome dude."
+y h "Dude's rocking the nighty too."
+
+y h "I'm proud, {w=0.15}ya did awesome."
 
 show y n
 
@@ -138,9 +147,11 @@ p su "Mine too!"
 
 show rz s
 
-rz s "Shit{w=0.1} shit{w=0.1} shit."
+rz s "Oh crap{w=0.1} crap{w=0.1} crap."
 
 rz s "Mine too."
+
+p su "The lights do seem a bit dim now that I'm thinking about it."
 
 show y n
 
@@ -309,7 +320,7 @@ rz n "Why."
 
 show y n
 
-y n "There wont really be air?"
+y n "There wont really be oxygen for long."
 
 show rz n
 
@@ -401,6 +412,8 @@ call blueRoom from _call_blueRoom_7
 hide y
 
 e "Haruka enters the kitchen as you continue on into your room."
+
+stop music fadeout 3
 
 e "You lay on your bed to wait for Haruka and slowly drift off to sleep."
 

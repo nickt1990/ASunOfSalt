@@ -39,7 +39,7 @@ define gui.about = _("")
 define build.name = "ASunOfSalt"
 
 #disable scrolling back
-#define config.rollback_enabled = False
+define config.rollback_enabled = False
 
 ## Sounds and music ############################################################
 

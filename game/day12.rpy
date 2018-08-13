@@ -1,5 +1,7 @@
 ﻿label day12:
     
+stop music fadeout 2
+
 e "You both sleep peacefully through the night."
 
 window hide
@@ -19,7 +21,7 @@ menu:
         e "Nema is still asleep on the floor when you look over."
         pass
 
-play music "music/Idle.ogg" fadein 3.0#todo change music
+play music "music/Idle.ogg" fadein 3.0
 
 menu:
     "Get out of bed.":
@@ -36,15 +38,15 @@ menu:#computer
         label summariesD12:
         menu:
             "Haruka's summary.":
-                call day12HaruS
+                call day12HaruS from _call_day12HaruS
                 jump summariesD12
                 pass
             "Hei's summary.":
-                call day12HeiS
+                call day12HeiS from _call_day12HeiS
                 jump summariesD12
                 pass
             "Nema's summary.":
-                call day12NemaS
+                call day12NemaS from _call_day12NemaS
                 jump summariesD12
                 pass
             "Email from Haruka" if harukaLove:
@@ -66,6 +68,8 @@ menu:#computer
 
 label day12Mid:
 
+play music "music/Pillows.ogg" fadein 2.0
+
 window hide
 hide black 
 with fade
@@ -75,16 +79,22 @@ e "You notice Nema starting to move."
 menu:
     "Good morning!" if nemaBed == True and nemaClothes == True:
         show p h
-        p h "Good morning, Sir."
+        p h "Good morning, sir."
         e "Nema sits up and scoots over and sits on the side of the bed."
         pass
 
     "Good morning!" if nemaBed == True and nemaClothes == False:
         show pz h
-        pz h "Good morning, Sir."
+        pz h "Good morning, sir."
+        window hide
+        show black
+        with fade
         hide pz h
         e "Nema stands up out of bed and begins to put her clothes on."
         show p h
+        window hide
+        hide black
+        with fade
         e "Once dressed, she laid back down on the bed."
         pass
 
@@ -353,7 +363,7 @@ show p m
 
 p m "Haruka, {w=0.15}I'm sorry but I don't think that we're making any progress right now."
 
-p n "Is the life support on?"
+p m "Is the life support on?"
 
 show y m
 
@@ -361,9 +371,9 @@ y m "Everything's back to normal."
 
 show p n
 
-p n "Then I'm going to leave."
+p m "Then I'm going to leave."
 
-p n "We can talk again later when you've calmed down."
+p m "We can talk again later when you've calmed down."
 
 hide p
 
@@ -371,7 +381,8 @@ e "Nema gets up and walks out the door."
 
 play sound "sounds/DoorClose2.ogg"
 
-show y n
+show y n:
+    linear 0.45 xalign 0.5 yalign 1.0
 
 y n ".{w=0.15}.{w=0.15}."
 
@@ -381,7 +392,7 @@ y s "I'm sorry caps."
 
 y s "I didn't mean to get so emotional."
 
-y n "You know how I feel about Nema."
+y s "You know how I feel about Nema."
 
 menu:
     "I do.":
@@ -393,7 +404,7 @@ menu:
 
 y s "You probably think I'm insane."
 
-y n "But like I told you, {w=0.15}sex isn't some casual thing to me."
+y s "But like I told you, {w=0.15}sex isn't some casual thing to me."
 
 y s "I know I don't own you or anything,{w=0.15} I haven't even told.{w=0.15}.{w=0.15}. "
 
@@ -421,7 +432,14 @@ y n ".{w=0.15}.{w=0.15}."
 
 y n "I should apologize I guess."
 
-y h "Or maybe not?"
+menu:
+    "Apologize.":
+        $ nemaHarukaLove = True
+        pass
+
+    ".{w=0.15}.{w=0.15}.{w=0.15}":
+        y h "Or maybe not?"
+        pass
 
 y n ".{w=0.15}.{w=0.15}."
 
@@ -452,15 +470,17 @@ e "You open the door and enter the hallway."
 play sound "sounds/DoorClose2.ogg"
 
 e "Hei and Haruka are standing in the middle of the hallway yelling at one another."
+                                                                                     
+show y m
 
 y m "Why would I EVER do that?"
 
-show r s
+show r s:
+    linear 0 xalign 0.9 yalign 1.0
 
 r s "C'mon, {w=0.15}you said it yourself that I wasn't too bad,{w=0.15} what could it hurt?"
 
-show y m:
-    linear 0 xalign 0.9 yalign 1.0
+show y m
 
 y m "No,{w=0.15} absolutely not."
 
@@ -494,7 +514,7 @@ r n "You're my real sunshine."
 
 show y h
 
-y h "You're a real dirtbag roller-coaster,{w=0.15} you know that?"
+y h "You're a real dirtbag,{w=0.15} you know that?"
 
 play sound "sounds/DoorOpen2.ogg"
 
@@ -502,7 +522,8 @@ hide y
 
 e "Haruka abruptly turns and walks to her room."
 
-show r m
+show r m:
+    linear 0.4 xalign 0.5 yalign 1.0
 
 r m "Man, I thought I finally had her."
 
@@ -602,7 +623,7 @@ p n "Hei{w=0.15}.{w=0.15}.{w=0.15}."
 
 show r n
 
-r n "Oh hey, {w=0.15}wanna play?"
+r n "Oh hey, {w=0.15}wanna play some games?"
 
 show p h
 
@@ -630,6 +651,8 @@ p h "About the person I want to be."
 
 p n "I don't want to hold myself back anymore."
 
+p h "I think I can make this a place I want to live."
+
 p n "I just want to follow how I feel."
 
 p h "And I feel like.{w=0.15}.{w=0.15}."
@@ -649,6 +672,8 @@ show r n
 r n ".{w=0.15}.{w=0.15}."
 
 r s ".{w=0.15}.{w=0.15}."
+
+show p s
 
 r s "I'm sorry,{w=0.15} Nems, I thought we.{w=0.15}.{w=0.15}."
 
@@ -695,7 +720,11 @@ menu:
 
 e "You stay in your room for the rest of the day working."
 
-e "You don't hear anyone else leave their rooms for the rest of the night."
+stop music fadeout 2
+
+e "You don't hear anyone leave their rooms for the rest of the night."
+
+play music "music/Space.ogg" fadein 1.0
 
 window hide
 show black

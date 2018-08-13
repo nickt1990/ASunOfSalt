@@ -22,19 +22,19 @@ menu:#computer
         menu:
 
             "Haruka's summary.":
-                call day4HaruS
+                call day4HaruS from _call_day4HaruS
                 jump summariesD4
                 pass
             "Hei's summary.":
-                call day4HeiS
+                call day4HeiS from _call_day4HeiS
                 jump summariesD4
                 pass
             "Nema's summary.":
-                call day4NemaS
+                call day4NemaS from _call_day4NemaS
                 jump summariesD4
                 pass
             "Junk mail.":
-                call bMail4
+                call bMail4 from _call_bMail4
                 jump summariesD4
                 pass
             "I think I'm done.":
@@ -145,7 +145,7 @@ show p n
 
 p n "Please, {w=0.15}both of you come take a look."
 
-call navRoom
+call navRoom from _call_navRoom_6
 play sound "sounds/DoorOpen2.ogg"
 
 e "You walk into the nav room."
@@ -324,7 +324,10 @@ menu:
 
 y h "Thanks Cap."
 
-show p h
+hide y h
+
+show p h:
+    linear 0.35 xalign 0.5 yalign 1.0
 
 p h "Yes, {w=0.15}Captain!"
 
@@ -586,11 +589,11 @@ p n "I'll tell the rest."
 hide p
 
 play sound "sounds/DoorClose2.ogg"
-call hall
+call hall from _call_hall_41
 e "You head out into the hallway..."
 
 play sound "sounds/DoorOpen2.ogg"
-call kitchen
+call kitchen from _call_kitchen_11
 e "And then into the kitchen."
 
 play sound "sounds/DoorClose2.ogg"
@@ -655,8 +658,6 @@ menu:
 p n "He was playing a game and just said \"I know, {w=0.15}I know.\""
 
 p s "I took that as his way of saying he would come as soon as possible, {w=0.15}but I suppose I assumed a bit much."
-
-p n ".{w=0.15}.{w=0.15}."
 
 p n "Not a problem, {w=0.15}I'll pack their meals away in the fridge."
 
@@ -737,7 +738,23 @@ p n "I still firmly believe all that I said earlier this morning about the situa
 
 p n "I can't agree with hostility as our first action in meeting with this unknown ship."
 
+p s "It's just tha-"
+
 label dontListenNemaD4:
+
+p n ".{w=0.15}.{w=0.15}."
+
+p s "Is it just me,{w=0.15} or did you just get a weird feeling?"
+
+menu:
+    "Just you.":
+        p s "Huh."
+        p s "Well no worries I suppo-"
+        pass
+
+    "Are you alright?.":
+        p s "I'm okay,{w=0.15} it was just very sudde-"
+        pass
 
 window hide
 show tBlack
@@ -774,7 +791,6 @@ p n "It looks like.{w=0.15}.{w=0.15}.{w=0.15}"
 
 p n "We're getting some sort of interference from a large asteroid that's floating alongside us."
 
-#todo this ties in with end, nema gathering power
 p su "I'm not sure I've ever heard of an asteroid causing this sort of interference, but it seems clear that that's the source."
 
 p n "Everything else is full power, {w=0.15}the autopilot AI is functioning normally, {w=0.15}we should be in no danger."
@@ -904,7 +920,7 @@ p h "Good night!"
 
 play sound "sounds/DoorClose2.ogg"
 
-call hall
+call hall from _call_hall_42
 e "You follow Nema out into the hallway."
 
 hide p

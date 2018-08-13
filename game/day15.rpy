@@ -4,7 +4,7 @@ window hide
 hide black 
 with fade
 
-e "You wake up,{w= 0.15}but it's still the middle of the night."
+e "You wake up,{w= 0.15} but it's still the middle of the night."
 
 e "You can hear a slight sound coming from the hallway."
 
@@ -12,17 +12,22 @@ e "You get out of bed and get dressed."
 
 play sound "sounds/DoorOpen2.ogg"
 
-e "After that,{w= 0.15}you walk out into the hallway."
+call hall from _call_hall_44
+
+e "After that,{w= 0.15} you walk out into the hallway."
 
 e "There are voices coming from the kitchen."
 
+call kitchen from _call_kitchen_12
+
 e "You walk in to see Haruka and Nema sitting at the table talking."
 
-show pc h
+show p h
 
-pc h "Oh,{w= 0.15}good morning Captain."
+p h "Oh,{w= 0.15} good morning Captain."
 
-show y h
+show y h:
+    linear 0 xalign 0.9 yalign 1.0
 
 y h "Hey."
 
@@ -33,20 +38,22 @@ menu:
     "Everything alright?":
         pass
 
-show pc h
+show p h
 
-pc h "Haruka came to me last night and apologized."
+play music "music/SpaceSunday.ogg" fadein 1.0
 
-pc n "She said she was happy I wanted to be more involved,{w= 0.15}and offered to help me get up to speed."
+p h "Haruka came to me last night and apologized."
+
+p n "She said she was happy I wanted to be more involved,{w= 0.15} and offered to help me get up to speed."
 
 show y h
 
-y h "Yeah,{w= 0.15}change of heart I guess."
+y h "Yeah,{w= 0.15} change of heart I guess."
 
 menu:
     "That's great.":
-        show pc h
-        pc h "I agree sir."
+        show p h
+        p h "I agree sir."
         pass
 
     "Why the change of heart?":
@@ -54,19 +61,19 @@ menu:
         y m "Doesn't matter, I'm helping her, aren't I?"
         pass
 
-pc n "Do you want to sit in and listen as well?"
+p n "Do you want to sit in and listen as well?"
 
 show y n
 
-y n "Actually,{w= 0.15}before you answer,{w= 0.15}I'm gonna say you should just stay."
+y n "Actually,{w= 0.15} before you answer,{w= 0.15} I'm gonna say you should just stay."
 
 y n "We have something to talk about."
 
-show pc su
+show p su
 
-pc su "Oh?"
+p su "Oh?"
 
-pc h "Alright,{w= 0.15}great."
+p h "Alright,{w= 0.15} great."
 
 menu:
     "What is it?":
@@ -82,19 +89,23 @@ y n "About continuing to compound after two weeks?"
 
 y n "Did you ever come up with a decision?"
 
-show pc su
+show p su
 
-pc su "Wait,{w= 0.15}what are you talking about?"
+stop music fadeout 3
+
+p su "Wait,{w= 0.15} what are you talking about?"
 
 show y n
 
 y n "We're talking about continuing to compound the ships energy after tomorrow."
 
+play music "music/Space.ogg" fadein 1.0
+
 y n "Continuing to gain speed beyond what we can even understand right now."
 
-show pc su
+show p su
 
-pc su "Is that safe?"
+p su "Is that safe?"
 
 show y n
 

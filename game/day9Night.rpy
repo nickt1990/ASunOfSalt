@@ -1,12 +1,14 @@
 ﻿label day9Night:
     
-call hall
+call hall from _call_hall_50
 
 e "Some time has passed, so you head out to the kitchen to meet Haruka."
 
 show y h
 
-call kitchen
+call kitchen from _call_kitchen_14
+
+play music "music/Spacetalk.ogg" fadein 3.0
 
 y h "Heya Cap."
 
@@ -58,7 +60,7 @@ menu:
 
 y n "I never claimed that I'd act professional."
 
-y m "I can truly say that I hate both of them."
+y m "I can truly say that I just do not like either of them."
 
 menu:
     "You don't mean that.":
@@ -75,6 +77,7 @@ menu:
         pass
 
     "They can do whatever they want, {w=0.15}this ship is their life now.":
+        y m "Whatever."
         pass
 
 y m "That's just not stuff I take lightly."
@@ -82,6 +85,8 @@ y m "That's just not stuff I take lightly."
 menu:
     "Why not?":
         pass
+
+stop music fadeout 2
 
 y s "You're not gonna let me off easy?"
 
@@ -106,12 +111,13 @@ y n "You know what the chance is on average for a girl to get pregnant, {w=0.15}
 
 menu:
     "Really low.":
+        y n "Really goddamn low."
         pass
 
     "It's impossible.":
+        y su "Nowadays?"
+        y h "Almost."
         pass
-
-y n "Really goddamn low."
 
 y n "Like point zero eight percent."
 
@@ -121,13 +127,15 @@ y n "I think I told you about him, {w=0.15}Dr. Motokami?"
 
 y n "He knew the kind of place I was from."
 
-y s "When we first met and I told him that I wanted to be an engineer he looked at me straight in the eyes and told me that wasn't gonna happen."
+y s "When we first met and I told him that I wanted to be an engineer he looked at me straight in the eyes and said no."
 
-y n "I was determined to prove him wrong,{w=0.2} so I looked up how many engineers in the travel program came from my station."
+y s "That wont happen."
+
+y n "I wanted to prove him wrong,{w=0.2} so I looked up how many engineers in the travel program came from my station."
 
 y n "One hundred and thirty two."
 
-y su "That's point zero zero one percent of the 95 thousand people who worked there."
+y su "That's one-thousandth percent of the ninety-five thousand people who worked there."
 
 y n "You'd think that would discourage a kid, {w=0.15}but it did the opposite."
 
@@ -135,7 +143,7 @@ y s "I stopped having fun."
 
 y s "I stopped taking chances."
 
-y n "I realized that I had to be the best I could, {w=0.15}and I couldn't afford to dick things up. Every decision became a balancing act."
+y n "I realized that I had to be the best I could, {w=0.15}and I couldn't afford to mess things up.{w=0.15} Every decision became a balancing act."
 
 y n "Does this add or take away from my chances?"
 
@@ -152,10 +160,10 @@ menu:
 
     "That makes sense. You can't tie yourself down.":
         y h "You think so?"
-        y n "I don't know."
+        y n "I'm not sure anymore."
         pass
 
-y n "Maybe I'm wrong for thinking this way. Whatever."
+y n "Maybe I'm wrong for thinking this way.{w=0.15}.{w=0.15}. Whatever."
 
 y n "I got shit done,{w=0.2} yeah?"
 
@@ -163,7 +171,7 @@ menu:
     "Nema and Hei have accomplishments too.":
         pass
 
-y s "I suppose,{w=0.2} they did make it this far..."
+y s "I suppose,{w=0.2} they did make it this far.{w=0.15}.{w=0.15}."
 
 y n "But I think for me, {w=0.15}this was the only way I could have done it."
 
@@ -188,7 +196,7 @@ y m "Ugh, {w=0.15}c'mon.{w=0.35} I didn't ask you here for this."
 y s "I wanted to talk about us, {w=0.15}not them."
 
 menu:
-    "We are a group and I am the captain.":
+    "We're a group and I'm the captain.":
         pass
 
 y s "Yeah yeah, {w=0.15}I get it."
@@ -232,7 +240,7 @@ y s "Why strive for something better when what you have is good enough?"
 
 y s "I'm definitely not happier than the millions of stupid people who wake up every day and piss their lives away."
 
-y s "I worked my ass off and the only benefit that could possibly come from it will be for all those stupid people back home who are already fine."
+y s "I worked myself to death and the only benefit that could possibly come from it will be for all those stupid people back home who are already fine."
 
 menu:
     "What's so bad about that?":
@@ -240,11 +248,11 @@ menu:
 
 y m "God,{w=0.2} nothing,{w=0.2} I know, {w=0.15}that's how life goes."
 
-y n "You pass on what you've accomplished.{w=0.2} I get it."
+y s "You pass on what you've accomplished.{w=0.2} I get it."
 
 y s "I just feel like a life that was sacrificed to give comfortable idiots another vacation option though."
 
-y n "I never got a chance to.{w=0.1}.{w=0.1}.{w=0.15} I don't know.{w=0.2} Relax."
+y s "I never got a chance to.{w=0.1}.{w=0.1}.{w=0.15} I don't know.{w=0.2} Relax."
 
 menu:
     "Why not now?":
@@ -263,8 +271,6 @@ menu:
 
 y s "Well I-"
 
-y s "This should be more spread out up until day 19."
-
 y s ".{w=0.15}.{w=0.15}."
 
 y n "Yeah."
@@ -272,6 +278,13 @@ y n "Yeah."
 y n "Maybe I should do what I want."
 
 y n "Maybe I sh-"
+
+show tWhite
+with hpunch
+
+$ renpy.pause(0.1)
+
+hide tWhite
 
 play music "music/Alarm.ogg" fadein 1.0
 
@@ -281,14 +294,16 @@ y su "W-{w=0.15}what?"
 
 y su "Oh wai-{w=0.15}Quick! {w=0.15}To the nav room!"
 
+call hall from _call_hall_51
+
 play sound "sounds/DoorOpen2.ogg"
 
-e "You both run to the navigation room."
+e "You both run into the hall."
 
-e "Hei runs into the hall wearing a dress."
+e "Hei jumps out of the navigation room into the hall wearing a dress."
 
 show rz su:
-    linear 0.5 xalign 0.1 yalign 1.0
+    linear 0 xalign 0.9 yalign 1.0
 
 rz su "Guys! Something went wrong!"
 
@@ -316,11 +331,9 @@ rz s "The.{w=0.15}.{w=0.15}.{w=0.15} uh.{w=0.15}.{w=0.15}."
 
 show y m
 
-call hall from _call_hall_36
+y m "Get out of my way!"
 
 hide rz
-
-y m "Get out of my way!"
 
 call navRoom from _call_navRoom_4
 
@@ -347,9 +360,13 @@ y su "Oh God.{w=0.15}.{w=0.15}."
 
 y m "Get out of my way!"
 
+stop music fadeout 2
+
 e "Haruka types some commands into the computer."
 
 y s "I set it to restructure but it should take a few minutes."
+
+play music "music/Space.ogg" fadein 1.0
 
 y n "Cap, {w=0.15}can ya watch this screen and let me know if anything gets out of place?"
 
@@ -363,6 +380,8 @@ menu:
 y n "I'm adjusting the transfer rate to control the stability."
 
 y s "Just tell me if-"
+
+play music "music/Darker.ogg" fadein 2.0
 
 show rz su:
     linear 0 xalign 0.1 yalign 1.0
@@ -387,7 +406,7 @@ y m "Goddammit why now!"
 
 y n "It looks like it's moving slow.{w=0.15} We have time to do something."
 
-y n "I say we compound.{w=0.15} Let's take a chance.{w=0.15} The engine can take it."
+y n "So,{w=0.15} we compound.{w=0.15} Let's take a chance.{w=0.15} The engine can take it."
 
 show rz su
 
@@ -403,6 +422,8 @@ rz s "I say we just wait it out.{w=0.15} See what happens."
 
 rz s "Have our guns ready."
 
+y s "But you never made changes. {w=0.25}Besides,{w=0.15} I don't think we can rely on weapons for this sort of thing."
+
 show p s
 
 p s "Can the engine h-{w=0.1}handle the compounding process right now, {w=0.15}Haruka?"
@@ -413,7 +434,7 @@ y n "I don't know, {w=0.15}{w=0.15}but what else can we do?"
 
 show p s
 
-p s "R-right.{w=0.15}.{w=0.15}."
+p s "R-{w=0.15}right.{w=0.15}.{w=0.15}."
 
 show y m
 
@@ -421,11 +442,31 @@ y m "Cap,{w=0.15} it's up to you, {w=0.15}{w=0.1}but you have to pick {b}now{/b}
 
 menu:
     "Compound!":
+        jump compound9
         pass
 
     "We're going to wait it out.":
-        #todo branch
         pass
+
+r m "Roger, guns ready!"
+
+p m "On radar!"
+
+y m "I'm preparing compound just in case."
+
+e "The red ooze just continues to move closer to you."
+
+p su "What do we do sir?"
+
+y su "I think we need to go!"
+
+r su "Yeah,{w=0.15} I'm with that idea now."
+
+r su "Go{w=0.15} go{w=0.15} go!"
+
+y su "Finishing preperations.{w=0.15}.{w=0.15}."
+
+label compound9:
 
 y s "Alright,{w=0.15} done."
 
@@ -435,7 +476,11 @@ y s "Brace yourselves kids,{w=0.15} this might be it."
 
 show rz s
 
+stop music fadeout 1
+
 r s "I'm not ready to d-"
+
+play sound "sounds/Boost.ogg"
 
 window hide
 show black

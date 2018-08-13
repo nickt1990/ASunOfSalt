@@ -2,15 +2,19 @@
 
 define harukaLove = True
 
-show yb n
-
 yb n ".{w=0.15}.{w=0.15}."
 
+play music "music/NiceNight.ogg" fadein 4.0
+
 yb m "Wake up."
+
+show yb n
 
 window hide
 hide black
 with fade
+
+
 
 menu:
     "What are you wearing?":
@@ -29,6 +33,7 @@ yb h "What do you think?"
 menu:
     "Cute.":
         yb h "You think?"
+        yb n "No."
         yb s "It's weird isn't it."
         yb s "I look dumb.{w=0.15} I don't even know why I brought this outfit."
         yb s ".{w=0.15}.{w=0.15}."
@@ -95,6 +100,9 @@ yz s "A-{w=0.15}alright."
 
 yz n "I mean,{w=0.15} you can open your eyes."
 
+hide yb
+show yz n
+
 window hide
 hide black
 with fade
@@ -127,7 +135,11 @@ e "You hear rustling."
 
 e ".{w=0.15}.{w=0.15}."
 
+hide yz 
+
 yb s "Okay."
+
+show yb s
 
 window hide
 hide black
@@ -284,10 +296,11 @@ yz n "So I guess we should.{w=0.15}.{w=0.15}."
 
 e "She leans toward your face, closes her eyes and pushes her lips out."
 
-e "She's trembling violently, her face is scrunched up and uncomfortable looking."
+e "She's trembling violently now, her face is scrunched up and uncomfortable looking."
 
 menu:
     "Of course...":
+        show yz su
         e "The second you get close she jumps back, shocked."
         pass
 
@@ -309,9 +322,9 @@ yz s "Am I that bad at this?"
 
 yz n "I thought a lot about what you said before."
 
-yz s "I was jealous of Hei and Nema."
+yz s "I {i}was{/i} jealous of Hei and Nema."
 
-yz n "I've never taken the time to.{w=0.15}.{w=0.15}. ya'know.{w=0.15}.{w=0.15}. like somebody."
+yz s "I've never taken the time to.{w=0.15}.{w=0.15}. ya'know.{w=0.15}.{w=0.15}. like somebody."
 
 yz s "It seemed sort of like it could be nice, I don't know."
 
@@ -319,13 +332,13 @@ yz h "I've thought about it all of course."
 
 yz s "Does that make it sound sad?"
 
-yz n "Of course I have though."
+yz n "It's just.{w=0.15}.{w=0.15}."
 
 yz n "Having somebody who you're just connected to."
 
 yz h "Sharing stories, time, life."
 
-yz n "You know.{w=0.15}.{w=0.15}. and.{w=0.15}.{w=0.15}. sex."
+yz s "You know.{w=0.15}.{w=0.15}. and.{w=0.15}.{w=0.15}. sex."
 
 yz n "I always thought sex was more mental than physical."
 
@@ -368,7 +381,7 @@ yz h "I thought I'd mess everything up,{w=0.15} or weird you out, {w=0.15}or see
 
 yz n "I know I sort of project a certain image.{w=0.15}.{w=0.15}."
 
-yz s "I'm fine talking about it when I'm messing around,{w=0.15} but when it feels real like this.{w=0.15}.{w=0.15}."
+yz s "I'm fine talking about.{w=0.15}.{w=0.15}.{w=0.15} it, when I'm messing around,{w=0.15} but when it feels real like this.{w=0.15}.{w=0.15}."
 
 menu:
     "Don't worry about that.":
@@ -379,9 +392,9 @@ menu:
 
 yz n ".{w=0.15}.{w=0.15}."
 
-yz su "Is.{w=0.15}.{w=0.15}. this alright?"
-
 e "She slowly falls on the bed, pulling you down with her."
+
+yz su "Is.{w=0.15}.{w=0.15}. this alright?"
 
 e "Her head is resting on your shoulder,{w=0.15} the length of her body is sat warmly beside your own."
 
@@ -392,7 +405,7 @@ menu:
     "Sorry, let's keep some space.":
         $ harukaLove = False
         yz su "Oh."
-        yz n ".{w=0.25}.{w=0.25}."
+        yz s ".{w=0.25}.{w=0.25}."
         yz s "Oh."
         yz s "Gotcha."
         yz m "You just wanted a show."
@@ -418,5 +431,7 @@ label endDay10N:
 window hide
 show black
 with fade
+
+e ".{w=0.25}.{w=0.25}."
 
 return

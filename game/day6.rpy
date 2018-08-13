@@ -34,7 +34,7 @@ menu:
 show p s
 
 p s "Huh.{w=0.15}.{w=0.15}."
-
+play music "music/RelaxTalk.ogg" fadein 2.0
 p n "Captain?"
 
 p su "Sir!{w=0.15} Can you see?!"
@@ -72,27 +72,26 @@ menu:
 
 p n "Ever since the moment you started to rest yesterday, {w=0.15}Haruka and Hei have been arguing."
 
-p s "I d-don't know what to do, {w=0.15}it starts up the second they see each other."
+p s "I d-{w=0.15}don't know what to do, {w=0.15}it starts up the second they see each other."
 
 menu:
     "What are they arguing about?":
+        p n "Hei wants to make modifications to the ship."
+
+        p n "Haruka thinks he shouldn't, {w=0.15}she built the ship and he's not familiar with it enough to make worthwhile modifications."
+
+        p s "I.{w=0.15}.{w=0.15}. I can't understand a lot of what they say honestly, {w=0.15}it seems to be a very technical argument, {w=0.15}but that's the basic idea of it sir."
+        
+        menu:
+            "Okay.":
+                pass
+
+            "Thank you.":
+                pass
         pass
 
     "I'll talk to them.":
         p h "Of course, {w=0.15} thank you."
-        pass
-
-p n "Hei wants to make modifications to the ship."
-
-p n "Haruka thinks he shouldn't, {w=0.15}she built the ship and he's not familiar with it enough to make worthwhile modifications."
-
-p s "I.{w=0.15}.{w=0.15}. I can't understand a lot of what they say honestly, {w=0.15}it seems to be a very technical argument, {w=0.15}but that's the basic idea of it sir."
-
-menu:
-    "Ok.":
-        pass
-
-    "Thank you.":
         pass
 
 play sound "sounds/DoorOpen2.ogg"
@@ -159,7 +158,7 @@ r n "I realized how crap the weapons were when we got stuck in the blood junk th
 
 show y m
 
-y m "Crap? You built them. It was your job from the beginning, {w=0.15}and now we're supposed to trust you to make changes on the go like this?"
+y m "Crap?{w=0.25} You built them. {w=0.25}It was your job from the beginning, {w=0.15}and now we're supposed to trust you to make changes on the go like this?"
 
 show r n
 
@@ -169,7 +168,9 @@ r s "Do you want to fly out into the unknown with underpowered weapons?"
 
 show y n
 
-y n "Ya realize that because of the.{w=0.15}.{w=0.15}. unique qualities of our engine, {w=0.15}we can't slow down, {w=0.15}let alone stop this ship, {w=0.15}right?"
+y m "How would you know what kind of weapons would have worked anyways?"
+
+y n "Besides,{w=0.25} ya realize that because of the.{w=0.15}.{w=0.15}. unique qualities of our engine, {w=0.15}we can't slow down, {w=0.15}let alone stop this ship, {w=0.15}right?"
 
 show r su
 
@@ -209,21 +210,21 @@ r s "Only the tiniest smallest amount."
 
 show y m
 
-y m "Any amount could screw up everything, we're running an experimental engine.{w=0.15} How do you not get this?"
+y m "Any amount could screw us, we're running an experimental engine.{w=0.15} How do you not get this?"
 
-y n "It's just not worth the risk. "
+y m "It's just not worth the risk. "
 
-y n "We can't mess with this.{w=0.15} This engine is the reason we're even taking this trip.{w=0.15} I'm not letting you screw it up."
+y m "We can't mess with this.{w=0.15} This engine is the sole reason we're even here.{w=0.15} I'm not letting you screw it up."
 
 show r m
 
 r m "It's gonna get pretty screwed up if we get blown up by space blood or whatever."
 
-r n "Surprise, {w=0.15}I didn't plan for that sort of thing, {w=0.15}and if it comes back we might be out of options."
+r m "Surprise, {w=0.15}I didn't plan for that sort of thing, {w=0.15}and if it comes back we might be out of options."
 
 show y h
 
-y h "What are the chances that thing catches up? We'll be moving so fast."
+y m "What are the chances that thing catches up?{w=0.25} We'll be moving so fast."
 
 show r n
 
@@ -235,20 +236,20 @@ p s "H-{w=0.15}he's right.{w=0.15}.{w=0.15}. You'd think that nothing would be a
 
 show y m
 
-y m "Like you're one to talk, {w=0.15}you said we had time to go around that thing, {w=0.15}and your logic is the reason we didn't make a clean escape."
+y m "Like you're one to talk, {w=0.15}you said we should go around that thing, {w=0.15}and your lack of attention on the radar is the reason we didn't make a clean escape."
 
 y m "Like hell I'm going to listen to your opinion on this."
 
 menu:
     "Haruka you're being unfair.":
-        y n "Unfair? {w=0.15}Cap, {w=0.15}sorry if I'm a bit riled up, {w=0.15}but I wanna survive and I don't trust Hei to come through in a pinch for shit."
+        y m "Unfair? {w=0.15}Cap, {w=0.15}sorry if I'm a bit riled up, {w=0.15}but I wanna survive and I don't trust Hei to come through in a pinch for shit."
         pass
 
     "I'm sorry, {w=0.15}but I agree with Haruka.":
         y h "Thank you Cap."
         pass
 
-y n "Now that we're going as fast as we are already, our weapon can be our speed. "
+y n "Now that we're going as fast as we are already,{w=0.15} our weapon can be our speed. "
 
 y n "We just need to keep up with our weekly speed compounds and we'll be fine."
 
@@ -269,15 +270,19 @@ menu:
         r h "Awesome."
         y m "I'm sorry Cap,{w=0.15} but that just can't happen."
         y m "I'm telling you all now,{w=0.15} if you go out to work on those weapons,{w=0.15} you will die, and we will be vulnerable."
-        y n "And for the safety of us all,{w=0.15} I just can't allow us to do any unplanned changes to the engine's energy routing."
+        r m "You don't know that for sure."
+        y m "I know for sure that this is a bad idea."
+        y n "For the safety of us all,{w=0.15} I just can't allow us to do any unplanned changes to the engine's energy routing."
         y n "I'm not the captain,{w=0.15} it's not my call in the end."
         y n "I recognize that,{w=0.15} but{w=0.15}.{w=0.15}.{w=0.15}."
         y s "Please."
         y s "We cannot do this."
         menu:
-            "Sounds like I have no real choice.":
-                y n "You don't.{w=0.15} We don't."
+            "Do we really not have a choice?":
+                y s "You don't.{w=0.15} We don't."
                 y m "And Hei should already understand that."
+                y s "I wanted to talk this through and not just totally shut Hei down from the start."
+                y m "But it's just not an option."
                 pass
             "Hei, what do you think?":
                 pass
@@ -310,8 +315,6 @@ y n "Well then, {w=0.15}I'm gonna go finish my work."
 
 y n "I'll see you guys later."
 
-play sound "sounds/DoorClose2.ogg"
-
 e "Haruka walks into her room."
 
 hide y
@@ -321,8 +324,6 @@ r m "Right."
 e "Hei shuffles off to his room."
 
 hide r
-
-play sound "sounds/DoorClose2.ogg"
 
 show p s
 
@@ -334,9 +335,11 @@ e "Nema looks at you sadly, {w=0.15}then slowly walks off to her room."
 
 hide p
 
+play sound "sounds/DoorClose2.ogg"
+
 e "Everyone's gone to their rooms."
 
-e "Where would you like to go?"
+e "What would you like to do?"
 
 
 define hei6 = True
@@ -345,7 +348,7 @@ define nema6 = True
     
 label day6Menu:
 
-call hall
+call hall from _call_hall_40
     
 menu:
     "Hei's room" if hei6 == True:
@@ -380,25 +383,39 @@ jump day6Menu#day6Hei
 
 label day6Haruka:
 
+play sound "sounds/DoorOpen2.ogg"
+
 e "You walk into Haruka's room."
+
+show y h
 
 y h "Heya Cap."
 
 y n "Whatsup?"
 
 menu:
-    "Checking in":
+    "Checking in.":
         pass
 
-y h "Ah, gotcha."
+y h "Ah,{w=0.15} gotcha."
 
-y n "Well you know that I love chatting with ya, but I've got a lot to get through."
+y n "Well you know that I love chatting with ya,{w=0.15} but I've got a lot to get through."
 
-y h "See ya around, 'kay?"
+y h "See ya around,{w=0.15} 'kay?"
+
+play sound "sounds/DoorClose2.ogg"
+
+hide y h
 
 jump day6Menu#day6Haruak
 
 label day6Nema:
+
+play sound "sounds/DoorOpen2.ogg"
+
+e "You enter Nema's room."
+
+show p n
 
 p n "Hello Captain."
 
@@ -432,11 +449,13 @@ menu:
         p n "I don't even know what that means sir."
         pass
 
-    "Logic. You think it through.":
+    "Logic, you think it through.":
         p s "But sometimes that's not an option."
 
         p s "Sometimes it really is more random than anything."
         pass
+
+p s "I just can't imagine.{w=0.15}.{w=0.15}."
 
 p n "What do you do when your decision gets people killed?"
 
@@ -495,6 +514,10 @@ p h "Thank you."
 
 e "Nema turns to her work."
 
+hide p h
+
+play sound "sounds/DoorClose2.ogg"
+
 jump day6Menu #day6nema
 
 label preDinnerDay6:
@@ -507,22 +530,23 @@ with fade
 
 menu:#computer
     "Read mail.":
+        e "So the summaries from last night are here.{w=0.15}.{w=0.15}."
         label summariesD6:
         menu:
             "Haruka's summary.":
-                call day6HaruS
+                call day6HaruS from _call_day6HaruS
                 jump summariesD6
                 pass
             "Hei's summary.":
-                call day6HeiS
+                call day6HeiS from _call_day6HeiS
                 jump summariesD6
                 pass
             "Nema's summary.":
-                call day6NemaS
+                call day6NemaS from _call_day6NemaS
                 jump summariesD6
                 pass
             "Junk mail.":
-                call bMail5
+                call bMail5 from _call_bMail5
                 jump summariesD6
                 pass
             "I think I'm done.":
@@ -546,11 +570,7 @@ e "After checking email you hear a knock on the door."
 
 e "From the hallway you hear Hei's voice."
 
-show r n
-
 r n "Hey, {w=0.15}wanna grab some food?"
-
-hide r n
 
 menu:
     "Sure.":
@@ -573,9 +593,9 @@ show r m
 
 r m "Man, {w=0.15}I'm going crazy."
 
-r n "I wont hold your decision this morning against you, {w=0.15}do what you think is best."
+r n "I won't hold your decision this morning against you, {w=0.15}do what you think is best."
 
-r n "But damn, {w=0.15}why is Haruka such a dick sometimes?"
+r n "But damn, {w=0.15}why is Haruka such a worm sometimes?"
 
 r n "She wants people to step up, {w=0.15}but when they do she just shuts them down."
 
@@ -601,15 +621,19 @@ r s "So Haruka can make my life miserable?"
 
 r m "She's so hot, {w=0.15}I can't not be attracted to her."
 
-r s "But.{w=0.15}.{w=0.15}."
+r s "But,{w=0.15} she makes me so miserable."
+
+r s ".{w=0.15}.{w=0.15}."
 
 r s "I don't know."
 
 r s "This sucks."
 
-r s "I'm gonna finish in my room. "
+r s "I'm gonna finish eating in my room. "
 
 r s "I'll see you tomorrow dude."
+
+play sound "sounds/DoorOpen2.ogg"
 
 hide r
 
@@ -627,7 +651,11 @@ play sound "sounds/DoorOpen2.ogg"
 
 call blueRoom from _call_blueRoom_11
 
+stop music fadeout 3.0
+
 e "You lay down on your bed and slowly fall asleep."
+
+play music "music/Space.ogg" fadein 2.0
 
 window hide
 show black

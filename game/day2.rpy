@@ -21,11 +21,11 @@ menu:
         label summariesD2:
         menu:
             "Junk mail.":
-                call bMail1
+                call bMail1 from _call_bMail1
                 jump summariesD2
                 pass
             "Junk mail two.":
-                call bMail2
+                call bMail2 from _call_bMail2
                 jump summariesD2
                 pass
             "I think I'm done.":
@@ -132,8 +132,6 @@ menu:
 
         y n "Listenin' to some tunes, {w=0.15}yeah?"
 
-        e "Nema creeps back into the picture, {w=0.15}just outside the room."
-
         y n "This is that one band that was popular a few years ago right?"
 
         y s "What was their name?"
@@ -218,7 +216,7 @@ menu:
         
         play music "music/Space.ogg" fadein 2.0
 
-        call hall
+        call hall from _call_hall_37
 
         play sound "sounds/DoorOpen2.ogg"
 
@@ -226,7 +224,7 @@ menu:
 
         e "You walk in and she sits on the bed, facing a small screen."
 
-        call yellowRoom
+        call yellowRoom from _call_yellowRoom_5
 
         jump watchingAnime
 
@@ -247,7 +245,7 @@ menu:
         play music "music/Space.ogg" fadein 1.0
         e "You finish your food and walk out into the hallway."
 
-        call hall
+        call hall from _call_hall_38
 
         jump day2Menu
 
@@ -381,7 +379,7 @@ p n "I just finished my report for my first day of findings. Would you mind goin
 
 menu:
     "I'd love to!":
-        p h "That's great to hear Sir!"
+        p h "That's great to hear sir!"
         pass
 
     "I guess.":
@@ -438,6 +436,10 @@ e "She has pencils and books lined up on her desk. "
 
 menu:
     "Report looks great. Good job.":
+        show p h
+        p h "Thank you sir."
+        p h "I'm very glad to hear that from you."
+        p s "But I won't keep you any longer."
         pass
 
     "What's with the alcohol in your desk?" if snoopNema:
@@ -474,7 +476,7 @@ jump day2Menu
 
 label heiD2:
 
-call redRoom
+call redRoom from _call_redRoom_2
 
 show r h
 
@@ -680,17 +682,17 @@ call hall from _call_hall_20
 menu:
     "Nema's Room" if nemaRoomd2:
         $ nemaRoomd2 = False
-        call nemaD2
+        call nemaD2 from _call_nemaD2
         pass
     "Haruka's Room" if haruRoomd2:
         $ haruRoomd2 = False
-        call haruD2
+        call haruD2 from _call_haruD2
         pass
     "Hei's Room" if heiRoomd2:
         $ heiRoomd2 = False
-        call heiD2
+        call heiD2 from _call_heiD2
         pass
-    "Nav Room (Continue Story)":
+    "Nav Room (Continue Story)" if heiRoomd2 == False and haruRoomd2 == False and nemaRoomd2 == False :
         call navRoom from _call_navRoom_2
         pass
 
@@ -916,7 +918,7 @@ menu:
         
         y h "You know, actually, this one goes to you sir."
         y h "You are the captain after all."
-        p h "I'm okay with that, Sir."
+        p h "I'm okay with that, sir."
         pass
 
 e "You take a bite."

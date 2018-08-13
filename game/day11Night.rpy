@@ -6,11 +6,15 @@ define nemaPoem = False
 
 play sound "sounds/DoorClose2.ogg"
 
+stop music fadeout 3
+
 e "You enter to Nema standing in front of your computer."
 
 show p h
 
 p h "Hello sir."
+
+play music "music/CalmNight.ogg" fadein 3.0
 
 e "You sit on the side of your bed."
 
@@ -25,7 +29,7 @@ e "Nema smiles sweetly,{w=0.15} but her eyes are following you closely."
 
 p s "I hope you're not bothered by the idea of sharing a room with me for tonight."
 
-p s "I know that I'm not Haruka,{w=0.15} but I truly look forward to a chance to speak more with you,{w=0.15} Sir."
+p s "I know that I'm not Haruka,{w=0.15} but I truly look forward to a chance to speak more with you,{w=0.15} sir."
 
 menu:
     "I'm looking forward to it too!":
@@ -40,24 +44,21 @@ p n "Would you.{w=0.15}.{w=0.15}.{w=0.15}"
 
 p s ".{w=0.15}.{w=0.15}.{w=0.15}"
 
-p n "Would you mind if I sat with you on the bed?"
+p n "Would you mind if I sat beside you?"
 
 menu:
-    "Of course.":
-        pass
-
-    "Not right now.":
+    "Sure.":
         pass
 
 e "Nema promptly stands up,{w=0.15} walks over,{w=0.15} and sits down neatly beside you with her hands in her lap."
 
 e ".{w=0.15}.{w=0.15}.{w=0.15}"
 
-e ".{w=0.35}.{w=0.23}.{w=0.35}"
+e ".{w=0.35}.{w=0.33}.{w=0.35}"
 
 e ".{w=0.45}.{w=0.45}.{w=0.45}"
 
-p h "So,{w=0.15} sir. I ha-"
+p h "So,{w=0.15} sir.{w=0.45} I ha-"
 
 play sound "sounds/Knock.ogg"
 
@@ -70,6 +71,7 @@ menu:
         pass
     "Answer the door." if harukaLove == False:
         e "Haruka's standing just outside the door."
+        show y m at right
         jump day11nBegin
         pass
 
@@ -77,7 +79,7 @@ play sound "sounds/DoorOpen2.ogg"
 
 e "Haruka's standing outside of your room with a small package."
 
-show y m
+show y m at right
 
 y m "Here."
 
@@ -97,6 +99,7 @@ p su "What did she say?"
 
 menu:
     "She dropped off a package..." if harukaLove == True:
+        p su "Oh?"
         pass
     "Life support is off now." if harukaLove == False:
         p h "Oh good."
@@ -108,9 +111,13 @@ menu:
     "Check the package.":
         pass
 
+stop music fadeout 2
+
 e "You slowly open up the small box."
 
 e "It's another plain ham sandwich."
+
+play music "music/CalmNight.ogg" fadein 3.0
 
 p h "How nice of Haruka."
 
@@ -156,21 +163,13 @@ p n "He can be such a dork sometimes.{w=0.15}.{w=0.15}.{w=0.15} "
 
 p h "But,{w=0.15} I like that."
 
-menu:
-    "Me too.":
-        p h "I'm glad I'm not alone in that."
-        pass
-
-    "You're the only one.":
-        p n "Well,{w=0.15} for me it would."
-        pass
-
 p n "I think it takes a little courage to be a dork."
 
 p h "Don't you think so?"
 
 menu:
     "Yeah it does.":
+        e "Nema smiles at you."
         pass
 
     "Not really.":
@@ -232,32 +231,21 @@ p h "Right."
 
 e "Nema smiles at you,{w=0.15} then looks down at the floor."
 
-#todo space shrimp effect (move effects across screen)
-e "You sit in silence for a moment,{w=0.15} then there's a bright light out the window."
+p n "Captain, have you ever heard of space shrimp?"
 
 menu:
-    "What's that?":
+    "What?":
         pass
 
-    "Are we in danger?":
-        show p h
-        e "Nema smiles at you."
-        p n "I don't think so{w=0.15}.{w=0.15}.{w=0.15}."
-        pass
+p h "They're these little shrimp-like creatures that travel in massive packs around space."
 
-p n "Hey.{w=0.15}.{w=0.15}.{w=0.15}"
+p s "They were actually pretty common where I come from."
 
-p h "Space shrimp."
+p s "I guess maybe they don't exist here."
 
-p n "Wow.{w=0.15}.{w=0.15}.{w=0.15}"
+p s "And even if they did, we don't have windows in our rooms."
 
-menu:
-    "It's beautiful.":
-        pass
-
-    "Creepy.":
-        p su "You think so?"
-        pass
+p s ".{w=0.15}.{w=0.15}."
 
 p n "I always loved when space shrimp would pass by my home."
 
@@ -303,8 +291,6 @@ p h "Thank you sir."
 
 p n "You've always been such a great listener."
 
-p n "Me and Hei had a lot of fun.{w=0.15}.{w=0.15}.{w=0.15}"
-
 e "Nema looks down and smiles sheepishly."
 
 p n "So.{w=0.15}.{w=0.15}.{w=0.15}"
@@ -336,7 +322,7 @@ p h "Pumpkin scents were always my favorite."
 
 p n "I had this one candle,{w=0.15} white pumpkin."
 
-p h "I loved it to death."
+p h "I loved it so much."
 
 p s "But.{w=0.15}.{w=0.15}.{w=0.15}"
 
@@ -362,7 +348,7 @@ p n "The first time was the first time I found it."
 
 p n "To celebrate finding it."
 
-p h "Second time was when I was accepted into Segment 3 higher studies."
+p h "Second time was when I was accepted into Segment Three higher studies."
 
 p n "The next few times with my brothers.{w=0.15}.{w=0.15}.{w=0.15}"
 
@@ -440,7 +426,7 @@ p n "So,{w=0.15} it doesn't make me unique."
 p h "But it makes me feel understood a little bit."
 
 menu:
-    "Can I read one of your poems?":#todo read poem later
+    "Can I read one of your poems?":
         $ nemaPoem = True
         pass
 
@@ -490,7 +476,7 @@ p h "If I'm honest Captain,{w=0.15} I'm feeling a little exhausted."
 e "Nema stands up,{w=0.15} then pulls back the covers of your bed."
 
 p n "Do you want to get to bed?"
-#todo test branches
+
 menu:
     "What? Come to bed?":
         pass
@@ -588,6 +574,10 @@ e "She continues to pull her shirt up over her head and off her body."
 
 e "Once her shirt's removed,{w=0.15} she pulls down her skirt and steps over it."
 
+hide p n
+show pz n
+with fade
+
 e "She starts to fold her clothes, paying no attention to you."
 
 label day11nMenu:
@@ -604,8 +594,6 @@ menu:
         hide p h
         pass
     "Get into bed." if nemaBed == True and nemaClothes == False:
-        hide p n
-        show pz n
         e "You climb into bed."
         e "She slides into the bed next to you and pulls up the blankets."
         e "She sighs,{w=0.15} then rolls onto her side."
@@ -633,17 +621,21 @@ menu:
 
 label day11nEnd:
 
+stop music fadeout 2
+
 e "After a few moments you drift off."
 
 e ".{w=0.25}.{w=0.25}."
+
+play music "music/Woodblock.ogg" fadein 1.0
 
 window hide
 show black
 with fade
 
-#todo demon
+play sound "sounds/demonspeech11n1.ogg"
 d "Sleep well."
-
+play sound "sounds/demonspeech11n2.ogg"
 d "Our time draws near."
 
 return

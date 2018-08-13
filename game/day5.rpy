@@ -379,28 +379,23 @@ show tRed
 
 #todo demon
 
-d "Rip."
-
-
-d "Shred."
-
-
+play sound "sounds/demonspeech51.ogg"
 d "Piece by piece."
 
-
+play sound "sounds/demonspeech52.ogg"
 d "You'll burn at my hands, {w=0.15}and dance at my feet."
 
-
+play sound "sounds/demonspeech53.ogg"
 d "We shall be one, {w=0.15}and you shall be nothing."
 
-
+play sound "sounds/demonspeech54.ogg"
 d "Nothing but a limb of mine."
 
-
+play sound "sounds/demonspeech55.ogg"
 d "A hand to grasp your soul."
 
 stop music fadeout 2.0
-
+play sound "sounds/demonspeech56.ogg"
 d "All of nothing."
 
 window hide

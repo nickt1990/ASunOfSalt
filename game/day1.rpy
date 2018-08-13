@@ -24,9 +24,9 @@ e "\"Instructions will come\" is what you were told."
 
 e ".{w=0.15}.{w=0.15}."
 
-e "It had been quiet for hours at this point."
+e "It's been quiet for hours at this point."
 
-e "Then,{w=0.15} suddenly-"
+e "But suddenly-"
 
 play sound "sounds/DoorOpen2.ogg"
 
@@ -370,7 +370,7 @@ show y
 y "That's the spirit, what a loose cannon."
 
 menu:
-    "It's OK Nema, take your time.":
+    "It's okay Nema, take your time.":
         pc h "T-{w=0.15}thank you, Captain.{w=0.15}.{w=0.15}."
         pass
 
@@ -384,7 +384,7 @@ e "Nema smiles."
 
 show y
 
-show p
+show pc h
 
 y "You know, {w=0.15}we only need Mr. Weapons and we'll have our first crew meeting."
 
@@ -404,7 +404,7 @@ menu:
     "She's energetic,{w=0.15} isn't she?":
       pass
 
-show p
+show pc
 
 pc "Y-{w=0.15}yes sir, {w=0.15}she is."
 
@@ -456,7 +456,7 @@ show y su
 
 y su "A scientific historian?"
 
-show p
+show pc
 
 pc "Well I will b-"
 
@@ -495,7 +495,7 @@ show r h:
 
 r h "Howdy!"
 
-show p
+show pc
 
 menu:
     "Hey.":
@@ -526,7 +526,7 @@ show r
 
 r h "Seriously though, my name is Hei."
 
-show p
+show pc
 
 show y
 
@@ -714,7 +714,7 @@ menu:
         jump day1End
         pass
 
-pc su "Not tired Sir?"
+pc su "Not tired sir?"
 
 menu:
     "I wanted to talk to you.":
@@ -769,7 +769,7 @@ menu:
         pass
 e ".{w=0.15}.{w=0.15}."      
 
-show p
+show pc
 
 pc "Well.{w=0.15}.{w=0.15}."
 
@@ -779,13 +779,13 @@ pc h "I look forward to working together,{w=0.15} Sir."
 
 menu:
     "It will be interesting.":
-        show p
+        show pc
         pc "I believe it will sir."
         pass
     "Me too.":
         pass
 
-show p
+show pc
 
 pc "Well..."
 
@@ -797,7 +797,7 @@ stop music fadeout 5
 
 play sound "sounds/DoorOpen2.ogg"
 
-hide p
+hide pc
 
 e "Nema walks out into the hallway."
 

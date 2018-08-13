@@ -6,8 +6,9 @@ e ".{w=0.35}.{w=0.35}."
     
 e "After two nights of sharing,{w=0.15} you have the room to yourself."
 
-e "You wake up peacefully and slowly sit up."
+e "You wake up alone and slowly sit up."
 
+hide ptBlack
 window hide
 hide black
 with fade
@@ -19,23 +20,23 @@ show black
 with fade
 
 menu:#computer
-    "I should check my mail.":
+    "Check mail.":
         label summariesD13:
         menu:
             "Haruka's summary.":
-                call day13HaruS
+                call day13HaruS from _call_day13HaruS
                 jump summariesD13
                 pass
             "Hei's summary.":
-                call day13HeiS
+                call day13HeiS from _call_day13HeiS
                 jump summariesD13
                 pass
             "Nema's summary.":
-                call day13NemaS
+                call day13NemaS from _call_day13NemaS
                 jump summariesD13
                 pass
             "Junk mail.":
-                call bMail9
+                call bMail9 from _call_bMail9
                 jump summariesD13
                 pass
             "I think I'm done.":
@@ -64,6 +65,8 @@ e "No sign of anyone."
 e "As you walk closer to the kitchen you can hear the sound of somebody rustling through items in the fridge."
 
 call kitchen from _call_kitchen_1
+
+play music "music/ChillVib.ogg" fadein 1.0
 
 e "The kitchen door is open, Haruka is sitting at the table and Hei is at the fridge,{w=0.15} looking around."
 
@@ -144,10 +147,12 @@ e "Hei turns away from you two and focuses on cooking."
 
 hide r
 
+show y n:
+    linear 0.4 xalign 0.5 yalign 1.0
+
 e "You and Haruka sit for a moment, {w=0.15}and then she looks up at you."
 
-show y n:
-    linear 0.5 xalign 0.5 yalign 1.0
+
 
 y n "You know, I haven't seen Nema since yesterday."
 
@@ -172,14 +177,13 @@ y n "Yeah we argued,{w=0.15} but we kind of live together, get over it."
 
 menu:
     "You were pretty rude to her.":
+        y n "Well."
+
+        y h "Yeah, {w=0.15}I was a little bit."
         pass
 
     "Right.":
         pass
-
-y n "Well."
-
-y h "Yeah, {w=0.15}I was a little bit."
 
 y n "I just can't see eye to eye with her."
 
@@ -270,10 +274,10 @@ e "Haruka smiles at you and continues to eat."
 
 call hall from _call_hall_4
 
-e "You finish your eggs and head out of the kitchen.{w=0.15}.{w=0.15}."
-
 hide y
 hide r
+
+e "You finish your eggs and head out of the kitchen.{w=0.15}.{w=0.15}."
 
 play sound "sounds/DoorOpen2.ogg"
 
@@ -289,12 +293,14 @@ window hide
 show black 
 with fade
 
+play music "music/Idle.ogg" fadein 1.0
+
 menu:#computer
     "I'll see if I have any mail.":
         label summariesD132:
         menu:
             "Junk mail.":
-                call bMail10
+                call bMail10 from _call_bMail10
                 jump summariesD132
                 pass
             "I think I'm done.":
@@ -312,6 +318,8 @@ window hide
 hide black 
 with fade
 
+stop music fadeout 3
+
 play sound "sounds/Knock.ogg"
 
 e "Some time passes,{w=0.15} and you hear a knock on your door."
@@ -323,6 +331,8 @@ menu:
 play sound "sounds/DoorOpen2.ogg"
 
 show y h
+
+play music "music/CalmNight.ogg" fadein 1.0
 
 y h "Heya Cap!"
 
@@ -376,9 +386,13 @@ play sound "sounds/DoorClose2.ogg"
 
 hide y
 
+stop music fadeout 2
+
 e "Haruka walks out into the hall."
 
 show black
+
+play music "music/Space.ogg" fadein 1.0
 
 e "You lay on your bed for a while, {w=0.15}and then drift off to sleep."
 

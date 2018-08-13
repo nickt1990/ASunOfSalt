@@ -5,6 +5,8 @@ init:
     image p ang = "Nema/PNakedAngry.png"
     image p sad = "Nema/PNakedSad.png"
     image p sur = "Nema/PNakedSurprised.png"
+    image p da = "Nema/PCommanderSurprisedEyes.png"
+    image p he = "Nema/PCommanderSurprisedHei.png"
     image p:
         "Nema/PLeatherNeutral.png"
         pause 7
@@ -47,7 +49,14 @@ init:
         
     image p ss:
         "Nema/PLeatherSurprisedScare.png"
-        
+        pause 6
+        "Nema/PLeatherSurprisedScare2.png"
+        pause 0.1
+        repeat
+
+    image p dd:
+        "Nema/PLeatherHappyD.png"
+
     image pc:
         "Nema/PCommanderNeutral.png"
         pause 7
@@ -127,6 +136,7 @@ init:
     image y ang = "Haruka/YNakedAngry.png"
     image y sad = "Haruka/YNakedSad.png"
     image y sur = "Haruka/YNakedSurprised.png"
+    image y surDead = "Haruka/YGreenSurprisedDead.png"
     image y:
         "Haruka/YGreenNeutral.png"
         pause 7.7 

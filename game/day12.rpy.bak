@@ -1,33 +1,114 @@
 ﻿label day12:
     
+stop music fadeout 2
+
 e "You both sleep peacefully through the night."
 
+window hide
 hide black
-    
-e "Nema is still cuddled up beside you sleeping when you wake up."
+with fade
+
+play music "music/MorningAlarm.ogg" fadein 2.0
+e "You wake up to the sound of your alarm."
+
+menu:
+    "Shut off alarm." if nemaBed == True:
+        e "You reach over and shut the alarm off."
+        e "Nema is still curled up beside you sleeping."
+        pass
+    "Shut off alarm." if nemaBed == False:
+        e "You reach over and shut the alarm off."
+        e "Nema is still asleep on the floor when you look over."
+        pass
+
+play music "music/Idle.ogg" fadein 3.0
 
 menu:
     "Get out of bed.":
         pass
 
-    "Stay in bed.":
-        pass
-
 e "You move quietly out of the bed and to your computer."
 
-e "There's a instant message from Haruka telling you sleep well."
+window hide
+show black 
+with fade
 
-e "No other messages."
+menu:#computer
+    "I'll read my emails.":
+        label summariesD12:
+        menu:
+            "Haruka's summary.":
+                call day12HaruS
+                jump summariesD12
+                pass
+            "Hei's summary.":
+                call day12HeiS
+                jump summariesD12
+                pass
+            "Nema's summary.":
+                call day12NemaS
+                jump summariesD12
+                pass
+            "Email from Haruka" if harukaLove:
+                e "There's an email from Haruka that came in last night."
+                e "Cap,"
+                e "I'm sorry for all the ham."
+                e "I've just been eating them a lot and when I make them I figure I might as well make an extra in case you're hungry."
+                e "They're good though, right?"
+                e "-Haru"
+                pass
+            "I think I'm done.":
+                jump day12Mid
+                pass                
+        pass
 
-show p h
+    "I don't feel like reading my emails.":
+        jump day12Mid
+        pass
 
-p h "Good morning, Sir."
+label day12Mid:
 
-hide p h
+play music "music/Pillows.ogg" fadein 2.0
 
-e "Nema stands up out of bed and begins to put her clothes on."
+window hide
+hide black 
+with fade
 
-e "Once dressed, she laid back down on the bed."
+e "You notice Nema starting to move."
+
+menu:
+    "Good morning!" if nemaBed == True and nemaClothes == True:
+        show p h
+        p h "Good morning, sir."
+        e "Nema sits up and scoots over and sits on the side of the bed."
+        pass
+
+    "Good morning!" if nemaBed == True and nemaClothes == False:
+        show pz h
+        pz h "Good morning, sir."
+        window hide
+        show black
+        with fade
+        hide pz h
+        e "Nema stands up out of bed and begins to put her clothes on."
+        show p h
+        window hide
+        hide black
+        with fade
+        e "Once dressed, she laid back down on the bed."
+        pass
+
+    "Good morning!" if nemaBed == False and nemaClothes == True:
+        e "Nema gets out of her sleeping bag,{w=0.15} walks over to the side of your bed,{w=0.15} and sits down."
+        pass
+
+    "Good morning!" if nemaBed == False and nemaClothes == False:
+        pz h "Good morning sir!"
+        hide pz h
+        show p h
+        e "She quickly gathers her clothing and puts it back on."
+        e "Then,{w=0.15} she walks over to the side of your bed and sits down."
+        pass
 
 show p h
 
@@ -35,7 +116,7 @@ p h "How did you sleep?"
 
 e "Suddenly, the door opens."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 show y n:
     linear 0 xalign 0.9 yalign 1.0
@@ -49,7 +130,7 @@ menu:
     "Good morning.":
         pass
 
-y h "..."
+y h ".{w=0.15}.{w=0.15}."
 
 y n "How was your night?"
 
@@ -60,7 +141,7 @@ menu:
     "Good.":
         pass
 
-y n "Ah,{w=0.15} I see..."
+y n "Ah,{w=0.15} I see.{w=0.15}.{w=0.15}."
 
 show p h
 
@@ -112,11 +193,11 @@ y n "Right, {w=0.15}he's still sleepin'."
 
 show p h
 
-p h "I see..."
+p h "I see.{w=0.15}.{w=0.15}."
 
 show y s
 
-y s "So..."
+y s "So.{w=0.15}.{w=0.15}."
 
 y n "Did you two get any sleeping done last night?"
 
@@ -143,9 +224,15 @@ menu:
     "We shared.":
         pass
 
-    "On the floor.":
-        p su "What?"
-        p n "No, we shared the bed.{w=0.2} Of course."
+    "On the floor." if nemaBed == False:
+        p h "I brought a sleeping bag.{w=0.15} See?"
+        e "She points to a sleeping bag on the floor."
+        y m "Yeah, I bet you did."
+        p su "Excuse me?"
+        p n "Are you implying something, Haruka?"
+        y m "I think you know exactly what I'm implying."
+        p m "I'm sorry Haruka, but I don't feel I need to defend myself any further."
+        jump nemaNoBed12
         pass
 
 y su "Oh wow,{w=0.15} really?"
@@ -158,7 +245,7 @@ p h "It was just nice to cuddle up to a warm body."
 
 show y m
 
-y m "I mean, isn't that something?"
+y m "I mean,{w=0.15} isn't that something?"
 
 show p su
 
@@ -180,7 +267,7 @@ y m "Well I wouldn't want you to."
 
 show p s
 
-p s "I'm sorry Haruka...{w=0.15} have I offended you somehow?"
+p s "I'm sorry Haruka.{w=0.15}.{w=0.15}.{w=0.15} have I offended you somehow?"
 
 show y m
 
@@ -190,7 +277,9 @@ show p s
 
 p s "Haruka, {w=0.15}I don't mean to sound obvious,{w=0.15} but Captain and I merely slept near one another."
 
-p h "My relationship with him has no bearing on yours, {w=0.15}you should have no worries."
+label nemaNoBed12:
+
+p h "My relationship with the captain has no bearing on yours, {w=0.15}you should have no worries."
 
 show y m
 
@@ -206,7 +295,7 @@ y m "You know exactly what I mean."
 
 show p s
 
-p s "Haruka, I-"
+p s "Haruka,{w=0.15} I-"
 
 show y n
 
@@ -226,7 +315,7 @@ p m "I feel that you're purposely trying to provoke me,{w=0.15} Haruka."
 
 show y n
 
-y n "I'm not doing anything, just making observations."
+y n "I'm not doing anything,{w=0.15} just making observations."
 
 show p m
 
@@ -274,7 +363,7 @@ show p m
 
 p m "Haruka, {w=0.15}I'm sorry but I don't think that we're making any progress right now."
 
-p n "Is the life support on?"
+p m "Is the life support on?"
 
 show y m
 
@@ -282,19 +371,20 @@ y m "Everything's back to normal."
 
 show p n
 
-p n "Then I'm going to leave."
+p m "Then I'm going to leave."
 
-p n "We can talk again later when you've calmed down."
+p m "We can talk again later when you've calmed down."
 
 hide p
 
 e "Nema gets up and walks out the door."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
-show y n
+show y n:
+    linear 0.45 xalign 0.5 yalign 1.0
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 e "Haruka stared blankly at the wall for a moment, {w=0.15}thinking."
 
@@ -302,7 +392,7 @@ y s "I'm sorry caps."
 
 y s "I didn't mean to get so emotional."
 
-y n "You know how I feel about Nema."
+y s "You know how I feel about Nema."
 
 menu:
     "I do.":
@@ -314,9 +404,9 @@ menu:
 
 y s "You probably think I'm insane."
 
-y n "But like I told you, {w=0.15}sex isn't some casual thing to me."
+y s "But like I told you, {w=0.15}sex isn't some casual thing to me."
 
-y s "I know I don't own you or anything,{w=0.15} I haven't even told... "
+y s "I know I don't own you or anything,{w=0.15} I haven't even told.{w=0.15}.{w=0.15}. "
 
 y n "Nevermind."
 
@@ -328,32 +418,42 @@ menu:
     "We didn't have sex.":
         pass
 
-    "We just shared a bed.":
+    "We just shared a bed." if nemaBed:
+        pass
+
+    "It's none of your business what we did.":
         pass
 
 y n "I know,{w=0.15} I know."
 
 y s "It doesn't even matter."
 
-y n "..."
+y n ".{w=0.15}.{w=0.15}."
 
 y n "I should apologize I guess."
 
-y h "Or maybe not?"
+menu:
+    "Apologize.":
+        $ nemaHarukaLove = True
+        pass
 
-y n "..."
+    ".{w=0.15}.{w=0.15}.{w=0.15}":
+        y h "Or maybe not?"
+        pass
+
+y n ".{w=0.15}.{w=0.15}."
 
 y m "Hmph."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide y
 
 e "Haruka walks out of the room."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
-e "..."
+e ".{w=0.15}.{w=0.15}."
 
 e "You hear the sound of arguing coming from the hallway."
 
@@ -361,24 +461,26 @@ menu:
     "Check it out.":
         pass
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
-call hall
+call hall from _call_hall_22
 
 e "You open the door and enter the hallway."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 e "Hei and Haruka are standing in the middle of the hallway yelling at one another."
+                                                                                     
+show y m
 
 y m "Why would I EVER do that?"
 
-show r s
-
-r s "C'mon, {w=0.15}you said it yourself that I wasn't too bad, what could it hurt?"
-
-show y m:
+show r s:
     linear 0 xalign 0.9 yalign 1.0
+
+r s "C'mon, {w=0.15}you said it yourself that I wasn't too bad,{w=0.15} what could it hurt?"
+
+show y m
 
 y m "No,{w=0.15} absolutely not."
 
@@ -412,15 +514,16 @@ r n "You're my real sunshine."
 
 show y h
 
-y h "You're a real dirtbag rollercoaster,{w=0.15} you know that?"
+y h "You're a real dirtbag,{w=0.15} you know that?"
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 hide y
 
-e "Haruka abruptyl turns and enters her room."
+e "Haruka abruptly turns and walks to her room."
 
-show r m
+show r m:
+    linear 0.4 xalign 0.5 yalign 1.0
 
 r m "Man, I thought I finally had her."
 
@@ -431,7 +534,9 @@ menu:
     "Next time.":
         pass
 
-r m "You're damn right,{w=0.15} too bad."
+show r s
+
+e "Hei just looks at you and frowns."
 
 r h "But hey!"
 
@@ -440,7 +545,7 @@ r n "How did your night go?"
 r h "Did you.{w=0.15}.{w=0.15}.{w=0.15}?"
 
 menu:
-    "...?":
+    ".{w=0.15}.{w=0.15}.?":
         pass
 
     "What?":
@@ -464,41 +569,45 @@ menu:
 r h "Take a ride on the Nema express?"
 
 menu:
-    "That's pretty rude.":
+    "Are you serious?":
+        r s "Um.{w=0.25} No?"
         pass
 
     "No.":
+        r su "Oh, {w=0.15}right."
         pass
-
-r su "Oh, {w=0.15}right."
 
 r s "Sorry, {w=0.15}I didn't mean it that way."
 
-r h "Well I did,{w=0.15} but..."
+r h "Well I did,{w=0.15} but.{w=0.15}.{w=0.15}."
 
 r n "I meant it in a bros kinda way,{w=0.15} right?"
 
 menu:
     "No.":
+        r s "Right."
+        pass
+
+    "Show your crewmate some respect.":
+        r m "Sheesh."
         pass
 
     "Whatever.":
+        r s "Fine."
         pass
-
-r s "Right."
 
 r n "Well."
 
 r n "Whatever man, {w=0.15}I got some games to play."
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
-e "Hei walks over and opens his door,{w=0.15} then..."
+e "Hei walks over and opens his door,{w=0.15} then.{w=0.15}.{w=0.15}."
 
 show p su:
     linear 0 xalign 0.9 yalign 1.0
 
-play sound "sounds/DoorOpen2.mp3"
+play sound "sounds/DoorOpen2.ogg"
 
 p su "Wait!"
 
@@ -514,7 +623,7 @@ p n "Hei{w=0.15}.{w=0.15}.{w=0.15}."
 
 show r n
 
-r n "Oh hey, {w=0.15}wanna play?"
+r n "Oh hey, {w=0.15}wanna play some games?"
 
 show p h
 
@@ -528,7 +637,7 @@ show p s
 
 p s "Wait, {w=0.15}first,{w=0.15} I want to talk for a second."
 
-p s "Talking with Captain last night got me thinking..."
+p s "Talking with Captain last night got me thinking.{w=0.15}.{w=0.15}."
 
 p n "About all the things I miss from home."
 
@@ -536,11 +645,13 @@ p s ".{w=0.15}.{w=0.15}."
 
 p h "My brothers."
 
-p n "About the people I respect here on this ship..."
+p n "About the people I respect here on this ship.{w=0.15}.{w=0.15}."
 
 p h "About the person I want to be."
 
 p n "I don't want to hold myself back anymore."
+
+p h "I think I can make this a place I want to live."
 
 p n "I just want to follow how I feel."
 
@@ -554,13 +665,15 @@ r su "W-{w=0.15}what?"
 
 show p h
 
-p h "..."
+p h ".{w=0.15}.{w=0.15}."
 
 show r n
 
-r n "..."
+r n ".{w=0.15}.{w=0.15}."
 
 r s ".{w=0.15}.{w=0.15}."
+
+show p s
 
 r s "I'm sorry,{w=0.15} Nems, I thought we.{w=0.15}.{w=0.15}."
 
@@ -582,7 +695,7 @@ p s ".{w=0.15}.{w=0.15}."
 
 p s "I suppose it is."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide p
 
@@ -590,11 +703,11 @@ e "Nema turned and walked back into her room."
 
 show r n
 
-r n "..."
+r n ".{w=0.15}.{w=0.15}."
 
 r s "Ugh."
 
-play sound "sounds/DoorClose2.mp3"
+play sound "sounds/DoorClose2.ogg"
 
 hide r
 
@@ -602,13 +715,19 @@ e "Hei walks back into his room as well."
 
 menu:
     "Head back to your room":
-        call blueRoom
+        call blueRoom from _call_blueRoom_9
         pass
 
 e "You stay in your room for the rest of the day working."
 
-e "You don't hear anyone else leave their rooms for the rest of the night."
+stop music fadeout 2
 
+e "You don't hear anyone leave their rooms for the rest of the night."
+
+play music "music/Space.ogg" fadein 1.0
+
+window hide
 show black
+with fade
 
 return

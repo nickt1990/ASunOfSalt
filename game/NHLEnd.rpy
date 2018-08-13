@@ -1,12 +1,10 @@
 ﻿label NHL:
 
-#nema doesn't want to keep jumping, reveals truth.
-
 show p n
 
 p n ".{w= 0.15}.{w= 0.15}."
 
-p n "I'm alright with whatever the Captain decides."
+p n "I'm alright with whatever the captain decides."
 
 p n "My personal preference.{w= 0.15}.{w= 0.15}. is that we don't do it."
 
@@ -26,7 +24,7 @@ show y m
 
 y m "A resource? We're dead to them."
 
-y n "They're expecting a message or two from us with a little information,{w= 0.15}and that's it."
+y n "They're expecting a message or two from us with a little information,{w= 0.15} and that's it."
 
 y n "Let's do this for.{w= 0.15}.{w= 0.15}."
 
@@ -38,7 +36,7 @@ y n "Let's see something nobody else has."
 
 show p s
 
-p s "I have to argue against that idea Sir."
+p s "I have to argue against that idea sir."
 
 p n "Let's provide value for our friends and family back home."
 
@@ -60,7 +58,7 @@ y n "Captain,{w= 0.15}what do you want to do?"
 
 menu:
     "Compound.":
-#todo if haruka flag, call HarukaEnd
+        jump HarukaEnd
         pass
 
     "Stop and follow our original orders.":
@@ -69,7 +67,7 @@ menu:
 
 label TwoWeeks: #END ---------------------------------------------------
 
-p h "A wise choice,{w= 0.15}Captain."
+p h "A wise choice,{w= 0.15} captain."
 
 show y s
 
@@ -77,13 +75,13 @@ y s "Mmm."
 
 y s ".{w= 0.15}.{w= 0.15}."
 
-y n "Not what I would have done,{w= 0.15}obviously."
+y n "Not what I would have done,{w= 0.15} obviously."
 
 y n "But.{w= 0.15}.{w= 0.15}."
 
 y n "You know what?"
 
-y n "I'm not upset."
+y n "It's cool."
 
 y h "I meant it when I said I was sorry for how I've been acting,{w= 0.15}Nema."
 
@@ -97,19 +95,17 @@ p n "I think we'll really surprise you."
 
 show y n
 
-y n "I hope so,{w= 0.15}but if you don't.{w= 0.15}.{w= 0.15}."
+y n "I hope so,{w= 0.15} but if you don't.{w= 0.15}.{w= 0.15}."
 
 y h "That's fine."
-
-show e
 
 e "Haruka and Nema look content."
 
 show y n
 
-y n "Cap,{w= 0.15}you can head back to bed after all."
+y n "Cap,{w= 0.15} you can head back to bed after all."
 
-y h "Let's give Nema a chance to shine here,{w= 0.15}yeah?"
+y h "Let's give Nema a chance to shine here,{w= 0.15} yeah?"
 
 y n "I'll talk to ya in the morning."
 
@@ -121,6 +117,8 @@ menu:
     "G'night.":
         pass
 
+call hall from _call_hall_43
+
 hide y
 hide p
 
@@ -130,10 +128,22 @@ e "You walk out of the room."
 
 e "You hear the two girls talking quietly behind you as the door closes."
 
-e "Quietly,{w= 0.15}you walk back into your room and lay on the bed."
+call blueRoom from _call_blueRoom_21
 
-e "After a few moments,{w= 0.15}you fall asleep."
+e "You walk back into your room and lay on the bed."
 
-e "About two weeks go by.{w= 0.15}.{w= 0.15}.."
+window hide
+show black
+with fade
 
-#jump day29 todo no day29
+e "After a few moments,{w= 0.15} you fall asleep."
+
+stop music fadeout 1
+
+e ".{w= 0.15}.{w= 0.15}."
+
+play music "music/Space.ogg" fadein 1.0
+
+e "Two weeks later."
+
+jump day29

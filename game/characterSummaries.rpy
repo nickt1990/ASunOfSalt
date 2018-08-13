@@ -48,8 +48,9 @@ label bMail6:#day7
 label bMail7:#day8
     e"Do you have a 1ankerin' for porkchops? {w=0.25}Th2n come on down to wacky Max3's!" 
     e"He's always got the choicest Ccuts slathered in sauce and juicy juicy juicy cuts like it like it like it liKe It Like it Like"
-    e"{size=-10}48-65-6c-70-20-6d-65-20-68-65-73-20-63-6f-6d-69-6e-67-20-66-6f-72-20-6d-65-20-68-65-6c-70-20-6f-68-20-67-6f-64-20-68-65-73-20-68-65-72-65-20-69{/size}"
-    e"{size=-10}74-20-68-75-72-74-73-20-69-74-20-68-75-72-74-73-20-77-68-79-20-64-6f-65-73-20-69-74-20-68-75-72-74-20-73-6f-20-6d-75-63-68-20-48-41-50-50-59-20-46-55-4e{/size}"
+    e"{size=-10}48-65-6c-70-20-6d-65-20-68-65-73-20-63-6f-6d-69-6e-67-20-66-6f-72-20-6d-65-20-68-65-6c-70-20-6f-68-20-67"
+    e"{size=-10}6f-64-20-68-65-73-20-68-65-72-65-20-69-74-20-68-75-72-74-73-20-69-74-20-68-75-72-74-73-20-77-68{/size}"
+    e"{size=-10}79-20-64-6f-65-73-20-69-74-20-68-75-72-74-20-73-6f-20-6d-75-63-68-20-48-41-50-50-59-20-46-55-4e{/size}"
     return
 
 label bMail8:#day9
@@ -69,14 +70,30 @@ label bMail9:#day13
     return
 
 label bMail10:#day13
-    e ""
+    e "\"It is generally true that the most fruitful developments frequently take place at those points where two different lines of thought meet."
+    e"These lines may have their roots in quite different parts of human nature, {w=0.25}in different times or different cultural environments or different religious traditions."
+    e"Hence if they actually meet,{w=0.25} that is, {w=0.25}if they are at least so much related to each other that a real interaction can take place, new and interesting developments may follow.\""
+    e"-Werner Heisenberg"
     return
 
 label bMail11:#day14
     e "You try to open the email but your computer is unresponsive."
     e "Perhaps you're getting some sort of interference?"
     return
-
+    
+label nemaMailD14:#day14
+    e "You open the email.{w=0.25}.{w=0.25}."
+    e "It looks like a poem:"
+    e"The space between stars is less"
+    e"Than the space between me"
+    e"And those"
+    e"That shake on the branch"
+    e"And fall come Winter"
+    e"And Winter come the New Year"
+    e"When they have changed"
+    e "But I am the same."
+    e"-Nema"
+    return
 
 #HEI######################################
 label day3HeiS:
@@ -96,7 +113,7 @@ label day6HeiS:
  
 label day7HeiS:
     e"Accuracy:{w=0.25} 1/3"
-    e"Summary:{w=0.25} "
+    e"Summary:{w=0.25} Haruka's mean."
     return
 
 label day8HeiS:
@@ -121,7 +138,7 @@ label day12HeiS:
     
 label day13HeiS:
     e"Accuracy:{w=0.25} 3/3"
-    e"Summary:{w=0.25} Haruka's a prude, Nema's too emotional. {w=0.25}Done with them."
+    e"Summary:{w=0.25} Haruka's a prude, Nema's too emotional. {w=0.25}Too much hassle either way."
     return
 
 label day14HeiS:
@@ -154,6 +171,7 @@ label day7NemaS:
 label day8NemaS:
     e"Accuracy:{w=0.25} 1/3"
     e"Summary:{w=0.25} .{w=0.25}.{w=0.25}."
+    e"There's nothing."
     return
     
 label day9NemaS:
@@ -200,7 +218,7 @@ label day7HaruS:
 
 label day8HaruS:
     e"Accuracy:{w=0.25} 3/3"
-    e"Summary:{w=0.25} I hoped this would be my chance to loosen up with everyone."
+    e"Summary:{w=0.25} I hoped this would be my chance to loosen up with everyone. Hah."
     return
     
 label day9HaruS:

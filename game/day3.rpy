@@ -1,19 +1,4 @@
-﻿#todo check all music is implemented
-#todo add demon to later day
-
-#todo ending idea
-# ~DONE in d2n~ haruka mentions that motokami was world renown for his crossdimensional ideas 
-# ~~ Nema is still nema at the end, it takes a human to trade places with their kind in order for them to move over to this world. Motokami gave them placeholder bodies but they aren't completely here, causing ripples in dimension -the demon
-# ~~ Nema can be persuaded to stay if shes happy as things are with haruka
-# ~~ Hei is also a being from other dimension
-# ~~ plan was that you trade with hei, nema with haruka.
-# ~~ everyone on the ship but you knows motokami
-# ~~ ending revolves around if you're sacrificed to the other dimension or not so that hei and nema can come into our world as whole										  
-
-# the ship never jumps forward or compunds, it's a teleporter backwards about a week's worth of progress.
-# the mind tracking software is there to monitor the affects that being around the unstable beings has on a persons mind
-
-label day3:
+﻿label day3:
 
 e ".{w=0.25}.{w=0.25}."
 
@@ -38,19 +23,19 @@ menu:#computer
         label summariesD3:
         menu:
             "Haruka's summary.":
-                call day3HaruS
+                call day3HaruS from _call_day3HaruS
                 jump summariesD3
                 pass
             "Hei's summary.":
-                call day3HeiS
+                call day3HeiS from _call_day3HeiS
                 jump summariesD3
                 pass
             "Nema's summary.":
-                call day3NemaS
+                call day3NemaS from _call_day3NemaS
                 jump summariesD3
                 pass
             "Junk mail.":
-                call bMail3
+                call bMail3 from _call_bMail3
                 jump summariesD4
                 pass
             "I think I'm done.":
@@ -122,7 +107,7 @@ e "Hei walks out of his room."
 play sound "sounds/DoorClose2.ogg"
 
 show r h:
-    linear 0 xalign 0.9
+    linear 0 xalign 0.9 yalign 1.0
 
 r h "Peeps."
 
@@ -232,7 +217,7 @@ define heiD3 = True
 define nemaD3 = True
 
 label day3Menu:
-call hall
+call hall from _call_hall_45
 
 menu:#MENU###################################################
     "Hei's Room" if heiD3:
@@ -458,7 +443,7 @@ menu:
 r n "Oh, {w=0.15}well I'm tired to so I'll catch you guys la-"
 
 show y m:
-    linear 0 xalign 0.9
+    linear 0 xalign 0.9 yalign 1.0
 
 y m "No."
 
@@ -535,10 +520,12 @@ menu:
         pass
 
     "It sounds special.":
+        y h "You tell me, you're the one using it."
+        menu:
+            "What?":
+                y h "Nothing."
+                pass
         pass
-
-#todo setup for ending with testing vr
-
 
 e "She smirks."
 
@@ -609,7 +596,6 @@ y n "I'm already up, {w=0.15}you can continue to be la-"
 
 play sound "sounds/Ketchup.ogg"
 
-#todo low priority new ketchup sound
 e "Ketchup squirts out of the fridge when Haru tries to open it."
 
 y su "Is this.{w=0.15}.{w=0.15}.{w=0.15} Ketchup?"
@@ -633,7 +619,7 @@ e "She turns around and looks at Hei for a moment."
 r su "Haruka! I swear I would not have done it if I kn-"
 
 show y m:
-    linear .2 xalign 0.89
+    linear .2 xalign 0.89 yalign 1.0
 
 e "She begins to swiftly walk towards him."
 
@@ -658,7 +644,7 @@ play sound "sounds/Thud.ogg"
 e "He collapses to the floor."
 
 show y m:
-    linear .3 xalign 0.5
+    linear .3 xalign 0.5 yalign 1.0
 
 y m "I just couldn't do it, {w=0.15}sorry cap."
 
@@ -702,7 +688,7 @@ stop music fadeout 2
 
 play music "music/Space.ogg" fadein 2.0
 
-call hall
+call hall from _call_hall_46
 
 e "{w=0.15}.{w=0.15}.{w=0.15}."
 
@@ -725,7 +711,7 @@ e "You find yourself in the hallway all of a sudden."
 
 e "You just barely noticed Nema walking into her open room."
 
-call pinkRoom
+call pinkRoom from _call_pinkRoom_3
 
 stop music fadeout 3
 
@@ -791,7 +777,8 @@ play sound "sounds/demonspeechd37.ogg"
 d "Do I make you smile?"
 
 menu:
-    "Yes.":#todo endings
+    "Yes.":
+        $ demonAgree = True
         play sound "sounds/demonspeechd38.ogg"
         d "A deal is struck."
         pass
@@ -815,7 +802,7 @@ stop music fadeout 3.0
 window hide
 show black
 
-call kitchen
+call kitchen from _call_kitchen_13
 
 e "You feel cold wind on your skin."
 
@@ -833,19 +820,19 @@ show r s
 
 show y m
 show y m:
-    linear 0 xalign 0.99
+    linear 0 xalign 0.99 yalign 1.0
 
 r s "Haruka c'mon, {w=0.15}it wasn't even meant for you! "
 
 show y m:
-    linear .2 xalign 0.94
+    linear .2 xalign 0.94 yalign 1.0
 
 e "She takes another step forward."
 
 r s "Haruka!{w=0.15} I swear I would not have done it if I kn-"
 
 show y m:
-    linear .2 xalign 0.89
+    linear .2 xalign 0.89 yalign 1.0
 
 e "She takes a step forward."
 
@@ -925,7 +912,7 @@ define heiRoomD32 = True
 define haruRoomD32 = True
 
 label menuD32:
-call hall
+call hall from _call_hall_47
 menu:
     "Hei's Room" if heiRoomD32:
         $ heiRoomD32 = False
@@ -933,7 +920,7 @@ menu:
     "Haruka's Room" if haruRoomD32:
         $ haruRoomD32 = False
         jump haruRoom3
-    "Work (Continues Story)":
+    "Work (Continues Story)" if heiRoomD32 == False and haruRoomD32 == False:
         jump workD3
 
 label haruRoom3:
@@ -980,7 +967,7 @@ jump menuD32
 
 label workD3:
 
-call blueRoom
+call blueRoom from _call_blueRoom_23
 
 e "You go to your room and get some work done on the computer."
 
@@ -995,7 +982,7 @@ hide black
 with fade
 
 
-call hall
+call hall from _call_hall_48
 play sound "sounds/DoorClose2.ogg"
 e "After a while,{w=0.25} you decide to head to the kitchen for dinner."
 
@@ -1029,7 +1016,7 @@ menu:
 e "Hei walks in"
 
 show r h:
-    linear 0 xalign .9
+    linear 0 xalign .9 yalign 1.0
 
 r h "Hey Chicklet.{w=0.35} Feeling better?"
 
@@ -1054,7 +1041,7 @@ e "Haruka walks through the still open door."
 play sound "sounds/DoorClose2.ogg"
 
 show y n:
-    linear 0 xalign .1
+    linear 0 xalign .1 yalign 1.0
 
 y n "Cap."
 
@@ -1707,7 +1694,7 @@ play sound "sounds/DoorClose2.ogg"
 hide p
 
 show y n:
-    linear 0.5 xalign .5
+    linear 0.5 xalign .5 yalign 1.0
     
 show y s
 
@@ -1744,11 +1731,11 @@ hide y
 
 e "Haruka walks out and goes to bed."
 
-call hall
+call hall from _call_hall_49
 
 e "You follow shortly after into the hallway.{w=0.15}.{w=0.15}."
 
-call blueRoom
+call blueRoom from _call_blueRoom_24
 
 e "And then turn into your bedroom."
 

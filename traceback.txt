@@ -1,86 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'cScreen.png'>:
-  File "game/script.rpy", line 51, in script call
-    call day1 from _call_day1
-  File "game/day1.rpy", line 54, in script
-    with fade
-IOError: Couldn't find file 'cScreen.png'.
+While running game code:
+  File "game/script.rpy", line 59, in script call
+    call day3 from _call_day3
+  File "game/day3.rpy", line 916, in script
+    menu:
+SyntaxError: invalid syntax (game/day3.rpy, line 923)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 51, in script call
-    call day1 from _call_day1
-  File "game/day1.rpy", line 54, in script
-    with fade
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\ast.py", line 1289, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\exports.py", line 1406, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\core.py", line 2123, in do_with
-    clear=clear)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\core.py", line 2553, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\core.py", line 2916, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\core.py", line 1980, in draw_screen
-    renpy.config.screen_height,
-  File "renpy/display/render.pyx", line 430, in renpy.display.render.render_screen (gen\renpy.display.render.c:6938)
-    rv = render(root, width, height, 0, 0)
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\layout.py", line 702, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\transition.py", line 178, in render
-    renpy.display.render.render(self.transitions[-1], width, height, 0, 0)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\transition.py", line 361, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\layout.py", line 702, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\layout.py", line 702, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "renpy/display/accelerator.pyx", line 108, in renpy.display.accelerator.transform_render (gen\renpy.display.accelerator.c:2047)
-    cr = render(child, widtho, heighto, st - self.child_st_base, at)
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\image.py", line 392, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\image.py", line 213, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\im.py", line 503, in render
-    texture = cache.get(self, texture=True)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\im.py", line 212, in get
-    surf = image.load()
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\display\im.py", line 553, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\loader.py", line 548, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'cScreen.png'.
+  File "game/script.rpy", line 59, in script call
+    call day3 from _call_day3
+  File "game/day3.rpy", line 916, in script
+    menu:
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\ast.py", line 1483, in execute
+    choice = renpy.exports.menu(choices, self.set)
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\exports.py", line 849, in menu
+    if renpy.python.py_eval(condition) ]
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\python.py", line 1793, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\python.py", line 597, in py_compile
+    raise e
+SyntaxError: invalid syntax (game/day3.rpy, line 923)
 
 Windows-8-6.2.9200
 Ren'Py 6.99.13.2919

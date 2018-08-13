@@ -1,5 +1,7 @@
 ﻿label day11:
 
+stop music fadeout 3
+
 window hide
 hide black
 with fade
@@ -7,6 +9,8 @@ with fade
 e "You wake up slowly and realize the body beside you is now gone."
     
 e "Haruka is out of sight."
+
+play music "music/Space.ogg" fadein 3.0
 
 e ".{w=0.15}.{w=0.15}."
 
@@ -43,7 +47,7 @@ label d11MorningHall:
 e "There's some sound coming from the hallway."
 
 menu:
-    "Check it out.":
+    "Enter the hall.":
         pass
         
 call hall from _call_hall_10
@@ -65,7 +69,7 @@ menu:
         pass
 
     "How'd you sleep?":
-        y h "Good."
+        y s "Good."
         e "Haruka looks down for a moment, as if thinking."
         y n "I turned the systems back on so we could meet up with everyone.{w=0.15} Just so you know."
         pass
@@ -97,11 +101,13 @@ menu:
         y s "I just wanted to say.{w=0.15}.{w=0.15}."
         pass
 
-y n "I'm sorry about last night."
+y s "I'm sorry about last night."
 
 y s "I know I'm kind of awkward when it comes to stuff like that."
 
 y n "I just wanted to let you kn-"
+
+play music "music/SpaceSunday.ogg" fadein 3.0
 
 play sound "sounds/DoorOpen2.ogg"
 
@@ -195,7 +201,7 @@ show y s
 
 y s "Well,{w=0.2} we don't have to switch."
 
-y n "I mean,{w=0.2} it would probably be easier to just stay with how things are,{w=0.2} right?"
+y s "I mean,{w=0.2} it would probably be easier to just stay with how things are,{w=0.2} right?"
 
 show r su
 
@@ -213,7 +219,7 @@ show y su
 
 y su "Oh,{w=0.2} well."
 
-y h "Yeah,{w=0.2} I mean-"
+y s "Yeah,{w=0.2} I mean-"
 
 show r h
 
@@ -309,12 +315,11 @@ y m "I'll do it."
 
 menu:
     "Are you sure?":
+        y m "Yeah,{w=0.15} whatever."
         pass
 
     "Alright.":
         pass
-
-y m "Yeah,{w=0.15} whatever."
 
 show r h
 
@@ -406,6 +411,6 @@ call blueRoom from _call_blueRoom_5
 
 e "You turn the other way and walk into your room."
 
-call blueRoom
+call blueRoom from _call_blueRoom_18
 
 return

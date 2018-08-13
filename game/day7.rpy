@@ -14,7 +14,11 @@ menu:
     "Answer the door.":
         pass
 
+play sound "sounds/DoorOpen2.ogg"
+
 show p h
+
+play music "music/SpaceSunday.ogg" fadein 2.0
 
 p h "Hello sir!"
 
@@ -45,7 +49,7 @@ menu:
         p su "What?!"
         pass
 
-p h "Oh sir! My apologies! It's my favorite holiday!"
+p h "Oh sir!{w=0.25} My apologies!{w=0.25} It's my favorite holiday!"
 
 p h "It's celebrates the historic day in 2013 that scientists discovered our Peggy!"
 
@@ -87,13 +91,23 @@ menu:
         jump pastExp
         pass
 
-p s "Oh.{w=0.15}.{w=0.15}. w-well, {w=0.15}Haruka would be able to explain better than me."
+p s "Oh.{w=0.15}.{w=0.15}. w-{w=0.15}well, {w=0.15}Haruka would be able to explain better than me."
 
-p n "B-but, {w=0.15}I know that we we owe our existence to it!"
+p n "B-{w=0.15}but, {w=0.15}I know that we we owe our existence to it!"
 
-p n "It directly led to us being able to build and sustain Station 001."
+p n "It directly led to us being able to build and sustain Station Zero-One."
 
-p n "If we hadn't had at least Station 001 built by the time of The Shred, {w=0.15}humans would most likely not have survived onward as a species."
+p n "If we hadn't had at least Station Zero-One built by the time of The Shred, {w=0.15}humans would most likely not have survived onward as a species."
+
+p h "Haven't you ever noticed that most modern names have roots in the Japanese or Chinese languages?"
+
+p n "It's because Zero-One was launched and sustained by mostly Eastern Asia scientists."
+
+p h "Even still,{w=0.15} there was a small variety of ethnic groups on the station."
+
+p h "It's fascinating how it all played out."
+
+p s "Despite the tragedy of it all,{w=0.15} of course.{w=0.15}.{w=0.15}."
 
 p h "To me, {w=0.15}Peggy day is the start of a new history for the human race. "
 
@@ -134,7 +148,7 @@ r s "I guess so..?"
 
 show p h
 
-p h "It's a national holiday!"
+p h "It's an officially recognized holiday!"
 
 show r m
 
@@ -154,7 +168,7 @@ p s "Could we have a, {w=0.15}uhm.{w=0.15}.{w=0.15}."
 
 menu:
     "What?":
-        p n "What would you think of a Peggy day Celebration tonight? I'll set everything up on my own, {w=0.15}it will be no hassle sir, {w=0.15}I promise."
+        p n "What would you think of a Peggy Day Celebration tonight?{w=0.35} I'll set everything up on my own, {w=0.15}it will be no hassle sir, {w=0.15}I promise."
         pass
 
     "A celebration?":
@@ -167,10 +181,10 @@ menu:
     "Sure.":
         pass
 
-    "No, {w=0.15}we can't spare the time.":
+    "I guess.":
         pass
 
-p h "S-sir! Thank you so much! I'll set it all up sir, {w=0.15}no worries!"
+p h "S-{w=0.15}sir! Thank you so much!{w=0.35} I'll set it all up sir, {w=0.15}no worries!"
 
 p h "I even brought my board game on the mission in preparation!"
 
@@ -198,9 +212,11 @@ p h "I'll see you both tonight!"
 
 p h "Thank you again Captain!"
 
-e "Nema runs off into her room."
-
 hide p
+
+play sound "sounds/DoorOpen2.ogg"
+e "Nema runs off into her room."
+play sound "sounds/DoorClose2.ogg"
 
 show r su:
     linear 0.5 xalign 0.5 yalign 1.0
@@ -211,6 +227,8 @@ r s "I hope this party doesn't turn out to just be a lecture."
 
 show y h:
     linear 0 xalign 0.9 yalign 1.0
+
+play sound "sounds/DoorOpen2.ogg"
 
 y h "What party?"
 
@@ -241,11 +259,11 @@ menu:
 
         show r h
 
-        r h "No problem my dude! I totally understand."
+        r h "No problem my dude!{w=0.25} I totally understand."
 
         show y n
 
-        y n "Yep."
+        y m "Yep."
         pass
 
     "I agree!":
@@ -273,9 +291,12 @@ show y h
 
 y h "Eh."
 
+show y h:
+    linear 0.5 xalign 0.95 yalign 1.0
+
 e "Haruka shrugs and starts to walk away."
 
-y n "Wait."
+y n "Oh, {w=0.15}wait."
 
 y s "Is Nema putting this party on?"
 
@@ -321,10 +342,12 @@ if day7Hei or day7Haru:
     menu:
         "Haruka's Room" if day7Haru:
             $ day7Haru = False
+            play sound "sounds/DoorOpen2.ogg"
             call yellowRoom from _call_yellowRoom_4
             jump day7HarukaRoom
             pass
         "Hei's Room" if day7Hei:
+            play sound "sounds/DoorOpen2.ogg"
             $ day7Hei = False
             call redRoom from _call_redRoom_7
             jump day7HeiRoom
@@ -354,7 +377,7 @@ y n "I've got tons to do before tonight if I want some free time."
 y s "So,{w=0.15} gotta focus, {w=0.15}sorry Cap."
 
 hide y
-
+play sound "sounds/DoorClose2.ogg"
 jump day7FreeTime
 
 label day7HeiRoom:
@@ -387,42 +410,44 @@ menu:
 
 r h "Damn right. {w=0.15}I'm gonna beat you this time."
 
-r m "Now GET OUT."
+r m "Now {b}GET OUT{/b}."
 
 hide r
-
+play sound "sounds/DoorClose2.ogg"
 jump day7FreeTime
 
 label partyTime:
 
-call blueRoom
+call blueRoom from _call_blueRoom_25
 
 e "Seems like everyone is busy."
 
-e "You spend some time checking your computer."
+e "You spend some time catching up on your mail."
 
 window hide
 show black 
 with fade
+
+play music "music/Idle.ogg" fadein 2.0
 
 menu:#computer
     "Read mail.":
         label summariesD7:
         menu:
             "Haruka's summary.":
-                call day7HaruS
+                call day7HaruS from _call_day7HaruS
                 jump summariesD7
                 pass
             "Hei's summary.":
-                call day7HeiS
+                call day7HeiS from _call_day7HeiS
                 jump summariesD7
                 pass
             "Nema's summary.":
-                call day7NemaS
+                call day7NemaS from _call_day7NemaS
                 jump summariesD7
                 pass
             "Junk mail.":
-                call bMail6
+                call bMail6 from _call_bMail6
                 jump summariesD7
                 pass
             "I think I'm done.":
@@ -448,14 +473,14 @@ play sound "sounds/DoorOpen2.ogg"
 
 call hall from _call_hall_34
 
-show y h
+show y h:
+    linear 0 xalign 0.9 yalign 1.0
 
 y h "Hey Cap! It's party time."
 
 y n "Ya ready for a lifetime of lectures?"
 
-show r h:
-    linear 0 xalign 0.9 yalign 1.0
+show r h
 
 r h "Guys, {w=0.15}we can just pretend we fell asleep."
 
@@ -489,8 +514,9 @@ show y su
 
 y su "What the-"
 
-show p h:
-    linear 0 xalign 0.1 yalign 1.0
+play music "music/ChillVib.ogg" fadein 2.0
+
+show p h at left
 
 p h "Hey!{w=0.15} G-{w=0.15}guys! "
 
@@ -588,7 +614,8 @@ r n "Uhh."
 
 e "Nema looks directly into Hei's eyes."
 
-show p n
+show p n:
+    linear 0.5 xalign 0.1 yalign 1.0
 
 p n "Now."
 
@@ -617,7 +644,7 @@ menu:
 
 show p n
 
-p n "I am O-{w=0.25}oaky{w=0.15}.{w=0.15}.{w=0.15}.{w=0.25} sir."
+p n "I am O-{w=0.25}o{w=0.15}a{w=0.15}k{w=0.15}y{w=0.15}.{w=0.15}.{w=0.15}.{w=0.25} sir."
 
 p n "Please."
 
@@ -662,6 +689,9 @@ show p n
 p n "I like that."
 
 p h "Hei you are{w=0.15} always honest and I.{w=0.35} Like.{w=0.35} That."
+
+show p h:
+    linear 0.5 xalign 0.2 yalign 1.0
 
 e "Nema puts her arm around Hei."
 
@@ -709,7 +739,7 @@ y m "Like?"
 
 show p h
 
-p h "My brothers{w=0.15}*hic*{w=0.15} always had some{w=0.15}thing new to play."
+p h "My brothers{w=0.15} *hic*{w=0.15} always had some{w=0.15}thing new to play."
 
 p n "They were{w=0.15} the fun ones."
 
@@ -755,9 +785,15 @@ show p h
 
 p h "Awww."
 
+show p h:
+    linear 0.35 xalign 0.22 yalign 1.0
+
 e "Nema smiles and gives Hei a hug."
 
 p h "What{w=0.15} a sweetie-pie."
+
+show p h:
+    linear 0.35 xalign 0.2 yalign 1.0
 
 show r su
 
@@ -784,6 +820,8 @@ e "Nema let out a little wink."
 show r s
 
 r s "Cap I don't think I feel right sitting here right now."
+
+r s "Swap me man,{w=0.15} please."
 
 show y m
 
@@ -827,16 +865,13 @@ show p m
 
 p m "Yeah, {w=0.15}ruude!"
 
-show r m
-
-r m "I'm done. {w=0.15}Nema's cuter anyways."
-
 menu:
     "Is this a conversation to have while we're all here?":
         pass
 
-    "Well then.":
-        pass
+show r m
+
+r m "I'm done. {w=0.15}Nema's cuter anyways."
 
 show y h
 
@@ -924,6 +959,9 @@ show p h
 
 p h "Hei!"
 
+show p h:
+    linear 0.35 xalign 0.22 yalign 1.0
+
 e "Nema smiles and nuzzles up to him."
 
 show r h
@@ -959,6 +997,7 @@ menu:
         pass
 
     "Let's just use the set anyways.":
+        jump madBros
         pass
 
 show r n
@@ -996,6 +1035,8 @@ menu:
     "Alright.":
         pass
 
+label madBros:
+
 p s "They'll get{w=0.15} mad.{w=0.15} N-{w=0.15}no."
 
 e "Nema starts to tear up."
@@ -1017,9 +1058,12 @@ menu:
 
 r su "Uhhh.{w=0.15}.{w=0.15}."
 
+show r n:
+    linear 0.35 xalign 0.49 yalign 1.0
+
 e "Hei wraps his arm around Nema."
 
-r n "It's OK. I'm sure they don't hate you."
+r n "It's okay.{w=0.15} I'm sure they don't hate you."
 
 show p s
 
@@ -1033,7 +1077,11 @@ show p s
 
 p s "They hate{w=0.15} me, {w=0.15}no."
 
+p s "I can't do what they want."
+
 p s "I don't want to{w=0.15} play anymore."
+
+r su "Can't do what they want?"
 
 show y m
 
@@ -1050,24 +1098,27 @@ y n "G'night Cap."
 
 hide y
 
-e "Haruka walks out."
-
 play sound "sounds/DoorOpen2.ogg"
+
+e "Haruka walks out."
 
 e "Nema continues to sniffle into Hei's shoulder."
 
 show r h
 
-r h "I guess I can take care of her, {w=0.15}you can go on."
+r s "I guess I can take care of her, {w=0.15}you can go on."
 
 menu:
     "Okay.":
         pass
 
     "I'll help.":
+        r n "Nah, {w=0.15}no worries man."
         pass
 
 r n "See you in the morning."
+
+stop music fadeout 2
 
 menu:
     "Good luck.":
@@ -1076,6 +1127,8 @@ menu:
 hide r
 
 hide p
+
+play music "music/Space.ogg" fadein 2.0
         
 play sound "sounds/DoorClose2.ogg"        
     
@@ -1091,14 +1144,14 @@ play sound "sounds/DoorClose2.ogg"
 
 hide y
 
+call blueRoom from _call_blueRoom_15
+
+e "Her door closes and you head into your room and go to bed."
+
 window hide
 show black
 with fade
 
-e "Her door closes and you head into your room and go to bed."
-
 e ".{w=0.15}.{w=0.15}."
-
-call blueRoom from _call_blueRoom_15
 
 return

@@ -18,6 +18,7 @@ label start:
     define nemaHarukaLove = False
     define harukaEnd = False
     define twoWeeksEnd = False
+    define demonAgree = False
 
     stop music fadeout 2.0
     
@@ -66,7 +67,6 @@ label start:
     
     call daySixCard from _call_daySixCard
     call day6 from _call_day6
-    call day6Night from _call_day6Night
     
     call daySevenCard from _call_daySevenCard
     call day7 from _call_day7
@@ -96,12 +96,12 @@ label start:
     
     label END:
 
-    $ minutes, seconds = divmod(int(renpy.get_game_runtime()), 60)
-    "Your playtime is %(minutes)d minutes and %(seconds)d seconds."
+    #$ minutes, seconds = divmod(int(renpy.get_game_runtime()), 60)
+    #"Your playtime is %(minutes)d minutes and %(seconds)d seconds."
     
-    call credits
+    call credits from _call_credits
        
-    $ renpy.full_restart()
+    #$ renpy.full_restart()
 
 init:
 

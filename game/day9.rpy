@@ -19,15 +19,15 @@ menu:#computer
         label summariesD9:
         menu:
             "Haruka's summary.":
-                call day9HaruS
+                call day9HaruS from _call_day9HaruS
                 jump summariesD9
                 pass
             "Hei's summary.":
-                call day9HeiS
+                call day9HeiS from _call_day9HeiS
                 jump summariesD9
                 pass
             "Nema's summary.":
-                call day9NemaS
+                call day9NemaS from _call_day9NemaS
                 jump summariesD9
                 pass
             "I think I'm done.":
@@ -45,15 +45,13 @@ window hide
 hide black
 with fade
 
-stop music fadeout 2.0
-
-play music "music/Space.ogg" fadein 2.0
+stop music fadeout 3.0
 
 play sound "sounds/Knock.ogg"
 
 e "Suddenly, {w=0.15}there's a loud knocking on your door."
 
-show r m
+play music "music/EasternCowboy.ogg" fadein 2.0
 
 r m "Come out here {b}COWARD.{/b}"
 
@@ -77,6 +75,8 @@ menu:
 e "You walk over to the door."
 
 e "As it slides open, {w=0.15}you see Hei standing before you."
+
+show r m
 
 r h "Finally, {w=0.15}there you are."
 
@@ -111,16 +111,22 @@ p n "May the best man win."
 
 e "Nema bows."
 
-p su "Don't forget to have some breakfast first though!"
+p h "Don't forget to have some breakfast first though!"
+
+stop music fadeout 2
 
 e "Nema walks down the hallway toward the kitchen."
 
 hide p su
 
 menu:
-    "Follow Nema into the kitchen.":
+    "Follow Nema to the kitchen.":
         call hall from _call_hall_12
         pass
+
+play sound "sounds/DoorOpen2.ogg"
+
+play music "music/SpaceSunday.ogg" fadein 2.0
 
 e "You approach the open kitchen door to see Nema at the counter."
 
@@ -140,6 +146,7 @@ menu:
         pass
 
     "Morning grumpy.":
+        y h "Yeah yeah."
         pass
 
 y s "I'm.{w=0.15}.{w=0.15}.{w=0.5} Sorry."
@@ -159,7 +166,7 @@ y s "I just feel so.{w=0.15}.{w=0.15}.{w=0.3} I don't know. "
 
 y n "Would.{w=0.15}.{w=0.15}."
 
-y h " Would.{w=0.15}.{w=0.15}.{w=0.5} you be willing to meet up and talk over drinks tonight?"
+y h " Would ya be willing to meet up and talk over drinks tonight?"
 
 y s "I have some things to say."
 
@@ -175,11 +182,15 @@ menu:
 
 hide y
 
+play sound "sounds/DoorClose2.ogg"
+
 e "Haruka makes her way out of the kitchen."
 
 e "Nema's still absorbed in her work at the counter, {w=0.15}so you quietly eat your food."
 
 e ".{w=0.15}.{w=0.15}."
+
+play sound "sounds/DoorOpen2.ogg"
 
 e "Hei pops in."
 
@@ -204,7 +215,7 @@ show r m
 
 r m "Nema I know,{w=0.5} I'm just-"
 
-r m "we're doing-{w=0.5} it's a thing Nema,{w=0.5} just-"
+r s "we're doing-{w=0.5} it's a thing Nema,{w=0.5} just-"
 
 show p n
 
@@ -214,7 +225,7 @@ show r m
 
 r m "But I have to-{w=0.25} urrrrgh."
 
-r n "{i}Captain.{/i}"
+r s "{i}Captain.{/i}"
 
 r s "{size=-6}I uhh.{/size}"
 
@@ -242,11 +253,15 @@ menu:
         call hall from _call_hall_14
         pass
 
-e "You make your way to Hei's room."
+play sound "sounds/DoorClose2.ogg"
 
 call redRoom from _call_redRoom_1
 
+e "You make your way to Hei's room."
+
 show r m
+
+stop music fadeout 2
 
 r m "Ready to face the music?"
 
@@ -259,9 +274,9 @@ menu:
 
 r h "First!"
 
-r n "Let us reminisce."
+play music "music/MelancholyPiano.ogg" fadein 2.0
 
-play music "music/Dramatic.ogg" fadein 2.0
+r n "Let us reminisce."
 
 r s "A week has passed."
 
@@ -354,6 +369,10 @@ menu:
         pass
 
     "I agree, {w=0.15}we should spend some time together Hei.":
+        r m "I'm very busy,{w=0.15} we'll see."
+        p su "Busy with what?"
+        r su "Uh.{w=0.15}.{w=0.15}."
+        r h "Busy with you!"
         pass
 
 e "Nema immediately smiles."
@@ -364,20 +383,21 @@ p h "We're two peas in a pod, {w=0.15}sir."
 
 show r h
 
-r h "Haha"
+r h "Haha."
 
 menu:
     "Are you two dating then?":
+        r n "Nah, {w=0.15}we're just friends."
         pass
 
     "Good to hear.":
+        r h "Isn't it?"
+        r h "The beauty of a blossoming friendhip right before your eyes."
         pass
-
-r n "Nah, {w=0.15}we're just friends."
 
 show p h
 
-p h "Yep! Good friends."
+p h "Yep!{w=0.15} Good friends."
 
 menu:
     "When did that happen?":
@@ -407,6 +427,8 @@ menu:
 
     "No.":
         pass
+        
+stop music fadeout 3
 
 r s "Right.{w=0.1} Right, {w=0.15}yeah, {w=0.15}just wondering."
 
@@ -414,14 +436,16 @@ r h "Alright, {w=0.15}you ready to start?"
 
 menu:
     "Born ready.":
+        r h "Music to Buff Daddy's ears."
         pass
 
     "No.":
+        r h "What?"
+        r m "C'mon man."
+        r m "Don't make Buff Daddy mad!"
         pass
 
-r h "Music to Buff Daddy's ears."
-
-r h "What?"
+play music "music/Space.ogg" fadein 2.0
 
 show p h
 
@@ -439,9 +463,11 @@ show r n
 
 r n "Alright,{w=0.1} let's do this."
 
+r m "I'll even play the original soundtrack for you this time."
+
 r m "{b}ENGAGE.{/b}"
 
-play music "music/Game.ogg" fadein 2.0
+play music "music/Diddy.ogg" fadein 1.0
 
 show p h
 
@@ -512,6 +538,8 @@ with fade
 
 e ".{w=0.2}.{w=0.2}."
 
+stop music fadeout 3
+
 e ".{w=0.2}.{w=0.2}."
 
 window hide
@@ -519,6 +547,8 @@ hide black
 with fade
 
 r ".{w=0.3}.{w=0.3}."
+
+play music "music/Space.ogg" fadein 2.0
 
 r su "Y-you beat me.{w=0.15}.{w=0.15}."
 
@@ -573,10 +603,11 @@ show r su
 r su "I wanted to!"
 
 menu:
-    "You have no work ethic. Shameful.":
+    "Shameful.":
         pass
 
     "Well, {w=0.15}there's always next time!":
+        r m "Whatever."
         pass
 
 r m "I dedicate myself to what I {b}CARE{/b} about!"
@@ -595,12 +626,12 @@ r n "It's just a game."
 
 menu:
     "Sore loser.":
+        r m "You wish, {w=0.15}wiener head."
         pass
 
     "Right, {w=0.15}it was fun!":
+        r m "Whatever,{w=0.15} dickbrains."
         pass
-
-r m "You wish, {w=0.15}wiener head."
 
 show p h
 
@@ -608,14 +639,14 @@ p h "Hei!{w=0.1} That's our Captain!"
 
 show r s
 
-r s "Whatever, {w=0.15}sorry I don't have time to waste on a stupid video game."
+r s "Sorry I don't have time to waste on a stupid video game."
 
 play sound "sounds/DoorOpen2.ogg"
 
 e "The door opens and Haruka walks through"
 
 show y n:
-    linear 0.5 xalign 0.1 yalign 1.0
+    linear 0 xalign 0.1 yalign 1.0
 
 y n "Since when have you not had time to waste?"
 
@@ -644,6 +675,8 @@ show y n
 y n "Hah."
 
 hide y
+
+play sound "sounds/DoorClose2.ogg"
 
 e "Haruka walks out."
 
@@ -702,7 +735,7 @@ p s "C-captain?{w=0.15} Would you like to join us?"
 menu:
     "I have plans with Haruka tonight.":
         r su "Oh.{w=0.15}.{w=0.15}. with Haruka?"
-        r s "Right.{w=0.35} Ok."
+        r s "Right.{w=0.35} Okay."
         pass
 
     "I have work to do.":
@@ -741,18 +774,18 @@ call blueRoom from _call_blueRoom_8
 
 e "There's a notification on your computer."
 
-e "You check your email."
-
 window hide
 show black
 with fade
+
+play music "music/Idle.ogg" fadein 2.0
 
 menu:#computer
     "I'll read my mail.":
         label summariesD92:
         menu:
             "Junk mail.":
-                call bMail8
+                call bMail8 from _call_bMail8
                 jump summariesD92
                 pass
             "I think I'm done.":
@@ -765,7 +798,9 @@ menu:#computer
         pass
 
 label day9End:
-   
+
+play music "music/Space.ogg" fadein 2.0
+
 window hide
 hide black
 with fade

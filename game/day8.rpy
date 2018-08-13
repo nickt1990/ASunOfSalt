@@ -4,9 +4,13 @@ play sound "sounds/Knock.ogg"
 
 e "There's a knock at your door."
 
+e "You check the time."
+
+e "It's morning."
+
 window hide
 hide black
-with fade
+
 
 menu:
     "Hello?":
@@ -189,7 +193,7 @@ show y m
 
 y m "It's sickening.{w=0.15} Just being near you."
 
-y s "Just get on with it already and bang, {w=0.15}we can wait."
+y m "Just get on with it already and bang, {w=0.15}we can wait."
 
 show p h
 
@@ -203,7 +207,7 @@ show y su
 
 y su "Woah, {w=0.15}what?"
 
-y n "Are you serious?"
+y s "Are you serious?"
 
 e "Hei smiles sheepishly."
 
@@ -233,9 +237,9 @@ p su "Self re-{w=0.15}.{w=0.15}.{w=0.15}. what?"
 
 show y m
 
-y m "It's great to know you two can't do {i}ANYTHING{/i} on your own other than screw this loser."
+y m "It's great to know you can't do {i}ANYTHING{/i} on your own other than screw this loser."
 
-y m "We're doomed. {w=0.15}This mission was DOA.{w=0.25} What am I even doing trying so hard."
+y m "We're doomed. {w=0.15}This mission was dead on arrival.{w=0.25} What am I even doing trying so hard."
 
 show r su
 
@@ -243,7 +247,7 @@ r su "Uh, {w=0.15}what?"
 
 show p su
 
-p su "H-haruka.{w=0.15}.{w=0.15}.{w=0.15} it's not a big deal, {w=0.15}we were just having fun."
+p su "H-{w=0.15}haruka.{w=0.15}.{w=0.15}.{w=0.15} it's not a big deal, {w=0.15}we were just having fun."
 
 show y su
 
@@ -257,7 +261,7 @@ r su "Woah, {w=0.15}where's this comin' from? Lay off her man."
 
 show y m
 
-y m "Oh fuck you, {w=0.15}you've never thought of another person in your life, {w=0.15}don't pretend like ya have her best interest in mind."
+y m "Oh shut up, {w=0.15}you've never thought of another person in your life, {w=0.15}don't pretend like ya have her best interest in mind."
 
 show r su
 
@@ -295,7 +299,7 @@ e "She pops her head back in the door."
 show y m:
     linear 0 xalign -0.1 yalign 1.0
 
-y m "And we're still having our goddamn meeting later. "
+y m "And we're still having our damn meeting later. "
 
 play sound "sounds/DoorClose2.ogg"
 
@@ -355,7 +359,9 @@ p h "Good luck."
 
 e "They smile warmly at one another."
 
-e "Hei leaves"
+play sound "sounds/DoorOpen2.ogg"
+
+e "Hei walks into the hall."
 
 hide r
 
@@ -367,7 +373,7 @@ menu:
         pass
 
     "Me too.":
-        p h "Exactly."
+        p h "I'm glad."
         pass
 
 p n "This is our life now."
@@ -380,7 +386,7 @@ p n "Oh, {w=0.15}yes.{w=0.25} He's a great friend."
 
 p h "That's why I want him and Haruka to get along."
 
-p s "When they fight, {w=0.15}they make their feelings a public thing."
+p s "When they fight, {w=0.15}they tend to make their feelings a public thing."
 
 p s "It brings the mood of everyone down, {w=0.15}I feel."
 
@@ -464,12 +470,12 @@ r n "\"This meal feeds two.\""
 
 menu:
     "And that didn't work?":
+        r h "Weird, {w=0.15}right?"
         pass
 
     "At least you.{w=0.15}.{w=0.15}.{w=0.15} tried?":
+        r s "Did my best dude."
         pass
-
-r h "Weird, {w=0.15}right?"
 
 r n "I'm not totally convinced she heard me,{w=0.15} but whatever.{w=0.15} She'll get over it."
 
@@ -513,14 +519,18 @@ menu:
     "Hei's Room" if day8Hei:
         $ day8Hei = False        
         call redRoom from _call_redRoom
+        play music "music/Game.ogg" fadein 1.0
         e "In Hei's room, {w=0.15}he and Nema are just playing games."
         e "The don't acknowledge you."
+        play music "music/Space.ogg" fadein 2.0
         jump day8Free
     "Go back to your room" if day8Haru == False and day8Hei == False:
         call blueRoom from _call_blueRoom_2
         jump day8AfterFree
 
 show y h
+
+play music "music/SlowSadPiano.ogg" fadein 2.0
 
 y h "Oh, {w=0.15}hey Cap."
 
@@ -543,33 +553,35 @@ y m "Seriously, {w=0.15}am I imagining it, {w=0.15}or am I the only one who give
 
 menu:
     "They're adults, {w=0.15}they can do what they want.":
+        y s "Well duh. Thanks Captain, {w=0.15}gee."
+
+        y n "Of course they can."
         pass
 
     "No, {w=0.15}the others are pretty lax.":
+        y m "Total understatement."
         pass
 
-y s "Well duh. Thanks Captain, {w=0.15}gee."
-
-y n "Of course they can."
-
-y n "I just wish that they cared about quality in any part of their lives."
+y s "I just wish that they cared about quality in any part of their lives."
 
 y m "Or having some semblance of respect for themselves, {w=0.15}or anyone around them."
 
 menu:
     "Are you jealous?":
+        y s "Jealous of those idiots?"
         pass
 
     "Is this really about self-respect?":
+        y m "What do you mean?"
+        y s "I guess it's also partially because they've proven to be worthless."
+        y m "But if you're saying I'm jealous then you're insane."
         pass
-
-y n "Jealous of those idiots?"
 
 y m "I thought I'd be surrounded by greats on this mission, {w=0.15}y'know?"
 
 y m "I thought I'd be among people who worked hard and gave a shit like me, {w=0.15}so I wouldn't have to be the bad guy all the time."
 
-y s "I'm sick of being the odd one out, {w=0.15}and I'm tired of always feeling like an asshole."
+y s "I'm sick of being the odd one out, {w=0.15}and I'm tired of always feeling like I'm babysitting a ton of idiots."
 
 y m "I want everyone to be the best they can, {w=0.15}and I refuse to hide it."
 
@@ -580,22 +592,30 @@ menu:
         pass
 
     "Don't hide how you feel, {w=0.15}I get it.":
+        y s "Sure.{w=0.15}.{w=0.15}."
+        y s ".{w=0.15}.{w=0.15}."
         pass
 
 y n "Cap I kind of want to be alone, {w=0.15}thanks."
 
-y s "I know you mean well, {w=0.15}but.{w=0.15}.{w=0.15}. please?"
+stop music fadeout 3.0
+
+y s "I know you mean well, {w=0.15}but.{w=0.15}.{w=0.15}.{w=0.15} please?"
 
 menu:
     "No problem.":
+        y s "Thank you."
         pass
 
     "No.":
+        y s "You're not being romantic right now."
+        y s "You're being a jerk."
+        y m "Leave."
         pass
 
-y s "Thank you."
-
 hide y s
+
+play sound "sounds/DoorClose2.ogg"
 
 call hall from _call_hall_6
 
@@ -604,36 +624,37 @@ e "You walk out into the empty hallway."
 jump day8Free
 
 label day8AfterFree:
+play music "music/Space.ogg" fadein 1.0
 
 menu:
     "I guess I can get some work done now?":
         pass
 
-call blueRoom
+call blueRoom from _call_blueRoom_16
 e "You go back to your room and get on the computer."
 
 window hide
 show black
 with fade
-
+play music "music/Idle.ogg" fadein 1.0
 menu:#computer
     "Read mail.":
         label summariesD8:
         menu:
             "Haruka's summary.":
-                call day8HaruS
+                call day8HaruS from _call_day8HaruS
                 jump summariesD8
                 pass
             "Hei's summary.":
-                call day8HeiS
+                call day8HeiS from _call_day8HeiS
                 jump summariesD8
                 pass
             "Nema's summary.":
-                call day8NemaS
+                call day8NemaS from _call_day8NemaS
                 jump summariesD8
                 pass
             "Junk mail.":
-                call bMail7
+                call bMail7 from _call_bMail7
                 jump summariesD8
                 pass
             "I think I'm done.":
@@ -646,7 +667,7 @@ menu:#computer
         pass
 
 label day8Mid:
-
+play music "music/Space.ogg" fadein 1.0
 window hide
 hide black
 with fade
@@ -743,7 +764,17 @@ y n "If anything goes out of range, {w=0.15}then you can type in the emergency c
 
 y n "The codes are all in an email I sent you on our first or second day."
 
-y n "Really as long as you know that, {w=0.15}you'll be fine in nine out of ten situations."
+menu:
+    "I never got that email.":
+        pass
+
+y s "You know, now that you mention it,{w=0.15} I've had trouble sending anything to you."
+
+y n "I'll try to send it again tonight."
+
+y n "But anyways."
+
+y n "Really as long as you know what I just said, {w=0.15}you'll be fine in nine out of ten situations."
 
 y n "The most important bar to watch is green."
 
@@ -752,6 +783,8 @@ show r n
 r n "What's the green bar do?"
 
 show y su
+
+play music "music/SlowSadPiano.ogg" fadein 5.0
 
 y su "What?"
 
@@ -779,7 +812,7 @@ y m "I worked my ass off my entire life-"
 
 show y s
 
-y s "and threw my life away to go on this mission.{w=0.15}.{w=0.15}."
+y s "I threw my life away to go on this mission.{w=0.15}.{w=0.15}."
 
 show r su
 
@@ -823,7 +856,7 @@ y m "What a goddamn joke this all turned out to be."
 
 y m "I threw {b}EVERYTHING{/b} away for this."
 
-y m "Screw this and fuck you."
+y m "I give up."
 
 play sound "sounds/DoorOpen2.ogg"
 
@@ -851,11 +884,11 @@ menu:
 
 r m "Well duh, {w=0.15}I see that now dude."
 
-r n "Still, {w=0.15}wasn't that sort of an overreaction? I mean c'mon."
+r n "Still, {w=0.15}wasn't that sort of an overreaction?{w=0.15} I mean c'mon."
 
 show p s
 
-p s "I cannot say I'd have responded the same, {w=0.15}but she has seemed to be a bit irritable lately."
+p s "I cannot say I'd have responded the same, {w=0.15}but she has seemed to have a lot on her mind lately."
 
 show r n
 
@@ -868,18 +901,14 @@ p s "I'm sorry Hei, {w=0.15}but I'm not sure that would help right now."
 p n "Perhaps if Captain went to see her?"
 
 menu:
-    "Not a good idea.":
-        r n "Well, {w=0.15}you know best man."
-        pass
-
-    "Alright.":
-        p su "Uhm,{w=0.15} Hei."
-        p n "Maybe give her some time."
-        r su "You think so?"
-        r s "I guess I can do that{w=0.15}.{w=0.15}.{w=0.15}."
+    "She'll come to me when she's ready.":
+        r m "Look at the confidence on this one."
+        p s "If you say so,{w=0.15} I trust your judgement sir."
         pass
 
 show r n
+
+stop music fadeout 4
 
 r s "If we're done here though, {w=0.15}I think I'm gonna go snooze."
 
@@ -887,9 +916,12 @@ show p s
 
 p s "Given the circumstances that might be the best thing for all of us."
 
+play music "music/Space.ogg" fadein 1.0
+
 menu:
     "Goodnight you two.":
         pass
+
 
 p s "Goodnight Captain."
 

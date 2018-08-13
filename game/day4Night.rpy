@@ -234,12 +234,16 @@ y m "Alright, {w=0.15}Captain, {w=0.15}we can get a shot off on where the main s
 
 y m "Do you want to fire a shot or just go?"
 
-#todo make both sides of this an ending
 menu:#todo this leads to you potentially hitting "yourself" ~ ending - Blow them up and then in the end it's you? Set up a warp jump that's you traveling through time at some point. (Here?)
     "Fire whatever's necessary then get out of here.":
         pass
 
     "Just go, {w=0.15}we shouldn't risk it.":
+        y m "Alright,{w=0.15} on my mark."
+        y m "Three."
+        y m "Two."
+        y m "One."
+        jump capEngage4n
         pass
 
 y m "OK, {w=0.15}Hei, {w=0.15}can you get a lock?"
@@ -286,14 +290,13 @@ y m "One."
 
 y m "Hei now!"
 
-
 show r su
 
 r su "Right!"
 
 window hide
 hide ptRed
-show tWhite #todo test white and play thru this part
+show tWhite
 with hpunch
 hide tWhite
 show ptRed
@@ -302,7 +305,7 @@ play sound "sounds/Explosion.ogg"
 
 e "There's a large flash of light and explosion."
 
-
+label capEngage4n:
 
 show y su
 
