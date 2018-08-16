@@ -665,7 +665,7 @@ menu:
     "Need help?":
         pass
 
-    "OK.":
+    "Okay.":
         pass
 
 e "Nema ignores you for a second and moves to put the food away."
@@ -752,7 +752,7 @@ menu:
         p s "Well no worries I suppo-"
         pass
 
-    "Are you alright?.":
+    "Are you alright?":
         p s "I'm okay,{w=0.15} it was just very sudde-"
         pass
 
@@ -799,7 +799,7 @@ menu:
     "How did we not notice this asteroid before?":
         p n "I'm sorry sir, {w=0.15}I actually did notice the asteroid before, {w=0.15}but I failed to think it could have this affect."
         menu:
-            "That's OK.":
+            "That's Okay.":
                 pass
 
             "Please keep an eye out for things like this.":
@@ -910,7 +910,7 @@ p h "Well, {w=0.15}of course!"
 p h "I'm going to get to my room as well Captain, {w=0.15}be sure to enjoy this personal night the best you can!"
 
 menu:
-    "OK.":
+    "Okay.":
         pass
 
     "I'll do my best!":

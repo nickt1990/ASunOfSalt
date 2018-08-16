@@ -1,28 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 59, in script call
-    call day3 from _call_day3
-  File "game/day3.rpy", line 916, in script
-    menu:
-SyntaxError: invalid syntax (game/day3.rpy, line 923)
+  File "game/script.rpy", line 51, in script call
+    call dayOneCard from _call_dayOneCard
+  File "game/script.rpy", line 51, in script call
+    call dayOneCard from _call_dayOneCard
+ScriptError: could not find label 'dayOneCard'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 59, in script call
-    call day3 from _call_day3
-  File "game/day3.rpy", line 916, in script
-    menu:
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\ast.py", line 1483, in execute
-    choice = renpy.exports.menu(choices, self.set)
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\exports.py", line 849, in menu
-    if renpy.python.py_eval(condition) ]
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\python.py", line 1793, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\python.py", line 597, in py_compile
-    raise e
-SyntaxError: invalid syntax (game/day3.rpy, line 923)
+  File "game/script.rpy", line 51, in script call
+    call dayOneCard from _call_dayOneCard
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\ast.py", line 1336, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 51, in script call
+    call dayOneCard from _call_dayOneCard
+  File "C:\Users\Nick\Documents\renpy-6.99.13-sdk\renpy\script.py", line 861, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'dayOneCard'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.13.2919

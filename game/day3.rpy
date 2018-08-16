@@ -652,7 +652,7 @@ menu:
     "Holy shit.":
         pass
 
-    "Oh It's cool":
+    "Oh It's cool.":
         pass
 
 y n "You know that was for the best. "
@@ -664,7 +664,7 @@ y s "He would have driven me crazy."
 y n "Maybe he did."
 
 menu:
-    "No, {w=0.15}this is not OK. ":
+    "No, {w=0.15}this is not okay. ":
         pass
 
 y s "Fine.{w=0.35} I knew what I was doing.{w=0.35} I took a chance. "
@@ -920,7 +920,7 @@ menu:
     "Haruka's Room" if haruRoomD32:
         $ haruRoomD32 = False
         jump haruRoom3
-    "Work (Continues Story)" if heiRoomD32 == False and haruRoomD32 == False:
+    "Work" if heiRoomD32 == False and haruRoomD32 == False:
         jump workD3
 
 label haruRoom3:
@@ -1049,7 +1049,7 @@ menu:
     "Hello.":
         pass
 
-    "Ay":
+    "Ay.":
         pass
 
 e "Haruka glares at Hei."
@@ -1318,7 +1318,7 @@ menu:
 
 show y n
 
-y n "Ok.{w=0.15} Here are the rules."
+y n "Okay.{w=0.15} Here are the rules."
 
 y n "We go clockwise, {w=0.15}so it'll go me, {w=0.15}Hei, {w=0.15}Nema, {w=0.15}then Caps."
 
@@ -1517,10 +1517,10 @@ y h "Life is pain, whatever."
 y n "Her question is the same.{w=0.15} Answer."
 
 menu:
-    "Haruka":
+    "Haruka.":
         pass
 
-    "Nema":
+    "Nema.":
         y su "Seriously?"
         p su "Me?"
         p n ".{w=0.15}.{w=0.15}."
@@ -1585,10 +1585,10 @@ y n "Cap?"
 play music "music/Space.ogg" fadein 20.0
 
 menu:
-    "Same as Nema":
+    "Same as Nema.":
         pass
 
-    "Same as Hei":
+    "Same as Hei.":
         pass
 
 y n "You know what, {w=0.15}why don't I answer 'em all at once?"
