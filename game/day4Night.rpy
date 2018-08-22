@@ -332,7 +332,7 @@ stop music fadeout 4
 e "The ship lurches forward and for a moment, {w=0.15}you feel an intense force pushing you back."
 
 window hide
-hide white
+hide tWhite
 with fade
 
 play music "music/Space.ogg" fadein 2.0

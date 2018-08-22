@@ -48,7 +48,7 @@ label bMail6:#day7
 label bMail7:#day8
     e"Do you have a 1ankerin' for porkchops? {w=0.25}Th2n come on down to wacky Max3's!" 
     e"He's always got the choicest Ccuts slathered in sauce and juicy juicy juicy cuts like it like it like it liKe It Like it Like"
-    e"{size=-10}48-65-6c-70-20-6d-65-20-68-65-73-20-63-6f-6d-69-6e-67-20-66-6f-72-20-6d-65-20-68-65-6c-70-20-6f-68-20-67"
+    e"{size=-10}48-65-6c-70-20-6d-65-20-68-65-73-20-63-6f-6d-69-6e-67-20-66-6f-72-20-6d-65-20-68-65-6c-70-20-6f-68-20-67{/size}"
     e"{size=-10}6f-64-20-68-65-73-20-68-65-72-65-20-69-74-20-68-75-72-74-73-20-69-74-20-68-75-72-74-73-20-77-68{/size}"
     e"{size=-10}79-20-64-6f-65-73-20-69-74-20-68-75-72-74-20-73-6f-20-6d-75-63-68-20-48-41-50-50-59-20-46-55-4e{/size}"
     return

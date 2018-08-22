@@ -636,10 +636,10 @@ show r h
 r h "Oh, {w=0.15}that was a joke?"
 
 menu:
-    "Nema are you OK?":
+    "Nema are you Okay?":
         pass
 
-    "Nema, {w=0.15}you're not OK.":
+    "Nema, {w=0.15}you're not Okay.":
         pass
 
 show p n

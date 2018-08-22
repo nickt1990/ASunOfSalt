@@ -245,8 +245,6 @@ menu:
         play music "music/Space.ogg" fadein 1.0
         e "You finish your food and walk out into the hallway."
 
-        call hall from _call_hall_38
-
         jump day2Menu
 
         pass
@@ -387,8 +385,6 @@ menu:
         
         p s "Well."
         pass
-
-
 
 p n "It's sitting at the desk, {w=0.15}feel free to look it over."
 
@@ -653,7 +649,7 @@ menu:
         r n ".{w=0.15}.{w=0.15}."
         pass
 
-    "*Blow raspberry*":#maydo
+    "*Blow raspberry*":
         play music "music/Space.ogg" fadein 1.0
         r m "Whatever.{w=0.15} I call for a rematch."
         r n "One week."
@@ -682,23 +678,26 @@ call hall from _call_hall_20
 menu:
     "Nema's Room" if nemaRoomd2:
         $ nemaRoomd2 = False
-        call nemaD2 from _call_nemaD2
+        jump nemaD2
         pass
     "Haruka's Room" if haruRoomd2:
         $ haruRoomd2 = False
-        call haruD2 from _call_haruD2
+        jump haruD2
         pass
     "Hei's Room" if heiRoomd2:
         $ heiRoomd2 = False
-        call heiD2 from _call_heiD2
+        jump heiD2
         pass
-    "Nav Room (Continue Story)" if heiRoomd2 == False and haruRoomd2 == False and nemaRoomd2 == False :
+    "Nav Room" if heiRoomd2 == False and haruRoomd2 == False and nemaRoomd2 == False :
         call navRoom from _call_navRoom_2
+        jump day2Mid
         pass
+
+label day2Mid:
 
 play sound "sounds/DoorOpen2.ogg"
 
-e "You step into the Nav room."
+e "You decide to head into the Nav room."
 
 e "Everyone shows up right behind you."
 
@@ -929,7 +928,7 @@ menu:
     "It's great!":
         y h "I know!"
         pass
-    "Stay silent":
+    "...":
         y h "good, right?"
         y n "I know it is. You don't have to say a word."
         y h "Just enjoy."
@@ -1086,7 +1085,7 @@ y h "It'll be fun! "
 
 show p s
 
-p s "Oh. {w=0.15}I see, {w=0.15}nice. Ok."
+p s "Oh. {w=0.15}I see, {w=0.15}nice. Okay."
 
 label harukaTonightToo:
 
@@ -1120,7 +1119,7 @@ show y n
 y n "So, {w=0.15}take an hour and meet in the nav room, {w=0.15}yeah?"
 
 menu:
-    "Sounds good":
+    "Sounds good.":
         pass
 
 y h "Right-{w=0.15}o"
